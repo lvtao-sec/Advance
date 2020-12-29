@@ -1,0 +1,1858 @@
+Frees an dbus_error_free_APIParam_1 that been set , reinitializes the dbus_error_free_APIParam_1 as in dbus_error_init_APIName
+dbus_error_free_APIParam_1 is memory where the dbus_error_free_APIParam_1 is stored
+that is , you recurse into the array , and you call dbus_message_iter_get_fixed_array_APIName on the `` sub-iterator '' created by dbus_message_iter_recurse_APIName
+Checks whether the dbus_error_has_name_APIParam_1 is set and has the given dbus_error_has_name_APIParam_2
+dbus_error_has_name_APIParam_1 is the dbus_error_has_name_APIParam_1
+dbus_error_has_name_APIParam_2 is the dbus_error_has_name_APIParam_2
+dbus_error_has_name_APIName return TRUE if the given named dbus_error_has_name_APIParam_1 occurred
+Initializes a DBusError structure
+dbus_error_init_APIParam_1 is the DBusError
+Does not allocate any memory
+Checks whether an dbus_error_is_set_APIParam_1 occurred
+dbus_error_is_set_APIParam_1 is the dbus_error_is_set_APIParam_1 object
+dbus_error_is_set_APIName return TRUE if an dbus_error_is_set_APIParam_1 occurred
+Moves an error dbus_move_error_APIParam_1 into dbus_move_error_APIParam_2 , freeing dbus_move_error_APIParam_1 and overwriting dbus_move_error_APIParam_2
+Both dbus_move_error_APIParam_1 and dbus_move_error_APIParam_2 must be initialized
+dbus_move_error_APIParam_1 is reinitialized to an empty error
+the dbus_error_init_APIParam_1 only needs to be freed
+dbus_move_error_APIParam_2 may not contain an existing error
+dbus_move_error_APIParam_1 is the source error
+dbus_move_error_APIParam_2 is the destination error or NULL
+Assigns an dbus_set_error_APIParam_1 dbus_set_error_APIParam_2 and message to a DBusError
+just frees and reinits the source error
+The dbus_set_error_APIParam_3 may be NULL , which means a default message will be deduced from the dbus_set_error_APIParam_2
+It will not hurt you
+This is not a good idea , just go ahead and provide a useful dbus_set_error_APIParam_1 message
+dbus_set_error_APIParam_1 is the dbus_set_error_APIParam_1
+Does nothing
+dbus_set_error_APIParam_2 is the dbus_set_error_APIParam_1 dbus_set_error_APIParam_2
+dbus_set_error_APIParam_3 is printf-style dbus_set_error_APIParam_3 string
+Assigns an dbus_set_error_const_APIParam_1 dbus_set_error_const_APIParam_2 and dbus_set_error_const_APIParam_3 to a DBusError
+The dbus_set_error_const_APIParam_3 may be NULL , which means a default dbus_set_error_const_APIParam_3 will be deduced from the dbus_set_error_const_APIParam_2
+an out-of-memory dbus_set_error_APIParam_1 message will be set instead
+You probably want dbus_set_error_APIName instead , in most cases
+The default dbus_set_error_const_APIParam_3 will be totally useless , though , so using a NULL dbus_set_error_const_APIParam_3 is not recommended
+dbus_set_error_const_APIParam_1 is the dbus_set_error_const_APIParam_1 or NULL
+dbus_set_error_const_APIParam_2 is the dbus_set_error_const_APIParam_1 dbus_set_error_const_APIParam_2
+Does nothing
+you must ensure the dbus_set_error_const_APIParam_2 and dbus_set_error_const_APIParam_3 are global data that will not be freed
+dbus_set_error_const_APIParam_3 is the dbus_set_error_const_APIParam_1 dbus_set_error_const_APIParam_3 -LRB- not copied
+Frees a block of dbus_free_APIParam_1 previously allocated by dbus_malloc_APIName or dbus_malloc0_APIName
+dbus_free_APIParam_1 is block to be freed
+Frees a NULL - terminated array of strings
+dbus_free_string_array_APIParam_1 is the array to be freed
+NULL , does nothing
+Guaranteed to return NULL if dbus_malloc_APIParam_1 is zero on all platforms
+Allocates the given number of dbus_malloc_APIParam_1 , as with standard malloc_APIName
+dbus_malloc_APIParam_0 must be released with dbus_free_APIName
+NULL , does nothing
+Free dbus_malloc_APIName memory with dbus_free_APIName only
+dbus_malloc_APIName memory is NOT safe to free with regular free_APIName from the C library
+dbus_malloc_APIParam_1 is number of dbus_malloc_APIParam_1 to allocate
+dbus_malloc_APIName return allocated memory, or NULL if the allocation fails
+Guaranteed to return NULL if dbus_malloc0_APIParam_1 is zero on all platforms
+Returns NULL
+dbus_malloc0_APIName memory is NOT safe to free with regular free_APIName from the C library
+Free it with dbus_free_APIName only
+Allocates the given number of dbus_malloc0_APIParam_1 , as with standard malloc_APIName , but all dbus_malloc0_APIParam_1 are initialized to zero as with calloc_APIName
+dbus_malloc0_APIParam_1 is number of dbus_malloc0_APIParam_1 to allocate
+dbus_malloc0_APIName return allocated memory, or NULL if the allocation fails
+Returns NULL
+Guaranteed to free the dbus_realloc_APIParam_1 and return NULL if dbus_realloc_APIParam_2 is zero on all platforms
+Resizes a block of dbus_realloc_APIParam_1 previously allocated by dbus_malloc_APIName or dbus_malloc0_APIName
+dbus_realloc_APIParam_1 is block to be resized
+dbus_realloc_APIParam_2 is new size of the dbus_realloc_APIParam_1 block
+dbus_realloc_APIName return allocated dbus_realloc_APIParam_1, or NULL if the resize fails
+Returns NULL
+dbus_shutdown_APIName does NOT free memory thatbe returned by dbus_shutdown_APIName to the application
+Frees all memory allocated internally by libdbus and reverses the effects of dbus_threads_init_APIName
+the dbus_realloc_APIParam_1 is not freed
+It only frees libdbus-internal data structures
+You MUST free all memory and release all reference counts returned to you by libdbus prior to calling dbus_shutdown_APIName
+libdbus keeps internal global variables , caches and thread locks , and it can be useful to free these internal data structures
+You can , however , start over
+You can not continue to use any D-Bus objects , such as connections , that were allocated prior to dbus_shutdown_APIName
+call dbus_threads_init_APIName again , create new connections , and so forth
+calling dbus_shutdown_APIName will drain its queue of messages and disconnect it
+The purpose of dbus_shutdown_APIName is to allow applications to get clean output from memory leak checkers
+There is absolutely no requirement to call dbus_shutdown_APIName - in fact , most applications will not bother and should not feel guilty
+You have to know that nobody is using libdbus in your application process before you can call dbus_shutdown_APIName
+dbus_shutdown_APIName is NOT thread safe , it must be called
+Obtains the machine UUID of the machine this process is running on
+this will result in processing of the special Disconnected signal , which may result in a call to _exit_APIName , unless you have used dbus_connection_set_exit_on_disconnect_APIName to disable that behaviour
+dbus_get_local_machine_id_APIParam_0 must be freed with dbus_free_APIName
+In the latter case , a warning is logged
+One implication of this is that calling dbus_shutdown_APIName from a library is almost certainly wrong
+Other than its deficient error reporting , dbus_get_local_machine_id_APIName is the same as dbus_try_get_local_machine_id_APIName
+Returns a 32-byte-long hex-encoded UUID string , or NULL on failure
+Gets the DYNAMICALLY LINKED version of libdbus
+dbus_get_local_machine_id_APIName returns NULL if there was not enough memory to read the UUID, or if the UUID could not be read because the D-Bus library was installed incorrectly
+dbus_shutdown_APIName may also be useful
+you can get either the runtime or the compile-time version
+dbus_get_version_APIParam_1 is pointer to return the major version, or NULL
+Think carefully about which of these you want in a given case
+Alternatively , there are macros #DBUS_MAJOR_VERSION , #DBUS_MINOR_VERSION , #DBUS_MICRO_VERSION , and #DBUS_VERSION which allow you to test the VERSION YOU ARE COMPILED AGAINST
+dbus_get_version_APIParam_2 is pointer to return the minor version, or NULL
+The MINOR is an odd number for development releases and an even number for stable releases
+dbus_get_version_APIParam_3 is pointer to return the micro version, or NULL
+Wrapper for setenv_APIName
+There is an unfixable memleak in that it is unsafe to free memory malloced for use with setenv
+This is because we can not rely on internal implementation details of the underlying libc library
+unsets the environment variable
+the MINOR changes is added
+The libdbus full version number is `` MAJOR.MINOR.MICRO '' where , and the MICRO changes with each release of a MAJOR.MINOR series
+dbus_setenv_APIParam_1 is name of environment variable
+dbus_setenv_APIName is not thread-safe
+dbus_setenv_APIName return TRUE on success, FALSE if not enough memory
+dbus_setenv_APIParam_2 is dbus_setenv_APIParam_2 of environment variable , or NULL to unset
+Obtains the machine UUID of the machine this process is running on
+dbus_try_get_local_machine_id_APIParam_0 must be freed with dbus_free_APIName
+This UUID is guaranteed to remain the same until the next reboot
+The machine ID can also be used to create unique per-machine instances
+It will usually remain the same across reboots also , but hardware configuration changes or rebuilding the machine could break that
+you could use it in bus names or X selection names
+You can get the machine ID of a remote application by invoking the method GetMachineId from interface org.freedesktop.DBus.Peer
+The machine ID is preferred over the machine hostname , and may also change at runtime
+Returns a 32-byte-long hex-encoded UUID string , or NULL on failure
+The UUID is not a UUID in the sense of RFC4122
+the details are explained in the D-Bus specification
+Allocates an integer ID to be used for storing application-specific data on any DBusPendingCall
+If the remote application has the same machine ID as the one returned by this function, the remote application is on the same machine as your application
+The allocated ID may be used with dbus_pending_call_set_data_APIName and dbus_pending_call_get_data_APIName
+The allocated slot is global , i.e
+The passed-in slot must be initialized to -1 , and is filled in with the slot ID
+all DBusPendingCall objects will have a slot with the given integer ID reserved
+dbus_pending_call_allocate_data_slot_APIName return FALSE on failure (no memory
+dbus_pending_call_allocate_data_slot_APIParam_1 is address of a global variable storing the slot
+Block until the dbus_pending_call_block_APIParam_1 call is completed
+If the dbus_pending_call_block_APIParam_1 call is already completed, dbus_pending_call_block_APIName returns immediately
+it is assumed to be already allocated
+and its refcount is incremented
+The blocking is as with dbus_connection_send_with_reply_and_block_APIName
+This requires storing timestamps instead of intervals in the timeout dbus_pending_call_block_APIParam_1 is the dbus_pending_call_block_APIParam_1 call
+it does not enter the main loop or process other messages , it simply waits for the reply in question
+Cancels the dbus_pending_call_cancel_APIParam_1 call , such that any reply or error received will just be ignored
+dbus_pending_call_cancel_APIParam_1 is the dbus_pending_call_cancel_APIParam_1 call
+However you usually get a reference from dbus_connection_send_with_reply_APIName so probably your app owns a ref also
+Deallocates a global ID for DBusPendingCall data slots
+the timeout is reset
+but it should really only use time remaining
+Note that canceling a dbus_pending_call_cancel_APIParam_1 call will not simulate a timed-out call
+dbus_pending_call_get_data_APIName and dbus_pending_call_set_data_APIName may no longer be used with this slot
+Drops the dbus library internal reference to the DBusPendingCall so will free the call
+The idea is that two processes with the same machine ID should be able to use shared memory , UNIX domain sockets , process IDs , and other features of the OS that require both processes to be running on the same OS kernel instance
+Checks whether the dbus_pending_call_get_completed_APIParam_1 call has received a reply yet , or not
+dbus_pending_call_get_completed_APIParam_1 is the dbus_pending_call_get_completed_APIParam_1 call
+dbus_pending_call_get_completed_APIName return TRUE if a reply has been received
+no reply is received unless the the reply was already received before you canceled
+Retrieves data previously set with dbus_pending_call_set_data_APIName
+a timeout error reply is received
+The dbus_pending_call_get_data_APIParam_2 must still be allocated
+dbus_pending_call_get_data_APIParam_1 is the pending_call
+Existing data stored on existing DBusPendingCall objects will be freed
+it is set to -1
+dbus_pending_call_get_data_APIParam_2 is the dbus_pending_call_get_data_APIParam_2 to get data from
+dbus_pending_call_get_data_APIName return the data, or NULL if not found
+Increments the reference count on a dbus_pending_call_ref_APIParam_1 call
+dbus_pending_call_ref_APIParam_1 is the dbus_pending_call_ref_APIParam_1 call object
+dbus_pending_call_ref_APIName return the dbus_pending_call_ref_APIParam_1 call object
+The dbus_pending_call_set_data_APIParam_2 number must have been allocated with dbus_pending_call_allocate_data_slot_APIName
+dbus_pending_call_set_data_APIParam_1 is the pending_call
+dbus_pending_call_set_data_APIParam_2 is the dbus_pending_call_set_data_APIParam_2 number
+dbus_pending_call_set_data_APIParam_3 is the dbus_pending_call_set_data_APIParam_3 to store
+dbus_pending_call_set_data_APIParam_4 is finalizer function for the dbus_pending_call_set_data_APIParam_3
+dbus_pending_call_set_data_APIName return TRUE if there was enough memory to store the dbus_pending_call_set_data_APIParam_3
+dbus_pending_call_set_notify_APIParam_1 is the dbus_pending_call_set_notify_APIParam_1 call
+dbus_pending_call_set_notify_APIParam_2 is notifier dbus_pending_call_set_notify_APIParam_2
+dbus_pending_call_set_notify_APIParam_3 is data to pass to notifier dbus_pending_call_set_notify_APIParam_2
+dbus_pending_call_set_notify_APIParam_4 is dbus_pending_call_set_notify_APIParam_2 to free the user data
+dbus_pending_call_set_notify_APIName return FALSE if not enough memory
+or when the dbus_pending_call_set_data_APIParam_1 call is finalized
+Stores a pointer on a DBusPendingCall , along with an optional function to be used for freeing the dbus_pending_call_set_data_APIParam_3
+Gets the reply, or returns NULL if none has been received yet
+Sets a notification dbus_pending_call_set_notify_APIParam_2 to be called
+or the dbus_pending_call_set_notify_APIParam_1 call times out
+Ownership of the reply message passes to the caller
+dbus_pending_call_steal_reply_APIParam_1 is the dbus_pending_call_steal_reply_APIParam_1 call
+dbus_pending_call_steal_reply_APIName return the reply message or NULL
+dbus_pending_call_steal_reply_APIName can only be called once per dbus_pending_call_steal_reply_APIParam_1 call
+Gets the number of unix fds attached to this _dbus_message_get_n_unix_fds_APIParam_1
+_dbus_message_get_n_unix_fds_APIParam_1 is the _dbus_message_get_n_unix_fds_APIParam_1
+_dbus_message_get_n_unix_fds_APIName return the number of file descriptors
+Allocates an integer ID to be used for storing application-specific data on any DBusMessage
+The allocated ID may be used with dbus_message_set_data_APIName and dbus_message_get_data_APIName
+The allocated slot is global , i.e
+The passed-in slot must be initialized to -1 , and is filled in with the slot ID
+Decrements the reference count on a dbus_pending_call_unref_APIParam_1 call , freeing it
+all DBusMessage objects will have a slot with the given integer ID reserved
+dbus_message_allocate_data_slot_APIName return FALSE on failure (no memory
+dbus_message_allocate_data_slot_APIParam_1 is address of a global variable storing the slot
+Appends fields to a dbus_message_append_args_APIParam_1 given a variable argument list
+The variable argument list should contain the type of each argument followed by the value to append
+Appendable types are basic types , and arrays of fixed-length basic types
+it is assumed to be already allocated
+and its refcount is incremented
+So
+To append variable-length basic types , or any more complex value , you have to use an iterator rather than this function
+To append a basic type , specify its type code followed by the address of the value
+dbus_message_append_args_APIName does not support arrays of Unix file descriptors
+For Unix file descriptors dbus_message_append_args_APIName will internally duplicate the descriptor you passed in
+Hence you may close the descriptor immediately after this call
+For strings it works to write const char * array = `` Hello '' and use & array though
+you need to manually recurse into the array
+The last argument to dbus_message_append_args_APIName must be DBUS_TYPE_INVALID , marking the end of the argument list
+dbus_message_append_args_APIParam_1 is the dbus_message_append_args_APIParam_1
+dbus_message_append_args_APIName return TRUE on success
+
+Like dbus_message_append_args_APIName but takes a va_list for use by language bindings
+will not know to stop and will read invalid memory
+dbus_message_append_args_APIParam_2 is type of the first argument ... value of first argument , list of additional type-value pairs
+String/signature/path arrays should be passed in as `` const char *** address_of_array '' and `` int n_elements '' Todo
+support DBUS_TYPE_STRUCT and DBUS_TYPE_VARIANT and complex arrays Todo
+So you have to create a pointer variable , assign the array to it , take the address of the pointer variable
+it will leave the dbus_message_append_args_valist_APIParam_1 half-written
+for now , and you have to discard the dbus_message_append_args_valist_APIParam_1 and start over
+To append an array of fixed-length basic types , pass in the DBUS_TYPE_ARRAY typecode , the element typecode , the address of the array pointer , and a 32-bit integer giving the number of elements in the array
+the dbus_message_append_args_APIParam_1 is hosed
+and you have to start over building the whole dbus_message_append_args_APIParam_1
+Warning in C , given `` int array -LSB- -RSB- '' , '' & array == array ''
+dbus_message_append_args_valist_APIParam_1 is the dbus_message_append_args_valist_APIParam_1
+dbus_message_append_args_valist_APIParam_2 is type of first argument
+dbus_message_append_args_valist_APIName return TRUE on success
+dbus_message_append_args_valist_APIParam_3 is value of first argument , list of type/value pairs
+Checks whether a dbus_message_contains_unix_fds_APIParam_1 contains unix fds
+dbus_message_contains_unix_fds_APIParam_1 is the dbus_message_contains_unix_fds_APIParam_1
+dbus_message_contains_unix_fds_APIName return TRUE if the dbus_message_contains_unix_fds_APIParam_1 contains unix fds
+dbus_message_copy_APIParam_1 is the dbus_message_copy_APIParam_1
+dbus_message_copy_APIName return the new dbus_message_copy_APIParam_1.or NULL if not enough memory or Unix file descriptors  can be allocated
+dbus_message_copy_APIName can not be used in programs that try to recover from OOM errors
+Demarshal a D-Bus message from the format described in the D-Bus specification
+dbus_message_demarshal_APIParam_1 is the marshalled DBusMessage
+Generally , dbus_message_demarshal_APIName is only useful for encapsulating D-Bus messages in a different protocol
+dbus_message_demarshal_APIParam_2 is the length of dbus_message_demarshal_APIParam_1
+dbus_message_demarshal_APIParam_3 is the location to save errors to
+dbus_message_demarshal_APIName return NULL if there was an dbus_message_demarshal_APIParam_3
+Returns the number of bytes required to be in the buffer to demarshal a D-Bus message
+Generally , dbus_message_demarshal_bytes_needed_APIName is only useful for encapsulating D-Bus messages in a different protocol
+dbus_message_demarshal_bytes_needed_APIParam_1 is data to be marshalled
+dbus_message_demarshal_bytes_needed_APIParam_2 is the length of dbus_message_demarshal_bytes_needed_APIParam_1
+Otherwise returns the number of bytes to be demarshalled
+Deallocates a global ID for message data slots
+dbus_message_demarshal_bytes_needed_APIName return -1 if there was no valid data to be demarshalled, 0 if there wasn't enough data to determine how much should be demarshalled
+dbus_message_get_data_APIName and dbus_message_set_data_APIName may no longer be used with this slot
+Returns has been set
+dbus_message_get_allow_interactive_authorization_APIParam_1 is the dbus_message_get_allow_interactive_authorization_APIParam_1
+Gets arguments from a dbus_message_get_args_APIParam_1 given a variable argument list
+The supported types include those supported by dbus_message_append_args_APIName
+that is , basic types and arrays of fixed-length basic types
+The arguments are the same as they would be for dbus_message_iter_get_basic_APIName or dbus_message_iter_get_fixed_array_APIName
+Existing data stored on existing DBusMessage objects will be freed
+it is set to -1
+To get a string array pass in `` char *** array_location '' and `` int * n_elements ''
+Similar to dbus_message_get_fixed_array_APIName dbus_message_get_args_APIName does not support arrays of type DBUS_TYPE_UNIX_FD
+except that its refcount is set to 1 , its dbus_message_copy_APIParam_1 serial is reset to 0 , and
+Creates a new dbus_message_copy_APIParam_1 that is an exact replica of the dbus_message_copy_APIParam_1 specified , the new dbus_message_copy_APIParam_1 will not be locked
+Unix file descriptors that are read with dbus_message_get_args_APIName will have the FD_CLOEXEC flag set
+The list is terminated with DBUS_TYPE_INVALID
+Except for string arrays , dbus_message_get_args_APIParam_0 values are constant
+do not free them
+They point into the DBusMessage
+The variable argument list should contain the type of the argument followed by a pointer to where the value should be stored
+you need to recurse into the array manually
+make sure to unset it with fcntl_APIName
+In addition to those types , arrays of string , object path , and signature are supported
+but thesebe returned by dbus_message_get_args_APIName as allocated memory and must be freed with dbus_free_string_array_APIName , while the other typesbe returned by dbus_message_get_args_APIName as const references
+If more arguments than requested are present, the requested argumentsbe returned by dbus_message_get_args_APIName and the extra arguments are ignored
+support DBUS_TYPE_STRUCT and DBUS_TYPE_VARIANT and complex arrays dbus_message_get_args_APIParam_1 is the dbus_message_get_args_APIParam_1
+dbus_message_get_args_APIParam_2 is dbus_message_get_args_APIParam_2 to be filled in on failure
+dbus_message_get_args_APIName return FALSE if the dbus_message_get_args_APIParam_2 was set
+an dbus_message_get_args_APIParam_2 will be set
+Like dbus_message_get_args but takes a va_list for use by language bindings
+dbus_message_get_args_APIParam_3 is the first argument type ... location for first argument value , list of type-location pairs
+dbus_message_get_args_valist_APIParam_2 is dbus_message_get_args_valist_APIParam_2 to be filled in
+dbus_message_get_args_valist_APIParam_3 is type of the first argument
+dbus_message_get_args_valist_APIParam_4 is return location for first argument, followed by list of type/location pairs
+dbus_message_get_args_valist_APIName return FALSE if dbus_message_get_args_valist_APIParam_2 was set
+dbus_message_get_auto_start_APIParam_1 is the dbus_message_get_auto_start_APIParam_1
+dbus_message_get_auto_start_APIName return TRUE if the dbus_message_get_auto_start_APIParam_1 will use auto-start
+dbus_message_get_container_instance_APIParam_1 is the dbus_message_get_container_instance_APIParam_1
+dbus_message_get_container_instance_APIName return the path  or NULL
+Returns TRUE
+Retrieves data previously set with dbus_message_set_data_APIName
+The dbus_message_get_data_APIParam_2 must still be allocated
+dbus_message_get_data_APIParam_1 is the dbus_message_get_data_APIParam_1
+Gets the container instance this dbus_message_get_container_instance_APIParam_1 was sent from , or NULL
+dbus_message_get_data_APIParam_2 is the dbus_message_get_data_APIParam_2 to get data from
+dbus_message_get_data_APIName return the data, or NULL if not found
+invalid
+dbus_message_get_container_instance_APIParam_0 becomes
+dbus_message_get_destination_APIParam_1 is the dbus_message_get_destination_APIParam_1
+dbus_message_get_destination_APIName return the dbus_message_get_destination_APIParam_1 destination  or NULL
+dbus_message_get_error_name_APIParam_1 is the dbus_message_get_error_name_APIParam_1
+Gets the destination of a dbus_message_get_destination_APIParam_1 or NULL
+dbus_message_get_error_name_APIName return the error name  or NULL
+invalid
+dbus_message_get_destination_APIParam_0 becomes
+Gets the interface this dbus_message_get_interface_APIParam_1 is being sent to or being emitted from
+The interface name is fully-qualified
+Gets the error name or NULL
+dbus_message_get_interface_APIParam_1 is the dbus_message_get_interface_APIParam_1
+invalid
+dbus_message_get_error_name_APIParam_0 becomes
+dbus_message_get_interface_APIName return the dbus_message_get_interface_APIParam_1 interface  or NULL
+Gets the interface member being invoked or emitted
+Returns NULL
+dbus_message_get_member_APIParam_1 is the dbus_message_get_member_APIParam_1
+dbus_message_get_member_APIName return the member name  or NULL
+invalid
+dbus_message_get_interface_APIParam_0 becomes
+Returns NULL
+dbus_message_get_no_reply_APIParam_1 is the dbus_message_get_no_reply_APIParam_1
+dbus_message_get_no_reply_APIName return TRUE if the dbus_message_get_no_reply_APIParam_1 sender is not waiting for a reply
+invalid
+dbus_message_get_member_APIParam_0 becomes
+Gets the object path this dbus_message_get_path_APIParam_1 is being sent to or being emitted from
+dbus_message_get_path_APIParam_1 is the dbus_message_get_path_APIParam_1
+Returns TRUE
+dbus_message_get_path_APIName return the path  or NULL
+Free dbus_message_get_path_decomposed_APIParam_0 with dbus_free_string_array_APIName
+Returns NULL
+Gets the object dbus_message_get_path_decomposed_APIParam_2 this dbus_message_get_path_decomposed_APIParam_1 is being sent to or being emitted from in a decomposed format
+invalid
+dbus_message_get_path_APIParam_0 becomes
+dbus_message_get_path_decomposed_APIName return FALSE if no memory to allocate the array
+this could be optimized by using the len from the dbus_message_get_path_decomposed_APIParam_1 instead of calling strlen_APIName again dbus_message_get_path_decomposed_APIParam_1 is the dbus_message_get_path_decomposed_APIParam_1
+dbus_message_get_path_decomposed_APIParam_2 is place to store allocated array of dbus_message_get_path_decomposed_APIParam_2 components
+dbus_message_get_reply_serial_APIParam_1 is the dbus_message_get_reply_serial_APIParam_1
+An empty but non-NULL dbus_message_get_path_decomposed_APIParam_2 array means the dbus_message_get_path_decomposed_APIParam_2 '' / ''
+NULL set here
+Returns the serial that the dbus_message_get_reply_serial_APIParam_1 is a reply to or 0
+So the dbus_message_get_path_decomposed_APIParam_2 '' / foo/bar '' becomes -LCB- `` foo '' , `` bar '' , NULL -RCB- and the dbus_message_get_path_decomposed_APIParam_2 '' / '' becomes -LCB- NULL -RCB-
+dbus_message_get_reply_serial_APIName return the reply serial
+The sender is filled in by the dbus_message_get_sender_APIParam_1 bus
+Note , dbus_message_get_sender_APIParam_0 sender is always the unique bus name
+dbus_message_get_sender_APIParam_1 is the dbus_message_get_sender_APIParam_1
+Connections may own multiple other bus names , but those are not found in the sender field
+dbus_message_get_sender_APIName return the unique name of the sender or NULL
+Gets the unique name of the connection which originated this dbus_message_get_sender_APIParam_1 , or NULL
+All messages received on a connection will have a serial provided by the remote application
+dbus_message_get_serial_APIParam_1 is the dbus_message_get_serial_APIParam_1
+invalid
+dbus_message_get_sender_APIParam_0 becomes
+For messages you are sending, dbus_connection_send_APIName will assign a serial and return it to you
+The message serial number is provided by the application sending the dbus_message_get_serial_APIParam_1 and is used to identify replies to this dbus_message_get_serial_APIParam_1
+dbus_message_get_serial_APIName return the serial
+Returns the serial of a dbus_message_get_serial_APIParam_1 or 0 has been specified
+Gets the type signature of the dbus_message_get_signature_APIParam_1 , i.e
+the arguments in the dbus_message_get_signature_APIParam_1 payload
+The signature is a string made up of type codes such as DBUS_TYPE_INT32
+The string is terminated with nul
+dbus_message_get_signature_APIParam_1 is the dbus_message_get_signature_APIParam_1
+dbus_message_get_signature_APIName return the type signature
+The signature includes only `` in '' arguments for DBUS_MESSAGE_TYPE_METHOD_CALL and only `` out '' arguments for DBUS_MESSAGE_TYPE_METHOD_RETURN , so is slightly different from what you might expect
+Gets the type of a dbus_message_get_type_APIParam_1
+DBUS_MESSAGE_TYPE_INVALID will never be returned
+dbus_message_get_type_APIParam_1 is the dbus_message_get_type_APIParam_1
+invalid
+dbus_message_get_signature_APIParam_0 becomes
+dbus_message_get_type_APIName return the type of the dbus_message_get_type_APIParam_1
+Checks whether the dbus_message_has_destination_APIParam_1 was sent to the given dbus_message_has_destination_APIParam_2
+If the dbus_message_has_destination_APIParam_1 has no destination specified or has a different destination, returns FALSE
+Types include DBUS_MESSAGE_TYPE_METHOD_CALL , DBUS_MESSAGE_TYPE_METHOD_RETURN , DBUS_MESSAGE_TYPE_ERROR , DBUS_MESSAGE_TYPE_SIGNAL , but other types are allowed and all code must silently ignore messages of unknown type
+dbus_message_has_destination_APIParam_1 is the dbus_message_has_destination_APIParam_1
+dbus_message_has_destination_APIParam_2 is the dbus_message_has_destination_APIParam_2 to check
+dbus_message_has_destination_APIName return TRUE if the dbus_message_has_destination_APIParam_1 has the given destination dbus_message_has_destination_APIParam_2
+dbus_message_has_interface_APIParam_1 is the dbus_message_has_interface_APIParam_1
+dbus_message_has_interface_APIParam_2 is the interface name
+dbus_message_has_interface_APIName return TRUE if the interface field in the header matches
+dbus_message_has_member_APIParam_1 is the dbus_message_has_member_APIParam_1
+Checks
+dbus_message_has_member_APIParam_2 is the dbus_message_has_member_APIParam_2 name
+dbus_message_has_member_APIName return TRUE if there is a dbus_message_has_member_APIParam_2 field in the header
+dbus_message_has_path_APIParam_1 is the dbus_message_has_path_APIParam_1
+Checks
+dbus_message_has_path_APIParam_2 is the dbus_message_has_path_APIParam_2 name
+dbus_message_has_path_APIName return TRUE if there is a dbus_message_has_path_APIParam_2 field in the header
+The object dbus_message_has_path_APIParam_2 is the destination object for a method call or the emitting object for a signal
+If the dbus_message_has_sender_APIParam_1 has no sender specified or has a different sender, returns FALSE
+Checks
+Checks whether the dbus_message_has_sender_APIParam_1 has the given unique dbus_message_has_sender_APIParam_2 as its sender
+So you can not use dbus_message_has_sender_APIName to see
+Note that a peer application will always have the unique dbus_message_has_sender_APIParam_2 of the connection as the sender
+Messages from the bus itself will have DBUS_SERVICE_DBUS as the sender
+dbus_message_has_sender_APIParam_1 is the dbus_message_has_sender_APIParam_1
+dbus_message_has_sender_APIParam_2 is the dbus_message_has_sender_APIParam_2 to check
+dbus_message_has_sender_APIName return TRUE if the dbus_message_has_sender_APIParam_1 has the given sender
+dbus_message_has_signature_APIParam_1 is the dbus_message_has_signature_APIParam_1
+Checks for more details on what the dbus_message_has_signature_APIParam_2 looks like
+dbus_message_has_signature_APIParam_2 is typecode array
+dbus_message_has_signature_APIName return TRUE if dbus_message_has_signature_APIParam_1 has the given dbus_message_has_signature_APIParam_2
+If the dbus_message_is_error_APIParam_1 is not DBUS_MESSAGE_TYPE_ERROR , or has a different name, returns FALSE
+Checks whether the dbus_message_is_error_APIParam_1 is an error reply with the given error name
+dbus_message_is_error_APIParam_1 is the dbus_message_is_error_APIParam_1
+dbus_message_is_error_APIParam_2 is the name to check
+dbus_message_is_error_APIName return TRUE if the dbus_message_is_error_APIParam_1 is the specified error
+If the dbus_message_is_method_call_APIParam_1 is not DBUS_MESSAGE_TYPE_METHOD_CALL , or has a different interface or member field, returns FALSE
+Checks whether the dbus_message_is_method_call_APIParam_1 is a dbus_message_is_method_call_APIParam_3 call with the given interface and member fields
+The D-Bus protocol allows dbus_message_is_method_call_APIParam_3 callers to leave out the interface name
+dbus_message_is_method_call_APIParam_1 is the dbus_message_is_method_call_APIParam_1
+dbus_message_is_method_call_APIParam_2 is the name to check
+dbus_message_is_method_call_APIParam_3 is the name to check
+dbus_message_is_method_call_APIName return TRUE if the dbus_message_is_method_call_APIParam_1 is the specified dbus_message_is_method_call_APIParam_3 call
+it will be assumed equal to the provided interface
+Checks whether the dbus_message_is_signal_APIParam_1 is a signal with the given interface and member fields
+dbus_message_is_signal_APIParam_1 is the dbus_message_is_signal_APIParam_1
+If the dbus_message_is_signal_APIParam_1 is not DBUS_MESSAGE_TYPE_SIGNAL , or has a different interface or member field, returns FALSE
+dbus_message_is_signal_APIParam_2 is the name to check
+dbus_message_is_signal_APIParam_3 is the name to check
+dbus_message_is_signal_APIName return TRUE if the dbus_message_is_signal_APIParam_1 is the specified signal
+Once this returns, the message is hosed and you have to start over building the whole message
+Abandons creation of a contained-typed value and frees resources created by dbus_message_iter_open_container_APIName
+dbus_message_iter_abandon_container_APIParam_1 is the append iterator
+dbus_message_iter_abandon_container_APIParam_2 is sub-iterator to close
+Once this returns, the message is hosed and you have to start over building the whole message
+Abandons creation of a contained-typed value and frees resources created by dbus_message_iter_open_container_APIName
+However , it is not valid to call dbus_message_iter_abandon_container_if_open_APIName on uninitialized memory
+dbus_message_iter_abandon_container_if_open_APIParam_2 is sub-iterator to close
+This should only be used to abandon creation of a message
+Appends a basic-typed dbus_message_iter_append_basic_APIParam_3 to the message
+The basic types are the non-container types such as integer and string
+Unlike dbus_message_iter_abandon_container_APIName , it is valid to call dbus_message_iter_abandon_container_if_open_APIName on an iterator that was initialized with DBUS_MESSAGE_ITER_INIT_CLOSED , or an iterator that was already closed or abandoned
+The `` value '' argument should be the address of a basic-typed dbus_message_iter_append_basic_APIParam_3
+So for string , const char **
+For integer , dbus_int32_t *
+For Unix file descriptors dbus_message_iter_append_basic_APIName will internally duplicate the descriptor you passed in
+Hence you may close the descriptor immediately after this call
+dbus_message_iter_append_basic_APIParam_1 is the append iterator
+dbus_message_iter_append_basic_APIParam_2 is the dbus_message_iter_append_basic_APIParam_2 of the
+This is intended to be used in error cleanup code paths , similar to this pattern
+dbus_message_iter_append_basic_APIParam_3 is dbus_message_iter_append_basic_APIParam_3 the address of the dbus_message_iter_append_basic_APIParam_3
+dbus_message_iter_append_basic_APIName return FALSE if not enough memory
+DBusMessageIter outer = DBUS_MESSAGE_ITER_INIT_CLOSED
+DBusMessageIter inner = DBUS_MESSAGE_ITER_INIT_CLOSED
+dbus_bool_t result = FALSE
+Appends a block of fixed-length values to an array
+The fixed-length types are all basic types that are not string-like
+result = TRUE
+return result
+dbus_message_iter_abandon_container_if_open_APIParam_1 is the append iterator
+the message is hosed
+and you have to start over building the whole message
+So int32 , double , bool , etc
+You must call dbus_message_iter_open_container_APIName to open an array of values before calling this function
+You may call dbus_message_iter_append_fixed_array_APIName multiple times for the same array
+The `` value '' argument should be the address of the array
+dbus_message_iter_append_fixed_array_APIParam_1 is the append iterator
+For strings it works to write const char * array = `` Hello '' and use & array though
+dbus_message_iter_append_fixed_array_APIParam_2 is the type of the array elements
+dbus_message_iter_append_fixed_array_APIParam_3 is the address of the array
+dbus_message_iter_append_fixed_array_APIParam_4 is the number of elements to append
+So for integer , `` dbus_int32_t ** '' is expected
+dbus_message_iter_append_fixed_array_APIName return FALSE if not enough memory
+It must not be closed again with this function , or abandoned with dbus_message_iter_abandon_container_APIName
+However , it remains valid to call dbus_message_iter_abandon_container_if_open_APIName
+the message is hosed
+and you have to start over building the whole message
+dbus_message_iter_close_container_APIParam_1 is the append iterator
+Closes a container-typed value appended to the message
+dbus_message_iter_close_container_APIParam_2 is sub-iterator to close
+the sub-iterator dbus_message_iter_close_container_APIParam_2 has been closed and invalidated
+dbus_message_iter_close_container_APIName return FALSE if not enough memory
+may write out more information to the message known only after the entire container is written , and may free resources created by dbus_message_iter_open_container_APIName
+If the iterator is at the end of the message, returns DBUS_TYPE_INVALID
+Returns the argument type of the argument that the message iterator points to
+dbus_message_iter_get_arg_type_APIName return the argument type
+So you have to create a pointer variable , assign the array to it , take the address of the pointer variable
+You can thus write a loop as follows
+dbus_message_iter_get_arg_type_APIParam_1 is the message dbus_message_iter_get_arg_type_APIParam_1
+Returns the number of bytes in the array as marshaled in the wire protocol
+The iterator must currently be inside an array-typed value
+the message is hosed
+and you have to start over building the whole message
+dbus_message_iter_get_array_len_APIName is deprecated on the grounds that it is stupid
+Use dbus_message_iter_get_element_count_APIName instead
+dbus_message_iter_get_array_len_APIParam_1 is the iterator
+Warning in C , given `` int array -LSB- -RSB- '' , '' & array == array ''
+dbus_message_iter_get_array_len_APIName return the number of bytes in the array
+Why would you want to know how many bytes are in the array as marshaled in the wire protocol ?
+Reads a basic-typed dbus_message_iter_get_basic_APIParam_2 from the message iterator
+Basic types are the non-containers such as integer and string
+The dbus_message_iter_get_basic_APIParam_2 argument should be the address of a location to store dbus_message_iter_get_basic_APIParam_0
+dbus_message_iter_get_basic_APIParam_0 is by reference and should not be freed
+So for int32 it should be a `` dbus_int32_t * '' and for string a `` const char ** ''
+Unix file descriptors that are read with dbus_message_iter_get_basic_APIName will have the FD_CLOEXEC flag set
+To read any container type you will need to recurse into the container with dbus_message_iter_recurse_APIName
+Otherwise , you have to iterate over the container contents one dbus_message_iter_get_basic_APIParam_2 at a time
+Unix file descriptors
+This call duplicates
+dbus_message_iter_get_basic_APIParam_1 is the iterator
+It is your job to close them
+dbus_message_iter_get_basic_APIParam_2 is location to store the dbus_message_iter_get_basic_APIParam_2
+make sure to unset it with fcntl_APIName
+Returns the number of elements in the array-typed value pointed to by the iterator
+dbus_message_iter_get_element_count_APIParam_1 is the iterator
+dbus_message_iter_get_element_count_APIName return the number of elements in the array
+you can get all the array elements at once with dbus_message_iter_get_fixed_array_APIName
+All basic-typed values are guaranteed to fit in a DBusBasicValue , so in versions of libdbus that have that type , you can write code like this
+dbus_message_iter_get_element_type_APIParam_1 is the message dbus_message_iter_get_element_type_APIParam_1
+Returns the element type of the array that the message iterator points to
+dbus_message_iter_get_element_type_APIName return the array element type
+Note that you need to check that the iterator points to an array prior to using this function
+you 'll crash
+Be sure you have somehow checked that dbus_message_iter_get_arg_type_APIName matches the type you are expecting , or
+Reads a block of fixed-length values from the message iterator
+Fixed-length values are those basic types that are not string-like , such as integers , bool , double
+The message dbus_message_iter_get_fixed_array_APIParam_1 should be `` in '' the array
+dbus_message_iter_get_fixed_array_APIParam_0 will be from the current position in the array until the end of the array
+The dbus_message_iter_get_fixed_array_APIParam_2 argument should be the address of a location to store dbus_message_iter_get_fixed_array_APIParam_0
+Note that dbus_message_iter_get_element_count_APIName is O for arrays of fixed-size types but O for arrays of variable-length types such as strings , so it may be a bad idea to use it
+There is one exception here
+dbus_message_iter_get_fixed_array_APIName should only be used if dbus_type_is_fixed_APIName returns TRUE for the element type
+So for int32 it should be a `` const dbus_int32_t ** '' dbus_message_iter_get_fixed_array_APIParam_0 dbus_message_iter_get_fixed_array_APIParam_2 is by reference and should not be freed
+dbus_message_iter_get_fixed_array_APIParam_1 is the iterator
+dbus_message_iter_get_fixed_array_APIParam_2 is location to store the block
+dbus_message_iter_get_fixed_array_APIParam_3 is number of elements in the block
+it is much preferred over walking the entire array with an iterator
+Returns the current signature of a message iterator
+dbus_message_iter_get_signature_APIParam_0 must be freed with dbus_free_APIName
+dbus_message_iter_get_signature_APIParam_1 is the message iterator
+dbus_message_iter_get_signature_APIName return the contained signature, or NULL if out of memory
+This is useful primarily for dealing with variants
+you have to recurse into the array with dbus_message_iter_recurse_APIName and read the elements one by one
+one can recurse into a variant and determine the signature of the variant value
+dbus_message_iter_has_next_APIParam_1 is the message dbus_message_iter_has_next_APIParam_1
+dbus_message_iter_has_next_APIName return TRUE if there are more fields following
+Initializes a DBusMessageIter for reading the arguments of the dbus_message_iter_init_APIParam_1 passed in
+Checks
+Some types of argument can only be read with DBusMessageIter however
+dbus_message_iter_init_APIParam_1 is the dbus_message_iter_init_APIParam_1
+dbus_message_iter_init_APIName return FALSE if the dbus_message_iter_init_APIParam_1 has no arguments
+dbus_message_iter_init_APIParam_2 is pointer to an iterator to initialize
+The easiest way to iterate is like this
+dbus_message_get_args_APIName is much more convenient
+DBusMessageIter contains no allocated memory
+Initializes a DBusMessageIter for appending arguments to the end of a dbus_message_iter_init_append_APIParam_1
+it need not be freed , and can be copied by assignment or memcpy_APIName
+dbus_message_iter_init_append_APIParam_1 is the dbus_message_iter_init_append_APIParam_1
+dbus_message_iter_init_append_APIParam_2 is pointer to an iterator to initialize
+The only valid operation for such an iterator is dbus_message_iter_abandon_container_if_open_APIName , which does nothing
+If there no next field, returns FALSE
+If the iterator moves forward, returns TRUE
+Initialize dbus_message_iter_init_closed_APIParam_1 as
+dbus_message_iter_next_APIParam_1 is the message dbus_message_iter_next_APIParam_1
+dbus_message_iter_next_APIName return TRUE if the iterator was moved to the next field
+Appends a container-typed value to the message
+Moves the iterator to the next field
+Container types are struct , variant , and array
+the dbus_message_iter_init_append_APIParam_1 is hosed
+and you have to start over building the whole dbus_message_iter_init_append_APIParam_1
+On success , you are required to append the contents of the container using dbus_message_iter_open_container_APIParam_0 sub-iterator , and call dbus_message_iter_close_container_APIName
+For variants , the dbus_message_iter_open_container_APIParam_3 should be the dbus_message_iter_open_container_APIParam_2 of the single value inside the variant
+For arrays , dbus_message_iter_open_container_APIParam_3 should be the dbus_message_iter_open_container_APIParam_2 of the array elements
+For structs and dict entries , dbus_message_iter_open_container_APIParam_3 should be NULL
+it will be set to whatever types you write into the struct
+However , after dbus_message_iter_open_container_APIName has either succeeded or failed , it is valid to call dbus_message_iter_abandon_container_if_open_APIName
+dbus_message_iter_open_container_APIParam_1 is the append iterator
+dbus_message_iter_open_container_APIParam_2 is the dbus_message_iter_open_container_APIParam_2 of the value
+dbus_message_iter_open_container_APIParam_3 is the dbus_message_iter_open_container_APIParam_2 of container contents
+dbus_message_iter_open_container_APIParam_4 is sub-iterator to initialize
+dbus_message_iter_open_container_APIName return FALSE if not enough memory
+the sub-iterator remains invalid , and must not be closed with dbus_message_iter_close_container_APIName or abandoned with dbus_message_iter_abandon_container_APIName
+There no array of int32 to recurse into
+the message is hosed
+and you have to start over building the whole message
+dbus_message_iter_recurse_APIParam_1 is the message iterator
+Be sure you have somehow checked that dbus_message_iter_get_arg_type_APIName matches the type you are expecting to recurse into
+dbus_message_iter_recurse_APIParam_2 is the sub-iterator to initialize
+Locks a dbus_message_lock_APIParam_1
+you can only recurse
+Note that this recurses into a value , not a type , so
+dbus_message_lock_APIName may also called externally , for applications wrapping D-Bus in another protocol
+Recurses into a container value
+dbus_message_lock_APIParam_1 is the dbus_message_lock_APIParam_1 to lock
+Allows checking that applications do not keep a reference to a dbus_message_lock_APIParam_1 in the outgoing queue and change it underneath us
+Results of dbus_message_iter_recurse_APIName are undefined
+Turn a DBusMessage into the marshalled form as described in the D-Bus specification
+dbus_message_marshal_APIParam_1 is the DBusMessage
+Generally , dbus_message_marshal_APIName is only useful for encapsulating D-Bus messages in a different protocol
+dbus_message_marshal_APIParam_2 is the location to save the marshalled form to
+dbus_message_marshal_APIName return FALSE if there was not enough memory
+dbus_message_marshal_APIParam_3 is the location to save the length of the marshalled form to
+Constructs a new message of the given message type
+Types include DBUS_MESSAGE_TYPE_METHOD_CALL , DBUS_MESSAGE_TYPE_SIGNAL , and so forth
+it is much more efficient to use dbus_message_iter_get_fixed_array_APIName to get the whole array in one shot , rather than individually walking over the array elements
+dbus_message_new_APIParam_1 is type of message
+Usually you want to use dbus_message_new_method_call_APIName , dbus_message_new_method_return_APIName , dbus_message_new_signal_APIName , or dbus_message_new_error_APIName instead
+dbus_message_new_APIName return new message or NULL if no memory
+Error replies are most common in response to method calls, but can be returned in reply to any message
+Creates a new message that is an error reply to another message
+The error name must be a valid error name according to the syntax given in the D-Bus specification
+dbus_message_new_error_APIParam_1 is the message we 're replying to
+dbus_message_new_error_APIParam_2 is the error name
+dbus_message_new_error_APIParam_3 is the error message string
+dbus_message_new_error_APIName return a new error message object, free with dbus_message_unref_APIName
+just use DBUS_ERROR_FAILED
+Creates a new message that is an error reply to another message , allowing you to use printf formatting
+See dbus_message_new_error_APIName for details - dbus_message_new_error_printf_APIName is the same aside from the printf formatting
+add _ DBUS_GNUC_PRINTF to this dbus_message_new_error_printf_APIParam_1 is the original message
+dbus_message_new_error_printf_APIParam_2 is the error name
+dbus_message_new_error_printf_APIName return a new error message
+you can recurse into the outermost array
+The main implication of this is that , but it will have no values , so you will not be able to recurse further
+dbus_message_new_error_printf_APIParam_3 is the error message format as with printf ... format string arguments
+Constructs a new message to invoke a dbus_message_new_method_call_APIParam_4 on a remote object
+The dbus_message_new_method_call_APIParam_2 and dbus_message_new_method_call_APIParam_4 names may not be NULL
+The dbus_message_new_method_call_APIParam_1 may be NULL in which case no dbus_message_new_method_call_APIParam_1 is set
+Destination , dbus_message_new_method_call_APIParam_2 , interface , and dbus_message_new_method_call_APIParam_4 name can not contain any invalid characters
+dbus_message_new_method_call_APIParam_1 is name that the message should be sent to or NULL
+Returns NULL
+dbus_message_new_method_call_APIParam_2 is object dbus_message_new_method_call_APIParam_2 the message should be sent to
+dbus_message_new_method_call_APIParam_3 is interface to invoke
+dbus_message_new_method_call_APIParam_4 is on , or NULL dbus_message_new_method_call_APIParam_4 method to invoke
+dbus_message_new_method_call_APIName return a new DBusMessage , free with dbus_message_unref_APIName
+this is appropriate
+Constructs a message that is a reply to a method call
+means
+The interface may be NULL , which
+dbus_message_new_method_return_APIParam_1 is the message being replied to
+dbus_message_new_method_return_APIName return a new DBusMessage , free with dbus_message_unref_APIName
+Constructs a new message representing a signal emission
+Returns NULL
+Path , interface , and signal dbus_message_new_signal_APIParam_3 must all be valid
+A signal is identified by its originating object dbus_message_new_signal_APIParam_1 , interface , and the dbus_message_new_signal_APIParam_3 of the signal
+dbus_message_new_signal_APIParam_1 is the dbus_message_new_signal_APIParam_1 to the object emitting the signal
+dbus_message_new_signal_APIParam_2 is the interface the signal is emitted from
+dbus_message_new_signal_APIParam_3 is dbus_message_new_signal_APIParam_3 of the signal
+dbus_message_new_signal_APIName return a new DBusMessage , free with dbus_message_unref_APIName
+Returns NULL
+Increments the reference count of a DBusMessage
+dbus_message_ref_APIParam_1 is the dbus_message_ref_APIParam_1
+dbus_message_ref_APIName return the dbus_message_ref_APIParam_1 See also dbus_message_unref
+On the protocol level this toggles DBUS_HEADER_FLAG_ALLOW_INTERACTIVE_AUTHORIZATION
+dbus_message_set_allow_interactive_authorization_APIParam_1 is the dbus_message_set_allow_interactive_authorization_APIParam_1
+For messages whose type is not DBUS_MESSAGE_TYPE_METHOD_CALL , this flag is meaningless and should not be set
+The flag is FALSE by default
+Sets a flag indicating that the caller of the method is prepared to wait for interactive authorization to take place before the actual method is processed
+that is , by default the other end is expected to make any authorization decisions non-interactively and promptly
+In case of failure , the reply will be an error
+Sets a flag indicating that an owner for the destination name will be automatically started before the dbus_message_set_auto_start_APIParam_1 is delivered
+The flag is set to TRUE by default , i.e
+auto starting is the default
+dbus_message_set_allow_interactive_authorization_APIParam_2 is TRUE
+authorization failed , but could have succeeded
+It may use the error DBUS_ERROR_INTERACTIVE_AUTHORIZATION_REQUIRED to signal that
+On the protocol level this toggles DBUS_HEADER_FLAG_NO_AUTO_START dbus_message_set_auto_start_APIParam_1 is the dbus_message_set_auto_start_APIParam_1
+Sets the container instance this dbus_message_set_container_instance_APIParam_1 was sent from
+dbus_message_set_container_instance_APIParam_1 is the dbus_message_set_container_instance_APIParam_1
+the dbus_message_set_auto_start_APIParam_1 is held until a name owner finishes starting up , or fails to start up
+dbus_message_set_container_instance_APIParam_2 is the path or NULL to unset
+dbus_message_set_container_instance_APIName return FALSE if not enough memory
+The path must contain only valid characters for an object path as defined in the D-Bus specification
+dbus_message_set_auto_start_APIParam_2 is TRUE
+The dbus_message_set_data_APIParam_2 number must have been allocated with dbus_message_allocate_data_slot_APIName
+dbus_message_set_data_APIParam_1 is the dbus_message_set_data_APIParam_1
+dbus_message_set_data_APIParam_2 is the dbus_message_set_data_APIParam_2 number
+dbus_message_set_data_APIParam_3 is the dbus_message_set_data_APIParam_3 to store
+dbus_message_set_data_APIParam_4 is finalizer function for the dbus_message_set_data_APIParam_3
+or when the dbus_message_set_data_APIParam_1 is finalized
+Stores a pointer on a DBusMessage , along with an optional function to be used for freeing the dbus_message_set_data_APIParam_3
+dbus_message_set_data_APIName return TRUE if there was enough memory to store the dbus_message_set_data_APIParam_3
+Sets the message dbus_message_set_destination_APIParam_2
+The dbus_message_set_destination_APIParam_2 name must contain only valid characters as defined in the D-Bus specification
+dbus_message_set_destination_APIParam_1 is the dbus_message_set_destination_APIParam_1
+dbus_message_set_destination_APIName return FALSE if not enough memory
+dbus_message_set_destination_APIParam_2 is the dbus_message_set_destination_APIParam_2 name or NULL to unset
+Sets the name of the error
+The name is fully-qualified
+dbus_message_set_error_name_APIParam_1 is the dbus_message_set_error_name_APIParam_1
+The error name must contain only valid characters as defined in the D-Bus specification
+dbus_message_set_error_name_APIParam_2 is the name or NULL to unset
+dbus_message_set_error_name_APIName return FALSE if not enough memory
+The dbus_message_set_destination_APIParam_2 is the name of another connection on the bus and may be either the unique name assigned by the bus to each connection , or a well-known name specified in advance
+Sets the interface this dbus_message_set_interface_APIParam_1 is being sent to or the interface a signal is being emitted from
+dbus_message_set_interface_APIParam_1 is the dbus_message_set_interface_APIParam_1
+The interface name must contain only valid characters as defined in the D-Bus specification
+dbus_message_set_interface_APIParam_2 is the interface or NULL to unset
+dbus_message_set_interface_APIName return FALSE if not enough memory
+Sets the interface dbus_message_set_member_APIParam_2 being invoked or emitted
+The dbus_message_set_member_APIParam_2 name must contain only valid characters as defined in the D-Bus specification
+dbus_message_set_member_APIParam_1 is the dbus_message_set_member_APIParam_1
+dbus_message_set_member_APIParam_2 is the dbus_message_set_member_APIParam_2 or NULL to unset
+dbus_message_set_member_APIName return FALSE if not enough memory
+On the protocol level this toggles DBUS_HEADER_FLAG_NO_REPLY_EXPECTED dbus_message_set_no_reply_APIParam_1 is the dbus_message_set_no_reply_APIParam_1
+The flag is FALSE by default , that is by default the other end is required to reply
+The path must contain only valid characters as defined in the D-Bus specification
+dbus_message_set_path_APIParam_1 is the dbus_message_set_path_APIParam_1
+a dbus_message_set_no_reply_APIParam_1 was received
+Normally you know
+there is no way to know
+Sets the object path this dbus_message_set_path_APIParam_1 is being sent to or the one a signal is being emitted from
+Sets a flag indicating that the dbus_message_set_no_reply_APIParam_1 does not want a reply
+if this flag is set, the other end of the connection may  optimize by not sending method return or error replies
+dbus_message_set_path_APIParam_2 is the path or NULL to unset
+dbus_message_set_path_APIName return FALSE if not enough memory
+dbus_message_set_no_reply_APIParam_2 is TRUE
+Sets the reply serial of a dbus_message_set_reply_serial_APIParam_1
+dbus_message_set_reply_serial_APIParam_1 is the dbus_message_set_reply_serial_APIParam_1
+dbus_message_set_reply_serial_APIParam_2 is the serial we 're replying to
+dbus_message_set_reply_serial_APIName return FALSE if not enough memory
+Sets the dbus_message_set_sender_APIParam_1 dbus_message_set_sender_APIParam_2
+The dbus_message_set_sender_APIParam_2 must be a valid bus name as defined in the D-Bus specification
+Usually you do not want to call this
+The dbus_message_set_sender_APIParam_1 bus daemon will call it to set the origin of each dbus_message_set_sender_APIParam_1
+dbus_message_set_sender_APIParam_1 is the dbus_message_set_sender_APIParam_1
+dbus_message_set_sender_APIParam_2 is the dbus_message_set_sender_APIParam_2 or NULL to unset
+dbus_message_set_sender_APIName return FALSE if not enough memory
+Sets the dbus_message_set_serial_APIParam_2 number of a dbus_message_set_serial_APIParam_1
+This can only be done once on a dbus_message_set_serial_APIParam_1
+dbus_message_set_serial_APIParam_1 is the dbus_message_set_serial_APIParam_1
+dbus_message_set_serial_APIParam_2 is the dbus_message_set_serial_APIParam_2
+daemon you should not need to set the dbus_message_set_sender_APIParam_2
+Utility function to convert a machine-readable string into a D-Bus message type
+Sets a DBusError based on the contents of the given dbus_set_error_from_message_APIParam_2
+The return value indicates
+dbus_set_error_from_message_APIParam_2 is the dbus_set_error_from_message_APIParam_2 to set it from
+DBusConnection will automatically set the dbus_message_set_serial_APIParam_2 to an appropriate value
+dbus_set_error_from_message_APIName return TRUE if the dbus_set_error_from_message_APIParam_2 had type DBUS_MESSAGE_TYPE_ERROR
+dbus_message_set_serial_APIName is only needed
+Decrements the reference count of a DBusMessage , freeing the dbus_message_unref_APIParam_1
+Returns the current type pointed to by the iterator
+The dbus_set_error_from_message_APIParam_1 is only set , as in DBUS_MESSAGE_TYPE_ERROR
+So you can check for an dbus_set_error_from_message_APIParam_1 reply and convert it to DBusError in one go
+dbus_set_error_from_message_APIParam_1 is the dbus_set_error_from_message_APIParam_1 to set
+If the iterator is pointing at a type code such as ', the iterator will be returned directly
+DBUS_TYPE_STRUCT , not ' -LRB- '
+dbus_signature_iter_get_current_type_APIParam_1 is pointer to an iterator
+dbus_signature_iter_get_current_type_APIName return current type (e.g
+Utility function to convert a D-Bus message dbus_message_type_to_string_APIParam_1 into a machine-readable string -LRB- not translated
+you should initialize a sub-iterator with dbus_signature_iter_recurse_APIName to parse the container type
+DBUS_TYPE_STRING , DBUS_TYPE_ARRAY
+dbus_signature_iter_get_element_type_APIParam_1 is pointer to an iterator
+Convenience function for returning the element type of an array
+dbus_signature_iter_get_element_type_APIName return current array element type
+dbus_signature_iter_get_element_type_APIName allows you to avoid initializing a sub-iterator and getting its current type
+the dbus_set_error_from_message_APIParam_1 dbus_set_error_from_message_APIParam_2 is set to the first argument
+The name of the dbus_set_error_from_message_APIParam_1 is set to the name of the dbus_set_error_from_message_APIParam_2 , and
+dbus_signature_iter_get_signature_APIParam_1 is pointer to an iterator
+Returns the signature of the single complete type starting at the given iterator
+If the iterator is pointing at one of the "i" just that "i" would be returned
+dbus_signature_iter_get_signature_APIName return current signature
+Undefined behavior results
+Should be freed with dbus_free_APIName
+Initializes a DBusSignatureIter for reading a type dbus_signature_iter_init_APIParam_2
+dbus_signature_iter_init_APIParam_1 is pointer to an iterator to initialize
+dbus_signature_iter_init_APIParam_2 is the type dbus_signature_iter_init_APIParam_2
+or NULL
+dbus_signature_iter_init_APIName is not safe to use on invalid signatures
+Skip to the next value on this `` level ''
+be sure to validate potentially invalid signatures with dbus_signature_validate before using this function
+the next field in a struct , the next value in an array
+Returns FALSE at the end of the current container
+dbus_signature_iter_next_APIParam_1 is the iterator
+dbus_signature_iter_next_APIName return FALSE if nothing more to read at or below this level
+if dbus_type_is_container_APIName returns FALSE for the result of dbus_signature_iter_get_current_type_APIName )
+Initialize a new iterator pointing to the first type in the current container
+dbus_signature_iter_recurse_APIParam_1 is the current interator
+dbus_signature_iter_recurse_APIParam_2 is an iterator to initialize pointing to the first child
+Check a type dbus_signature_validate_APIParam_1 for validity
+dbus_signature_validate_APIParam_1 is a potentially invalid type dbus_signature_validate_APIParam_1
+if the iterator is pointing at the start of "ii" , "" would be returned
+However, when the parser encounters a container type start character such as '(' for a structure, the corresponding type for the container will be returned, e.g
+dbus_signature_validate_APIParam_2 is dbus_signature_validate_APIParam_2 return
+dbus_signature_validate_APIName return TRUE if dbus_signature_validate_APIParam_1 is valid or FALSE if an dbus_signature_validate_APIParam_2 is set
+Check that a type dbus_signature_validate_single_APIParam_1 is both valid and contains exactly one complete type
+dbus_signature_validate_single_APIParam_1 is a potentially invalid type dbus_signature_validate_single_APIParam_1
+NULL can always be passed instead of a DBusError *
+Remember that
+The results are undefined if the current type is a non-container -LRB- i.e
+dbus_signature_validate_single_APIParam_2 is dbus_signature_validate_single_APIParam_2 return
+dbus_signature_validate_single_APIName return TRUE if dbus_signature_validate_single_APIParam_1 is valid and has exactly one complete type
+`` One complete type '' means a single basic type , array , struct , or dictionary
+DBUS_TYPE_INVALID is not a basic type
+So all numbers and strings are basic types and structs , arrays , and variants are not basic types
+The valid type-codes are defined by dbus-protocol.h and can be checked with dbus_type_is_valid_APIName
+dbus_type_is_basic_APIParam_1 is either a valid type-code or DBUS_TYPE_INVALID
+dbus_type_is_basic_APIName return TRUE if type is basic
+It is an error to pass an invalid type-code , other than DBUS_TYPE_INVALID , to this function
+A `` container type '' can contain basic types , or nested container types
+DBUS_TYPE_INVALID is not a container type
+It is an error to pass an invalid type-code , other than DBUS_TYPE_INVALID , to this function
+The valid type-codes are defined by dbus-protocol.h and can be checked with dbus_type_is_valid_APIName
+dbus_type_is_container_APIParam_1 is either a valid type-code or DBUS_TYPE_INVALID
+dbus_type_is_container_APIName return TRUE if type is a container
+A `` basic type '' is a somewhat arbitrary concept , but the intent is to include those types that are fully-specified by a single dbus_type_is_basic_APIParam_1 , with no additional type information or nested values
+dbus_type_is_fixed_APIName is useful to determine
+Some structs are fixed-size but struct is not considered a fixed type for purposes of this function
+It is an error to pass an invalid type-code , other than DBUS_TYPE_INVALID , to this function
+The valid type-codes are defined by dbus-protocol.h and can be checked with dbus_type_is_valid_APIName
+dbus_type_is_fixed_APIParam_1 is either a valid type-code or DBUS_TYPE_INVALID
+dbus_type_is_fixed_APIName return FALSE if the type can occupy different lengths
+More than one complete type would mean `` ii '' or two integers in sequence
+values of this type can change length
+Tells you whether
+dbus_type_is_valid_APIName is safe with untrusted data
+dbus_type_is_valid_APIParam_1 is a potential type-code
+DBUS_TYPE_INVALID surprisingly enough is not considered valid , and random unknown bytes are not either
+dbus_type_is_valid_APIName return TRUE if valid
+For this purpose , you assume that the first byte of the old and new value would be in the same location , so alignment padding is not a factor
+Return TRUE
+Allocates an integer ID to be used for storing application-specific data on any DBusServer
+The allocated ID may be used with dbus_server_set_data_APIName and dbus_server_get_data_APIName
+The slot must be initialized with -1
+The allocated slot is global , i.e
+all DBusServer objects will have a slot with the given integer ID reserved
+dbus_server_allocate_data_slot_APIName return FALSE on no memory
+dbus_server_allocate_data_slot_APIParam_1 is address of global variable storing the slot ID
+Releases the server address and stops listening for new clients
+Does not modify the server reference count
+dbus_server_disconnect_APIParam_1 is the dbus_server_disconnect_APIParam_1
+the refcount is incremented on that slot , rather than creating a new slot
+Deallocates a global ID for server data slots
+dbus_server_get_data_APIName and dbus_server_set_data_APIName may no longer be used with this slot
+dbus_server_free_data_slot_APIParam_1 is address of the slot to deallocate
+only the first call has an effect
+dbus_server_get_address_APIParam_1 is the dbus_server_get_address_APIParam_1
+dbus_server_get_address_APIName return the address or NULL if no memory
+Retrieves data previously set with dbus_server_set_data_APIName
+Returns the address of the dbus_server_get_address_APIParam_1 , as a newly-allocated string which must be freed by the caller
+The dbus_server_get_data_APIParam_2 must still be allocated
+dbus_server_get_data_APIParam_1 is the dbus_server_get_data_APIParam_1
+Existing data stored on existing DBusServer objects will be freed
+dbus_server_get_data_APIName return the data, or NULL if not found
+dbus_server_get_data_APIParam_2 is the dbus_server_get_data_APIParam_2 to get data from
+Returns the unique ID of the dbus_server_get_id_APIParam_1 , as a newly-allocated string which must be freed by the caller
+dbus_connection_open_APIName can re-use an existing connection with the same ID instead of opening a new connection
+This is an ID unique to each DBusServer
+dbus_server_get_id_APIParam_1 is the dbus_server_get_id_APIParam_1
+Remember that a DBusServer represents only one mode of connecting , so e.g
+This ID is normally used by clients to tell
+dbus_server_get_id_APIName return the id of the dbus_server_get_id_APIParam_1 or NULL if no memory
+The ID is not a UUID in the sense of RFC4122
+a bus daemon can listen on multiple addresses which will mean it has multiple DBusServer each with their own ID
+the details are explained in the D-Bus specification
+dbus_server_get_is_connected_APIParam_1 is the dbus_server_get_is_connected_APIParam_1
+Listens for new connections on the given dbus_server_listen_APIParam_1
+Otherwise returns a new DBusServer
+Returns TRUE
+dbus_server_set_new_connection_function_APIName , dbus_server_set_watch_functions_APIName , and dbus_server_set_timeout_functions_APIName should be called immediately to render the server fully functional
+To free the server , applications must call first dbus_server_disconnect_APIName and dbus_server_unref_APIName
+dbus_server_listen_APIParam_1 is the dbus_server_listen_APIParam_1 of this server
+Returns NULL and sets dbus_server_listen_APIParam_2
+dbus_server_listen_APIParam_2 is location to store reason for failure
+dbus_server_listen_APIName return a new DBusServer , or NULL on failure
+Increments the reference count of a DBusServer
+dbus_server_ref_APIParam_1 is the dbus_server_ref_APIParam_1
+dbus_server_ref_APIName return the dbus_server_ref_APIParam_1
+that works
+dbus_server_set_auth_mechanisms_APIName only affects connections created after it is called
+Pass NULL instead of an array to use all available dbus_server_set_auth_mechanisms_APIParam_2
+Sets the authentication dbus_server_set_auth_mechanisms_APIParam_2 that this dbus_server_set_auth_mechanisms_APIParam_1 offers to clients , as a NULL - terminated array of mechanism names
+The D-Bus specification describes some of the supported dbus_server_set_auth_mechanisms_APIParam_2
+dbus_server_set_auth_mechanisms_APIParam_1 is the dbus_server_set_auth_mechanisms_APIParam_1
+dbus_server_set_auth_mechanisms_APIParam_2 is NULL - terminated array of dbus_server_set_auth_mechanisms_APIParam_2
+dbus_server_set_auth_mechanisms_APIName return FALSE if no memory
+The dbus_server_set_data_APIParam_2 number must have been allocated with dbus_server_allocate_data_slot_APIName
+dbus_server_set_data_APIParam_1 is the dbus_server_set_data_APIParam_1
+dbus_server_set_data_APIParam_2 is the dbus_server_set_data_APIParam_2 number
+dbus_server_set_data_APIParam_3 is the dbus_server_set_data_APIParam_3 to store
+dbus_server_set_data_APIParam_4 is finalizer function for the dbus_server_set_data_APIParam_3
+dbus_server_set_data_APIName return TRUE if there was enough memory to store the dbus_server_set_data_APIParam_3
+Sets a dbus_server_set_new_connection_function_APIParam_2 to be used for handling new connections
+The given dbus_server_set_new_connection_function_APIParam_2 is passed each new connection as the connection is created
+Otherwise , the connection will be unreferenced and closed
+or when the dbus_server_set_data_APIParam_1 is finalized
+Stores a pointer on a DBusServer , along with an optional function to be used for freeing the dbus_server_set_data_APIParam_3
+dbus_server_set_new_connection_function_APIParam_1 is the dbus_server_set_new_connection_function_APIParam_1
+the connection will stay alive
+libdbus does not own this connection once the new connection dbus_server_set_new_connection_function_APIParam_2 takes a reference
+dbus_server_set_new_connection_function_APIParam_2 is a dbus_server_set_new_connection_function_APIParam_2 to handle new connections
+is considered good form
+The new connection dbus_server_set_new_connection_function_APIParam_2 may also close the connection itself , which
+The connection here is private in the sense of dbus_connection_open_private_APIName
+dbus_server_set_new_connection_function_APIParam_3 is dbus_server_set_new_connection_function_APIParam_3 to pass to the new connection handler
+dbus_server_set_new_connection_function_APIParam_4 is dbus_server_set_new_connection_function_APIParam_2 to free the dbus_server_set_new_connection_function_APIParam_3
+Sets the timeout functions for the dbus_server_set_timeout_functions_APIParam_1
+These functions are responsible for making the application main loop aware of timeouts
+dbus_server_set_timeout_functions_APIName behaves exactly like dbus_connection_set_timeout_functions_APIName
+see the documentation for that routine
+dbus_server_set_timeout_functions_APIParam_1 is the dbus_server_set_timeout_functions_APIParam_1
+dbus_server_set_timeout_functions_APIParam_2 is function to add a timeout
+dbus_server_set_timeout_functions_APIParam_3 is function to remove a timeout
+dbus_server_set_timeout_functions_APIParam_5 is dbus_server_set_timeout_functions_APIParam_5 to pass to dbus_server_set_timeout_functions_APIParam_2 and dbus_server_set_timeout_functions_APIParam_3
+dbus_server_set_timeout_functions_APIName return FALSE on failure (no memory
+dbus_server_set_timeout_functions_APIParam_6 is function to be called to free the dbus_server_set_timeout_functions_APIParam_5
+Sets the watch functions for the dbus_server_set_watch_functions_APIParam_1
+dbus_server_set_watch_functions_APIName behaves exactly like dbus_connection_set_watch_functions_APIName
+dbus_server_set_timeout_functions_APIParam_4 is function to notify
+see the documentation for that routine
+dbus_server_set_watch_functions_APIParam_1 is the dbus_server_set_watch_functions_APIParam_1
+dbus_server_set_watch_functions_APIParam_2 is function to begin monitoring a new descriptor
+These functions are responsible for making the application main loop aware of file descriptors that need to be monitored for events
+dbus_server_set_watch_functions_APIParam_3 is function to stop monitoring a descriptor
+dbus_server_set_watch_functions_APIParam_5 is dbus_server_set_watch_functions_APIParam_5 to pass to dbus_server_set_watch_functions_APIParam_2 and dbus_server_set_watch_functions_APIParam_3
+dbus_server_set_watch_functions_APIName return FALSE on failure (no memory
+dbus_server_set_watch_functions_APIParam_6 is function to be called to free the dbus_server_set_watch_functions_APIParam_5
+Decrements the reference count of a DBusServer
+dbus_server_set_watch_functions_APIParam_4 is function to notify
+The dbus_server_unref_APIParam_1 must be disconnected before the refcount reaches zero
+dbus_server_unref_APIParam_1 is the dbus_server_unref_APIParam_1
+Check a bus dbus_validate_bus_name_APIParam_1 for validity
+dbus_validate_bus_name_APIParam_2 is dbus_validate_bus_name_APIParam_2 return
+dbus_validate_bus_name_APIParam_1 is a potentially invalid bus dbus_validate_bus_name_APIParam_1 , which must not be NULL
+Finalizes the dbus_server_unref_APIParam_1
+dbus_validate_bus_name_APIName return TRUE if dbus_validate_bus_name_APIParam_1 is valid
+Check an dbus_validate_error_name_APIParam_2 dbus_validate_error_name_APIParam_1 for validity
+dbus_validate_error_name_APIParam_1 is a potentially invalid
+dbus_validate_error_name_APIParam_2 is dbus_validate_error_name_APIParam_1, which must not be NULL dbus_validate_error_name_APIParam_2 error return
+dbus_validate_error_name_APIName return TRUE if dbus_validate_error_name_APIParam_1 is valid
+Check an interface dbus_validate_interface_APIParam_1 for validity
+NULL can always be passed instead of a DBusError *
+Remember that
+dbus_validate_interface_APIParam_2 is dbus_validate_interface_APIParam_2 return
+dbus_validate_interface_APIParam_1 is a potentially invalid interface dbus_validate_interface_APIParam_1 , which must not be NULL
+dbus_validate_interface_APIName return TRUE if dbus_validate_interface_APIParam_1 is valid
+NULL can always be passed instead of a DBusError *
+Remember that
+dbus_validate_bus_name_APIName is suitable for validating C strings , but is not suitable for validating untrusted data from a network unless the string length is also checked
+Check a member dbus_validate_member_APIParam_1 for validity
+dbus_validate_member_APIParam_1 is a potentially invalid member dbus_validate_member_APIParam_1 , which must not be NULL
+dbus_validate_member_APIParam_2 is dbus_validate_member_APIParam_2 return
+dbus_validate_member_APIName return TRUE if dbus_validate_member_APIParam_1 is valid
+dbus_validate_error_name_APIName is suitable for validating C strings , but is not suitable for validating untrusted data from a network unless the string length is also checked
+Check an object dbus_validate_path_APIParam_1 for validity
+NULL can always be passed instead of a DBusError *
+Remember that
+dbus_validate_path_APIParam_2 is dbus_validate_path_APIParam_2 return
+dbus_validate_path_APIParam_1 is a potentially invalid object dbus_validate_path_APIParam_1 , which must not be NULL
+dbus_validate_path_APIName return TRUE if dbus_validate_path_APIParam_1 is valid
+dbus_validate_interface_APIName is suitable for validating C strings , but is not suitable for validating untrusted data from a network unless the string length is also checked
+NULL can always be passed instead of a DBusError *
+Remember that
+Check a string for validity
+Strings on D-Bus must be valid UTF-8
+dbus_validate_utf8_APIParam_2 is dbus_validate_utf8_APIParam_2 return
+dbus_validate_utf8_APIParam_1 is a string to be checked , which must not be NULL
+dbus_validate_utf8_APIName return TRUE if dbus_validate_utf8_APIParam_1 is valid UTF-8
+NULL can always be passed instead of a DBusError *
+Remember that
+dbus_validate_member_APIName is suitable for validating C strings , but is not suitable for validating untrusted data from a network unless the string length is also checked
+Adds a message filter
+Filters are run in the order that they were added
+Filters are handlers that are run on all incoming messages , prior to the objects registered with dbus_connection_register_object_path_APIName
+This is probably a feature , as filters could create arbitrary reentrancy
+dbus_connection_add_filter_APIParam_1 is the dbus_connection_add_filter_APIParam_1
+dbus_validate_path_APIName is suitable for validating C strings , but is not suitable for validating untrusted data from a network unless the string length is also checked
+NULL can always be passed instead of a DBusError *
+Remember that
+The same handler can be added as a filter more than once , in which case it will be run more than once
+Filters added
+dbus_connection_add_filter_APIParam_2 is dbus_connection_add_filter_APIParam_2 to handle messages
+dbus_connection_add_filter_APIParam_3 is user data to pass to the dbus_connection_add_filter_APIParam_2
+dbus_connection_add_filter_APIParam_4 is dbus_connection_add_filter_APIParam_2 to use for freeing user data
+dbus_connection_add_filter_APIName return TRUE on success, FALSE if not enough memory
+But kind of sucks
+we do not run filters on messages
+Allocates an integer ID to be used for storing application-specific data on any DBusConnection
+dbus_validate_utf8_APIName is suitable for validating C strings , but is not suitable for validating untrusted data from a network unless the string length is also checked
+The allocated ID may be used with dbus_connection_set_data_APIName and dbus_connection_get_data_APIName
+The allocated slot is global , i.e
+The passed-in slot must be initialized to -1 , and is filled in with the slot ID
+all DBusConnection objects will have a slot with the given integer ID reserved
+dbus_connection_allocate_data_slot_APIName return FALSE on failure (no memory
+dbus_connection_allocate_data_slot_APIParam_1 is address of a global variable storing the slot
+If the queue is empty, returns NULL
+Returns the first-received message from the incoming message queue , leaving it in the queue
+The caller does not own a reference to dbus_connection_borrow_message_APIParam_0, and must either return it using dbus_connection_return_message_APIName or keep it after calling dbus_connection_steal_borrowed_message_APIName
+it is assumed to be already allocated
+and its refcount is incremented
+No one can get at the message while its borrowed, so return it as quickly as possible and do not keep a reference to it after returning it
+dbus_connection_borrow_message_APIParam_1 is the dbus_connection_borrow_message_APIParam_1
+dbus_connection_borrow_message_APIName return next message in the incoming queue
+make a copy of it
+dbus_connection_borrow_message_APIName will block
+This will always return TRUE for all types, with the exception of DBUS_TYPE_UNIX_FD
+Tests whether a certain dbus_connection_can_send_type_APIParam_2 can be send via the dbus_connection_can_send_type_APIParam_1
+The function will return TRUE for DBUS_TYPE_UNIX_FD only on systems that know Unix file descriptors and can send them via the chosen transport and when the remote side supports this
+dbus_connection_can_send_type_APIParam_1 is the dbus_connection_can_send_type_APIParam_1
+dbus_connection_can_send_type_APIName can be used to do runtime checking for types that might be unknown to the specific D-Bus client implementation version , i.e
+dbus_connection_dispatch_APIName will block
+it will return FALSE for all types this implementation does not know, including invalid or reserved types
+only one piece of code can be playing with the incoming queue at a time
+dbus_connection_can_send_type_APIParam_2 is the dbus_connection_can_send_type_APIParam_2 to check
+dbus_connection_can_send_type_APIName return TRUE if the dbus_connection_can_send_type_APIParam_2 may be send via the dbus_connection_can_send_type_APIParam_1
+Closes a private dbus_connection_close_APIParam_1 , so no further data can be sent or received
+This disconnects the transport underlying the dbus_connection_close_APIParam_1
+dbus_connection_close_APIName does not affect the connection reference count
+it is safe to close a dbus_connection_close_APIParam_1 more than once
+all calls after the first do nothing
+Attempts to send messages after closing a dbus_connection_close_APIParam_1 are safe , but will result in error replies generated locally in libdbus
+it is impossible to `` reopen '' a dbus_connection_close_APIParam_1 , a new dbus_connection_close_APIParam_1 must be created
+You must close a dbus_connection_close_APIParam_1 prior to releasing the last reference to the dbus_connection_close_APIParam_1
+You may not close a shared dbus_connection_close_APIParam_1
+dbus_connection_close_APIName may result in a call to the DBusDispatchStatusFunction set with dbus_connection_set_dispatch_status_function_APIName , as the disconnect message it generates needs to be dispatched
+Connections created with dbus_connection_open_APIName or dbus_bus_get_APIName are shared
+it will close itself
+These connections are owned by libdbus , and applications should only unref them , never close them
+Applications can know it is safe to unref these connections as the dbus_connection_close_APIParam_1 is open
+Connections created with dbus_connection_open_private_APIName or dbus_bus_get_private_APIName are not kept track of or referenced by libdbus
+dbus_connection_close_APIParam_1 is the private dbus_connection_close_APIParam_1 to close
+Processes any incoming data
+the results are undefined
+it is a bug in your program and libdbus will try to print a warning
+Reading usually happens in dbus_watch_handle_APIName or dbus_connection_read_write_APIName
+Processing has three steps
+Thus , either the dbus_connection_close_APIParam_1 is closed and it is OK to drop the last reference , or the dbus_connection_close_APIParam_1 is open and the app knows it does not have the last reference
+Second , any filters registered with dbus_connection_add_filter_APIName are run
+The incoming data buffer is filled
+If any filter returns DBUS_HANDLER_RESULT_HANDLED processing stops after that filter
+First , any method replies are passed to DBusPendingCall or dbus_connection_send_with_reply_and_block_APIName
+The creator of these connections is responsible for calling dbus_connection_close_APIName prior to releasing the last reference
+Be careful about calling dbus_connection_dispatch_APIName from inside a message handler , i.e
+dbus_connection_dispatch_APIName removes one message from the queue and processes it
+A single call to dbus_connection_dispatch_APIName will process at most one message
+calling dbus_connection_dispatch_APIName recursively
+it will not clear the entire message queue
+it is parsed , which may or may not result in adding messages to the incoming queue
+some FIXME in here about handling DBUS_HANDLER_RESULT_NEED_MEMORY dbus_connection_dispatch_APIParam_1 is the dbus_connection_dispatch_APIParam_1
+dbus_connection_dispatch_APIName dispatch status , see dbus_connection_get_dispatch_status_APIName
+Blocks until the outgoing message queue is empty
+dbus_connection_flush_APIParam_1 is the dbus_connection_flush_APIParam_1
+Third , path handlers added with dbus_connection_register_object_path_APIName or dbus_connection_register_fallback_APIName
+Deallocates a global ID for connection data slots
+dbus_connection_get_data_APIName and dbus_connection_set_data_APIName may no longer be used with this slot
+Frees dbus_connection_free_preallocated_send_APIParam_2 message-sending resources from dbus_connection_preallocate_send_APIName
+this will not deadlock
+however , it can certainly confuse your application
+dbus_connection_free_preallocated_send_APIParam_1 is the dbus_connection_free_preallocated_send_APIParam_1
+dbus_connection_free_preallocated_send_APIParam_2 is the resources
+Returns TRUE if the structure pointerbe returned by dbus_connection_get_adt_audit_session_data_APIName
+Always returns FALSE prior to authenticating the dbus_connection_get_adt_audit_session_data_APIParam_1
+Existing data stored on existing DBusConnection objects will be freed
+it is set to -1
+dbus_connection_get_adt_audit_session_data_APIParam_1 is the dbus_connection_get_adt_audit_session_data_APIParam_1
+dbus_connection_get_adt_audit_session_data_APIParam_2 is return location for audit dbus_connection_get_adt_audit_session_data_APIParam_2
+Should only be called
+dbus_connection_get_adt_audit_session_data_APIParam_3 is return location for length of audit dbus_connection_get_adt_audit_session_data_APIParam_2
+dbus_connection_get_adt_audit_session_data_APIName return TRUE if audit dbus_connection_get_adt_audit_session_data_APIParam_2 is filled in with a valid ucred pointer
+Gets the ADT audit dbus_connection_get_adt_audit_session_data_APIParam_2 of the dbus_connection_get_adt_audit_session_data_APIParam_1
+Retrieves data previously set with dbus_connection_set_data_APIName
+The dbus_connection_get_data_APIParam_2 must still be allocated
+dbus_connection_get_data_APIParam_1 is the dbus_connection_get_data_APIParam_1
+dbus_connection_get_data_APIParam_2 is the dbus_connection_get_data_APIParam_2 to get data from
+dbus_connection_get_data_APIName return the data, or NULL if not found
+Note dbus_connection_get_data_APIName does not take the main thread lock on DBusConnection , which allows it to be used from inside watch and timeout functions
+Gets the current state of the incoming message queue
+DBUS_DISPATCH_DATA_REMAINS indicates that the message queue may contain messages
+DBUS_DISPATCH_COMPLETE indicates that the incoming queue is empty
+To process the incoming message queue , use dbus_connection_dispatch_APIName or dbus_connection_pop_message_APIName
+DBUS_DISPATCH_NEED_MEMORY indicates that there could be data , but we can not know for sure without more memory
+dbus_connection_get_dispatch_status_APIParam_1 is the dbus_connection_get_dispatch_status_APIParam_1
+dbus_connection_get_dispatch_status_APIName return current dispatch status
+Thus , it is possible to see a status of DBUS_DISPATCH_DATA_REMAINS but not have a message yet
+Note , DBUS_DISPATCH_DATA_REMAINS really means that either we have messages in the queue , or we have raw bytes buffered up that need to be parsed
+this happens on initial dbus_connection_get_dispatch_status_APIParam_1
+you need to know there a reference held on the dbus_connection_get_data_APIParam_1
+A side effect of this is that , or the dbus_connection_get_data_APIParam_1 could be finalized during dbus_connection_get_data_APIName
+they may not add up to an entire message
+Gets whether the dbus_connection_get_is_anonymous_APIParam_1 is not authenticated as a specific user
+If it is authenticated as a specific user, this returns FALSE
+If the dbus_connection_get_is_anonymous_APIParam_1 is not authenticated, dbus_connection_get_is_anonymous_APIName returns TRUE , and if it is authenticated but as an anonymous user, it returns TRUE
+only allow the ANONYMOUS mechanism -RRB-
+dbus_connection_get_is_anonymous_APIParam_1 is the dbus_connection_get_is_anonymous_APIParam_1
+dbus_connection_get_is_anonymous_APIName return TRUE if not authenticated or authenticated as anonymous
+Gets whether the dbus_connection_get_is_authenticated_APIParam_1 was authenticated
+dbus_connection_get_is_authenticated_APIParam_1 is the dbus_connection_get_is_authenticated_APIParam_1
+dbus_connection_get_is_authenticated_APIName return TRUE if the dbus_connection_get_is_authenticated_APIParam_1 was ever authenticated
+Gets whether the dbus_connection_get_is_connected_APIParam_1 is currently open
+you can use dbus_connection_get_unix_user_APIName and dbus_connection_get_windows_user_APIName to see who it is authorized as
+There are not separate states for `` closed '' and `` disconnected , '' the two terms are synonymous
+dbus_connection_get_is_connected_APIName should really be called get_is_open_APIName but for historical reasons is not
+dbus_connection_get_is_connected_APIParam_1 is the dbus_connection_get_is_connected_APIParam_1
+dbus_connection_get_is_connected_APIName return TRUE if the dbus_connection_get_is_connected_APIParam_1 is still alive
+Gets the value set by dbus_connection_set_max_message_size_APIName
+dbus_connection_get_max_message_size_APIParam_1 is the dbus_connection_get_max_message_size_APIParam_1
+dbus_connection_get_max_message_size_APIName return the max size of a single message
+A dbus_connection_get_is_connected_APIParam_1 may become disconnected
+a dbus_connection_get_is_connected_APIParam_1 may also be disconnected with dbus_connection_close_APIName
+Gets the value set by dbus_connection_set_max_message_unix_fds_APIName
+dbus_connection_get_max_message_unix_fds_APIParam_1 is the dbus_connection_get_max_message_unix_fds_APIParam_1
+dbus_connection_get_max_message_unix_fds_APIName return the max numer of unix fds of a single message
+Gets the value set by dbus_connection_set_max_received_size_APIName
+dbus_connection_get_max_received_size_APIParam_1 is the dbus_connection_get_max_received_size_APIParam_1
+dbus_connection_get_max_received_size_APIName return the max size of all live messages
+Gets the value set by dbus_connection_set_max_received_unix_fds_APIName
+dbus_connection_get_max_received_unix_fds_APIParam_1 is the dbus_connection_get_max_received_unix_fds_APIParam_1
+dbus_connection_get_max_received_unix_fds_APIName return the max unix fds of all live messages
+Gets the user data passed to dbus_connection_register_object_path_APIName or dbus_connection_register_fallback_APIName
+dbus_connection_get_object_path_data_APIParam_1 is the dbus_connection_get_object_path_data_APIParam_1
+dbus_connection_get_object_path_data_APIParam_2 is the dbus_connection_get_object_path_data_APIParam_2 you registered with
+dbus_connection_get_object_path_data_APIParam_3 is location to store the user data , or NULL
+dbus_connection_get_object_path_data_APIName return FALSE if not enough memory
+dbus_connection_get_outgoing_size_APIParam_1 is the dbus_connection_get_outgoing_size_APIParam_1
+Gets the approximate size in bytes of all messages in the outgoing message queue
+the data is filled in with NULL
+dbus_connection_get_outgoing_size_APIName return the number of bytes that have been queued up but not sent
+dbus_connection_get_outgoing_unix_fds_APIParam_1 is the dbus_connection_get_outgoing_unix_fds_APIParam_1
+dbus_connection_get_outgoing_unix_fds_APIName return the number of unix fds that have been queued up but not sent
+Gets the approximate number of uni fds of all messages in the outgoing message queue
+The only way to be sure the server ID is available is to wait for authentication to complete
+In general , each mode of connecting to a given server will have its own ID
+If the dbus_connection_get_server_id_APIParam_1 is on the server side, this will always return NULL - use dbus_server_get_id_APIName to get the ID of your own server, if you are the server side
+Gets the ID of the server address we are authenticated to
+You can also get a machine ID
+see dbus_try_get_local_machine_id_APIName to get the machine you are on
+dbus_connection_get_server_id_APIParam_1 is the dbus_connection_get_server_id_APIParam_1
+The D-Bus specification describes the server ID and other IDs in a bit more detail
+dbus_connection_get_server_id_APIName return the server ID or NULL if no memory or the dbus_connection_get_server_id_APIParam_1 is server-side
+look at dbus_bus_get_id_APIName instead
+There is not a convenience wrapper , but you can invoke org.freedesktop.DBus.Peer.GetMachineId on any peer to get the machine ID on the other end
+The size is approximate in that you should not use it to decide how many bytes to read off the network or anything of that nature , as optimizations may choose to tell small white lies to avoid performance overhead
+Not all connections will have a socket
+the ID may be available if it was included in the server address , but may not be available
+DO NOT read or write to the file descriptor , or try to select_APIName on it
+use DBusWatch for main loop integration
+So for adding descriptors to the main loop , use dbus_watch_get_socket_APIName and so forth
+dbus_connection_get_socket_APIName always returns specifically a socket file descriptor
+dbus_connection_get_socket_APIParam_1 is the dbus_connection_get_socket_APIParam_1
+If the dbus_connection_get_socket_APIParam_1 is not socket-based , dbus_connection_get_socket_APIName will return FALSE
+Gets the underlying Windows or UNIX socket file descriptor of the dbus_connection_get_socket_APIParam_1
+So , , each of those modalities will have its own server ID
+dbus_connection_get_socket_APIParam_2 is return location for the file descriptor
+dbus_connection_get_socket_APIName return TRUE if dbus_connection_get_socket_APIParam_2 is successfully obtained
+This can be used for SELinux access control checks with getpeercon_APIName
+Not all connections will have a file descriptor
+DO NOT read or write to the file descriptor , or try to select_APIName on it
+use DBusWatch for main loop integration
+So for adding descriptors to the main loop , use dbus_watch_get_unix_fd_APIName and so forth
+dbus_connection_get_unix_fd_APIName always fails on Windows
+Get the UNIX file descriptor of the dbus_connection_get_unix_fd_APIParam_1
+Right now dbus_connection_get_unix_fd_APIParam_0 is always a socket , but that is not guaranteed
+dbus_connection_get_unix_fd_APIParam_1 is the dbus_connection_get_unix_fd_APIParam_1
+dbus_connection_get_unix_fd_APIParam_2 is return location for the file descriptor
+dbus_connection_get_unix_fd_APIName return TRUE if dbus_connection_get_unix_fd_APIParam_2 is successfully obtained
+Always returns FALSE prior to authenticating the dbus_connection_get_unix_process_id_APIParam_1
+you can also use dbus_connection_get_socket_APIName , which will work on Windows too
+dbus_connection_get_unix_process_id_APIParam_1 is the dbus_connection_get_unix_process_id_APIParam_1
+dbus_connection_get_unix_process_id_APIParam_2 is return location for the process ID
+dbus_connection_get_unix_process_id_APIName return TRUE if uid is filled in with a valid process ID
+Gets the process ID of the dbus_connection_get_unix_process_id_APIParam_1
+Returns TRUE
+Always returns FALSE prior to authenticating the dbus_connection_get_unix_user_APIParam_1
+Always returns FALSE on non-UNIX platforms for now
+dbus_connection_get_unix_user_APIParam_0 is the UID the dbus_connection_get_unix_user_APIParam_1 authenticated as
+Gets the UNIX user ID of the dbus_connection_get_unix_user_APIParam_1
+Returns TRUE
+The message bus is a server and the apps connecting to the bus are clients
+The UID is only read by servers from clients
+dbus_connection_get_unix_user_APIParam_1 is the dbus_connection_get_unix_user_APIParam_1
+clients can not usually get the UID of servers
+dbus_connection_get_unix_user_APIParam_2 is return location for the user ID
+dbus_connection_get_unix_user_APIName return TRUE if dbus_connection_get_unix_user_APIParam_2 is filled in with a valid user ID
+though
+You can ask the bus to tell you the UID of another dbus_connection_get_unix_user_APIParam_1 like
+this is done with dbus_bus_get_unix_user_APIName
+Always returns FALSE prior to authenticating the dbus_connection_get_windows_user_APIParam_1
+Always returns FALSE on non-Windows platforms for now
+dbus_connection_get_windows_user_APIParam_0 is the user the dbus_connection_get_windows_user_APIParam_1 authenticated as
+dbus_connection_get_windows_user_APIParam_0 has to be freed with dbus_free_APIName
+Gets the Windows user SID of the dbus_connection_get_windows_user_APIParam_1
+Returns TRUE
+The message bus is a server and the apps connecting to the bus are clients
+The user is only read by servers from clients
+dbus_connection_get_windows_user_APIParam_1 is the dbus_connection_get_windows_user_APIParam_1
+clients can not usually get the user of servers
+dbus_connection_get_windows_user_APIParam_2 is return location for an allocated copy of the user ID, or NULL if no memory
+But this has to be implemented in bus/driver.c and dbus/dbus-bus.c , and is pointless anyway
+Checks whether there are messages in the outgoing message queue
+dbus_connection_has_messages_to_send_APIParam_1 is the dbus_connection_has_messages_to_send_APIParam_1
+We would like to be able to say `` You can ask the bus to tell you the user of another dbus_connection_get_windows_user_APIParam_1 like
+dbus_connection_has_messages_to_send_APIName return TRUE if the outgoing queue is non-empty
+this is done with dbus_bus_get_windows_user_APIName . ''
+Use dbus_connection_flush_APIName to block until all outgoing messages have been written to the underlying transport
+The return value indicates
+if it is available but we do not have the memory to copy it , the return value is TRUE and NULL is given as the SID
+dbus_connection_list_registered_APIParam_0 should be freed with dbus_free_string_array_APIName
+Lists the registered fallback handlers and object path handlers at the given dbus_connection_list_registered_APIParam_2
+dbus_connection_list_registered_APIParam_1 is the dbus_connection_list_registered_APIParam_1
+dbus_connection_list_registered_APIParam_3 is returns NULL -terminated array of children
+dbus_connection_list_registered_APIParam_2 is the path to list the child handlers of
+dbus_connection_list_registered_APIName return FALSE if no memory to allocate the child entries
+Gets a connection to a remote dbus_connection_open_APIParam_1
+dbus_connection_get_windows_user_APIName return TRUE if user is available (returned value may be NULL anyway if no memory
+If a connection to the given dbus_connection_open_APIParam_1 already exists, returns the existing connection with its reference count incremented
+Otherwise, returns a new connection and saves the new connection for possible re-use if a future call to dbus_connection_open_APIName asks to connect to the same server
+Use dbus_connection_open_private_APIName to get a dedicated connection not shared with other callers of dbus_connection_open_APIName
+If the open fails, the function returns NULL , and provides a reason for the failure in the dbus_connection_open_APIParam_2 parameter
+no user of the connection may call dbus_connection_close_APIName
+dbus_connection_open_APIParam_1 is the dbus_connection_open_APIParam_1
+dbus_connection_open_APIParam_2 is dbus_connection_open_APIParam_1 where an dbus_connection_open_APIParam_2 can be returned
+dbus_connection_open_APIName return new connection, or NULL on failure
+Note Prefer dbus_connection_open_APIName to dbus_connection_open_private_APIName unless you have good reason
+Pass NULL for the dbus_connection_open_APIParam_2 parameter
+Opens a new , dedicated connection to a remote dbus_connection_open_private_APIParam_1
+connections are expensive enough that it is wasteful to create lots of connections to the same server
+However , you should call dbus_connection_unref_APIName
+Unlike dbus_connection_open_APIName , always creates a new connection
+This connection will not be saved or recycled by libdbus
+If the open fails, the function returns NULL , and provides a reason for the failure in the dbus_connection_open_private_APIParam_2 parameter
+dbus_connection_open_private_APIParam_1 is the dbus_connection_open_private_APIParam_1
+dbus_connection_open_private_APIParam_2 is dbus_connection_open_private_APIParam_1 where an dbus_connection_open_private_APIParam_2 can be returned
+dbus_connection_open_private_APIName return new connection, or NULL on failure
+Pass NULL for the dbus_connection_open_private_APIParam_2 parameter
+Note Prefer dbus_connection_open_APIName to dbus_connection_open_private_APIName unless you have good reason
+The caller owns a reference to dbus_connection_pop_message_APIParam_0
+connections are expensive enough that it is wasteful to create lots of connections to the same server
+If the queue is empty, returns NULL
+you must dbus_connection_close_APIName to disconnect it , and dbus_connection_unref_APIName to free the connection object
+Returns the first-received message from the incoming message queue , removing it from the queue
+dbus_connection_pop_message_APIName bypasses any message handlers that are registered , and so using it is usually wrong
+Instead , let the main loop invoke dbus_connection_dispatch_APIName
+dbus_connection_pop_message_APIParam_1 is the dbus_connection_pop_message_APIParam_1
+dbus_connection_pop_message_APIName return next message in the incoming queue
+Popping messages manually is only useful in very simple programs that do not share a DBusConnection with any libraries or other modules
+There is a lock that covers all ways of accessing the incoming message queue , so dbus_connection_dispatch_APIName , dbus_connection_pop_message_APIName , dbus_connection_borrow_message_APIName , etc
+will all block
+dbus_connection_preallocate_send_APIParam_1 is the dbus_connection_preallocate_send_APIParam_1 we 're preallocating for
+Preallocates resources needed to send a message , allowing the message to be sent without the possibility of memory allocation failure
+dbus_connection_preallocate_send_APIName return the preallocated resources, or NULL
+Allows apps to create a future guarantee that they can send a message regardless of memory shortages
+If the dbus_connection_read_write_APIParam_1 is closed, the function returns FALSE
+The return value indicates  , i.e
+whether the dbus_connection_read_write_APIParam_1 is connected
+dbus_connection_read_write_APIName is intended for use with applications that do not want to write a main loop and deal with DBusWatch and DBusTimeout
+As long as the dbus_connection_read_write_APIParam_1 is open, dbus_connection_read_write_APIName will block until it can read or write, read or write, return TRUE
+dbus_connection_read_write_APIParam_1 is the dbus_connection_read_write_APIParam_1
+Note that even after disconnection , messages may remain in the incoming queue that need to be processed
+dbus_connection_read_write_dispatch_APIName dispatches incoming messages for you
+with dbus_connection_read_write_APIName you have to arrange to drain the incoming queue yourself
+dbus_connection_read_write_APIName return TRUE if still connected
+dbus_connection_read_write_APIParam_2 is max time to block or -1 for infinite
+If there are messages to dispatch, dbus_connection_read_write_dispatch_APIName will dbus_connection_dispatch_APIName once, and return
+dbus_connection_read_write_dispatch_APIName is intended for use with applications that do not want to write a main loop and deal with DBusWatch and DBusTimeout
+An example usage would be
+If there are no messages to dispatch, dbus_connection_read_write_dispatch_APIName will block until it can read or write, read or write, return
+The return value indicates
+In this usage you would normally have set up a filter function to look at each message as it is dispatched
+The way to think of dbus_connection_read_write_dispatch_APIName is that it either makes some sort of progress , or it blocks
+The loop terminates
+dbus_connection_read_write_dispatch_APIParam_1 is the dbus_connection_read_write_dispatch_APIParam_1
+This is important
+dbus_connection_read_write_dispatch_APIParam_2 is max time to block or -1 for infinite
+dbus_connection_read_write_dispatch_APIName return TRUE if the disconnect message has not been processed
+Increments the reference count of a DBusConnection
+dbus_connection_ref_APIParam_1 is the dbus_connection_ref_APIParam_1
+dbus_connection_ref_APIName return the dbus_connection_ref_APIParam_1
+Registers a fallback handler for a given subsection of the object hierarchy
+The given dbus_connection_register_fallback_APIParam_3 handles messages at or below the given dbus_connection_register_fallback_APIParam_2
+You can use this to establish a default message handling policy for a whole `` subdirectory . ''
+It is a bug to call dbus_connection_register_fallback_APIName for object paths which already have a handler
+dbus_connection_register_fallback_APIParam_1 is the dbus_connection_register_fallback_APIParam_1
+it can not be interrupted , which makes dbus_connection_read_write_dispatch_APIName unsuitable for applications that do more than just
+Note that , react to received messages
+dbus_connection_register_fallback_APIParam_3 is the virtual table
+dbus_connection_register_fallback_APIName return FALSE if an error  occured
+dbus_connection_register_fallback_APIParam_4 is data to pass to functions in the dbus_connection_register_fallback_APIParam_3
+Use dbus_connection_try_register_fallback_APIName
+Registers a handler for a given dbus_connection_register_object_path_APIParam_2 in the object hierarchy
+The given dbus_connection_register_object_path_APIParam_3 handles messages sent to exactly the given dbus_connection_register_object_path_APIParam_2
+dbus_connection_register_object_path_APIParam_1 is the dbus_connection_register_object_path_APIParam_1
+dbus_connection_register_fallback_APIParam_2 is a ' / ' delimited string of dbus_connection_register_fallback_APIParam_2 elements
+It is a bug to call dbus_connection_register_object_path_APIName for object paths which already have a handler
+dbus_connection_register_object_path_APIParam_3 is the virtual table
+dbus_connection_register_object_path_APIParam_4 is data to pass to functions in the dbus_connection_register_object_path_APIParam_3
+dbus_connection_register_object_path_APIName return FALSE if an error  ocurred
+Use dbus_connection_try_register_object_path_APIName
+Removes a previously-added message filter
+dbus_connection_remove_filter_APIParam_1 is the dbus_connection_remove_filter_APIParam_1
+It is a programming error to call dbus_connection_remove_filter_APIName for a handler that has not been added as a filter
+dbus_connection_remove_filter_APIParam_2 is the handler to remove
+dbus_connection_register_object_path_APIParam_2 is a ' / ' delimited string of dbus_connection_register_object_path_APIParam_2 elements
+Used to return a dbus_connection_return_message_APIParam_2 after peeking at a dbus_connection_return_message_APIParam_2 using dbus_connection_borrow_message_APIName
+dbus_connection_remove_filter_APIParam_3 is user data for the handler to remove
+dbus_connection_return_message_APIParam_1 is the dbus_connection_return_message_APIParam_1
+dbus_connection_return_message_APIParam_2 is the dbus_connection_return_message_APIParam_2 from dbus_connection_borrow_message_APIName
+only one instance of it will be removed
+Adds a dbus_connection_send_APIParam_2 to the outgoing dbus_connection_send_APIParam_2 queue
+Does not block to write the dbus_connection_send_APIParam_2 to the network
+that happens asynchronously
+Only called
+no error will be returned
+If the function fails due to lack of memory, it returns FALSE
+Because this only queues the dbus_connection_send_APIParam_2 , the only reason it can fail is lack of memory
+dbus_connection_send_APIParam_1 is the dbus_connection_send_APIParam_1
+To force the dbus_connection_send_APIParam_2 to be written , call dbus_connection_flush_APIName however it is not necessary to call dbus_connection_flush_APIName by hand
+the dbus_connection_send_APIParam_2 will be sent the next time the main loop is run
+The dbus_connection_send_APIParam_2 dbus_connection_send_APIParam_3 is used by the remote application to send a reply
+dbus_connection_send_APIParam_2 is the dbus_connection_send_APIParam_2 to write
+see dbus_message_get_serial_APIName or the D-Bus specification
+dbus_message_unref_APIName can be called as soon as this method returns as the dbus_connection_send_APIParam_2 queue will hold its own ref until the dbus_connection_send_APIParam_2 is sent
+dbus_connection_flush_APIName should only be used
+dbus_connection_send_APIName return TRUE on success
+The function will never fail for other reasons
+dbus_connection_send_APIParam_3 is return location for dbus_connection_send_APIParam_2 dbus_connection_send_APIParam_3, or NULL if you do not care
+you can queue an outgoing dbus_connection_send_APIParam_2
+Sends a dbus_connection_send_preallocated_APIParam_3 using dbus_connection_send_preallocated_APIParam_2 resources
+dbus_connection_send_preallocated_APIName can not fail
+It works identically to dbus_connection_send_APIName in other respects
+Preallocated resources comes from dbus_connection_preallocate_send_APIName
+dbus_connection_send_preallocated_APIName `` consumes '' the dbus_connection_send_preallocated_APIParam_2 resources , they need not be freed separately
+dbus_connection_send_preallocated_APIParam_1 is the dbus_connection_send_preallocated_APIParam_1
+dbus_connection_send_preallocated_APIParam_2 is the dbus_connection_send_preallocated_APIParam_2 resources
+dbus_connection_send_preallocated_APIParam_3 is the dbus_connection_send_preallocated_APIParam_3 to send
+dbus_connection_send_preallocated_APIParam_4 is return location for client serial assigned to the dbus_connection_send_preallocated_APIParam_3
+Queues a dbus_connection_send_with_reply_APIParam_2 to send, as with dbus_connection_send_APIName , but also returns a DBusPendingCall used to receive a reply to the dbus_connection_send_with_reply_APIParam_2
+A DBusPendingCall will see a reply dbus_connection_send_with_reply_APIParam_2 before any filters or registered object path handlers
+A DBusPendingCall will always see exactly one reply dbus_connection_send_with_reply_APIParam_2 , unless it is cancelled with dbus_pending_call_cancel_APIName
+See dbus_connection_dispatch_APIName for details on
+dbus_connection_send_with_reply_APIParam_1 is the dbus_connection_send_with_reply_APIParam_1
+a timeout error will occur , unlike with dbus_connection_send_APIName
+This means
+dbus_connection_send_with_reply_APIParam_2 is the dbus_connection_send_with_reply_APIParam_2 to send
+dbus_connection_send_with_reply_APIName expires the pending reply and generates a synthetic error reply indicating that a timeout occurred
+dbus_connection_send_with_reply_APIName return FALSE if no memory, TRUE otherwise
+dbus_connection_send_with_reply_APIParam_4 is timeout in milliseconds , -1 for default or DBUS_TIMEOUT_INFINITE for no timeout
+a sane default timeout is used
+-1 is typically the best value for the timeout , unless you want a very short or very long timeout
+the DBusPendingCall will still be generated internally , and used to track the dbus_connection_send_with_reply_APIParam_2 reply timeout
+no timeout will be set
+and the call will block forever
+dbus_connection_send_with_reply_and_block_APIName does not reenter the main loop , i.e
+dbus_connection_send_with_reply_APIParam_3 is return location for a DBusPendingCall object, or NULL if dbus_connection_send_with_reply_APIParam_1 is disconnected or when you try to send Unix file descriptors on a dbus_connection_send_with_reply_APIParam_1 that does not support them
+messages other than the reply are queued up but not processed
+If a normal reply is received, itbe returned by dbus_connection_send_with_reply_and_block_APIName, and removed from the incoming dbus_connection_send_with_reply_and_block_APIParam_2 queue
+dbus_connection_send_with_reply_and_block_APIName is used to invoke method calls on a remote object
+Sends a dbus_connection_send_with_reply_and_block_APIParam_2 and blocks a certain time period
+If it is not received, NULLbe returned by dbus_connection_send_with_reply_and_block_APIName and the dbus_connection_send_with_reply_and_block_APIParam_4 is set to DBUS_ERROR_NO_REPLY
+dbus_connection_send_with_reply_and_block_APIParam_1 is the dbus_connection_send_with_reply_and_block_APIParam_1
+If an dbus_connection_send_with_reply_and_block_APIParam_4 reply is received, it is converted to a DBusError and returned as an dbus_connection_send_with_reply_and_block_APIParam_4, the reply dbus_connection_send_with_reply_and_block_APIParam_2 is deleted and NULLbe returned by dbus_connection_send_with_reply_and_block_APIName
+the DBusPendingCall will be set to NULL , so be careful with this
+dbus_connection_send_with_reply_and_block_APIParam_2 is the dbus_connection_send_with_reply_and_block_APIParam_2 to send
+Warning will not be processing the incoming dbus_connection_send_with_reply_and_block_APIParam_2 queue
+dbus_connection_send_with_reply_and_block_APIParam_4 is return location for dbus_connection_send_with_reply_and_block_APIParam_4 dbus_connection_send_with_reply_and_block_APIParam_2
+result is set to whatever is appropriate , such as DBUS_ERROR_NO_MEMORY or DBUS_ERROR_DISCONNECTED
+dbus_connection_send_with_reply_and_block_APIName return the dbus_connection_send_with_reply_and_block_APIParam_2 that is the reply or NULL with an dbus_connection_send_with_reply_and_block_APIParam_4 code if the function fails
+dbus_connection_send_with_reply_and_block_APIParam_3 is timeout in milliseconds , -1 for default or DBUS_TIMEOUT_INFINITE for no timeout
+To solve this , either avoid the situation , block in a separate thread from the main connection-dispatching thread , or use dbus_pending_call_set_notify_APIName to avoid blocking
+deadlocked
+This means you can end up
+clients can connect anonymously
+This setting interacts with the available authorization mechanisms
+dbus_connection_set_allow_anonymous_APIParam_1 is the dbus_connection_set_allow_anonymous_APIParam_1
+dbus_connection_set_allow_anonymous_APIName must be called on the server side of a dbus_connection_set_allow_anonymous_APIParam_1
+the dbus_connection_set_allow_anonymous_APIParam_1 can proceed
+dbus_connection_set_allow_anonymous_APIParam_2 is whether to allow authentication as an anonymous user
+dbus_connection_set_change_sigpipe_APIName sets a global flag for
+You can override the rules for connections authorized as a user identity with dbus_connection_set_unix_user_function_APIName and dbus_connection_set_windows_user_function_APIName
+Namely , an auth mechanism such as ANONYMOUS that supports anonymous auth must be included in the list of available mechanisms for anonymous login to work
+however , any user identity is allowed
+dbus_connection_set_change_sigpipe_APIParam_1 is TRUE to allow sigpipe to be set to SIG_IGN
+The dbus_connection_set_data_APIParam_2 number must have been allocated with dbus_connection_allocate_data_slot_APIName
+dbus_connection_set_data_APIParam_1 is the dbus_connection_set_data_APIParam_1
+dbus_connection_set_data_APIParam_2 is the dbus_connection_set_data_APIParam_2 number
+Note dbus_connection_set_data_APIName does not take the main thread lock on DBusConnection , which allows it to be used from inside watch and timeout functions
+dbus_connection_set_data_APIParam_3 is the dbus_connection_set_data_APIParam_3 to store
+dbus_connection_set_data_APIParam_4 is finalizer function for the dbus_connection_set_data_APIParam_3
+dbus_connection_set_data_APIName return TRUE if there was enough memory to store the dbus_connection_set_data_APIParam_3
+or when the dbus_connection_set_data_APIParam_1 is finalized
+Stores a pointer on a DBusConnection , along with an optional function to be used for freeing the dbus_connection_set_data_APIParam_3
+This setting also changes the default rule for connections authorized as a user
+However , dbus_connection_dispatch_APIName MUST NOT BE CALLED from inside the DBusDispatchStatusFunction
+Indeed , almost any reentrancy in dbus_connection_set_dispatch_status_function_APIName is a bad idea
+dbus_connection_set_dispatch_status_function_APIParam_1 is the dbus_connection_set_dispatch_status_function_APIParam_1
+Set a dbus_connection_set_dispatch_status_function_APIParam_2 to be invoked
+dbus_connection_set_dispatch_status_function_APIParam_2 is dbus_connection_set_dispatch_status_function_APIParam_2 to call on dispatch status changes
+dbus_connection_set_dispatch_status_function_APIParam_3 is dbus_connection_set_dispatch_status_function_APIParam_3 for dbus_connection_set_dispatch_status_function_APIParam_2
+you need to know there a reference held on the dbus_connection_set_data_APIParam_1
+A side effect of this is that , or the dbus_connection_set_data_APIParam_1 could be finalized during dbus_connection_set_data_APIName
+dbus_connection_dispatch_APIName needs to be called to process incoming messages
+dbus_connection_set_dispatch_status_function_APIParam_4 is free the dbus_connection_set_dispatch_status_function_APIParam_2 dbus_connection_set_dispatch_status_function_APIParam_3
+dbus_connection_set_exit_on_disconnect_APIParam_1 is the dbus_connection_set_exit_on_disconnect_APIParam_1
+normally , , it is permitted if the user identity is root or the user identity matches the user identity of the server process
+messages should be dispatched later
+The call to _exit_APIName comes after any handlers for the disconnect signal run
+Instead , the DBusDispatchStatusFunction should simply save an indication that
+By default , dbus_connection_set_exit_on_disconnect_APIParam_2 is FALSE
+but for message bus connections returned from dbus_bus_get_APIName it will be toggled on by default
+handlers can cancel the exit by calling this function
+Specifies the maximum dbus_connection_set_max_message_size_APIParam_2 message this dbus_connection_set_max_message_size_APIParam_1 is allowed to receive
+_exit_APIName should be called
+Set whether
+Larger messages will result in disconnecting the dbus_connection_set_max_message_size_APIParam_1
+dbus_connection_set_max_message_size_APIParam_1 is a DBusConnection
+dbus_connection_set_max_message_size_APIParam_2 is maximum message dbus_connection_set_max_message_size_APIParam_2 the dbus_connection_set_max_message_size_APIParam_1 can receive , in bytes
+dbus_connection_set_exit_on_disconnect_APIParam_2 is TRUE
+you have to be sure to dispatch on every iteration of your main loop , especially if dbus_watch_handle_APIName or dbus_timeout_handle_APIName were called
+Specifies the maximum number of unix fds a message on this dbus_connection_set_max_message_unix_fds_APIParam_1 is allowed to receive
+Messages with more unix fds will result in disconnecting the dbus_connection_set_max_message_unix_fds_APIParam_1
+co
+Messages count toward the maximum until they are finalized
+Sets the maximum total number of bytes that can be used for all messages received on this dbus_connection_set_max_received_size_APIParam_1
+The semantics of the maximum are
+The semantics are not
+But this should be inconsequential
+The reason is that we do not know the dbus_connection_set_max_received_size_APIParam_2 of a message until after we read it
+dbus_connection_set_max_received_size_APIParam_1 is the dbus_connection_set_max_received_size_APIParam_1
+the dbus_connection_set_max_received_size_APIParam_1 will not read more data until some messages are finalized
+Thus , the max live messages dbus_connection_set_max_received_size_APIParam_2 can actually be exceeded by up to the maximum dbus_connection_set_max_received_size_APIParam_2 of a single message
+we do not read it
+dbus_connection_set_max_received_size_APIParam_2 is the maximum dbus_connection_set_max_received_size_APIParam_2 in bytes of all outstanding messages
+additional messages will not be read
+Messages count toward the maximum until they are finalized
+This does imply that we can not call read_APIName with a buffer larger than we 're willing to exceed this limit by
+The semantics are analogous to those of dbus_connection_set_max_received_size_APIName
+Sets the maximum total number of unix fds that can be used for all messages received on this dbus_connection_set_max_received_unix_fds_APIParam_1
+co
+Normally DBusConnection automatically handles all messages to the org.freedesktop.DBus.Peer interface
+So do not set this unless you are the message bus
+and that contains a half-dozen small messages
+Also , , we may exceed the dbus_connection_set_max_received_size_APIParam_2 max by that amount
+dbus_connection_set_route_peer_messages_APIParam_1 is the dbus_connection_set_route_peer_messages_APIParam_1
+the dbus_connection_set_max_received_unix_fds_APIParam_1 will not read more data until some messages are finalized
+However , the message bus wants to be able to route methods on that interface through the bus and to other applications
+dbus_connection_set_route_peer_messages_APIParam_2 is TRUE to pass through org.freedesktop.DBus.Peer messages with a bus name set
+Sets the timeout functions for the dbus_connection_set_timeout_functions_APIParam_1
+it can break things badly
+These functions are responsible for making the application main loop aware of timeouts
+typically the DBusAddTimeoutFunction would create a QTimer
+messages with the org.freedesktop.DBus.Peer interface that also have a bus destination name set will not be automatically handled by the DBusConnection and instead will be dispatched normally to the application
+The DBusTimeoutToggledFunction notifies the application that the timeout has been enabled or disabled
+Call dbus_timeout_get_enabled_APIName to check this
+A disabled timeout should have no effect , and enabled timeout should be added to the main loop
+This feature is used instead of simply adding/removing the timeout
+the DBusAddTimeoutFunction would call g_timeout_add
+With Qt , QTimer::start_APIName and QTimer::stop_APIName can be used to enable and disable
+The DBusTimeout can be queried for the timer interval using dbus_timeout_get_interval_APIName
+dbus_connection_set_timeout_functions_APIParam_1 is the dbus_connection_set_timeout_functions_APIParam_1
+dbus_timeout_handle_APIName should be called repeatedly , each time the interval elapses , starting after it has elapsed once
+is toggled
+its interval may change
+The toggled function may be NULL
+See the comments in the code or http
+dbus_connection_set_timeout_functions_APIParam_2 is function to add a timeout
+The timeout stops firing
+dbus_connection_set_timeout_functions_APIParam_3 is function to remove a timeout
+The timer interval may change
+dbus_connection_set_timeout_functions_APIParam_4 is function to notify of enable/disable
+dbus_connection_set_timeout_functions_APIParam_5 is dbus_connection_set_timeout_functions_APIParam_5 to pass to dbus_connection_set_timeout_functions_APIParam_2 and dbus_connection_set_timeout_functions_APIParam_3
+dbus_connection_set_timeout_functions_APIParam_6 is function to be called to free the dbus_connection_set_timeout_functions_APIParam_5
+dbus_connection_set_timeout_functions_APIName return FALSE on failure (no memory
+Sets a predicate dbus_connection_set_unix_user_function_APIParam_2 used to determine
+Also , root is always allowed to connect
+dbus_connection_set_unix_user_function_APIParam_1 is the dbus_connection_set_unix_user_function_APIParam_1
+Note The thread lock on DBusConnection is held
+so inside these functions you may not invoke any methods on DBusConnection or it will deadlock
+dbus_connection_set_unix_user_function_APIParam_2 is the predicate
+/ / lists.freedesktop.org/archives/dbus/2007-July/thread.html#8144
+dbus_connection_set_unix_user_function_APIParam_3 is dbus_connection_set_unix_user_function_APIParam_3 to pass to the predicate
+dbus_connection_set_unix_user_function_APIParam_4 is dbus_connection_set_unix_user_function_APIParam_2 to free the dbus_connection_set_unix_user_function_APIParam_3
+Sets the mainloop wakeup function for the dbus_connection_set_wakeup_main_function_APIParam_1
+only the same UID as the server process will be allowed to connect
+a message has been queued for writing -RRB-
+its dbus_connection_set_unix_user_function_APIParam_4 will be invoked
+On Windows , the dbus_connection_set_unix_user_function_APIParam_2 will be set and
+dbus_connection_set_unix_user_function_APIName is called
+if it returns TRUE , the dbus_connection_set_unix_user_function_APIParam_1 is allowed to proceed, otherwise the dbus_connection_set_unix_user_function_APIParam_1 is disconnected
+However , the dbus_connection_set_unix_user_function_APIParam_2 will never be called , protocols would allow authenticating as a UNIX user on Windows
+dbus_connection_set_wakeup_main_function_APIParam_1 is the dbus_connection_set_wakeup_main_function_APIParam_1
+dbus_connection_set_wakeup_main_function_APIParam_2 is function to wake up the mainloop
+dbus_connection_set_wakeup_main_function_APIParam_3 is dbus_connection_set_wakeup_main_function_APIParam_3 to pass dbus_connection_set_wakeup_main_function_APIParam_2
+dbus_connection_set_wakeup_main_function_APIParam_4 is function to be called to free the dbus_connection_set_wakeup_main_function_APIParam_3
+this typically results in a call to QEventLoop::wakeUp_APIName
+it would call g_main_context_wakeup_APIName
+Sets the watch functions for the dbus_connection_set_watch_functions_APIParam_1
+waking up the main loop
+dbus_connection_set_wakeup_main_function_APIName is responsible for
+Call dbus_watch_get_enabled_APIName to check this
+The DBusWatchToggledFunction notifies the application that the watch has been enabled or disabled
+typically the DBusAddWatchFunction would create a QSocketNotifier
+Note that
+it may not be enabled
+These functions are responsible for making the application main loop aware of file descriptors that need to be monitored for events , using select_APIName or poll_APIName
+This feature is used instead of simply adding/removing the watch
+A disabled watch should have no effect , and enabled watch should be added to the main loop
+the DBusAddWatchFunction could call g_io_add_watch_APIName , or could be used as part of a more elaborate GSource
+It is not allowed to reference a DBusWatch after it has been passed to dbus_connection_set_watch_functions_APIParam_3
+The DBusWatch can be queried for the file descriptor to watch using dbus_watch_get_unix_fd_APIName or dbus_watch_get_socket_APIName , and for the events to watch for using dbus_watch_get_flags_APIName
+The flags returned by dbus_watch_get_flags_APIName will only contain DBUS_WATCH_READABLE and DBUS_WATCH_WRITABLE, never DBUS_WATCH_HANGUP or DBUS_WATCH_ERROR
+The toggled function may be NULL
+If FALSEbe returned by dbus_connection_set_watch_functions_APIName due to lack of memory, the failure may be due to a FALSE return from the new dbus_connection_set_watch_functions_APIParam_2
+all watches implicitly include a watch for hangups , errors , and other exceptional conditions
+Once a file descriptor becomes readable or writable , or an exception occurs , dbus_watch_handle_APIName should be called to notify the dbus_connection_set_watch_functions_APIParam_1 of the file descriptor condition
+dbus_connection_set_watch_functions_APIParam_1 is the dbus_connection_set_watch_functions_APIParam_1
+if FALSEbe returned by dbus_connection_set_watch_functions_APIName the net result should be that dbus_connection_set_watch_functions_APIName has no effect, but the dbus_connection_set_watch_functions_APIParam_2 and dbus_connection_set_watch_functions_APIParam_3 may have been called
+dbus_watch_handle_APIName can not be called , as the dbus_connection_set_watch_functions_APIParam_1 will not be ready to handle that watch yet
+dbus_connection_set_watch_functions_APIParam_2 is function to begin monitoring a new descriptor
+See the comments in the code or http
+dbus_connection_set_watch_functions_APIParam_3 is function to stop monitoring a descriptor
+dbus_connection_set_watch_functions_APIParam_4 is function to notify of enable/disable
+adds
+dbus_connection_set_watch_functions_APIParam_5 is dbus_connection_set_watch_functions_APIParam_5 to pass to dbus_connection_set_watch_functions_APIParam_2 and dbus_connection_set_watch_functions_APIParam_3
+dbus_connection_set_watch_functions_APIName return FALSE on failure (no memory
+dbus_connection_set_watch_functions_APIParam_6 is function to be called to free the dbus_connection_set_watch_functions_APIParam_5
+Sets a predicate dbus_connection_set_windows_user_function_APIParam_2 used to determine
+dbus_connection_set_windows_user_function_APIParam_1 is the dbus_connection_set_windows_user_function_APIParam_1
+dbus_connection_set_windows_user_function_APIParam_2 is the predicate
+However , the dbus_connection_set_windows_user_function_APIParam_2 will never be called
+Note The thread lock on DBusConnection is held
+so inside these functions you may not invoke any methods on DBusConnection or it will deadlock
+dbus_connection_set_windows_user_function_APIParam_3 is dbus_connection_set_windows_user_function_APIParam_3 to pass to the predicate
+/ / lists.freedesktop.org/archives/dbus/2007-July/tread.html#8144
+only the same user owning the server process will be allowed to connect
+dbus_connection_set_windows_user_function_APIParam_4 is dbus_connection_set_windows_user_function_APIParam_2 to free the dbus_connection_set_windows_user_function_APIParam_3
+Used to keep a dbus_connection_steal_borrowed_message_APIParam_2 after peeking at a dbus_connection_steal_borrowed_message_APIParam_2 using dbus_connection_borrow_message_APIName
+Before using this function , see the caveats/warnings in the documentation for dbus_connection_pop_message_APIName
+dbus_connection_steal_borrowed_message_APIParam_1 is the dbus_connection_steal_borrowed_message_APIParam_1
+its dbus_connection_set_windows_user_function_APIParam_4 will be invoked
+On UNIX , the dbus_connection_set_windows_user_function_APIParam_2 will be set and
+dbus_connection_steal_borrowed_message_APIParam_2 is the dbus_connection_steal_borrowed_message_APIParam_2 from dbus_connection_borrow_message_APIName
+dbus_connection_set_windows_user_function_APIName is called
+if it returns TRUE , the dbus_connection_set_windows_user_function_APIParam_1 is allowed to proceed, otherwise the dbus_connection_set_windows_user_function_APIParam_1 is disconnected
+Registers a fallback handler for a given subsection of the object hierarchy
+The given dbus_connection_try_register_fallback_APIParam_3 handles messages at or below the given dbus_connection_try_register_fallback_APIParam_2
+dbus_connection_try_register_fallback_APIParam_1 is the dbus_connection_try_register_fallback_APIParam_1
+dbus_connection_try_register_fallback_APIParam_3 is the virtual table
+You can use this to establish a default message handling policy for a whole `` subdirectory . ''
+dbus_connection_try_register_fallback_APIParam_5 is address where an dbus_connection_try_register_fallback_APIParam_5 can be returned
+dbus_connection_try_register_fallback_APIParam_4 is data to pass to functions in the dbus_connection_try_register_fallback_APIParam_3
+dbus_connection_try_register_fallback_APIName return FALSE if an dbus_connection_try_register_fallback_APIParam_5  is reported
+Registers a handler for a given dbus_connection_try_register_object_path_APIParam_2 in the object hierarchy
+The given dbus_connection_try_register_object_path_APIParam_3 handles messages sent to exactly the given dbus_connection_try_register_object_path_APIParam_2
+dbus_connection_try_register_object_path_APIParam_1 is the dbus_connection_try_register_object_path_APIParam_1
+dbus_connection_try_register_object_path_APIParam_3 is the virtual table
+dbus_connection_try_register_fallback_APIParam_2 is a ' / ' delimited string of dbus_connection_try_register_fallback_APIParam_2 elements
+dbus_connection_try_register_object_path_APIParam_4 is data to pass to functions in the dbus_connection_try_register_object_path_APIParam_3
+dbus_connection_try_register_object_path_APIParam_5 is address where an dbus_connection_try_register_object_path_APIParam_5 can be returned
+dbus_connection_try_register_object_path_APIName return FALSE if an dbus_connection_try_register_object_path_APIParam_5  is reported
+dbus_connection_try_register_object_path_APIParam_2 is a ' / ' delimited string of dbus_connection_try_register_object_path_APIParam_2 elements
+Most connections are shared
+it is a bug to drop the last reference to a dbus_connection_unref_APIParam_1 that is still connected
+Decrements the reference count of a DBusConnection , and finalizes it
+dbus_connection_open_APIName and dbus_bus_get_APIName return shared connections
+Private connections come from dbus_connection_open_private_APIName or dbus_bus_get_private_APIName
+dbus_connection_unref_APIParam_1 is the dbus_connection_unref_APIParam_1
+Unregisters the handler registered with exactly the given dbus_connection_unregister_object_path_APIParam_2
+Can unregister both fallback paths and object paths
+For private connections , the creator of the dbus_connection_unref_APIParam_1 must arrange for dbus_connection_close_APIName to be called prior to dropping the last reference
+it is a bug to call dbus_connection_unregister_object_path_APIName for a dbus_connection_unregister_object_path_APIParam_2 that is not registered
+dbus_connection_unregister_object_path_APIParam_1 is the dbus_connection_unregister_object_path_APIParam_1
+dbus_connection_unregister_object_path_APIName return FALSE if not enough memory
+Initializes threads , like dbus_threads_init_default_APIName
+dbus_threads_init_APIParam_1 is ignored , formerly dbus_threads_init_APIParam_1 for using threads
+dbus_threads_init_APIName return TRUE on success, FALSE if no memory
+Initializes threads
+This version previously allowed user-specified threading primitives , but since D-Bus 1.6 it ignores them and behaves exactly like dbus_threads_init_default_APIName
+dbus_connection_unregister_object_path_APIParam_2 is a ' / ' delimited string of dbus_connection_unregister_object_path_APIParam_2 elements
+Since D-Bus 1.7 it is safe to call dbus_threads_init_default_APIName from any thread , any number of times
+For shared connections , libdbus will own a reference as long as the dbus_connection_unref_APIParam_1 is connected , so you can know that either you do not have the last reference , or it is OK to drop the last reference
+In D-Bus 1.6 or older , dbus_threads_init_default_APIName must be called in the main thread before any other thread starts
+the D-Bus library will not lock any data structures
+Adds a match dbus_bus_add_match_APIParam_2 to match messages going through the message bus
+D-Bus will do locking , at some cost in efficiency
+The `` rule '' argument is the string form of a match dbus_bus_add_match_APIParam_2
+This is generally acceptable
+dbus_shutdown_APIName reverses the effects of dbus_threads_init_default_APIName
+Returns TRUE on success , FALSE enough memory
+The AddMatch method is fully documented in the D-Bus specification
+As a result , it is not sufficient to call dbus_threads_init_default_APIName in a library or plugin , unless the library or plugin imposes a similar requirement on its callers
+Normal API conventions would have the function return a boolean value indicating  , but that would require blocking always to determine the return value
+Rules are specified as a string of comma separated key/value pairs
+Omitting a key from the dbus_bus_add_match_APIParam_2 indicates a wildcard match
+- NULL for the dbus_bus_add_match_APIParam_3 dbus_bus_add_match_APIName will block until it gets a reply
+For quick reference , the format of the match rules is discussed here , but the specification is the canonical version of this information
+Matches are inclusive not exclusive so as long as one dbus_bus_add_match_APIParam_2 matches the message will get through
+This can cause performance problems such as draining batteries on embedded platforms
+It is important to note this
+dbus_bus_add_match_APIName will not block
+omitting the member from a match dbus_bus_add_match_APIParam_2 but adding a sender would let all messages from that sender through regardless of the member
+That is , arg0 = ' 5 ' means match the string `` 5 '' not the integer 5
+Currently there is no way to match against non-string arguments
+A specialised form of wildcard matching on arguments is supported for path-like namespaces
+Matching on interface is tricky
+you will not find out about it
+the match thus will not be added until you flush the dbus_bus_add_match_APIParam_1 , and
+string arguments will match
+This means match rules on method calls should not usually give an interface
+For security reasons , you can match arguments only up to DBUS_MAXIMUM_MATCH_RULE_ARG_NUMBER
+Match rules have a maximum length of DBUS_MAXIMUM_MATCH_RULE_LENGTH bytes
+dbus_bus_add_match_APIParam_1 is dbus_bus_add_match_APIParam_1 to the message bus
+dbus_bus_add_match_APIParam_2 is textual form of match dbus_bus_add_match_APIParam_2
+dbus_bus_add_match_APIParam_3 is location to store any errors
+it will NOT match if the dbus_bus_add_match_APIParam_2 specifies an interface name
+Connects to a bus daemon and registers the client with it
+If a connection to the bus already exists, that connectionbe returned by dbus_bus_get_APIName
+However , signal messages are required to include the interface so
+Both of these maximums are much higher than you are likely to need , they only exist
+The caller of dbus_bus_get_APIName owns a reference to the bus
+The caller may NOT call dbus_connection_close_APIName on this connection
+see dbus_connection_open_APIName and dbus_connection_close_APIName for details on that
+You can undo this by calling dbus_connection_set_exit_on_disconnect_APIName yourself after you get the connection
+dbus_bus_get_APIName calls dbus_bus_register_APIName for you
+If dbus_bus_get_APIName obtains a new connection object never before returned from dbus_bus_get_APIName , it will call dbus_connection_set_exit_on_disconnect_APIName , so the application will exit if the connection closes
+dbus_bus_get_APIParam_1 is bus dbus_bus_get_APIParam_1
+An example is `` type = ignal ' , sender = ` org.freedesktop.DBus ' , interface = ` org.freedesktop.DBus ' , member = ` Foo ' , path = ' / bar/foo ' , destination = '
+If returning a newly-created connection, dbus_bus_get_APIName will block until authentication and bus registration are complete
+dbus_bus_get_APIParam_2 is address where an dbus_bus_get_APIParam_2 can be returned
+dbus_bus_get_APIName return a DBusConnection with new ref or NULL on dbus_bus_get_APIParam_2
+Asks the bus to return its globally unique ID, as described in the D-Bus specification
+See dbus_try_get_local_machine_id_APIName
+For the session bus , this is useful as a way to uniquely identify each user session
+dbus_bus_get_id_APIParam_1 is the dbus_bus_get_id_APIParam_1
+dbus_bus_get_id_APIParam_2 is location to store the dbus_bus_get_id_APIParam_2
+dbus_bus_get_id_APIName return the bus ID or NULL if dbus_bus_get_id_APIParam_2 is set
+This may be useful
+Connects to a bus daemon and registers the client with it as with dbus_bus_register_APIName
+Unlike dbus_bus_get_APIName , always creates a new connection
+or compile time
+This connection will not be saved or recycled by libdbus
+For the system bus , probably the bus ID is not useful
+instead , use the machine ID and may be persistent beyond a single bus instance
+Caller owns a reference to the bus and must either close it or know it to be closed prior to releasing this reference
+You can undo this by calling dbus_connection_set_exit_on_disconnect_APIName yourself after you get the connection
+dbus_bus_get_private_APIName calls dbus_bus_register_APIName for you
+dbus_bus_get_private_APIName will block until authentication and bus registration are complete
+See dbus_connection_open_private_APIName for more details on
+dbus_bus_get_private_APIParam_1 is bus dbus_bus_get_private_APIParam_1
+dbus_bus_get_private_APIName return a DBusConnection with new ref
+dbus_bus_get_private_APIParam_2 is address where an dbus_bus_get_private_APIParam_2 can be returned
+the application will exit
+dbus_bus_get_private_APIName calls dbus_connection_set_exit_on_disconnect_APIName on the new connection , so
+Gets the unique name of the dbus_bus_get_unique_name_APIParam_1 as assigned by the message bus
+All connections returned by dbus_bus_get_APIName or dbus_bus_get_private_APIName have been successfully registered
+Only possible after the dbus_bus_get_unique_name_APIParam_1 has been registered with the message bus
+dbus_bus_get_unique_name_APIParam_1 is the dbus_bus_get_unique_name_APIParam_1
+The name remains valid until the dbus_bus_get_unique_name_APIParam_1 is freed , and should not be freed by the caller
+In addition to an ID for each bus and an ID for each machine , there is an ID for each address that the bus is listening on
+that can be retrieved with dbus_connection_get_server_id_APIName
+Other than dbus_bus_get_APIName , there are two ways to set the unique name
+one is dbus_bus_register_APIName , the other is dbus_bus_set_unique_name_APIName
+dbus_bus_get_unique_name_APIName return the unique name or NULL on error
+Only works on UNIX
+only works for connections on the same machine as the bus
+Asks the bus to return the UID the named dbus_bus_get_unix_user_APIParam_1 authenticated as, if any
+calling dbus_bus_set_unique_name_APIName instead of using dbus_bus_register_APIName
+You are responsible for
+dbus_bus_get_unix_user_APIName will always return an dbus_bus_get_unix_user_APIParam_3 on Windows
+For the system message bus you are guaranteed to be on the same machine
+dbus_bus_get_unix_user_APIParam_1 is the dbus_bus_get_unix_user_APIParam_1
+
+dbus_bus_get_unix_user_APIParam_2 is a dbus_bus_get_unix_user_APIParam_2 owned by the dbus_bus_get_unix_user_APIParam_1
+something sensible
+So check for errors and do
+452345.34 ' '' Possible keys you can match on are type , sender , interface , member , path , destination and numbered keys to match message args
+it is considered a match if the argument exactly matches the given string or if one of them ends in a ' / ' and is a prefix of the other
+dbus_bus_get_unix_user_APIParam_3 is location to store the dbus_bus_get_unix_user_APIParam_3
+dbus_bus_get_unix_user_APIName return the unix user id, or -1) if dbus_bus_get_unix_user_APIParam_3 is set
+Asks the bus
+dbus_bus_name_has_owner_APIParam_1 is the dbus_bus_name_has_owner_APIParam_1
+dbus_bus_name_has_owner_APIParam_2 is the dbus_bus_name_has_owner_APIParam_2
+Using this can easily result in a race condition
+dbus_bus_get_unix_user_APIName only works for connections that authenticated as a UNIX user , right now that includes all bus connections , but it is very possible to have connections with no associated UID
+dbus_bus_name_has_owner_APIParam_3 is location to store any errors
+Registers a dbus_bus_register_APIParam_1 with the bus
+dbus_bus_name_has_owner_APIName return TRUE if the dbus_bus_name_has_owner_APIParam_2 exists, FALSE if not or on dbus_bus_name_has_owner_APIParam_3
+dbus_bus_register_APIName will block until registration is complete
+an application does
+This must be the first thing
+Note Just use dbus_bus_get_APIName or dbus_bus_get_private_APIName instead of dbus_bus_register_APIName and save yourself some pain
+the unique name will be set , and can be obtained using dbus_bus_get_unique_name_APIName
+dbus_bus_register_APIName does nothing
+do not specify DBUS_NAME_FLAG_REPLACE_EXISTING and you will get an dbus_bus_name_has_owner_APIParam_3 if there already an owner
+will be called for you
+dbus_bus_register_APIParam_1 is the dbus_bus_register_APIParam_1
+dbus_bus_register_APIParam_2 is place to store errors
+dbus_bus_register_APIName return TRUE on success
+Using dbus_bus_register_APIName manually is only useful
+The `` ReleaseName '' method is canonically documented in the D-Bus specification
+you get from the bus
+there is a lock that keeps both apps from registering at the same time
+Asks the bus to unassign the given dbus_bus_release_name_APIParam_2 from this dbus_bus_release_name_APIParam_1 by invoking the ReleaseName method on the bus
+DBUS_RELEASE_NAME_REPLY_NOT_OWNER which means someone else owns the dbus_bus_release_name_APIParam_2 so you can not release it
+you will have to dbus_bus_register_APIName yourself , or make the appropriate registration method
+calls yourself
+DBUS_RELEASE_NAME_REPLY_NON_EXISTENT which means nobody owned the dbus_bus_release_name_APIParam_2
+dbus_bus_release_name_APIParam_1 is the dbus_bus_release_name_APIParam_1
+dbus_bus_release_name_APIParam_2 is the dbus_bus_release_name_APIParam_2 to remove
+dbus_bus_release_name_APIParam_3 is location to store the dbus_bus_release_name_APIParam_3
+The rule in a multithreaded app , , is that dbus_bus_register_APIName must be used to register , or you need to have your own locks that all threads in the app will respect
+Possible results are
+dbus_bus_release_name_APIName return a result code, -1 if dbus_bus_release_name_APIParam_3 is set
+Removes a previously-added match dbus_bus_remove_match_APIParam_2 `` by value ''
+The `` rule '' argument is the string form of a match dbus_bus_remove_match_APIParam_2
+DBUS_RELEASE_NAME_REPLY_RELEASED which means you owned the dbus_bus_release_name_APIParam_2 or were in the queue to own it , and and now you do not own it and are not in the queue
+See detailed explanation in docs for dbus_bus_add_match_APIName
+dbus_bus_remove_match_APIParam_1 is dbus_bus_remove_match_APIParam_1 to the message bus
+dbus_bus_remove_match_APIParam_2 is textual form of match dbus_bus_remove_match_APIParam_2
+dbus_bus_remove_match_APIParam_3 is location to store any errors
+dbus_bus_remove_match_APIName will not block
+otherwise it will
+you check dbus_bus_get_unique_name_APIName to see
+In a single-threaded application you can register by hand instead of using dbus_bus_register_APIName , as long as
+This method is fully documented in the D-Bus specification
+the bus will kick you off
+The bus compares match rules semantically , not textually , so whitespace and ordering do not have to be identical to the dbus_bus_remove_match_APIParam_2 you passed to dbus_bus_add_match_APIName
+For shared connections in a multithreaded application , you can not really make the registration calls yourself , , and
+Only one owns it at a time - called the primary owner
+Asks the bus to assign the given dbus_bus_request_name_APIParam_2 to this dbus_bus_request_name_APIParam_1 by invoking the RequestName method on the bus
+For quick reference , the dbus_bus_request_name_APIParam_3 and result codes are discussed here , but the specification is the canonical version of this information
+First you should know that for each bus dbus_bus_request_name_APIParam_2 , the bus stores a queue of connections that would like to own it
+The queue means you do not need to manually watch for the current owner to disappear and request the dbus_bus_request_name_APIParam_2 again
+You can update these dbus_bus_request_name_APIParam_3 by calling RequestName again
+you can specify several dbus_bus_request_name_APIParam_3
+sent to org.freedesktop.TextEditor , but
+The first one to start up will receive messages
+These properties are stored and does not become the primary owner
+the next owner in the queue atomically takes over
+DBUS_NAME_FLAG_ALLOW_REPLACEMENT and DBUS_NAME_FLAG_DO_NOT_QUEUE are properties stored by the bus for this dbus_bus_request_name_APIParam_1 with respect to each requested bus dbus_bus_request_name_APIParam_2
+DBUS_NAME_FLAG_ALLOW_REPLACEMENT means that another requestor of the dbus_bus_request_name_APIParam_2 can take it away from you by specifying DBUS_NAME_FLAG_REPLACE_EXISTING
+Unlike the other two dbus_bus_request_name_APIParam_3 , DBUS_NAME_FLAG_REPLACE_EXISTING is a property of the individual RequestName call , i.e
+the bus does not persistently associate it with the connection-name pair
+dbus_bus_request_name_APIName returns a result code
+The possible result codes are as follows
+you can have all of them sitting in the queue
+the caller ends up in a queue to own the dbus_bus_request_name_APIParam_2 after the current owner gives it up
+you do not want to be queued up
+DBUS_NAME_FLAG_DO_NOT_QUEUE means that - you only care about being the primary owner
+an application will receive the requested dbus_bus_request_name_APIParam_2 only if the dbus_bus_request_name_APIParam_2 is currently unowned
+Conventionally , single-instance applications often offer a command line option called -- replace which means to replace the current instance
+DBUS_REQUEST_NAME_REPLY_ALREADY_OWNER happens a dbus_bus_request_name_APIParam_2 it already owns
+the current primary owner will be kicked off
+any editor that can be the user editor should specify DBUS_NAME_FLAG_REPLACE_EXISTING to either take over or be queued up according to
+and it will NOT give up the dbus_bus_request_name_APIParam_2
+DBUS_REQUEST_NAME_REPLY_PRIMARY_OWNER means that the dbus_bus_request_name_APIParam_2 had no existing owner , and the caller is now the primary owner
+Look for the signal `` NameLost '' from DBUS_SERVICE_DBUS and DBUS_INTERFACE_DBUS
+To implement this , always set DBUS_NAME_FLAG_ALLOW_REPLACEMENT
+DBUS_REQUEST_NAME_REPLY_IN_QUEUE happens
+and either the current owner did NOT specify DBUS_NAME_FLAG_ALLOW_REPLACEMENT or the caller did NOT specify DBUS_NAME_FLAG_REPLACE_EXISTING
+dbus_bus_request_name_APIParam_1 is the dbus_bus_request_name_APIParam_1
+or that the dbus_bus_request_name_APIParam_2 had an owner , and the caller specified DBUS_NAME_FLAG_REPLACE_EXISTING , and the current owner specified DBUS_NAME_FLAG_ALLOW_REPLACEMENT
+you need to exit
+DBUS_REQUEST_NAME_REPLY_EXISTS happens
+and either the current owner has NOT specified DBUS_NAME_FLAG_ALLOW_REPLACEMENT or the caller did NOT specify DBUS_NAME_FLAG_REPLACE_EXISTING
+dbus_bus_request_name_APIParam_2 is the dbus_bus_request_name_APIParam_2 to request
+dbus_bus_request_name_APIParam_3 is dbus_bus_request_name_APIParam_3
+dbus_bus_request_name_APIParam_4 is location to store the dbus_bus_request_name_APIParam_4
+dbus_bus_request_name_APIName return a result code, -1 if dbus_bus_request_name_APIParam_4 is set
+Sets the unique name of the dbus_bus_set_unique_name_APIParam_1 , as assigned by the message bus
+Can only be called once per dbus_bus_set_unique_name_APIParam_1
+replace , do not specify DBUS_NAME_FLAG_REPLACE_EXISTING , and exit if you fail to become the bus dbus_bus_request_name_APIParam_2 owner
+say `` text editor , '' it should specify DBUS_NAME_FLAG_ALLOW_REPLACEMENT if it wants the last editor started to be the user editor vs. the first one started
+After the unique name is set , you can get it with dbus_bus_get_unique_name_APIName
+The only reason to use dbus_bus_set_unique_name_APIName is to re-implement the equivalent of dbus_bus_register_APIName yourself
+One reason to do that might be to do the bus registration call asynchronously instead of synchronously
+Note Just use dbus_bus_get_APIName or dbus_bus_get_private_APIName , or worst case dbus_bus_register_APIName , instead of messing with this function
+There really no point creating pain for yourself by doing things manually
+it is hard to use dbus_bus_set_unique_name_APIName safely on shared connections in a multithreaded application
+Thus , you need a way to coordinate which thread sends the registration attempt
+dbus_bus_set_unique_name_APIParam_1 is the dbus_bus_set_unique_name_APIParam_1
+which also means you know which thread will call dbus_bus_set_unique_name_APIName
+dbus_bus_set_unique_name_APIParam_2 is the unique name
+dbus_bus_set_unique_name_APIName return FALSE if not enough memory
+Starts a service that will request ownership of the given dbus_bus_start_service_by_name_APIParam_2
+Can only be used
+there is no mechanism in libdbus itself to avoid sending it twice
+you need to avoid using dbus_bus_set_unique_name_APIName on shared connections
+dbus_bus_start_service_by_name_APIParam_1 is the dbus_bus_start_service_by_name_APIParam_1
+Method calls start a service to handle them by default unless you call dbus_message_set_auto_start_APIName to disable this behavior
+dbus_bus_start_service_by_name_APIParam_0 will be one of be one of DBUS_START_REPLY_SUCCESS or DBUS_START_REPLY_ALREADY_RUNNING
+dbus_bus_start_service_by_name_APIParam_2 is the dbus_bus_start_service_by_name_APIParam_2 we want the new service to request
+dbus_bus_start_service_by_name_APIParam_3 is the dbus_bus_start_service_by_name_APIParam_3
+Pass NULL
+dbus_bus_start_service_by_name_APIParam_4 is a place to store the dbus_bus_start_service_by_name_APIParam_4 or NULL
+The dbus_bus_start_service_by_name_APIParam_3 parameter is for future expansion , currently you should specify 0
+dbus_bus_start_service_by_name_APIParam_5 is location to store any errors
+dbus_bus_start_service_by_name_APIName return TRUE if the activation succeeded, FALSE if not
+dbus_timeout_get_data_APIParam_1 is the DBusTimeout object
+dbus_timeout_get_data_APIName return previously-set data
+Returns whether a dbus_timeout_get_enabled_APIParam_1 is enabled or not
+dbus_timeout_get_enabled_APIParam_1 is the DBusTimeout object
+Gets data previously set with dbus_timeout_set_data_APIName or NULL
+dbus_timeout_get_enabled_APIName return TRUE if the dbus_timeout_get_enabled_APIParam_1 is enabled
+Gets the dbus_timeout_get_interval_APIParam_1 interval
+dbus_timeout_get_interval_APIParam_1 is the DBusTimeout object
+dbus_timeout_get_interval_APIName return the interval in milliseconds
+The dbus_timeout_handle_APIName should be called each time this interval elapses , starting after The dbus_timeout_handle_APIName elapses once
+it should not be polled by the main loop
+Calls the dbus_timeout_handle_APIParam_1 handler for this dbus_timeout_handle_APIParam_1
+If dbus_timeout_handle_APIName returns FALSE , there wasn't enough memory to handle the dbus_timeout_handle_APIParam_1
+dbus_timeout_handle_APIParam_1 is the DBusTimeout object
+dbus_timeout_handle_APIName return FALSE if there wasn't enough memory
+The interval may change
+Sets dbus_timeout_set_data_APIParam_2 which can be retrieved with dbus_timeout_get_data_APIName
+dbus_timeout_handle_APIName should be called
+the dbus_timeout_get_interval_APIParam_1 will be disabled and re-enabled to notify you of the change
+Intended for use by the DBusAddTimeoutFunction and DBusRemoveTimeoutFunction to store the DBusAddTimeoutFunction and DBusRemoveTimeoutFunction own dbus_timeout_set_data_APIParam_2
+dbus_timeout_set_data_APIParam_1 is the DBusTimeout object
+dbus_timeout_set_data_APIParam_2 is the dbus_timeout_set_data_APIParam_2
+dbus_timeout_set_data_APIParam_3 is function to be called to free the dbus_timeout_set_data_APIParam_2
+Frees a NULL - terminated array of address dbus_address_entries_free_APIParam_1
+with Qt you might store the QTimer for this dbus_timeout_set_data_APIParam_1 and with GLib you might store a g_timeout_add result id
+dbus_address_entries_free_APIParam_1 is the array
+Returns the method string of an address dbus_address_entry_get_method_APIParam_1
+dbus_address_entry_get_method_APIName return a string describing the method
+This string must not be freed
+given the address dbus_address_entry_get_method_APIParam_1 `` tcp
+host=example.com" it would return the string "tcp" dbus_address_entry_get_method_APIParam_1 is the dbus_address_entry_get_method_APIParam_1
+you could try to do more
+Typically just letting the dbus_timeout_handle_APIParam_1 fire again next time it naturally times out is an adequate response to that problem , but
+Returns a value from a dbus_address_entry_get_value_APIParam_2 of an dbus_address_entry_get_value_APIParam_1
+dbus_address_entry_get_value_APIParam_1 is the dbus_address_entry_get_value_APIParam_1
+dbus_address_entry_get_value_APIParam_2 is the dbus_address_entry_get_value_APIParam_2
+dbus_address_entry_get_value_APIName return the dbus_address_entry_get_value_APIParam_2 value
+This string must not be freed
+dbus_address_escape_value_APIParam_1 is the unescaped dbus_address_escape_value_APIParam_1
+dbus_address_escape_value_APIName return newly-allocated escaped dbus_address_escape_value_APIParam_1 or NULL if no memory
+Escapes the given string as a dbus_address_escape_value_APIParam_1 in a key = value pair for a D-Bus address
+given the address `` tcp
+Note that dbus_address_entry_get_value_APIName returns an already-unescaped dbus_address_unescape_value_APIParam_1
+dbus_address_unescape_value_APIParam_1 is the escaped dbus_address_unescape_value_APIParam_1
+Unescapes the given string as a dbus_address_unescape_value_APIParam_1 in a key = value pair for a D-Bus address
+dbus_address_unescape_value_APIName return newly-allocated unescaped dbus_address_unescape_value_APIParam_1 or NULL if no memory
+dbus_parse_address_APIParam_1 is the dbus_parse_address_APIParam_1
+dbus_parse_address_APIParam_2 is return location to an array of entries
+dbus_parse_address_APIParam_3 is return location for array length
+dbus_parse_address_APIParam_4 is dbus_parse_address_APIParam_1 where an dbus_parse_address_APIParam_4 can be returned
+dbus_address_unescape_value_APIParam_2 is dbus_address_unescape_value_APIParam_2 to set
+host = example.com , port = 8073 ''
+dbus_parse_address_APIName return TRUE on success, FALSE otherwise
+Parses an dbus_parse_address_APIParam_1 string of the form
+key = value See the D-Bus specification for complete docs on the format
+the first dbus_parse_address_APIParam_1 entries in the semicolon-separated list should be tried first
+dbus_watch_get_data_APIParam_1 is the DBusWatch object
+dbus_watch_get_data_APIName return previously-set data
+Returns whether a dbus_watch_get_enabled_APIParam_1 is enabled or not
+dbus_watch_get_enabled_APIParam_1 is the DBusWatch object
+Gets data previously set with dbus_watch_set_data_APIName or NULL
+dbus_watch_get_enabled_APIName return TRUE if the dbus_watch_get_enabled_APIParam_1 is enabled
+Deprecated former name of dbus_watch_get_unix_fd_APIName
+dbus_watch_get_fd_APIParam_1 is the DBusWatch object
+dbus_watch_get_fd_APIName return the file descriptor to dbus_watch_get_fd_APIParam_1
+it should not be polled by the main loop
+Gets flags from DBusWatchFlags indicating what conditions should be monitored on the file descriptor
+dbus_watch_get_flags_APIParam_1 is the DBusWatch object
+dbus_watch_get_flags_APIName return the conditions to dbus_watch_get_flags_APIParam_1
+On Windows, dbus_watch_get_unix_fd_APIName returns -1 but dbus_watch_get_socket_APIName returns a Winsock socket
+The flags returned will only contain DBUS_WATCH_READABLE and DBUS_WATCH_WRITABLE, never DBUS_WATCH_HANGUP or DBUS_WATCH_ERROR
+dbus_watch_get_socket_APIParam_1 is the DBusWatch object
+all watches implicitly include a dbus_watch_get_flags_APIParam_1 for hangups , errors , and other exceptional conditions
+Returns a socket to be watched, on UNIX this will return -1 if our transport is not socket-based so dbus_watch_get_unix_fd_APIName is preferred
+dbus_watch_get_socket_APIName return the socket to dbus_watch_get_socket_APIParam_1
+Always returns -1 on Windows
+On UNIX this is preferred to dbus_watch_get_socket_APIName
+On Windows you use dbus_watch_get_socket_APIName to get a Winsock socket to dbus_watch_get_unix_fd_APIParam_1
+dbus_watch_get_unix_fd_APIParam_1 is the DBusWatch object
+dbus_watch_get_unix_fd_APIName return the file descriptor to dbus_watch_get_unix_fd_APIParam_1
+Returns a UNIX file descriptor to be watched , which may be a pipe , socket , or other type of descriptor
+dbus_watch_handle_APIParam_1 is the DBusWatch object
+If dbus_watch_handle_APIName returns FALSE , the file descriptor may still be ready for reading or writing, but more memory is needed in order to do the reading or writing
+It is not allowed to reference a DBusWatch after it has been passed to remove_function
+dbus_watch_handle_APIParam_2 is the poll condition using DBusWatchFlags values
+If you ignore the FALSE return, your application may spin in a busy loop on the file descriptor until memory becomes available, but nothing more catastrophic should happen
+dbus_watch_handle_APIName return FALSE if there wasn't enough memory
+dbus_watch_handle_APIName can not be called , as the connection will not be ready to handle that dbus_watch_handle_APIParam_1 yet
+Sets dbus_watch_set_data_APIParam_2 which can be retrieved with dbus_watch_get_data_APIName
+Called to notify the D-Bus library , or has an exception such as a hangup
+Intended for use by the DBusAddWatchFunction and DBusRemoveWatchFunction to store their own dbus_watch_set_data_APIParam_2
+dbus_watch_set_data_APIParam_1 is the DBusWatch object
+with Qt you might store the QSocketNotifier for this dbus_watch_set_data_APIParam_1 and with GLib you might store a GSource
+dbus_watch_set_data_APIParam_2 is the dbus_watch_set_data_APIParam_2
+dbus_watch_set_data_APIParam_3 is function to be called to free the dbus_watch_set_data_APIParam_2

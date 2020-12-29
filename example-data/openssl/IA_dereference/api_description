@@ -1,0 +1,1003 @@
+unk connect long ssl_ctx return number successfully establish session client mode
+evp_cipher_ctx evp_encryptfinal , evp_decryptfinal be identical evp_encryptfinal_ex , evp_decryptfinal_ex evp_cipherfinal_ex
+bignum print stderr
+verify verifie signature sigbuf size siglen match give message digest dgst size len
+const evp_md evp_md2 , evp_md5 , evp_sha , evp_sha1 , evp_sha224 , evp_sha256 , , evp_sha512 , evp_mdc2 evp_ripemd160 return evp_md structure md2 , md5 , sha , sha1 , sha224 , sha256 , sha384 , sha512 , mdc2 ripemd160 dig algorithm respectively
+be fast replacement normal system crypt
+const bignum return number significant bit bignum , follow principle as bn_num_bits_word
+unk free component bn_recp , , if be create by bn_recp_ctx_new , structure
+bignum truncate n bit number n
+put num cryptographically strong pseudo_random byte into buf
+expand bignum bignum ensure b have enough space bit bit number
+unk unk collect entropy window event such as mouse movement other user interaction
+set unk function evp_pkey_ctx_get_app_data set retrieve opaque pointer
+set long ssl_ctx change current certificate value base op argument
+unk function perform public key signing operation use ctx
+set verify x509_store set verification callback but be implement as macro
+file lhash print out short summary state hash table
+const evp_pkey return actual oid associate pkey
+evp_cipher_ctx , evp_decryptfinal evp_cipherfinal be identical evp_encryptfinal_ex , evp_decryptfinal_ex evp_cipherfinal_ex
+x509_verify_param ssl_ctx ssl_set1_param set verification parameter vpm ctx or ssl
+generate dh perform first step diffie_hellman key exchange by generate private public dh value
+const ec_key return maximum length der encode ecdsa signature create private ec key eckey
+x509 cms_recipientinfo compare certificate cert against cms_recipientinfo structure ri , which must be type cms_recipinfo_tran
+set verify ssl set verification flag ssl be mode specifie verify_callback function be use
+get x509 x509_store_ctx return certificate ctx which cause error or null if no certificate be relevant
+const evp_md evp_md_ctx initialize sign context ctx default implementation digest type
+set des_cblock set parity pass key odd
+const dsa d2i_dsa_pubkey decode encode dsa public key use subjectpublickeyinfo structure
+unk buf_strdup , buf_strndup , , buf_strlcpy , buf_strlcat buf_strnlen be equivalent standard c library function
+bio_callback_ctrl , bio_ptr_ctrl bio_int_ctrl be bio control operation take argument various type
+evp_pkey evp_md_ctx sign datum ctx use private key pkey place signature sig
+get evp_md bio place pointer digest bios digest method mdp , be bio_ctrl macro
+add add algorithm table digest cipher
+long return number
+unsigned long value return by be address variable contain ia_32 processor capability bit vector as appear edx : ecx register pair after execute cpuid instruction eax 1 input value see intel application note #
+thread crypto_threadid provide access crypto_threadid object within bn_blinding structure
+find unk unk search bs identifier return index first match entry after last or start beginning if last be #
+get buf_mem bio place underlie buf_mem structure pp
+unk bn_blinding const bignum bignum bn_blinding_convert bn_blinding_invert be wrapper function bn_blinding_convert_ex r set null
+evp_pkey evp_pkey be similar d2i_privatekey except attempt automatically detect private key format
+const bignum const bignum bignum subtract b place result r r a_b
+set unk macro set number bit use dsa paramet generation bit
+connect ssl initiate handshake server
+add const bignum const bignum bignum add b place result r r b
+unsigned long return early error code thread error queue without modify
+rand_method initially , default rand_method be openssl internal implementation , as return by
+get asn1_string x509_name_entry retrieve field value ne asn1_string structure
+get long unk ssl_session , ssl_set_time , ssl_get_timeout , ssl_set_timeout function be synonyms ssl_session counterpart
+bn_ctx bignum bignum bignum raise p th power place result r r p
+bio cms_contentinfo bio output cms_contentinfo structure ber format
+hmac_ctx be alias hmac_ctx_cleanup include back compatibility 0 , be deprecate
+read be variant des_read_pw provide buffer -PRON- if verify be set
+destroy evp_md_ctx clean up digest context ctx free up space allocate , should be call only context create use evp_md_ctx_create
+dsa const evp_pkey evp_pkey_get0_hmac , evp_pkey_get0_poly1305 , evp_pkey_get0_siphash , evp_pkey_get0_rsa , , evp_pkey_get0_dh evp_pkey_get0_ec_key return reference key pkey or null if key be correct type but reference count return key be incremente so must be free up after
+bn_mont_ctx bignum bignum compute mont , i
+if no engine api function be call application , then be no inherent memory leak worry about engine functionality , however if engine be load , even if be never register or use , be necessary function correspondingly cleanup before program exit , if caller wish avoid memory leak
+const bignum bn_bn2hex return printable string contain hexadecimal decimal encoding respectively
+set long long ssl_session set timeout value session s second tm
+set unk macro set rsa key length rsa key genration bit
+accept bio serve two function
+bignum convert string str contain hexadecimal number bignum store
+set evp_cipher_ctx enable or disable padding
+const evp_md evp_md2 , evp_md5 , evp_sha , , evp_sha224 , evp_sha256 , evp_sha384 , evp_sha512 , evp_mdc2 evp_ripemd160 return evp_md structure md2 , md5 , sha , sha1 , sha224 , sha256 , sha384 , sha512 , mdc2 ripemd160 dig algorithm respectively
+get long bio set pp pointer start memory bios datum return total amount datum available
+set connect ssl set ssl work client mode
+bn_ctx finally , must be call before return function
+dsa long dsa_sig , i2d_dsa_sig decode encode dsa signature use dss_sig_value structure as define rfc2459
+load function configure openssl use file filename application name appname
+unk size_t bio bio_pending , bio_ctrl_pending , bio_wpending return number pende character bio read write buffer
+size_t const unk evp_md_ctx hash cnt byte datum d into digest context ctx
+write const evp_cipher evp_pkey bio pem_write_pkcs8privatekey write private key evp_pkey structure pkc # encryptedprivatekeyinfo format use pkc # v2 password base encryption algorithm
+dsa long dsa i2d_dsapublickey decode encode dsa public key component structure
+bignum bignum shift right by n bit place result r r n
+find const evp_pkey_method find evp_pkey_method object identifier
+get const ssl_cipher return pointer name cipher
+x509 long x509 attempt decode len byte
+size_t compute sha_1 message digest n byte d place md which must have space sha_digest_length # byte output
+const asn1_object cms_contentinfo set embed content type cms_contentinfo structure
+unsigned long rc4_key encrypt or decrypt len byte datum indata use key place result outdata
+get x509 const ssl function retrieve certificate key data ssl object
+read write string specify by prompt standard output turn echo off read input string terminal
+unk decode inl character datum find buffer point by
+set long rsa ssl_ctx set rsa key be use be rsa
+dh const dsa duplicate dsa as dh
+md5_ctx md4_init , md4_update , md4_final , md5_init , , md5_final be analogous use md4_ctx md5_ctx structure
+hmac_ctx can be call repeatedly chunk message be authenticate len byte datum
+asn1_string return allocate asn1_string structure type type
+bn_ctx allocate initialize bn_ctx structure
+encrypt encrypt use output feedback mode
+get long ssl_ctx return mode set ctx
+x509 encode structure point by x into der format
+bio bio remove bio b chain return next bio chain , or null if be no next bio
+empty current thread error queue
+evp_pkey_method create return evp_pkey_method object , associate give identifi flag
+encrypt des_cblock unk input block by use three_key triple_de encryption ecb mode
+set long long ssl_ctx set maximum size allow peer certificate chain ssl object create ctx be size byte
+decrypt unk function perform public key decryption operation use ctx
+size_t const evp_pkey evp_pkey_get0_hmac , , evp_pkey_get0_siphash , evp_pkey_get0_rsa , evp_pkey_get0_dsa , evp_pkey_get0_dh evp_pkey_get0_ec_key return reference key pkey or null if key be correct type but reference count return key be incremente so must be free up after
+evp_pkey return maximum size signature byte
+dsa long dsa i2d_dsa_pubkey decode encode dsa public key use subjectpublickeyinfo structure
+ssl wait handshake take place
+long ssl_ctx cause run through session cache ctx remove session expire time tm
+get x509_store_ctx return depth error
+bn_ctx ec_key be use precompute part signing operation
+const evp_cipher evp_cipher_ctx , evp_decryptupdate evp_decryptfinal_ex be correspond decryption operation
+unk log compute ripemd_160 message digest n byte d place md which must have space ripemd160_digest_length # byte output
+x509_verify_param ssl ssl_ctx_get0_param retrieve internal pointer verification parameter ctx or ssl respectively
+ec_key evp_pkey evp_pkey_set1_rsa , evp_pkey_set1_dsa , evp_pkey_set1_dh set key reference by pkey key
+get x509_name_entry x509_name retrieve x509_name_entry name correspond index loc
+decode block n character base # datum contain f store result t
+unk long err_lib_error_string , unk return library name , function name reason string respectively
+verify x509_store_ctx function attempt discover validate certificate chain base parameter ctx
+return different string depend t
+verify ui ui_dup_input_string , , ui_dup_input_boolean , unk ui_dup_error_string be basically as ui_add counterpart , except make copy string
+const bignum bignum shift leave by n bit place result r r 2 n
+add long x509 ssl_ctx add certificate x509 extra chain certificate associate ctx
+bio_method return base64 bio method
+be fast version unix crypt function
+set ssl_conf_ctx function set flag context cctx
+finish call each configuration module finish handler free up configuration module have perform
+assign rsa evp_pkey , evp_pkey_assign_dsa , evp_pkey_assign_dh evp_pkey_assign_ec_key set reference key key however supply key internally so key be free when parent pkey be free
+get long ssl return mode set ssl
+set const unk ssl set method particular ssl object
+which must be provide by application , hand back password be use during decryption
+generate const bignum bignum generate pseudo_random prime number bit length bit
+unk must be call end encode operation
+result unk ui return pointer result buffer associate information index by i
+unk free up context ctx
+evp_cipher_ctx initialize cipher contex ctx
+set bn_ctx const bignum bn_mont_ctx set up mont structure modulus m by precompute inverse value r
+const asn1_time const x509 x509_get0_notafter return notbefore notafter field certificate x respectively
+encrypt unk function perform public key encryption operation use ctx
+miss const evp_pkey function return # if public key parameter pkey be miss # if be present or algorithm do parameter
+dsa_sig allocate initialize dsa_sig structure
+unk evp_cipher_ctx set unk parameter base pass cipher
+get read size_t bio bio_get_read_reque return amount datum request , or buffer size if be less , if last read attempt other half bio pair fail due empty buffer
+bn_mont_ctx bignum bignum perform montgomery reduction r r 1
+ssl ssl_set0_chain , ssl_set1_chain , ssl_add0_chain_cert , ssl_add1_chain_cert , ssl_get0_chain_certs , , ssl_build_cert_chain , ssl_select_current_cert ssl_set_current_cert be similar except apply ssl structure ssl
+ssl_ctx load one or more serverinfo extension byte array into ctx
+unk convert stre utf8 format , converted datum be allocate buffer out
+get const ssl return file descriptor which be link ssl
+add add encryption algorithm table include password base encryption algorithm
+dh allocate initialize dh structure
+decrypt unk function initialize public key algorithm context use key pkey decryption operation
+get unk ssl return servername extension value specify type if provide client hello or null
+set evp_md bio set message digest bio b md : must be call initialize digest bio before datum be pass through
+ssl_ctx decrement reference count ctx , remove ssl_ctx object point by ctx free up allocated memory if reference count have reach #
+set x509_store ssl_ctx certificate verification storage ctx store
+encrypt be basic blowfish encryption decryption function
+bio_method return buffer bio method
+create evp_md_ctx allocate , initialize return digest context
+unk encode inl byte datum find buffer point by
+function add standard openssl configuration module internal list
+generate dsa expect contain dsa parameter
+bignum bignum generate cryptographically strong pseudo_random number rnd range # rnd range
+bio return file descriptor bio use fd close_flag
+want const ssl return state information ssl object ssl
+assign rsa evp_pkey , evp_pkey_assign_dsa , evp_pkey_assign_dh , evp_pkey_assign_ec_key , evp_pkey_assign_poly1305 evp_pkey_assign_siphash set reference key key however supply key internally so key be free when parent pkey be free
+const evp_md evp_md2 , evp_md5 , evp_sha , evp_sha1 , , evp_sha256 , evp_sha384 , evp_sha512 , evp_mdc2 evp_ripemd160 return evp_md structure md2 , md5 , sha , sha1 , sha224 , sha256 , sha384 , sha512 , mdc2 ripemd160 dig algorithm respectively
+long ssl return 1 , if rsa key be need , rsa_bas strength_limited exportable ciphersuite because rsa key keysize large than # bit be instal
+rsa engine allocate initialize rsa structure so engine be use rsa operation
+unk function evp_pkey_paramgen be similar except parameter be generate
+write bio bio_read_filename , , bio_append_filename bio_rw_filename set file bio b file name reading , writing , append or read write respectively
+const asn1_time x509_crl x509_crl_set1_lastupdate set lastupdate nextupdate field crl tm
+add x509 ssl add ca name extract cacert list ca send client when request client certificate choose ssl , override set valid ssl ssl_ctx object
+rsa encrypt flen byte use public key rsa store ciphertext
+engine engine function return structural reference engine object
+ui retrieve datum have last give ui ui_add_user_data
+unk unk duplicate context ctx
+unk bn_ctx bn_blinding bignum bn_blinding_convert be wrapper function bn_blinding_convert_ex bn_blinding_invert_ex r set null
+const asn1_time x509 x509_set1_notafter set notbefore notafter field x tm
+bio normally write out internally buffer datum , case be use signal eof no more datum be write
+be bignum bn_is_zero , bn_is_one , bn_is_word be macro
+verify verifie signature sig be valid ecdsa signature hash value dgst size dgst_len use public key eckey
+set bignum unk macro set public exponent value rsa key generation pubexp currently should be odd integer
+ec_key const evp_pkey evp_pkey_get0_hmac , evp_pkey_get0_poly1305 , evp_pkey_get0_siphash , evp_pkey_get0_rsa , evp_pkey_get0_dsa , evp_pkey_get0_dh return reference key pkey or null if key be correct type but reference count return key be incremente so must be free up after
+write evp_pkey bio pem_write_pkcs8privatekey_nid write out private key as pkc # encryptedprivatekeyinfo however use pkc # v1 or pkc # encryption algorithm instead
+x509 allocate initialize x509 structure
+set verify long ssl set verify_result object ssl be result verification x509 certificate present by peer , if
+set ssl ssl_ctx_set_ecdh_auto set automatic curve selection server ctx or ssl onoff
+set set mark current topmost error record if be one
+add ui unk add string be show time as prompt extra information or show error string
+set asn1_object x509_name_entry set field name ne obj
+unk log md2 , , md5 compute md2 , md4 , md5 message digest n byte d place md which must have space md2_digest_length md4_digest_length md5_digest_length # byte output
+set pday psec time difference between
+x509_store ssl_ctx ssl_ctx_set0_chain_cert_store set certificate store use certificate chain building st
+set ssl_ctx be use store application datum arg idx into ctx object
+dsa evp_pkey evp_pkey_get1_rsa , , evp_pkey_get1_dh evp_pkey_get1_ec_key return reference key pkey or null if key be correct type
+unk cms_contentinfo return pointer unk pointer contain embed content
+connect ssl ssl_connect_apiname initiate handshake server
+evp_pkey_method free exist evp_pkey_method point by pmeth
+rsa const evp_pkey evp_pkey_get0_hmac , evp_pkey_get0_poly1305 , evp_pkey_get0_siphash , , evp_pkey_get0_dsa , evp_pkey_get0_dh evp_pkey_get0_ec_key return reference key pkey or null if key be correct type but reference count return key be incremente so must be free up after
+miss long ssl_ctx return number session propose by client be find internal session cache server mode
+set long dh ssl set parameter only ssl
+compute digital signature dgstlen byte hash value dgst use private ec key eckey optional pre_computed value kinv rp
+delete x509_name_entry x509_name delete entry name position loc
+set ssl_ctx set callback only ssl
+x509_verify_param set expect ip address ip
+erase memory use by prng
+unk evp_md_ctx set up verification context ctx dig type engine impl public key pkey
+const unk be idential conf_modules_load_file except read configuration information cnf
+unk initialise ctx start decode operation
+const asn1_object convert asn1_object into textual representation
+asn1_string free up
+const dsa d2i_dsaprivatekey , decode encode dsa private key component
+get long ssl return option set ssl
+set evp_pkey allow modify evp_pkey different set algorithm than default
+get const ssl return pointer name ssl_cipher list ssl priority
+bio bio_pending , bio_ctrl_pending , bio_ctrl_wpende return number pende character bio read write buffer
+x509_verify_param x509_store_ctx x509_verify_param retrieve intenal pointer verification parameter associate ctx
+set ssl set context sid_ctx length sid_ctx_len within which session can be reuse ssl object
+get ssl_cipher const ssl return pointer ssl_cipher object contain description actually use cipher connection establish ssl object
+ssl_session long ssl_session transform external asn1 representation session , store as binary datum location pp length length , into ssl_session object
+dsa long dsa , i2d_dsaparams decode encode dsa parameter use dss_parm structure as define rfc2459
+ssl_ctx set give null terminate psk identity hint hint ssl context object ctx
+set long rsa ssl set key only ssl
+add bn_ulong bignum add w w
+set unsigned long x509_verify_param function set flag param by ore flag
+verify recover unk function initialize public key algorithm context use key pkey verify recover operation
+get verify const ssl return verification depth limit currently set ssl
+const bignum bignum bignum bignum multiplie by b find non_negative remainder respective modulus m mod m
+get const ssl be use retrieve psk identity hint use during connection setup related ssl object ssl
+engine const evp_md evp_md_ctx set up digest context ctx dig type engine impl
+get read unk ssl ssl_ctx_get_read_ahead indicate whether read ahead have set or
+engine note accept boolean argument can relax semantic function if set non_zero only return failure if engine support give command name but fail while execute , if engine do support command name simply return success without do anything
+size_t evp_md_ctx sign datum ctx place signature sig
+get verify long const ssl return result verification x509 certificate present by peer , if
+set long long ssl_ctx set timeout newly create session ctx t
+const bignum return bignum constant value #
+bn_ulong bn_ulong const bignum return remainder divide by w w
+evp_md_ctx be similar evp_digestfinal_ex except digest context ctx be automatically clean up
+write bio pkcs7 bio add appropriate mime header pkc # structure produce message
+add unk add compression method cm identifier identifier list available compression method
+mdc2_ctx place message digest md , which must have space mdc2_digest_length # byte output , erase mdc2_ctx
+get const ssl return shutdown mode ssl
+const evp_cipher evp_cipher_ctx evp_encryptinit , evp_decryptinit behave similar way evp_encryptinit_ex , evp_decryptinit_ex evp_cipherinit_ex except ctx paramet do need be initialize always default cipher implementation
+buf_mem allocate buffer zero size
+verify recover unk function recover sign datum use ctx
+const bignum bn_bn2dec return printable string contain hexadecimal decimal encoding respectively
+unk asn1_object unk unk unk cms_recipientinfo retrieve key information cms_recipientinfo structure ri which must be type cms_recipinfo_kek
+unk have deprecate
+ssl return set support curve send by client support curve extension
+recover message digest flen byte long signature use signer public key rsa
+size_t t buf_strdup , buf_strndup , buf_memdup , , buf_strlcat buf_strnlen be equivalent standard c library function
+unk long , unk unk return library name , function name reason string respectively
+const evp_pkey_method evp_pkey_method copy evp_pkey_method object src dst
+set bio_method bio set method already exist bio
+set long dh ssl_ctx set dh parameter be use be dh
+rsa long rsa , i2d_rsaprivatekey decode encode pkc # rsaprivatekey structure
+x509 ssl_ctx ssl_ctx_add0_chain_cert append single certificate x509 chain associate current certificate ctx
+update bn_ctx bn_blinding update bn_blinding parameter by squaring ai or , after specific number use if necessary parameter be set , by unk blind parameter
+ssl ssl_set1_curves_list be similar except set support curve ssl structure ssl
+return type key correspond value type
+evp_md_ctx evp_md_ctx be similar evp_md_ctx_copy_ex except destination out do have be initialize
+x509_name bio print out name bp indent each line by obase character
+x509_store ssl_ctx ssl_ctx_set1_chain_cert_store set certificate store use certificate chain building st
+decrypt const bf_key unk bf_encrypt be low level function blowfish encryption
+verify verifie signature sigbuf size siglen match give message dig m size m_len
+evp_cipher_ctx evp_sealupdate have exactly property as evp_encryptupdate evp_encryptfinal routine , as document evp_encryptinit manual page
+encrypt be as des_cfb64_encrypt use output feed back mode
+get const unk ssl return function pointer method set ssl
+const evp_pkey bio function , evp_pkey_print_private evp_pkey_print_params print out public , private or paramet component key pkey respectively
+x509 cms_contentinfo cms_add1_cert add certificate cert cms
+add add digest algorithm table
+asn1_object allocate initialize asn1_object structure
+md5_ctx md4_init , md4_update , md4_final , md5_init , md5_update , be analogous use md4_ctx md5_ctx structure
+pende size_t bio bio_pending , , unk bio_ctrl_wpending return number pende character bio read write buffer
+close down free up memory allocate by configuration module
+const dh_method dh select meth perform operation use key dh
+write write number random byte file filename which can be use initialize prng by call rand_load_file later session
+ssl return string indicate current read state ssl object ssl
+const asn1_object be as obj_obj2txt no_name set zero
+assign dsa evp_pkey evp_pkey_assign_rsa , , evp_pkey_assign_dh evp_pkey_assign_ec_key set reference key key however supply key internally so key be free when parent pkey be free
+const evp_cipher evp_cipher_ctx initialize cipher context ctx encryption cipher type use random secret key iv
+get long ssl_ctx return option set ctx
+const evp_md evp_md2 , evp_md5 , evp_sha , evp_sha1 , evp_sha224 , , evp_sha384 , evp_sha512 , evp_mdc2 evp_ripemd160 return evp_md structure md2 , md5 , sha , sha1 , sha224 , sha256 , sha384 , sha512 , mdc2 ripemd160 dig algorithm respectively
+set unk x509_verify_param set verification time param t
+get unk long err_get_lib , err_get_func be macro
+bio close down ssl connection bio chain bio
+long long ssl_ctx clear option set via bitmask option ctx
+verify verifie signature sig match give message digest dgst size len
+rsa d2i_rsa_pubkey decode encode rsa public key use subjectpublickeyinfo structure
+bio be convenience function print error string error openssl have record bp , thus empty error queue
+unk set long long ssl_ctx set size internal session cache context ctx t
+verify unk function initialize public key algorithm context use key pkey signature verification operation
+have semantic as rand_byte
+get long ssl indicate whether peer support secure renegotiation
+get const ssl be use retrieve information idx ssl
+cmd ssl_conf_ctx function process most two command line argument pargv pargc
+const evp_pkey const evp_pkey function compare public key component paramter key b
+get file bio retrieve fp file bio , be macro
+bn_blinding const bignum const bignum allocate bn_blinde structure copy ai value into newly create bn_blinding object
+sign ecdsa_sig be wrapper function ecdsa_do_sign_ex kinv rp set null
+evp_cipher_ctx if padding be enable then encrypt final datum , be data remain partial block
+unk const unk const unk return signaturealgorithm bs
+ssl_ctx add private key type pk store memory location d ctx
+const ui_method const ui_method ui change ui method associate give ui
+disable configuration
+md4_ctx md4_init , , md4_final , md5_init , md5_update , md5_final be analogous use md4_ctx md5_ctx structure
+const evp_md evp_dss1 return evp_md structure sha sha1 digest algorithm but use dss signature algorithm
+asn1_object , obj_nid2ln obj_nid2sn convert nid n asn1_object structure , long name short name respectively , or null if error occur
+generate dsa work much way as dsa_generate_parameters_ex , except no dsa parameter be pass instead newly allocate dsa structure be return
+bignum unk bignum bignum bignum compute inverse modulo n place result r n 1
+get const ssl return result code precede call ssl_connect , ssl_accept , ssl_do_handshake , ssl_read , ssl_peek , or ssl_write ssl
+bignum bn_ctx dsa be use precompute part signing operation case signature generation be time_critical
+bio_method return cipher bio method
+asn1_time const x509 x509_getm_notafter be similar x509_get0_notbefore x509_get0_notafter except return non_constant mutable reference associate date field certificate
+long ssl_ctx return number session be remove because maximum session cache size be exceed
+ui const ui_method first thing be create ui ui_new or , then add information ui_add or ui_dup function
+set check unk before des key can be use , must be convert into architecture dependent des_key_schedule via or des_set_key_unchecked function
+derive set peer evp_pkey unk function set peer key : normally be public key
+ssl ssl_ctx_use_certificate_asn1 load asn1 encode certificate memory location d into ctx , load asn1 encode certificate into ssl
+const unk evp_md_ctx hash cnt byte datum d into verification context ctx
+set x509_verify_param set verification purpose param purpose
+bn_blinding free bn_blinding structure
+create bn_blinding bn_blinding create bn_blinding parameter use exponent e modulus m
+set ssl be use store application datum arg idx into ssl object
+ripemd160_ctx initialize ripemd160_ctx structure
+unsigned long err_get_error_line_data , err_peek_error_line_data store additional datum flag associate error code datum flag , unless be null
+rsa evp_pkey , evp_pkey_set1_dsa , evp_pkey_set1_dh evp_pkey_set1_ec_key set key reference by pkey key
+return nid corresponding text string s
+support return # if extension ext_type be handle internally by openssl # otherwise
+unk bio reset file related bio file position pointer ofs byte start file
+const evp_md evp_md_ctx behave way as evp_digestinit_ex except pass context ctx do have be initialize , always use default digest implementation
+add pkcs7_signer_info const evp_md evp_pkey x509 pkcs7 add signer certificate signcert private key pkey use message digest md pkcs7 sign datum structure p7
+get dig evp_pkey function set pnid default message digest nid public key signature operation associate key pkey
+read ssl try read num byte specify ssl into buffer buf
+get long bio place socket c if be null , return socket
+sha const evp_md evp_md2 , evp_md5 , , evp_sha1 , evp_sha224 , evp_sha256 , evp_sha384 , evp_sha512 , evp_mdc2 evp_ripemd160 return evp_md structure md2 , md5 , sha , sha1 , sha224 , sha256 , sha384 , sha512 , mdc2 ripemd160 dig algorithm respectively
+ui ui_dup_input_string , ui_dup_verify_string , , unk ui_dup_error_string be basically as ui_add counterpart , except make copy string
+get x509_get0_notbefore_apiname x509_get0_notafter_apiname return notbefore notafter field certificate x respectively
+add ssl_ctx add custom extension tls client extension type ext_type callback add_cb , free_cb parse_cb
+bio create file bio mode mode meaning mode be as stdio function fopen
+set long ssl_ctx set callback fuction cb handling session ticket ssl context sslctx
+set ssl_ctx ssl_set_alpn_protos be use by client set list protocol available be negotiate
+x509 cms_contentinfo cms_add0_cert add certificate cert cms
+encrypt const bf_key unk bf_decrypt be low level function blowfish encryption
+set ssl_ctx set pointer userdata which be provide password callback invocation
+bio_method return socket bio method
+dsa long dsa , i2d_dsaprivatekey decode encode dsa private key component
+size_t evp_md_ctx verifie datum ctx against signature sig length siglen
+crypto_threadid record currently_execute thread identifier into give identifi object
+size_t const evp_pkey , evp_pkey_get0_poly1305 , evp_pkey_get0_siphash , evp_pkey_get0_rsa , evp_pkey_get0_dsa , evp_pkey_get0_dh evp_pkey_get0_ec_key return reference key pkey or null if key be correct type but reference count return key be incremente so must be free up after
+set ssl_session be use store application datum arg idx into session object
+cmd ssl_conf_ctx return type value cmd refer
+x509_verify_param clear flag flag param
+engine const evp_md evp_md_ctx set up verification context ctx dig type engine impl
+unk get long ssl_ctx return currently valid session cache size
+ssl_ctx load certificate chain file into ctx
+add ssl_session ssl_ctx ssl_remove_session be synonyms ssl_ctx counterpart
+size_t bio size_t bio combine call bio_new , bio_make_bio_pair bio_set_write_buf_size create connect pair bios bio1 , bio2 write buffer size writebuf1 writebuf2
+bn_ctx function must call first
+evp_pkey unk function perform key generation operation , generate key be write ppkey
+unsigned long err_get_error_line , err_peek_last_error_line be as above , but additionally store file name line number where error occur file line , unless be null
+bio bio cms_contentinfo finalise structure cms
+set ssl_ctx callback be set use function or ssl_set_psk_client_callback
+x509_verify_param set expect ip address ipasc
+set close long bio set bio b close flag flag
+build ssl ssl_set0_chain , ssl_set1_chain , ssl_add0_chain_cert , ssl_add1_chain_cert , ssl_get0_chain_certs , ssl_clear_chain_cert , , ssl_select_current_cert ssl_set_current_cert be similar except apply ssl structure ssl
+x509_name unk cms_signerinfo retrieve certificate signer identifier associate specific cms_signerinfo structure si
+asn1_object unk asn1_object return copy o
+accept long ssl_ctx return number successfully establish session server mode
+evp_cipher_ctx encrypt inl byte buffer write encrypt version out
+return string indicate type alert specify by value
+get long ssl_ctx return currently set maximum size ctx
+dsa free dsa structure component
+bio ssl_ctx allocate ssl bio use ssl_ctx ctx use client mode if client be non zero
+bignum bignum bignum can be use perform efficient bn_mod_mul operation when operation be perform repeatedly modulus
+x509 ssl ssl_ctx_use_certificate load certificate x into ctx , load x into ssl
+bignum bn_zero , bn_set_word set value 0 , # w respectively
+set bignum set bit n # 1 n
+encrypt mode function , bf_cfb64_encrypt bf_ofb64_encrypt operate variable length datum
+encrypt unk function initialize public key algorithm context use key pkey encryption operation
+unk set ssl_ctx set callback function , which be automatically call whenever session be negotiate
+unk cms_signerinfo retrieve signature associate si pointer unk structure
+const evp_pkey bio function evp_pkey_print_public , evp_pkey_print_params print out public , private or paramet component key pkey respectively
+add ssl_ctx add custom extension tls server extension type ext_type callback add_cb , free_cb parse_cb
+const evp_cipher evp_cipher_ctx , evp_decryptinit evp_cipherinit behave similar way evp_encryptinit_ex , evp_decryptinit_ex evp_cipherinit_ex except ctx paramet do need be initialize always default cipher implementation
+get long response return by server can be obtain via call
+dh evp_pkey evp_pkey_get1_rsa , evp_pkey_get1_dsa , evp_pkey_get1_ec_key return reference key pkey or null if key be correct type
+set asn1_time set asn1_time structure s time represent by string str which must be appropriate asn time format example yymmddhhmmssz or yyyymmddhhmmssz
+be bignum bn_is_zero , bn_is_word test if equal 0 , 1 , or w respectively
+dh evp_pkey evp_pkey_set1_rsa , evp_pkey_set1_dsa , evp_pkey_set1_ec_key set key reference by pkey key
+ssl_ctx add first private key find file ctx
+accept bio combine bio_new bio_set_accept_port into single call : be create accept bio port host_port
+ssl_session ssl be as ssl_get_session , but reference count ssl_session be incremente by one
+sha_ctx place message digest md , which must have space sha_digest_length # byte output , erase sha_ctx
+const evp_md evp_md_ctx_type return nid object identifi represent give message digest when pass evp_md structure
+set const unk ssl_ctx set default method ssl object newly create ctx
+bn_ulong bn_ulong bn_ulong bn_mul call bn_mul_normal , or optimize implementation if factor have size : be use if be # word long , bn_mul_recursive if be large than bn_mull_size_normal size be exact multiple word size , bn_mul_part_recursive other be large than bn_mull_size_normal
+sign message dig m size m_len use private key rsa as specify pkc # v2
+rsa long rsa i2d_rsapublickey decode encode pkc # rsapublickey structure
+get share unk ssl create colon separate nul terminate list ssl_cipher name be available both client server
+long ssl_ctx clear extra chain certificate associate ctx
+bn_ctx bignum bignum bignum compute great common divisor b place result r
+asn1_string return internal pointer datum x
+const evp_cipher evp_cipher_ctx set up cipher context ctx encryption cipher type engine impl
+be equivalent rand_add when num entropy
+get return index number under which pointer ssl object be store into x509_store_ctx object
+unk cms_signerinfo int look sign receipt request si , if be find be decode write prr
+get write size_t bio bio_get_write_guarantee return maximum length datum can be currently write bio
+set unk unk work like des_set_key_checked if des_check_key flag be non_zero , otherwise like des_set_key_uncheck
+bignum allocate initialize bignum structure
+free internal table compression method be build internally , possibly augment by add ssl_comp_add_compression_method
+encrypt macro implement two_key triple_de by reuse ks1 final encryption
+hash unsigned long const crypto_threadid return numeric value usable as hash_table key
+get asn1_object x509_name x509_name_get_index_by_nid retrieve next index match nid or obj after lastpos
+unk long generate human_readable string represent error code e , place buf
+x509 x509 bio be similar d2i_x509 except attempt parse datum bio bp
+get x509_name , x509_name_get_text_by_obj retrieve text first entry name which match nid or obj , if no such entry exist # be return
+add x509_name_entry x509_name add copy x509_name_entry structure ne name
+unk log , md4 , md5 compute md2 , md4 , md5 message digest n byte d place md which must have space md2_digest_length md4_digest_length md5_digest_length # byte output
+evp_pkey cms_recipientinfo associate private key pkey cms_recipientinfo structure ri , which must be type cms_recipinfo_tran
+get bn_ulong bignum return , if can be represent as bn_ulong
+bio bio bio function append bio append b , return b
+encrypt des_ede2_cfb64_encrypt be as des_cfb64_encrypt except triple_des be use
+obj_nid2obj , obj_nid2ln convert nid n asn1_object structure , long name short name respectively , or null if error occur
+md5_ctx md4_init , md4_update , md4_final , , md5_update , md5_final be analogous use md4_ctx md5_ctx structure
+dh engine allocate initialize dh structure so engine be use dh operation
+unk asn1_string return copy structure
+get const dh_method return pointer current default dh_method
+set long ssl_ctx set context_specific argument be pass into callback ssl_ctx
+register error string libcrypto function
+encrypt use propagating cipher block chain mode use by kerbero v4
+size_t check if certificate match specify email address
+decrypt bio x509 evp_pkey pkcs7 extract decrypt content pkc # envelopeddata structure
+read des_cblock call des_read_pw convert password des key by call des_string_to_key ; des_read_2password operate way as except generate two key by use des_string_to_2key function
+return underlie type nid type
+unk long ssl_ctx return number successfully reuse session
+assign dh evp_pkey evp_pkey_assign_rsa , evp_pkey_assign_dsa , evp_pkey_assign_ec_key set reference key key however supply key internally so key be free when parent pkey be free
+cms_signerinfo const evp_md evp_pkey x509 cms_contentinfo add signer certificate signcert private key pkey use message digest md cms_contentinfo signeddata structure cms
+x509_name return total number entry name
+set const ui_method change default ui method one give
+set evp_cipher_ctx set key length cipher ctx
+uncompress bio bio cms_contentinfo extract uncompress content cms compresseddata structure cms
+get retry bio return reason special condition if pass relevant bio , example as return by bio_get_retry_bio
+free previously loaded error string
+set ssl set quiet shutdown flag ssl be mode
+unload finish unload configuration module
+evp_cipher_ctx evp_openupdate have exactly property as evp_decryptupdate evp_decryptfinal routine , as document evp_encryptinit manual page
+ocsp_singleresp unk return ocsp_singleresp structure bs correspond index idx
+set ssl_session ssl set session be use when connection be be establish
+unk function allow application send algorithm specific control operation context ctx string form
+cmd ssl_conf_ctx function perform configuration operation cmd optional paramet value ctx
+bio lhash , lh_node_stats_bio lh_node_usage_stats_bio be as above , except output go bio
+ui remove ui memory , along other piece memory connect , like duplicated input string , result other
+get bio ssl ssl_get_wbio return pointer bios read or write channel , which can be different
+cms_recipientinfo x509 cms_contentinfo add recipient recip cms_contentinfo enveloped datum structure cms as keytransrecipientinfo structure
+x509 cms_signerinfo compare certificate cert against signer identifi si
+bio bio_free free up single bio , free up single bio but do return value
+locking_function must be able handle up different mutex lock
+x509_store_ctx return newly initialise x509_store_ctx structure
+get verify const ssl return verification mode currently set ssl
+set bn_ctx const bignum unk store m recp set up compute m shift leave by bn_num_bit 1 make integer
+evp_md_ctx clean up digest context ctx , should be call after digest context be no longer need
+get rsa be use retrieve application specific datum
+x509_store x509_store_ctx set up ctx subsequent verification operation
+set verify x509_store_ctx set verification callback ctx verify_cb overwrite exist callback
+be bn_ulong bignum bn_is_zero , bn_is_one test if equal 0 , 1 , or w respectively
+get asn1_object x509_name x509_name_get_text_by_nid , retrieve text first entry name which match nid or obj , if no such entry exist # be return
+pop top error stack until mark be find
+get retry bio bio determine precise reason special condition , return bio cause condition if reason be null contain reason code
+hmac_ctx erase key other datum hmac_ctx release associate resource
+get evp_cipher_ctx bio be bio_ctrl macro which retrieve internal bio cipher context
+verify log return human readable error string verification error n
+get x509_store const ssl_ctx return pointer current certificate verification storage
+size_t check if certificate subject alternative name or subject commonname match specify host name , which must be encode preferred name syntax describe section # rfc #
+ssl_conf_ctx function set command prefix cctx prefix
+const ssl return # letter string indicate current state ssl object ssl
+ssl decrement reference count ssl , remove ssl structure point by ssl free up allocated memory if reference count have reach #
+encrypt use unk mode des
+pende const ssl return number byte which be available inside ssl immediate read
+unk evp_cipher_ctx set cipher parameter base asn1 algorithmidentifier parameter
+write bio cms_contentinfo bio output cms_contentinfo structure pem format
+set long long ssl_ctx add option set via bitmask option ctx
+get ssl_ctx const ssl return pointer ssl_ctx object , which ssl be create ssl_new 3
+bignum bignum bignum compute mont : b r 1 place result r
+mdc2_ctx initialize mdc2_ctx structure
+connect ssl evp_pkey_ctx_new_apiname function allocate public key algorithm context use pkey key type engine e
+ui , ui_dup_verify_string , ui_dup_input_boolean , unk ui_dup_error_string be basically as ui_add counterpart , except make copy string
+unk connect long ssl_ctx return number start handshake client mode
+bn_ulong bignum subtract w a w
+x509_store ssl ssl_set0_verify_cert_store , ssl_set1_verify_cert_store , ssl_set0_chain_cert_store be similar except apply ssl structure ssl
+unk cms_signerinfo function add sign receipt request rr signerinfo structure si
+evp_cipher_ctx allow various cipher specific parameter be determine set
+register available cipher digest
+s bio_method return bio file method
+const evp_pkey_method add pmeth user define stack method
+asn1_string return allocate asn1_string structure
+add asn1_object x509_name x509_name_add_entry_by_txt , x509_name_add_entry_by_nid add field whose name be define by string field , object obj or nid nid respectively
+bio return socket bio use sock close_flag
+set get ssl_ctx set callback function which be call , whenever client propose resume session but session could be find internal session cache see ssl_ctx_set_session_cache_mode 3
+md2_ctx initialize md2_ctx structure
+set const dh_method make meth default method dh structure create later
+bio typically reset bio initial state , case file related bios example rewind file pointer start file
+ssl_conf_ctx function free up context cctx
+evp_pkey unk function evp_pkey_paramgen_init be similar except parameter be generate
+const unk evp_md_ctx hash cnt byte datum d into signature context ctx
+x509 evp_pkey pkcs12 parse pkcs12 structure
+assign unk evp_pkey evp_pkey_assign_rsa , evp_pkey_assign_dsa , evp_pkey_assign_dh , evp_pkey_assign_ec_key , evp_pkey_assign_poly1305 set referenced key key however supply key internally so key be free when parent pkey be free
+bignum , bn_one bn_set_word set value 0 , # w respectively
+get const ui_method ui return ui method associate give ui
+const bignum bignum bignum bignum subtract b modulo m place non_negative result r
+long long bio bio_ctrl , bio_callback_ctrl , bio_ptr_ctrl be bio control operation take argument various type
+long long ssl clear option set via bitmask option ssl
+evp_cipher_ctx evp_decryptinit_ex , evp_decryptfinal_ex be correspond decryption operation
+hmac_ctx initialise hmac_ctx before first
+ssl_ctx set support curve ctx clistlen curve array clist
+x509_verify_param add name as additional reference identifer can match peer certificate
+encrypt cms_recipientinfo cms_contentinfo attempt encrypt cms_recipientinfo structure ri structure cms
+bignum const bignum bignum copy
+get long function be initially call register application specific datum
+size_t check if certificate match specify ipv4 or ipv6 address
+unk des_cblock produce # byte checksum base input stream via cbc encryption
+evp_pkey free up private key key
+unk register error string library number lib
+x509_verify_param ssl_ctx ssl_get0_param retrieve internal pointer verification parameter ctx or ssl respectively
+verify x509_store ssl_ctx ssl_ctx_set1_verify_cert_store set certificate store use certificate verification st
+ssl_ctx const unk create ssl_ctx object as framework establish enable connection
+produce const unk extract producedat field single response bs
+s bio_method return file descriptor bio method
+asn1_string set datum string str buffer datum or length len
+be similar , except nul_terminated string address be first convert internal representation
+bio lhash lh_stats_bio , lh_node_usage_stats_bio be as above , except output go bio
+x509 ssl_ctx ssl_ctx_add1_chain_cert append single certificate x509 chain associate current certificate ctx
+bignum generate cryptographically strong pseudo_random number bit length store rnd
+set const dsa_method dsa select meth perform operation use key rsa
+md4_ctx md4_init , md4_update , , md5_init , md5_update , md5_final be analogous use md4_ctx md5_ctx structure
+set ssl ssl_conf_ctx set context associate cctx ssl structure ssl
+unsigned long err_get_error_line_data , err_peek_last_error_line_data store additional datum flag associate error code datum flag , unless be null
+const evp_md evp_dss return evp_md structure sha sha1 digest algorithm but use dss signature algorithm
+return pointer constant string describe version openssl library or give information about library build
+bio bio_method function return bio use method type
+verify verifie signature sig size siglen be valid ecdsa signature hash value dgst size dgstlen use public key eckey
+write evp_pkey file pem_write_bio_pkcs8privatekey_nid write out private key as pkc # encryptedprivatekeyinfo however use pkc # v1 or pkc # encryption algorithm instead
+set unk macro set rsa pad mode ctx
+const crypto_threadid compare two thread id return zero equality , ie
+write bio pkcs7 bio output pkcs7 structure pem format
+get long unk ssl_session return time which session s be establish
+x509 be similar i2d_x509 , but encode output contain both certificate auxiliary trust information
+read bio , bio_write_filename , bio_append_filename bio_rw_filename set file bio b file name reading , writing , append or read write respectively
+decrypt bio bio x509 evp_pkey cms_contentinfo extract decrypt content cms envelopeddata structure
+create x509_name_entry x509_name_entry x509_name_entry_create_by_txt , x509_name_entry_create_by_obj create return x509_name_entry structure
+bn_mont_ctx free component bn_mont_ctx , , if be create by bn_mont_ctx_new , structure
+unk long err_lib_error_string , unk return library name , function name reason string respectively
+engine const evp_pkey return reference engine handling pkey
+bn_ctx const bignum const bignum bignum reduce modulo m place non_negative remainder r
+encrypt implement cfb mode des 64bit feedback
+x509_name unk cms_recipientinfo retrieve certificate recipient identifi associate specific cms_recipientinfo structure ri , which must be type cms_recipinfo_tran
+evp_md_ctx retrieve digest value ctx place md
+grow buf_mem change size already exist buffer len
+evp_pkey function allocate empty evp_pkey structure which be use by openssl store private key
+x509 unk attempt retrieve certificate directly sign bs
+get asn1_object x509_name_entry retrieve field name ne asn1_object structure
+ssl shut down active connection
+get long ssl_ctx return currently use cache mode
+unk buf_strdup , , buf_memdup , buf_strlcpy , buf_strlcat buf_strnlen be equivalent standard c library function
+asn1_string return length content x
+get long ssl_ctx return currently set timeout value ctx
+ssl_ctx set support curve ctx string list
+convert bn_blinding bignum bignum multiplie n blind factor
+rsa d2i_rsaprivatekey , decode encode pkc # rsaprivatekey structure
+be wrapper function ecdsa_sign_ex kinv rp set null
+assign dsa evp_pkey evp_pkey_assign_rsa , , evp_pkey_assign_dh , evp_pkey_assign_ec_key , evp_pkey_assign_poly1305 evp_pkey_assign_siphash set reference key key however supply key internally so key be free when parent pkey be free
+create add object internal table
+find unk unk search bs ocsp response identifier
+get unsigned long const return bn_blinding flag
+bio bio_read_filename , bio_write_filename , bio_append_filename set file bio b file name reading , writing , append or read write respectively
+bio file create file bio wrapping stream
+set ssl_ctx set callback function ctx be use when rsa key be require tmp_rsa_callback
+dh const evp_pkey evp_pkey_get0_hmac , evp_pkey_get0_poly1305 , evp_pkey_get0_siphash , evp_pkey_get0_rsa , evp_pkey_get0_dsa , evp_pkey_get0_ec_key return reference key pkey or null if key be correct type but reference count return key be incremente so must be free up after
+cms_recipientinfo unk asn1_object unk size_t size_t cms_contentinfo add symmetric key key length keylen use wrap algorithm nid , identifier identifi length idlen optional value date , othertypeid othertype cms_contentinfo envelop datum structure cms as kekrecipientinfo structure
+bignum bignum compare number b
+long ssl_ctx return current number session internal session cache
+size_t cms_recipientinfo associate symmetric key key length keylen cms_recipientinfo structure ri , which must be type cms_recipinfo_kek
+bn_ulong bn_ulong bn_ulong bn_mul call bn_mul_normal , or optimize implementation if factor have size : bn_mul_comba8 be use if be # word long , bn_mul_recursive if be large than bn_mull_size_normal size be exact multiple word size , other be large than bn_mull_size_normal
+set long long ssl_session ssl_get_time , , ssl_get_timeout , ssl_set_timeout function be synonyms ssl_session counterpart
+const bignum return size bignum byte
+set ssl_ctx set list available cipher ctx use control string str
+const rsa return flag be set rsa current rsa_method
+bio lhash lh_stats_bio , lh_node_stats_bio be as above , except output go bio
+x509_verify_param enable policy checking add policy acceptable policy set
+generate unk ssl_ctx set callback function generate session id session ctx be cb
+set unk macro set dh generator gen dh paramet generation
+verify verifie signature sigbuf size siglen be der representation give octet string m size m_len
+md4_ctx , md4_update , md4_final , md5_init , md5_update , md5_final be analogous use md4_ctx md5_ctx structure
+write bio cms_contentinfo bio add appropriate mime header cms structure produce message
+unk asn1_object , obj_ln2nid , obj_sn2nid return correspond nid object o , long name ln or short name sn respectively or nid_undef if error occur
+get const ssl_session be use retrieve information idx session
+dsa engine allocate initialize dsa structure so engine be use dsa operation
+set unk macro set rsa pss salt length len as name imply be only support pss padding
+be bn_gencb bn_ctx const bignum bn_is_prime_fasttest_ex test if number p be prime
+ssl_conf_ctx function must be call after configuration operation have complete
+x509 ssl_ctx load certificate x into ctx , ssl_use_certificate load x into ssl
+evp_cipher_ctx evp_decryptinit_ex , evp_decryptupdate be correspond decryption operation
+rsa_method initially , default rsa_method be openssl internal implementation , as return by
+rsa long rsa i2d_rsa_pubkey decode encode rsa public key use subjectpublickeyinfo structure
+set ssl_ctx set quiet shutdown flag ctx be mode
+blind bn_ctx rsa turn blind key rsa generate random blinding factor
+get const ui_method return pointer current default ui method
+set ssl_ctx set application callback cb use by server select which protocol incoming connection
+long ssl_ctx be synonym ssl_ctx_flush_session
+add x509_name , x509_name_add_entry_by_obj x509_name_add_entry_by_nid add field whose name be define by string field , object obj or nid nid respectively
+unk function initialize public key algorithm context use key pkey key genration operation
+unk return number ocsp_singleresp structure bs
+ecdsa_sig free ecdsa_sig structure sig
+engine const evp_md evp_md_ctx set up signing context ctx dig type engine impl
+hmac_ctx place message authentication code md , which must have space hash function output
+pende bio , bio_ctrl_pending , unk bio_ctrl_wpending return number pende character bio read write buffer
+set bio set behaviour memory bio b when be empty
+set x509 x509_store_ctx set certificate be vertifie ctx x
+get const dsa_method return pointer current default dsa_method
+bio free up single bio , bio_vfree free up single bio but do return value
+encrypt des_ede3_ofb64_encrypt be as des_ofb64_encrypt , use triple_de
+get const ssl_cipher return stre which indicate protocol version first define cipher
+bio free up entire bio chain , do halt if error occur free up individual bio chain
+get verify const ssl_ctx return verification mode currently set ctx
+add const bignum bignum bignum bignum add b modulo m place non_negative result r
+const evp_md evp_md_ctx initialize verification context ctx default implementation digest type
+const evp_md , evp_md5 , evp_sha , evp_sha1 , evp_sha224 , evp_sha256 , evp_sha384 , evp_sha512 , evp_mdc2 evp_ripemd160 return evp_md structure md2 , md5 , sha , sha1 , sha224 , sha256 , sha384 , sha512 , mdc2 ripemd160 dig algorithm respectively
+buf_strndup , buf_memdup , buf_strlcpy , buf_strlcat buf_strnlen be equivalent standard c library function
+evp_pkey encode key
+sha_ctx initialize sha_ctx structure
+read unk be use read len byte file descriptor fd into buffer buf
+const dsa d2i_dsaparams , decode encode dsa parameter use dss_parm structure as define rfc2459
+unk bignum bignum bignum divide by m use recp
+const evp_md_ctx evp_md_ctx can be use copy message digest state out
+add ui add prompt ui suppose be answer boolean way , single character yes different character no
+const evp_pkey evp_pkey function copy parameter key key
+bn_ctx const bignum const bignum bignum correspond bn_div dv set null
+const dsa_sig d2i_dsa_sig , decode encode dsa signature use dss_sig_value structure as define rfc2459
+unk long ssl_ctx return number successfully retrieve session external session cache server mode
+const evp_md evp_md_ctx_size return size message digest when pass evp_md or evp_md_ctx structure , i
+obj_nid2obj , obj_nid2sn convert nid n asn1_object structure , long name short name respectively , or null if error occur
+asn1_time const x509 x509_getm_notbefore be similar x509_get0_notbefore x509_get0_notafter except return non_constant mutable reference associate date field certificate
+bf_key set up bf_key key use len byte long key datum
+bio_method return null sink bio method
+const asn1_object cms_contentinfo return content type cms_contentinfo structure as asn1_object pointer
+set nid unk set ec curve ec paramet generation nid
+return one letter string indicate type alert specify by value
+x509 ssl_ctx select x509 as current end entity certificate , but only if x509 have already load into ctx use function such as ssl_ctx_use_certificate
+const asn1_time x509 x509_set1_notbefore set notbefore notafter field x tm
+asn1_time unk asn1_time set asn1_time structure s time represent by time offset_day offset_sec after time_t value t
+sign flen byte use private key rsa store signature
+unk evp_md_ctx set up signing context ctx dig type engine impl private key pkey
+struct unk ssl_ctx return pointer lhash database contain internal session cache ctx
+evp_cipher_ctx evp_cipherinit_ex , evp_cipherupdate be function can be use decryption or encryption
+set ssl_ctx ssl_ctx_set_msg_callback specify default setting be copy ssl object by ssl_new 3
+set bn_ulong bignum bn_zero , bn_one set value 0 , # w respectively
+hmac_ctx initialize hmac_ctx structure hash function evp_md key key which be key_len byte long
+set ssl ssl_set_wfd perform respective action , but only read channel or write channel , which can be set independently
+const ecdsa_sig create der encode ecdsa signature sig write encode signature pp note : if pp be null i2d_ecdsa_sig return expect length byte der encode signature
+const unk const unk return tbsresponsedata bs
+ui first thing be create ui or ui_new_method , then add information ui_add or ui_dup function
+unk log md2 , md4 , compute md2 , md4 , md5 message digest n byte d place md which must have space md2_digest_length md4_digest_length md5_digest_length # byte output
+get const rsa_method const rsa return pointer rsa_method use by rsa
+remove ssl_session ssl_ctx ssl_add_session be synonyms ssl_ctx counterpart
+add ui add piece memory method time
+set verify ssl_ctx set verification flag ctx be mode specifie verify_callback function be use
+const bignum bn_mpi2bn convert bignum s format consist number length byte represent as 4_byte big_endian number , number big_endian format , where most significant bit signal negative number representation number msb set be prefix null byte
+verify unk function perform public key verification operation use ctx
+unk bio return current file position file relate bio
+bn_mont_ctx allocate initialize bn_mont_ctx structure
+be bignum , bn_is_one bn_is_word test if equal 0 , 1 , or w respectively
+size_t cms_recipientinfo compare identifier identifi idlen parameter against keyidentifi cms_recipientinfo structure ri , which must be type cms_recipinfo_kek
+prompt ui be helper function can be use create prompt two piece information : description name
+bignum bignum bn_bn2mpi convert bignum s format consist number length byte represent as 4_byte big_endian number , number big_endian format , where most significant bit signal negative number representation number msb set be prefix null byte
+const evp_md evp_md_ctx_block_size return block size message digest when pass evp_md or evp_md_ctx structure
+cms_recipientinfo return type cms_recipientinfo structure ri
+const bignum file bn_print write hexadecimal encoding , lead negative number , bio or file fp
+evp_pkey evp_pkey decode private key use algorithm type
+set long ssl ssl_set0_chain , ssl_set1_chain , ssl_add0_chain_cert , ssl_add1_chain_cert , ssl_get0_chain_certs , ssl_clear_chain_cert , ssl_build_cert_chain , ssl_select_current_cert be similar except apply ssl structure ssl
+x509_verify_param enable policy checking set acceptable policy set policy
+put bio attempt write null terminate string buf bio b
+const asn1_object cms_contentinfo asn1_object return pointer embed content type
+bn_ulong return number significant bit word
+const evp_md evp_md2 , evp_md5 , evp_sha , evp_sha1 , evp_sha224 , evp_sha256 , evp_sha384 , evp_sha512 , evp_ripemd160 return evp_md structure md2 , md5 , sha , sha1 , sha224 , sha256 , sha384 , sha512 , mdc2 ripemd160 dig algorithm respectively
+verify x509_store ssl , ssl_set1_verify_cert_store , ssl_set0_chain_cert_store ssl_set1_chain_cert_store be similar except apply ssl structure ssl
+x509 be similar i2d_x509 except encode only tbscertificate portion certificate
+set x509_verify_param set trust set param trust
+bn_ulong bn_ulong bignum divide by w return remainder
+accept bio_method return accept bio method
+get unsigned long x509_verify_param return flag param
+rsa allocate initialize rsa structure
+unsigned long return late error code thread error queue without modify
+bn_ulong if bn_debug be define , bn_check_top , bn_print , bn_set_max be define as empty macro
+encode full block input datum f length dlen store t
+bn_mont_ctx bn_mont_ctx bn_mont_ctx copy bn_mont_ctx
+get unsigned long return early error code thread error queue remove entry
+encrypt des_ede2_ofb64_encrypt be as des_ofb64_encrypt , use triple_de
+unsigned long err_get_error_line , err_peek_error_line be as above , but additionally store file name line number where error occur file line , unless be null
+engine obtain functional reference exist structural reference , call function
+get long const ssl return default timeout value assign ssl_session object negotiate protocol valid ssl
+get unk long err_get_lib , err_get_reason be macro
+unk asn1_time bio print out time s bio b human readable format
+const asn1_time x509_crl x509_crl_set1_nextupdate set lastupdate nextupdate field crl tm
+unk engine evp_pkey function allocate public key algorithm context use algorithm specify pkey engine e
+const asn1_time const x509_crl x509_crl_get0_lastupdate return lastupdate nextupdate field crl
+get can be use assign library number user library runtime
+get const ssl_ctx return quiet shutdown setting ctx
+evp_cipher_ctx evp_cipherinit_ex , evp_cipherfinal_ex be function can be use decryption or encryption
+set const rsa_method make meth default method rsa structure create later
+evp_cipher_ctx evp_openfinal have exactly property as evp_decryptupdate evp_decryptfinal routine , as document evp_encryptinit manual page
+unk bio_method return memory bio method function
+size_t const asn1_object return size content octet obj
+need long ssl_ctx return 1 , if rsa key be need rsa_bas strength_limited exportable ciphersuite because rsa key keysize large than # bit be instal
+set file bio set fp file bio fp
+rsa be use set application specific datum , datum be supply arg paramet precise meaning be up application
+connect bio ssl_ctx create bio chain consist ssl bio follow by connect bio
+obj_obj2nid , obj_ln2nid , return correspond nid object o , long name ln or short name sn respectively or nid_undef if error occur
+unk connect renegotiate long ssl_ctx return number start renegotiation client mode
+generate ssl set callback function generate session id session ssl be cb
+set x509_name_entry set field value ne string type type value determine by byte len
+unk log compute mdc2 message digest n byte d place md which must have space mdc2_digest_length # byte output
+unk accept long ssl_ctx return number start handshake server mode
+set ssl_ctx set context sid_ctx length sid_ctx_len within which session can be reuse ctx object
+const evp_md be null message digest do nothing : i
+const bignum convert absolute value into big_endian form store
+read bio attempt read len byte bio b place datum buf
+bignum be use destroy sensitive datum such as key when be no longer need
+evp_cipher_ctx clear information cipher context free up allocated memory associate
+set const dsa_method make meth default method dsa structure create later
+get long ssl return currently set maximum size ssl
+unk asn1_time check syntax asn1_time structure s
+reset read bio can be use reset value return by bio_get_read_reque zero
+be const bignum test if bit n be set
+evp_cipher evp_cipher_ctx initialize cipher context ctx decryption cipher type
+rsa decrypt flen byte use private key rsa store plaintext
+hmac_ctx initialize or reuse hmac_ctx structure hash function evp_md key key
+unsigned long x509_name file be identical x509_name_print_ex except output be write file pointer fp
+add double mix num byte buf into prng state
+engine evp_pkey set engine handling pkey engine
+x509_verify_param x509_store_ctx set intenal verification paramet pointer param
+set unk macro set length dh prime paramet p dh paramet generation
+const dsa d2i_dsapublickey decode encode dsa public key component structure
+asn1_object convert text string s into asn1_object structure
+write ssl write num byte buffer buf into specify ssl connection
+const unk get responder identifi bs
+obj_obj2nid , , obj_sn2nid return correspond nid object o , long name ln or short name sn respectively or nid_undef if error occur
+get verify const ssl_ctx return verification depth limit currently set ctx
+bio create memory bio use len byte datum buf , if len be # then buf be assume be nul terminate length be determine by strlen
+const evp_md const evp_cipher derive key iv various parameter
+bn_ulong bn_ulong bn_ulong bn_mul call bn_mul_normal , or optimize implementation if factor have size : bn_mul_comba8 be use if be # word long , if be large than bn_mull_size_normal size be exact multiple word size , bn_mul_part_recursive other be large than bn_mull_size_normal
+evp_cipher_ctx evp_encryptfinal , evp_cipherfinal be identical evp_encryptfinal_ex , evp_decryptfinal_ex evp_cipherfinal_ex
+set ssl_ctx set callback function ctx be use when dh parameter be require tmp_dh_callback
+ec_key evp_pkey evp_pkey_get1_rsa , evp_pkey_get1_dsa , evp_pkey_get1_dh return reference key pkey or null if key be correct type
+bn_ctx const bignum bignum bignum take square modulo m place result r
+unsigned long x509_name bio print human readable version nm bio out
+const ssl_cipher return textual description cipher use into buffer buf length len provide
+bignum free component bignum , if be create by bn_new , structure
+set bind long long bio bio_get_bind_mode set retrieve current bind mode
+write const evp_cipher evp_pkey file pem_write_bio_pkcs8privatekey write private key evp_pkey structure pkc # encryptedprivatekeyinfo format use pkc # v2 password base encryption algorithm
+set ssl_ctx ssl_set_ecdh_auto set automatic curve selection server ctx or ssl onoff
+get x509_name x509_name_get_index_by_obj retrieve next index match nid or obj after lastpos
+ssl return # letter string indicate current read state ssl object ssl
+set long long bio set socket bio b fd close flag close_flag
+evp_pkey ssl_ctx add pkey as private key ctx
+rc4_key set up rc4_key key use len byte long key datum
+ui go through information give so far , do print prompting return
+get share ssl return share curve n server_side ssl ssl
+set unk ssl_ctx set default password callback call when pem certificate encryption
+unk set remove ssl_ctx set callback function , which be automatically call whenever session be remove by ssl engine , because be consider faulty or session have become obsolete because exceed timeout value
+rsa rsa_private_decrypt_apiname decrypt flen byte use private key rsa store plaintext
+set ssl callback be set use function ssl_ctx_set_psk_client_callback or
+encrypt be rsa desx mode des
+unk asn1_string compare b return # if two be identical
+remove ssl_session ssl_ctx remove session c context ctx
+set ssl ssl_set_rfd perform respective action , but only read channel or write channel , which can be set independently
+ecdsa_sig allocate ecdsa_sig structure initialize
+be helper function use select protocol
+get evp_md_ctx bio return digest bios context into mdcp
+set ssl_ctx ssl_conf_ctx set context associate cctx ssl_ctx structure ctx
+x509 ssl ssl_set0_chain , ssl_set1_chain , ssl_add0_chain_cert , ssl_add1_chain_cert , ssl_get0_chain_certs , ssl_clear_chain_cert , ssl_build_cert_chain , ssl_set_current_cert be similar except apply ssl structure ssl
+get const evp_md , evp_get_digestbynid evp_get_digestbyobj return evp_md structure when pass digest name , digest nid or asn1_object structure respectively
+size_t t buf_strdup , buf_strndup , buf_memdup , buf_strlcpy , buf_strnlen be equivalent standard c library function
+set const evp_cipher bio set cipher bio b cipher use key key iv iv
+dsa_sig free dsa_sig structure component
+get long unk ssl_session ssl_get_time , ssl_set_time , , ssl_set_timeout function be synonyms ssl_session counterpart
+x509_crl cms_contentinfo cms_add0_crl add crl crl cms
+build ssl_ctx build certificate chain ctx normally use chain store or verify store if chain store be set
+assign ec_key evp_pkey evp_pkey_assign_rsa , evp_pkey_assign_dsa , evp_pkey_assign_dh set reference key key however supply key internally so key be free when parent pkey be free
+const evp_md evp_md2 , evp_md5 , evp_sha , evp_sha1 , evp_sha224 , evp_sha256 , evp_sha384 , evp_sha512 , evp_mdc2 return evp_md structure md2 , md5 , sha , sha1 , sha224 , sha256 , sha384 , sha512 , mdc2 ripemd160 dig algorithm respectively
+ssl_ctx load asn1 encode certificate memory location d into ctx , ssl_use_certificate_asn1 load asn1 encode certificate into ssl
+set verify ssl set maximum depth certificate chain verification shall be allow ssl
+remove cipher digest table
+get x509_store_ctx return error code ctx , see error code section full description error code
+derive size_t unk derive share secret use ctx
+create x509_name_entry x509_name_entry , x509_name_entry_create_by_nid x509_name_entry_create_by_obj create return x509_name_entry structure
+x509 ssl ssl_set0_chain , ssl_set1_chain , ssl_add0_chain_cert , , ssl_get0_chain_certs , ssl_clear_chain_cert , ssl_build_cert_chain , ssl_select_current_cert ssl_set_current_cert be similar except apply ssl structure ssl
+unk function initialize public key algorithm context use key pkey signing operation
+bio_method return message digest bio method
+add x509 ssl_ctx add ca name extract cacert list ca send client when request client certificate ctx
+decrypt cms_recipientinfo cms_contentinfo attempt decrypt cms_recipientinfo structure ri structure cms
+const evp_pkey bio function evp_pkey_print_public , evp_pkey_print_private print out public , private or paramet component key pkey respectively
+verify ssl_ctx specifie location ctx , which ca certificate verification purpose be locate
+set x509_verify_param set maximum verification depth depth
+return string describe reason alert specify by value
+x509_verify_param return dns hostname or subject commonname peer certificate match one reference identifier
+sign dsa_sig dsa compute digital signature len byte message digest dgst use private key dsa return newly allocate dsa_sig structure
+return two letter string as short form describe reason alert specify by value
+compress cms_contentinfo bio create return cms compresseddata structure
+bignum do , but pseudo_random number generate by function be necessarily unpredictable
+md2_ctx can be call repeatedly chunk message be hash len byte datum
+encrypt des_cblock unk macro be provide perform two_key triple_de encryption by use ks1 final encryption
+const ssl_ctx check consistency private key correspond certificate load into ctx
+add x509_name x509_name_add_entry_by_txt , x509_name_add_entry_by_obj add field whose name be define by string field , object obj or nid nid respectively
+const evp_cipher evp_cipher_ctx , evp_cipherupdate evp_cipherfinal_ex be function can be use decryption or encryption
+encrypt mode function bf_cbc_encrypt , bf_cfb64_encrypt operate variable length datum
+bn_ctx bignum bignum take square place result r r 2
+unk long ssl_ctx return number session propose by client either find internal or external session cache server mode , but be invalid due timeout
+const evp_md return nid public key signing algorithm associate digest
+size_t const evp_pkey evp_pkey_get0_hmac , evp_pkey_get0_poly1305 , , evp_pkey_get0_rsa , evp_pkey_get0_dsa , evp_pkey_get0_dh evp_pkey_get0_ec_key return reference key pkey or null if key be correct type but reference count return key be incremente so must be free up after
+bio bio return next bio chain
+const evp_cipher evp_cipher_ctx_type return type pass cipher or context
+const const function allocate sufficient memory store hexadecimal string
+get unsigned long , err_peek_error_line err_peek_last_error_line be as above , but additionally store file name line number where error occur file line , unless be null
+x509 ssl ssl_set0_chain , ssl_set1_chain , , ssl_add1_chain_cert , ssl_get0_chain_certs , ssl_clear_chain_cert , ssl_build_cert_chain , ssl_select_current_cert ssl_set_current_cert be similar except apply ssl structure ssl
+bn_ctx bignum bignum bignum multiplie b place result r r b
+generate bn_gencb dh generate diffie_hellman parameter can be share among group user , store -PRON- provide dh structure
+const bignum bio bn_print_fp write hexadecimal encoding , lead negative number , bio or file fp
+rsa d2i_rsapublickey decode encode pkc # rsapublickey structure
+set long long ssl_session ssl_get_time , ssl_set_time , ssl_get_timeout , function be synonyms ssl_session counterpart
+rsa free rsa structure component
+file lhash print number entry each bucket hash table
+get const ssl return quiet shutdown setting ssl
+x509 x509 file be similar d2i_x509 except attempt parse datum file pointer fp
+derive unk function initialize public key algorithm context use key pkey share secret derivation
+evp_pkey x509_req be equivalent x509_check_private_key except x represent certificate request structure x509_req
+set ssl ssl_ctx_set_alpn_protos be use by client set list protocol available be negotiate
+long bio bio_ctrl , bio_callback_ctrl , bio_int_ctrl be bio control operation take argument various type
+x509 long x509 be similar d2i_x509 but input be expect consist x509 certificate follow by auxiliary trust information
+ssl_ctx load first certificate store file into ctx
+bn_ulong bignum multiplie w w
+set x509_store_ctx look up set default verification method name
+assign dh evp_pkey evp_pkey_assign_rsa , evp_pkey_assign_dsa , , evp_pkey_assign_ec_key , evp_pkey_assign_poly1305 evp_pkey_assign_siphash set reference key key however supply key internally so key be free when parent pkey be free
+set long long ssl add option set via bitmask option ssl
+bignum bignum exchange value b
+crypto_threadid duplicate thread identifi value
+encrypt use cipher feedback mode
+dsa evp_pkey evp_pkey_set1_rsa , , evp_pkey_set1_dh evp_pkey_set1_ec_key set key reference by pkey key
+set long ssl_ctx server application must call function if want be able provide client ocsp certificate status response
+x509_name print ascii version buf
+const dsa_method initially , default dsa_method be openssl internal implementation , as return by
+const evp_md compute message authentication code n byte d use hash function evp_md key key which be key_len byte long
+ocsp_singleresp extract field single reason , revtime , thisupd nextupd
+bn_ulong bn_ulong bn_ulong bn_ulong bn call bn_mul_normal , or optimize implementation if factor have size : bn_mul_comba8 be use if be # word long , bn_mul_recursive if be large than bn_mull_size_normal size be exact multiple word size , bn_mul_part_recursive other be large than bn_mull_size_normal
+ssl_ctx clear exist chain associate current certificate ctx
+be use lock unlock lock
+read cms_contentinfo bio bio parse message format
+x509_store_ctx completely free up ctx
+const evp_md evp_md2 , , evp_sha , evp_sha1 , evp_sha224 , evp_sha256 , evp_sha384 , evp_sha512 , evp_mdc2 evp_ripemd160 return evp_md structure md2 , md5 , sha , sha1 , sha224 , sha256 , sha384 , sha512 , mdc2 ripemd160 dig algorithm respectively
+rsa evp_pkey , evp_pkey_get1_dsa , evp_pkey_get1_dh evp_pkey_get1_ec_key return reference key pkey or null if key be correct type
+ripemd160_ctx place message digest md , which must have space ripemd160_digest_length # byte output , erase ripemd160_ctx
+dh free dh structure component
+const unk const unk return signature bs
+select const ssl return pointer select protocol datum length len
+get peer x509 const ssl return pointer x509 certificate peer present
+get bio perform bios get operation place datum buf
+des_cblock generate random key
+set verify ssl_ctx set maximum depth certificate chain verification shall be allow ctx
+const evp_pkey const evp_pkey function compare parameter key b
+get long unk ssl_session return timeout value set session s second
+set ssl user_defined argument optionally define by ssl_ctx_set_msg_callback_arg or
+destroy unk be use destroy lock
+evp_pkey evp_md_ctx verify datum ctx use public key pkey against siglen byte sigbuf
+buf_mem free up already exist buffer
+const evp_md evp_md2 , evp_md5 , evp_sha , evp_sha1 , evp_sha224 , evp_sha256 , evp_sha384 , , evp_mdc2 evp_ripemd160 return evp_md structure md2 , md5 , sha , sha1 , sha224 , sha256 , sha384 , sha512 , mdc2 ripemd160 dig algorithm respectively
+set accept ssl set ssl work server mode
+add verify ui ui_add_input_str add prompt ui , as well as flag result buffer desire minimum maximum size result , count final nul character
+ui ui_dup_input_string , ui_dup_verify_string , ui_dup_input_boolean , unk be basically as ui_add counterpart , except make copy string
+long read number byte file filename add -PRON- prng
+bio bio copy ssl session identifi between bio chain
+x509_store ssl ssl_set0_verify_cert_store , ssl_set1_verify_cert_store , ssl_set1_chain_cert_store be similar except apply ssl structure ssl
+get ssl_session const ssl return pointer ssl_session actually use ssl
+create x509_name_entry asn1_object x509_name_entry x509_name_entry_create_by_txt , x509_name_entry_create_by_nid create return x509_name_entry structure
+evp_md_ctx initialize digest context ctx
+dsa allocate initialize dsa structure
+get bind long long bio bio_set_bind_mode set retrieve current bind mode
+get unk long , err_get_func err_get_reason be macro
+set ssl set shutdown state ssl mode
+unk initialise ctx start encode operation
+x509_store_ctx internally clean up x509_store_ctx structure
+encrypt mode function bf_cbc_encrypt , bf_ofb64_encrypt operate variable length datum
+convert bn_ctx bn_blinding bignum bn_blinding_invert be wrapper function bn_blinding_convert_ex bn_blinding_invert_ex r set null
+get unk function evp_pkey_ctx_set_app_data set retrieve opaque pointer
+const bignum bignum bignum compute p th power modulo m r p m
+get unk function return parameter associate generation operation
+size_t generate default path random seed file
+get const ssl return name protocol use connection ssl
+clean up openssls internal object table : should be call before application exit if object be add use obj_create
+bn_ulong bn_ulong bn_ulong bn_mul call , or optimize implementation if factor have size : bn_mul_comba8 be use if be # word long , bn_mul_recursive if be large than bn_mull_size_normal size be exact multiple word size , bn_mul_part_recursive other be large than bn_mull_size_normal
+bignum set bit n # 1 n
+file lhash print out statistic size hash table , how many entry be , number result call routine library
+set long long ssl_ctx add mode set via bitmask mode ctx
+query entropy gather daemon egd socket path
+unk check validity thisupd nextupd value which be typically obtain ocsp_resp_find_status or ocsp_single_get0_status
+set bignum make static number dmax current size
+function be available convenience window programmer
+be bn_ctx const bignum bn_is_prime_ex test if number p be prime
+generate dsa generate prime p q generator g dsa store result dsa
+const evp_cipher evp_cipher_ctx evp_encryptinit , evp_cipherinit behave similar way evp_encryptinit_ex , evp_decryptinit_ex evp_cipherinit_ex except ctx paramet do need be initialize always default cipher implementation
+add add just asn1 object module
+bio_method return ssl bio method
+perform actual query egd daemon socket path
+const evp_pkey return type pkey
+get const ssl_cipher return number secret bit use cipher
+bio bio_read_filename , bio_write_filename , bio_rw_filename set file bio b file name reading , writing , append or read write respectively
+encrypt des_ede3_cfb64_encrypt be as des_cfb64_encrypt except triple_des be use
+encrypt implement outer triple cbc des encryption three key
+ecdsa_sig ecdsa_sig decode der encode ecdsa signature return decode signature newly allocate ecdsa_sig structure
+const asn1_time const x509 x509_get0_notbefore return notbefore notafter field certificate x respectively
+set buf_mem bio set internal buf_mem structure bm set close flag c , be c should be either bio_close or bio_noclose
+verify x509_store ssl ssl_set0_verify_cert_store , , ssl_set0_chain_cert_store ssl_set1_chain_cert_store be similar except apply ssl structure ssl
+connect bio ssl_ctx create bio chain consist buffer bio , ssl bio connect bio
+get be use create lock
+have const ssl check , whether session identifier identifi be already contain internal session cache parent context ssl
+get const ssl_ctx be use retrieve information idx ctx
+assign unk evp_pkey evp_pkey_assign_rsa , evp_pkey_assign_dsa , evp_pkey_assign_dh , evp_pkey_assign_ec_key , evp_pkey_assign_siphash set reference key key however supply key internally so key be free when parent pkey be free
+unsigned unk must be call end decode operation
+quad unk des_cblock be kerbero v4 function
+write bio attempt write len byte buf bio b
+set ssl set list cipher only ssl
+bignum verifie top # top dmax
+set long long ssl add mode set via bitmask mode ssl
+set accept long bio set accept socket block mode if n be # or non block mode if n be #
+get long be use register index application specific datum
+assign ec_key evp_pkey evp_pkey_assign_rsa , evp_pkey_assign_dsa , evp_pkey_assign_dh , , evp_pkey_assign_poly1305 evp_pkey_assign_siphash set reference key key however supply key internally so key be free when parent pkey be free
+be unk return # if pass key be weak key , # if be ok
+ssl_conf_ctx function allocate initialise ssl_conf_ctx structure ssl_conf function
+ssl_conf_ctx function clear flag context cctx
+x509_verify_param set expect dns hostname name clearing previously specify host name or name
+cms_signerinfo function explicitly sign cms_signerinfo structure , main be when unk cms_partial flag be both set
+encrypt des_cblock unk be basic des encryption routine encrypt or decrypt single 8_byte des_cblock electronic code book mode
+compute digital signature len byte message digest dgst use private key dsa place asn der encode sigret
+add ui unk add prompt ui , as well as flag result buffer desire minimum maximum size result , count final nul character
+x509 file be similar i2d_x509 except write encode structure x bio bp return # success # failure
+x509 cms_signerinfo set signer certificate si signer
+add add just engine configuration module
+set long long ssl set maximum size allow peer certificate chain ssl be size byte
+sign octet stre m size m_len use private key rsa represent der use pkc # padding
+const bignum const bignum bignum bignum divide by d place result dv remainder rem dv , rem d
+accept ssl wait client initiate handshake
+const dh_method initially , default dh_method be openssl internal implementation , as return by
+ssl ssl_ctx create ssl structure which be need hold datum connection
+unk engine function allocate public key algorithm context use algorithm specify by identifi engine e
+ssl_session transform ssl_session object into asn1 representation store into memory location point by pp
+bio return # if bio have read eof , precise mean eof vary accord bio type
+set const evp_md unk macro set message digest type use signature
+set accept long bio can be use set chain bios which be duplicate prepende chain when incoming connection be receive
+set ssl set file descriptor fd as facility side ssl
+set read ssl ssl_ctx_set_read_ahead set whether -PRON- should read as many input byte as possible or
+set accept long bio use stre name set accept port
+bignum bignum convert positive integer big_endian form length len s into bignum place ret
+get const rsa_method return pointer current default rsa_method
+set long long ssl_session replace creation time session s choose value tm
+evp_cipher_ctx evp_sealfinal have exactly property as evp_encryptupdate evp_encryptfinal routine , as document evp_encryptinit manual page
+write write len byte file descriptor fd buffer buf
+sign ecdsa_sig compute digital signature dgst_len byte hash value dgst use private key eckey optional pre_computed value kinv rp
+compute dh bignum compute share secret private dh value dh other party public value pub_key store key
+bio cms_contentinfo bio return stream filter bio chain base cms
+asn1_object free up asn1_object structure
+verify x509_store ssl_ctx ssl_ctx_set0_verify_cert_store set certificate store use certificate verification st
+set long long ssl_ctx session cache by set operational mode ctx mode
+ssl unk be similar except set support curve ssl structure ssl
+configure openssl use standard read application section appname
+add ssl_session ssl_ctx add session c context ctx
+bignum macro reduce a top point most significant non_zero word plus one when have shrink
+ssl_session decrement reference count session remove ssl_session structure point by session free up allocate memory , if reference count have reach #
+blind rsa turn blind off free memory use blind factor
+ssl_session const ssl be as ssl_get_session
+const asn1_time const x509_crl x509_crl_get0_nextupdate return lastupdate nextupdate field crl
+asn1_time unk asn1_time function set asn1_time structure s time represent by time_t value t
+unk accept renegotiate long ssl_ctx return number start renegotiation server mode
+x509_verify_param set expect rfc822 email address email
+get const evp_cipher , evp_get_cipherbynid evp_get_cipherbyobj return evp_cipher structure when pass cipher name , nid or asn1_object structure
+const ssl return string indicate current state ssl object ssl
+bio pkcs7 bio output pkcs7 structure ber format
+find bio bio search bio give type chain , start bio b
+set x509_store_ctx set error code ctx s
+ui ui_dup_input_string , ui_dup_verify_string , ui_dup_input_boolean , ui_dup_error_string be basically as ui_add counterpart , except make copy string
+set long ssl_ctx set application callback cb use by server perform action or configuration require base servername extension receive incoming connection
+asn1_string return type x , use standard constant such as unk
+set bio bio ssl connect bios rbio wbio read write operation side ssl
+bio bio_method return method bio pair
+x509_verify_param ssl ssl_ctx_set1_param set verification parameter vpm ctx or ssl
+md2_ctx place message digest md , which must have space md2_digest_length # byte output , erase md2_ctx
+unk function send control operation context ctx
+get bio ssl ssl_get_rbio return pointer bios read or write channel , which can be different
+x509_crl cms_contentinfo cms_add1_crl add crl crl cms
+x509 free up x509 structure
+time_t const asn1_time compare asn1_time asn1_time time cmp_time
+fp file be , except output go file
+unk allocate initialize bn_recp structure
+get close bio return bios close flag
+get unsigned long , err_peek_error_line_data err_peek_last_error_line_data store additional datum flag associate error code datum flag , unless be null
+evp_pkey x509 function check consistency private key k public key x
+const evp_md const evp_md_ctx return evp_md structure correspond pass evp_md_ctx
+ui_method return built_in ui method note : default one , since default can be change
+set unk before des key can be use , must be convert into architecture dependent des_key_schedule via des_set_key_checked or function
+const asn1_object const asn1_object compare b
+ssl_ctx load one or more serverinfo extension file into ctx
+add ui unk add string be show time as prompt extra information or show error string
+get unk ssl return servername type or # if no servername be present

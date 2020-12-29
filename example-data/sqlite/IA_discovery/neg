@@ -1,0 +1,979 @@
+sixth , seventh eighth param pass three api function , , , be pointer param function implement function
+be set null
+api may only modify content
+set database connection error code message accessible via api relate function
+perhaps be call prepared have already be finalize one have previously return constant
+application use normally not need invoke either api
+seem param
+api be harmless param
+only request recursive mutex case really need one
+be enable be
+after conversion be return by api
+api value param sign integer return integer , param
+api equivalent call fail error message explain access be deny
+object return by api be unprotected param
+default be return by api
+api , prepared return by api contain copy original text
+specific error code be return directly by api
+return value api be size soft limit before call , negative case error
+api return param leave variable param point unchanged
+param value be return by api variable param point be unchanged
+error code be return by api
+param be set total number file constant
+api set error information query by api
+api return pointer current content dynamic string construction
+api database be read parse , , return error
+param be set total number file constant
+param return be protect param
+api return current length , byte , dynamic string construction param
+value return by api be manage by param may be free alter by subsequent api param
+api return pointer give name
+application may change content string return by api as long as not write byte range constant api not read write byte after subsequent param api call
+constant may be return
+first six api return value result specific datum format
+return value api be as if have contain null value
+api return code initial param
+api return information single current result query
+fourth param may optionally be ore constant signal function always return result give input within single
+return constant first process , hop induce first process release read lock allow second process
+api return code initial datum type result
+constant return pointer underlie param file
+return value api become return value api
+default configuration be recommend application api be usually not necessary
+api may only be call within call api virtual table
+api may be call by either api virtual table implementation configure various virtual table api
+call api be effective call
+only provide implementation api
+api may only be call within call api virtual table implementation insert operation
+api may only be call recent call api have return constant neither api nor api have be call subsequently
+call function as text result have use result
+param function be permit call api
+api only report param mutex set constant flag
+database connection become unusable which automatically be deallocate
+constant return can be use deny untrusted user access individual table
+be call dispose stre except be not call
+callback may be invoke two param
+second param be either name database contain specify table null
+error code be not remember not be recall by api
+various point , as be create perform various action , callback be invoke see
+maximum length string contain param be value set api instead constant
+third param be name database be write
+api work like correspond access function except api take single protect param pointer instead param pointer integer number
+be permit regist multiple implementation function name but either differ number param differ preferred text
+second param be be compile , encode as either param
+second param be integer constant , take set constant option , determine param interrogate
+be open param access
+param be size buffer param which may be large param
+3rd param api callback be array pointer string obtain api , one
+corresponding string pointer api callback be null pointer
+database manage by external source can be give much small limit design prevent service attack
+first param callback be copy third param api
+4th param api callback be array pointer string entry represent name correspond result as obtain api
+param be approximate number virtual machine instruction be evaluate successive callback param
+api run constant param encode , param pass 2nd param , context database connection pass as 1st param
+first param pass param callback be pointer array void pointer , second be number entry array
+long string can be completely write by api be param character
+third param be value param
+another be choose as default
+make private copy datum immediately , before api return
+api reset stre construction inside param back constant byte length
+second param be name function be create redefined
+fourth param value function be number byte value , not number character
+fifth param be arbitrary pointer
+fifth param stre api be use dispose string after have
+third param be number param function take
+first param callback be copy third param api
+second param callback be integer action code specifie particular action be authorize
+function prefer text encode match database be well match function encode be different
+length param be number byte first constant
+mode be param by commit rollback
+function encode difference be be close match function encode difference be utf8 utf constant
+default busy callback be null
+window , first component absolute path be specification _ lrb _
+first param api be always pointer param return api variant
+api function return pointer stre constant whose value be as constant macro
+api make copy param return pointer copy
+attempt return underlie operating system error code error number recent error failure open file
+return size byte accessible via successfully open handle only param
+constant api related event counter
+text input api variant , may be replace by param match one follow
+follow api be provide
+api behave differently three way
+follow table detail conversion be apply
+problem have be fix api
+could be case database connection be use by two thread moment time
+return value api be param
+represent integer , represent alphanumeric identifier
+if index be range
+be invoke
+third fourth param api be pass directly second third param api
+api return information predict measured performance param
+constant return datum version counter
+api string param return number byte
+api can optionally return without set result , without call api
+be set null
+api string param return number byte
+fourth param , , specifie text encode function prefer param
+note api return pointer buffer instead number character actually write buffer
+end result be as api
+api have fourth param , value be number byte param
+first param be database connection which function be be add
+be not
+prepared be construct substitute null value place table would have be read
+function be deterministic
+operation but optimization be disabled be individually
+be provide support rare application unusual need
+fourth param may optionally include constant flag
+api callback function implementation be never call api be call exactly
+use api enable disable only param
+only purpose be be placehold function can be overload by virtual table
+param be pass as only param callback function
+api return number modify , insert by recently complete insert , database connection specify by only param
+api can be use combination api locate prepared associate database connection be need reset
+constant mean database engine be unable acquire database lock need job
+call either api override prior call api
+api either start read exist one param database connection param read refer historical snapshot , rather recent change database
+definition pattern matching use api be as understand by
+definition like pattern matching use api be as like param understand by
+api use be only way occur
+return value api function show only param set thread , not param change set make by api
+be invoke lock retry until either param return constant lock be successfully obtain
+call either function replace exist param callback
+api return param text describe error , as either param respectively
+api be retain backwards compatibility as convenience application need manually start callback but which not need full api
+api provide information as constant , param , constant macro but be associate library instead header file
+admit number character write would be useful return value but can not change implementation api without break compatibility
+except , be api be guarantee never change value error code
+run , include select , merely call api modify database connection meaning modify
+only ever use api as optimization be acceptable behavior
+query component uri may contain param be interpret either by , by custom implementation
+mutex implementation do not need make constant
+invoke param as only param
+invoke either api cancel callback
+api only compile first param , be leave pointing remain uncompiled
+only difference three api be text encode expect second param callback application datum pointer
+protect param may always be use unprotected param be require , either kind param can be use api
+callback be invoke only
+api param prepare have value null , but be associate pointer type
+but application do not want user be able make arbitrary change database
+opcodes api be handle directly by never invoke param
+constant work similarly except return param associate file instead main database
+return value api can be use decide which first six api should be use extract value
+invoke api after api return
+api actually return index large param
+second subsequent call api function instance , buffer be return by api
+ensure be null before call api
+implementation function use api allocate memory store state
+index value return be suitable use as second param api
+amount space allocate by api be determine by param first successful call
+return index param give name
+parameter form
+api call provoke api fail
+word , initial : be include as part name
+form except , correspond number unique param
+api function be invoke database connection create
+api can be use find number param prepare
+no entry point be call database connection open
+api close open handle
+handle be still close
+handle be close unconditionally
+automatically free memory allocate by api
+table , database name be
+first time api be call particular function , allocate param memory , constante memory , return pointer memory
+call api null pointer be harmless param
+change value param subsequent call api within function instance not resize memory allocation
+call api entry point already list automatic extension be harmless param
+parameter form without follow integer have no name be refer as nameless anonymous param
+main database file , database name be main
+attach database , be name appear after as attach
+within callback , be customary set constant call api no pointless memory allocation occur
+can not change size
+use api determine size open
+value return by api function be set before return
+reference by api may be read use api modify by use api
+use command change size
+size may not be change by api
+paramet param be not filename contain database , but rather symbolic name database
+idea be api be entry point statically link extension be automatically loaded database connection
+be identify by value pass as param
+size can be determine use api
+handle can be move different table use api
+mean , provide api be not misuse , be always safe call api after api return
+api be use read datum open handle param buffer
+api be normally call callback one last time
+api return name param prepare
+be open read write access
+byte datum be copy buffer param open , start param
+database , table which handle be open remain
+change write before expire be not roll back by
+api be use move exist handle point different database table
+change eventually commit
+current be commit
+api param constantblob function may be use create param read write use param api
+would be select by
+api open handle locate param , table param database param
+param form : have name which be stre : respectively
+handle be mark as expire
+api set database handle error code message
+api be use write datum open handle param buffer
+api set database connection error code message accessible via api relate function
+mean prepared return no datum
+only change make real table be count
+execute type do not modify value return by api
+handler multiple time until least ms millisecond have accumulate
+return number result set return by prepared
+byte datum be copy buffer open , start param
+use api reset host param null
+change be intercept by instead be not count
+param be form , , : , , serve as value be param later time
+api unregister initialization api be register use prior call api
+subsequent param vary depend configuration option param
+call api param less equal constant turn busy handler
+may happen
+select always have positive api but depend constraint table content , may return no
+api do not set database handle error code message return by api function
+subsequent param vary depend configuration
+contrary many , api do not reset prepare
+note , however , api can be call as part implementation param api
+api return database connection handle which prepare belong
+filename return by api be output api
+api return number current result set prepared param
+api return copy pointer database connection api originally register application api function
+api be similar api except change apply single database connection
+api be use make global configuration change
+api be use make configuration change database connection
+api return pointer filename associate database param connection d. main database file have name main
+specify amount time
+mean if api function be use by first insert , within , return value as set call begin execute
+api set busy handler
+api flush cache _ main , , attach database
+first param api be integer configuration option determine property be be configure
+first param be database connection object be interrogate
+thing be complicate
+api return pointer param access database connection give param threading mode be
+busy handler be clear
+value return reflect number modify by previous insert , within
+set constant option be likely grow future release
+extension loading be by default
+api be use retrieve runtime status information single database connection
+database connection return by api be database connection be param api call be use create first place
+filename be absolute
+current value request param be write high instantaneous value be write
+write occur before handle expire be not roll back by handle
+only change make directly by insert , be consider _ auxiliary change by , foreign key action replace constraint resolution be not count
+virtual table module be remove
+dirty page may be use
+api virtual table module call api declare format virtual table implement
+be invoke usual
+api database connection param disconnect database param reopen param as param database base serialization contain param
+high instantaneous value be reset back current value
+database be skip attempt make flush dirty page belong next database
+be change as version constant
+share cache be disable by default
+dirty page param be not currently use be write
+api attempt free as much memory as possible database connection
+cache be enable disabled entire process
+api enable disable param api function api
+api function be call prepared
+but may change future release
+api be invoke param before return
+api pende database operation abort return early
+prior version , be enable disabled thread separately
+api be processor write param integer be atomic
+extend result code be disable by default historical compatibility
+api enable disable extend result code feature
+invoking api null pointer be harmless param
+exist database connection continue use mode be effect time be open
+cache mode set by api effect subsequent call api
+4th param api be relay 1st param callback
+api be accessible via api function
+api set pointer param null before return
+call api constant turn extension loading call constant turn back
+api enable disable share database cache datum structure connection database
+call api occur be no run be param have no effect be start after api call return
+subsequent call api return associate internal insert operation , which unintuitive result
+entry table have unique param sign integer key call
+api return insert as long as be run
+program end , value return by api revert be before be fire
+invoke api serialization buffer database connection close
+virtual table implementation write table way can avoid problem by restore original value use api before return control user
+be safe call api thread different thread currently run database operation
+as well as set automatically as be insert database table , value return by api may be set explicitly by api
+internal database can be give large , default limit
+no callback be ever invoke result be ignore
+api allow size various construct be limit connection by connection basis
+thus insert fail , insert ignore , insert rollback , insert abort make no change return value api fail
+insert continue after deleting constraint problem insert replace always change return value api
+api usually return recent successful insert table virtual table database connection
+regardless whether not limit be change , api return prior value limit
+execution current stop subsequent be skip
+purpose api , insert be consider be successful
+do not fail
+limit be unchanged
+be another alias
+error message be write memory obtain api pass back param
+param limit may be add future release
+entry point be param
+try increase buffer size use api
+api load extension library name file
+first try param
+limit constant be hard upper set param by macro call constant
+api remove virtual table module database connection param except name list param
+api attempt load extension library contain file param
+param limit be intend use application manage internal database database be control by untrusted external source
+api be convenience wrapper around api , allow application run multiple without have use lot code
+hence , find current value limit without change , simply invoke api param set constant
+be always available as undeclared name , , _ _ as long as name be not use by explicitly declare
+example application may be browser have database store separate database control by application download internet
+be invoke result come evaluated
+may not have be interrupt may continue
+entire be roll back automatically
+no be evaluate database be not change
+before param be ever evaluate , after one call api , after call api
+be start after api call before run reach constant be interrupt as if have be run before api call
+size database create by untrusted script can be contain use param
+api return pointer next prepared after param associate database connection param
+virtual table implementation may insert table as part commit
+message be store param buffer stack
+function be not good anything by
+as not open security old application be unprepared deal extension loading , as mean disable extension loading , follow api be provide turn api mechanism
+api return pointer first prepared associate database connection param
+set param null disable progress handler
+operation be interrupt
+avoid threading problem , api not use dynamically allocate memory
+api write message error establish by constant option api
+may be constant , which case try come entry point name
+use api reset
+virtual table can provide alternative implementation function use api virtual table module
+api be intend use by extension as virtual table , collate function , function
+api return number byte actually free , which may be less amount request
+be use param api function
+api allow application access purpose
+progress handler be disable by set value less constant
+api disable automatic extension previously register use api
+feature can be use implement cancel button progress
+api do not change value prepared
+memory use cache database page improve performance be example param memory
+call api store param byte buffer param
+number byte by may increase future release
+only single progress handler may be api one time per database connection
+api reset prepare back begin program
+api modify database connection meaning modify
+api make sure global version function particular name number param exist
+set progress handler cancel old one
+implement api by call api default param
+progress handler be disabled
+function be create
+variable have value use param _ _ apiname api retain value
+number millisecond actually request operating system be return by api
+attempt be make load various param specific extension add
+ordinary param database file , serialization be copy file
+api be use compare two valid snapshot handle
+api function be call reset prepared object back initial state , ready be param
+final value be undefined
+usual case be api copy serialization database memory obtain api return pointer memory
+param stre subsequent param be use api generate final output string
+api allow application set value return by call api without insert database
+api return pointer memory serialization param database database connection
+api attempt free byte memory by deallocate param memory allocation hold by database library
+api destroy param
+api attempt make param record current state param database connection d. success , api write pointer newly create param return constant
+one be open automatically
+read be open database snapshot
+api function result param function param be value param
+api shall attempt fill error message text store memory obtain api
+high order bit be discard
+api function current thread suspend execution least number millisecond specify param
+contain param number use select random
+file be
+callback function be invoke periodically
+time be round near second
+construct name param be consist param equivalent ascii alphabetic character filename last first following
+api callback function be invoke periodically during long running call api database connection
+would be write back
+behavior api may deviate description previous
+param database database , serialization be sequence byte which
+constant mean have execute successfully
+constant , soft limit be enforce every memory allocation
+param be generate internally without param api would be write  back
+value may be access use access function
+api be call retrieve next datum
+read remain open
+information may be find by call api
+admit be goofy design
+api , result code extend result code may be return as well
+api attempt scan file associate database param database handle param make valid snapshot available api
+constant mean api be call inappropriately
+which enforce soft limit may change future release
+api set query soft limit amount memory may be allocate by
+hence , current size soft limit can be determine by invoke api negative param
+constant param option can be use restore behavior
+param determine which status information return
+but after version api begin call api automatically rather return constant
+paramet identifie specific loop retrieve statistic
+param function virtual table may change database indirectly as side effect
+loop be number start constant
+statistic may not be available loop
+api , specific error code can be obtain by call api prepare
+no change be make soft limit
+request be write variable point by param
+first param be prepare object be interrogate
+begin version constant , soft limit be enforce _ time option be invoke
+api be use retrieve reset counter value prepare
+soft limit be not enforce current implementation
+counter can be use monitor performance prepare
+current value request counter be return by api
+prepared maintain various constant counter measure number time have perform specific operation
+PRON- can retry
+strive keep memory soft limit by reduce number page hold page cache as memory usage approach limit
+api allocate initialize param
+counter be reset constant after api call return
+return value be param
+param api may be null
+be always safe use value return by api as param api
+api function match unicode character
+advanced application can use api compare predict
+api destroy param return pointer memory buffer obtain api contain construct string
+measure performance issue warning analyze
+follow would change database file param
+can be compile without
+api return information table database database connection
+database connection may not know database file be mode
+be identify by second , third fourth param api
+would tend indicate prepare be use full table scan rather index
+detail behavior api depend whether be prepare use new api old api
+be return by api by write memory location pass as subsequent param api
+enable incur measurable performance
+default behavior be be enable
+execute type do not affect value return by api
+param may be null , which case correspond element be omit
+return value api be unchanged by call api
+integer return value callback be currently ignore
+api be use read internal state inject purpose
+be omit
+param be copy context pointer
+callback be invoke four param
+may be one param callback register by block connection
+identity database connection have lock require resource be store internally
+api return total number insert , modify by insert , complete
+block connection param callback may be cancel by close block connection use api
+callback be invoke within api call conclude block connection
+detect change against database file database connection use param command constant file control
+api always return pointer valid param
+output be set as follow
+as like , api function be case insensitive _ equivalent upper low case ascii character match one another
+make sense disable
+detail operation code , meaning , param take , be subject change without
+avoid , api perform detection
+change make as part foreign key action be include count , but make as part replace constraint resolution be not
+callback be invoke
+final callback param be
+however , signature callback function allow pass array void context pointer
+give application prioritize action relate set unblocked database connection
+api register callback function against database connection , use property mask context pointer
+specify callback be invoke immediately , within call api
+database be search table use use by database engine resolve unqualified table reference
+callback replace old
+api may be use register callback invoke
+extended error code be set param
+exist param callback be cancel
+be block connection have already conclude by time api be invoke
+callback set by previous call api database connection be override
+api can be use by application make sure version be link against be compile desire set constant macro
+may be one block connection have register param callback
+output param be set explicitly declare
+be enable by default but can be fully partially disabled use call api constant
+arbitrarily select one connection use as block connection
+option may be add future
+use api set return value function
+exception api may change future release
+case , be after take place
+api return pointer buffer contain name sequence correspond constraint
+api be equivalent api
+initiate by mechanism be passive
+be no block connection , invoking api result param callback invoke immediately
+unix system , after api return constant , api could be call get back underlie errno problem , as , , , forth
+api function return param function param
+information can be use pass limited amount context one function another
+but new powerful api be add
+callback register by api replace exist callback register use api
+param can be use invoke api
+application may use substitute return value less expensive compute correspond api understand as param value
+pass constant negative value as nframe param disable automatic entirely
+api return copy pointer be param api originally register application api function
+not be invoke
+likewise , register callback use api disable automatic mechanism configure by api
+check if be currently execute select belong connection
+be not invoke
+be not invoke
+every database connection default have param enable constant page
+param command can be use invoke api
+call obtain exclusive lock database file
+constant , restart mode obtain exclusive lock database file
+value write output param be undefined
+api be object
+param be invoke
+call api replace previously register param callback
+name return be original param name database , table
+operation point way as constant _ checkpointing as many as possible without block
+api run operation database param database connection param mode param
+upon successful constant , file have be constant byte be set constant
+param be constant api
+call api null pointer param be harmless param
+api param invoke api overwrite prior api setting
+api function be use register callback invoke time datum be commit database mode
+api be wrapper around api database database connection automatically after commit
+api content param database param database connection param be transfer database file param be reset
+api register callback function database connection identify by first param be invoke
+specify operation be attempt database attach database connection param
+first param pass be copy second param api
+system be consider be deadlocke
+neither connection system may remain deadlocke indefinitely
+create table constant
+be invoke set void context pointer specify by block connection bundle together array
+give database
+follow be compile
+use dynamic param typing
+select constant
+as api , whose name end constant return param encode string function return param
+second param be number
+function return information result return by , be second function param
+otherwise , return name attached database , table , query result be extract
+be strongly type , but typing be dynamic not static
+first param be prepare implement select
+api return name assign particular result set select
+register null function disable callback
+commit rollback callback be not reentrant
+param be pass callback
+_ database _ api return database name , _ table _ api return table name , origin _ api return name
+commit be rollback
+type be associate individual value , not container use hold value
+commit be rollback
+commit operation be allow continue normally
+whitespace comment follow final be ignore
+api return pointer param string api return pointer param string
+_ prefix be omit string return by api
+api be intend use host language be collect , order which be call be arbitrary
+callback set by previous call api database connection be override
+_ prefix may be omit option name pass api
+declare type table be return by api
+rollback be invoke rollback result commit return param as would be rollback
+api function allow iterate list option be api compile time by return param compile time option string
+be pass name undefined sequence as string encode param
+api provide mean determine database , table , table origin particular result select
+api register callback function be invoke
+error propagate back code base provoke callback report error , have still occur
+rollback callback be not invoke
+api not parse thus not detect syntactically incorrect
+first param pass callback function be copy third param pass api registering callback
+be different every api
+particular type do not mean datum store be declare type
+be unfortunate but can not be change without break backwards compatibility
+support diagnostic function api may be omit by specify constant option compile time
+name module be give by second param
+module name be register database connection specify by param
+fifth param , , be pointer collate function
+function add , remove , modify associate database connection specify as first param
+api be use register virtual table module name
+be embed within string quote identifier name comment be not independent thus not count as
+name compare equal accord api be consider be name
+collate function be
+fourth param , , be application datum pointer pass as first param collate function callback
+callback be not call
+api be invoke automatically by api
+api be useful during param input determine
+name be unspecified may change one release next
+callback be invoke by after commit have take place associate param database release , implementation may read , write database as require
+be judge be complete
+api be equivalent api null
+name result be value as
+purpose api , be say have be roll back
+value return by api may change api call
+avoid have register sequence before database can be use , single callback function may be register database connection be invoke
+third param be pointer implementation virtual table module
+memory hold error message string be manage internally
+minimum , value be replace suitable
+api return param text describe result code , as param
+api have fifth param which be pointer param
+pass null pointer api be harmless
+previous do not include param specific implementation
+api be except always return extended result code even extend result code be disabled
+window use native api operation
+constant param option limit size param
+api return pointer param string contain text prepare param expand
+string return by api be manage by be automatically free prepared be finalize
+prior allocation be not free
+however , error string may be overwrite deallocate by subsequent call api function
+case , error code message may may not be set
+invoke function
+use three api internal memory allocation need
+be invoke
+api attempt resize prior memory allocation param be least param byte
+api return pointer param string contain normalize text prepare p. semantic use normalize be unspecified subject change
+call api pointer previously return by api release memory may be reuse
+value return by api may be large number byte request param be allocate
+api return pointer block memory least byte length , be param
+multiple collating function can be register use name but different param use whichever function require least amount datum transformation
+api return pointer memory allocation least param byte size
+table conceptually have number
+be api backwards compatibility
+callback be invoke
+collate function callback be invoke copy application datum pointer two string encode specify by param
+api work like api addition
+second error be report
+result table record complete query result one query
+api return pointer copy param text use create prepared param
+no module be create
+result table be memory datum structure create by api
+exist module name be
+api return size memory allocation byte
+memory allocation error be detect , but be report back as constant rather constant
+memory return by api be always align least constant byte boundary , constant byte boundary
+mean api be invoke incorrectly by application
+be . element array
+number be obtain separately
+api byte prior allocation be copy begin buffer return by api prior allocation be free
+api be param
+hold content
+remain entry point query result
+be two three
+but number be not part result table
+thus result table have constant entry
+result table be array pointer param string
+api initialize library
+let be number be number
+version constant , be possible define constant which would param implementation api be omit
+note last
+value be param string representation as return by api
+param table may consist one memory allocation
+behavior be identical call api
+api be implement as wrapper around api
+be free discard time , include
+behavior be exactly as call api
+suppose param table be store array name
+first pointer point param string contain name
+fourth param be arbitrary client datum pointer pass api virtual table module
+avoid , thread can obtain exclusive use database connection param by invoke api before begin use param invoke api after call api list be complete
+may be case second error occur separate thread time first error call api
+prior version constant , window os api layer call system api directly
+call be harmless param
+only effective call api do initialization
+similarly , api invoke api
+api deallocate resource be allocate by api
+api do not have access internal datum structure
+valid call api be harmless param
+function may be use by function associate param value
+api may be call immediately , before api even return
+api save as param function
+subsequent call api return param recent api call
+api return pointer associate by api function param value param function
+among thing , api invoke api
+example may be useful be param matching function
+api be design aid process initialization shutdown embed system
+as example result table format , suppose query result be as follow
+api function evaluate one param stre 2nd param return result table pointer give 3rd param
+api return number distinct understand by
+compile version regular can be store as associate pattern string
+future may make use negative value define kind function cache behavior
+api undoe effect api
+parser use by be forgive
+api do param specific initialization library
+may be add future release
+api be call automatically by api be call by api
+api provide access set language recognize by
+api return param
+as long as pattern string remain , compile regular can be reuse multiple function
+number understand by can depend param option
+api function be provide use
+as consequence , error occur wrapper layer internal api call be not reflect subsequent call api
+api function return pointer param string constant
+cautious may include api application verify value return by api match macro header , thus ensure application be compile matching library header file
+create table api ; be accept by , create table name begin three name replace , , end
+practice , be function call function param be param constant , include value param compose
+value return by api be param mark before reset
+application can use api determine whether not specific identifier need be as not confuse parser
+us api thread
+api write result memory obtain api
+api be similar api standard library
+be historical can not be fix without break backwards compatibility
+library be automatically initialize
+appropriate implementation be select automatically param
+order first two param be reverse api
+api be version api
+api return number byte memory currently outstanding
+be often possible use as identifier as long as use do not result parse
+result be write buffer supply as param whose size be give by param
+api call api
+api be param api function standard library
+api understand common format option standard library api plus additional param format
+follow implementation be available
+after call api be not null , invoke function param exactly
+constant implementation be appropriate use unix window
+source code contain multiple implementation mutex api
+behavior exhibit may become default behavior future release
+appropriate implementation api be
+associate may be
+last four character hash may be different constant
+api find param make point express as utf8 write number byte
+first param be total size buffer , include space constant
+provide two api reporting status api , which form param memory allocation
+param _ lsb _ _ rsb _ stre constant contain text constant macro
+as long as buffer size be great constant , api guarantee buffer be always param
+api allocate mutex return pointer
+memory param mark be reset current value api
+automatic call api be omit
+typical perform by api include allocation static resource , initialization global variable , set default param module , set default configuration use api
+future version may add additional static
+allow param api return pointer static preexisting mutex
+nine static be use by current version
+first two constant api create mutex
+api attempt enter mutex
+code link against be permit use api
+api deallocate previously allocate dynamic mutex
+api return different mutex every call
+create use constant can be enter multiple time by thread
+api be intend use inside api
+value return by api include overhead add by implementation api , but not overhead add by underlie system library api may call
+mutex may return mutex response constant
+api exit mutex be previously enter by thread
+implementation be not require provide version api actually work
+database connection handle be usually return
+api open database file as specify by param
+static mutex type , mutex be return by api every call have type number
+but reason mutex do not exist be
+constant implementation be set api do no real locking be appropriate use param application
+default encode be param database create use api
+private database be automatically as soon as database connection be close
+constant flag database connection not participate share cache mode
+future version may make use additional special filename begin : character
+mutex be recursive
+no mutex implementation be include library
+uri filename be parse accord rfc constant
+param be interpret as param api as param native byte order api
+api can be use obtain english language description error follow failure api
+future version may understand additional query param
+uri param be turn by default , but future release may enable uri param by default
+api work like api except accept two additional param additional control database connection
+note window user
+third param api be pass as param callback
+note window runtime user
+uri sequence be support within path query component uri
+default param be use
+specify unknown param query component uri be not error
+constant flag database connection be eligible use share cache mode
+be disable by invoke api null pointer as param
+us path component uri as name file which contain database
+private , temporary param database be create
+three api behave as param
+fifth param callback be name table modify
+fragment component uri , be ignore
+second param callback be pointer database connection register
+uri param be enable
+database connection open threading mode unless param be previously select param
+param be interpret as uri
+private , temporary param database be create connection
+param point be destroy
+api return number insert
+database connection open param threading mode as long as param mode have not be set param
+one may be register time single database connection
+additional api callback may occur as be enter
+api provide additional information event
+call api override previous setting
+refer param documentation additional information
+api register callback function can be use profiling execution
+callback contain param comment identifie
+fourth param callback be name database within database connection modify
+api register callback function invoke before insert , , operation database table
+callback function register by api be invoke as
+future version may provide great resolution callback
+by default , error code be constant
+hence , call function can deallocate modify text after return without
+api make private copy error message text before return
+api be use by callback implement function
+api set return value param function be null
+insert table seventh param be final value insert
+constant param option can be use limit length param output api
+subsequent call api reset error code constant
+api function change error code return by as result error function
+api set return value param function be param sign integer value give 2nd param
+api throw error indicate memory allocation fail
+be not invoke change virtual table system table like param
+api set return value param function be param sign integer value give 2nd param
+api make copy param specify param may change be deallocate after api return without
+make copy result space obtain api before return
+callback function register by api be invoke various time
+high record value be return by api
+api set return value param function be text string which be represent as param native byte order , param little endian , param big endian , respectively
+api not return result code
+current value param be return by api
+length return by api do not include param byte
+api return current status param
+api set result param function be point value specify by 2nd param
+take text result application 2nd param api
+api throw error indicating string be long represent
+callback contain original text param time long take run
+param not record high value
+api write param pointer protect param contain value table before be
+latter param nothing be write
+recognize integer code be form constant _
+function work much like param function use value host param prepare
+take as error message text first constant character
+first param be integer code specific param measure
+us string point by 2nd param api as text error message
+api be part pointer pass api add constant
+take many byte 2nd param as error message
+api write param pointer protect param contain value table after be
+param nothing be write param be ignore
+api add content param previously obtain api
+value seventh param pass callback function be not api operation without table , insert operation table
+operation table , sixth param pass callback be initial modify
+be main main database table name give after as attach attach database
+api set result param function be contain constant byte param byte size
+take result text 2nd param first constant character
+api set result param function be copy unprotected param specify by 2nd param
+invoking api callback database connection pointer different one supply callback result undefined probably undesirable behavior
+api be use retrieve runtime status information performance , optionally reset various mark
+be pointer param
+api set result param function be whose content be point by second param which be byte long be third param
+be interpret as absolute path
+high record value be reset after be write
+as many byte character . text point by 2nd param be take as param function result
+path be interpret as relative path
+api may change param
+api extract type , size , content information protect param
+otherwise no conversion occur
+sequence consist sign _ _ follow by exactly two digit specify octet value
+assume text result be constant space do not copy content param nor call content have use result
+api attempt apply numeric value
+api append complete content param string param onto end param
+api extract param string as param respectively
+api append param copy param character param onto end param
+api be part pointer pass api add constant
+name be case sensitive
+protect param be use pass param information implementation param function virtual table
+be register api
+please particular fact pointer return api can be invalidate by subsequent call api
+api use param printf functionality append format text onto end param
+api free param previously obtain api
+api extract param stre native param host machine
+name be param string
+unregister api
+choice be arbitrary
+can be register multiple time without
+can be register exist can be unregistered
+index param be value
+leftmost param have index constant
+within api , value appear be null value
+come single default appropriate host
+mean attempt be make value integer floating point
+negative value constantblob result param
+be not clear by api
+unbound param be interpret as null
+second param be index param be set
+preferred api use be api
+virtual filesystem be param us interact underlie operating system
+make exist default , register param flag set
+value param can be set use param _ _ apiname api
+api length fill constante
+conversion be perform
+become default
+whether not persistent internal conversion occur be undefined may change one release next
+constantblob use fix amount memory
+constantblob be intend serve as whose content be later write use incremental api
+index name param can be look use api
+fact be record param can be recover by subsequent call api
+us internally
+be utility api , useful implementation
+api allow application extension compare content two buffer contain param string param fashion , use definition case
+api have extra option use special purpose
+param api be provide as convenience
+be leave point compile prepared can be execute use api
+api work exactly as api constant param
+word , api be prepare object
+param api work by input text param , invoke correspond param api
+api use param , api use param
+api set result null value , like api , except associate param pointer param type param null value pointer can be retrieve within param function use api
+param value be copy memory obtain api before use
+no prepared be generate
+param be read first constant
+second subsequent have index as first
+result string value contain embed nul
+be number byte read param
+first param , , be database connection obtain prior successful call api
+api be use set value associate param variable , param , depend value param
+param api function be example function not deterministic
+function be use add function redefine behavior exist function
+param function may be overload by param function
+detail regard implementation window function be available
+implementation function can gain access pointer use api
+be invoke
+function api be similar , but allow user supply extra callback function need by window function
+function may be register multiple time use different preferred text , different implementation encode
+be disable by default
+call api override previous call
+api register callback particular database connection , supply first param
+mode be by default
+disable by instal null callback
+mode be disable by begin
+use implementation closely match way which function be use
+value param variable be intend act as current directory param concept be not present
+fourth param be ignore
+sixth , seventh , eighth ninth param pass api be pointer param callback implement function
+be make point first byte past end first param
+be invoke
+pick one involve least amount datum conversion
+be application datum pointer
+p. invoke single param
+function may take number param constant limit set by api
+application may allow user enter arbitrary query by database
+api be use implement api param
+set busy handler clear previously set handler
+another attempt be make access database
+api equivalent call fail error message
+callback be invoke as be compile by api variant api
+leftmost result set have index constant
+number result can be determine use api
+correct callback remain place
+callback be invoke
+future version may change behavior api follow type conversion
+first process can not second process can not
+neither make progress
+first param busy handler be copy void pointer which be third param api
+could be put place
+call api evaluate param change busy handler thus clear previously set busy handler
+busy handler do not guarantee
+second param busy handler callback be number time busy handler have be invoke previously lock event
+automatic type conversion be perform
+memory space use hold string be free automatically
+api may attempt result
+every case param be pointer prepare evaluate param be index
+if result be param string api return number byte string
+be pass single param which be copy application datum pointer which be fifth param api
+null pointer can be use place main refer main database file
+consider one process be hold read lock be try promote reserve lock second process be hold reserved lock be try promote exclusive lock
+may be invoke param
+api can be use determine size string
+authorization be not perform , unless as state previous , api invoke api reprepare after change
+api set callback function
+constant callback be invoke table name empty string
+be use , ensure not try access datum be not allow see , not try execute malicious damage database
+value return by api be number byte string , not number character
+api return number byte string
+api use api value param string return number byte string
+be no way distinguish incorrect param constant return underlie api
+kind conversion be do place
+api use api value param string return number byte string
+constant value param pointer underlie param be write space point by 4th param
+api make direct call api param associate particular database identify by param
+api be use internally perform conversion automatically
+be constant param function param
+if unprotected param return by api be use way , include call api like api , behavior be not
+future release may require
+may be roll back automatically
+name database be main main database database , name appear after as database be add use attach command
+leftmost be number constant
+case , api may be call first time within api
+name be param string api param stre native byte order api
+common technique use avoid name include
+param interpret follow query param
+param api be

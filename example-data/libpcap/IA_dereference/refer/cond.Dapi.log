@@ -1,0 +1,9 @@
+if using pcap_dump_open_APIName , pcap_dump_APIName , and pcap_dump_close_APIName to write a savefile if there is no pcap_t that supplies the packets to be written
+write a savefile, pcap_dump_close
+
+if no packets were read from a live capture
+read from a live capture, pcap_dispatch
+
+if the packets to be written have time stamps in seconds and microseconds
+have time stamps, pcap_tstamp_type_name_to_val
+

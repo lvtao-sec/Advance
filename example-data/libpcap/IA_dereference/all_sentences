@@ -1,0 +1,671 @@
+
+NULL  is returned on failure.
+pcap_freecode(3PCAP)
+pcap_fopen_offline_with_tstamp_precision(3PCAP)
+read the next packet from a pcap_t
+The possible error values are:  PCAP_ERROR_ACTIVATED
+pcap_dispatch_APIName  processes packets from a live capture or ``savefile'' until pcap_dispatch_APIParam_2  packets are processed, the end of the current bufferful of packets is reached when doing a live capture, the end of the ``savefile'' is reached when reading from a ``savefile'', pcap_breakloop_APIName  is called, or an error occurs.
+On some platforms, the time stamp given to packets on live captures can come from different sources that can have different resolutions or that can have different relationships to the time values for the current time supplied by routines on the native operating system. See pcap-tstamp(7) for a list of time stamp types.
+pcap_tstamp_type_val_to_description(3PCAP)
+In previous releases, select_APIName,  poll_APIName,  epoll_wait_APIName,  and kevent_APIName  cannot be used on any capture source for which pcap_get_selectable_fd_APIName  returns -1.
+Note that pcap_next_APIName  and pcap_next_ex_APIName  will, on some platforms, loop reading packets from the OS; that loop will not necessarily be terminated by a signal, so pcap_breakloop_APIName  should be used to terminate packet processing even if pcap_next_APIName  or pcap_next_ex_APIName  is being used.
+To open a handle for a ``savefile'' from which to read packets, given the pathname of the ``savefile'', call pcap_open_offline(); to set up a handle for a ``savefile'', given a FILE * referring to a file already opened for reading, call pcap_fopen_offline().
+Writing packets
+if not NULL,  a pointer to a struct sockaddr  that contains the netmask corresponding to the address pointed to by addr  broadaddr
+If, instead, packets are not delivered as soon as they arrive, but are delivered after a short delay (called a "packet buffer timeout"), more than one packet can be accumulated before the packets are delivered, so that a single wakeup would be done for multiple packets, and each set of calls made to the operating system would supply multiple packets, rather than a single packet. This reduces the per-packet CPU overhead if packets are arriving at a high rate, increasing the number of packets per second that can be captured.
+pcap_dump_ftell(3PCAP)
+Note that if you are catching signals on UNIX systems that support restarting system calls after a signal, and calling pcap_breakloop_APIName in the signal handler, you must specify, when catching those signals, that system calls should NOT be restarted by that signal.
+write packet to a pcap_dumper_t
+PCAP_ERROR_NO_SUCH_DEVICE
+To force the loop in pcap_dispatch() or pcap_loop() to terminate, call pcap_breakloop().
+If the type value does not correspond to a known DLT_value, the string "DLT n" is returned, where n is the value of the pcap_datalink_val_to_description_APIParam_1 argument.
+pcap_is_swapped_APIName  returns true (1) or false (0) on success and PCAP_ERROR_NOT_ACTIVATED  if called on a capture handle that has been created but not activated.
+set the snapshot length for a not-yet-activated pcap_t for live capture
+If pcap_fileno_APIParam_1  refers to a network device that was opened for a live capture using a combination of pcap_create_APIName  and pcap_activate_APIName,  or using pcap_open_live_APIName,  pcap_fileno_APIName  returns the file descriptor from which captured packets are read.
+get a pcap_t for live capture
+Another error occurred.
+PCAP_ERROR_PROMISC_PERM_DENIED
+get the standard I/O stream for a savefile being written
+it's unknown whether the adapter is connected or not PCAP_IF_CONNECTION_STATUS_CONNECTED
+snapshot length
+Otherwise, if the signal interrupted a call reading packets in a live capture, when your signal handler returns after calling pcap_breakloop_APIName, the call will be restarted, and the loop will not terminate until more packets arrive and the call completes.
+(That workaround will not work in FreeBSD 4.3 and later; however, in FreeBSD 4.6 and later, those calls work correctly on BPF devices, so the workaround isn't necessary, although it does no harm.)
+To report a security issue please send an e-mail to security@tcpdump.org.
+A pointer to a struct timeval  is returned if the timeout is required; otherwise NULL  is returned.
+set the time stamp precision returned in captures
+pcap_set_tstamp_precision(3PCAP)
+The process has permission to open the capture source but doesn't have permission to put it into promiscuous mode.
+pcap_free_tstamp_types(3PCAP)
+The bytes of data from the packet begin with a link-layer header.
+pcap_offline_filter_APIParam_1  is a pointer to a bpf_program  struct, usually the result of a call to pcap_compile_APIName.
+Routines
+pcap_set_buffer_size_APIName  returns 0 on success or PCAP_ERROR_ACTIVATED  if called on a capture handle that has been activated.
+The name "-" is a synonym for stdout.
+a pointer to a string giving a name for the device to pass to pcap_open_live_APIName  description
+pcap_set_promisc(3PCAP)
+pcap_get_selectable_fd_APIName  is not available on Windows.
+It also might, or might not, count packets dropped because there was no room in the operating system's buffer when they arrived.
+The time stamp type specified in a previous pcap_set_tstamp_type_APIName  call isn't supported by the capture source (the time stamp type is left as the default), PCAP_WARNING
+p  is a capture or ``savefile'' handle returned by an earlier call to pcap_create_APIName  and activated by an earlier call to pcap_activate_APIName,  or returned by an earlier call to pcap_open_offline_APIName,  pcap_open_live_APIName,  or pcap_open_dead_APIName.
+pcap_set_promisc_APIName  returns 0 on success or PCAP_ERROR_ACTIVATED  if called on a capture handle that has been activated.
+The process doesn't have permission to open the capture source.
+Note that in monitor mode the adapter might disassociate from the network with which it's associated, so that you will not be able to use any wireless networks with that adapter. This could prevent accessing files on a network server, or resolving host names or network addresses, if you are capturing in monitor mode and are not connected to another network with another adapter.
+The handle has already been activated.
+Thus, when doing a live capture, pcap_dispatch_APIParam_2  is the maximum number of packets to process before returning, but is not a minimum number; when reading a live capture, only one bufferful of packets is read at a time, so fewer than pcap_dispatch_APIParam_2  packets may be processed.
+(Note that there may be network devices that cannot be opened by the process calling pcap_findalldevs_APIName,  because, for example, that process does not have sufficient privileges to open them for capturing; if so, those devices will not appear on the list.)
+Asynchronous procedure calls will not work on Windows, as a thread blocked on a pcap_t  will not be in an alertable state.
+get the state of non-blocking mode for a pcap_t
+Note that the addresses in the list of addresses might be IPv4 addresses, IPv6 addresses, or some other type of addresses, so you must check the sa_family  member of the struct sockaddr  before interpreting the contents of the address; do not assume that the addresses are all IPv4 addresses, or even all IPv4 or IPv6 addresses.
+pcap_loop(3PCAP)
+pcap_findalldevs_APIName  returns 0 on success and PCAP_ERROR  on failure; as indicated, finding no devices is considered success, rather than failure, so 0 will be returned in that case.
+If the current file position does not fit in a long,  it will be truncated; this can happen on 32-bit UNIX-like systems with large file support and on Windows.
+Note also that poll_APIName  and kevent_APIName  doesn't work on character special files, including BPF devices, in Mac OS X 10.4 and 10.5, so, while select_APIName  can be used on the descriptor returned by pcap_get_selectable_fd_APIName,  poll_APIName  and kevent_APIName  cannot be used on it those versions of Mac OS X. poll_APIName,  but not kevent_APIName,  works on that descriptor in Mac OS X releases prior to 10.4; poll_APIName  and kevent_APIName  work on that descriptor in Mac OS X 10.6 and later.
+pcap_list_tstamp_types(3PCAP)
+pcap_create_APIParam_2  is assumed to be able to hold at least PCAP_ERRBUF_SIZE  chars.
+One can use options PCAP_TSTAMP_PRECISION_MICRO and  PCAP_TSTAMP_PRECISION_NANO  to request desired precision.
+The timeout that should be used in those calls must be no larger than the smallest of all timeouts returned by pcap_get_required_select_timeout_APIName  for devices from which packets will be captured.
+In WinPcap, pcap_lookupdev_APIName may return a UTF-16 string rather than an ASCII or UTF-8 string.
+set the filter
+if not NULL,  a pointer to a string giving a human-readable description of the device addresses
+get the time stamp precision of a pcap_t for live capture
+If PCAP_ERROR  is returned, pcap_findalldevs_APIParam_2  is filled in with an appropriate error message.
+The PCAP_IF_WIRELESS,  PCAP_IF_CONNECTION_STATUS,  PCAP_IF_CONNECTION_STATUS_UNKNOWN,  PCAP_IF_CONNECTION_STATUS_CONNECTED,  PCAP_IF_CONNECTION_STATUS_DISCONNECTED,  and PCAP_IF_CONNECTION_STATUS_NOT_APPLICABLE  constants became available in libpcap release 1.9.0.
+get link-layer header type corresponding to a name
+Packets are read with pcap_dispatch() or pcap_loop(), which process one or more packets, calling a callback routine for each packet, or with pcap_next() or pcap_next_ex(), which return the next packet. The callback for pcap_dispatch() and pcap_loop() is supplied a pointer to a struct pcap_pkthdr, which includes the following members:
+The file will have the same format as those used by tcpdump_APIName  and tcpslice_APIName.
+to_ms  specifies the packet buffer timeout, as a non-negative value, in milliseconds.
+pcap_next_APIName  returns a pointer to the packet data on success, and returns NULL  if an error occurred, or if no packets were read from a live capture (if, for example, they were discarded because they didn't pass the packet filter, or if, on platforms that support a packet buffer timeout that starts before any packets arrive, the timeout expires before any packets arrive, or if the file descriptor for the capture device is in non-blocking mode and no packets were available to be read), or if no more packets are available in a ``savefile.''
+find out whether a savefile has the native byte order
+on FreeBSD, NetBSD, OpenBSD, DragonFly BSD, macOS, and Solaris 11, immediate mode must be turned on with a BIOCIMMEDIATE  ioctl_APIName,  as documented in bpf_APIName,  on the descriptor returned by pcap_fileno_APIName,  after pcap_activate_APIName  is called;  on Solaris 10 and earlier versions of Solaris, immediate mode must be turned on by using a read timeout of 0 when opening the device (this will not provide immediate delivery of packets on other platforms, so don't assume it's sufficient);  on Digital UNIX/Tru64 UNIX, immediate mode must be turned on by doing a BIOCMBIC  ioctl,  as documented in packetfilter_APIName,  to clear the ENBATCH  flag on the descriptor returned by pcap_fileno_APIName,  after pcap_activate_APIName  is called;  on Windows, immediate mode must be turned on by calling pcap_setmintocopy_APIName  with a size of 0.
+Both ps_recv  and ps_drop  might, or might not, count packets not yet read from the operating system and thus not yet seen by the application.
+Note also that, in a multi-threaded application, if one thread is blocked in pcap_dispatch_APIName, pcap_loop_APIName, pcap_next_APIName, or pcap_next_ex_APIName, a call to pcap_breakloop_APIName in a different thread will not unblock that thread.
+A negative return value indicates what error condition occurred.
+Whether other addresses are returned, and what types they might have is platform-dependent.
+pcap_open_dead(3PCAP)
+In versions of libpcap prior to 1.0, the pcap.h header file was not in a pcap directory on most platforms; if you are writing an application that must work on versions of libpcap prior to 1.0, include <pcap.h>, which will include <pcap/pcap.h> for you, rather than including <pcap/pcap.h>.
+A handle can be put into ``non-blocking mode'', so that those routines will, rather than blocking, return an indication that no packets are available to read. Call pcap_setnonblock() to put a handle into non-blocking mode or to take it out of non-blocking mode; call pcap_getnonblock() to determine whether a handle is in non-blocking mode. Note that non-blocking mode does not work correctly in Mac OS X 10.6.
+pcap_next() is passed an argument that points to a struct pcap_pkthdr structure, and fills it in with the time stamp and length values for the packet. It returns a const u_char to the first caplen bytes of the packet on success, and NULL on error.
+pcap_lib_version(3PCAP)
+get the FILE * for a pcap_dumper_t opened for a ``savefile''
+The packet buffer timeout is required so that an application won't wait for the operating system's capture buffer to fill up before packets are delivered; if packets are arriving slowly, that wait could take an arbitrarily long period of time.
+If pcap_activate_APIName  fails, the pcap_t *  is not closed and freed; it should be closed using pcap_close_APIName.
+ps_ifdrop  might, or might not, be implemented; if it's zero, that might mean that no packets were dropped by the interface, or it might mean that the statistic is unavailable, so it should not be treated as an indication that the interface did not drop any packets.
+To report bugs and other problems, contribute patches, request a feature, provide generic feedback etc please see the file CONTRIBUTING.md in the libpcap source tree root.
+pcap_can_set_rfmon(3PCAP)
+flush buffered packets written to a pcap_dumper_t to the ``savefile''
+pcap_setnonblock(3PCAP)
+set if the device is up PCAP_IF_RUNNING
+The struct pcap_pkthdr  and the packet data are not to be freed by the pcap_loop_APIParam_3 routine, and are not guaranteed to be valid after the pcap_loop_APIParam_3 routine returns; if the code needs them to be valid after the pcap_loop_APIParam_3, it must make a copy of them.
+compile a filter expression
+NAME
+pcap_set_rfmon(3PCAP)
+get a list of link
+apply a filter program to a packet
+pcap_dump(3PCAP)
+find the IPv4 network number and netmask for a device
+The possible warning values are:  PCAP_WARNING_PROMISC_NOTSUP
+Two time stamp precisions are supported, microseconds and nanoseconds.
+get description for a link-layer header type
+free list of link-layer header types
+pcap_offline_filter_APIParam_2  points to the pcap_pkthdr  structure for the packet, and pcap_offline_filter_APIParam_3  points to the data in the packet.
+pcap_setdirection_APIName  isn't necessarily fully supported on all platforms; some platforms might return an error for all values, and some other platforms might not support PCAP_D_OUT.
+This function is only provided on Linux, and, if it is used on any device other than a network interface, it will have no effect.
+Opening a capture handle for reading
+NULL  is returned if the type value does not correspond to a known DLT_value.
+pcap_datalink_val_to_description(3PCAP)
+pcap_set_tstamp_type_APIName  returns 0 on success if the specified time stamp type is expected to be supported by the capture device, PCAP_WARNING_TSTAMP_TYPE_NOTSUP  if the specified time stamp type is not supported by the capture device, PCAP_ERROR_ACTIVATED  if called on a capture handle that has been activated, and PCAP_ERROR_CANTSET_TSTAMP_TYPE  if the capture device doesn't support setting the time stamp type (only older versions of libpcap will return that; newer versions will always allow the time stamp type to be set to the default type).
+get time stamp type corresponding to a name
+Not all handles have such a descriptor available; pcap_get_selectable_fd() will return -1 if no such descriptor is available. If no such descriptor is available, this may be because the device must be polled periodically for packets; in that case, pcap_get_required_select_timeout() will return a pointer to a struct timeval whose value can be used as a timeout in those routines. When the routine returns, an attmept should be made to read packets from the device. If pcap_get_required_select_timeout() returns NULL, no such timeout is available, and those routines cannot be used with the device.
+open a pcap_t for a ``savefile'', given a pathname
+Under SunOS 3.x or 4.x with NIT or BPF:
+pcap_lookupdev(3PCAP)
+On broadcast LANs such as Ethernet, if the network isn't switched, or if the adapter is connected to a "mirror port" on a switch to which all packets passing through the switch are sent, a network adapter receives all packets on the LAN, including unicast or multicast packets not sent to a network address that the network adapter isn't configured to recognize.
+pcap_dump_flush_APIName  flushes the output buffer to the ``savefile,'' so that any packets written with pcap_dump_APIName  but not yet written to the ``savefile'' will be written.
+set capture protocol for a not
+On network interface devices on Linux, pcap_set_protocol_linux_APIName  sets the pcap_set_protocol_linux_APIParam_2 to be used in the socket_APIName  call to create a capture socket when the handle is activated.
+If the time stamps in the file do not have the same precision as the requested precision, they will be scaled up or down as necessary before being supplied.
+pcap_sendpacket_APIName  is like pcap_inject_APIName,  but it returns 0 on success, rather than returning the number of bytes written.
+pcap_dispatch(3PCAP)
+In order to get a ``fake'' pcap_t for use in routines that require a pcap_t as an argument, such as routines to open a ``savefile'' for writing and to compile a filter expression, call pcap_open_dead().
+Its value does not affect pcap_compile_APIName.
+pcap_open_offline_with_tstamp_precision_APIName  takes an additional precision  argument specifying the time stamp precision desired; if PCAP_TSTAMP_PRECISION_MICRO  is specified, packet time stamps will be supplied in seconds and microseconds, and if PCAP_TSTAMP_PRECISION_NANO  is specified, packet time stamps will be supplied in seconds and nanoseconds.
+pcap_inject(3PCAP)
+PCAP_ERROR_PERM_DENIED
+The PCAP_IF_UP  and PCAP_IF_RUNNING  constants became available in libpcap release 1.6.1.
+pcap_get_tstamp_precision_APIName  returns the precision of the time stamp returned in packet captures on the pcap descriptor.
+Not all platforms support a packet buffer timeout; on platforms that don't, the packet buffer timeout is ignored. A zero value for the timeout, on platforms that support a packet buffer timeout, will cause a read to wait forever to allow enough packets to arrive, with no timeout. A negative value is invalid; the result of setting the timeout to a negative value is unpredictable.
+Normally, the adapter will discard those packets; however, many network adapters support "promiscuous mode", which is a mode in which all packets, even if they are not sent to an address that the adapter recognizes, are provided to the host. This is useful for passively capturing traffic between two or more other hosts for analysis.
+pcap_datalink(3PCAP)
+pcap_dump_APIName  outputs a packet to the ``savefile'' opened with pcap_dump_open_APIName.
+get network address and network mask for a capture device
+The caller is responsible for freeing the array with pcap_free_datalinks_APIName,  which frees the list of link-layer header types pointed to by pcap_free_datalinks_APIParam_1.
+check whether monitor mode can be set for a not
+get the snapshot length for a pcap_t
+pcap_set_timeout_APIName  returns 0 on success or PCAP_ERROR_ACTIVATED  if called on a capture handle that has been activated.
+if not NULL,  a pointer to the next element in the list; NULL  for the last element of the list name
+The current version is available from "The Tcpdump Group"'s Web site at
+The argument is a link-layer pcap_set_protocol_linux_APIParam_2 value, such as the values in the <linux/if_ether.h>  header file, specified in host byte order.
+pcap_geterr_APIName  returns the error text pertaining to the last pcap library error.
+Injecting packets
+pcap_datalink_name_to_val_APIName  returns the type value on success and PCAP_ERROR  if the pcap_datalink_name_to_val_APIParam_1 is not a known type pcap_datalink_name_to_val_APIParam_1..
+This function became available in libpcap release 1.5.1.
+get or print libpcap error message text
+In order to cause only certain packets to be returned when reading packets, a filter can be set on a handle. For a live capture, the filtering will be performed in kernel mode, if possible, to avoid copying ``uninteresting'' packets from the kernel to user mode.
+Under BSD (this includes macOS):
+If pcap_set_rfmon_APIParam_2  is non-zero, monitor mode will be set, otherwise it will not be set.
+if not NULL,  a pointer to a struct sockaddr  that contains the broadcast address corresponding to the address pointed to by addr;  may be null if the device doesn't support broadcasts dstaddr
+pcap_close_APIName  closes the files associated with pcap_close_APIParam_1  and deallocates resources.
+pcap_open_live_APIParam_5  is assumed to be able to hold at least PCAP_ERRBUF_SIZE  chars.
+See pcap-filter_APIName  for the syntax of that string.
+get a string for an error or warning status code
+set promiscuous mode for a not-yet-activated pcap_t for live capture
+The flag is checked in loops reading packets from the OS
+Note that, even if you successfully open the network interface, you might not have permission to send packets on it, or it might not support sending packets; as pcap_open_live_APIName  doesn't have a flag to indicate whether to open for capturing, sending, or capturing and sending, you cannot request an open that supports sending and be notified at open time whether sending will be possible.
+To open a ``savefile`` to which to write packets, given the pathname the ``savefile'' should have, call pcap_dump_open(). To open a ``savefile`` to which to write packets, given the pathname the ``savefile'' should have, call pcap_dump_open(); to set up a handle for a ``savefile'', given a FILE * referring to a file already opened for writing, call pcap_dump_fopen(). They each return pointers to a pcap_dumper_t, which is the handle used for writing packets to the ``savefile''. If it succeeds, it will have created the file if it doesn't exist and truncated the file if it does exist. To close a pcap_dumper_t, call pcap_dump_close().
+pcap_lib_version_APIName  returns a pointer to a string giving information about the version of the libpcap library being used; note that it contains more information than just a version number.
+pcap_open_offline_APIParam_2  is assumed to be able to hold at least PCAP_ERRBUF_SIZE  chars.
+pcap_lookupdev_APIParam_1  is assumed to be able to hold at least PCAP_ERRBUF_SIZE  chars.
+This function became available in libpcap release 1.9.0.
+get library version string
+pcap_dump_open(3PCAP)
+pcap_snapshot_APIName  returns the snapshot length specified when pcap_set_snaplen_APIName  or pcap_open_live_APIName  was called, for a live capture, or the snapshot length from the capture file, for a ``savefile''.
+pcap_stats_APIName  returns 0 on success and returns PCAP_ERROR  if there is an error or if pcap_stats_APIParam_1  doesn't support packet statistics.
+Selecting a link-layer header type for a live capture
+pcap_open_offline_with_tstamp_precision(3PCAP)
+pcap_setfilter_APIName  is used to specify a filter program.
+free list of available time stamp types
+pcap_set_immediate_mode_APIName  sets whether immediate mode should be set on a capture handle when the handle is activated.
+pcap_dump_ftell_APIName  returns the current file position for the ``savefile'', representing the number of bytes written by pcap_dump_open_APIName  and pcap_dump_APIName.
+We recommend always setting the timeout to a non-zero value unless immediate mode is set, in which case the timeout has no effect.
+If a given network interface provides a standard link-layer header, with a standard packet type, but provides some packet types with a different socket-layer pcap_set_protocol_linux_APIParam_2 type from the one in the link-layer header, that packet type cannot be filtered with a filter specified with pcap_setfilter_APIName  but can be filtered by specifying the socket-layer pcap_set_protocol_linux_APIParam_2 type using pcap_set_protocol_linux_APIName.
+specify whether to capture incoming packets, outgoing packets, or both
+pcap_getnonblock_APIName  returns the current ``non-blocking'' state of the capture descriptor; it always returns 0 on ``savefiles''.
+convert an errno value to a string
+promisc  specifies if the interface is to be put into promiscuous mode.
+read the next packet from a pcap_t without an indication whether an error occurred
+pcap_create(3PCAP)
+The pcap_pkthdr  structure pointed to by h  is filled in with the appropriate values for the packet.
+pcap_get_required_select_timeout_APIName  is not available on Windows.
+open a device for capturing
+pcap_list_datalinks_APIName  returns the number of link-layer header types in the array on success, PCAP_ERROR_NOT_ACTIVATED  if called on a capture handle that has been created but not activated, and PCAP_ERROR  on other errors.
+packet buffer timeout
+pcap_dump_file(3PCAP)
+Under Linux:
+The caller is responsible for freeing the array with pcap_free_tstamp_types_APIName,  which frees the list pointed to by pcap_free_tstamp_types_APIParam_1.
+convert a PCAP_ERROR_ or PCAP_WARNING_ value to a string
+pcap_open_dead_APIName  and pcap_open_dead_with_tstamp_precision_APIName  are used for creating a pcap_t  structure to use when calling the other functions in libpcap.
+snaplen  specifies the snapshot length to be set on the handle.
+Note that the Packet Capture library is usually built with large file support, so the standard I/O stream of the ``savefile'' might refer to a file larger than 2 gigabytes; applications that use pcap_file_APIName  should, if possible, use calls that support large files on the return value of pcap_file_APIName  or the value returned by fileno_APIName  when passed the return value of pcap_file_APIName.
+If PCAP_ERROR  is returned, pcap_geterr_APIName  or pcap_perror_APIName  may be called with pcap_setdirection_APIParam_1  as an argument to fetch or display the error text.
+check whether a filter matches a packet
+pcap_getnonblock(3PCAP)
+The PCAP_NETMASK_UNKNOWN  constant became available in libpcap release 1.1.0.
+Reporting errors
+pcap_dump_open_APIName  is called to open a ``savefile'' for writing.
+get the current file offset for a savefile being written
+The value it returns will be valid for all packets received unless and until pcap_set_datalink_APIName  is called; after a successful call to pcap_set_datalink_APIName,  all subsequent packets will have a link-layer header of the type specified by the link-layer header type value passed to pcap_set_datalink_APIName.
+Getting library version information
+pcap_sendpacket_APIName  returns 0 on success and PCAP_ERROR  on failure.
+ts
+pcap_datalink_name_to_val_APIName  translates a link-layer header type pcap_datalink_name_to_val_APIParam_1, which is a DLT_  pcap_datalink_name_to_val_APIParam_1 with the DLT_  removed, to the corresponding link-layer header type value.
+The callback is also supplied a const u_char pointer to the first caplen (as given in the struct pcap_pkthdr mentioned above) bytes of data from the packet. This won't necessarily be the entire packet; to capture the entire packet, you will have to provide a value for snaplen in your call to pcap_set_snaplen() that is sufficiently large to get all of the packet's data - a value of 65535 should be sufficient on most if not all networks). When reading from a ``savefile'', the snapshot length specified when the capture was performed will limit the amount of packet data available.
+get the standard I/O stream for a savefile being read
+pcap_setdirection_APIName  returns 0 on success and PCAP_ERROR  on failure.
+pcap_set_tstamp_type(3PCAP)
+A value of -1 or 0 for pcap_loop_APIParam_2  is equivalent to infinity, so that packets are processed until another ending condition occurs.
+pcap_compile_APIParam_5  specifies the IPv4 pcap_compile_APIParam_5 of the network on which packets are being captured; it is used only when checking for IPv4 broadcast addresses in the filter program.
+If PCAP_ERROR  is returned, pcap_geterr_APIName  or pcap_perror_APIName  may be called with pcap_sendpacket_APIParam_1  as an argument to fetch or display the error text.
+Alternatively, you may call pcap_fopen_offline_APIName  or pcap_fopen_offline_with_tstamp_precision_APIName  to read dumped data from an existing open stream pcap_fopen_offline_APIParam_1.
+set filter for a pcap_t
+When first activated with pcap_activate_APIName  or opened with pcap_open_live_APIName,  a capture handle is not in ``non-blocking mode''; a call to pcap_setnonblock_APIName  is required in order to put it into ``non-blocking'' mode.
+pcap_list_datalinks_APIName  is used to get a list of the supported link-layer header types of the interface associated with the pcap descriptor.
+The file can have the pcap file format as described in pcap-savefile_APIName,  which is the file format used by, among other programs, tcpdump_APIName  and tcpslice_APIName,  or can have the pcapng file format, although not all pcapng files can be read.
+pcap_tstamp_type_val_to_name(3PCAP)
+close a savefile being written to
+It does not  return when live packet buffer timeouts occur; instead, it attempts to read more packets.
+You must have read/write access to the network pseudo device, e.g. /dev/le. On at least some versions of Solaris, however, this is not sufficient to allow tcpdump to capture in promiscuous mode; on those versions of Solaris, you must be root, or the application capturing packets must be installed setuid to root, in order to capture in promiscuous mode. Note that, on many (perhaps all) interfaces, if you don't capture in promiscuous mode, you will not see any outgoing packets, so a capture not done in promiscuous mode may not be very useful.
+pcap_lookupdev_APIName  returns a pointer to a string giving the name of a network device suitable for use with pcap_create_APIName  and pcap_activate_APIName,  or with pcap_open_live_APIName,  and with pcap_lookupnet_APIName.
+If PCAP_ERROR  is returned, pcap_geterr_APIName  or pcap_perror_APIName  may be called with pcap_set_datalink_APIParam_1  as an argument to fetch or display the error text.
+set promiscuous mode for a not
+SEE ALSO
+a pointer to the first element of a list of network addresses for the device, or NULL  if the device has no addresses flags
+monitor mode
+pcap_set_snaplen_APIName  returns 0 on success or PCAP_ERROR_ACTIVATED  if called on a capture handle that has been activated.
+In addition, for various reasons, one or more of those routines will not work properly with the descriptor; the documentation for pcap_get_selectable_fd() gives details. Note that, just as an attempt to read packets from a pcap_t may not return any packets if the packet buffer timeout expires, a select(), poll(), or other such call may, if the packet buffer timeout expires, indicate that a descriptor is ready to read even if there are no packets available to read.
+Under ULTRIX and Digital UNIX/Tru64 UNIX:
+pcap_loop_APIName  processes packets from a live capture or ``savefile'' until pcap_loop_APIParam_2  packets are processed, the end of the ``savefile'' is reached when reading from a ``savefile'', pcap_breakloop_APIName  is called, or an error occurs.
+set link-layer header type for a device
+pcap_dump_file_APIName  returns the standard I/O stream of the ``savefile'' opened by pcap_dump_open_APIName.
+A value of -1 or 0 for pcap_dispatch_APIParam_2  causes all the packets received in one buffer to be processed when reading a live capture, and causes all the packets in the file to be processed when reading a ``savefile''.
+The format of the link-layer header is indicated by the return value of the pcap_datalink_APIName  routine when handed the pcap_t  value also passed to pcap_loop_APIName  or pcap_dispatch_APIName.
+determine whether a ``savefile'' being read came from a machine with the opposite byte order
+pcap_setdirection(3PCAP)
+pcap_create() and pcap_activate() were not available in versions of libpcap prior to 1.0; if you are writing an application that must work on versions of libpcap prior to 1.0, either use pcap_open_live() to get a handle for a live capture or, if you want to be able to use the additional capabilities offered by using pcap_create() and pcap_activate(), use an autoconf(1) script or some other configuration script to check whether the libpcap 1.0 APIs are available and use them only if they are.  
+get the file descriptor for a live capture
+pcap_open_offline_with_tstamp_precision_APIName  and pcap_fopen_offline_with_tstamp_precision_APIName  became available in libpcap release 1.5.1.
+The snapshot length is set with pcap_set_snaplen().
+pcap_offline_filter(3PCAP)
+pcap_set_tstamp_type_APIName  sets the type of time stamp desired for packets captured on the pcap descriptor to the type specified by pcap_set_tstamp_type_APIParam_2.
+If PCAP_ERROR  is returned, pcap_geterr_APIName  or pcap_perror_APIName  may be called with pcap_compile_APIParam_1  as an argument to fetch or display the error text.
+Note that on Windows, that stream should be opened in binary mode.
+pcap_loop_APIName  and pcap_next_APIName  will not work in ``non-blocking'' mode.
+The time stamp type is set with pcap_set_tstamp_type().
+For IPv4 addresses, the struct sockaddr  pointer can be interpreted as if it pointed to a struct sockaddr_in;  for IPv6 addresses, it can be interpreted as if it pointed to a struct sockaddr_in6.
+Applications should be prepared for this to happen, but must not rely on it happening.
+ 
+If NULL  is returned, pcap_create_APIParam_2  is filled in with an appropriate error message.
+It has no effect on ``savefiles''.
+Under Solaris with DLPI:
+pcap_findalldevs_APIParam_2  is assumed to be able to hold at least PCAP_ERRBUF_SIZE  chars.
+pcap_dump_ftell64_APIName  returns the current file position in a int64_t,  so if file offsets that don't fit in a long  but that fit in a int64_t  are supported, this will return the file offset without truncation.
+pcap_next_ex_APIName  returns 1 if the packet was read without problems, 0 if packets are being read from a live capture and the packet buffer timeout expired, PCAP_ERROR  if an error occurred while reading the packet, and PCAP_ERROR_BREAK  if packets are being read from a ``savefile'' and there are no more packets to read from the savefile.
+You must have read access to /dev/nit or /dev/bpf*.
+A compiled filter can also be applied directly to a packet that has been read using pcap_offline_filter().
+Note that even if an application does not set promiscuous mode, the adapter could well be in promiscuous mode for some other reason.
+pcap_compile_APIName  returns 0 on success and PCAP_ERROR  on failure.
+Monitor mode is set with pcap_set_rfmon(), and pcap_can_set_rfmon() can be used to determine whether an adapter can be put into monitor mode.
+get the time stamp precision returned in captures
+If the pcap_compile_APIParam_5 of the network on which packets are being captured isn't known to the program, or if packets are being captured on the Linux "any" pseudo-interface that can capture on more than one network, a value of PCAP_NETMASK_UNKNOWN  can be supplied; tests for IPv4 broadcast addresses will fail to compile, but all other tests in the filter program will be OK.
+pcap_inject_APIName  returns the number of bytes written on success and PCAP_ERROR  on failure.
+pcap_set_buffer_size_APIName  sets the buffer size that will be used on a capture handle when the handle is activated to pcap_set_buffer_size_APIParam_2,  which is in units of bytes.
+This routine is safe to use inside a signal handler on UNIX or a console control handler on Windows, as it merely sets a flag that is checked within the loop.
+determine whether monitor mode can be set for a pcap_t for live capture
+open a pcap_dumper_t for a ``savefile``, given a FILE *
+set the packet buffer timeout for a not-yet-activated capture handle 
+a bpf_u_int32 giving the number of bytes of the packet that are available from the capture
+activate a pcap_t for live capture
+The pcap_dump_open_append_APIName  function became available in libpcap release 1.7.2.
+fname  specifies the name of the file to open.
+The Packet Capture library provides a high level interface to packet capture systems. All packets on the network, even those destined for other hosts, are accessible through this mechanism. It also supports saving captured packets to a ``savefile'', and reading packets from a ``savefile''.  
+If there is an error, PCAP_ERROR  is returned and pcap_setnonblock_APIParam_3  is filled in with an appropriate error message; otherwise, 0 is returned.
+pcap_setnonblock_APIName  puts a capture handle into ``non-blocking'' mode, or takes it out of ``non-blocking'' mode, depending on whether the pcap_setnonblock_APIParam_2  argument is non-zero or zero.
+pcap_next_APIName  reads the next packet (by calling pcap_dispatch_APIName  with a cnt  of 1) and returns a u_char  pointer to the data in that packet.
+autoconf(1), tcpdump(1), tcpslice(1), pcap-filter(7), pfconfig(8), usermod(8)  
+Note that, when doing a live capture on some platforms, if the read timeout expires when there are no packets available, pcap_dispatch_APIName  will return 0, even when not in non-blocking mode, as there are no packets to process.
+pcap_get_required_select_timeout_APIName  returns, on UNIX, a pointer to a struct timeval  containing a value that must be used as the minimum timeout in select_APIName,  poll_APIName,  epoll_wait_APIName,  and kevent_APIName  calls if pcap_get_selectable_fd_APIName  returns PCAP_ERROR.
+The name "-" is a synonym for stdin.
+pcap_dispatch_APIName  returns the number of packets processed on success; this can be 0 if no packets were read from a live capture (if, for example, they were discarded because they didn't pass the packet filter, or if, on platforms that support a packet buffer timeout that starts before any packets arrive, the timeout expires before any packets arrive, or if the file descriptor for the capture device is in non-blocking mode and no packets were available to be read) or if no more packets are available in a ``savefile.''
+The capture source specified when the handle was created doesn't exist.
+set if the device is a loopback interface PCAP_IF_UP
+(In older versions of libpcap, the behavior when pcap_dispatch_APIParam_2 was 0 was undefined; different platforms and devices behaved differently, so code that must work with older versions of libpcap should use -1, not 0, as the value of pcap_dispatch_APIParam_2.)
+device flags:
+pcap_set_rfmon_APIName  returns 0 on success or PCAP_ERROR_ACTIVATED  if called on a capture handle that has been activated.
+pcap_dump_flush_APIName  returns 0 on success and PCAP_ERROR  on failure.
+pcap_activate_APIName  returns 0 on success without warnings, a non-zero positive value on success with warnings, and a negative value on error.
+callback  specifies a pcap_handler  routine to be called with three arguments: a u_char  pointer which is passed in the pcap_loop_APIParam_4  argument to pcap_loop_APIName  or pcap_dispatch_APIName,  a const struct pcap_pkthdr  pointer pointing to the packet time stamp and lengths, and a const u_char  pointer to the first caplen  (as given in the struct pcap_pkthdr  a pointer to which is passed to the pcap_loop_APIParam_3 routine) bytes of data from the packet.
+pcap_setfilter_APIName  returns 0 on success and PCAP_ERROR  on failure.
+The original authors of libpcap are:
+pcap_set_tstamp_precision_APIName  sets the precision of the time stamp desired for packets captured on the pcap descriptor to the type specified by pcap_set_tstamp_precision_APIParam_2.
+Promiscuous mode was requested, but the capture source doesn't support promiscuous mode.
+In newer versions of Solaris, you must have been given the net_rawaccess privilege; this is both necessary and sufficient to give you access to the network pseudo-device - there is no need to change the privileges on that device. A user can be given that privilege by, for example, adding that privilege to the user's defaultpriv key with the usermod(8) command.
+This operation is not supported if a ``savefile'' is being read.
+ps_recv
+The behavior, if the timeout isn't specified, is undefined, as is the behavior if the timeout is set to zero or to a negative value.
+pcap_set_rfmon_APIName  sets whether monitor mode should be set on a capture handle when the handle is activated.
+To open a handle for a live capture, given the name of the network or other interface on which the capture should be done, call pcap_create(), set the appropriate options on the handle, and then activate it with pcap_activate(). If pcap_activate() fails, the handle should be closed with pcap_close().
+pcap_can_set_rfmon_APIName  checks whether monitor mode could be set on a capture handle when the handle is activated.
+pcap_breakloop_APIName  sets a flag that will force pcap_dispatch_APIName  or pcap_loop_APIName  to return rather than looping; they will return the number of packets that have been processed so far, or PCAP_ERROR_BREAK  if no packets have been processed so far.
+pcap_is_swapped_APIName  returns true (1) if pcap_is_swapped_APIParam_1  refers to a ``savefile'' that uses a different byte order than the current system.
+Some network devices opened with pcap_create_APIName  and pcap_activate_APIName,  or with pcap_open_live_APIName,  do not support those calls (for example, regular network devices on FreeBSD 4.3 and 4.4, and Endace DAG devices), so PCAP_ERROR  is returned for those devices.
+In previous releases, time stamps from a capture device or savefile are always given in seconds and microseconds.
+A struct pcap_stat  has the following members:
+To get statistics about packets received and dropped in a live capture, call pcap_stats().
+pcap_datalink_val_to_description_or_dlt_APIName  translates a link-layer header type value to a short description of that link-layer header type just like pcap_datalink_val_to_description.
+pcap_compile_APIParam_4  controls whether optimization on the resulting code is performed.
+For now, this doesn't work on the "any" device; if an argument of "any" or NULL is supplied, the setting of promiscuous mode is ignored.
+promiscuous mode
+By default, libpcap will attempt to capture both packets sent by the machine and packets received by the machine. To limit it to capturing only packets received by the machine or, if possible, only packets sent by the machine, call pcap_setdirection().
+pcap_list_tstamp_types_APIName  allocates an array to hold the list and sets *tstamp_typesp  to point to the array.
+pcap_setdirection_APIParam_2  is one of the constants PCAP_D_IN,  PCAP_D_OUT  or PCAP_D_INOUT.
+pcap_datalink_val_to_name(3PCAP)
+pcap_open_live_APIName  returns a pcap_t *  on success and NULL  on failure.
+pcap_open_offline_APIName  and pcap_open_offline_with_tstamp_precision_APIName  are called to open a ``savefile'' for reading.
+Capture statistics
+pcap_set_protocol_linux(3PCAP)
+pcap_setfilter_APIParam_2  is a pointer to a bpf_program  struct, usually the result of a call to pcap_compile_APIName.
+open a pcap_t for a ``savefile'', given a FILE *, and specify the precision to provide for packet time stamps
+A filter can be specified as a text string; the syntax and semantics of the string are as described by pcap-filter(7). A filter string is compiled into a program in a pseudo-machine-language by pcap_compile() and the resulting program can be made a filter for a handle with pcap_setfilter(). The result of pcap_compile() can be freed with a call to pcap_freecode(). pcap_compile() may require a network mask for certain expressions in the filter string; pcap_lookupnet() can be used to find the network address and network mask for a given capture device.
+caplen
+Reading packets
+program  is a pointer to a bpf_program  struct and is filled in by pcap_compile_APIName.
+pcap_geterr_APIName  or pcap_perror_APIName  may be called with pcap_can_set_rfmon_APIParam_1  as an argument to fetch or display a message describing the error.
+If a positive number is returned, the flag is not cleared, so a subsequent call will return PCAP_ERROR_BREAK  and clear the flag.
+pcap_lookupnet(3PCAP)
+PCAP_D_INOUT  is the default setting if pcap_setdirection_APIName is not called.
+set or clear non-blocking mode on a pcap_t
+pcap_list_datalinks(3PCAP)
+pcap_dump_close(3PCAP)
+pcap_lookupnet_APIName  returns 0 on success and PCAP_ERROR  on failure.
+pcap_open_offline_APIName,  pcap_open_offline_with_tstamp_precision_APIName,  pcap_fopen_offline_APIName,  and pcap_fopen_offline_with_tstamp_precision_APIName  return a pcap_t *  on success and NULL  on failure.
+Note that its calling arguments are suitable for use with pcap_dispatch_APIName  or pcap_loop_APIName.
+pcap_freealldevs(3PCAP)
+get the major and minor version of the file format version for a ``savefile''
+the notion of "connected" and "disconnected" don't apply to this interface; for example, it doesn't apply to a loopback device
+Note also that some devices might not support sending packets.
+Do NOT assume that the packets for a given capture or ``savefile`` will have any given link-layer header type, such as DLT_EN10MB for Ethernet. For example, the "any" device on Linux will have a link-layer header type of DLT_LINUX_SLL even if all devices on the system at the time the "any" device is opened have some other data link type, such as DLT_EN10MB for Ethernet.
+To obtain a list of devices that can be opened for a live capture, call pcap_findalldevs(); to free the list returned by pcap_findalldevs(), call pcap_freealldevs(). pcap_lookupdev() will return the first device on that list that is not a ``loopback`` network interface.
+pcap_file(3PCAP)
+The buffer size is set with pcap_set_buffer_size().
+It must not be called on a pcap descriptor created by pcap_create_APIName  that has not yet been activated by pcap_activate_APIName.
+In previous releases, there is no support for appending packets to an existing savefile.
+If pcap_set_immediate_mode_APIParam_2  is non-zero, immediate mode will be set, otherwise it will not be set.
+pcap_tstamp_type_name_to_val_APIName  translates a time stamp type pcap_tstamp_type_name_to_val_APIParam_1 to the corresponding time stamp type value.
+Under IRIX with snoop:
+prematurely terminate the loop in pcap_dispatch() or pcap_loop()
+pcap_snapshot_APIName  returns the snapshot length on success and PCAP_ERROR_NOT_ACTIVATED  if called on a capture handle that has been created but not activated.
+get a name or description for a link
+pcap_dump_fopen_APIName  is called to write data to an existing open stream pcap_dump_fopen_APIParam_2;  this stream will be closed by a subsequent call to pcap_dump_close_APIName.
+BUGS
+If pcap_set_protocol_linux_APIParam_2  is non-zero, packets of that pcap_set_protocol_linux_APIParam_2 will be captured when the handle is activated, otherwise, all packets will be captured.
+create a live capture handle
+pcap_can_set_rfmon_APIName  returns 0 if monitor mode could not be set, 1 if monitor mode could be set, and a negative value on error.
+If pcap_fileno_APIParam_1  refers to a ``savefile'' that was opened using functions such as pcap_open_offline_APIName  or pcap_fopen_offline_APIName,  a ``dead'' pcap_t  opened using pcap_open_dead_APIName,  or a pcap_t  that was created with pcap_create_APIName  but that has not yet been activated with pcap_activate_APIName,  it returns PCAP_ERROR.
+get a list of link-layer header types for a device
+This function became available in libpcap release 1.5.0.
+This interface is obsoleted by  pcap_findalldevs_APIName.
+To obtain the FILE * corresponding to a pcap_t opened for a ``savefile'', call pcap_file().
+pcap_free_datalinks(3PCAP)
+read packets from a pcap_t until an interrupt or error occurs
+set packet buffer timeout for a not-yet-activated pcap_t for live capture
+set time stamp precision for a not-yet-activated pcap_t for live capture
+find the default device on which to capture
+If PCAP_ERROR  is returned, pcap_lookupnet_APIParam_4  is filled in with an appropriate error message.
+It must be called on a pcap descriptor created by pcap_create_APIName  that has not yet been activated by pcap_activate_APIName.
+pcap_dump_open_APIParam_2  specifies the name of the file to open.
+If called directly, the pcap_dump_APIParam_1  parameter is of type pcap_dumper_t  as returned by pcap_dump_open_APIName.
+pcap_strerror_APIName  is provided in case strerror_APIName  isn't available.
+SYNOPSIS
+The packets read from the handle may include a ``pseudo-header'' containing various forms of packet meta-data, and probably includes a link-layer header whose contents can differ for different network interfaces. To determine the format of the packets supplied by the handle, call pcap_datalink(); https://www.tcpdump.org/linktypes.html lists the values it returns and describes the packet formats that correspond to those values.
+If PCAP_WARNING_PROMISC_NOTSUP,  PCAP_ERROR_NO_SUCH_DEVICE,  or PCAP_ERROR_PERM_DENIED  is returned, pcap_geterr_APIName  or pcap_perror_APIName  may be called with pcap_activate_APIParam_1  as an argument to fetch or display an message giving additional details about the problem that might be useful for debugging the problem if it's unexpected.
+Reading a saved packet file doesn't require special privileges.
+If PCAP_ERROR  is returned, pcap_geterr_APIName  or pcap_perror_APIName  may be called with pcap_setfilter_APIParam_1  as an argument to fetch or display the error text.
+open a pcap_dumper_t for a ``savefile``, given a pathname
+NOTE: in libpcap 1.8.0 and later, pcap_compile_APIName  can be used in multiple threads within a single process.
+The packet data is not to be freed by the caller, and is not guaranteed to be valid after the next call to pcap_next_ex_APIName,  pcap_next_APIName,  pcap_loop_APIName,  or pcap_dispatch_APIName;  if the code needs it to remain valid, it must make a copy of it.
+pcap_get_selectable_fd_APIName  returns, on UNIX, a file descriptor number for a file descriptor on which one can do a select_APIName,  poll_APIName,  epoll_wait_APIName,  kevent_APIName,  or other such call to wait for it to be possible to read packets without blocking, if such a descriptor exists, or PCAP_ERROR,  if no such descriptor exists.
+set the direction for which packets will be captured
+It is typically used when just using libpcap for compiling BPF code; it can also be used if using pcap_dump_open_APIName,  pcap_dump_APIName,  and pcap_dump_close_APIName  to write a savefile if there is no pcap_t  that supplies the packets to be written.
+ps_recv  might count packets whether they passed any filter set with pcap_setfilter_APIName  or not, or it might count only packets that pass the filter.
+close a pcap_dumper_t
+pcap_dump_open_append_APIName  is like pcap_dump_open_APIName  but does not create the file if it does not exist and, if it does already exist, and is a pcap file with the same byte order as the host opening the file, and has the same time stamp precision, link-layer header type, and snapshot length as pcap_dump_open_APIParam_1,  it will write new packets at the end of the file.
+The list of devices must be freed with pcap_freealldevs_APIName,  which frees the list pointed to by pcap_freealldevs_APIParam_1.
+pcap_datalink_APIName  returns the link-layer header type for the live capture or ``savefile'' specified by pcap_datalink_APIParam_1.
+The device for which pcap_get_selectable_fd_APIName  returned PCAP_ERROR  must be put in non-blocking mode with pcap_setnonblock_APIName,  and an attempt must always be made to read packets from the device when the select_APIName,  poll_APIName,  epoll_wait_APIName,  or kevent_APIName  call returns.
+set the packet buffer timeout for a not
+if not NULL,  a pointer to the next element in the list; NULL  for the last element of the list addr
+In previous releases, the time stamp type cannot be set; only the default time stamp type offered by a capture source is available.
+pcap_tstamp_type_val_to_name_APIName  translates a time stamp type value to the corresponding time stamp type name.
+In that case, those calls must be given a timeout less than or equal to the timeout returned by pcap_get_required_select_timeout_APIName  for the device for which pcap_get_selectable_fd_APIName  returned PCAP_ERROR,  the device must be put in non-blocking mode with a call to pcap_setnonblock_APIName,  and an attempt must always be made to read packets from the device when the call returns.
+To get a string giving version information about libpcap, call pcap_lib_version().
+pcap_setfilter(3PCAP)
+Note that, on some platforms, the link-layer header of the packet that's sent might not be the same as the link-layer header of the packet supplied to pcap_inject_APIName,  as the source link-layer address, if the header contains such an address, might be changed to be the address assigned to the interface on which the packet it sent, if the platform doesn't support sending completely raw and unchanged packets.
+pcap_next(3PCAP)
+pcap_set_promisc_APIName  sets whether promiscuous mode should be set on a capture handle when the handle is activated.
+pcap_set_protocol_linux_APIName  returns 0 on success or PCAP_ERROR_ACTIVATED  if called on a capture handle that has been activated.
+pcap_datalink_val_to_name_APIName  translates a link-layer header type value to the corresponding link-layer header type name, which is the DLT_  name for the link-layer header type value with the DLT_  removed.
+However, in earlier versions of libpcap, it is not  safe to use pcap_compile_APIName  in multiple threads in a single process without some form of mutual exclusion allowing only one thread to call it at any given time.
+Opening a handle for writing captured packets
+pcap_loop_APIName  returns 0 if pcap_loop_APIParam_2  is exhausted or if, when reading from a ``savefile'', no more packets are available.
+set immediate mode for a not-yet-activated pcap_t for live capture
+pcap_dump_fopen(3PCAP)
+It returns an pcap_strerror_APIParam_1 message string corresponding to pcap_strerror_APIParam_1.
+get list of available time stamp types for a not-yet-activated pcap_t for live capture
+read the next packet from a pcap_t with an error indication on an error
+Van Jacobson, Craig Leres and Steven McCanne, all of the Lawrence Berkeley National Laboratory, University of California, Berkeley, CA.
+The returned handle must be activated with pcap_activate_APIName  before packets can be captured with it; options for the capture, such as promiscuous mode, can be set on the handle before activating it.
+get the time stamp type value corresponding to a time stamp type name
+pcap_file_APIName  returns the standard I/O stream of the ``savefile,'' if a ``savefile'' was opened with pcap_open_offline_APIName,  or NULL,  if a network device was opened with pcap_create_APIName  and pcap_activate_APIName,  or with pcap_open_live_APIName.
+set capture protocol for a not-yet-activated pcap_t for live capture (Linux only)
+set if the device is running PCAP_IF_WIRELESS
+Do NOT  assume that the packets for a given capture or ``savefile`` will have any given link-layer header type, such as DLT_EN10MB  for Ethernet.
+pcap_create_APIName  is used to create a packet capture handle to look at packets on the network.
+create a ``fake'' pcap_t
+open a saved capture file for reading
+pcap_next_ex_APIName  reads the next packet and returns a success/failure indication.
+pcap_statustostr_APIName  converts a PCAP_ERROR_  or PCAP_WARNING_  value returned by a libpcap routine to an pcap_statustostr_APIParam_1 string.
+set the buffer size for a not
+pcap_get_tstamp_precision(3PCAP)
+a bitmask for an indication of whether the adapter is connected or not; for wireless interfaces, "connected" means "associated with a network" The possible values for the connection status bits are: PCAP_IF_CONNECTION_STATUS_UNKNOWN
+pcap_list_tstamp_types_APIName  is used to get a list of the supported time stamp types of the interface associated with the pcap descriptor.
+pcap_findalldevs(3PCAP)
+A pointer to a pcap_dumper_t  structure to use in subsequent pcap_dump_APIName  and pcap_dump_close_APIName  calls is returned on success.
+The process doesn't have permission to check whether monitor mode could be supported.
+get description for a time stamp type
+Another warning condition occurred; pcap_geterr_APIName  or pcap_perror_APIName  may be called with pcap_activate_APIParam_1  as an argument to fetch or display a message describing the warning condition.
+number of packets received; ps_drop
+NOTE: the packet buffer timeout cannot be used to cause calls that read packets to return within a limited period of time, because, on some platforms, the packet buffer timeout isn't supported, and, on other platforms, the timer doesn't start until at least one packet arrives. This means that the packet buffer timeout should NOT be used, for example, in an interactive application to allow the packet capture loop to ``poll'' for user input periodically, as there's no guarantee that a call reading packets will return after the timeout expires even if no packets have arrived.
+attempt to get a timeout required for using a pcap_t in calls such as select(2) and poll(2)
+timestamp type
+If you have the required privileges, you can inject packets onto a network with a pcap_t for a live capture, using pcap_inject() or pcap_sendpacket(). (The two routines exist for compatibility with both OpenBSD and WinPcap; they perform the same function, but have different return values.)
+open a file to which to write packets
+get the version information for libpcap
+immediate mode
+When pcap_open_dead_with_tstamp_precision_APIName,  is used to create a pcap_t  for use with pcap_dump_open_APIName,  precision  specifies the time stamp precision for packets; PCAP_TSTAMP_PRECISION_MICRO  should be specified if the packets to be written have time stamps in seconds and microseconds, and PCAP_TSTAMP_PRECISION_NANO  should be specified if the packets to be written have time stamps in seconds and nanoseconds.
+The time stamp precision, link-layer type, and snapshot length from pcap_dump_fopen_APIParam_1  are used as the link-layer type and snapshot length of the output file.
+Some devices may provide more than one link-layer header type. To obtain a list of all link-layer header types provided by a device, call pcap_list_datalinks() on an activated pcap_t for the device. To free a list of link-layer header types, call pcap_free_datalinks(). To set the link-layer header type for a device, call pcap_set_datalink(). This should be done after the device has been activated but before any packets are read and before any filters are compiled or installed.
+pcap_set_tstamp_precision_APIName  returns 0 on success if the specified time stamp precision is expected to be supported by the capture device, PCAP_ERROR_TSTAMP_PRECISION_NOTSUP  if the capture device does not support the requested time stamp precision, PCAP_ERROR_ACTIVATED  if called on a capture handle that has been activated.
+pcap_set_timeout(3PCAP)
+https://www.tcpdump.org/linktypes.html  lists the values pcap_datalink_APIName  can return and describes the packet formats that correspond to those values.
+Monitor mode was specified but the capture source doesn't support monitor mode.
+get a list of time stamp types supported by a capture device, and free that list
+pcap_open_live_APIParam_1  is a string that specifies the network pcap_open_live_APIParam_1 to open; on Linux systems with 2.2 or later kernels, a pcap_open_live_APIParam_1  argument of "any" or NULL  can be used to capture packets from all interfaces.
+A selectable file descriptor is returned if one exists; otherwise, PCAP_ERROR  is returned.
+pcap_major_version(3PCAP)
+Both pcap_lookupnet_APIParam_2  and pcap_lookupnet_APIParam_3  are bpf_u_int32  pointers.
+pcap_close(3PCAP)
+If there is an error, PCAP_ERROR  is returned and pcap_getnonblock_APIParam_2  is filled in with an appropriate error message.
+pcap_lookupnet_APIParam_4  is assumed to be able to hold at least PCAP_ERRBUF_SIZE  chars.
+PCAP_D_IN  will only capture packets received by the device, PCAP_D_OUT  will only capture packets sent by the device and PCAP_D_INOUT  will capture packets received by or sent by the device.
+Non-blocking mode is often combined with routines such as select(2) or poll(2) or other routines a platform offers to wait for any of a set of descriptors to be ready to read. To obtain, for a handle, a descriptor that can be used in those routines, call pcap_get_selectable_fd(). If the routine indicates that data is available to read on the descriptor, an attempt should be made to read from the device.
+You must have read access to /dev/bpf* on systems that don't have a cloning BPF device, or to /dev/bpf on systems that do. On BSDs with a devfs (this includes macOS), this might involve more than just having somebody with super-user access setting the ownership or permissions on the BPF devices - it might involve configuring devfs to set the ownership or permissions every time the system is booted, if the system even supports that; if it doesn't support that, you might have to find some other way to make that happen at boot time.
+Some routines return error or warning status codes; to convert them to a string, use pcap_statustostr().
+get name for a time stamp type
+pcap_snapshot(3PCAP)
+PCAP_ERROR
+The capture source device is not up.
+set monitor mode for a not-yet-activated pcap_t for live capture
+number of packets dropped because there was no room in the operating system's buffer when they arrived, because packets weren't being read fast enough; ps_ifdrop
+If PCAP_ERROR_BREAK  is returned from pcap_dispatch_APIName  or pcap_loop_APIName,  the flag is cleared, so a subsequent call will resume reading packets.
+It returns PCAP_ERROR  if an error occurs or PCAP_ERROR_BREAK  if the loop terminated due to a call to pcap_breakloop_APIName  before any packets were processed.
+pcap_list_datalinks_APIName  allocates an array to hold the list and sets *dlt_buf  to point to that array.
+open a pcap_t for a ``savefile'', given a pathname, and specify the precision to provide for packet time stamps
+get a file descriptor on which a select() can be done for a live capture
+It does not  return when live packet buffer timeouts occur.
+If, when capturing, packets are delivered as soon as they arrive, the application capturing the packets will be woken up for each packet as it arrives, and might have to make one or more calls to the operating system to fetch each packet.
+The possible error values are:  PCAP_ERROR_NO_SUCH_DEVICE
+In ``non-blocking'' mode, an attempt to read from the capture descriptor with pcap_dispatch_APIName  will, if no packets are currently available to be read, return 0 immediately rather than blocking waiting for packets to arrive.
+free list of devices
+IPv4 addresses have the value AF_INET,  IPv6 addresses have the value AF_INET6  (which older operating systems that don't support IPv6 might not define), and other addresses have other values.
+force a pcap_dispatch() or pcap_loop() call to return
+You must be root or the application capturing packets must be installed setuid to root (unless your distribution has a kernel that supports capability bits such as CAP_NET_RAW and code to allow those capability bits to be given to particular accounts and to cause those bits to be set on a user's initial processes when they log in, in which case you must have CAP_NET_RAW in order to capture and CAP_NET_ADMIN to enumerate network devices with, for example, the -D flag).
+These functions became available in libpcap release 1.2.1.
+If there is an error, NULL  is returned and pcap_lookupdev_APIParam_1  is filled in with an appropriate error message.
+set the link
+In previous releases, if immediate delivery of packets is required:
+get the version number of a savefile
+set immediate mode for a not
+pcap_stats_APIName  is supported only on live captures, not on ``savefiles''; no statistics are stored in ``savefiles'', so no statistics are available when reading from a ``savefile''.
+pcap_next_ex() is passed two pointer arguments, one of which points to a structpcap_pkthdr* and one of which points to a const u_char*. It sets the first pointer to point to a struct pcap_pkthdr structure with the time stamp and length values for the packet, and sets the second pointer to point to the first caplen bytes of the packet.
+pcap_create_APIName  returns a pcap_t *  on success and NULL  on failure.
+pcap_get_selectable_fd(3PCAP)
+if not NULL,  a pointer to a struct sockaddr  that contains the destination address corresponding to the address pointed to by addr;  may be null if the device isn't a point-to-point interface
+pcap_datalink_name_to_val(3PCAP)
+PCAP_WARNING_TSTAMP_TYPE_NOTSUP
+set time stamp type for a not-yet-activated pcap_t for live capture
+get first non-loopback device on that list
+len
+This will be zero if the packet doesn't match the filter and non-zero if the packet matches the filter.
+You will need to use whatever mechanism the OS provides for breaking a thread out of blocking calls in order to unblock the thread, such as thread cancellation or thread signalling in systems that support POSIX threads, or SetEvent_APIName  on the result of pcap_getevent_APIName  on a pcap_t  on which the thread is blocked on Windows.
+get capture statistics
+The packet buffer timeout is set with pcap_set_timeout().
+pcap_set_buffer_size(3PCAP)
+select_APIName,  poll_APIName,  and kevent_APIName  do not work correctly on BPF devices; pcap_get_selectable_fd_APIName  will return a file descriptor on most of those versions (the exceptions being FreeBSD 4.3 and 4.4), but a simple select_APIName,  poll_APIName,  or kevent_APIName  call will not indicate that the descriptor is readable until a full buffer's worth of packets is received, even if the packet timeout expires before then.
+buffer size
+The pointer returned by pcap_lookupdev_APIName  points to a static buffer; subsequent calls to pcap_lookupdev_APIName  in the same thread, or calls to pcap_lookupdev_APIName  in another thread, may overwrite that buffer.
+get the FILE * for a pcap_t opened for a ``savefile''
+free a BPF program
+In "monitor mode", sometimes also called "rfmon mode" (for "Radio Frequency MONitor"), the adapter will supply all frames that it receives, with 802.11 headers, and might supply a pseudo-header with radio information about the frame as well.
+pcap_sendpacket(3PCAP)
+The capture handle has already been activated.
+pcap_tstamp_type_name_to_val_APIName  returns time stamp type value on success and PCAP_ERROR  on failure.
+pcap_datalink_val_to_description_APIName  translates a link-layer header type value to a short description of that link-layer header type.
+If pcap_get_required_select_timeout_APIName  returns NULL,  it is not possible to wait for packets to arrive on the device in an event loop.
+(pcap_inject_APIName  comes from OpenBSD; pcap_sendpacket_APIName  comes from WinPcap.
+#include <pcap/pcap.h>
+pcap_lookupnet_APIName  is used to determine the IPv4 network number and mask associated with the network pcap_lookupnet_APIParam_1 pcap_lookupnet_APIParam_1.
+next
+Even worse, some drivers on some platforms might change the link-layer type field to whatever value libpcap used when attaching to the device, even on platforms that do  nominally support sending completely raw and unchanged packets.
+On other platforms, capture devices are always in immediate mode.
+For example, the "any" device on Linux will have a link-layer header type of DLT_LINUX_SLL  even if all devices on the system at the time the "any" device is opened have some other data link type, such as DLT_EN10MB  for Ethernet.
+If NULL  is returned, pcap_geterr_APIName  can be used to get the error text.
+In immediate mode, packets are always delivered as soon as they arrive, with no buffering.
+The statistics do not behave the same way on all platforms.
+Unfortunately, there is no way to determine whether an error occurred or not.
+Reading packets from a network interface may require that you have special privileges:
+pcap_activate(3PCAP)
+snaplen  specifies the snapshot length for the pcap_t.
+The values represent packet statistics from the start of the run to the time of the call.
+process packets from a live capture or savefile
+pcap_stats(3PCAP)
+PCAP_ERROR_RFMON_NOTSUP
+You must be root or the application capturing packets must be installed setuid to root.
+pcap_set_snaplen_APIName  sets the snapshot length to be used on a capture handle when the handle is activated to pcap_set_snaplen_APIParam_2.
+PCAP_ERROR_IFACE_NOT_UP
+pcap_activate_APIName  is used to activate a packet capture handle to look at packets on the network, with the options that were set on the handle being in effect.
+A return value of one means that the only time stamp type supported is the one in the list, which is the capture device's default time stamp type.
+pcap_breakloop_APIName  does not guarantee that no further packets will be processed by pcap_dispatch_APIName  or pcap_loop_APIName  after it is called; at most one more packet might be processed.
+NOTE:  the pointer it returns will no longer point to a valid error message string after the pcap_t  passed to it is closed; you must use or copy the string before closing the pcap_t.
+pcap_is_swapped(3PCAP)
+pcap_list_tstamp_types_APIName  will give a list of the time stamp types supported by a given capture device.
+If pcap_major_version_APIParam_1  refers to a live capture, the values returned by pcap_major_version_APIName  and pcap_minor_version_APIName  are not meaningful.
+errbuf  is assumed to be able to hold at least PCAP_ERRBUF_SIZE  chars.
+By default, time stamps are in microseconds.
+linktype  specifies the link-layer type for the pcap_t.
+close a capture device or savefile
+a bpf_u_int32 giving the length of the packet, in bytes (which might be more than the number of bytes available from the capture, if the length of the packet is larger than the maximum number of bytes to capture).
+Additional warning and error codes may be added in the future; a program should check for positive, negative, and zero return codes, and treat all positive return codes as warnings and all negative return codes as errors.
+If PCAP_ERROR  is returned, pcap_geterr_APIName  or pcap_perror_APIName  may be called with pcap_list_datalinks_APIParam_1  as an argument to fetch or display the error text.
+read a bufferful of packets from a pcap_t open for a live capture or the full set of packets from a pcap_t open for a ``savefile''
+pcap_tstamp_type_val_to_description_APIName  translates a time stamp type value to a short description of that time stamp type.
+The translation is case-insensitive.
+pcap_compile_APIName  is used to compile the string pcap_compile_APIParam_3  into a filter program.
+See pcap-tstamp_APIName  for a list of all the time stamp types.
+BACKWARD COMPATIBILITY
+A non-zero return value indicates what warning or error condition occurred.
+pcap_set_immediate_mode(3PCAP)
+pcap - Packet Capture library  
+To work around this, code that uses those calls to wait for packets to arrive must put the pcap_t  in non-blocking mode, and must arrange that the call have a timeout less than or equal to the packet buffer timeout, and must try to read packets after that timeout expires, regardless of whether the call indicated that the file descriptor for the pcap_t  is ready to be read or not.
+pcap_stats_APIName  fills in the struct pcap_stat  pointed to by its second argument.
+pcap_freecode_APIName  is used to free up allocated memory pointed to by a pcap_freecode_APIParam_1  struct generated by pcap_compile_APIName  when that BPF program is no longer needed, for example after it has been made the filter program for a pcap structure by a call to pcap_setfilter_APIName.
+pcap_get_tstamp_precision_APIName  returns PCAP_TSTAMP_PRECISION_MICRO  or PCAP_TSTAMP_PRECISION_NANO,  which indicates that pcap captures contains time stamps in microseconds or nanoseconds respectively.
+the adapter is connected PCAP_IF_CONNECTION_STATUS_DISCONNECTED
+If NULL  is returned, pcap_open_offline_APIParam_2  is filled in with an appropriate error message.
+In previous releases, time stamps from a savefile are always given in seconds and microseconds.
+DESCRIPTION
+If PCAP_ERROR  is returned, pcap_geterr_APIName  or pcap_perror_APIName  may be called with pcap_next_ex_APIParam_1  as an argument to fetch or display the error text.
+If pcap_findalldevs_APIName  succeeds, the pointer pointed to by pcap_findalldevs_APIParam_1  is set to point to the first element of the list, or to NULL  if no devices were found (this is considered success).
+number of packets dropped by the network interface or its driver.
+Each element of the list of addresses is of type pcap_addr_t,  and has the following members:
+By default, when reading packets from an interface opened for a live capture, pcap_dispatch(), pcap_next(), and pcap_next_ex() will, if no packets are currently available to be read, block waiting for packets to become available. On some, but not all, platforms, if a packet buffer timeout was specified, the wait will terminate after the packet buffer timeout expires; applications should be prepared for this, as it happens on some platforms, but should not rely on it, as it does not happen on other platforms. Note that the wait might, or might not, terminate even if no packets are available; applications should be prepared for this to happen, but must not rely on it happening.
+flush to a savefile packets dumped
+PCAP_IF_LOOPBACK
+pcap_list_tstamp_types_APIName  returns the number of time stamp types in the array on success and PCAP_ERROR  on failure.
+pcap_set_immediate_mode_APIName  returns 0 on success or PCAP_ERROR_ACTIVATED  if called on a capture handle that has been activated.
+A snapshot length of 65535 should be sufficient, on most if not all networks, to capture all the data available from the packet.
+If your application uses pcap_breakloop_APIName, make sure that you explicitly check for PCAP_ERROR and PCAP_ERROR_BREAK, rather than just checking for a return value < 0.
+a struct timeval containing the time when the packet was captured
+A return value of zero means that the only time stamp type supported is PCAP_TSTAMP_HOST,  which is the capture device's default time stamp type (only older versions of libpcap will return that; newer versions will always return one or more types).
+If pcap_major_version_APIParam_1  refers to a ``savefile'', pcap_major_version_APIName  returns the major number of the file format of the ``savefile'' and pcap_minor_version_APIName  returns the minor number of the file format of the ``savefile''.
+(See pcap_APIName  for an explanation of the packet buffer timeout.)
+If PCAP_ERROR  is returned, pcap_geterr_APIName  or pcap_perror_APIName  may be called with pcap_stats_APIParam_1  as an argument to fetch or display the error text.
+get the link
+a pointer to a struct sockaddr  containing an address netmask
+On Linux, with previous releases of libpcap, capture devices are always in immediate mode; however, in 1.5.0 and later, they are, by default, not  in immediate mode, so if pcap_set_immediate_mode_APIName  is available, it should be used.
+Each element of the list is of type pcap_if_t,  and has the following members:
+AUTHORS
+pcap_open_live_APIName  is used to obtain a packet capture handle to look at packets on the network.
+To write a packet to a pcap_dumper_t, call pcap_dump(). Packets written with pcap_dump() may be buffered, rather than being immediately written to the ``savefile''. Closing the pcap_dumper_t will cause all buffered-but-not-yet-written packets to be written to the ``savefile''. To force all packets written to the pcap_dumper_t, and not yet written to the ``savefile'' because they're buffered by the pcap_dumper_t, to be written to the ``savefile'', without closing the pcap_dumper_t, call pcap_dump_flush().
+pcap_set_datalink_APIName  returns 0 on success and PCAP_ERROR  on failure.
+Packets that arrive for a capture are stored in a buffer, so that they do not have to be read by the application as soon as they arrive. On some platforms, the buffer's size can be set; a size that's too small could mean that, if too many packets are being captured and the snapshot length doesn't limit the amount of data that's buffered, packets could be dropped if the buffer fills up before the application can read packets from it, while a size that's too large could use more non-pageable operating system memory than is necessary to prevent packets from being dropped.
+pcap_datalink_APIName  returns the link-layer header type on success and PCAP_ERROR_NOT_ACTIVATED  if called on a capture handle that has been created but not activated.
+If PCAP_ERROR  is returned, pcap_geterr_APIName  or pcap_perror_APIName  may be called with pcap_list_tstamp_types_APIParam_1  as an argument to fetch or display the error text.
+get current file position for a pcap_dumper_t
+If pcap_set_promisc_APIParam_2  is non-zero, promiscuous mode will be set, otherwise it will not be set.
+PCAP_ERROR  is returned on error.
+In immediate mode, packets are always delivered as soon as they arrive, with no buffering. Immediate mode is set with pcap_set_immediate_mode().
+If packet filtering is done in libpcap, rather than in the operating system, it would count packets that don't pass the filter.
+For a live capture, it always returns false (0).
+pcap_tstamp_type_name_to_val(3PCAP)
+pcap_perror_APIName  prints the text of the last pcap library error on stderr,  prefixed by pcap_perror_APIParam_2.
+The version number is stored in the ``savefile''; note that the meaning of its values depends on the type of ``savefile'' (for example, pcap or pcapng).
+get link-layer header type for a pcap_t
+If PCAP_ERROR  is returned, pcap_geterr_APIName  or pcap_perror_APIName  may be called with pcap_dispatch_APIParam_1  as an argument to fetch or display the error text.
+pcap_open_live_APIParam_5  may also be set to warning text when pcap_open_live_APIName  succeeds; to detect this case the caller should store a zero-length string in pcap_open_live_APIParam_5  before calling pcap_open_live_APIName  and display the warning to the user if pcap_open_live_APIParam_5  is no longer a zero-length string.
+https://www.tcpdump.org/
+get name for a link-layer header type
+compile filter expression to a pseudo-machine-language code program
+This function became available in libpcap release 1.2.1.
+On IEEE 802.11 wireless LANs, even if an adapter is in promiscuous mode, it will supply to the host only frames for the network with which it's associated. It might also supply only data frames, not management or control frames, and might not provide the 802.11 header or radio information pseudo-header for those frames.
+set the snapshot length for a not
+the adapter is disconnected PCAP_IF_CONNECTION_STATUS_NOT_APPLICABLE
+set if the device is a wireless interface; this includes IrDA as well as radio-based networks such as IEEE 802.15.4 and IEEE 802.11, so it doesn't just mean Wi-Fi PCAP_IF_CONNECTION_STATUS
+pcap_set_datalink_APIName  is used to set the current link-layer header type of the pcap descriptor to the type specified by pcap_set_datalink_APIParam_2.
+Filters
+It should not be used in portable code; instead, a filter should be specified with pcap_setfilter_APIName.
+pcap_geterr_APIName  or pcap_perror_APIName  may be called with pcap_activate_APIParam_1  as an argument to fetch or display a message describing the error.
+Both are provided for compatibility.)
+If the packet was read without problems, the pointer pointed to by the pcap_next_ex_APIParam_2  argument is set to point to the pcap_pkthdr  struct for the packet, and the pointer pointed to by the pcap_next_ex_APIParam_3  argument is set to point to the data in the packet.
+Note that in:
+Promiscuous mode is set with pcap_set_promisc().
+Under HP-UX with DLPI:
+If NULL  is returned, pcap_open_live_APIParam_5  is filled in with an appropriate error message.
+get the snapshot length
+pcap_setdirection_APIName  is used to specify a direction that packets will be captured.
+pcap_next_ex(3PCAP)
+close a pcap_t
+set monitor mode for a not
+The struct pcap_pkthdr  and the packet data are not to be freed by the caller, and are not guaranteed to be valid after the next call to pcap_next_ex_APIName,  pcap_next_APIName,  pcap_loop_APIName,  or pcap_dispatch_APIName;  if the code needs them to remain valid, it must make a copy of them.
+pcap_minor_version(3PCAP)
+attempt to get a descriptor for a pcap_t that can be used in calls such as select(2) and poll(2)
+Incoming and outgoing packets
+pcap_offline_filter_APIName  returns the return value of the filter program.
+get a list of capture devices, and free that list
+Any user may capture network traffic. However, no user (not even the super-user) can capture in promiscuous mode on an interface unless the super-user has enabled promiscuous-mode operation on that interface using pfconfig(8), and no user (not even the super-user) can capture unicast traffic received by or sent by the machine on an interface unless the super-user has enabled copy-all-mode operation on that interface using pfconfig, so useful packet capture on an interface probably requires that either promiscuous-mode or copy-all-mode operation, or both modes of operation, be enabled on that interface.
+pcap_offline_filter_APIName  checks whether a filter matches a packet.
+set buffer size for a not-yet-activated pcap_t for live capture
+pcap_fopen_offline(3PCAP)
+pcap_dump_close_APIName  closes the ``savefile.''
+pcap_create_APIParam_1  is a string that specifies the network device to open; on Linux systems with 2.2 or later kernels, a pcap_create_APIParam_1  argument of "any" or NULL  can be used to capture packets from all interfaces.
+Note that a device on which a read can be done without blocking may, on some platforms, not have any packets to read if the packet buffer timeout has expired.
+pcap_inject_APIName  sends a raw packet through the network interface; pcap_inject_APIParam_2  points to the data of the packet, including the link-layer header, and pcap_inject_APIParam_3  is the number of bytes in the packet.
+write a packet to a capture file
+To find a default device on which to capture, call pcap_findalldevs_APIName  and, if the list it returns is not empty, use the first device in the list.
+pcap_open_offline(3PCAP)
+pcap_create(), pcap_open_offline(), pcap_fopen_offline(), and pcap_open_dead() return a pointer to a pcap_t, which is the handle used for reading packets from the capture stream or the ``savefile'', and for finding out information about the capture stream or ``savefile''. To close a handle, use pcap_close().
+pcap_findalldevs_APIName  constructs a list of network devices that can be opened with pcap_create_APIName  and pcap_activate_APIName  or with pcap_open_live_APIName.
+ps_drop  is not available on all platforms; it is zero on platforms where it's not available.
+pcap_set_snaplen(3PCAP)
+pcap_get_required_select_timeout(3PCAP)
+pcap_set_timeout_APIName  sets the packet buffer timeout that will be used on a capture handle when the handle is activated to pcap_set_timeout_APIParam_2,  which is in units of milliseconds.
+transmit a packet
+free a filter program
+open a pcap_t for a ``savefile'', given a FILE *
+pcap_statustostr_APIName  can be called, with a warning or error code as an argument, to fetch a message describing the warning or error code.
+set or get the state of non
+Additional error codes may be added in the future; a program should check for 0, 1, and negative, return codes, and treat all negative return codes as errors.
+open a fake pcap_t for compiling filters or opening a capture for output
+activate a capture handle
+pcap_dump_flush(3PCAP)
+pcap_compile(3PCAP)
+get a name or description for a time stamp type value
+set the time stamp type to be used by a capture device
+pcap_breakloop(3PCAP)
+pcap_statustostr(3PCAP)
+The options that can be set on a capture handle include
+get a list of devices that can be opened for a live capture
+PCAP_ERROR_ACTIVATED
+A call to pcap_dispatch_APIName  or pcap_next_ex_APIName  will return 0 in this case, but will not block.
+pcap_fopen_offline_with_tstamp_precision_APIName  takes an additional precision  argument as described above.
+pcap_set_datalink(3PCAP)
+If, when capturing, you capture the entire contents of the packet, that requires more CPU time to copy the packet to your application, more disk and possibly network bandwidth to write the packet data to a file, and more disk space to save the packet. If you don't need the entire contents of the packet - for example, if you are only interested in the TCP headers of packets - you can set the "snapshot length" for the capture to an appropriate value. If the snapshot length is set to snaplen, and snaplen is less than the size of a packet that is captured, only the first snaplen bytes of that packet will be captured and provided as packet data.
+(If the list is empty, there are no devices on which capture is possible.)

@@ -1,0 +1,24 @@
+If any sqlite3_bind__APIName routine is passed a prepared statement that has been finalized
+passed a prepared statement, sqlite3_finalize
+
+if SQLite is compiled with the SQLITE_ENABLE_SNAPSHOT option
+compiled with the SQLITE_ENABLE_SNAPSHOT option, sqlite3_threadsafe
+
+if SQLite is compiled with the SQLITE_ENABLE_SNAPSHOT option
+compiled with the SQLITE_ENABLE_SNAPSHOT option, sqlite3_threadsafe
+
+If two or more threads call one or more column metadata interfaces for the same prepared statement and result column at the same time
+result column, sqlite3_column_origin_name
+
+If two or more threads call one or more column metadata interfaces for the same prepared statement and result column at the same time
+result column, sqlite3_column_origin_name
+
+If sqlite3_msize_APIParam_1 points to something that is not the beginning of memory allocation , or if it points to a formerly valid memory allocation that has now been freed
+memory allocation has now been freed, sqlite3_release_memory
+
+if the database connection sqlite3_snapshot_open_APIParam_1 does not know that the database file for schema sqlite3_snapshot_open_APIParam_2 is in WAL mode
+not know that the database file, sqlite3_snapshot_recover
+
+If the two snapshot handles are not associated with the same database file
+not associated with the same database file, sqlite3_snapshot_recover
+

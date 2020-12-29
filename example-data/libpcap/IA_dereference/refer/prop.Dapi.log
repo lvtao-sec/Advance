@@ -1,0 +1,84 @@
+One can use options PCAP_TSTAMP_PRECISION_MICRO and PCAP_TSTAMP_PRECISION_NANO to request desired precision
+desired precision, pcap_set_tstamp_precision
+
+and PCAP_TSTAMP_PRECISION_NANO should be specified if the packets to be written have time stamps in seconds and nanoseconds
+have time stamps, pcap_tstamp_type_name_to_val
+
+In previous releases , there is no support for appending packets to an existing savefile
+existing savefile, pcap_file
+
+If NULL be returned by pcap_dump_open_APIName, pcap_geterr_APIName can be used to get the error text
+get the error text, pcap_geterr
+
+In previous releases , the time stamp type can not be set
+time stamp type can not be set, pcap_set_tstamp_type
+
+In previous releases , the time stamp type can not be set
+time stamp type can not be set, pcap_set_tstamp_type
+
+In previous releases , the time stamp type can not be set
+time stamp type can not be set, pcap_set_tstamp_type
+
+In previous releases , the time stamp type can not be set
+time stamp type can not be set, pcap_set_tstamp_type
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate, pcap_activate
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate, pcap_activate
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate, pcap_activate
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate, pcap_activate
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate, pcap_activate
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate, pcap_activate
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate, pcap_activate
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate, pcap_activate
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate, pcap_activate
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate, pcap_activate
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate, pcap_activate
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate, pcap_activate
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate, pcap_activate
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate, pcap_activate
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate, pcap_activate
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate, pcap_activate
+
+We recommend always setting the timeout to a non-zero value unless immediate mode is set , in which case the timeout has no effect
+mode is set, pcap_set_rfmon
+
+you must use or copy the string before closing the pcap_t
+closing the pcap_t, pcap_close
+
+The list of devices must be freed with pcap_freealldevs_APIName , which frees the list pointed to by alldevs
+frees the list, pcap_freealldevs
+
+Monitor mode was specified but the capture source does not support monitor mode
+Monitor mode was specified, pcap_can_set_rfmon
+

@@ -1,0 +1,100 @@
+Frees a NULL - terminated array of strings
+terminated array
+
+
+The allocated ID may be used with dbus_pending_call_set_data_APIName and dbus_pending_call_get_data_APIName
+allocated ID
+
+
+The allocated ID may be used with dbus_message_set_data_APIName and dbus_message_get_data_APIName
+allocated ID
+
+
+The allocated ID may be used with dbus_server_set_data_APIName and dbus_server_get_data_APIName
+allocated ID
+
+
+The allocated ID may be used with dbus_connection_set_data_APIName and dbus_connection_get_data_APIName
+allocated ID
+
+
+all DBusPendingCall objects will have a slot with the given integer ID reserved
+given integer ID
+
+
+all DBusMessage objects will have a slot with the given integer ID reserved
+given integer ID
+
+
+all DBusServer objects will have a slot with the given integer ID reserved
+given integer ID
+
+
+all DBusConnection objects will have a slot with the given integer ID reserved
+given integer ID
+
+
+The variable argument list should contain the type of each argument followed by the value to append
+followed by the value
+
+
+The supported types include those supported by dbus_message_append_args_APIName
+supported types
+
+
+The variable argument list should contain the type of the argument followed by a pointer to where the value should be stored
+followed by a pointer
+
+
+but thesebe returned by dbus_message_get_args_APIName as allocated memory and must be freed with dbus_free_string_array_APIName , while the other typesbe returned by dbus_message_get_args_APIName as const references
+allocated memory
+
+
+it will be assumed equal to the provided interface
+provided interface
+
+
+The error name must be a valid error name according to the syntax given in the D-Bus specification
+given in the D-Bus specification
+
+
+Returns the signature of the single complete type starting at the given iterator
+given iterator
+
+
+This connection will not be saved or recycled by libdbus
+recycled by libdbus
+
+
+This connection will not be saved or recycled by libdbus
+recycled by libdbus
+
+
+This connection will not be saved or recycled by libdbus
+recycled by libdbus
+
+
+This connection will not be saved or recycled by libdbus
+recycled by libdbus
+
+
+It is a programming error to call dbus_connection_remove_filter_APIName for a handler that has not been added as a filter
+added as a filter
+
+
+For shared connections , libdbus will own a reference as long as the dbus_connection_unref_APIParam_1 is connected , so you can know that either you do not have the last reference , or it is OK to drop the last reference
+shared connections
+
+
+For shared connections in a multithreaded application , you can not really make the registration calls yourself , , and
+shared connections
+
+
+or that the dbus_bus_request_name_APIParam_2 had an owner , and the caller specified DBUS_NAME_FLAG_REPLACE_EXISTING , and the current owner specified DBUS_NAME_FLAG_ALLOW_REPLACEMENT
+specified DBUS_NAME_FLAG_ALLOW_REPLACEMENT
+
+
+or that the dbus_bus_request_name_APIParam_2 had an owner , and the caller specified DBUS_NAME_FLAG_REPLACE_EXISTING , and the current owner specified DBUS_NAME_FLAG_ALLOW_REPLACEMENT
+specified DBUS_NAME_FLAG_REPLACE_EXISTING
+
+

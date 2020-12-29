@@ -1,0 +1,147 @@
+may crash the application if another thread or a plugin is still using libxml2
+plugin is still using, xmlRMutexUnlock
+
+may crash the application if another thread or a plugin is still using libxml2
+still using libxml2, xmlRMutexUnlock
+
+may crash the application if another thread or a plugin is still using libxml2
+plugin is still using, xmlRMutexUnlock
+
+may crash the application if another thread or a plugin is still using libxml2
+still using libxml2, xmlRMutexUnlock
+
+may crash the application if another thread or a plugin is still using libxml2
+plugin is still using, xmlRMutexUnlock
+
+may crash the application if another thread or a plugin is still using libxml2
+still using libxml2, xmlRMutexUnlock
+
+may crash the application if another thread or a plugin is still using libxml2
+plugin is still using, xmlRMutexUnlock
+
+may crash the application if another thread or a plugin is still using libxml2
+still using libxml2, xmlRMutexUnlock
+
+xmlRNewMutex_APIName is used to allocate a reentrant mutex for use in synchronizing access to data
+allocate a reentrant mutex, xmlSchemaNewStringValue
+
+The declared default xmlParseDefaultDecl_APIParam_2 must meet the lexical constraints of the declared attribute type c.f
+meet the lexical constraints, xmlValidateNMToken
+
+parse the declaration for an Element content either Mixed or Children , the cases EMPTY and ANY are handled directly in xmlParseElementDecl contentspec
+parse the declaration, xmlParseElementDecl
+
+Parse an External ID or a Public ID NOTE
+Parse an External ID, xmlSAXParseDTD
+
+' A parsed entity must not contain a recursive reference to itself , either directly or indirectly
+parsed entity, xmlParseExtParsedEnt
+
+' A parsed entity must not contain a recursive reference to itself , either directly or indirectly
+parsed entity, xmlParseExtParsedEnt
+
+' A parsed entity must not contain a recursive reference to itself , either directly or indirectly
+parsed entity, xmlParseExtParsedEnt
+
+' A parsed entity must not contain a recursive reference to itself , either directly or indirectly
+parsed entity, xmlParseExtParsedEnt
+
+Validate that the given attribute xmlValidateAttributeValue_APIParam_2 match the proper production Values of xmlValidateAttributeValue_APIParam_1 ID must match the Name production
+match the proper production Values, xmlValidateAttributeValue
+
+Validate that the given attribute xmlValidateAttributeValue_APIParam_2 match the proper production Values of xmlValidateAttributeValue_APIParam_1 ID must match the Name production
+given attribute xmlValidateAttributeValue_APIParam_2, xmlGetID
+
+xmlExpDump_APIParam_2 is the compiled expression
+compiled expression, xmlExpFree
+
+xmlExpMaxToken_APIParam_1 is a compiled expression
+compiled expression, xmlExpFree
+
+xmlXPathCompiledEval_APIParam_1 is the compiled XPath expression
+compiled XPath expression, xmlXPathCtxtCompile
+
+xmlXPathCompiledEvalToBoolean_APIParam_1 is the compiled XPath expression
+compiled XPath expression, xmlXPathCtxtCompile
+
+xmlRegexpExec_APIParam_1 is the compiled regular expression
+compiled regular expression, xmlExpFree
+
+xmlRegexpIsDeterminist_APIParam_1 is the compiled regular expression
+compiled regular expression, xmlExpFree
+
+Applies the XPath boolean_APIName function on the result of the given compiled expression
+compiled expression, xmlExpFree
+
+Write an xml element with namespace support
+Write an xml element, xmlTextWriterWriteElement
+
+The caller is responsible for freeing the memory occupied by xmlCanonicPath_APIParam_0
+freeing the memory, xmlFreePattern
+
+The caller is responsible for freeing the memory occupied by xmlPathToURI_APIParam_0
+freeing the memory, xmlFreePattern
+
+Validate an xmlSchemaValidateStream_APIParam_2 based on a flow of SAX event from the parser and forward the events to the @sax handler with the provided @user_data the user provided @sax handler must be a SAX2 one
+provided @sax handler, xmlSchemaValidateStream
+
+Cleanup the memory allocated for the char encoding support , it unregisters all the encoding handlers and the aliases
+encoding support, xmlInitCharEncodingHandlers
+
+Initialize the char encoding support , the char encoding support registers the default encoding supported
+encoding support, xmlInitCharEncodingHandlers
+
+Initialize the char encoding support , the char encoding support registers the default encoding supported
+registers the default, xmlRegisterDefaultOutputCallbacks
+
+Compare the string to the encoding schemes already known
+encoding schemes, xmlDelEncodingAlias
+
+the caller of xmlC14NDocDumpMemory_APIName is responsible for calling xmlFree_APIName to free allocated memory
+allocated memory, xmlMemUsed
+
+@ The @schema should not be freed until the xmlTextReaderRelaxNGSetSchema_APIParam_1 is deallocated or its use has been deactivated
+freed until the xmlTextReaderRelaxNGSetSchema_APIParam_1, xmlRegFreeRegexp
+
+@ The @schema should not be freed until the xmlTextReaderSetSchema_APIParam_1 is deallocated or its use has been deactivated
+freed until the xmlTextReaderSetSchema_APIParam_1, xmlRegFreeRegexp
+
+1 -RRB- , nsDef entries on element-nodes are used 2 -RRB- If * no * @destParent is given , @destDoc - > oldNs entries are used
+@destParent is given, xmlXPathIsNodeType
+
+Ensures that ns-references point to ns-decls hold on element-nodes
+Ensures that ns-references point, xmlDOMWrapReconcileNamespaces
+
+xmlAllocOutputBuffer_APIParam_1 is the encoding converter or NULL
+encoding converter, xmlDelEncodingAlias
+
+xmlOutputBufferCreateBuffer_APIParam_2 is the encoding converter or NULL
+encoding converter, xmlDelEncodingAlias
+
+xmlOutputBufferCreateFd_APIParam_2 is the encoding converter or NULL
+encoding converter, xmlDelEncodingAlias
+
+xmlOutputBufferCreateFile_APIParam_2 is the encoding converter or NULL
+encoding converter, xmlDelEncodingAlias
+
+xmlOutputBufferCreateFilename_APIParam_2 is the encoding converter or NULL
+encoding converter, xmlDelEncodingAlias
+
+Try to lookup the catalog reference associated to a public ID DEPRECATED , use xmlCatalogResolvePublic_APIName
+lookup the catalog reference, xmlCatalogResolvePublic
+
+Try to lookup the catalog reference associated to a system ID DEPRECATED , use xmlCatalogResolveSystem_APIName
+lookup the catalog reference, xmlCatalogResolvePublic
+
+xmlCatalogIsEmpty_APIParam_1 is should this create an SGML catalog
+create an SGML catalog, xmlNewCatalog
+
+xmlNewCatalog_APIParam_1 is should this create an SGML catalog
+create an SGML catalog, xmlNewCatalog
+
+This is only needed for manipulating SGML Super Catalogs like adding and removing CATALOG or DELEGATE entries
+removing CATALOG, xmlCatalogRemove
+
+This is only needed for manipulating SGML Super Catalogs like adding and removing CATALOG or DELEGATE entries
+manipulating SGML Super Catalogs, xmlLoadSGMLSuperCatalog
+

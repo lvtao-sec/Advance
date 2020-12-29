@@ -1,0 +1,54 @@
+get list link
+convert pcap_error or pcap_warn value string
+inject unk pcap_t transmit packet
+pcap_t get list time stamp type support by capture device , free list
+unk pcap_t set direction which packet be capture
+close pcap_dumper_t close savefile write
+pcap_t get version number savefile
+get version information libpcap
+struct bpf_program pcap_t set filter
+get require struct timeval pcap_t get file descriptor which select can be do live capture
+create pcap_t create live capture handle
+get time stamp type value correspond time stamp type name
+pcap_t open saved capture file reading
+pcap_t set link
+get name or description time stamp type value
+be unk pcap_t find out whether savefile have native byte order
+pcap_t get snapshot length
+pcap_t open device capturing
+pcap_t open fake pcap_t compile filter or open capture output
+pcap_dumper_t pcap_t open file which write packet
+pcap_t get or print libpcap error message text
+pcap_t set buffer size
+long pcap_dumper_t get current file offset savefile write
+file pcap_t get standard stream savefile read
+find default device which capture
+pcap_t force pcap_dispatch or pcap_loop call return
+const struct pcap_pkthdr const struct bpf_program check whether filter match packet
+get pcap_t get time stamp precision return capture
+pcap_t set promiscuous mode
+pcap_t set packet buffer timeout
+activate pcap_t activate capture handle
+pcap_t set immediate mode
+pcap_t get file descriptor live capture
+compile struct bpf_program pcap_t compile filter expression
+struct unk free bpf program
+pcap_t set or get state non
+find ipv4 network number netmask device
+file pcap_dumper_t get standard stream savefile write
+pcap_t get link
+pcap_t set time stamp type be use by capture device
+set pcap_t check whether monitor mode can be set
+close pcap_t close capture device or savefile pcap_t p
+pcap_t set monitor mode
+get name or description link
+pcap_t set capture protocol
+struct pcap_stat pcap_t get capture statistic
+pcap_t set time stamp precision return capture
+pcap_dumper_t flush savefile packet dump
+pcap_t set snapshot length
+struct pcap_pkthdr pcap_t read next packet pcap_t
+convert errno value string
+unk pcap_handler pcap_t process packet live capture or savefile
+pcap_if_t get list capture device , free list
+struct pcap_pkthdr write packet capture file

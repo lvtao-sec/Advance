@@ -1,0 +1,1317 @@
+null
+null
+null
+null
+null
+null
+null
+null
+null
+if your application attempts a normal handshake
+null
+null
+null
+null
+If the application waits for data to be available on the underlying transport before flushing the write buffer
+if there is an ENGINE that implements it and can be initialised
+When performing a read operation
+When signing with DSA private keys
+null
+null
+null
+if the corresponding CMS_ContentInfo structure can be successfully verified using CMS_verify_APIName
+null
+If any certificates are added using these functions
+When beginning a new handshake
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+when disabling a protocol
+null
+if An application needs to lookup algorithms
+when making copies of an ENGINE pointer if the copies will be used independently
+null
+null
+null
+If a renegotiation take place during normal operation
+null
+null
+null
+If no certificate should be set,
+If more than one CA certificate with the same name hash value exist
+null
+if required to continue
+null
+null
+null
+if target OpenSSL application is executed on SSE2 capable CPU, but under control of OS that does not enable XMM registers.
+If so
+If set
+null
+When the source of the prime is not random or not trusted
+null
+if the SSL_VERIFY_PEER and SSL_VERIFY_NONE are not used as required
+Whenever a new session is negotiated
+null
+null
+null
+null
+null
+null
+If the cipher is a fixed length cipher
+When we no longer need a read buffer or a write buffer for a given SSL
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+if the public key is not DSA
+if padding is enabled the decrypted data buffer EVP_DecryptUpdate_APIParam_2 EVP_DecryptUpdate_APIParam_2 passed to EVP_DecryptUpdate should have sufficient room for bytes unless the cipher block size is 1 in which case inl bytes is sufficient
+null
+If an id conflict is not resolved
+If ret is 0
+null
+null
+null
+if SSL_get_error returns SSL_ERROR_SYSCALL
+null
+null
+if the cipher does not have any ASN1 support
+null
+null
+null
+null
+null
+null
+null
+during configuration for clarity of configuration
+null
+null
+null
+null
+null
+null
+null
+if one or more
+unless an invalid code is passed
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+If this flag is not set
+If OCSP_resp_get1_id returns 0
+null
+null
+null
+null
+null
+null
+when using this
+null
+if the signed content is not detached
+If BIO_BIND_NORMAL is set
+null
+null
+null
+While an application may retry a failed non blocking call immediately
+If the PSK identity was not found but the callback instructs the protocol to continue anyway
+null
+if the CSPRNG has not been seeded with enough randomness to ensure an unpredictable byte sequence
+if SSL_get_error returns SSL_ERROR_SSL
+if an attempt is made to add the same SSL_CTX_add_client_custom_ext_APIParam_2 SSL_CTX_add_server_custom_ext_APIParam_2 more than once , if an attempt is made to use an extension type handled internally by OpenSSL or if an internal error occurs
+When calling SSL_write_APIName with num = 0 bytes to be sent
+null
+null
+null
+When working in a blocking environment,
+null
+if the response is not acceptable,  when used on the client side
+if the response is acceptable,  when used on the client side
+while the connection is in use
+null
+null
+null
+null
+null
+null
+if the bidirectional shutdown is not yet complete
+null
+null
+null
+null
+if the return value of X509_verify_cert_APIName is less than 0
+null
+null
+null
+null
+If the name is still valid but a renewal of the ticket is required
+null
+Unless the PKCS7_REUSE_DIGEST flag is set
+Unless the CMS_REUSE_DIGEST flag is set 
+null
+If the callback is successful
+when used on the client side
+null
+null
+null
+null
+null
+if no data is in the peer BIO and the peer BIO has been shutdown
+If the field type is Fp
+If the field type is F2^m
+null
+null
+if the OCSP_NOCHECKS flag is set
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+If the underlying BIO is non-blocking
+If zlib support is not compiled into OpenSSL
+If a certificate has already been set and the private does not belong to the certificate
+If no ENGINE should  be used
+null
+null
+null
+if OCSP_resp_get0_APIParam_2 is out of range
+if an error occurs
+on error
+if an error occurred
+null
+null
+null
+null
+null
+null
+null
+null
+null
+If the two are identical
+null
+null
+When the session is not valid,
+null
+null
+null
+null
+null
+If the server has not provided any response data
+If the allocation fails
+null
+null
+null
+null
+null
+If a callback function has not been set
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+if the supplied NID is invalid
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+If the parity is wrong,
+null
+If the key is a weak key,
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+If no limit has been explicitly set,
+null
+null
+If there are no more entries,
+If X509_NAME_get_index_by_NID_APIParam_2 is invalid ,
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+If the PRNG could not generate a secure key,
+If the supplied seed is NULL, or the supplied seed length is 0,
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+If no peer certificate was presented
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+if an error occurs
+If the value SSL_get_shared_curve_APIParam_2 is out of range
+If the argument is the NULL pointer
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+if padding is enabled and the final block is not correctly formatted
+null
+null
+null
+null
+If the call to X509_verify_cert is not successful
+null
+null
+null
+null
+null
+null
+null
+null
+If the flag SSL_BUILD_CHAIN_FLAG_IGNORE_ERROR and a verification error occurs
+If SSL_set_current_cert_APIParam_1 is not a server or a certificate has not been sent
+null
+If SSL_set_current_cert_APIParam_1 is a server and has sent a certificate to a connected client 
+if and only if ret > 0
+If the protocol version is SSL 3.0 or higher,  only if a closure alert has occurred in the protocol, ie if the connection has been closed cleanly
+If CMS_decrypt just returned an error when all recipient encrypted keys failed to decrypt
+If the special flag CMS_DEBUG_DECRYPT is set, if no recipient encrypted key can be decrypted without generating a random content encryption key
+null
+null
+if the flags contain OCSP_NOVERIFY or if the signer certificate was found in certs and the flags contain OCSP_TRUSTOTHER
+null
+null
+null
+null
+null
+If BN_rand_APIParam_2 is less than zero, or too small to accomodate the requirements specified by the BN_rand_APIParam_3 and BN_rand_APIParam_4 parameters
+null
+If the content is not of type text/plain
+null
+if SSL_shutdown_apiparam0 is negative
+null
+null
+if the call that produced this condition should be retried at a later time
+if the cause of the condition is that a BIO needs to read data
+null
+null
+null
+If any of the function is passed the NULL pointer for the session SSL_get_time_APIParam_1 SSL_SESSION_set_time_APIParam_1 SSL_SESSION_get_timeout_APIParam_1 SSL_SESSION_set_timeout_APIParam_1 SSL_set_timeout_APIParam_1 SSL_set_time_APIParam_1 SSL_get_timeout_APIParam_1 SSL_SESSION_get_time_APIParam_1,
+null
+null
+null
+null
+If the cipher is a stream cipher
+null
+null
+When this flag is set, when a partial write has been successfully completed
+when the complete contents of SSL_write_APIParam_2 SSL_write_APIParam_2 SSL_write_APIParam_2 SSL_write_APIParam_2 of length SSL_write_APIParam_3 SSL_write_APIParam_3 SSL_write_APIParam_3 SSL_write_APIParam_3 has been written
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+If a subsequent EC_KEY_get_key_method_data call is issued
+null
+if SSL_get_error_APIName returns SSL_ERROR_WANT_X509_LOOKUP or SSL_ERROR_WANT_ASYNC
+if SSL_alert_type_string_APIName, SSL_alert_type_string_long_APIName returns "US"/"user canceled"
+null
+null
+If SSL_get_error_APIName returns SSL_ERROR_SYSCALL or SSL_ERROR_SSL
+null
+null
+null
+null
+when the connection is established
+The operation did not complete
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+when the source/sink is non-blocking or of a certain type
+null
+null
+null
+null
+null
+null
+null
+null
+null
+If an SSL connection has already been established
+null
+null
+when an HMAC_CTX_cleanup_APIParam_1 is no longer required
+null
+null
+if any new objects were added using OBJ_create_APIName
+null
+null
+null
+null
+When performing a transparent negotiation using SSL_write_APIName or SSL_read_APIName
+Normally when a SSL connection is finished
+null
+null
+null
+null
+null
+When done with this UI
+null
+null
+null
+null
+null
+null
+null
+null
+If the application knows that the BIO type will never signal a retry
+null
+null
+null
+null
+When used in bidirectional applications
+null
+if the ultimate source/sink BIO is non blocking
+whenever any pending data should be written such as when removing a buffering BIO using BIO_pop_APIName
+null
+null
+If several keys have to be handled
+during the installation process 
+null
+null
+null
+When constructing a curve using EC_GROUP_new
+null
+null
+null
+null
+null
+null
+null
+if it could look up the correct key and certificate from a database
+null
+If an application wishes to make use of several of these functions for configuration purposes either on a command line or in a file
+null
+null
+if the transport is blocking
+null
+null
+null
+When done with this UI
+null
+null
+null
+null
+When the underlying connection shall be used for more communications
+null
+null
+null
+null
+null
+null
+null
+null
+If an application wishes to write additional data to BIO_new_CMS_APIParam_1
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+If BN_CTX_start_APIName has been used on the BN_CTX_new_APIParam_0
+null
+null
+null
+null
+null
+if any ENGINEs are loaded , if the caller wishes to avoid memory leaks .
+null
+null
+if SSL_get_error_APIName has returned SSL_ERROR_SYSCALL or SSL_ERROR_SSL
+null
+when encoding public keys
+null
+If `` strong '' primes were used
+null
+null
+null
+null
+null
+null
+null
+during the verification process
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+when it is no longer needed
+when streaming is not performed
+null
+null
+null
+null
+null
+if a conflict occurs
+null
+null
+null
+null
+if streaming is not enabled
+null
+null
+null
+null
+null
+null
+null
+null
+If cleartext signing is being used and CMS_STREAM not set
+null
+null
+null
+null
+null
+null
+null
+null
+when sending small numbers of characters
+null
+when requesting a client certificate
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+if that peer changes its settings between connections
+if A server application wants to be able to provide clients with OCSP Certificate Status responses
+null
+null
+null
+null
+null
+null
+null
+null
+when BN_mod_sub_APIParam_4 BN_nnmod_APIParam_3 BN_mod_add_APIParam_4 BN_mod_mul_APIParam_4 BN_mod_APIParam_3 BN_mod_sqr_APIParam_3 is even and any of the parameters have the BN_FLG_CONSTTIME flag set
+null
+unless you are sure you know what you do
+null
+null
+null
+null
+when checking for sub-library specific reason codes
+when used with DTLS
+null
+null
+If this is not desired
+if it 's retryable
+null
+null
+BN_CTX_init_APIName (deprecated) initializes an existing uninitialized BN_CTX_new_APIParam_0. This should not be used for new programs. 
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+during initialization
+null
+null
+unless you implement ` modes ' of Blowfish
+null
+null
+null
+null
+null
+null
+null
+if CRYPTO_set_dynlock_create_callback_APIParam_1  is not set
+null
+if locking on shared data structures is not set
+when using an external session cache , applies
+null
+null
+if SHA512_Final_APIParam_1 SHA384_Final_APIParam_1 SHA256_Final_APIParam_1 SHA1_Final_APIParam_1 SHA224_Final_APIParam_1 is NULL
+null
+null
+If SSL_CIPHER_description_APIName is called with SSL_CIPHER_description_APIParam_1 being NULL
+If BIO_free_APIName is called on a BIO chain
+null
+null
+if given an invalid CRYPTO_get_ex_data_APIParam_2 parameter
+null
+If SSL_VERIFY_PEER is set and callback returns 0
+If the table is not initialized
+If it is not
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+when the DH parameters were not generated using `` strong '' primes
+unless the SSL_SESSION object is completely taken over , when being called inside the get_session_cb_APIName
+null
+null
+null
+null
+If a server wishes to process multiple connections
+null
+null
+null
+null
+during installation
+null
+when calling ASN1_STRING_set_APIName
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+If the session id context is not set on an SSL/TLS server and client certificates are used
+If streaming is enabled
+null
+null
+null
+null
+null
+null
+null
+during decryption
+null
+null
+null
+If streaming is enabled
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+when operating in SSLv2/v3 compatibility mode
+If the cipher is a fixed length cipher
+null
+null
+null
+null
+null
+when the server did send the request
+null
+null
+null
+null
+null
+null
+null
+null
+null
+if possible
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+During the client key exchange
+null
+null
+null
+If BN_rand_APIParam_2 is 1
+null
+when threads are terminated in order to avoid memory leaks
+null
+null
+null
+null
+null
+null
+If this control is not called
+null
+null
+null
+null
+When wrapping stdout , stdin or stderr
+When wrapping stdout , stdin or stderr
+If there is any unprocessed data still in EVP_DecodeFinal_APIParam_1
+null
+null
+null
+null
+when backward compatibility is required
+when a DSA certificate is available
+null
+if SMIME_read_CMS_APIParam_2 is not NULL
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+If you still want to use BF_encrypt_APIName and BF_decrypt_APIName
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+when ivec is initialized
+null
+null
+null
+null
+if BIO_new_mem_buf_APIParam_2 is -1
+null
+null
+null
+null
+null
+null
+whenever temporary/ephemeral DH parameters are used
+if no salt is used
+null
+null
+null
+null
+If any or all of these function pointer arguments are not used
+null
+null
+null
+null
+null
+if fixed by protocol,
+null
+null
+null
+null
+null
+null
+null
+if PKCS7_STREAM was also set in the previous call to PKCS7_sign or PKCS7_encrypt
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+if it is not -1
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+If out is not NULL , before the call
+null
+If the application can not guarantee uniqueness
+null
+null
+null
+null
+null
+if required to continue
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+If it wants to set a certificate
+null
+null
+null
+null
+null
+null
+null
+null
+null
+when this call is made
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+If the PKCS7_TEXT flag is set,  if PKCS7_DETACHED is also set
+If PKCS7_DETACHED is set, when PKCS7_sign is also called
+null
+null
+null
+null
+null
+null
+null
+null
+When a bn_wexpand_APIParam_1 bn_fix_top_APIParam_1 bn_print_APIParam_1 bn_check_top_APIParam_1 bn_set_max_APIParam_1 bn_expand_APIParam_1 bn_expand2_APIParam_1 bn_set_low_APIParam_1 bn_set_high_APIParam_1 is 0
+null
+null
+null
+null
+null
+null
+when a RSA certificate is available
+null
+null
+If OBJ_txt2obj_APIParam_2 is 1
+null
+null
+null
+null
+null
+null
+If BIO_get_fd_APIParam_2 is not NULL
+null
+If the corresponding session is freed
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+if no ENGINE has been set as the default "rand" implementation
+null
+null
+If streaming is performed
+null
+null
+null
+null
+null
+null
+null
+null
+if the message is not completely stored in memory
+null
+null
+null
+null
+null
+null
+When BN_CTX_end_APIName is called
+null
+when d2i_X509_APIParam_1 is valid
+if the same CA certificate is available with different expiration dates
+null
+null
+If another thread is using the same internal session cache
+null
+null
+null
+null
+null
+null
+null
+unless the OCSP_NOCHAIN flag is set
+If SSL_clear_APIName or SSL_free_APIName is called
+null
+If to and from represent the same time
+If to represents a time later than from
+If to represents a time earlier than from
+if no protocol has been selected
+null
+If an ENGINE specifies the ENGINE_FLAGS_MANUAL_CMD_CTRL flag
+null
+null
+If the parameters in EVP_PKEY_copy_parameters_APIParam_2 and EVP_PKEY_copy_parameters_APIParam_1 are both present and match this function
+null
+null
+null
+null
+null
+null

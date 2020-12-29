@@ -1,0 +1,467 @@
+api be not available version before constant
+PRON- should use param timeout
+if be error , if api have be call , null be return by api be fill appropriate error message
+api be not available window
+call api return constant but not block
+selectable file descriptor be return by api
+before constant
+before constant
+api return constant success constant  handle have be activate
+api return return value filter program
+os before os constant
+before constant
+network device open api , not support call , constant be return by api device
+param be pointer param struct , usually result call api
+otherwise , constant be return by api
+api be use specify filter program
+buffer size be use handle
+_ lrb _ workaround not work constant later
+api set
+specifie param type param
+api be use specify direction be
+api return constant success constant failure
+if api return null , be not possible wait arrive device event loop
+device which read can be do without block may , platform , not have
+value do not affect api _ lrb _ 3pcap
+api return constant success constant failure
+api may be call param as param fetch display error text
+param point param point datum
+api check whether filter match
+specifie snapshot length param
+use compile code
+be constant
+however , constant later , call work correctly device , workaround be not necessary
+api convert constant _ constant _ value return by api param string
+param be one constant
+be typically use
+create param use
+api be use
+constant be return by api error
+api be not necessarily fully support platform
+constant be return by api error
+platform may return error value , platform may not support constant
+translation be param
+api return current file position , represent number byte write by api
+api return , unix , file descriptor number file descriptor which one can api , call wait be possible read without block
+can be use
+constant be default setting
+two time be support
+operation be not support
+by default , time be
+one can use option constant request desire
+api may be call param as param fetch display error text
+constant only receive by device , constant only send by device constant receive by send by device
+be truncate
+must be call descriptor create by api have not yet be activate by api
+api not work correctly device
+api return type value success constant
+can happen param system large file support window
+null be return by api failure
+function become available release constant
+api translate param header type param , which be _ param _ remove , corresponding param header type value
+api return current file position param  , return file without
+api become available release constant
+null be return by api failure
+api return file descriptor version , but simple api call not indicate descriptor be readable until full buffer be receive
+api set time desire descriptor type specify by param
+case , call must be give timeout less equal timeout return by api device , device must be put param mode call api , attempt must always be make read device call return
+api translate time type value correspond time type name
+do not return live buffer timeout occur
+param be pointer param struct , usually result call api _ lrb _ 3pcap
+byte datum begin param header
+list value api can return describe format correspond value
+instead , attempt read
+api translate time type value short description time type
+application should be prepare happen , but must not rely happen
+api return constant
+do not return live buffer timeout occur
+previous release , time device be always give second
+api return constant
+format param header be indicate by return value api handed param value pass api
+value constant param be equivalent infinity , be process until another end condition occur
+api return constant
+api may be call param as param fetch display error text
+if application use api , make sure -PRON- explicitly check constant , rather check return value constant
+not assume give have give param header type , as constant
+api return number process success
+api become available release constant
+api return constant success constant  handle have be activate
+specify time
+constant should be specify
+param be param value , as value _ header file , specify host byte order
+do live platform
+api allocate array hold list set param point array
+constant should be specify
+network api device , api set param be use api call create socket
+can be constant
+value api return be valid receive unless until api be call
+param be handle be activate , otherwise
+api return constant success  have be activate
+device have param header type constant
+api be use get list support param header type api associate descriptor
+struct param datum be not be free by param api , be not guarantee be valid after param api return
+have no effect
+caller be responsible freeing array api , which free list param header type point by param
+thus , do live , param be maximum number process before return , but be not minimum number
+api be only provide
+should not be use portable code
+callback specifie param api be call three param
+after successful call api , subsequent have param header type specify by param header type value pass api
+must make copy
+api work descriptor os constant later
+_ lrb _ old version , behavior be undefined
+instead , filter should be specify api _ lrb _ 3pcap
+api process live until param be process , end be reach
+few param may be process
+api return standard stream ,  , param
+different platform device behave differently , code must work old version should use constant , not constant , as value
+value constant param cause receive one buffer be process , cause file be process read
+end current be reach
+application use api should ,  , use call support large file return value api value return by api pass return value api
+library be usually build large file support , standard stream may refer file large constant
+api process live until param be process , end be reach read , api be call , error occur
+param pointer which be pass param api , const struct param pointer point time length , const param pointer first byte datum
+work around , code us call wait arrive must put param mode , must arrange call have timeout less equal buffer timeout , must try read after timeout expire , regardless
+note api do not work character special file , include device , os constant 10 , , while api can be use descriptor return by api can not be use version os x. api , but not api , work descriptor os release before constant
+api may be call param as param fetch display error text
+type can not be filter filter specify api but can be filter by specify param type use api
+be provide compatibility
+api return constant success constant failure
+api send raw network api
+api return number byte write success constant failure
+note device may not support send
+if api be call directly , param be constant as return by api
+api output open api
+param point datum , include param header , param be number byte
+call param be suitable use api
+api be like api , but api return constant success , rather return number byte write
+api become available release constant
+api return time return descriptor
+api may be call param as param fetch display error text
+api return number param header type array success , constant
+api return constant , which indicate contain time respectively
+api be call open writing
+file have format as use by api
+param specifie name file open
+null be return by api failure
+previous release , time device be always give second
+window , stream should be open binary mode
+api can be use get error text
+api be call write datum exist open stream param
+stream be close by subsequent call api
+api function become available release constant
+name _ be stdout
+return value pointer param use subsequent api call be return by api success
+see api list time type
+previous release , be no support append exist
+if param refer live , value return by api be not meaningful
+be handle return by early call api activate by early call api , return by early call api
+time , param type , snapshot length param be use as param type snapshot length output file
+version number be store
+even bad , platform may change param type field whatever value , even platform nominally support send completely raw unchanged
+api return number time type array success constant failure
+api be use get list support time type api associate descriptor
+api return major number file format api return minor number file format
+caller be responsible freeing array api , which free list point by param
+meaning value depend type _ lrb _
+function become available release constant
+api may be call param as param fetch display error text
+return value constant mean only time type support be constant , which be device default time type
+previous release , time type can not be set
+return value one mean only time type support be one list , which be device default time type
+api set flag force api return rather loop
+api be use obtain handle look network
+return number have be process far , constant
+only default time type offer by source be available
+specifie snapshot length be set handle
+if constant be return by api , flag be clear , subsequent call resume read
+asynchronous procedure call not work window , as thread block param not be alertable state
+if positive number be return by api , flag be not clear , subsequent call return constant clear flag
+param specifie buffer timeout , as param value , millisecond
+api do not guarantee no be process by api after be call
+flag be check loop read os _ signal by not necessarily terminate loop _ as well as loop processing set return by os
+one may be process
+api be safe use inside signal handler unix control handler window , as merely set flag check within loop
+api return param success null failure
+if null be return by api , param be fill appropriate error message
+_ lrb _ see api explanation buffer timeout
+must not be call descriptor create by api have not yet be activate by api _ lrb _ 3pcap
+param be assume be able hold least constant char
+null be return by api
+null be return by api
+api translate param header type value short description param header type
+api fill struct param point by second param
+PRON- may not have send , may not support send
+struct param have follow member
+param be stre specifie network param open
+otherwise , if signal interrupt call read live , signal handler return after call api , call be restart , loop not terminate until arrive call complete
+api translate param header type value short description param header type like api
+value represent statistic start run time call
+number receive
+as api do not have flag indicate , -PRON- can not request open support send be notify open time
+api , platform , loop read os
+system constant late kernel , param null can be use api
+number drop by network api
+statistic not behave way platform
+if type value do not correspond know _ value , string be return by api , be value param
+api be support only live , not
+api _ lrb _ _ rrb _ allocate array hold list set param point array
+number drop
+param be not available platform
+loop not necessarily be terminate by signal , api should be use terminate processing
+not unblock thread
+be constant platform be not available
+note , param application
+may , may not , count drop
+param be param pointer
+api return constant success return constant
+param may count , may count only pass filter
+api return constant success constant failure
+no statistic be available
+api translate param header type value correspond param header type name , which be _ name param header type value _ remove
+no statistic be store
+api be use determine network number mask associate network param
+param may be set warning text
+if constant be return by api , param be fill appropriate error message
+api may be call param as param fetch display error text
+param be assume be able hold least constant char
+list value api can return describe format correspond value
+param may , may not , count not yet read operate system thus not yet see by application
+api return param header type live specify by
+detect case caller should store param string param before call api display warning user
+param may , may not , be implement
+would count not pass filter
+should not be restart by signal
+PRON- need use whatever mechanism os provide break thread block call
+not assume give have give param header type , as constant
+PRON- must specify , catch signal , system call
+api be like api but do not create file
+must not be call descriptor create by api have not yet be activate by api _ lrb _ 3pcap
+_ lrb _ see api explanation buffer timeout
+api return param header type success constant  have be create but not activate
+specifie name file open
+platform , param header send may not be as param header supply api , as
+api be call open reading
+api take additional param as describe
+api return constant success constant  handle have be activate
+source param address , may be change be address assign api which send
+api return param success null failure
+name _ be stdin
+recommend always set timeout param value unless immediate mode be set , which case timeout have no effect
+if null be return by api , param be fill appropriate error message
+be file byte order as host opening file , have time , param header type , snapshot length as param , write end file
+buffer timeout be use handle
+alternatively , -PRON- may call api read dump datum exist open stream param
+api become available release constant
+param be assume be able hold least constant char
+window , stream should be open binary mode
+negative return value indicate error condition occur
+api set
+device have param header type constant
+api check be activate
+previous release , time be always give second
+behavior , be undefined , as be behavior
+process do not have check
+handle have already be activate
+possible error value be
+source specify do not exist
+be scale as necessary before supply
+another error occur
+api return constant
+api take additional param specify time desire
+api may be call param as param fetch display message describing error
+api return constant
+api set be activate
+additional error code may be add future
+live , always return constant
+program should check , , negative , return code , treat negative return code as error
+api return constant success constant  handle have be create but not activate
+api can be call , warning error code as param , fetch message describe warning error code
+api become available release constant
+api return constant success constant  handle have be activate
+api return constant success constant failure
+immediate mode , be always deliver as soon as arrive , no buffering
+api read next return indication
+platform , device be always immediate mode
+api read next return param pointer datum
+immediate mode be set , otherwise not be set
+byte datum begin param header
+file can have file format as describe api , which be file format use by , among program , api , can have file format
+if constant be specify , time be supply second
+previous release
+time be supply second
+api close
+param point by be fill appropriate value
+api return param message string correspond error
+list value api can return describe format correspond value
+api flush output buffer , write api but not yet write be write
+api return error text pertain last library error
+have no effect
+api return param success null failure
+api close file associate param deallocate resource
+param be assume be able hold least constant char
+format param header be indicate by return value api handed param value pass api
+api be provide case api be not available
+unfortunately , be no way determine
+if null be return by api , param be fill appropriate error message
+api be use create handle look network
+api return snapshot length success constant  have be create but not activate
+api not work param mode
+api may be call param as param fetch display error text
+api return pointer stre give information version library use
+contain information version number
+api print text last library error stderr , prefix by prefix
+api return snapshot length specify api be call , live , snapshot length file
+api return current param state descriptor
+always return constant
+otherwise , constant be return by api
+not assume give have give param header type , as constant
+return handle must be activate api before can be
+be assume be able hold least constant char
+if be error , constant be return by api param be fill appropriate error message
+param be stre specifie network device open
+api put handle param mode , take param mode , depend constant
+option , as promiscuous mode , can be set handle before activate
+previous release , device be always immediate mode
+PRON- must use copy string before closing param
+api set be activate
+pointer api return no longer point valid error message string after param pass be close
+if be error , constant be return by api param be fill appropriate error message
+api return time type value success constant failure
+system constant late kernel , param null can be use api
+translation be param
+api become available release constant
+api return constant success constant  handle have be activate
+api translate time type param correspond time type value
+value api return be valid receive unless until api be call
+call api be require order put param mode
+api return pointer datum success , return null
+promiscuous mode be set , otherwise not be set
+however , constant , should be use
+later , be , by default , not immediate mode
+param mode , attempt read descriptor api , if no be currently available be read , return constant immediately rather block wait arrive
+must be call descriptor create by api have not yet be activate by api
+after successful call api , subsequent have param header type specify by param header type value pass api
+device have param header type constant
+must not be call descriptor create by api have not yet be activate by api _ lrb _ 3pcap
+constant early version , immediate mode must be turn by
+use read timeout constant
+datum be not be free by caller , be not guarantee be valid after next call api
+must make copy
+api return constant
+pointer point by param be set point param struct
+window , immediate mode must be turn by call api size constant
+struct param datum be not be free by caller , be not guarantee be valid after next call api
+11 , immediate mode must be turn biocimmediate api , as document api , descriptor return by api , after api be call
+pointer point by param be set point datum
+must make copy
+digital unix , immediate mode must be turn by do biocmbic , as document api , clear enbatch flag descriptor return by api , after api be call
+must not be call descriptor create by api have not yet be activate by api _ lrb _ 3pcap
+api become available release constant
+see api list time type
+api set type time desire descriptor type specify by param
+api give list time type support by give device
+api be not available window
+call api return constant but not block
+previous release , time type can not be set
+timeout should be use call must be no large small timeout return by api device which be
+only default time type offer by source be available
+api be use free allocated memory point by param struct generate by api after have be make filter program structure by call api _ lrb _ 3pcap
+api return standard stream open by param
+api become available release constant
+pointer struct be return by api
+otherwise null be return by api
+previous release , api can not be use source which api return constant
+device flag
+element list be constant , have follow member
+device must be put param mode api , attempt must always be make read device api call return
+null last element list name
+pointer stre give name device pass api description
+api construct list network device can be open api
+device which read can be do without block may , platform , not have
+be connect constant
+be disconnect constant
+be unknown
+api return , unix , pointer struct contain value must be use as minimum timeout api call
+element list address be constant , have follow member
+null , pointer stre give param description device address
+connect disconnect not apply api
+pointer point by param be set point first element list , null
+pointer struct contain address
+null last element list
+do not apply device
+type may have be param
+pointer first element list network address device , null
+if constant be return by api , param be fill appropriate error message
+wireless api , connected mean associate network possible value connection status bit be
+address have value constant , address have value constant , address have value
+param be assume be able hold least constant char
+list device must be free api , which free list point by alldev
+constant become available release constant
+include as well as param network as param , do not mean param constant
+possible warning value be
+api return constant success constant failure
+param return value indicate warn error condition occur
+constant become available release constant
+promiscuous mode be request , but source do not support promiscuous mode
+as indicate , find no device be consider success , rather failure , constant be return case
+may be null
+handle have already be activate
+possible error value be
+address , struct pointer can be interpret
+may be null param api
+another warning condition occur
+time type specify previous api call be not support by source , constant
+api return constant success without warning , param positive value success warning , negative value error
+address , can be interpret
+process do not have open source
+api may be call param as param fetch display message describe warning condition
+api be use activate handle look network , option be set handle effect
+source device be not
+mode be specify but source do not support mode
+source specify do not exist
+process have open source but do not have put promiscuous mode
+api return constant success constant failure
+another error occur
+api be use set current param header type descriptor type specify by
+api may be call param as param fetch display message describing error
+api be deprecate by api
+api can be call , warning error code as param , fetch message describe warning error code
+api may be call param as param fetch display error text
+api may return param string rather ascii param string
+param should be close use api
+param be not close freed
+if be error , null be return by api param be fill appropriate error message
+additional warning error code may be add future
+param be assume be able hold least constant char
+find default device which , call api ,  first device list
+_ lrb _ , be no device which be possible
+api be use compile string param filter program
+program should check positive , negative , constant return code , treat positive return code as warning negative return code as error
+api return constant success constant  handle have be activate
+see api syntax string
+param control whether optimization result code be perform
+api return pointer string give name network device suitable use api
+api may be call param as param fetch display message give additional detail problem may be useful debug problem
+program be pointer param struct be fill by api
+pointer return by api point static buffer
+api set snapshot length be use
+constant later , api can be use multiple thread within single process
+subsequent call api thread , call api another thread , may overwrite buffer
+param specifie param network which be
+api return constant success constant failure
+be use
+address list address may be address , address , type address , -PRON- must check param member struct before interpret content address
+new version always allow time type be set default type
+value constant can be supply
+not assume address be address , even address
+constant become available release constant
+test address fail compile , but test filter program be ok
+api may be call param as param fetch display error text
+api set be activate
+api return constant success constant  handle have be activate
+mode be set , otherwise not be set
+api return constant success if specify time type be expect be support by device , constant  have be activate , constant
+if param refer network device be open live use combination api , use api return file descriptor which be read
+however , early version , be not safe use api multiple thread single process without form mutual allow only one thread call give time
+if param refer be open use function as api , dead param open use api , param be create api but have not yet be activate api return constant

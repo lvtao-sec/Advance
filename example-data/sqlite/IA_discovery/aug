@@ -1,0 +1,421 @@
+api return constant
+param be one constantbe constantle , indicate ideal form require sequence function
+constant be return by api
+type conversion pointer failure may occur follow situation
+api return null pointer
+api return constant
+safe strategy be call api one follow way
+string return by api must be release by application by pass api
+call pointer api undefined behavior
+apis be only available
+api return constant
+api be disabled maco constant ios version constant always return constant
+api return constant
+api return null
+application should complete prepared , close handle , complete param associate object before attempt close object
+file name contain international character must be param before pass api
+control as begin , commit , rollback , , release make api return constant
+attribute can only be use constant param callback
+api return constant
+api return null pointer empty string
+but maximum security , mutex lock should be enable
+api function return param last call database connection , null first call
+api return error caller
+call api return constant
+application do not need worry release result
+interrupt operation return constant
+string return by api , even if be empty string , always end constant
+constant be return by api
+maximum , be recommend application always always call api directly before use api
+constant be return by api
+insert operation table operation without table , value sixth param be undefined
+api return constant
+param table should be release use api
+application use should only use dynamic return by constant
+param be one constant
+result may be infinite loop
+query can perform optimization deterministic function , be recommend use constant flag
+incremental api can only read overwrite exist content
+PRON- must call api
+api should return constant
+callback function should normally return constant
+api be only available
+api do not apply application
+api return error code constant
+api return null pointer
+value return by api not contain constant end string
+api return null , api return
+api return error code , handle be consider abort
+api return null
+api return constant
+api must be call thread run function
+param always use param
+pass pointer api result undefined behavior may be bad behavior
+only external mutex implementation be need provide api
+constant be return by api
+be recommend -PRON- add path name as . . before param avoid
+operation be still attempt remain additional database , constant be finally return by api
+param be always param encode
+api may return
+please name length limit be param byte , not character param byte
+avoid memory leak , object return by api must be release by subsequent call api
+api return constant
+otherwise , api return error code
+api succeed , follow condition must be meet
+attribute can only be use constant param callback
+application must always be prepare null pointer third sixth param authorization callback
+be consider wrong form
+system , share cache mode database connection should be enable via api constant
+api be deprecate
+subsequent call api may return constant
+attempt create function long name result constant return
+api return constant
+function must always return give input
+api return constant , release resource be postpone until prepared , handle , param be destroy
+old api , return value be constant
+however , be not safe call api database connection close may be close before api return
+api only apply protect param
+call api may return null
+param must be byte assume string appear nul
+api return appropriate error code
+api , specific error code be return directly by api
+but sometimes be impossible , case , previous pointer be invalid
+however , call can not close database connection , nor can finalize reset prepared which function run
+function param achieve well match function negative
+use api one traditional api param must be call , -PRON- must use param must be evaluate long
+therefore , api should be call end function implementation , after call api , function implementation should not use
+like without , set param api constant
+resource associate database connection handle should be release by pass api
+after success , api return constant , handle be store
+currently , be only one option can be configure use api
+function must follow follow attribute string
+application must provide custom mutex implementation use constant option api function before call api public param call api
+only need use api
+behavior be uncertain may be undesirable
+avoid memory leak , application should call api error message string return by fifth param api after error message string be no longer need
+developer may want use api control untrusted
+old api be retain backward compatibility , but be not recommend
+api return constant
+api return constantonly
+assume after register callback , database wait callback be issue before perform operation , use api may application
+only one can be connect database time
+may memory , serious error
+api return constant caller
+paramet name must be give param
+database connection must not be close
+system , api always return constant
+api keep database connection open return constant
+param api must be one integer constant
+return value be unpredictable meaningless
+avoid resource leakage , -PRON- should eventually release open handle by call api
+application should only call api
+param api be prefer because currently use param parsing
+result be uncertain
+api be old api should be avoid
+api must be call thread as function provide param
+be recommend use constant api instead api disable extension loading , api function remain disabled
+test show application not need use constant achieve sufficient soft limit implementation
+pointer param api must be null , otherwise pointer obtain api call previously call have not be release
+api virtual table , api return constant
+api must be call thread run function
+callback should return constant allow operation , constant prohibit specific operation but allow continue compile , constant entire be wrongly reject
+continue execute return constant application instead call busy handler
+api can only be call single thread
+old api , after error constant , api always return common error code constant
+PRON- should roll back before continue
+api return original string select abc , : , but api return select 2345 , null
+otherwise , api return constant
+param should be null release previous value api
+therefore , application should ensure correct callback be retain during api
+constant be return by api
+value return by api be undefined
+api return constant
+param pointer be valid until prepared be destroy api until first call api specific run automatically prepare , until next call api object
+call application should pass param api avoid memory leak
+after application us result api , must pass result table pointer api
+api function return constant , indicate whether specified option be api compile time
+api return null pointer
+only api can correctly safely release memory
+result be uncertain may be harmful
+result involve string embed nul be undefined
+attempt write expire handle fail error code constant
+case , api return constant
+constant be return by api
+must be one option , otherwise behavior api be undefined
+param be return by api
+param environment , unprotected param can only be use safely api
+upon success , api return constant
+api be only available
+constant compile time option make api always return null
+no mutex lock , be not safe use multiple thread time
+result be uncertain
+if api exist , value param be return ; if param do not appear as query param null pointer be return
+result be undefined behavior
+however , after open handle , -PRON- can not change , table , database handle
+api function return integer equal param
+api return pointer p. otherwise , api return null
+api should not be call
+api be only available
+length name be limit constant byte param representation , exclude constant
+api be return constant
+api function return param previous call function database connection , return null first call function
+param return value api be null pointer
+param string can not be null
+api return constant
+only valid call api can perform param
+api be only applicable handle , which be create by previous successful call api have not be close by api
+api return numeric result code extend result code api call
+failure reset prepared use api result constant return api
+api return constant
+api return constant fill appropriate value param pointer last five param specify exist
+param be one constant
+only exception be  , write null instead pointer object
+api be no operation return constant
+call api abnormally terminate handle always return constant
+api return constant success param error code failure
+application need use untrusted source process can use api reduce resource limit param limit database size addition
+only one busy handler can be api per database connection
+call function must not attempt call api directly
+call api fail
+param api behave exactly as api , except string param must be param respectively
+api be not thread safe
+after lock , api immediately return constant
+behavior be uncertain
+can only change
+call api param be not null pointer open handle undefined behavior
+behavior be undefined
+api return constant
+behavior api be undefined may be harmful
+api return param error code
+api return appropriate error code
+api only check
+api be not recommend
+null pointer be give , api should return constant
+processing be abandon , api immediately return error code caller
+api return constant successfully , constant
+api return null
+callback implementation must not anything would modify database connection call callback
+use prepared after end may undefined bad behavior , as damage
+api be only available
+api return constant
+implementation must not anything would modify database connection call
+callback implementation should return constant ensure future compatibility
+api be design replace old api be deprecate
+one way solve problem be check extended error code return by api call
+constant be return by api , no datum be write
+attempt use api unprotected param be not thread safe
+api return param constant
+attempt deallocate static mutex undefined behavior
+third sixth param callback be null pointer param string , which contain additional detail operation be authorize
+system not support operation implement by api
+api be only available
+param should be constant bitwise combination constant
+api return constant
+implementation function always exception be throw
+api return error
+return value be arbitrary meaningless
+no attempt access database , api return constant application
+if param be range , api return constant , otherwise return constant
+database handle must have no active
+after successful input , api return constant
+give moment , can only be one busy handler particular database connection
+operation modify database connection must be delay until api call be complete
+api return constant
+call api database connection pointer param must refer open database connection , can not be null pointer
+api return error code be roll back
+after release , should not read write memory
+function require implementation , must pass null pointer
+action result undefined behavior
+api return constant
+after least ms millisecond , handler return , which api return constant
+result be uncertain
+api return constant begin , but begin immediate begin exclusive command touch database , api return constant command
+call api expire handle fail return code constant
+input api must be param string
+api differ api only have additional param which be bit array consist constant
+use api instead api describe
+api set return value param function text string specify by fifth param , which must be constantbe constantle
+api be thread safe , but api be not
+be recommend database param actually start : character , path name . . should be add front param avoid
+third fourth param api be table name name require , respectively
+api always return constant
+before call api , open database connection must be close , resource must be release
+application must provide suitable implementation api
+api be block , api return constant
+api return constant indicate success
+api return null pointer
+api return constant
+api return null
+PRON- should first call api force result require format , call api find size result
+if param be null memory allocation fail , api return null
+PRON- can call api time during prepared : before evaluate param after make one call api , after make call api
+api return constant , during which value remain unchanged
+callback be not reentrant
+api fail constant
+return pointer be valid until type conversion occur as describe , until api be call
+null pointer must be pass as param
+however , application must call api directly before use api
+soft limit be reference only
+api return constant
+busy handler must not close database connection prepare call busy handler
+only follow api have memory error
+must meet condition as param must exist text value must be store nominate
+api return constant
+be recommend use constant api enable api only
+api can not obtain lock return constant
+api may return constant
+api return null
+therefore , application usually not need call api directly
+application care share cache setting should set explicitly
+api return constant
+pass param have small performance , param be number byte include param input string
+after run insert , , value return by api be always constant
+if param be query param without explicit value , api return pointer empty string
+param must be one constant
+return constant
+api return constant
+application must ensure thread not call api
+value return by api be undefined
+second callback param be one constant , depend operation callback be call
+api return appropriate error code extend error code
+api return constant
+never use api unless inside api , be recommend application follow
+call api return null
+execute , must first be compile bytecode program use one follow api
+as long as input param be correct , api only fail
+program , be recommend use api
+api return null pointer
+api return null
+flag param api can take one follow three value can be combine constant
+api return stre variant second result null pointer first result
+callback function should use api register require
+constant ,  start param api return constant
+param must be param
+param must be param , which be first param api
+value return by api be only meaningful
+be not safe pass param table directly api
+api be only available
+must be empty string string localhost
+PRON- should not call api virtual machine before call api reset virtual machine back initial state
+may crash
+if api fail , api return constant
+constant be return by api
+call api return constant
+api return null pointer
+index first host param be , not constant
+api return constant
+api return constant after param error
+param be null pointer pointer param
+api return null pointer
+busy handler be not reentrant
+name database table can be return as param string
+param api return constant success , return error code
+memory allocation error occur , api return null pointer first call
+api return constant
+result string contain embed nul , result operate stre embed nul be undefined
+not mix call api call api , not mix call api call api
+after make subsequent api call object , application must not use pointer return by api
+api be only available
+application try use prepared after , which be serious error
+behavior api be undefined may be undesirable
+accord call api configict mode mode virtual table call api table , value return by api be constant , one constant
+therefore , api be usually only useful implementation param function virtual table , but not param application code
+input api must be param stre local byte order
+api return null pointer
+only way find
+call function should free memory by call api
+value must be constant api param constant
+api return constant without call callback run subsequent
+whenever caller be ready process datum , return constant
+api return constant success param error code failure
+caller be responsible releasing param avoid memory leak
+processing be abandon , api immediately return error code caller
+api be as api , except param be param unsigned integer , not param sign integer
+constant be return by api
+api return null pointer
+default encode database create api be param byte order
+param must contain least param byte param
+api return constant
+second param must be index array , which belong param pass
+database connection must not be param mode
+move exist handle line be faster close exist handle opening handle
+api return constant
+security reason , be recommend use constant flag param function side effect
+api only check
+only use param memory
+even read previously free memory may serious error
+subsequent call api interrupt handle immediately return constant
+before another thread can enter , mutex must exit number time
+be no longer available
+progress handler callback must not anything would modify database connection call progress handler
+application call api param should check return code handle application datum pointer , instead expect handle
+however , good practice be avoid use as identifier
+after release application use api , application must not read write part memory block
+operation modify database connection must be delay until after api call first commit rollback be complete
+api return constant successful , return appropriate error code
+version constant , before api be subsequently call , after api return value constant , api need be call
+value return by api be unpredictable may not be equal old last insert -PRON- would
+implementation api provide by application must return constant successful , error code should be return fail
+application must complete prepared
+api return constant
+busy callback should not take measure modify database connection call busy handler
+constant be return by api , no callback be register
+constant be return by api , no data be read
+first param must be copy function context , copy be first param callback api implement function
+result comparison be uncertain
+static mutex be internal use only
+underlie api may return constant
+if string end null , must be byte stre null appear
+api should be avoid
+callback must not anything would modify database connection call callback
+if database param connect param be param api return , if is , return , if param be not name database connected param return constant
+call return constant
+module name must be register before use module create virtual table before use module exist virtual table
+return value be uncertain
+otherwise , api return error code extend error code
+otherwise , api return error code
+be no memory allocation , api function return pointer continuous memory representation database be currently use database ;  , null be return
+function api by application must be add database connection separately
+api be only available
+api return constant
+param remain effect until prepared be destroy use api , until first call api specific run be automatically prepare , until information be request different
+exist function , pass null pointer three function callback
+temporary directory must be set before call api
+return null pointer
+api be only available
+api param must use param instead code page currently api
+api be only available window
+not pass pointer return api , etc
+pointer return by previous call api may be invalid
+otherwise , api return error code extend error code
+constant be return by api
+otherwise , if snapshot reference by be early , api return negative value ; if two handle refer database snapshot , api return constant ; if be high snapshot , api return positive value
+string return by two api should be release by api
+no longer provide feature
+api return constant success
+api return constant
+api must be call thread run param function api
+api may return null pointer
+function must return negative , constant positive integer
+PRON- can distinguish valid null return param error by call api immediately after obtain suspicious return value before call api database connection
+api should return constant
+constant be return by api , be set constant
+memory contain error message string be manage internally , application must not release memory
+third param callback be one constant , which be use identify type operation occur
+param must be param
+behavior be uncertain
+if value param originate one api return param
+param can be null case , create regular function . , must be param which case , function can be use as window function
+param must be constant less number , otherwise behavior be undefined
+however , api still return constant
+please api match , return constant , param as api
+api be as api , except param be unsigned param integer , not sign param integer
+value param api should be param
+api be only available
+api assume param be boolean param return constant base value param
+param must be one constantbe constantle specify encode text third param
+application should never call api directly
+api return constant
+memory point by character pointer return declaration type sequence remain valid until next call api function
+param api must be null pointer object pointer obtain api , have not be close before
+param return by successful call api must be release use api avoid memory leak

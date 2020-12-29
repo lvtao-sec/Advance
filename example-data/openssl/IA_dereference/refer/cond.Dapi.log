@@ -1,0 +1,24 @@
+If the application waits for data to be available on the underlying transport before flushing the write buffer
+write buffer, DES_enc_write
+
+If the application waits for data to be available on the underlying transport before flushing the write buffer
+write buffer, DES_enc_write
+
+whenever any pending data should be written such as when removing a buffering BIO using BIO_pop_APIName
+data should be written, BIO_flush
+
+If an application wishes to write additional data to BIO_new_CMS_APIParam_1
+write additional data, BIO_flush
+
+when using an external session cache , applies
+using an external session cache, SSL_CTX_flush_sessions
+
+If another thread is using the same internal session cache
+using the same internal session cache, SSL_CTX_sess_number
+
+if Applications wish to load a configuration file Applications and have finer control over how errors are treated
+load a configuration file Applications, CONF_modules_load_file
+
+If several CA certificates matching the name , key identifier , and serial number condition are available
+matching the name, X509_VERIFY_PARAM_set1_host
+

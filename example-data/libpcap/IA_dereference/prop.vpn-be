@@ -1,0 +1,144 @@
+One can use options PCAP_TSTAMP_PRECISION_MICRO and PCAP_TSTAMP_PRECISION_NANO to request desired precision
+desired precision
+
+
+Do NOT assume that the packets for a given capture or savefile will have any given link-layer header type , such as DLT_EN10MB for Ethernet
+given link-layer header type
+
+
+Do NOT assume that the packets for a given capture or savefile will have any given link-layer header type , such as DLT_EN10MB for Ethernet
+given capture
+
+
+Do NOT assume that the packets for a given capture or savefile will have any given link-layer header type , such as DLT_EN10MB for Ethernet
+given link-layer header type
+
+
+Do NOT assume that the packets for a given capture or savefile will have any given link-layer header type , such as DLT_EN10MB for Ethernet
+given capture
+
+
+Do NOT assume that the packets for a given capture or savefile will have any given link-layer header type , such as DLT_EN10MB for Ethernet
+given link-layer header type
+
+
+Do NOT assume that the packets for a given capture or savefile will have any given link-layer header type , such as DLT_EN10MB for Ethernet
+given capture
+
+
+Do NOT assume that the packets for a given capture or savefile will have any given link-layer header type , such as DLT_EN10MB for Ethernet
+given link-layer header type
+
+
+Do NOT assume that the packets for a given capture or savefile will have any given link-layer header type , such as DLT_EN10MB for Ethernet
+given capture
+
+
+Do NOT assume that the packets for a given capture or savefile will have any given link-layer header type , such as DLT_EN10MB for Ethernet
+given link-layer header type
+
+
+Do NOT assume that the packets for a given capture or savefile will have any given link-layer header type , such as DLT_EN10MB for Ethernet
+given capture
+
+
+Do NOT assume that the packets for a given capture or savefile will have any given link-layer header type , such as DLT_EN10MB for Ethernet
+given link-layer header type
+
+
+Do NOT assume that the packets for a given capture or savefile will have any given link-layer header type , such as DLT_EN10MB for Ethernet
+given capture
+
+
+Do NOT assume that the packets for a given capture or savefile will have any given link-layer header type , such as DLT_EN10MB for Ethernet
+given link-layer header type
+
+
+Do NOT assume that the packets for a given capture or savefile will have any given link-layer header type , such as DLT_EN10MB for Ethernet
+given capture
+
+
+Do NOT assume that the packets for a given capture or savefile will have any given link-layer header type , such as DLT_EN10MB for Ethernet
+given link-layer header type
+
+
+Do NOT assume that the packets for a given capture or savefile will have any given link-layer header type , such as DLT_EN10MB for Ethernet
+given capture
+
+
+Do NOT assume that the packets for a given capture or savefile will have any given link-layer header type , such as DLT_EN10MB for Ethernet
+given link-layer header type
+
+
+Do NOT assume that the packets for a given capture or savefile will have any given link-layer header type , such as DLT_EN10MB for Ethernet
+given capture
+
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate
+
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate
+
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate
+
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate
+
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate
+
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate
+
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate
+
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate
+
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate
+
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate
+
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate
+
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate
+
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate
+
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate
+
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate
+
+
+It must not be called on a pcap descriptor created by pcap_create_APIName that has not yet been activated by pcap_activate -LRB- 3PCAP
+activated by pcap_activate
+
+
+However , in earlier versions of libpcap , it is not safe to use pcap_compile_APIName in multiple threads in a single process without some form of mutual exclusion allowing only one thread to call it at any given time
+given time
+
+

@@ -1,0 +1,135 @@
+The purpose of dbus_shutdown_APIName is to allow applications to get clean output from memory leak checkers
+get clean output, dbus_timeout_get_interval
+
+The machine ID can also be used to create unique per-machine instances
+create unique per-machine instances, dbus_bus_get_unique_name
+
+The allocated ID may be used with dbus_pending_call_set_data_APIName and dbus_pending_call_get_data_APIName
+allocated ID, dbus_server_allocate_data_slot
+
+The allocated ID may be used with dbus_message_set_data_APIName and dbus_message_get_data_APIName
+allocated ID, dbus_server_allocate_data_slot
+
+The allocated ID may be used with dbus_server_set_data_APIName and dbus_server_get_data_APIName
+allocated ID, dbus_server_allocate_data_slot
+
+The allocated ID may be used with dbus_connection_set_data_APIName and dbus_connection_get_data_APIName
+allocated ID, dbus_server_allocate_data_slot
+
+The variable argument list should contain the type of each argument followed by the value to append
+contain the type, dbus_type_is_container
+
+The supported types include those supported by dbus_message_append_args_APIName
+types include, dbus_type_is_container
+
+The variable argument list should contain the type of the argument followed by a pointer to where the value should be stored
+contain the type, dbus_type_is_container
+
+Types include DBUS_MESSAGE_TYPE_METHOD_CALL , DBUS_MESSAGE_TYPE_METHOD_RETURN , DBUS_MESSAGE_TYPE_ERROR , DBUS_MESSAGE_TYPE_SIGNAL , but other types are allowed and all code must silently ignore messages of unknown type
+Types include, dbus_type_is_container
+
+The D-Bus protocol allows dbus_message_is_method_call_APIParam_3 callers to leave out the interface name
+D-Bus protocol allows, dbus_message_demarshal
+
+it will be assumed equal to the provided interface
+provided interface, dbus_message_set_interface
+
+You can thus write a loop as follows
+thus write a loop, dbus_connection_read_write
+
+To read any container type you will need to recurse into the container with dbus_message_iter_recurse_APIName
+read any container type, dbus_signature_iter_init
+
+To read any container type you will need to recurse into the container with dbus_message_iter_recurse_APIName
+recurse into the container, dbus_message_iter_recurse
+
+On success , you are required to append the contents of the container using dbus_message_iter_open_container_APIParam_0 sub-iterator , and call dbus_message_iter_close_container_APIName
+append the contents, dbus_message_iter_append_basic
+
+dbus_message_lock_APIName may also called externally , for applications wrapping D-Bus in another protocol
+wrapping D-Bus, dbus_message_demarshal
+
+The error name must be a valid error name according to the syntax given in the D-Bus specification
+error name according, dbus_message_is_error
+
+The error name must be a valid error name according to the syntax given in the D-Bus specification
+given in the D-Bus specification, dbus_message_demarshal
+
+If the iterator is pointing at a type code such as ', the iterator will be returned directly
+pointing at a type code, dbus_signature_iter_recurse
+
+you should initialize a sub-iterator with dbus_signature_iter_recurse_APIName to parse the container type
+parse the container type, dbus_type_is_container
+
+dbus_connection_open_APIName can re-use an existing connection with the same ID instead of opening a new connection
+opening a new connection, dbus_connection_open_private
+
+dbus_server_set_new_connection_function_APIName , dbus_server_set_watch_functions_APIName , and dbus_server_set_timeout_functions_APIName should be called immediately to render the server fully functional
+render the server, dbus_server_disconnect
+
+These functions are responsible for making the application main loop aware of file descriptors that need to be monitored for events
+monitored for events, dbus_watch_get_flags
+
+You must close a dbus_connection_close_APIParam_1 prior to releasing the last reference to the dbus_connection_close_APIParam_1
+releasing the last reference, dbus_server_unref
+
+The creator of these connections is responsible for calling dbus_connection_close_APIName prior to releasing the last reference
+releasing the last reference, dbus_server_unref
+
+you need to know there a reference held on the dbus_connection_get_data_APIParam_1
+reference held, dbus_connection_ref
+
+you need to know there a reference held on the dbus_connection_set_data_APIParam_1
+reference held, dbus_connection_ref
+
+Instead , let the main loop invoke dbus_connection_dispatch_APIName
+let the main loop, dbus_connection_read_write
+
+Note that even after disconnection , messages may remain in the incoming queue that need to be processed
+remain in the incoming queue, dbus_connection_borrow_message
+
+dbus_connection_dispatch_APIName needs to be called to process incoming messages
+process incoming messages, dbus_connection_pop_message
+
+These functions are responsible for making the application main loop aware of file descriptors that need to be monitored for events , using select_APIName or poll_APIName
+monitored for events, dbus_watch_get_flags
+
+It is not allowed to reference a DBusWatch after it has been passed to dbus_connection_set_watch_functions_APIParam_3
+reference a DBusWatch, dbus_server_unref
+
+It is not allowed to reference a DBusWatch after it has been passed to remove_function
+reference a DBusWatch, dbus_server_unref
+
+Once a file descriptor becomes readable or writable , or an exception occurs , dbus_watch_handle_APIName should be called to notify the dbus_connection_set_watch_functions_APIParam_1 of the file descriptor condition
+file descriptor becomes, dbus_connection_get_socket
+
+For private connections , the creator of the dbus_connection_unref_APIParam_1 must arrange for dbus_connection_close_APIName to be called prior to dropping the last reference
+dropping the last reference, dbus_server_unref
+
+For shared connections , libdbus will own a reference as long as the dbus_connection_unref_APIParam_1 is connected , so you can know that either you do not have the last reference , or it is OK to drop the last reference
+drop the last reference, dbus_server_unref
+
+For shared connections , libdbus will own a reference as long as the dbus_connection_unref_APIParam_1 is connected , so you can know that either you do not have the last reference , or it is OK to drop the last reference
+shared connections, dbus_connection_open_private
+
+Caller owns a reference to the bus and must either close it or know it to be closed prior to releasing this reference
+owns a reference, dbus_server_unref
+
+Caller owns a reference to the bus and must either close it or know it to be closed prior to releasing this reference
+releasing this reference, dbus_server_unref
+
+For shared connections in a multithreaded application , you can not really make the registration calls yourself , , and
+shared connections, dbus_connection_open_private
+
+it should not be polled by the main loop
+polled by the main loop, dbus_connection_read_write
+
+it should not be polled by the main loop
+polled by the main loop, dbus_connection_read_write
+
+it should not be polled by the main loop
+polled by the main loop, dbus_connection_read_write
+
+it should not be polled by the main loop
+polled by the main loop, dbus_connection_read_write
+

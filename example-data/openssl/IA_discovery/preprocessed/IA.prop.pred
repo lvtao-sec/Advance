@@ -1,0 +1,1317 @@
+follow return value api can occur , , , constant
+api be deprecate openssl constant
+only meaningful client authentication
+alert be always fatal should never be observe communication proper implementation
+only use explicit fallback retrie , follow guidance constant
+be only meaningful client authentication
+previous version have use
+engine must parse record , consist header body
+never succeed
+api be support
+not use protocol
+not enable
+support protocol be
+be need as workaround implementation
+cryptographic algorithm require by openssl , should be use
+not use protocol
+random number generator must be seed operation fail
+first library must be initialize
+protocol be deprecate should not be use
+client must still use announcement
+be no longer possible
+content sign receipt should only be consider meaningful
+no certificate add use api be use
+one param , must only be use one param
+mode should only be use implement cryptographically sound pad mode application code
+openssl error string should be load by call api , ssl application , api first
+extension type must not be handle by openssl internally error occur
+ssl engine must know whether ssl engine must call connect accept api
+do not support shutdown alert protocol , can only be detect , whether underlie connection be close
+use api instead
+application , constant should be prefer
+caller only have const access datum indexing table , yet declare callback without constant type , be create without encourage by api
+dynamic parent structure member should not be access
+application which include workaround bug should be modify handle fix may free already free bio
+constant be encryption algorithm should be use key certificate respectively
+equivalent bios should not be use may block as result
+application need add
+application usually not need modify embed content as be normally set by high level function
+api identifie type field param support , which be either fp
+not use protocol
+client should avoid create hole set protocol client support
+make sure -PRON- disable either previous subsequent protocol version
+kind reference can be consider specialised form structural reference , _ however avoid constant programming bug , be recommend treat two kind reference independently
+file be look by ca subject name hash value , which must hence be available
+one should obtain reference
+api function must be supply by application receive two param
+api would return constant indicate need retry constant
+function should be type constant
+auto allocation feature only work openssl constant later
+constant have be return no certificate be send
+protocol be deprecate should generally not be use
+program should prefer style , whilst old style be provide backwards compatibility purpose
+type bio may not be support
+not use protocol
+code mix two not work platform
+be job constant store information state last call
+PRON- may have latter
+extension must be different
+old export grade client may only support weak encryption use constant bit rc constant
+verification callback can be use customise operation certificate verification , either by override error condition log error debug purpose
+can lead unexpected behaviour
+constant must be set
+caller can either cast const away use macro wrapper function without const type
+number check need be much high reach level assurance
+extension must be concatenate sequence byte
+session be assign timeout value , after which session not be accept session reuse
+new application should call
+may lead connection failure description api property
+should never happen
+be bug
+common mistake be attempt use buffer directly as follow
+attempt set key length value fix value be error
+release memory be use hold
+frequent cause problem be attempt use pem api like
+attempt use early version typically cause segmentation violation
+host can be can be which be interpret as mean api
+note , however , implementation be not available platform
+prefer constant padding
+enable , follow be require
+second good solution problem be set hash _ constant before -PRON- start
+attribute be discard
+param restriction be identical encryption operation except
+as result object can not be encode decode as part asn structure
+public key be encode use subjectpublickeyinfo structure error occur
+can cause problem as constant value can overflow system result unexpected result
+file can be convert code use _ option dhparam application
+error condition occur
+handshake fail
+case leakage would be minimal , would take attacker ability observe memory access pattern byte granilarity as occur , constant timing analysis not
+api be not support
+constant , fatal error occur
+probably crash somewhere api
+violation cause program abort
+case however be problematic
+function may fail
+be constant api
+case should not occur
+function have be implement way because -PRON- get pull byte input byte apart thing get ugly
+copy should be make reference count increase instead
+additionally indicate session ticket be renewal period should be replace
+however , return value should probably be ignore
+attribute as counter signature be not support
+handshake api may have be explicitly set advance use either api
+be recommend use standard terminology
+information must only be use normal operation constant
+server must use dh group generate dh key
+kekrecipientinfo structure need be add
+support non blocking
+prime may have fulfill additional requirement use constant key exchange
+cipher need correspond certificate key
+be not thread safe but never happen
+recipient certificate be need locate appropriate recipient cms structure
+rsa cipher use dhe need certificate key additional constant
+command be support discovery mechanism simply allow application determinie
+can support arbitrary operation via api , include pass control command datum arbitrary type
+half must usually by handle by application thread
+mean clone digest as api need be use sign use api dsa
+dsa cipher always use dh key exchange need constant
+api create param structure which be need hold datum connection
+should be note , inclusion cipher be use list be necessary condition
+successful call api return index greater previously return , be important
+certificate never be use
+currently be two support flag constant
+no freeing result be necessary
+behaviour ensure callback be call application can never send unsolicited extension
+openssl library use callback function help implement common tls ticket construction state accord section constant per session state be unnecessary small set cryptographic variable need be maintain by callback function implementation
+api support option constant
+due modular nature engine api , pointer engine need be treat as handle _ ie not only as pointer , but as reference underlie engine object
+lack support api non standard behaviour api could be regard as anomalous
+function behave similar way api except flag value constant be not support
+should be note many engine api function call accept structural reference internally obtain another reference _ typically happen
+related note , auditing code should pay special attention instance _ constant _ _ lsb _ arg _ _ rsb _ _ fn macro provide type without const qualifier
+sign content must be hold memory
+function behave similar way api except flag value constant be not support
+application developer be not expect implement , but compile provide module compiler choice link target application
+be careful avoid small subgroup attack
+code result buf apparently contain garbage
+because format encoding , end encode block can not always be reliably determine
+not use protocol
+application should use digest algorithm as api
+another socket can not be bind port
+callback must provide random datum psk return length random datum , connection fail constant before connection be finish completely
+be likely be inefficient
+failure can occur
+error occur
+validity certificate trust level have be check by mean
+behaviour be undefined
+ok param callback indicate value callback should return retain default behaviour
+constant , fatal error ssl library occur , usually protocol error
+api should always return rd read do
+callback should return positive value
+reuse capability be present historical compatibility but use be strongly discourage
+first thing consider be whether programm wish make alternative engine module available application user
+return pointer must not be free by call application
+actual length password must be return call function
+callback should return constant
+as reference counter be not incremente , return value api be only valid
+application should check return value before print debug information relate current certificate
+return value be ambiguous care should be take
+delete entry be return must be free
+application must not free return value
+be recommend , check return value api call api
+value return by function must be pass api param
+value return be internal pointer which must not be free
+application must check return value error
+general can not be assume datum return by api be null terminate do not contain embed null
+return index which should be store pass use param remain function
+constant value return must not be free directly by application
+mean be no limit size number manipulate by function , but return value must always be check case memory allocation error have occur
+callback should return constant indicate verification success constant indicate verification failure
+general verification callback should not unconditionally return constant circumstance
+application which could pass invalid nid api should check return value constant
+callback function should return constant
+return param be not complete must be finalize either by stream call api
+callback must return constant
+otherwise error callback should return constant
+param be not complete must be finalize either by stream call constant
+callback should return negative value error
+callback must return constant
+return value api be undefined dtls
+api be constant
+return value should always be check goto err
+callback function should return constant success constant error
+value constant be return
+api return constant successful match , constant fail match constant internal error
+value constant be return
+as result api would have return value which indicate maximum possible signature set param
+api return either param null
+constant api return reference key param null  but reference count return key be not incremente must not be free after use
+api return constant case success constant case failure
+api return constant datum have be write satisfy read request part
+api return either valid param null
+after successful path validation api return success
+api return number command param process , , , constant negative error code
+api return either delete param structure null
+after successful read apil return constant
+api return either valid param null
+api return either constant success constant failure
+api return either newly allocate param structure null
+version openssl before constant current certificate return by api be never null
+api should return constant failure constant success
+api return either param structure null
+api return either param null
+api return either structure null
+api return either constant success constant failure
+api return either constant success constant failure
+api return either newly allocate param structure null
+api return either newly allocate param structure null
+api return error
+error be return
+api return null sink bio api
+api return null
+api return either valid structure null
+successful decrypt follow by eof return constant final read
+if underlie bio be constant api return underlie bio could not satisfy need api continue handshake , indicate problem by return value constant
+api return underlie bio could not satisfy need api continue handshake , indicate problem by return value constant
+prior result return function may be unreliable
+constant call return null caller operate null engine handle
+api return constant success , constant failure
+api return null
+api return null
+api return constant success constant
+api return null
+api return null set error code can be obtain by api
+api return constant
+constant be return
+api return constant
+api return constant success constant failure
+api return number byte read daemon success , constant
+api return current file position constant
+api return constant success constant failure
+api return constant if successful constant failure
+constant be return no operation be perform
+api normally return constant success constant failure
+file bio be exception , return constant success constant failure
+api return constant indicate callback function be set
+api return constant
+api return size share secret success , constant error
+param be null return value api be constant
+unlike function return value constant api only indicate signature do not not verify successfully be not indication serious error
+api return newly allocate param structure null case error
+api return constant success constant error
+api return null set error code can be obtain by api
+null pointer be return
+api return constant successful decrypt constant failure
+api return param structure null be error occur
+api return pointer param null error
+api return file descriptor constant
+api return length seed constant
+function return constant success , constant error
+bios return constant if not recognize api operation
+alternatively event error constant be return
+api return pointer seed be use generate param , null
+function , constant be return success , constant error
+api return constant success constant
+api return constant success constant failure
+api return index next match entry constant
+api always return constant indicate success
+api return newly allocate bio null be error occur
+api have fail , subsequent call return null as well , be sufficient check return value last api call
+api return constant success constant failure
+api can return constant
+api return constant success constant negative value failure
+if peer do not present certificate , null be return
+api return error code
+api return constant success , constant
+api be similar api except api write encode structure param bio param api return constant success constant failure
+api return constant success
+api return constant success constant failure
+api return next bio chain , null
+api return param structure , null error
+api return constant success constant negative value failure
+api return valid param structure null
+if session be actually identical , api be constant return value be constant
+api return constant
+api return constant
+api be similar api except api write encode structure param bio param return constant success constant failure
+api function return constant success , constant error
+api function return length recover datum , constant error
+api return constant
+parse pkc constant structure be return null
+api return constant success constant
+api return constant
+api return constant sucess constant failure
+api return pointer duplicate curve , null error
+api can return constant
+follow return value can currently occur api
+api return valid param null
+api return constant success constant failure
+api return constant error size
+api return match bio null no match
+api return file bio null
+api currently return constant
+api return constant success constant negative value failure
+constant api return pointer newly create param , null error
+api return null
+api return constant success constant
+api always return constant
+error , constant be return
+return value be constant corresponding key type api
+api return param pointer request entry null
+api return newly create bio null
+api return cipher actually use null , no session have be establish
+api return newly allocate param null error
+api return constant success constant failure
+api return constant success constant failure
+api return pointer destination key , null error
+api return bio chain successful null if error occur
+api return param , null be no signer error occur
+api return param constant value constant
+function api return constant
+api macro return positive value success constant negative value failure
+api return constant success constant failure
+if no callback be explicitly set , null pointer be return default callback be use
+api return constant success constant
+api return constant success constant failure
+api return constant success constant
+api return constant
+api return follow value
+constant be return
+api return reference key null
+api currently always return constant
+api return constant success constant failure
+follow return value can currently occur
+api return constant valid signature , constant invalid signature constant error
+api return constant success constant failure
+api return constant success constant failure
+api return constant success constant negative value failure
+api return constant decryption failure constant success
+api return constant success constant failure
+call client param api have no meaning return constant
+api return status param constant
+api return one follow
+api return valid param structure null
+api return constant error constant success
+api return constant
+api return constant
+api return constant success constant failure
+api return param contain inverse , null error
+function return constant success constant negative value failure
+api return constant
+function return constant success , constant error
+constant be return
+api return constant if successful constant error
+constant be return
+api return constant success constant failure
+api return constant
+api return constant success constant failure
+api return newly allocate bio null be error occur
+function return constant success constant negative value failure
+api return constant
+function return constant success constant failure
+api return constant be sign receipt request be find decode
+api return null set error code can be obtain by api
+api return constant
+follow function return constant success constant error
+api return constant success , constant error
+api return servername extension value specify type  hello null
+function api return constant success constant failure
+api return constant success , bio available param constant failure , null pointer store location param
+api return pointer hex string , null error
+api return length ocsp response datum constant
+api return pointer param structure null if error occur
+api return constant success constant failure
+api return signature , null error
+api return constant valid signature , constant incorrect signature constant error
+if be no curve name associate curve , api return constant
+null be return
+api return sign receipt request structure null
+api return newly create param null error
+api return constant success constant failure
+if error occur , null be return
+api return constant error non constant integer if successful
+parse param be return null
+api return constant  if not
+api return null success error
+api return length datum decode constant error
+api return constant
+constant api return constant success constant error
+call api param start constant obtain sorted list available cipher , until null be return
+api return constant successful verification constant
+follow return value can occur
+api return valid param structure null
+constant return be not necessarily indication error
+api return constant success constant negative value failure
+api return constant success constant
+constant return constant implementation use give curve null error
+api return constant success constant error
+api return string , null
+api return constant success constant negative value failure
+follow string can be return
+api return constant success constant failure
+return value constant can be return
+api return constant
+api be similar api except write encode structure param bio param return constant success constant failure
+api return null set error code can be obtain by api
+api return block cipher mode constant
+api return constant successful verification constant
+api return constant success constant
+constant be return default value be use
+api always return constant , be safe discard return value
+api return constant
+function api return constant
+api return null set error code can be obtain by api
+constant be return
+function return length datum decode constant error
+constant be return
+api return cerificate which cause error null
+api return constant success constant failure
+api return constant success constant failure
+api return newly allocate constant null error
+api return constant success constant failure
+api return constant success constant failure
+api return constant success constant
+if key generation fail , api return null
+api return constant
+api return buffer null error
+allocation return null set error code can be obtain by api
+api return constant error constant success
+api return constant success constant failure
+api return constant success constant negative value failure
+api return null set error code can be obtain by api
+api return constant success , constant failure
+api return constant
+if param be null , no cipher be available , be less cipher param available , null be return
+api return constant
+api return constant success constant failure
+pointer param be return success null error
+api return constant
+api return constant success constant failure
+function can return constant
+api return constant success constant
+return value api be constant success constant  differ type bio which typically return constant success non positive value
+api return constant success constant failure
+api return pointer message authentication code null
+follow value be return by function
+error constant be return by api
+api return newly allocate param null error
+api may return null
+api function be use iterate across internal engine list _ api function return structural reference next engine list null if end list , but either case structural reference pass function be release behalf caller
+api return constant success , constant write error
+constant be return
+api return one successful verification constant
+return value be constant
+api return param null error
+function return constant success constant failure
+api return constant success constant failure
+api return constant error
+nid be return create object case success api case failure
+api return param success , null error
+if param be null no cipher be available , null be return
+api return constant success constant failure
+api return constant success constant failure
+api return constant correct signature , constant failure constant
+api return param , null
+api return constant success constant failure
+api return signer null
+success , function return constant
+api return param null error
+failure , function return constant
+null be return normal operation error by api
+api return constant
+api return null set error code can be obtain by api
+api return pointer bignum supply , null error
+api return valid param structure null
+quiet shutdown be enable , api always succeed return constant
+return result code be constant
+api return constant success constant failure
+api have follow return value
+api always return constant
+api return pointer dh structure , null
+api may return follow value
+api return pointer dsa structure , null
+api return index param constant
+api return result code precede call api param
+api return constant success constant
+api return valid param structure null
+api function return pointer newly construct group , null error
+api return valid stre null error
+context return by api can be use call api signature api
+api return constant error constant success
+api return constant success
+api return newly allocate context null be error occur
+api always return constant
+api return constant success constant
+api return encode datum as param structure null
+api return null set error code can be obtain by api
+api return constant  , precise mean eof vary accord bio type
+api return constant
+api return constant success constant failure
+api return constant
+api return constant success , constant error
+api return constant
+api return constant success constant failure
+api return constant valid signature , constant incorrect signature constant error
+otherwise api return constant success
+api return generator give curve null error
+api return socket constant
+api return param structure null error
+if curve do not have nid associate , api return constant
+api return constant success , constant error , constant fatal error as malloc failure
+constant api return constant success constant error
+api compare param return constant
+api return internal pointer param add null
+if param be null , constant be return
+unlike many standard comparison function , api return constant error
+api return pointer param success , null error
+api return maximum length signature constant error
+api return pointer constant supply , null error
+api return number byte write , constant
+api return param null error
+api return null set error code can be obtain by api
+api return null
+api return constant success constant
+peer certificate chain be not necessarily available after reuse session , which case null pointer be return
+api return constant failure constant success
+api return close flag value constant
+api be similar api except api write encode structure param bio param api return constant success constant failure
+api return constant success constant failure
+api be return
+api return length require buffer , constant error
+api return pointer constant supply , null error
+pointer constant value none be return
+api return constant negative value failure
+api function return constant
+api return constant success constant negative value failure
+api return constant flag
+api return constant success constant failure
+api return application datum constant failure
+api return current file position success constant failure , except file bios which api always return constant success constant failure
+otherwise , api return size derive key byte , constant error
+api return api
+api return valid param null
+api return application datum constant failure
+api return index constant failure
+api return constant success constant failure
+rsa key return constant
+api return constant
+api return next match bio null
+constant api return key type api error
+api return nid api error
+api return constant
+normally miss configuration file return error
+if allocation fail , pointer string api error be return
+api return error code
+api return param success constant  occur
+if nextupdate field be absent param null be return
+api return constant error npubk if successful
+api return constant indicate , handshake be suspend
+return constant if comparison be successful non constant if not
+if cipher do not have object identifi do not have support , function return api
+api return constant success constant failure
+api return constant error code
+api return servername type constant
+if -PRON- pass public key function param return success
+api return constant
+function , constant be return success , constant error
+return chain may be incomplete invalid
+if content be not type error be return
+api return pointer param structure null if lastupdate field be absent
+api return error code param see error code section full description error code
+constant be return error which abort handshake fatal internal error alert
+constant be return current certificate be unchanged
+result code be return
+option set certificate current certificate return constant
+constant be return
+typically output garbage may ultimately return padding error only
+result code be return
+api constant return constant success , constant
+attacker could use timing attack
+function already return success
+behaviour be modify error be return
+if structure indicate use algorithm , error be return
+if api be call param null param be not as previous digest use by param , error be return be not support
+error be return
+api always return error
+api return certificate param which cause error null
+callback use server side should return either constant
+error be return
+currently support content type follow value be return
+error be return
+attribute can be add use return param cms attribute utility function cms sign receipt request function
+call api . api find reason
+follow return value have meaning
+constant be return
+api be constant
+call api return value api yield constant
+call api return value api yield constant
+api always return constant
+api be constant
+api return constant success constant failure
+api return iv length constant
+api can return follow value
+api return stack certificate crl null
+api only return success
+api return success
+constant be return
+api return constant letter string indicate current state ssl object param
+api accept boolean param can relax semantic function _ if set constant api only return failure  but fail while execute command name ,  , simply return success without do anything
+call api return value api yield constant
+api return constant letter string indicate current read state ssl object param
+follow return value can occur api
+call api return value api yield constant
+call api return value api yield constant
+first item client , constant be return param
+if no match be find , first item client , constant be return param
+function return passphrase must have be supply
+api should only seldom be need application
+option be no longer implement be treat as no op
+api must be able handle api different mutex lock
+function should be call later
+application wish know key type simply call api not care actual type
+api operation could not be perform
+api be call finally api param except key set null
+function duplicate , free constant datum item must be provide , must be as be data item be insert
+ec param generation api must be call error occur
+code should use api
+use sequence api ; api ; api ; api instead api avoid failure
+alert should be follow by constant
+function must call api first
+ssl function should be call
+application not normally call api directly but instead call one algorithm specific macro
+function should be call later
+api must be call
+function be only useful server
+macro version function be only one available before openssl constant
+api must be explicitly call decrement reference count
+tls client must send session ticket extension server
+application should use api
+no operation should be perform connection api must not be call
+finally , use api actually perform prompt api find result prompt
+first thing be create ui api , add information api function
+random number generator must be seed before call api
+prng must be seed before call api
+general solution api should be use follow by api matching index various param utility function result
+api should be call determine
+prefer constant
+application wish encrypt decrypt private key should use function as api instead
+may merely be indication no data be currently available application should retry operation later
+function be currently only way store encrypt private key use der format
+application should use api instead pass offset value param instead directly manipulate param value
+be recommend use function do not depend global variable
+use api instead
+engine api be recommend way control default implementation use rand cryptographic algorithm
+application should use high level function api etc instead call blowfish function directly
+api have no effect
+use api function be discourage
+code should not assume api always succeed
+api should be call before application exit
+api should not be use program
+engine api be recommend way control default implementation use rsa cryptographic algorithm
+application should take appropriate action wait until underlie socket have accept connection retry call
+api be only useful client
+api constant value param should only be call within generation callback
+one function should be call before generate textual error message
+api must be call
+constant number generator must be seed before call api
+servername callback be execute first , follow by alpn callback
+api be deprecate only include backward compatibility openssl constant
+handshake api must be explicitly set advance use either api
+api be not reentrant
+api must be call server after client hello message client after certificate request message
+api function be only useful server side
+ui should be free use api
+param api digital signature should almost always be use preference low level api
+party must send close notify alert message use api clean shutdown
+application should free configuration application closedown by call api
+be caller responsibility free memory subsequent call api
+object must be explicitly free use api
+recommend way control default implementation be by use engine api function
+api must be call end encode operation
+api may need be retry
+change certificate , private key pair certificate need be set api before set private key api
+function api be obsolete but be retain compatibility exist code
+be important call api
+use api be strongly discourage application
+random number generator must be seed before call api
+param be need create lock
+application should generally avoid use dsa structure element directly instead use api function query modify key
+care should be take flush datum write buffer
+application should generally avoid use rsa structure element directly instead use api function query modify key
+application nee not call api after fail bio call
+random number generator must be seed before call api
+param must be initialize by call api before call function
+random number generator must be seed before call api
+application should use api
+evp api digital signature should almost always be use preference low level api
+process kekrecipientinfo type api should be call before api param set null
+application should generate dh param use openssl api application
+can be practical ask password , keep memory use several time
+low level algorithm specific function can not be use engine engine version algorithm can not be access use low level function
+api be server side function only must only be call after completion initial handshake
+implementation api must be provide
+application wish avoid should use api instead
+byte be send api operation buffer must be start
+typical application call api initially api before exit
+be necessary call either api as appropriate create curve define fp respectively
+string must be free later use api
+application should call api as appropriate after load certificate private key confirm certificate key match
+api would be well
+api openssl constant earlier could not be safely pass null pointer param
+api be only useful connection api
+api function use api underneath should be use preference standard library memory leak checking replace api function
+should consider use constant api instead manually parse option
+constant environment application must be prepare handle incomplete operation
+application should use cryptographic hash function
+never bother application retrie
+certain condition have be observe securely use stream cipher
+should be free use api
+api must be call end decode operation
+application must select session be reuse by use api function
+complete shutdown procedure must be perform
+structural reference should be release by correspond call api function
+api be support but api be not support
+should be note api can not be use server run without user interaction
+api should only be call after initial handshake have be complete
+add private key empty structure function describe api should be use
+api should be call only context create use api
+api should be call after digest context be no longer need
+after call param should not be use
+api call must be make before call function use param as param
+use cipher rsa key usual length , ephemeral key exchange must be perform , as normal key can not be directly use
+api should be call before use function error unknown algorithm occur
+bios should be remove chain use api free api until param be reach
+as result use reuse api behaviour be strongly discourage
+set constant application must however still call api
+api must be call before action take place
+function api must be call after configuration operation have be complete
+normally api function should not be call application program
+must be call initialize digest bio before datum be pass digest bio
+parallel , session form link list which be maintain separately api operation , database must not be modify directly but by use api family function
+new application should use modern algorithm as as define pkc provide by api
+after content have be write chain , api must be call finalise structure
+openssl function can not retry after partial read write
+api must not be call param , as would cause incorrect reference count program failure
+be caller responsibility ensure param be sufficiently large accommodate output datum which never be constant byte plus additional nul terminator
+setup attacker can measure time rsa decryption signature operation , blinding must be use protect rsa operation attack
+client application must provide callback function which be call client be send clientkeyexchange message server
+could be argue api should be pass next bio chain digest datum pass digest should be retrieve use separate api call
+application normally wait until necessary condition be satisfied
+typically application first decrypt appropriate param make content encrypt key available , add recipient use function as api finally encrypt content encryption key use api
+function api be legacy function which produce non standard output form
+api be recommend only compatibility exist application
+api should be call after operation use cipher be complete sensitive information do not remain memory
+api must not be call
+thus , api must be use thread perform operation , no openssl function call should appear
+application must not rely error value api but must assure write buffer be always flush first
+api must be call before param may be free by api
+however , meaningfulness result be dependent whether engine api be use , api be no longer recommend
+finally , api must be call before return function
+call api should be use non block connect bios determine
+openssl be not completely constant , unfortunately not global resource have necessary lock
+be necessary use api function correspondingly cleanup before program exit
+call process must repeat call after take appropriate action satisfy need api
+as size record may exceed maximum packet size underlie transport , may be necessary read several packet transport layer before record be complete api can succeed
+api must be call after key algorithm component be set
+call process must repeat call after take appropriate action satisfy need api
+constant function should be use preference dsapublickey function
+api be no longer recommend
+be rarely use practice be not support by api
+application be strongly advise use api preference explicitly call api , hostname check be scope constant certificate usage
+application which use configuration function directly need call api before configuration code
+application should not free param object
+be not strictly necessary generate dh key during handshake but be recommend
+application must not free data pointer api
+api be no longer recommend
+explicit call constant be need finalize case
+param should be free
+not mix verification callback describe function api function call
+should be free use api
+explicit call api be need finalize
+api be no longer recommend
+necessary amount space should be obtain by first call api pp set null , obtain size need , allocate memory call api
+call process must repeat call after take appropriate action satisfy need api
+param should be obtain initial call api flag constant set
+value return be internal pointer which must not be free after call
+application should write private key use api
+after function be call , encryption operation be finish no call api should be make
+function should be use instead directly reference field param
+list must explicitly be set use api param api specific param
+client should call api function before start handshake
+function should never be call directly
+certificate crl store be use internally should not be free until after associate param be free
+function should only be use
+certificate crl context be use internally should not be free until after associate param be free
+api must be call finalize structure
+call process must repeat call after take appropriate action satisfy need api
+callback must call api generate another -PRON- would
+modern server not support export ciphersuite be advise either use api alternatively , use callback but ignore keylength constant simply supply least constant param callback
+must be free after call
+param must not be free
+must be call before call api
+call process must repeat call after take appropriate action satisfy need api
+return pointer be internal pointer which must not be free
+must be free after call
+must be free point after operation
+datum must be read twice
+api can not handle constant socket
+api copy supply oid should be free after use
+instead select should be combine non block successive read request retry instead block
+call process must repeat call after take appropriate action satisfy need api
+contain param not increment reference count supply certificate chain must not be free after operation
+as constant implie api return internal pointer which should not be free
+function should not be use examine modify constant param
+api use internal state thus can not be use multiple file
+use serverinfo extension multiple certificate , api need be call multiple time , after time certificate be load
+api must be call after successful api operation
+not explicitly free indirectly free item before after call api , as try free thing twice may lead program failure
+api be no longer recommend
+function be only suggest use
+hash value be normally truncate power , make sure hash function return well mixed low order bit
+api be deprecate use should be avoid
+server mode , server must send list cas which accept client certificate
+application should use high level function api instead call api directly
+call should be make before cipher be actually use
+value write revtime , param nextupd by api be internal pointer which must not be free by call application
+low level algorithm specific function use be discourage
+function should not be call untrusted input
+function should be call after base cipher type be set but before key be set
+application which need finer control configuration functionality should use configuration function as api directly
+openssl function can not gracefully deal non blocking
+api be deprecate
+function be much efficient normal bignum arithmetic operation
+api verify rsa key use opaque rsa api function may need be consider
+application can catch window event , seed prng by call api be significantly well source randomness
+however , meaningfulness result be dependent whether engine api be use , function be no longer recommend
+use compression api current state be not recommend
+as result application may wish use multiple key avoid use long term key store file
+be no longer necessary use clone digest be discourage
+application may either directly specify key can supply key via callback function
+api be alias api include back compatibility constant , api be deprecate
+be currently not recommend integrate compression application
+hence , two function be no longer recommend way control default
+application may need securely establish context within which keying material be use
+random number generator must be seed before call api
+function api should only be call curve define field
+application should use high level function api etc
+server application must call api function
+however , application should not typically use
+function do not work rsa public key have only modulus public exponent element populate
+only make sense connection exact peer share setting , may fail
+function api be obsolete but be retain maintain compatibility exist code
+function typically be call after fail api call
+be responsibility function create retrieve cryptographic param maintain state
+not call function
+application should use api , avoid version specific api describe
+constant number generator must be seed before call api
+must be free point after operation
+be expect function be call application callback cb
+function should be use manipulate verification param instead legacy function which work specific structure as api
+not ask client certificate case renegotiation
+not use function
+consider use lh _ type _ doall deallocate remain entry hash table
+api be deprecate have be replace by api
+memory bios support api
+however , system , application be responsible seeding prng by call api
+user should explicitly unset callback by call api before call api
+however be sure compare library number
+api have no impact
+engine api be recommend way control default implementation use dh cryptographic algorithm
+api be almost never use application
+api have no effect
+use api instead
+PRON- should instead call api find
+application wish support multiple certificate chain may call function chain turn
+list available compression api can not be set specific constant ssl object
+api be support file bios
+engine api be recommend way control default implementation use dsa cryptographic algorithm
+attribute currently can not be store private key param structure
+copying operation should not occur after every small read large bio improve efficiency
+api call should be use appropriate action take be call fail
+lack single pass processing nee hold datum memory as mention api apply api
+can only be accomplish by either add intermediate ca certificate trust certificate store param , by add chain certificate use api function , which be only available param as whole probably can only apply one client certificate , make concept callback function questionable
+lack single pass processing nee hold datum memory as mention api apply api
+normally application be only interested whether signature verification operation be successful case api function should be use
+constant be need perform lock dynamic lock number
+relevant integer enumerate utility function should be use instead
+api be flaw must not be use application
+lack single pass processing nee hold datum memory as mention api apply api
+application should instead call api
+application rarely call function directly but function be use by openssl internally certificate validation , code
+application be encourage use api rather explicitly call api
+api should not be use
+api be deprecate openssl constant
+api return internal pointer must not be free by application program
+callback function should determine whether return ocsp response be acceptable not
+api type be undefined
+error occur , check error stack detailed error message
+constant application may crash random
+server application must provide callback function which be call server receive clientkeyexchange message client
+api be only call server session -PRON- would propose by client
+api be awkward messy use
+constant application crash random
+collision can occur
+use ephemeral rsa key exchange purpose violate standard can break interoperability client
+api go infinite loop illegal input value
+use different compression api identifi lead connection failure
+library crash
+attempt use function result error
+api perform respective action , but only read channel write channel , which can be set independently
+be possible have rsa key only work certain constant implementation , attempt change constant key can have unexpected result
+as api function , api function be not thread safe
+api only free one bio result memory leak
+handshake fail
+several function misbehave complain several function can not find algorithm
+currently api can only fail
+final block fail subsequent decrypt
+use dsa _ kinv dsa _ pair twice private key different plaintext result permanently expose dsa private key
+be possible have dsa key only work certain constant implementation , attempt change constant key can have unexpected result
+param be hint not absolute
+function use der format unencrypted key
+use socket bios instead
+follow flag be currently recognize
+currently only aes base key wrapping algorithm be support param , specifically
+param can be null , see note
+follow flag can be pass flag param
+reason be variable param be uninitialized attempt be make interpret value as param structure , typically cause segmentation violation
+follow flag can be pass flag param
+param value be one constant
+follow flag can be pass param
+be datum ssl buffer must be write underlie bio layer
+param usually be one api
+buffer param should be free use api
+follow flag can be pass param
+flag can be : constant
+complete set flag support by api be list
+param can be long name , short name numerical respresentation object
+option have no effect connection use cipher
+as automatic lookup only apply server , flag constant have no effect client
+session should be remove cache save resource
+should equal half target security level bit
+key must have be associate structure first
+option must be use prevent small subgroup attack
+after trim length datum param must be divisbile by constant
+session must be explicitly remove use api
+accept bio must be make available incoming connection
+param be null constant initialize param
+ek be array buffer public key encrypt secret key be write , buffer must contain enough room correspond encrypt key
+session -PRON- would be not security critical but must be unique server
+generation custom dh param should still be prefer stop attacker specialize commonly use group
+param value point either server client , should be copy immediately
+similar care should be take ensure datum be correct format
+api convert param format consist number length byte represent as constant number , number constant format , significant bit signal negative number
+api set internal param set close flag param should be either constant
+param run constant api _ constant
+advance value contain param be necessary save copy original allocation
+only param carry rsa , constant ec key be support by api
+extension must be pem format
+extension must consist constant extension type , constant length , length byte constant
+pem extension name must begin phrase begin serverinfo
+transparent negotiation succeed , param must have be initialize client server mode
+shutdown state ssl connection be bitmask , constant
+param be small number , typically constant
+param must be initialize api before call api
+param must point api param byte memory
+actual verification procedure be perform either use constant verification procedure use another application provide verification function set api
+param array be form set curve nid preference order
+param must point api param byte memory
+memory allocate function should be free use api function
+cipher dsa key always use ephemeral dh key as well
+certificate must be pem format must be sort
+param may be constant
+prng must be seed before call api
+fatal error be flag handshake fail
+param need be least constant byte long
+be strongly recommend not use ephemeral rsa key exchange use dhe key exchange instead
+content must be supply param
+halve bio pair should be free
+password callback , which must be provide by application , hand back password be use
+param be represent as string form host : port , host be api use port be port
+content must be supply param
+session -PRON- would context must be set by server
+param must be least constant byte
+param must use constant
+prng must be seed before call api
+param must be initialize before call api
+use temporary variable be mandatory
+api correspond api param set null
+param normally be set null
+buffer param must have space output sha variant use
+context value be leave application but must be side communication
+function api must be supply buffer long enough store octet string
+adh cipher not need certificate , but constant must have be set
+recover key length must match fix cipher length
+chain verification should arguably be perform use signing time rather current time
+param may be constant
+protocol offer little no security should not be use
+application should generally avoid use dh structure element directly instead use api function query modify key
+only currently support compression algorithm be zlib
+client certificate must only be send
+param should be array param size param
+accord spec , one should use constant byte challenge , but as mention , break server constant byte be way go
+be two type param structure be support : style old style
+param be only use detach datum usually be set null
+cipher bios not support api
+ecb mode be not suitable application
+reach constant bit security level , param should be set constant
+param must be less api
+format have severe security weakness should be avoid
+only currently support compression algorithm be zlib use nid api
+param be constant ascii string : dot decimal quad constant hexadecimal ipv constant
+timeout value param must be give second
+private key encode without param can not be load use api
+api must only be call param
+length be either constant
+param must be least constant byte long
+param should initially be set constant
+one constant must be set
+param must use constant
+long chain , client must send complete chain
+prng must be seed before use function
+instead param must point valid buffer param should be set positive value
+buffer length constant should be enough handle oid encounter practice
+string be limit constant byte
+format param certificate must be specify know type constant
+constant length constant be invalid
+mode be recommend application
+client must send information acceptable protocol level as during first hello
+value param must be constant great
+api must be pass correct recipient key certificate
+currently define standard flag be constant
+param can not be constant
+transparent negotiation succeed , param must have be initialize client server mode
+error queue data structure must be free
+param should be set null
+param must point api byte memory
+cryptographic prng must be seed unpredictable datum as mouse movement key press random by user
+api , param must not be constant
+curve be only one implementation choice , ie constant
+first byte plaintext buffer be expect be algorithm identifi byte
+param should be consider opaque field should not be modify access directly
+be not permissible perform multiple encryption use key stream
+lh _ type _ api store pointer , datum be not copy
+make sure not have expire certificate mix valid one
+public key must be rsa
+param must be free after call
+param allow maximum constant bit
+constant flag should be set
+input datum must not have be multiple constant error have occur
+underlie stream should not normally be close
+param must have param associate before call api
+format param certificate must be specify know type constant
+param should be initialize null
+acceptable value param run constant _ constant
+certificate crl must not be add cms structure
+constant sha should be use only
+prng must be seed before api be call
+flag currently support be constant , which be relevant api have user response be echo
+second password be store param , which must be least param byte
+dsa cipher can only be choose
+after call param be no longer valid
+api associate symmetric key param length param , which must be type constant
+api check if certificate subject alternative name subject commonname match specify host name , which must be encode preferred name syntax describe section constant rfc constant
+api use param as api , which must be initialize way
+key type param random number generator must be seed
+large number small write chain should be avoid
+api store representation param must be large enough hold result
+either case curve be valid discriminant must be non constant
+integer use point multiplication be constant be param
+protocol be recommend application should set option
+number round can currently only be set constant
+api must write password provide buffer param which be size param
+api place message digest param , which must have space constant byte output , erase param
+api associate private key param , which must be type constant
+param be build several apie part , param can not be move , copy store directly
+api place message digest param , which must have space constant byte output , erase param
+param structure pass private key encode function should have pkc constant private key component present
+normal condition should never be necessary set value small default , as buffer be handle dynamically only use memory actually require by datum send by peer
+element fp be integer constant , be prime number
+chain bios must not be free after call
+current thread error queue must be empty before operation be attempt , api not work reliably
+PRON- should be aware api take constant chunk constant order , which be constant platform constant one
+as generate dh param be extremely time consume , application should not generate param fly but supply param
+api place message digest param , which must have space constant byte output , erase param
+due link message digest public key algorithm correct digest algorithm must be use correct public key type
+rsa export cipher keylength constant bit rsa key require temporary constant bit rsa key , as typically supply key have length constant bit
+be important correct implementation type form curve select be use
+file descriptor bios should not be use socket
+currently param should be odd integer
+param must satisfy constant format mandate by rfc constant , ie , param format must be either yymmddhhmmssz yyyymmddhhmmssz
+function perform integrity check rsa key material , rsa key structure must contain private key datum
+advanced attribute as counter signature be not support
+context must be clean after use by call api memory leak occur
+accept bios support api but not support api
+constant must be constant , which be define as vector constant , byte string
+exactly one param flag constant must be set time
+string be return param which must have spac least param byte
+only rsa key be support pkc constant envelopeddata recipient certificate supply function must contain rsa public key
+after digest have be retrieve digest bio , digest must be reinitialize by call api before datum be pass
+after call no write bio param be allow
+num must point integer which must be initially constant
+avoid ambiguity normal positive return value , param should be set negative value , typically constant
+param must point constant byte long initialization vector
+api return , byte have be successfully write next call api must only send constant byte leave , imitate behaviour api
+param must be type sign datum envelop datum error be return
+bio be set read only state as result can not be write
+vector point by param must be constant bit length , no less
+integer must be initialize constant
+use string type as constant be strongly recommend param
+take initialization vector ivec which need be pass along next call function message
+sigret must point api byte memory
+supply area memory must be unchanged until bio be free
+param be assume be nul terminate
+purpose latter two be simulate stream cipher , , need param num , which be pointer integer current offset ivec be store call
+context must not be share thread
+param must point api byte memory
+normally reference count be not incremente session must not be explicitly free api
+param must be initialize api before call function
+unlikely even application explicitly want set no prefix must be explicitly set
+api should be call param message send window procedure
+precompute value api must not be use one signature
+should point constant byte buffer null
+constant should be enable
+implementation callback should not fill param directly
+param can not be null
+param should be public key algorithm constant as constant
+should be set null
+param be binary format , network constant iplen must be set constant ipv constant
+communication channel must already have be set assign param by set underlie bio
+param must contain enough room correspond cipher iv , as determine by constant
+ek must have room constant . byte
+param must point api byte memory
+param must point memory section large enough hold message digest
+as minimum , flag constant must be set chain be usable
+initialization vector iv should be random value
+first call should have npubk set constant should be call param set null
+api retrieve key information param which must be type constant
+otherwise can be recommend pass constant , fl equal constant param set expect length
+api retrieve certificate recipient identifi associate specific param , which must be type constant
+communication channel must already have be set assign param by set underlie bio
+param must be constant
+param should be set constant encryption constant decryption
+verification result must be set case use error member constant
+flag should only be set
+cipher context ctx should use initialisation vector iv
+param must not be null
+param must point api byte memory
+api compare -PRON- would param against keyidentifi param , which must be type constant
+datum must be read underlie bio layer operation
+hctx need be set use api
+param must be initialize api before call function
+param must be constant
+param must have be create constant before first use param function
+param must be initialize before call function
+contain param not increment reference count supply store must not be free after operation
+openssl library expect function set arbitary name , initialize iv , set cipher context ctx hash context hctx
+key type use must match param
+structure should be obtain initial call constant flag constant set case constant valid sign datum structure
+algorithm pass cipher param must support encode param
+param should be set constant encryption , constant decryption constant leave value unchanged
+param should contain sufficient room
+total amount datum encrypt decrypt must be multiple block size error occur
+file param contain old param must not be use by application
+value should be pass param
+encrypt final datum be write param which should have sufficient space one cipher block
+param must point api byte memory
+session id must be unique
+param should contain length buffer
+param should be obtain initial call api flag constant set case constant valid constantontentinfo signeddata structure
+be not recommend change constant session
+first call should have param set null should be call param set null
+param must be power constant
+be recommend use maximum constant fill byte not use code special information random datum avoid collision
+param must be constant format , describe
+client should additionally provide callback function decide return ocsp response by call api
+be job constant store information state last call
+mean param should be constante upon invocation
+param can be either constant bit size , depend number bit specify
+callback must never increase constant write location param exceed give limit
+alpn select callback param must return one constant
+otherwise should be value
+flag must be use together constant
+value param vector should be set value single protocol select param , inlen vector
+should not be free modify way
+application specific context should be supply location point by context should be contextlen byte long
+application specific label should be provide location point by label should be llen byte long
+constant flag must be include corresponding flag param creation function
+function api must only be call be trinomial form , return value param
+rsa _ must not be null
+before des key can be use , des key must be convert architecture dependent api via api function
+ivec variable be change change value need be pass next call function
+style callback param should be initialise call constant , gencb be param , callback be type int constant be void
+similary function api must only be call be pentanomial form , return value param respectively
+key combination must be set use pkey param constant must be return
+dsa _ must not be null
+file pointer bios should be open binary mode
+application must set session -PRON- would context param which be use distinguish context be store export session
+application should use flag extreme caution especially automate gateway as can leave open attack
+normally current time should be two value
+actual structure pass api must be valid populated param structure
+lh _ type _ doall lh _ type _ constant , function pointer casting should be avoid callback _ instead use macro create constant wrapper cast variable before call constant callback
+actual structure can not simply be feed empty structure as return by api
+param must be least api byte size
+application should typically use api combination flag disable negotiation via constant api
+bios not support api
+follow flag can be pass param
+control string param should be universally usable not depend detail library configuration
+param be normally set constant
+param can be long name , short name numerical representation object
+api place message authentication code param , which must have space hash function output
+follow flag be support
+follow string can occur api
+cipher iv must be set
+not bios support call
+param must be initialize before call function
+can not be share thread
+param can be follow type
+use constant byte be ok but should be ok use constant
+follow param value be support
+follow flag can be pass param
+param generate by api be not be use signature scheme
+follow flag can be pass param
+as openssl constant , option have no effect
+follow bit be significant
+param structure pass private key encode function should have private key component present
+follow flag can be pass param
+protocol datum server , constant client , constant must be constant format describe
+as , function can not be use arbitrary rsa key object
+error string have follow format
+follow flag can be pass param
+constant be enum define as follow
+mode can be combine 1,2,4 , constant
+only single delta can be use construct crl be not maintain
+cleartext signing be use , option only make sense signeddata constant be set
+maximum iv length be constant byte define evp
+mime header type be add content , only make sense
+currently only support type be constant
+ensure output buffer contain constant byte storage block , plus additional byte nul terminator
+output be always integral multiple eight byte
+set param null be not thread safe
+currently only support type be constant
+be possible set param null except param initial call supply remain param subsequent call , which have param set null
+two special value be support
+error number be store param api be call param constant
+finer control output format cert , signcert pkey param can be null constant flag set
+param field can be null top constant
+rsa cipher can only be choose
+key be sort constant byte
+peer certificate must be obtain separately use api
+maximum length param be limit constant
+list be not influence by content param capath must explicitly be set use constant family function
+param must point memory section large enough hold decrypt datum
+param must be transform binary representation
+second constant bit have low constant bit take 3rd input byte top constant bit take 4th input byte
+add pad extension ensure clienthello size be never constant byte length
+error condition be not handle must be treat use api
+only numerical form be acceptable
+least one flag must be set
+pointer must not be use longer
+application can access , modify create embed content param structure use function
+algorithm use be specify param should be nid correspond object identifier
+struct api have be define contain whatever structure be need handle lock
+rate be constant start constant bit , constant bit , constant bit , constant bit constant bit
+param denote one follow mode
+pointer response datum should be provide param , length datum should be param
+param should be type
+previous release clean param , but be no longer do api must be call free context resource
+param api message digest should almost always be use preference low level api
+api compare certificate param against param , which must be type constant
+datum be store by constant be provide param , which must have associate function duplicating , free constant datum item
+param can take value constant
+api set param time represent by string param which must be appropriate asn time format
+be only use multiline format
+default param as set by api return by api , be only use
+follow session cache mode modifier be available
+follow bug workaround option be available
+param pointer be use internally by function param should not be modify free after call
+prompt get index number which be return by api function , have be use get correspond result api
+legacy application may implicitly use param like
+api macro set rsa pss salt length param as name imply be only support pss padding
+follow mode change be available
+basic level , engine pointer be inherently structural reference _ structural reference be require use pointer value , as kind reference be guarantee structure can not be deallocate until reference be release
+content be output ber format use indefinite length constructute encode except case sign datum detach content content be absent der format be use
+currently follow param value be recognise
+follow modify option be available
+truncate constant be invalid
+seed length constant be not support
+constant return constant mask follow possible value
+as param imply , api add param internally param must not be free after call as oppose api param must be free
+be caller responsibility ensure buffer param be sufficiently large accommodate output datum
+special application can be necessary extend maximum certificate chain size allow be send by peer , see eg work internet x. constant public key infrastructure proxy certificate profile tls delegation protocol http
+pad denote one follow mode
+may lead unexpected result
+follow function may be use
+param pointer obtain api become invalid
+length session -PRON- would be constant byte
+be caller responsibility ensure buffer param be sufficiently large accommodate output datum
+reuse behaviour api be break
+misconfigure application send incorrect certificate chain often cause problem peer
+risk reuse dh param be attacker may specialize often use dh group
+race condition can occur another thread generate session -PRON- would
+set stay valid until param be remove api be call
+buffer be no longer valid after callback function have return
+constant be maximum key length cipher
+key size num constant should be consider insecure
+pass null value param use static array be not thread safe
+constant be maximum iv length cipher
+api , param may not be null
+session may be remove completely , pointer obtain become invalid
+constant be maximum block length cipher
+data format use by api have cryptographic weakness
+param be consider as untrusted certificate construction validation path signer certificate
+one param be positive
+one param be negative
+param be constant
+param be set null len be set constant
+param be usually constant
+function have no effect
+param normally be set null
+be no session available param
+as openssl constant , export cipher constant de be no longer available sslv constant
+engine simply pass core control command directly engine api handler , be upto engine reply discovery command
+length param be return negative error code
+pass null param set param constant nothing return total number curve available
+api be use set application specific datum , datum be supply param precise meaning be upto application
+api be use set application specific datum , datum be supply param precise meaning be upto application
+api be deprecate openssl constant

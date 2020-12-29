@@ -1,0 +1,1668 @@
+argument dbus_message_get_signature_apiparam_1 payload
+instead , dbusdispatchstatusfunction should simply save indication message should be dispatch later , when main loop be re_entered
+dbus_timeout_set_data_apiparam_2 be dbus_timeout_set_data_apiparam_2
+dbus_message_iter_abandon_container_if_open_apiparam_2 be sub_iterator close
+support type include support by dbus_message_append_args_apiname ; be , basic type arrays fixed_length basic type
+return array should be free dbus_free_string_array_apiname
+dbus_connection_set_route_peer_messages_apiparam_2 be true pass through message bus name set
+dbus_message_iter_close_container_apiparam_1 be append iterator
+dbus_pending_call_get_data_apiname return datum , or null if find
+match rule have maximum length dbus_maximum_match_rule_length byte
+caller own reference return message
+possible result be : dbus_release_name_reply_releas which mean -PRON- own dbus_bus_release_name_apiparam_2 or be queue , now -PRON- be queue
+note thread lock dbusconnection be hold while timeout function be invoke , so inside function -PRON- invoke method dbusconnection or deadlock
+dbus_connection_try_register_object_path_apiname return false if dbus_connection_try_register_object_path_apiparam_5 be report
+dbus_connection_unregister_object_path_apiparam_2 be delimit string dbus_connection_unregister_object_path_apiparam_2 element
+be useful primarily deal variant ; one can recurse into variant determine signature variant value
+dbus_pending_call_ref_apiname return dbus_pending_call_ref_apiparam_1 call object
+dbus_message_demarshal_apiparam_3 be location save error
+get container instance dbus_message_get_container_instance_apiparam_1 be send , or null if none
+dbus_connection_get_object_path_data_apiparam_2 be dbus_connection_get_object_path_data_apiparam_2 -PRON- registered
+dbus_message_demarshal_apiparam_2 be length dbus_message_demarshal_apiparam_1
+get underlie window or unix socket file descriptor dbus_connection_get_socket_apiparam_1 , if
+when maximum be reach , dbus_connection_set_max_received_unix_fds_apiparam_1 read more datum until message be finalize
+dbus_set_error_from_message_apiparam_1 be only set if dbus_set_error_from_message_apiparam_2 be dbus_set_error_from_message_apiparam_1 dbus_set_error_from_message_apiparam_2 , as dbus_message_type_error
+dbus_server_get_id_apiname return unique identifi dbus_server_get_id_apiparam_1 , as newly_allocated string which must be free by caller
+caller own reference bus must either close or know be close prior release reference
+set whether exit_apiname should be call when dbus_connection_set_exit_on_disconnect_apiparam_1 receive disconnect signal
+ask bus unassign give dbus_bus_release_name_apiparam_2 dbus_bus_release_name_apiparam_1 by invoke releasename method bus
+dbus_connection_set_data_apiparam_2 be dbus_connection_set_data_apiparam_2 number
+deallocate global identifi dbuspendingcall datum slot
+check whether dbus_message_has_signature_apiparam_1 have give dbus_message_has_signature_apiparam_2 ; see dbus_message_get_signature_apiname more detail what dbus_message_has_signature_apiparam_2 look like
+dbus_bus_add_match_apiparam_3 be location store error
+dbus_connection_open_apiname dbus_bus_get_apiname return share connection
+get number unix fd attach dbus_message_get_n_unix_fds_apiparam_1
+string be terminate nul nul be value dbus_type_invalid
+window -PRON- dbus_watch_get_socket_apiname get winsock socket dbus_watch_get_unix_fd_apiparam_1
+dbus_server_get_data_apiname return datum , or null if find
+more than one complete type would mean example ii or two integer sequence
+if function return false , then file descriptor still be ready reading or writing , but more memory be need order read or writing
+free memory allocate internally by libdbus reverse effect dbus_threads_init_apiname
+dbus_message_get_n_unix_fds_apiparam_1 be dbus_message_get_n_unix_fds_apiparam_1
+if -PRON- want request dbus_bus_name_has_owner_apiparam_2 , just request ; if -PRON- want avoid replace current owner , specify dbus_name_flag_replace_existing -PRON- get dbus_bus_name_has_owner_apiparam_3 if already owner
+empty but non_null dbus_message_get_path_decomposed_apiparam_2 array mean dbus_message_get_path_decomposed_apiparam_2
+function can be use runtime check type may be unknown specific d_bus client implementation version , i
+dbus_message_get_allow_interactive_authorization_apiname return whether flag control by dbus_message_set_allow_interactive_authorization_apiname have set
+dbus_message_demarshal_apiparam_1 be marshal dbusmessage
+one reason may be bus registration call asynchronously instead synchronously
+dbus_message_unref_apiname can be call as soon as method return as dbus_connection_send_apiparam_2 queue hold ref until dbus_connection_send_apiparam_2 be send
+dbus_pending_call_allocate_data_slot_apiname return false failure no memory
+dbus_timeout_get_enabled_apiname return whether dbus_timeout_get_enabled_apiparam_1 be enable or
+dbus_signature_iter_next_apiname return false if nothing more read or below level
+dbus_connection_send_with_reply_apiparam_2 be dbus_connection_send_with_reply_apiparam_2 send
+property be store even if dbus_bus_request_name_apiparam_1 be queue do become primary owner
+dbus_connection_get_windows_user_apiparam_1 be dbus_connection_get_windows_user_apiparam_1
+dbus_connection_open_private_apiparam_1 be dbus_connection_open_private_apiparam_1
+dbus_message_is_signal_apiname return true if dbus_message_is_signal_apiparam_1 be specify signal
+dbus_message_get_member_apiparam_1 be dbus_message_get_member_apiparam_1
+example : dbus_int32_t v_int32 42 ; const char v_stre hello world ; dbus_message_append_args_apiname ; append array fixed_length basic type , pass dbus_type_array typecode , element typecode , address array pointer , 32_bit integer give number element array
+dbus_message_copy_apiname return null if enough memory or unix file descriptor can be allocate
+basic type be non_container such as integer string
+dbus_message_iter_get_arg_type_apiname return argument type argument message iterator point
+return string become invalid if dbus_message_get_signature_apiparam_1 be modify , since point into wire_marshaled dbus_message_get_signature_apiparam_1 datum
+call duplicate unix file descriptor when read -PRON
+connection have file descriptor
+dbus_error_has_name_apiparam_2 be dbus_error_has_name_apiparam_2
+dbus_message_new_method_return_apiname return dbusmessage , free dbus_message_unref_apiname
+return string become invalid if dbus_message_get_sender_apiparam_1 be modify , since point into wire_marshaled dbus_message_get_sender_apiparam_1 datum
+dbus_pending_call_get_completed_apiname return true if reply have receive
+dbus_connection_steal_borrowed_message_apiparam_2 be dbus_connection_steal_borrowed_message_apiparam_2 dbus_connection_borrow_message_apiname
+if dbus_timeout_infinite be pass timeout , no timeout be set call block forever
+dbus_message_get_reply_serial_apiname return serial dbus_message_get_reply_serial_apiparam_1 be reply or # if none
+dbus_connection_get_data_apiparam_1 be dbus_connection_get_data_apiparam_1
+currently be no way match against non_string argument
+see detailed explanation docs dbus_bus_add_match_apiname
+dbus_connection_get_socket_apiparam_1 be dbus_connection_get_socket_apiparam_1
+specialised form wildcard matching argument be support path_like namespace
+if call more than once , only first call have effect
+protocol level toggle dbus_header_flag_allow_interactive_authorization
+dbus_connection_open_apiparam_2 be dbus_connection_open_apiparam_1 where dbus_connection_open_apiparam_2 can be return
+if null be pass dbus_connection_send_with_reply_apiparam_3 , dbuspendingcall still be generate internally , use track dbus_connection_send_with_reply_apiparam_2 reply timeout
+assign dbus_set_error_apiparam_1 dbus_set_error_apiparam_2 message dbuserror
+dbus_server_listen_apiname return dbusserver , or null failure
+libdbus full version number be where minor change if api be add , micro change each release series
+dbus_message_set_sender_apiparam_1 be dbus_message_set_sender_apiparam_1
+if nonnegative slot be pass , refcount be incremente slot , rather than create slot
+connection create dbus_connection_open_private_apiname or dbus_bus_get_private_apiname be keep track or reference by libdbus
+dbus_connection_try_register_fallback_apiname if may be case
+dbus_message_allocate_data_slot_apiname return false failure no memory
+if function return false , then wasn t enough memory handle dbus_timeout_handle_apiparam_1
+todo : if fail due lack memory , message be hose -PRON- have start over build whole message
+dbus_connection_try_register_object_path_apiparam_1 be dbus_connection_try_register_object_path_apiparam_1
+dbus_connection_remove_filter_apiparam_3 be user datum handler remove
+dbus_malloc_apiname return allocate memory , or null if allocation fail
+get whether dbus_connection_get_is_connected_apiparam_1 be currently open
+dbus_connection_preallocate_send_apiname return preallocate resource , or null
+dbus_message_iter_init_apiname return false if dbus_message_iter_init_apiparam_1 have no argument
+read block fixed_length value message iterator
+dbuswatchtoggledfunction notifie application watch have enable or disable
+remember null can always be pass instead dbuserror , if -PRON- care about have dbus_validate_interface_apiparam_2 dbus_validate_interface_apiparam_1 message
+remember null can always be pass instead dbuserror , if -PRON- care about have dbus_validate_path_apiparam_2 name message
+initialize dbusmessageiter append argument end dbus_message_iter_init_append_apiparam_1
+dbus_pending_call_get_completed_apiparam_1 be dbus_pending_call_get_completed_apiparam_1 call
+so example , if session bus daemon be listen unix domain socket tcp , then each modality have server identifier
+dbus_message_get_error_name_apiparam_1 be dbus_message_get_error_name_apiparam_1
+dbus_message_new_apiparam_1 be type message
+caller function own reference bus
+dbus_signature_iter_get_current_type_apiname return current type e
+dbus_connection_set_dispatch_status_function_apiparam_2 be dbus_connection_set_dispatch_status_function_apiparam_2 call dispatch status change
+if dbus_connection_get_is_anonymous_apiparam_1 be anonymous , -PRON- can dbus_connection_get_unix_user_apiname dbus_connection_get_windows_user_apiname see who be authorize as
+dbus_set_error_const_apiparam_3 be null , which mean default dbus_set_error_const_apiparam_3 be deduce dbus_set_error_const_apiparam_2
+if -PRON- cancel call , no reply be receive unless reply be already receive before -PRON- cancel
+dbus_message_has_sender_apiparam_1 be dbus_message_has_sender_apiparam_1
+dbus_connection_register_fallback_apiparam_3 be virtual table
+window , dbus_connection_set_unix_user_function_apiparam_2 be set dbus_connection_set_unix_user_function_apiparam_4 be invoke when dbus_connection_set_unix_user_function_apiparam_1 be free or dbus_connection_set_unix_user_function_apiparam_2 be set
+so if -PRON- be use array instead pointer -PRON- have create pointer variable , assign array , then take address pointer variable
+dbus_message_set_no_reply_apiparam_2 be true if no reply be desire
+obtain machine uuid machine process be run
+only valid operation such iterator be dbus_message_iter_abandon_container_if_open_apiname , which do nothing
+if pass null , do nothing
+dbus_connection_send_with_reply_and_block_apiparam_2 be dbus_connection_send_with_reply_and_block_apiparam_2 send
+dbus_server_set_watch_functions_apiparam_3 be function stop monitor descriptor
+dbus_connection_send_preallocated_apiparam_3 be dbus_connection_send_preallocated_apiparam_3 send
+dbus_type_is_fixed_apiparam_1 be either valid type_code or dbus_type_invalid
+if false be return due lack memory , failure be due false return dbus_connection_set_watch_functions_apiparam_2
+dbus_message_get_path_decomposed_apiparam_2 be place store allocate array dbus_message_get_path_decomposed_apiparam_2 component ; null set here if no dbus_message_get_path_decomposed_apiparam_2 field exist
+root be always allow connect
+if be no message dispatch , function block until can read or write , then read or write , then return
+dbus_pending_call_allocate_data_slot_apiparam_1 be address global variable storing slot
+dbus_bus_start_service_by_name_apiparam_5 be location store error
+dbus_connection_unregister_object_path_apiparam_1 be dbus_connection_unregister_object_path_apiparam_1
+dbus_message_new_method_call_apiparam_2 dbus_message_new_method_call_apiparam_4 name be null
+main implication be if -PRON- have example empty array array int32 , -PRON- can recurse into outermost array , but have no value , so -PRON- be able recurse further
+block be as dbus_connection_send_with_reply_and_block_apiname ; do enter main loop or process other message , simply wait reply question
+after unique name be set , -PRON- can get dbus_bus_get_unique_name_apiname
+dbus_message_iter_get_signature_apiparam_1 be message iterator
+dbus_set_error_apiparam_3 be null , which mean default message be deduce dbus_set_error_apiparam_2
+dbus_message_has_destination_apiparam_1 be dbus_message_has_destination_apiparam_1
+add match dbus_bus_add_match_apiparam_2 match message go through message bus
+dbus_pending_call_set_data_apiparam_1 be pending_call
+function call externally , application wrap d_bus another protocol
+dbus_connection_get_data_apiparam_2 be dbus_connection_get_data_apiparam_2 get datum
+unescape give string as dbus_address_unescape_value_apiparam_1 key value pair d_bus address
+if function fail due lack memory , return false
+dbus_message_has_interface_apiname return true if interface field header match
+deprecate former name dbus_watch_get_unix_fd_apiname
+PRON- can continue d_bus object , such as connection , be allocate prior dbus_shutdown_apiname
+create message be error reply another message
+dbus_message_iter_get_element_type_apiname return element type array message iterator point
+dbus_connection_unregister_object_path_apiname return false if enough memory
+dbus_pending_call_set_notify_apiname return false if enough memory
+usually remain across reboot , but hardware configuration change or rebuild machine could break
+think carefully about which -PRON- want give case
+dbus_message_get_no_reply_apiname return true if dbus_message_get_no_reply_apiparam_1 do expect reply
+dbus_message_new_signal_apiname return null if memory can be allocate message
+dbus_connection_add_filter_apiparam_1 be dbus_connection_add_filter_apiparam_1
+dbus_message_set_container_instance_apiparam_1 be dbus_message_set_container_instance_apiparam_1
+add message filter
+dbus_message_set_sender_apiname return false if enough memory
+machine identifier can be use create unique per_machine instance
+d_bus # or old , function must be call main thread before other thread start
+whether dbus_connection_read_write_apiparam_1 be connect
+dbus_connection_get_server_id_apiname return server identifier or null if no memory or dbus_connection_get_server_id_apiparam_1 be server_side
+free dbus_error_free_apiparam_1 set , then reinitialize dbus_error_free_apiparam_1 as dbus_error_init_apiname
+case failure , reply be error
+see dbus_message_get_path_decomposed_apiname
+dbus_signature_iter_get_current_type_apiname return current type point by iterator
+otherwise return dbusserver
+remove previously_added match dbus_bus_remove_match_apiparam_2 by value most recently_adde identical dbus_bus_remove_match_apiparam_2 get remove
+be separate state close disconnected , two term be synonymous
+dbus_bus_get_unique_name_apiname return unique name or null error
+if -PRON- know about thread app , then -PRON- need avoid use function share connection
+dbus_message_get_data_apiname dbus_message_set_data_apiname no longer be use slot
+unix file descriptor function internally duplicate descriptor -PRON- pass
+dbus_message_new_error_printf_apiparam_3 be error message format as printf ... format string argument
+guarantee free dbus_realloc_apiparam_1 return null if dbus_realloc_apiparam_2 be zero platform
+signal be identify by originate object dbus_message_new_signal_apiparam_1 , interface , dbus_message_new_signal_apiparam_3 signal
+dbus_connection_list_registered_apiparam_3 be return null terminate array child
+dbus_parse_address_apiparam_1 be dbus_parse_address_apiparam_1
+give dbus_server_set_new_connection_function_apiparam_2 be pass each connection as connection be create
+omit key dbus_bus_add_match_apiparam_2 indicate wildcard match
+fixed_length value be basic type be string_like , such as integer , bool , double
+add dbus_connection_send_apiparam_2 outgoing dbus_connection_send_apiparam_2 queue
+dbus_message_set_path_apiname return false if enough memory
+dbus_connection_pop_message_apiparam_1 be dbus_connection_pop_message_apiparam_1
+PRON- can update dbus_bus_request_name_apiparam_3 by call requestname again even if -PRON- already name
+dbus_server_set_watch_functions_apiparam_5 be dbus_server_set_watch_functions_apiparam_5 pass dbus_server_set_watch_functions_apiparam_2 dbus_server_set_watch_functions_apiparam_3
+if dbus_connection_get_is_anonymous_apiparam_1 be authenticate , function return true , if be authenticate but as anonymous user , return true
+dbus_signature_iter_recurse_apiparam_2 be iterator initialize point first child
+thus , either dbus_connection_close_apiparam_1 be close be ok drop last reference , or dbus_connection_close_apiparam_1 be open app know do have last reference
+always return false non_windows platform now , though theory someone could hook unix active directory or something
+if -PRON- want identifi identifie entire session bus , look dbus_bus_get_id_apiname instead which be just convenience wrapper around method invoke bus
+see dbus_message_append_args
+construct message invoke dbus_message_new_method_call_apiparam_4 remote object
+interface be null , which mean if multiple method give name exist be undefined which one be invoke
+get unix user identifi dbus_connection_get_unix_user_apiparam_1 if know
+dbus_message_new_signal_apiname return dbusmessage , free dbus_message_unref_apiname
+dbus_connection_try_register_fallback_apiparam_1 be dbus_connection_try_register_fallback_apiparam_1
+if function be call , d_bus library lock data structure
+dbus_message_demarshal_apiname return null if be dbus_message_demarshal_apiparam_3
+dbus_connection_read_write_apiname return true if still connect
+otherwise return number byte be demarshalle
+check whether be message outgoing message queue
+dbus_message_iter_get_signature_apiname return current signature message iterator
+dbus_bus_get_private_apiname call dbus_bus_register_apiname -PRON
+if -PRON- pass null dbus_bus_add_match_apiparam_3 , function block ; match thus be add until -PRON- flush dbus_bus_add_match_apiparam_1 , if dbus_bus_add_match_apiparam_3 adding match -PRON- find out about
+if anonymous connection be allow , however , then user identity be allow
+dbus_server_get_data_apiname dbus_server_set_data_apiname no longer be use slot
+dbus_request_name_reply_exist happen if dbus_bus_request_name_apiparam_2 have owner already caller specifie dbus_name_flag_do_not_queue either current owner have specify dbus_name_flag_allow_replacement or caller do specify dbus_name_flag_replace_existing
+dbus_connection_get_adt_audit_session_data_apiparam_2 be return location audit dbus_connection_get_adt_audit_session_data_apiparam_2
+dbus_message_iter_get_fixed_array_apiparam_2 argument should be address location store return array
+dbus_message_has_destination_apiname return true if dbus_message_has_destination_apiparam_1 have give destination dbus_message_has_destination_apiparam_2
+note just dbus_bus_get_apiname or dbus_bus_get_private_apiname instead dbus_bus_register_apiname save -PRON- pain
+dbus_message_get_interface_apiname return null if none
+dbus_server_get_data_apiparam_2 be dbus_server_get_data_apiparam_2 get datum
+if -PRON- argument match have path suffix then be consider match if argument exactly match give string or if one -PRON- end be prefix other
+match be inclusive exclusive so as long as one dbus_bus_add_match_apiparam_2 match message get through
+dbusconnection automatically set dbus_message_set_serial_apiparam_2 appropriate value when dbus_message_set_serial_apiparam_1 be send ; function be only need when encapsulating message another protocol , or otherwise bypass dbusconnection
+dbus_connection_send_apiparam_2 be dbus_connection_send_apiparam_2 write
+dbus_message_get_args_valist_apiname return false if dbus_message_get_args_valist_apiparam_2 be set
+large message result disconnect dbus_connection_set_max_message_size_apiparam_1
+see note docs dbus_connection_set_watch_functions_apiname
+dbus_realloc_apiparam_1 be block be resize
+allow check application keep reference dbus_message_lock_apiparam_1 outgoing queue change underneath -PRON
+dbus_message_set_sender_apiparam_1 bus daemon call set origin each dbus_message_set_sender_apiparam_1
+dbus_validate_error_name_apiparam_2 be dbus_validate_error_name_apiparam_1 , which must be null dbus_validate_error_name_apiparam_2 error return
+type argument can only be read dbusmessageiter however
+dbus_validate_interface_apiparam_1 be potentially invalid interface dbus_validate_interface_apiparam_1 , which must be null
+dbus_bus_get_unix_user_apiparam_3 be location store dbus_bus_get_unix_user_apiparam_3
+user be only read by server client ; client can usually get user server , because server authenticate client
+if dbus_type_is_container_apiname return false result dbus_signature_iter_get_current_type_apiname
+function be use invoke method call remote object
+dbus_message_new_signal_apiparam_2 be interface signal be emit
+dbus_bus_start_service_by_name_apiparam_3 parameter be future expansion , currently -PRON- should specify #
+normal api convention would have function return boolean value indicate whether dbus_bus_add_match_apiparam_3 be set , but would require block always determine return value
+dbus_connection_get_unix_process_id_apiname return true if uid be fill valid process identifier
+dbus_connection_try_register_object_path_apiparam_5 be address where dbus_connection_try_register_object_path_apiparam_5 can be return
+function only affect connection create after be call
+get type signature dbus_message_get_signature_apiparam_1 , i
+dbus_bus_get_apiname call dbus_bus_register_apiname -PRON
+however , after function have either succeed or fail , be valid call dbus_message_iter_abandon_container_if_open_apiname
+dbus_server_unref_apiparam_1 be dbus_server_unref_apiparam_1
+function be responsible make application main loop aware timeout
+dbuswatch can be query file descriptor watch use dbus_watch_get_unix_fd_apiname or dbus_watch_get_socket_apiname , event watch use dbus_watch_get_flags_apiname
+dbus_message_set_error_name_apiname return false if enough memory
+if dbus_message_is_signal_apiparam_1 be dbus_message_type_signal , or have different interface or member field , return false
+dbus_signature_iter_next_apiparam_1 be iterator
+dbus_message_demarshal_bytes_needed_apiname return # if be no valid datum be demarshalle , # if wasn t enough datum determine how much should be demarshalle
+implement , always set dbus_name_flag_allow_replacement when -PRON- request -PRON- application bus dbus_bus_request_name_apiparam_2
+if destination be null , just free reinit source error
+get approximate size byte message outgoing message queue
+basic type be somewhat arbitrary concept , but intent be include type be fully_specifie by single dbus_type_is_basic_apiparam_1 , no additional type information or nest value
+call exit_apiname come after handler disconnect signal run ; handler can cancel exit by call function
+qt , qtimer : : start_apiname qtimer : : stop_apiname can be use enable disable
+return user be user dbus_connection_get_windows_user_apiparam_1 authenticate as
+dbus_timeout_set_data_apiparam_1 be dbustimeout object
+dbus_watch_set_data_apiparam_2 be dbus_watch_set_data_apiparam_2
+only one own time call primary owner
+message other than reply be queue up but process
+free dbus_free_apiname only
+todo : now , if function fail due oom leave dbus_message_append_args_valist_apiparam_1 half_written -PRON- have discard dbus_message_append_args_valist_apiparam_1 start over
+function be useful determine whether dbus_message_iter_get_fixed_array_apiname be use
+thus , be possible see status dbus_dispatch_data_remain but have message yet
+function can only be call once per dbus_pending_call_steal_reply_apiparam_1 call , since reply message be tranferre caller
+dbus_set_error_const_apiparam_1 be dbus_set_error_const_apiparam_1 or null
+filter be handler be run incoming message , prior object register dbus_connection_register_object_path_apiname
+do block write dbus_connection_send_apiparam_2 network ; happen asynchronously
+dbus_connection_try_register_object_path_apiparam_3 be virtual table
+dbus_threads_init_apiparam_1 be ignore , formerly dbus_threads_init_apiparam_1 use thread
+PRON- can get machine identifi ; see dbus_try_get_local_machine_id_apiname get machine -PRON- be
+dbus_connection_set_allow_anonymous_apiparam_1 be dbus_connection_set_allow_anonymous_apiparam_1
+uuid be uuid sense rfc4122 ; detail be explain d_bus specification
+dbus_pending_call_set_data_apiparam_4 be finalizer function dbus_pending_call_set_data_apiparam_3
+exist datum store exist dbusserver object be free when server be finalize , but be retrieve only be replace if someone else reallocate slot
+dbus_message_get_args_valist_apiparam_3 be type first argument
+dbus_message_is_method_call_apiparam_3 be name check must be null
+dbus_connection_get_max_received_size_apiname return max size live message
+function can fail
+dbus_realloc_apiname return null if resize fail
+note recurse into value , type , so -PRON- can only recurse if value exist
+if -PRON- open bus dbus_bus_register_apiparam_1 dbus_connection_open_apiname or dbus_connection_open_private_apiname -PRON- have dbus_bus_register_apiname -PRON- , or make appropriate registration method call -PRON
+dbus_validate_utf8_apiparam_2 be dbus_validate_utf8_apiparam_2 return
+dbus_free_apiparam_1 be block be free
+if message omit interface , then match if dbus_bus_add_match_apiparam_2 specifie interface name
+dbus_connection_set_exit_on_disconnect_apiparam_1 be dbus_connection_set_exit_on_disconnect_apiparam_1
+dbus_timeout_handle_apiname return false if wasn t enough memory
+system bus , probably bus identifi be useful ; instead , machine identifi since be accessible without necessarily connect bus be persistent beyond single bus instance across reboot example
+check whether dbus_error_has_name_apiparam_1 be set have give dbus_error_has_name_apiparam_2
+dbus_message_has_destination_apiparam_2 be dbus_message_has_destination_apiparam_2 check must be null
+dbus_timeout_set_data_apiparam_3 be function be call free dbus_timeout_set_data_apiparam_2
+do nothing if dbus_set_error_const_apiparam_1 be null
+get type dbus_message_get_type_apiparam_1
+see comment code or http : # if -PRON- encounter issue want attempt writing patch
+thus , max live message dbus_connection_set_max_received_size_apiparam_2 can actually be exceed by up maximum dbus_connection_set_max_received_size_apiparam_2 single message
+dbus_bus_release_name_apiparam_2 be dbus_bus_release_name_apiparam_2 remove
+before use function , see documentation dbus_connection_pop_message_apiname
+look signal namelost dbus_service_dbus dbus_interface_dbus signal first argument be bus dbus_bus_request_name_apiparam_2 be lose
+dbus_message_set_path_apiparam_1 be dbus_message_set_path_apiparam_1
+dbus_message_iter_get_arg_type_apiname return argument type
+dbus_watch_get_socket_apiname return socket be watch , unix return # if -PRON- transport be socket_bas so dbus_watch_get_unix_fd_apiname be prefer
+exist datum store exist dbuspendingcall object be free when dbuspendingcall be finalize , but be retrieve only be replace if someone else reallocate slot
+when service represent application , say text editor , then should specify dbus_name_flag_allow_replacement if want last editor start be user editor vs. first one start
+dbus_connection_set_exit_on_disconnect_apiparam_2 be true if exit_apiname should be call after disconnect signal
+if -PRON- ignore false return , -PRON- application spin busy loop file descriptor until memory become available , but nothing more catastrophic should happen
+dbus_message_ref_apiparam_1 be dbus_message_ref_apiparam_1
+block until dbus_pending_call_block_apiparam_1 call be complete
+dbus_validate_path_apiparam_1 be potentially invalid object dbus_validate_path_apiparam_1 , which must be null
+todo : add dbus_gnuc_printf dbus_message_new_error_printf_apiparam_1 be original message
+dbus_bus_get_apiparam_2 be address where dbus_bus_get_apiparam_2 can be return
+dbus_connection_get_adt_audit_session_data_apiparam_3 be return location length audit dbus_connection_get_adt_audit_session_data_apiparam_2
+check member dbus_validate_member_apiparam_1 validity
+return value indicate whether dbus_set_error_from_message_apiparam_1 be set dbus_set_error_from_message_apiparam_1 be set if only if dbus_set_error_from_message_apiparam_2 be dbus_set_error_from_message_apiparam_1 message
+dbus_set_error_const_apiparam_2 be dbus_set_error_const_apiparam_1 dbus_set_error_const_apiparam_2 copy
+if dbus_message_has_sender_apiparam_1 have no sender specify or have different sender , return false
+alternatively , be macro dbus_major_version , dbus_minor_version , dbus_micro_version , dbus_version which allow -PRON- test version -PRON- be compile against
+get interface member invoke or emit dbus_message_type_signal
+dbus_connection_can_send_type_apiname return true if dbus_connection_can_send_type_apiparam_2 be send via dbus_connection_can_send_type_apiparam_1
+so int32 should be const dbus_int32_t return dbus_message_iter_get_fixed_array_apiparam_2 be by reference should be free
+dbus_connection_ref_apiparam_1 be dbus_connection_ref_apiparam_1
+utility function convert d_bus message dbus_message_type_to_string_apiparam_1 into machine_readable string translate
+example qt -PRON- may store qtimer dbus_timeout_set_data_apiparam_1 glib -PRON- may store g_timeout_add result identifier
+should only be call if dbus_connection_free_preallocated_send_apiparam_2 resource be use send message
+dbus_bus_start_service_by_name_apiparam_1 be dbus_bus_start_service_by_name_apiparam_1
+dbus_validate_bus_name_apiname return true if dbus_validate_bus_name_apiparam_1 be valid
+get object path dbus_message_get_path_apiparam_1 be send or emit dbus_message_type_signal
+warning while function block call thread be process incoming dbus_connection_send_with_reply_and_block_apiparam_2 queue
+dbus_bus_release_name_apiparam_3 be location store dbus_bus_release_name_apiparam_3
+dbus_message_has_path_apiparam_2 be dbus_message_has_path_apiparam_2 name
+dbus_message_get_reply_serial_apiparam_1 be dbus_message_get_reply_serial_apiparam_1
+dbus_message_iter_open_container_apiparam_1 be append iterator
+dbus_server_get_is_connected_apiname return true if dbus_server_get_is_connected_apiparam_1 be still listen connection
+dbus_connection_set_timeout_functions_apiparam_3 be function remove timeout
+interface name must contain only valid character as define d_bus specification
+if iterator be point type code such as , then be return directly
+when use qt , typically dbusaddwatchfunction would create qsocketnotifier
+free dbus_connection_free_preallocated_send_apiparam_2 message_sending resource dbus_connection_preallocate_send_apiname
+dbus_message_iter_get_element_count_apiparam_1 be iterator
+dbus_connection_ref_apiname return dbus_connection_ref_apiparam_1
+set interact available authorization mechanism see dbus_server_set_auth_mechanisms_apiname
+append variable_length basic type , or more complex value , -PRON- have iterator rather than function
+so int32 , double , bool , etc
+client can connect anonymously
+dbus_connection_get_unix_process_id_apiname return true if dbus_connection_get_unix_process_id_apiparam_2 be fill
+dbus_server_allocate_data_slot_apiname return false no memory
+if dbus_connection_get_server_id_apiparam_1 be server side , always return null dbus_server_get_id_apiname get identifi -PRON- server , if -PRON- be server side
+dbus_pending_call_set_data_apiname return true if be enough memory store dbus_pending_call_set_data_apiparam_3
+dbus_connection_get_max_message_size_apiname return max size single message
+store pointer dbusconnection , along optional function be use free dbus_connection_set_data_apiparam_3 when dbus_connection_set_data_apiparam_3 be set again , or when dbus_connection_set_data_apiparam_1 be finalize
+be bug call function dbus_connection_unregister_object_path_apiparam_2 be register
+rule argument be stre form match dbus_bus_remove_match_apiparam_2
+feature be use instead simply watch because can be do without memory allocation
+function be thread_safe , because alter environment unix be thread_safe general
+if queue be empty , return null
+set predicate dbus_connection_set_windows_user_function_apiparam_2 use determine whether give user identifi be allow connect
+dbus_malloc_apiname return null if allocation fail
+store pointer dbuspendingcall , along optional function be use free dbus_pending_call_set_data_apiparam_3 when dbus_pending_call_set_data_apiparam_3 be set again , or when dbus_pending_call_set_data_apiparam_1 call be finalize
+however , when parser encounter container type start character such as structure , correspond type container be return , e
+dbus_message_get_path_apiparam_1 be dbus_message_get_path_apiparam_1
+function call dbus_connection_set_exit_on_disconnect_apiname connection , so application exit if connection close
+dbus_signature_iter_recurse_apiparam_1 be current interator
+see dbus_connection_read_write_dispatch_apiname
+initialize dbus_message_iter_init_closed_apiparam_1 as if dbus_message_iter_init_close
+set interface dbus_message_set_member_apiparam_2 invoke or emit dbus_message_type_signal
+dbus_pending_call_get_data_apiparam_2 must still be allocate must have free
+dbus_connection_get_is_anonymous_apiparam_1 be dbus_connection_get_is_anonymous_apiparam_1
+if open fail , function return null , provide reason failure dbus_connection_open_private_apiparam_2 parameter
+if iterator be end message , return dbus_type_invalid
+escape give string as dbus_address_escape_value_apiparam_1 key value pair d_bus address
+initialize thread
+path must contain only valid character as define d_bus specification
+list be terminate dbus_type_invalid
+guarantee return null if dbus_malloc0_apiparam_1 be zero platform
+dbus_connection_preallocate_send_apiparam_1 be dbus_connection_preallocate_send_apiparam_1 -PRON- re preallocate
+timer interval change whenever timeout be add , remove , or toggle
+purpose dbus_shutdown_apiname be allow application get clean output memory leak checker
+dbus_connection_get_max_received_size_apiparam_1 be dbus_connection_get_max_received_size_apiparam_1
+dbus_message_new_signal_apiparam_3 be dbus_message_new_signal_apiparam_3 signal
+dbus_set_error_apiparam_2 be dbus_set_error_apiparam_1 dbus_set_error_apiparam_2
+return value indicate whether disconnect message have process , whether dbus_connection_read_write_dispatch_apiparam_1 be connect
+dbus_message_get_auto_start_apiname return true if dbus_message_get_auto_start_apiparam_1 cause owner destination name be auto_starte
+if dbus_connection_read_write_apiparam_1 be closed , function return false
+if more argument than request be present , request argument be return extra argument be ignore
+dbus_connection_allocate_data_slot_apiname return false failure no memory
+dbus_message_new_error_apiparam_1 be message -PRON- re reply
+PRON- close share dbus_connection_close_apiparam_1
+dbus_pending_call_set_notify_apiparam_4 be dbus_pending_call_set_notify_apiparam_2 free user datum
+should be free dbus_free_apiname
+function return result code
+single call dbus_connection_dispatch_apiname process most one message ; clear entire message queue
+dbus_set_error_apiparam_1 be null
+note -PRON- need check iterator point array prior use function
+dbus_malloc_apiname memory be safe free regular free_apiname c library
+dbus_validate_path_apiname return true if dbus_validate_path_apiparam_1 be valid
+dbus_validate_utf8_apiname return true if dbus_validate_utf8_apiparam_1 be valid utf_8
+variant , dbus_message_iter_open_container_apiparam_3 should be dbus_message_iter_open_container_apiparam_2 single value inside variant
+if normal reply be receive , be return , remove incoming dbus_connection_send_with_reply_and_block_apiparam_2 queue
+dbus_connection_get_adt_audit_session_data_apiname return true if audit dbus_connection_get_adt_audit_session_data_apiparam_2 be fill valid ucred pointer
+register handler give dbus_connection_register_object_path_apiparam_2 object hierarchy
+if dbus_connection_set_windows_user_function_apiparam_2 be set null , then only user owning server process be allow connect
+be important note because every time message be receive application be page into memory process
+only reason function be re_implement equivalent dbus_bus_register_apiname -PRON
+dbus_message_set_interface_apiparam_2 be interface or null unset
+if resize fail , dbus_realloc_apiparam_1 be free
+dbus_connection_register_object_path_apiparam_1 be dbus_connection_register_object_path_apiparam_1
+like dbus_message_append_args_apiname but take va_list by language binding
+dbus_connection_open_apiparam_1 be dbus_connection_open_apiparam_1
+dbus_dispatch_complete indicate incoming queue be empty
+read or write file descriptor , or try select_apiname ; dbuswatch main loop integration
+open , dedicated connection remote dbus_connection_open_private_apiparam_1
+dbus_validate_interface_apiname return true if dbus_validate_interface_apiparam_1 be valid
+dbus_message_set_container_instance_apiname return false if enough memory
+if array element be fix size , -PRON- have recurse into array dbus_message_iter_recurse_apiname read element one by one
+note peer application always have unique dbus_message_has_sender_apiparam_2 connection as sender
+get reply , or return null if none have receive yet
+however , message bus want be able route method interface through bus other application
+get flag dbuswatchflag indicate what condition should be monitor file descriptor
+dbus_error_has_name_apiparam_1 be dbus_error_has_name_apiparam_1
+cancel dbus_pending_call_cancel_apiparam_1 call , such reply or error receive just be ignore
+function behave exactly like dbus_connection_set_watch_functions_apiname ; see documentation routine
+dbus_bus_register_apiparam_2 be place store error
+retrieve datum previously set dbus_server_set_data_apiname
+if something else go wrong , result be set whatever be appropriate , such as dbus_error_no_memory or dbus_error_disconnected
+dbus_watch_handle_apiparam_2 be poll condition use dbuswatchflag value
+dbus_address_escape_value_apiname return newly_allocated escape dbus_address_escape_value_apiparam_1 or null if no memory
+if -PRON- be implement dbus_message_set_sender_apiparam_1 bus daemon -PRON- should need set dbus_message_set_sender_apiparam_2
+dbus_realloc_apiparam_2 be size dbus_realloc_apiparam_1 block
+undefined behavior result if -PRON- invoke function when current type iterator be dbus_type_array
+dbus_watch_get_enabled_apiparam_1 be dbuswatch object
+return true if argument be valid dbus_type_is_valid_apiparam_1
+dbus_connection_set_data_apiparam_1 be dbus_connection_set_data_apiparam_1
+dbus_connection_set_watch_functions_apiparam_3 be function stop monitor descriptor
+dbus_connection_can_send_type_apiparam_2 be dbus_connection_can_send_type_apiparam_2 check
+append basic type , specify type code follow by address value
+if -PRON- dbus_bus_get_apiname or dbus_bus_get_private_apiname function be call -PRON
+dbus_server_set_data_apiname return true if be enough memory store dbus_server_set_data_apiparam_3
+function block until authentication bus registration be complete
+dbus_bus_name_has_owner_apiparam_3 be location store error
+dbus_watch_handle_apiparam_1 be dbuswatch object
+dbus_connection_allocate_data_slot_apiparam_1 be address global variable storing slot
+queue dbus_connection_send_with_reply_apiparam_2 send , as dbus_connection_send_apiname , but return dbuspendingcall use receive reply dbus_connection_send_with_reply_apiparam_2
+dbus_connection_send_with_reply_and_block_apiparam_1 be dbus_connection_send_with_reply_and_block_apiparam_1
+process incoming datum
+dbus_address_entry_get_value_apiname return value dbus_address_entry_get_value_apiparam_2 dbus_address_entry_get_value_apiparam_1
+dbus_connection_set_watch_functions_apiparam_4 be function notify
+dbus_address_entry_get_value_apiparam_2 be dbus_address_entry_get_value_apiparam_2
+decrement reference count dbus_pending_call_unref_apiparam_1 call , free if count reach # dbus_pending_call_unref_apiparam_1 be dbus_pending_call_unref_apiparam_1 call object
+dbus_bus_get_unix_user_apiparam_2 be dbus_bus_get_unix_user_apiparam_2 own by dbus_bus_get_unix_user_apiparam_1
+path , interface , signal dbus_message_new_signal_apiparam_3 must be valid d_bus specification define syntax field
+check type dbus_signature_validate_apiparam_1 validity
+dbus_error_has_name_apiname return true if give name dbus_error_has_name_apiparam_1 occur
+dbus_validate_member_apiname return true if dbus_validate_member_apiparam_1 be valid
+reason be -PRON- know dbus_connection_set_max_received_size_apiparam_2 message until after -PRON- read
+append basic_type dbus_message_iter_append_basic_apiparam_3 message
+dbus_connection_get_max_message_unix_fds_apiparam_1 be dbus_connection_get_max_message_unix_fds_apiparam_1
+dbus_message_get_n_unix_fds_apiname return number file descriptor
+if dbus_message_is_method_call_apiparam_1 be dbus_message_type_method_call , or have different interface or member field , return false
+dbus_bus_request_name_apiparam_1 be dbus_bus_request_name_apiparam_1
+dbus_server_set_new_connection_function_apiparam_2 be dbus_server_set_new_connection_function_apiparam_2 handle connection
+however , -PRON- can always dbus_message_iter_recurse_apiname , even fixed_length type ; dbus_message_iter_get_fixed_array_apiname be just optimization
+dbus_message_set_member_apiparam_2 be dbus_message_set_member_apiparam_2 or null unset
+dbus_connection_get_data_apiname return datum , or null if find
+dbus_connection_try_register_object_path_apiparam_2 be delimit string dbus_connection_try_register_object_path_apiparam_2 element
+dbus_message_new_method_call_apiname return dbusmessage , free dbus_message_unref_apiname
+process incoming message queue , dbus_connection_dispatch_apiname or dbus_connection_pop_message_apiname
+check dbus_validate_error_name_apiparam_2 dbus_validate_error_name_apiparam_1 validity
+if -PRON- match message arg only stre argument match
+PRON- have know nobody be use libdbus -PRON- application process before -PRON- can call dbus_shutdown_apiname
+dbus_message_has_member_apiparam_1 be dbus_message_has_member_apiparam_1
+dbus_connection_set_change_sigpipe_apiparam_1 be true allow sigpipe be set sig_ign
+if -PRON- dbus_connection_unref_apiname last time without close dbus_connection_close_apiparam_1 , result be undefined ; be bug -PRON- program libdbus try print warning
+value argument should be address array
+be useful when use match dbus_bus_add_match_apiparam_2 key introduce recent version d_bus , like arg0namespace , allow application fall back less efficient match rule support by old version daemon if run version be enough ; or when use user_supplied rule rather than rule hard_code compile time
+be bug call function object path which already have handler
+dbus_message_iter_get_element_count_apiname return number element array_typed value point by iterator
+can only be call once per dbus_bus_set_unique_name_apiparam_1
+dbus_connection_get_server_id_apiparam_1 be dbus_connection_get_server_id_apiparam_1
+memory must be release dbus_free_apiname
+function block until registration be complete
+flag be false by default ; be , by default other end be expect make authorization decision non_interactively promptly
+method be fully document d_bus specification
+dbus_connection_send_apiparam_2 dbus_connection_send_apiparam_3 be use by remote application send reply ; see dbus_message_get_serial_apiname or d_bus specification
+rule be specify as string comma separate pair
+warning : dbus_shutdown_apiname be thread safe , must be call while no other thread be use d_bus
+dbus_message_get_data_apiparam_2 be dbus_message_get_data_apiparam_2 get datum
+set predicate dbus_connection_set_unix_user_function_apiparam_2 use determine whether give user identifi be allow connect
+set message dbus_message_set_destination_apiparam_2
+dbus_message_get_auto_start_apiparam_1 be dbus_message_get_auto_start_apiparam_1
+if iterator move forward , return true
+if dbus_pending_call_block_apiparam_1 call be already complete , function return immediately
+call dbus_connection_dispatch_apiname recursively
+function block if call during dbus_connection_dispatch_apiname
+if false be return net result should be dbus_connection_set_watch_functions_apiname have no effect , but dbus_connection_set_watch_functions_apiparam_2 dbus_connection_set_watch_functions_apiparam_3 have call
+can unregister both fallback path object path
+dbus_message_allocate_data_slot_apiparam_1 be address global variable storing slot
+dbus_message_iter_append_basic_apiparam_1 be append iterator
+always return true type , exception dbus_type_unix_fd
+get destination dbus_message_get_destination_apiparam_1 or null if be none set
+side effect be -PRON- need know reference hold dbus_connection_set_data_apiparam_1 while invoke dbus_connection_set_data_apiname , or dbus_connection_set_data_apiparam_1 could be finalize during dbus_connection_set_data_apiname
+be absolutely no requirement call dbus_shutdown_apiname fact , most application bother should feel guilty
+most connection be share
+check whether dbus_error_is_set_apiparam_1 occur dbus_error_is_set_apiparam_1 be set
+dbus_message_set_reply_serial_apiparam_2 be serial -PRON- re reply
+dbus_message_get_destination_apiname return dbus_message_get_destination_apiparam_1 destination or null
+dbus_connection_get_unix_user_apiname return true if dbus_connection_get_unix_user_apiparam_2 be fill
+todo : could be optimize by use len dbus_message_get_path_decomposed_apiparam_1 instead call strlen_apiname again dbus_message_get_path_decomposed_apiparam_1 be dbus_message_get_path_decomposed_apiparam_1
+dbus_connection_get_unix_process_id_apiparam_1 be dbus_connection_get_unix_process_id_apiparam_1
+dbus_release_name_reply_not_owner which mean someone else own dbus_bus_release_name_apiparam_2 so -PRON- can release
+message whose type be dbus_message_type_method_call , flag be meaningless should be set
+get whether dbus_connection_get_is_authenticated_apiparam_1 be authenticate
+function be intend application want write main loop deal dbuswatch dbustimeout
+dbus_server_get_address_apiparam_1 be dbus_server_get_address_apiparam_1
+ask bus assign give dbus_bus_request_name_apiparam_2 dbus_bus_request_name_apiparam_1 by invoke requestname method bus
+connection create dbus_connection_open_apiname or dbus_bus_get_apiname be share
+intend by dbusaddwatchfunction dbusremovewatchfunction store dbus_watch_set_data_apiparam_2
+so -PRON- can function see whether sender own well_known dbus_message_has_sender_apiparam_2
+pass null if -PRON- care about dbus_bus_start_service_by_name_apiparam_4
+dbus_connection_read_write_dispatch_apiname dispatch incoming message -PRON- ; dbus_connection_read_write_apiname -PRON- have arrange drain incoming queue -PRON
+be sure -PRON- have somehow check dbus_message_iter_get_arg_type_apiname match type -PRON- be expect recurse into
+dbus_connection_free_preallocated_send_apiparam_1 be dbus_connection_free_preallocated_send_apiparam_1
+dbus_connection_add_filter_apiparam_3 be user data pass dbus_connection_add_filter_apiparam_2
+allow app create future guarantee can send message regardless memory shortage
+call dbus_timeout_get_enabled_apiname check
+function should only be use if dbus_type_is_fixed_apiname return true element type
+set name error dbus_message_type_error
+dbus_server_set_watch_functions_apiparam_2 be function begin monitor descriptor
+preallocate resource need send message , allow message be send without possibility memory allocation failure
+dbus_connection_get_unix_fd_apiparam_2 be return location file descriptor
+as result , be sufficient call function library or plugin , unless library or plugin impose similar requirement caller
+dbus_connection_get_unix_user_apiparam_1 be dbus_connection_get_unix_user_apiparam_1
+string d_bus must be valid utf_8
+return string become invalid if dbus_message_get_container_instance_apiparam_1 be modify , since point into wire_marshaled dbus_message_get_container_instance_apiparam_1 datum
+function return true dbus_type_unix_fd only system know unix file descriptor can send -PRON- via choose transport when remote side support
+pop message manually be only useful simple program share dbusconnection library or other module
+dbus_message_set_data_apiparam_1 be dbus_message_set_data_apiparam_1
+addition identifi each bus identifi each machine , be identifi each address bus be listen ; can be retrieve dbus_connection_get_server_id_apiname , though be probably useful
+dbus_threads_init_default_apiname return true success , false if enough memory
+call notify d_bus library when previously_added dbus_watch_handle_apiparam_1 be ready reading or writing , or have exception such as hangup
+dbus_dispatch_data_remain indicate message queue contain message
+dbus_message_get_path_apiname return path or null
+protocol level toggle dbus_header_flag_no_auto_start dbus_message_set_auto_start_apiparam_1 be dbus_message_set_auto_start_apiparam_1
+dbus_watch_get_unix_fd_apiparam_1 be dbuswatch object
+only call if dbus_connection_return_message_apiparam_2 dbus_connection_borrow_message_apiname be non null
+dbus_connection_try_register_fallback_apiparam_4 be data pass function dbus_connection_try_register_fallback_apiparam_3
+unlike other two dbus_bus_request_name_apiparam_3 , dbus_name_flag_replace_existing be property individual requestname call , i
+tell -PRON- whether value type can change length if -PRON- set -PRON- other value
+purpose , -PRON- assume first byte old value would be location , so alignment padding be factor
+fixed_length type be basic type be string_like
+bus compare match rule semantically , textually , so whitespace ordering have be identical dbus_bus_remove_match_apiparam_2 -PRON- pass dbus_bus_add_match_apiname
+dbus_validate_bus_name_apiparam_1 be potentially invalid bus dbus_validate_bus_name_apiparam_1 , which must be null
+dbus_connection_get_max_message_size_apiparam_1 be dbus_connection_get_max_message_size_apiparam_1
+dbus_pending_call_ref_apiparam_1 be dbus_pending_call_ref_apiparam_1 call object
+dbus_request_name_reply_primary_owner mean dbus_bus_request_name_apiparam_2 have no exist owner , caller be now primary owner ; or dbus_bus_request_name_apiparam_2 have owner , caller specify dbus_name_flag_replace_existing , current owner specify dbus_name_flag_allow_replacement
+so dbus_message_get_path_decomposed_apiparam_2 become foo , bar , null dbus_message_get_path_decomposed_apiparam_2 become null
+block until outgoing message queue be empty
+dbus_request_name_reply_in_queue happen only if caller do specify dbus_name_flag_do_not_queue either current owner do specify dbus_name_flag_allow_replacement or caller do specify dbus_name_flag_replace_existing
+dbus_server_get_is_connected_apiparam_1 be dbus_server_get_is_connected_apiparam_1
+dbus_bus_add_match_apiparam_2 be textual form match dbus_bus_add_match_apiparam_2
+do modify server reference count
+dbus_connection_register_fallback_apiparam_2 be delimit string dbus_connection_register_fallback_apiparam_2 element
+dbus_connection_get_is_authenticated_apiparam_1 be dbus_connection_get_is_authenticated_apiparam_1
+toggle function be null if main loop re_queries dbus_watch_get_enabled_apiname every time anyway
+dbus_connection_set_windows_user_function_apiparam_3 be dbus_connection_set_windows_user_function_apiparam_3 pass predicate
+flag be false by default , be by default other end be require reply
+attempt send message after close dbus_connection_close_apiparam_1 be safe , but result error reply generate locally libdbus
+dbus_bus_get_private_apiname return dbusconnection ref
+dbus_pending_call_steal_reply_apiname return reply message or null
+allocate integer identifier be use store application_specific datum dbusserver
+if remote application have machine identifi as one return by function , then remote application be machine as -PRON- application
+dbus_connection_get_outgoing_size_apiname return number byte have queue up but send
+releasename method be canonically document d_bus specification
+use keep dbus_connection_steal_borrowed_message_apiparam_2 after peek use dbus_connection_borrow_message_apiname
+todo : if append argument fail due lack memory , dbus_message_iter_init_append_apiparam_1 be hose -PRON- have start over build whole dbus_message_iter_init_append_apiparam_1
+dbus_message_get_path_decomposed_apiname return false if no memory allocate array
+because array be copy , function run constant time be fast ; be much prefer over walk entire array iterator
+dbus_signature_validate_apiname return true if dbus_signature_validate_apiparam_1 be valid or false if dbus_signature_validate_apiparam_2 be set
+set dbus_timeout_set_data_apiparam_2 which can be retrieve dbus_timeout_get_data_apiname
+if flag be set , be no way know whether dbus_message_set_no_reply_apiparam_1 successfully arrive remote end
+dbus_server_set_data_apiparam_4 be finalizer function dbus_server_set_data_apiparam_3
+if # be pass timeout , sane default timeout be use
+dbus_message_iter_get_array_len_apiname return number byte array as marshal wire protocol
+send dbus_connection_send_preallocated_apiparam_3 use dbus_connection_send_preallocated_apiparam_2 resource
+dbus_message_new_signal_apiparam_1 be dbus_message_new_signal_apiparam_1 object emit signal
+allocate identifier then be use dbus_server_set_data_apiname dbus_server_get_data_apiname
+dbus_bus_request_name_apiname return result code , # if dbus_bus_request_name_apiparam_4 be set
+dbus_connection_send_with_reply_apiparam_3 be return location dbuspendingcall object , or null if dbus_connection_send_with_reply_apiparam_1 be disconnected or when -PRON- try send unix file descriptor dbus_connection_send_with_reply_apiparam_1 do support -PRON
+dbus_server_get_data_apiparam_1 be dbus_server_get_data_apiparam_1
+dbus_message_iter_append_basic_apiname return false if enough memory
+dbus_message_iter_get_fixed_array_apiparam_3 be number element block
+dbus_message_iter_get_signature_apiname return contain signature , or null if out memory
+unlike dbus_message_iter_abandon_container_apiname , be valid call function iterator be initialize dbus_message_iter_init_close , or iterator be already close or abandon
+dbus_server_set_new_connection_function_apiparam_3 be dbus_server_set_new_connection_function_apiparam_3 pass connection handler
+dbus_type_is_fixed_apiname return false if type can occupy different length
+dbus_message_marshal_apiparam_1 be dbusmessage
+dbus_connection_set_allow_anonymous_apiparam_2 be whether allow authentication as anonymous user
+dbus_message_iter_init_append_apiparam_2 be pointer iterator initialize
+dbus_bus_get_apiname return dbusconnection ref or null dbus_bus_get_apiparam_2
+timeout stop fire when be remove give dbus_connection_set_timeout_functions_apiparam_3
+dbus_message_set_allow_interactive_authorization_apiparam_2 be true if interactive authorization be acceptable
+dbus_connection_set_timeout_functions_apiparam_1 be dbus_connection_set_timeout_functions_apiparam_1
+when use glib , would call g_main_context_wakeup_apiname
+identifi be normally use by client tell when two dbusconnection would be equivalent because dbus_server_get_id_apiparam_1 address pass dbus_connection_open_apiname have guid two case
+message be lock when enter outgoing queue , library complain if dbus_message_lock_apiparam_1 be modify while lock
+dbus_pending_call_cancel_apiparam_1 be dbus_pending_call_cancel_apiparam_1 call
+give dbus_connection_register_fallback_apiparam_3 handle message or below give dbus_connection_register_fallback_apiparam_2
+dbus_connection_send_apiparam_1 be dbus_connection_send_apiparam_1
+dbus_pending_call_set_notify_apiparam_2 be notifi dbus_pending_call_set_notify_apiparam_2
+skip next value level
+creator connection be responsible call dbus_connection_close_apiname prior release last reference , if dbus_connection_close_apiparam_1 be already disconnect
+dbus_message_set_member_apiparam_2 name must contain only valid character as define d_bus specification
+move error dbus_move_error_apiparam_1 into dbus_move_error_apiparam_2 , free dbus_move_error_apiparam_1 overwrite dbus_move_error_apiparam_2
+share connection multithreade application , -PRON- can really make registration call -PRON- , because -PRON- know whether other thread be register , bus kick -PRON- off if -PRON- send two registration message
+dbus_connection_get_is_connected_apiparam_1 become disconnected when remote application close end , or exit ; dbus_connection_get_is_connected_apiparam_1 be disconnect dbus_connection_close_apiname
+disabled timeout should have no effect , enable timeout should be add main loop
+security reason , -PRON- can match argument only up dbus_maximum_match_rule_arg_number
+dbus_connection_get_object_path_data_apiname return false if enough memory
+message count toward maximum until be finalize
+dbus_address_escape_value_apiparam_1 be unescaped dbus_address_escape_value_apiparam_1
+dbus_setenv_apiparam_2 be dbus_setenv_apiparam_2 environment variable , or null unset
+example , if iterator be point start ii , then would be return
+when byte be parse , add up entire message
+machine identifier be prefer over machine hostname , because hostname be frequently set change runtime
+dbus_connection_return_message_apiparam_2 be dbus_connection_return_message_apiparam_2 dbus_connection_borrow_message_apiname
+dbus_message_append_args_valist_apiparam_3 be value first argument , then list pair
+if passed_in slot be 1 , be assume be already allocate , refcount be incremente
+dbus_message_set_container_instance_apiparam_2 be path or null unset
+deallocate global identifi connection data slot
+iterator must currently be inside array_typed value
+dbus_set_error_apiparam_3 be printf_style dbus_set_error_apiparam_3 string
+see comment code or http : # if -PRON- encounter issue want attempt writing patch
+dbus_message_get_member_apiname return member name or null
+re_requesting dbus_bus_request_name_apiparam_2 be useful if -PRON- want change dbus_name_flag_allow_replacement or dbus_name_flag_do_not_queue setting
+dbus_message_new_error_apiname return error message object , free dbus_message_unref_apiname
+be important because even after disconnect , -PRON- want process message -PRON- receive prior disconnect
+dbus_connection_send_preallocated_apiparam_1 be dbus_connection_send_preallocated_apiparam_1
+dbus_server_set_watch_functions_apiparam_4 be function notify when watch be
+PRON- must free memory release reference count return -PRON- by libdbus prior call dbus_shutdown_apiname
+be often easy avoid explicitly start service , just send method call service bus dbus_bus_start_service_by_name_apiparam_2 instead
+once return , message be hose -PRON- have start over build whole message
+dbus_connection_set_unix_user_function_apiparam_2 be predicate
+dbus_server_get_address_apiname return address or null if no memory
+if incoming raw datum have yet parse , be parse , which or result add message incoming queue
+dbus_connection_flush_apiname block until outgoing message have write underlie transport such as socket
+return string become invalid if dbus_message_get_interface_apiparam_1 be modify , since point into wire_marshaled dbus_message_get_interface_apiparam_1 datum
+example be type ignal , sender , interface , member foo , path , destination : possible key -PRON- can match be type , sender , interface , member , path , destination number key match message arg key be arg0 , arg1 , etc
+dbus_connection_unref_apiparam_1 be dbus_connection_unref_apiparam_1
+so int32 should be dbus_int32_t string const char
+force dbus_connection_send_apiparam_2 be write , call dbus_connection_flush_apiname however be necessary call dbus_connection_flush_apiname by hand ; dbus_connection_send_apiparam_2 be send next time main loop be run
+dbus_address_entry_get_method_apiname return method string address dbus_address_entry_get_method_apiparam_1
+check object dbus_validate_path_apiparam_1 validity
+must be first thing application do when connect message bus
+particular , result processing special disconnected signal , which result call exit_apiname , unless -PRON- have use dbus_connection_set_exit_on_disconnect_apiname disable behaviour
+remember dbusserver represent only one mode connect , so e
+dbus_signature_validate_apiparam_1 be potentially invalid type dbus_signature_validate_apiparam_1
+construct message represent signal emission
+dbus_signature_validate_apiparam_2 be dbus_signature_validate_apiparam_2 return
+dbus_connection_get_outgoing_size_apiparam_1 be dbus_connection_get_outgoing_size_apiparam_1
+get identifier server address -PRON- be authenticate , if dbus_connection_get_server_id_apiparam_1 be client side
+warn c , give int array , array array faq say otherwise , but gcc faq agree
+dbusserver object have slot give integer identifier reserve
+store pointer dbusmessage , along optional function be use free dbus_message_set_data_apiparam_3 when dbus_message_set_data_apiparam_3 be set again , or when dbus_message_set_data_apiparam_1 be finalize
+d_bus specification describe server identifier other id bit more detail
+dbus_malloc0_apiname memory be safe free regular free_apiname c library
+dbus_server_set_timeout_functions_apiparam_4 be function notify when timeout be
+dbus_realloc_apiname return allocate dbus_realloc_apiparam_1 , or null if resize fail
+dbus_message_new_method_call_apiparam_2 be object dbus_message_new_method_call_apiparam_2 message should be send
+caller call dbus_connection_close_apiname connection ; see dbus_connection_open_apiname dbus_connection_close_apiname detail
+once file descriptor become readable or writable , or exception occur , dbus_watch_handle_apiname should be call notify dbus_connection_set_watch_functions_apiparam_1 file descriptor condition
+dbus_bus_set_unique_name_apiparam_1 be dbus_bus_set_unique_name_apiparam_1
+dbus_connection_get_is_authenticated_apiname return true if dbus_connection_get_is_authenticated_apiparam_1 be ever authenticate
+dbus_connection_set_watch_functions_apiparam_5 be dbus_connection_set_watch_functions_apiparam_5 pass dbus_connection_set_watch_functions_apiparam_2 dbus_connection_set_watch_functions_apiparam_3
+case , -PRON- should initialize sub_iterator dbus_signature_iter_recurse_apiname parse container type
+dbus_message_get_reply_serial_apiname return reply serial
+retrieve datum previously set dbus_message_set_data_apiname
+queue mean -PRON- need manually watch current owner disappear then request dbus_bus_request_name_apiparam_2 again
+exist datum store exist dbusconnection object be free when connection be finalize , but be retrieve only be replace if someone else reallocate slot
+construct message give message type
+dbus_bus_get_id_apiname return bus identifier or null if dbus_bus_get_id_apiparam_2 be set
+dbus_message_append_args_valist_apiname return true success
+dbus_timeout_get_interval_apiparam_1 be dbustimeout object
+feature be use instead simply timeout because can be do without memory allocation
+dbus_bus_name_has_owner_apiname return true if dbus_bus_name_has_owner_apiparam_2 exist , false if or dbus_bus_name_has_owner_apiparam_3
+dbus_timeout_get_data_apiparam_1 be dbustimeout object
+dbus_connection_register_fallback_apiparam_4 be data pass function dbus_connection_register_fallback_apiparam_3
+if no memory can be allocate dbus_set_error_apiparam_1 message , out_of_memory dbus_set_error_apiparam_1 message be set instead
+set watch function dbus_server_set_watch_functions_apiparam_1
+dbus_validate_error_name_apiparam_1 be potentially invalid
+dbus_move_error_apiparam_1 be reinitialize empty error
+dbus_watch_get_socket_apiname return socket dbus_watch_get_socket_apiparam_1
+note cancel dbus_pending_call_cancel_apiparam_1 call simulate timed_out call ; if call time out , then timeout error reply be receive
+dbus_shutdown_apiname be useful if -PRON- want dlopen_apiname libdbus instead link , want be able unload library again
+dbus_message_append_args_apiname return true success
+dbus_pending_call_set_data_apiparam_2 be dbus_pending_call_set_data_apiparam_2 number
+dbus_connection_pop_message_apiname return first_received message incoming message queue , remove queue
+get connection remote dbus_connection_open_apiparam_1
+dbus_signature_iter_get_signature_apiname return current signature ; or null if no memory
+why would -PRON- want know how many byte be array as marshal wire protocol
+todo : function can be use program try recover oom error
+return string must be free dbus_free_apiname
+however , be valid call function uninitialized memory
+be safe close dbus_connection_close_apiparam_1 more than once ; call after first nothing
+usually -PRON- want dbus_message_new_method_call_apiname , dbus_message_new_method_return_apiname , dbus_message_new_signal_apiname , or dbus_message_new_error_apiname instead
+if -PRON- send method call -PRON- , call dbus_bus_set_unique_name_apiname unique bus name -PRON- get bus
+dbus_connection_get_windows_user_apiname return true if user be available return value be null anyway if no memory
+dbus_connection_register_object_path_apiparam_3 be virtual table
+register dbus_bus_register_apiparam_1 bus
+remember null can always be pass instead dbuserror , if -PRON- care about have dbus_signature_validate_apiparam_2 name message
+dbus_connection_get_is_connected_apiparam_1 be dbus_connection_get_is_connected_apiparam_1
+if two thread be both send registration message , be no mechanism libdbus avoid send twice
+method call start service handle -PRON- by default unless -PRON- call dbus_message_set_auto_start_apiname disable behavior
+dbus_timeout_handle_apiname should be call each time interval elapse , start after elapse once
+dbus_connection_read_write_dispatch_apiparam_2 be max time block or # infinite
+check if iterator have more field
+dbus_server_set_auth_mechanisms_apiparam_1 be dbus_server_set_auth_mechanisms_apiparam_1
+send dbus_connection_send_with_reply_and_block_apiparam_2 block certain time period while wait reply
+single_threaded application -PRON- can register by hand instead use dbus_bus_register_apiname , as long as -PRON- check dbus_bus_get_unique_name_apiname see if unique name have already store by another thread before -PRON- send registration message
+connection return by dbus_bus_get_apiname or dbus_bus_get_private_apiname have successfully register
+dbus_connection_set_unix_user_function_apiparam_3 be dbus_connection_set_unix_user_function_apiparam_3 pass predicate
+dbus_address_entry_get_method_apiname return string describe method
+if be receive , null be return dbus_connection_send_with_reply_and_block_apiparam_4 be set dbus_error_no_reply
+dbus_message_iter_get_array_len_apiname return number byte array
+dbus_message_set_reply_serial_apiparam_1 be dbus_message_set_reply_serial_apiparam_1
+connect bus daemon register client
+if -PRON- need -PRON- without flag set , make sure unset fcntl_apiname
+be intend be use error cleanup code path , similar pattern : dbusmessageiter outer dbus_message_iter_init_close ; dbusmessageiter inner dbus_message_iter_init_close ; dbus_bool_t result false ; if goto out ; if goto out ; if goto out ; if goto out ; if goto out ; result true ; out : dbus_message_iter_abandon_container_if_open_apiname ; dbus_message_iter_abandon_container_if_open_apiname ; return result ; dbus_message_iter_abandon_container_if_open_apiparam_1 be append iterator
+error name must be valid error name accord syntax give d_bus specification
+dbus_message_append_args_valist_apiparam_2 be type first argument
+dbus_connection_get_dispatch_status_apiparam_1 be dbus_connection_get_dispatch_status_apiparam_1
+function be responsible make application main loop aware file descriptor need be monitor event , use select_apiname or poll_apiname
+see dbus_connection_open_private_apiname more detail when close unref connection
+dbus_connection_send_preallocated_apiparam_2 be dbus_connection_send_preallocated_apiparam_2 resource
+unix be prefer dbus_watch_get_socket_apiname since work more kind dbuswatch
+set flag indicating dbus_message_set_no_reply_apiparam_1 do want reply ; if flag be set , other end connection optimize by send method return or error reply
+dbus_message_set_data_apiparam_2 be dbus_message_set_data_apiparam_2 number
+no one can get message while borrow , so return as quickly as possible keep reference after return
+caller do reference return message , must either return use dbus_connection_return_message_apiname or keep after call dbus_connection_steal_borrowed_message_apiname
+dbus_message_iter_get_fixed_array_apiparam_1 be iterator
+abandon creation contained_typed value free resource create by dbus_message_iter_open_container_apiname
+be convenience wrapper , but -PRON- can invoke peer get machine identifi other end
+get error name or null if none
+free block dbus_free_apiparam_1 previously allocate by dbus_malloc_apiname or dbus_malloc0_apiname
+give dbus_connection_try_register_fallback_apiparam_3 handle message or below give dbus_connection_try_register_fallback_apiparam_2
+ownership reply message pass caller
+dbus_bus_start_service_by_name_apiname return true if activation succeed , false if
+dbus_bus_release_name_apiname return result code , # if dbus_bus_release_name_apiparam_3 be set
+dbus_bus_request_name_apiparam_4 be location store dbus_bus_request_name_apiparam_4
+dbus_signature_iter_init_apiparam_1 be pointer iterator initialize
+error dbus_error_interactive_authorization_require signal authorization fail , but could have succeed if flag have use
+todo : fixme here about handle dbus_handler_result_need_memory dbus_connection_dispatch_apiparam_1 be dbus_connection_dispatch_apiparam_1
+get interface dbus_message_get_interface_apiparam_1 be send or emit dbus_message_type_signal
+dbus_connection_flush_apiname should only be use , example , if application be expect exit before run main loop
+loop terminate when last message dbus_connection_read_write_dispatch_apiparam_1 be process
+so set unless -PRON- be message bus
+dbus_message_iter_get_basic_apiparam_2 argument should be address location store return dbus_message_iter_get_basic_apiparam_2
+dbus_connection_open_private_apiname return connection , or null failure
+dbusconnection object have slot give integer identifier reserve
+dbus_message_new_method_call_apiparam_1 be name message should be send or null
+success , -PRON- be require append content container use return sub_iterator , then call dbus_message_iter_close_container_apiname
+dbus_name_flag_allow_replacement mean another requestor dbus_bus_request_name_apiparam_2 can take away -PRON- by specify dbus_name_flag_replace_existing
+convenience function return element type array ; function allow -PRON- avoid initialize sub_iterator get current type
+dbus_connection_get_unix_process_id_apiparam_2 be return location process identifier
+check if dbus_message_has_path_apiparam_1 have particular object dbus_message_has_path_apiparam_2
+move iterator next field , if
+see dbus_try_get_local_machine_id_apiname
+dbus_connection_get_outgoing_unix_fds_apiparam_1 be dbus_connection_get_outgoing_unix_fds_apiparam_1
+dbus_pending_call_steal_reply_apiparam_1 be dbus_pending_call_steal_reply_apiparam_1 call
+if dbus_connection_send_with_reply_and_block_apiparam_4 reply be receive , be convert dbuserror return as dbus_connection_send_with_reply_and_block_apiparam_4 , then reply dbus_connection_send_with_reply_and_block_apiparam_2 be delete null be return
+get object dbus_message_get_path_decomposed_apiparam_2 dbus_message_get_path_decomposed_apiparam_1 be send or emit decompose format one array element per dbus_message_get_path_decomposed_apiparam_2 component
+dbus_message_iter_close_container_apiname return false if enough memory
+message dbus_message_iter_get_fixed_array_apiparam_1 should be array be , -PRON- recurse into array , then -PRON- call dbus_message_iter_get_fixed_array_apiname sub_iterator create by dbus_message_iter_recurse_apiname
+dbus_message_marshal_apiparam_3 be location save length marshal form
+specifie maximum number unix fds message dbus_connection_set_max_message_unix_fds_apiparam_1 be allow receive
+incoming data buffer be fill when dbus_connection_dispatch_apiparam_1 read underlie transport such as socket
+function never fail other reason ; even if dbus_connection_send_apiparam_1 be disconnected , -PRON- can queue outgoing dbus_connection_send_apiparam_2 , though obviously be send
+warn if dbus_connection_send_with_reply_apiparam_1 be disconnected or -PRON- try send unix file descriptor dbus_connection_send_with_reply_apiparam_1 do support -PRON- , dbuspendingcall be set null , so be careful
+message serial number be provide by application send dbus_message_get_serial_apiparam_1 be use identify reply dbus_message_get_serial_apiparam_1
+basic type be non_container type such as integer string
+otherwise , -PRON- have iterate over container content one dbus_message_iter_get_basic_apiparam_2 time
+close private dbus_connection_close_apiparam_1 , so no further datum can be send or receive
+usually -PRON- want call
+dbus_connection_remove_filter_apiparam_2 be handler remove
+free null terminate array address dbus_address_entries_free_apiparam_1
+set timeout function dbus_connection_set_timeout_functions_apiparam_1
+dbus_server_set_data_apiparam_3 be dbus_server_set_data_apiparam_3 store
+type include dbus_message_type_method_call , dbus_message_type_signal , so forth
+dbus_validate_bus_name_apiparam_2 be dbus_validate_bus_name_apiparam_2 return
+dbus_message_get_member_apiname return null if none
+dbus_message_iter_append_fixed_array_apiparam_1 be append iterator
+third , if message be method call be forward register object path handler add dbus_connection_register_object_path_apiname or dbus_connection_register_fallback_apiname
+if -PRON- pass non null dbus_bus_add_match_apiparam_3 function block until get reply
+dbus_server_free_data_slot_apiparam_1 be address slot deallocate
+dbus_connection_set_watch_functions_apiname return false failure no memory
+addition type , arrays string , object path , signature be support ; but be return as allocate memory must be free dbus_free_string_array_apiname , while other type be return as const reference
+see dbus_message_new_error_apiname detail function be aside printf formatting
+check type dbus_signature_validate_single_apiparam_1 be both valid contain exactly one complete type
+dbus_connection_list_registered_apiparam_1 be dbus_connection_list_registered_apiparam_1
+dbus_message_iter_append_basic_apiparam_2 be dbus_message_iter_append_basic_apiparam_2
+if be authenticate as specific user , then return false
+if open fail , function return null , provide reason failure dbus_connection_open_apiparam_2 parameter
+if dispatch status be dbus_dispatch_data_remains , then dbus_connection_dispatch_apiname need be call process incoming message
+set unique name dbus_bus_set_unique_name_apiparam_1 , as assign by message bus
+because function do copy dbus_set_error_const_apiparam_1 dbus_set_error_const_apiparam_2 or dbus_set_error_const_apiparam_3 , -PRON- must ensure dbus_set_error_const_apiparam_2 dbus_set_error_const_apiparam_3 be global datum be free
+if enable , should be poll by main loop
+but have be implement , be pointless anyway since window -PRON- only session bus now
+test whether certain dbus_connection_can_send_type_apiparam_2 can be send via dbus_connection_can_send_type_apiparam_1
+PRON- can get machine identifi remote application by invoke method getmachineid interface
+dbus_address_unescape_value_apiparam_1 be escape dbus_address_unescape_value_apiparam_1
+since d_bus # be safe call function thread , number time but must be call before other libdbus api be use
+initialize dbusmessageiter read argument dbus_message_iter_init_apiparam_1 pass
+if -PRON- dbus_bus_register_apiname however , be lock keep both app register time
+note when watch be add , be enable
+path must contain only valid character object path as define d_bus specification
+be sure -PRON- have somehow check dbus_message_iter_get_arg_type_apiname match type -PRON- be expect , or -PRON- will crash when -PRON- try integer as string or something
+todo : -PRON- run filter message while block without enter main loop , since filter be run as part dbus_connection_dispatch_apiname
+dbus_server_get_address_apiname return address dbus_server_get_address_apiparam_1 , as newly_allocated string which must be free by caller
+dbus_type_is_container_apiparam_1 be either valid type_code or dbus_type_invalid
+one implication be call dbus_shutdown_apiname library be almost certainly wrong , since -PRON- know what rest app be up
+dbus_connection_get_socket_apiname return true if dbus_connection_get_socket_apiparam_2 be successfully obtain
+give dbus_connection_try_register_object_path_apiparam_3 handle message send exactly give dbus_connection_try_register_object_path_apiparam_2
+dbus_bus_register_apiparam_1 be dbus_bus_register_apiparam_1
+check bus dbus_validate_bus_name_apiparam_1 validity
+dbus_message_is_method_call_apiparam_1 be dbus_message_is_method_call_apiparam_1
+dbus_connection_get_dispatch_status_apiname return current dispatch status
+dbus_pending_call_get_data_apiname dbus_pending_call_set_data_apiname no longer be use slot
+dbus_connection_set_wakeup_main_function_apiparam_1 be dbus_connection_set_wakeup_main_function_apiparam_1
+dbus_server_set_timeout_functions_apiparam_6 be function be call free dbus_server_set_timeout_functions_apiparam_5
+get dbus_timeout_get_interval_apiparam_1 interval
+example , give address tcp : host , port 8073 if -PRON- ask dbus_address_entry_get_value_apiparam_2 host -PRON- would get value return value be already unescaped
+filter be run order be add
+be good idea , just go ahead provide useful dbus_set_error_apiparam_1 message
+dbus_type_is_basic_apiname return true if type be basic
+dbus_message_iter_append_fixed_array_apiname fprintf ; string work write const char array hello then array though
+decrement reference count dbusmessage , free dbus_message_unref_apiparam_1 if count reach # dbus_message_unref_apiparam_1 be dbus_message_unref_apiparam_1 see dbus_message_ref
+check string validity
+dbus_connection_get_adt_audit_session_data_apiparam_1 be dbus_connection_get_adt_audit_session_data_apiparam_1
+dbus_bus_get_unix_user_apiparam_1 be dbus_bus_get_unix_user_apiparam_1
+return user string have be free dbus_free_apiname
+dbus_validate_error_name_apiname return true if dbus_validate_error_name_apiparam_1 be valid
+dbus_connection_list_registered_apiparam_2 be path list child handler
+check whether dbus_message_is_signal_apiparam_1 be signal give interface member field
+dbus_message_new_method_return_apiname return null if memory can be allocate message
+when possible , dbus_message_get_args_apiname be much more convenient
+dbus_signature_validate_single_apiname return true if dbus_signature_validate_single_apiparam_1 be valid have exactly one complete type
+dbus_message_get_allow_interactive_authorization_apiparam_1 be dbus_message_get_allow_interactive_authorization_apiparam_1
+dbus_message_get_container_instance_apiparam_1 be dbus_message_get_container_instance_apiparam_1
+dbus_message_iter_append_basic_apiparam_3 be dbus_message_iter_append_basic_apiparam_3 address dbus_message_iter_append_basic_apiparam_3
+dbus_message_iter_close_container_apiparam_2 be sub_iterator close
+dbus_connection_try_register_object_path_apiparam_4 be data pass function dbus_connection_try_register_object_path_apiparam_3
+dbus_pending_call_get_data_apiparam_1 be pending_call
+but kind suck if -PRON- be try filter method_return reason
+be error pass invalid type_code , other than dbus_type_invalid , function
+dbus_connection_add_filter_apiparam_2 be dbus_connection_add_filter_apiparam_2 handle message
+PRON- must close dbus_connection_close_apiparam_1 prior release last reference dbus_connection_close_apiparam_1
+dbus_message_get_data_apiparam_2 must still be allocate must have free
+get value set by dbus_connection_set_max_message_unix_fds_apiname
+note prefer dbus_connection_open_apiname dbus_connection_open_private_apiname unless -PRON- have good reason ; connection be expensive enough be wasteful create lot connection server
+dbus_message_has_signature_apiname return true if dbus_message_has_signature_apiparam_1 have give dbus_message_has_signature_apiparam_2
+dbus_server_set_new_connection_function_apiparam_1 be dbus_server_set_new_connection_function_apiparam_1
+dbus_timeout_get_interval_apiname return interval millisecond
+dbus_connection_get_adt_audit_session_data_apiname return true if structure pointer be return
+dbus_connection_set_timeout_functions_apiparam_5 be dbus_connection_set_timeout_functions_apiparam_5 pass dbus_connection_set_timeout_functions_apiparam_2 dbus_connection_set_timeout_functions_apiparam_3
+dbus_message_iter_append_fixed_array_apiparam_4 be number element append
+dbus_bus_get_unique_name_apiparam_1 be dbus_bus_get_unique_name_apiparam_1
+dbus_message_iter_init_apiparam_1 be dbus_message_iter_init_apiparam_1
+dbus_connection_add_filter_apiname return true success , false if enough memory
+co. dbus_connection_set_max_message_unix_fds_apiparam_2 isnection be dbusconnection dbus_connection_set_max_message_unix_fds_apiparam_2 maximum message unix fds dbus_connection_set_max_message_unix_fds_apiparam_1 can receive
+get value set by dbus_connection_set_max_received_size_apiname
+if no next field , return false
+otherwise , return connection save connection possible re_use if future call dbus_connection_open_apiname ask connect server
+dbus_bus_start_service_by_name_apiparam_2 be dbus_bus_start_service_by_name_apiparam_2 -PRON- want service request
+function should really be call get_is_open_apiname but historical reason be
+check whether dbus_message_contains_unix_fds_apiparam_1 contain unix fds
+quick reference , format match rule be discuss here , but specification be canonical version information
+slot must be initialize #
+when refcount passed_in slot reach 0 , be set # dbus_message_free_data_slot_apiparam_1 be address store slot deallocate
+dbus_server_set_timeout_functions_apiparam_5 be dbus_server_set_timeout_functions_apiparam_5 pass dbus_server_set_timeout_functions_apiparam_2 dbus_server_set_timeout_functions_apiparam_3
+unix file descriptor however be support
+dbuspendingcall see reply dbus_connection_send_with_reply_apiparam_2 before filter or register object path handler
+d_bus protocol allow dbus_message_is_method_call_apiparam_3 caller leave out interface name
+dbus_message_has_interface_apiparam_1 be dbus_message_has_interface_apiparam_1
+dbus_message_iter_init_apiparam_2 be pointer iterator initialize
+specifie maximum dbus_connection_set_max_message_size_apiparam_2 message dbus_connection_set_max_message_size_apiparam_1 be allow receive
+dbus_type_is_container_apiname return true if type be container
+function be safe invalid signature ; be sure validate potentially invalid signature dbus_signature_validate before use function
+normally -PRON- know dbus_message_set_no_reply_apiparam_1 be receive when -PRON- receive reply
+dbus_message_set_interface_apiparam_1 be dbus_message_set_interface_apiparam_1
+dbus_message_set_reply_serial_apiname return false if enough memory
+similar dbus_message_get_fixed_array_apiname function do support arrays type dbus_type_unix_fd
+dbus_connection_get_unix_fd_apiname return true if dbus_connection_get_unix_fd_apiparam_2 be successfully obtain
+dbus_connection_read_write_apiparam_1 be dbus_connection_read_write_apiparam_1
+dbus_bus_add_match_apiparam_1 be dbus_bus_add_match_apiparam_1 message bus
+dbus_message_set_destination_apiname return false if enough memory
+dbus_watch_get_enabled_apiname return whether dbus_watch_get_enabled_apiparam_1 be enable or
+dbus_message_set_sender_apiparam_2 be dbus_message_set_sender_apiparam_2 or null unset
+parse dbus_parse_address_apiparam_1 string form : method : key value , key value ; method : key value see d_bus specification complete docs format
+connection have socket
+function do reenter main loop , i
+remember null can always be pass instead dbuserror , if -PRON- care about have dbus_validate_bus_name_apiparam_2 dbus_validate_bus_name_apiparam_1 message
+dbus_message_is_error_apiparam_1 be dbus_message_is_error_apiparam_1
+dbus_server_set_watch_functions_apiname return false failure no memory
+recurse into container value when read value message , initialize sub_iterator traverse child value container
+dbus_message_iter_get_element_type_apiparam_1 be message dbus_message_iter_get_element_type_apiparam_1
+deallocate global identifi server datum slot
+ask bus return uid name dbus_bus_get_unix_user_apiparam_1 authenticate as , if
+dbus_message_append_args_apiparam_2 be type first argument ... value first argument , list additional type_value pair
+thus , -PRON- need way coordinate which thread send registration attempt ; which mean -PRON- know which thread call dbus_bus_set_unique_name_apiname
+free server , application must call first dbus_server_disconnect_apiname then dbus_server_unref_apiname
+if dbus_connection_set_unix_user_function_apiparam_2 be set null , then only uid as server process be allow connect
+be generally acceptable , since possible error be generally unrecoverable
+dbus_message_has_path_apiname return true if be dbus_message_has_path_apiparam_2 field header
+container type can contain basic type , or nest container type
+dbus_malloc0_apiname return null if allocation fail
+if dbus_bus_register_apiparam_1 have already register bus , then function do nothing
+dbus_pending_call_set_data_apiparam_3 be dbus_pending_call_set_data_apiparam_3 store
+uuid be guarantee remain until next reboot unless sysadmin foolishly change screw
+pass null dbus_connection_open_private_apiparam_2 parameter if -PRON- be interested reason failure
+dbus_server_ref_apiparam_1 be dbus_server_ref_apiparam_1
+get datum previously set dbus_timeout_set_data_apiname or null if none
+handler can be add as filter more than once , which case be run more than once
+struct be fixed_size but struct be consider fix type purpose function
+return string become invalid if dbus_message_get_destination_apiparam_1 be modify , since point into wire_marshaled dbus_message_get_destination_apiparam_1 datum
+dbus_message_get_sender_apiparam_1 be dbus_message_get_sender_apiparam_1
+require storing timestamp instead interval timeout dbus_pending_call_block_apiparam_1 be dbus_pending_call_block_apiparam_1 call
+if set true , then dbus_connection_set_allow_anonymous_apiparam_1 can proceed even if client do authenticate as user identity , i
+dbus_connection_get_max_received_unix_fds_apiname return max unix fd live message
+dbus_server_listen_apiparam_2 be location store reason failure
+if dbus_connection_get_unix_fd_apiparam_1 be socket_based , -PRON- can dbus_connection_get_socket_apiname , which work window too
+dbus_move_error_apiparam_2 contain exist error
+example , -PRON- could bus name or x selection name
+get value set by dbus_connection_set_max_message_size_apiname
+ask bus whether certain dbus_bus_name_has_owner_apiparam_2 have owner
+if give handler be add more than once , only one instance be remove most recently_added instance
+dbus_connection_set_timeout_functions_apiparam_6 be function be call free dbus_connection_set_timeout_functions_apiparam_5
+if -PRON- do call dbus_bus_register_apiname
+always return false prior authenticate dbus_connection_get_unix_user_apiparam_1
+set maximum total number byte can be use message receive dbus_connection_set_max_received_size_apiparam_1
+dbus_message_iter_open_container_apiname return false if enough memory
+function return null if be enough memory read uuid , or if uuid could be read because d_bus library be instal incorrectly
+dbus_connection_send_with_reply_apiname return false if no memory , true otherwise
+dbus_set_error_from_message_apiname return true if dbus_set_error_from_message_apiparam_2 have type dbus_message_type_error
+dbus_server_set_watch_functions_apiparam_1 be dbus_server_set_watch_functions_apiparam_1
+dbus_connection_get_unix_user_apiparam_2 be return location user identifier
+be , arg0 5 mean match string 5 integer #
+dbus_message_get_no_reply_apiparam_1 be dbus_message_get_no_reply_apiparam_1
+dbus_message_get_path_apiname return null if none
+if dbus_setenv_apiparam_2 be null , unset environment variable
+both maximum be much high than -PRON- be likely need , only exist because d_bus bus daemon have fix limit resource usage
+dbus_signature_validate_single_apiparam_1 be potentially invalid type dbus_signature_validate_single_apiparam_1
+check whether dbus_message_is_method_call_apiparam_1 be dbus_message_is_method_call_apiparam_3 call give interface member field
+dbus_connection_try_register_fallback_apiparam_3 be virtual table
+dbus_message_iter_get_element_type_apiname return array element type
+be allow reference dbuswatch after have pass dbus_connection_set_watch_functions_apiparam_3
+protocol level toggle dbus_header_flag_no_reply_expected dbus_message_set_no_reply_apiparam_1 be dbus_message_set_no_reply_apiparam_1
+hurt -PRON
+todo : support dbus_type_struct dbus_type_variant complex arrays dbus_message_get_args_apiparam_1 be dbus_message_get_args_apiparam_1
+PRON- can thus write loop as follow : dbus_message_iter_init ; while dbus_type_invalid dbus_message_iter_next ; dbus_message_iter_get_arg_type_apiparam_1 be message dbus_message_iter_get_arg_type_apiparam_1
+dbus_connection_return_message_apiparam_1 be dbus_connection_return_message_apiparam_1
+dbus_watch_get_socket_apiparam_1 be dbuswatch object
+set dbus_connection_set_dispatch_status_function_apiparam_2 be invoke when dispatch status change
+dbus_connection_register_fallback_apiname return false if error occur
+if request argument be present , or have request type , then dbus_message_get_args_apiparam_2 be set
+dbus_message_iter_abandon_container_apiparam_2 be sub_iterator close
+dbus_connection_set_data_apiparam_2 number must have allocate dbus_connection_allocate_data_slot_apiname
+dbus_message_iter_get_array_len_apiparam_1 be iterator
+dbus_malloc0_apiname return allocate memory , or null if allocation fail
+set dbus_server_set_new_connection_function_apiparam_2 be use handling connection
+if be multiple semicolon_separate dbus_server_listen_apiparam_1 entry dbus_server_listen_apiparam_1 , try each one listen first one work
+set maximum total number unix fd can be use message receive dbus_connection_set_max_received_unix_fds_apiparam_1
+string work write const char array hello then array though
+if -PRON- then libdbus know stop read invalid memory
+dbus_message_iter_has_next_apiparam_1 be message dbus_message_iter_has_next_apiparam_1
+function do affect connection reference count
+be probably feature , as filter could create arbitrary reentrancy
+if requestname call include dbus_name_flag_replace_existing flag , current primary owner have dbus_name_flag_allow_replacement set , then current primary owner be kick off
+idea be two process machine identifi should be able share memory , unix domain socket , process id , other feature os require both process be run os kernel instance
+dbus_message_has_interface_apiparam_2 be interface name
+connection be save or recycle by libdbus
+dbus_connection_borrow_message_apiname return first_received message incoming message queue , leave queue
+co. dbus_connection_set_max_received_unix_fds_apiparam_2 isnection be dbus_connection_set_max_received_unix_fds_apiparam_1 dbus_connection_set_max_received_unix_fds_apiparam_2 maximum size byte outstanding message
+set dbuserror base content give dbus_set_error_from_message_apiparam_2
+intend by dbusaddtimeoutfunction dbusremovetimeoutfunction store dbus_timeout_set_data_apiparam_2
+dbus_pending_call_get_data_apiparam_2 be dbus_pending_call_get_data_apiparam_2 get datum
+dbus_connection_get_data_apiparam_2 must still be allocate must have free
+type include dbus_message_type_method_call , dbus_message_type_method_return , dbus_message_type_error , dbus_message_type_signal , but other type be allow code must silently ignore message unknown type
+only free libdbus_internal datum structure
+dbus_connection_borrow_message_apiname return next message incoming queue
+get window user sid dbus_connection_get_windows_user_apiparam_1 if know
+when incoming dbus_connection_set_windows_user_function_apiparam_1 have authenticate particular user identifi , dbus_connection_set_windows_user_function_apiparam_2 be call ; if return true , dbus_connection_set_windows_user_function_apiparam_1 be allow proceed , otherwise dbus_connection_set_windows_user_function_apiparam_1 be disconnected
+dbus_connection_get_windows_user_apiname return true if identifier be fill
+function be deprecate ground be stupid
+dbus_pending_call_set_notify_apiparam_1 be dbus_pending_call_set_notify_apiparam_1 call
+dbus_server_set_new_connection_function_apiparam_4 be dbus_server_set_new_connection_function_apiparam_2 free dbus_server_set_new_connection_function_apiparam_3
+dbus_bus_set_unique_name_apiname return false if enough memory
+preallocate resource come dbus_connection_preallocate_send_apiname
+dbus_parse_address_apiparam_2 be return location array entry
+dbus_bus_get_id_apiparam_1 be dbus_bus_get_id_apiparam_1
+set reply serial dbus_message_set_reply_serial_apiparam_1 serial dbus_message_set_reply_serial_apiparam_1 be reply
+dbus_message_set_member_apiname return false if enough memory
+PRON- can undo by call dbus_connection_set_exit_on_disconnect_apiname -PRON- after -PRON- get connection
+dbus_connection_free_preallocated_send_apiparam_2 be resource
+initialize iterator point first type current container
+if be complete message incoming queue , dbus_connection_dispatch_apiname remove one message queue process
+dbus_bus_request_name_apiparam_2 be dbus_bus_request_name_apiparam_2 request
+method_call dbus_message_type_method_call method_return dbus_message_type_method_return signal dbus_message_type_signal error dbus_message_type_error anything else dbus_message_type_invalid
+when use qt , typically dbusaddtimeoutfunction would create qtimer
+dbus_message_is_signal_apiparam_2 be name check must be null
+share connection , libdbus reference as long as dbus_connection_unref_apiparam_1 be connect , so -PRON- can know either -PRON- have last reference , or be ok drop last reference
+valid type_code be define by dbus_protocol can be check dbus_type_is_valid_apiname
+value argument should be address basic_type dbus_message_iter_append_basic_apiparam_3
+dbus_message_demarshal_bytes_needed_apiparam_2 be length dbus_message_demarshal_bytes_needed_apiparam_1
+connection dbus_server_set_new_connection_function_apiparam_2 close connection , which be consider good form if connection be want
+dbustimeout can be query timer interval use dbus_timeout_get_interval_apiname
+dbus_connection_get_object_path_data_apiparam_3 be location store user datum , or null
+function be responsible wake up main loop when change have happen dbus_connection_set_wakeup_main_function_apiparam_1 mainloop need reconsider e
+function consume dbus_connection_send_preallocated_apiparam_2 resource , nee be free separately
+dbus_connection_add_filter_apiparam_4 be dbus_connection_add_filter_apiparam_2 free user datum
+error reply be most common response method call , but can be return reply message
+dbus_message_set_error_name_apiparam_1 be dbus_message_set_error_name_apiparam_1
+argument be as would be dbus_message_iter_get_basic_apiname or dbus_message_iter_get_fixed_array_apiname
+if replace be give , ask replace old owner
+but should be inconsequential
+dbus_connection_borrow_message_apiparam_1 be dbus_connection_borrow_message_apiparam_1
+dbus_server_set_data_apiparam_2 be dbus_server_set_data_apiparam_2 number
+note , while be block , can be interrupt , which make function unsuitable application more than just react receive message
+function set global flag whether dbus_connection_new_apiname set sigpipe behavior sig_ign
+note function be o arrays fixed_size type but o arrays variable_length type such as string , so be bad idea
+semantic be analogous dbus_connection_set_max_received_size_apiname
+increment reference count dbus_pending_call_ref_apiparam_1 call
+solve , either avoid situation , block separate thread main connection_dispatching thread , or dbus_pending_call_set_notify_apiname avoid blocking
+so example if -PRON- have application multiple instance can be run , -PRON- can have -PRON- sit queue
+second , filter register dbus_connection_add_filter_apiname be run
+if dbus_connection_close_apiparam_1 be drop by remote application , close
+function always fail window
+dbus_connection_set_wakeup_main_function_apiparam_2 be function wake up mainloop
+if -PRON- need keep message , make copy
+set change default rule connection authorize as user ; normally , if dbus_connection_set_allow_anonymous_apiparam_1 authorizes as user identity , be permit if user identity be root or user identity match user identity server process
+dbus_message_marshal_apiname return false if be enough memory
+dbus_get_version_apiparam_1 be pointer return major version , or null
+if normal application set flag , can break thing badly
+read usually happen dbus_watch_handle_apiname or dbus_connection_read_write_apiname
+dbus_bus_get_unix_user_apiname return unix user identifi , or 1 if dbus_bus_get_unix_user_apiparam_3 be set
+dbus_message_copy_apiparam_1 be dbus_message_copy_apiparam_1
+dbus_message_iter_append_fixed_array_apiname return false if enough memory
+dbus_message_new_method_return_apiparam_1 be message reply
+dbus_watch_get_fd_apiparam_1 be dbuswatch object
+# be typically good value timeout reason , unless -PRON- want short or long timeout
+note thread lock dbusconnection be hold while watch function be invoke , so inside function -PRON- invoke method dbusconnection or deadlock
+auto starting be default
+only allow anonymous mechanism
+dbus_connection_set_timeout_functions_apiname return false failure no memory
+hence -PRON- close descriptor immediately after call
+dbus_connection_can_send_type_apiparam_1 be dbus_connection_can_send_type_apiparam_1
+if connection give dbus_connection_open_apiparam_1 already exist , return exist connection reference count incremente
+easy way iterate be like : dbus_message_iter_init_apiname ; while dbus_type_invalid dbus_message_iter_next ; dbusmessageiter contain no allocate memory ; nee be free , can be copy by assignment or memcpy_apiname
+check if dbus_message_has_member_apiparam_1 have interface dbus_message_has_member_apiparam_2
+always return false non_unix platform now , though theory someone could hook window ni or something
+mean -PRON- can end up deadlocke if application -PRON- be talk need -PRON- reply method
+dbus_type_invalid surprisingly enough be consider valid , random unknown byte be either
+get user datum pass dbus_connection_register_object_path_apiname or dbus_connection_register_fallback_apiname
+point into dbusmessage
+use can easily result race condition , since owner can appear or disappear after -PRON- call
+if nothing be register dbus_connection_get_object_path_data_apiparam_2 , datum be fill null
+last argument function must be dbus_type_invalid , mark end argument list
+however , signal message be require include interface so when match signal usually -PRON- should specify interface match dbus_bus_add_match_apiparam_2
+decrement reference count dbusconnection , finalize if count reach zero
+sender be fill by dbus_message_get_sender_apiparam_1 bus
+dbus_setenv_apiname return true success , false if enough memory
+dbus_message_set_data_apiname return true if be enough memory store dbus_message_set_data_apiparam_3
+dbus_message_iter_get_basic_apiparam_2 be location store dbus_message_iter_get_basic_apiparam_2
+message receive connection have serial provide by remote application
+note , dbus_dispatch_data_remains really mean either -PRON- have message queue , or -PRON- have raw byte buffer up nee be parse
+dbus_signature_iter_get_current_type_apiparam_1 be pointer iterator
+dbus_message_iter_get_fixed_array_apiparam_2 be location store block
+dbus_watch_get_unix_fd_apiname return file descriptor dbus_watch_get_unix_fd_apiparam_1
+note just dbus_bus_get_apiname or dbus_bus_get_private_apiname , or bad case dbus_bus_register_apiname , instead mess function
+dbus_message_contains_unix_fds_apiname return true if dbus_message_contains_unix_fds_apiparam_1 contain unix fds
+dbus_connection_get_socket_apiparam_2 be return location file descriptor
+no array int32 recurse into
+message more unix fds result disconnect dbus_connection_set_max_message_unix_fds_apiparam_1
+dbus_server_listen_apiparam_1 be dbus_server_listen_apiparam_1 server
+dbus_error_is_set_apiparam_1 be dbus_error_is_set_apiparam_1 object
+set flag indicating caller method be prepare wait interactive authorization take place before actual method be process
+allocate identifier then be use dbus_message_set_data_apiname dbus_message_get_data_apiname
+initialize dbussignatureiter read type dbus_signature_iter_init_apiparam_2
+if connection dbus_server_set_new_connection_function_apiparam_2 increment connection reference count , connection stay alive
+dbus_message_set_sender_apiparam_2 must be valid bus name as define d_bus specification
+default dbus_set_error_const_apiparam_3 be totally useless , though , so use null dbus_set_error_const_apiparam_3 be recommend
+if container be array fixed_length value , -PRON- can get array element once dbus_message_iter_get_fixed_array_apiname
+disconnect transport underlie dbus_connection_close_apiparam_1
+remember , -PRON- have free d_bus object memory before -PRON- call dbus_shutdown_apiname , so no thread can be use libdbus
+object dbus_message_has_path_apiparam_2 be destination object method call or emit object signal
+get adt audit dbus_connection_get_adt_audit_session_data_apiparam_2 dbus_connection_get_adt_audit_session_data_apiparam_1 if
+remember null can always be pass instead dbuserror , if -PRON- care about have dbus_validate_utf8_apiparam_2 name message
+dbus_connection_register_object_path_apiparam_4 be data pass function dbus_connection_register_object_path_apiparam_3
+utility function convert machine_readable string into d_bus message type
+be -PRON- job close -PRON- when -PRON- need -PRON- anymore
+dbus_connection_get_is_connected_apiname return true if dbus_connection_get_is_connected_apiparam_1 be still alive
+dbus_message_get_destination_apiparam_1 be dbus_message_get_destination_apiparam_1
+function only work connection authenticate as unix user , right now include bus connection , but be possible have connection no associated uid
+whenever timeout be toggle , interval change
+dbus_watch_set_data_apiparam_3 be function be call free dbus_watch_set_data_apiparam_2
+get approximate number uni fds message outgoing message queue
+dbus_release_name_reply_non_existent which mean nobody own dbus_bus_release_name_apiparam_2
+however , dbus_connection_dispatch_apiname must be call inside dbusdispatchstatusfunction
+dbus_connection_set_route_peer_messages_apiparam_1 be dbus_connection_set_route_peer_messages_apiparam_1
+when connect dbus_parse_address_apiparam_1 , first dbus_parse_address_apiparam_1 entry semicolon_separated list should be try first
+latter case , warning be log
+create dbus_message_copy_apiparam_1 be exact replica dbus_message_copy_apiparam_1 specify , except refcount be set 1 , dbus_message_copy_apiparam_1 serial be reset 0 , if original dbus_message_copy_apiparam_1 be lock dbus_message_copy_apiparam_1 be lock
+dbus_server_listen_apiname return null set dbus_server_listen_apiparam_2 if listen fail reason
+possible result code be as follow
+dbus_timeout_handle_apiname should be call repeatedly , each time interval elapse , start after have elapse once
+be hard function safely share connection multithreade application , because only one registration attempt can be send bus
+dbus_connection_read_write_dispatch_apiparam_1 be dbus_connection_read_write_dispatch_apiparam_1
+message have queue write
+dbus_connection_get_is_anonymous_apiname return true if authenticate or authenticate as anonymous
+dbus_request_name_reply_already_owne happen if application request dbus_bus_request_name_apiparam_2 already own
+dbus_message_get_interface_apiparam_1 be dbus_message_get_interface_apiparam_1
+store pointer dbusserver , along optional function be use free dbus_server_set_data_apiparam_3 when dbus_server_set_data_apiparam_3 be set again , or when dbus_server_set_data_apiparam_1 be finalize
+dbus_watch_set_data_apiparam_1 be dbuswatch object
+dbus_message_is_signal_apiparam_3 be name check must be null
+dbus_bus_remove_match_apiparam_1 be dbus_bus_remove_match_apiparam_1 message bus
+dbus_message_marshal_apiparam_2 be location save marshal form
+dbus_server_set_timeout_functions_apiname return false failure no memory
+always return false prior authenticate dbus_connection_get_adt_audit_session_data_apiparam_1
+get unique name connection which originate dbus_message_get_sender_apiparam_1 , or null if unknown or inapplicable
+however , remain valid call dbus_message_iter_abandon_container_if_open_apiname
+dbus_connection_remove_filter_apiparam_1 be dbus_connection_remove_filter_apiparam_1
+dbus_message_get_args_apiparam_2 be dbus_message_get_args_apiparam_2 be fill failure
+dbus_server_set_watch_functions_apiparam_6 be function be call free dbus_server_set_watch_functions_apiparam_5
+however , dbus_connection_set_windows_user_function_apiparam_2 never be call , because be no way right now authenticate as window user unix
+dbus_server_disconnect_apiparam_1 be dbus_server_disconnect_apiparam_1
+because only queue dbus_connection_send_apiparam_2 , only reason can fail be lack memory
+identifi be uuid sense rfc4122 ; detail be explain d_bus specification
+basic_typed value be guarantee fit dbusbasicvalue , so version libdbus have type , -PRON- can write code like : dbusbasicvalue dbus_message_iter_get_basic_apiparam_2 ; int type ; dbus_message_iter_get_basic_apiname ; type dbus_message_iter_get_arg_type ; dbus_message_iter_append_basic ; d_bus basic type be either numeric # byte or small , or behave like string ; so old version libdbus , dbusbasicvalue can be replace union char string ; unsigned char byte 8 ; , instance
+dbus_bus_start_service_by_name_apiparam_3 be dbus_bus_start_service_by_name_apiparam_3 should always be # now
+dbus_watch_get_enabled_apiname return true if dbus_watch_get_enabled_apiparam_1 be enable
+must be close again function , or abandon dbus_message_iter_abandon_container_apiname
+return dbus_bus_start_service_by_name_apiparam_4 be one be one dbus_start_reply_success or dbus_start_reply_already_runn if successful
+dbus_message_has_member_apiname return true if be dbus_message_has_member_apiparam_2 field header
+dbus_connection_send_preallocated_apiparam_4 be return location client serial assign dbus_connection_send_preallocated_apiparam_3
+set watch function dbus_connection_set_watch_functions_apiparam_1
+dbus_server_set_auth_mechanisms_apiparam_2 be null terminate array dbus_server_set_auth_mechanisms_apiparam_2
+return false type implementation do know , include invalid or reserve type
+dbus_signature_iter_get_element_type_apiname return current array element type
+dbus_message_append_args_apiparam_1 be dbus_message_append_args_apiparam_1
+dbus_message_set_data_apiparam_2 number must have allocate dbus_message_allocate_data_slot_apiname
+dbus_server_set_timeout_functions_apiparam_2 be function add timeout
+dbus_setenv_apiparam_1 be name environment variable
+dbus_message_iter_next_apiparam_1 be message dbus_message_iter_next_apiparam_1
+private connection , creator dbus_connection_unref_apiparam_1 must arrange dbus_connection_close_apiname be call prior drop last reference
+dbus_connection_send_apiname return true success
+as long as dbus_connection_read_write_apiparam_1 be open , function block until can read or write , then read or write , then return true
+appends block fixed_length value array
+be careful about call dbus_connection_dispatch_apiname inside message handler , i
+if -PRON- want make up error name just dbus_error_faile
+if share connection be open , call dbus_shutdown_apiname drain queue message disconnect
+always return # window
+dbus_parse_address_apiparam_4 be dbus_parse_address_apiparam_1 where dbus_parse_address_apiparam_4 can be return
+if connection bus already exist , then connection be return
+dbus_message_iter_get_element_count_apiname return number element array
+demarshal d_bus message format describe d_bus specification
+dbus_message_get_serial_apiparam_1 be dbus_message_get_serial_apiparam_1
+dbus_message_iter_open_container_apiparam_2 be dbus_message_iter_open_container_apiparam_2 value
+other than deficient error reporting , function be as dbus_try_get_local_machine_id_apiname
+dbus_message_is_signal_apiparam_1 be dbus_message_is_signal_apiparam_1
+dbus_message_is_error_apiparam_2 be name check must be null
+bus do persistently associate connection_name pair
+dbus_move_error_apiparam_2 be destination error or null
+free return array dbus_free_string_array_apiname
+dbus_address_entry_get_value_apiparam_1 be dbus_address_entry_get_value_apiparam_1
+name be fully_qualifi namespace
+processing have three step
+dbus_error_init_apiparam_1 be dbuserror
+return uid be uid dbus_connection_get_unix_user_apiparam_1 authenticate as
+dbus_connection_set_max_received_size_apiparam_2 be maximum dbus_connection_set_max_received_size_apiparam_2 byte outstanding message
+right now return descriptor be always socket , but be guarantee
+function always return dbus_bus_get_unix_user_apiparam_3 window
+quick reference , dbus_bus_request_name_apiparam_3 result code be discuss here , but specification be canonical version information
+dbus_malloc0_apiparam_1 be number dbus_malloc0_apiparam_1 allocate
+rule argument be stre form match dbus_bus_add_match_apiparam_2
+give dbus_connection_register_object_path_apiparam_3 handle message send exactly give dbus_connection_register_object_path_apiparam_2
+dbus_connection_set_wakeup_main_function_apiparam_4 be function be call free dbus_connection_set_wakeup_main_function_apiparam_3
+dbus_message_iter_get_element_count_apiname instead
+dbus_connection_try_register_fallback_apiparam_2 be delimit string dbus_connection_try_register_fallback_apiparam_2 element
+set authentication dbus_server_set_auth_mechanisms_apiparam_2 dbus_server_set_auth_mechanisms_apiparam_1 offer client , as null terminate array mechanism name
+unix file descriptor be read function have fd_cloexec flag set
+general , each mode connect give server have identifi
+dbus_free_string_array_apiparam_1 be array be free
+instead , let main loop invoke dbus_connection_dispatch_apiname
+dbus_connection_set_dispatch_status_function_apiparam_3 be dbus_connection_set_dispatch_status_function_apiparam_3 dbus_connection_set_dispatch_status_function_apiparam_2
+dbus_name_flag_allow_replacement dbus_name_flag_do_not_queue be property store by bus dbus_bus_request_name_apiparam_1 respect each request bus dbus_bus_request_name_apiparam_2
+increment reference count dbusmessage
+minor be odd number development release even number stable release
+create message be error reply another message , allow -PRON- printf format
+note function do take main thread lock dbusconnection , which allow be use inside watch timeout function
+get unix file descriptor dbus_connection_get_unix_fd_apiparam_1 , if
+if be call , d_bus locking , cost efficiency
+example qt -PRON- may store qsocketnotifi dbus_watch_set_data_apiparam_1 glib -PRON- may store gsource
+dbus_connection_set_unix_user_function_apiparam_4 be dbus_connection_set_unix_user_function_apiparam_2 free dbus_connection_set_unix_user_function_apiparam_3
+dbus_connection_set_max_received_size_apiparam_1 be dbus_connection_set_max_received_size_apiparam_1
+dbus_type_is_valid_apiparam_1 be potential type_code
+check interface dbus_validate_interface_apiparam_1 validity
+function be suitable validate c string , but be suitable validate untrusted datum network unless string length be check , since assume string end first zero byte accord normal c convention
+dbus_connection_get_unix_fd_apiparam_1 be dbus_connection_get_unix_fd_apiparam_1
+function must be call server side dbus_connection_set_allow_anonymous_apiparam_1 when dbus_connection_set_allow_anonymous_apiparam_1 be first see dbusnewconnectionfunction
+function be safe untrusted datum
+dbus_connection_set_windows_user_function_apiparam_1 be dbus_connection_set_windows_user_function_apiparam_1
+dbus_server_set_timeout_functions_apiparam_1 be dbus_server_set_timeout_functions_apiparam_1
+indeed , almost reentrancy dbus_connection_set_dispatch_status_function_apiparam_2 be bad idea
+dbus_message_get_data_apiparam_1 be dbus_message_get_data_apiparam_1
+be one exception here : although dbus_type_unix_fd be consider fix type arrays type be read function
+dbus_message_set_member_apiparam_1 be dbus_message_set_member_apiparam_1
+allocate identifier then be use dbus_connection_set_data_apiname dbus_connection_get_data_apiname
+register handler give dbus_connection_try_register_object_path_apiparam_2 object hierarchy
+dbus_message_get_container_instance_apiname return path or null
+should only be use abandon creation message when -PRON- have open container
+function behave exactly like dbus_connection_set_timeout_functions_apiname ; see documentation routine
+dbus_message_has_sender_apiname return true if dbus_message_has_sender_apiparam_1 have give sender
+dbus_connection_has_messages_to_send_apiparam_1 be dbus_connection_has_messages_to_send_apiparam_1
+dbus_move_error_apiparam_1 be source error
+dbus_connection_steal_borrowed_message_apiparam_1 be dbus_connection_steal_borrowed_message_apiparam_1
+dbus_watch_get_fd_apiname return file descriptor dbus_watch_get_fd_apiparam_1
+unlike dbus_bus_get_apiname , always create connection
+dbus_message_get_args_apiparam_3 be first argument type ... location first argument value , then list type_location pair
+dbus_message_set_path_apiparam_2 be path or null unset
+be lock cover way access incoming message queue , so dbus_connection_dispatch_apiname , dbus_connection_pop_message_apiname , dbus_connection_borrow_message_apiname , etc
+get datum previously set dbus_watch_set_data_apiname or null if none
+allocate slot be global , i
+dbus_server_set_data_apiparam_2 number must have allocate dbus_server_allocate_data_slot_apiname
+dbus_connection_set_windows_user_function_apiparam_4 be dbus_connection_set_windows_user_function_apiparam_2 free dbus_connection_set_windows_user_function_apiparam_3
+dbus_connection_open_private_apiparam_2 be dbus_connection_open_private_apiparam_1 where dbus_connection_open_private_apiparam_2 can be return
+PRON- can ask bus tell -PRON- uid another dbus_connection_get_unix_user_apiparam_1 though if -PRON- like ; be do dbus_bus_get_unix_user_apiname
+so check error something sensible if happen
+dbus_message_get_args_apiname return false if dbus_message_get_args_apiparam_2 be set
+dbus_address_entry_get_value_apiname return dbus_address_entry_get_value_apiparam_2 value
+get unique name dbus_bus_get_unique_name_apiparam_1 as assign by message bus
+note if dbus_connection_get_is_anonymous_apiparam_1 be authenticate as anonymous then disconnect , function still return true
+version previously allow user_specified threading primitive , but since d_bus # ignore -PRON- behave exactly like dbus_threads_init_default_apiname
+next field struct , next value array
+generally , function be only useful encapsulating d_bus message different protocol
+namely , auth mechanism such as anonymous support anonymous auth must be include list available mechanism anonymous login work
+dbus_bus_name_has_owner_apiparam_2 be dbus_bus_name_has_owner_apiparam_2
+see dbus_message_get_path_apiname
+appendable type be basic type , arrays fixed_length basic type except arrays unix file descriptor
+if dbus_connection_get_socket_apiparam_1 be socket_based , function return false , even if dbus_connection_get_socket_apiparam_1 do have file descriptor kind
+if primary owner release dbus_bus_request_name_apiparam_2 or disconnect , then next owner queue atomically take over
+dbus_signature_validate_single_apiparam_2 be dbus_signature_validate_single_apiparam_2 return
+dbus_connection_set_wakeup_main_function_apiparam_3 be dbus_connection_set_wakeup_main_function_apiparam_3 pass dbus_connection_set_wakeup_main_function_apiparam_2
+even if dbus_connection_send_apiparam_1 be disconnected , no error be return
+dbus_bus_remove_match_apiparam_3 be location store error
+remove previously_added message filter
+dbus_bus_start_service_by_name_apiparam_4 be place store dbus_bus_start_service_by_name_apiparam_4 or null
+check whether dbus_message_has_destination_apiparam_1 be send give dbus_message_has_destination_apiparam_2
+system message bus -PRON- be guarantee be machine since only listen unix domain socket least , as ship by default
+use return dbus_connection_return_message_apiparam_2 after peek use dbus_connection_borrow_message_apiname
+dbus_message_iter_recurse_apiparam_2 be sub_iterator initialize
+dbus_message_type_method_call method_call dbus_message_type_method_return method_return dbus_message_type_signal signal dbus_message_type_error error dbus_message_type_invalid invalid
+free null terminate array string
+dbus_connection_get_windows_user_apiparam_2 be return location allocate copy user identifi , or null if no memory
+append container_type value message
+set dbus_message_set_serial_apiparam_2 number dbus_message_set_serial_apiparam_1
+dbus_type_is_basic_apiparam_1 be either valid type_code or dbus_type_invalid
+dbus_name_flag_do_not_queue mean if -PRON- be primary owner , -PRON- want be queue up -PRON- only care about primary owner
+check if dbus_message_has_interface_apiparam_1 have interface
+dbus_connection_pop_message_apiname return next message incoming queue
+can only be use if -PRON- register bus manually i
+todo : -PRON- would like be able say -PRON- can ask bus tell -PRON- user another dbus_connection_get_windows_user_apiparam_1 though if -PRON- like ; be do dbus_bus_get_windows_user_apiname
+if container be array fixed_length type , be much more efficient dbus_message_iter_get_fixed_array_apiname get whole array one shot , rather than individually walk over array element
+dbus_connection_open_private_apiname get dedicated connection share other caller dbus_connection_open_apiname
+dbus_shutdown_apiname reverse effect function when reset global state libdbus
+dbus_message_new_method_call_apiparam_3 be interface invoke
+normally dbusconnection automatically handle message interface
+dbus_watch_get_data_apiparam_1 be dbuswatch object
+set flag indicating owner destination name be automatically start before dbus_message_set_auto_start_apiparam_1 be deliver
+if return newly_created connection , function block until authentication bus registration be complete
+dbus_shutdown_apiname do free memory be return application
+dbus_message_set_auto_start_apiparam_2 be true if auto_starte be desire
+dbus_connection_register_object_path_apiparam_2 be delimit string dbus_connection_register_object_path_apiparam_2 element
+if dbus_message_has_destination_apiparam_1 have no destination specify or have different destination , return false
+note , return sender be always unique bus name
+dbus_connection_get_data_apiname dbus_connection_set_data_apiname no longer be use slot
+dbus_type_is_valid_apiname return true if valid
+if client_side dbus_connection_get_server_id_apiparam_1 be authenticate yet , identifi be available if be include server address , but be available
+dbus_connection_dispatch_apiname return dispatch status , see dbus_connection_get_dispatch_status_apiname
+side effect be -PRON- need know reference hold dbus_connection_get_data_apiparam_1 while invoke dbus_connection_get_data_apiname , or dbus_connection_get_data_apiparam_1 could be finalize during dbus_connection_get_data_apiname
+register fallback handler give subsection object hierarchy
+dbus_connection_set_dispatch_status_function_apiparam_4 be free dbus_connection_set_dispatch_status_function_apiparam_2 dbus_connection_set_dispatch_status_function_apiparam_3
+dbus_message_get_signature_apiname return type signature
+dbus_message_set_interface_apiname return false if enough memory
+allocate integer identifier be use store application_specific datum dbusconnection
+dbus_server_ref_apiname return dbus_server_ref_apiparam_1
+dbus_message_new_error_printf_apiname return error message
+when use glib , dbusaddtimeoutfunction would call g_timeout_add
+if -PRON- read say # byte off wire single read_apiname , contain half_dozen small message , -PRON- exceed dbus_connection_set_max_received_size_apiparam_2 max by amount
+so integer , dbus_int32_t be expect example
+dbus_message_get_args_valist_apiparam_4 be return location first argument , follow by list pair
+dbus_message_iter_has_next_apiname return true if be more field follow
+connection here be private sense dbus_connection_open_private_apiname , so if connection dbus_server_set_new_connection_function_apiparam_2 keep reference must arrange connection be close
+if function fail , sub_iterator remain invalid , must be close dbus_message_iter_close_container_apiname or abandon dbus_message_iter_abandon_container_apiname
+remember null can always be pass instead dbuserror , if -PRON- care about have dbus_validate_error_name_apiparam_2 dbus_validate_error_name_apiparam_1 message
+return string become invalid if dbus_message_get_error_name_apiparam_1 be modify , since point into wire_marshaled dbus_message_get_error_name_apiparam_1 datum
+if -PRON- need parse message arrays unix file descriptor -PRON- need recurse into array manually
+rule multithreade app , then , be dbus_bus_register_apiname must be use register , or -PRON- need have -PRON- lock thread app respect
+function bypass message handler be register , so use be usually wrong
+connection multiple other bus name , but be find sender field
+set notification dbus_pending_call_set_notify_apiparam_2 be call when reply be receive or dbus_pending_call_set_notify_apiparam_1 call time out
+then editor can be user editor should specify dbus_name_flag_replace_existing either take over or be queue up accord whether dbus_name_flag_allow_replacement be give
+dbus_message_new_method_call_apiparam_1 be null which case no dbus_message_new_method_call_apiparam_1 be set ; be appropriate when use d_bus peer_to_peer context no message bus
+dbus_type_string , dbus_type_array
+list register fallback handler object path handler give dbus_connection_list_registered_apiparam_2
+toggle function be null if main loop re_queries dbus_timeout_get_enabled_apiname every time anyway
+if function obtain connection object never before return dbus_bus_get_apiname , call dbus_connection_set_exit_on_disconnect_apiname , so application exit if connection close
+really no point create pain -PRON- by do thing manually
+when incoming dbus_connection_set_unix_user_function_apiparam_1 have authenticate particular user identifi , dbus_connection_set_unix_user_function_apiparam_2 be call ; if return true , dbus_connection_set_unix_user_function_apiparam_1 be allow proceed , otherwise dbus_connection_set_unix_user_function_apiparam_1 be disconnect
+always return false prior authenticate dbus_connection_get_unix_process_id_apiparam_1
+dbus_connection_set_watch_functions_apiparam_6 be function be call free dbus_connection_set_watch_functions_apiparam_5
+if dbus_message_is_error_apiparam_1 be dbus_message_type_error , or have different name , return false
+call dbus_timeout_handle_apiparam_1 handler dbus_timeout_handle_apiparam_1
+when flag be set , dbus_message_set_auto_start_apiparam_1 be hold until name owner finish start up , or fail start up
+return block be current position array until end array
+const dbus_int32_t array 1 , 2 , # ; const dbus_int32_t v_array array ; if
+when use glib , dbusaddwatchfunction could call g_io_add_watch_apiname , or could be use as part more elaborate gsource
+integer , dbus_int32_t
+dbus_error_is_set_apiname return true if dbus_error_is_set_apiparam_1 occur
+dbus_connection_get_max_message_unix_fds_apiname return max numer unix fds single message
+typically just let dbus_timeout_handle_apiparam_1 fire again next time naturally time out be adequate response problem , but -PRON- could try more if -PRON- want
+get value set by dbus_connection_set_max_received_unix_fds_apiname
+destination , dbus_message_new_method_call_apiparam_2 , interface , dbus_message_new_method_call_apiparam_4 name can contain invalid character see d_bus specification
+dbus_message_set_serial_apiparam_1 be dbus_message_set_serial_apiparam_1
+deallocate global identifi message datum slot
+match interface be tricky because method call message only optionally specify interface
+drop dbus library internal reference dbuspendingcall so free call if nobody else be hold reference
+because connection be share , no user connection call dbus_connection_close_apiname
+dbus_connection_dispatch_apiname block if call while borrow message be outstanding ; only one piece code can be play incoming queue time
+dbus_message_set_error_name_apiparam_2 be name or null unset
+message bus have dbus_service_dbus as sender
+dbus_connection_set_data_apiname return true if be enough memory store dbus_connection_set_data_apiparam_3
+dbus_server_set_timeout_functions_apiparam_3 be function remove timeout
+check whether dbus_pending_call_get_completed_apiparam_1 call have receive reply yet , or
+passed_in slot must be initialize 1 , be fill slot identifier
+connect bus daemon register client as dbus_bus_register_apiname
+if start up without replace , specify dbus_name_flag_replace_existing , exit if -PRON- fail become bus dbus_bus_request_name_apiparam_2 owner
+except stre arrays , return value be constant ; free -PRON
+dbus_dispatch_need_memory indicate could be datum , but -PRON- can know sure without more memory
+dbus_connection_try_register_fallback_apiparam_5 be address where dbus_connection_try_register_fallback_apiparam_5 can be return
+retrieve datum previously set dbus_pending_call_set_data_apiname
+bus daemon can listen multiple address which mean have multiple dbusserver each identifier
+dbus_connection_send_with_reply_and_block_apiname return dbus_connection_send_with_reply_and_block_apiparam_2 be reply or null dbus_connection_send_with_reply_and_block_apiparam_4 code if function fail
+dbus_message_contains_unix_fds_apiparam_1 be dbus_message_contains_unix_fds_apiparam_1
+dbus_message_new_error_apiparam_3 be error message string or null none , but please give message
+dbus_bus_remove_match_apiparam_2 be textual form match dbus_bus_remove_match_apiparam_2
+note : be bug drop last reference dbus_connection_unref_apiparam_1 be still connect
+set timeout function dbus_server_set_timeout_functions_apiparam_1
+only way be sure server identifier be available be wait authentication complete
+conventionally , single_instance application often offer command line option call replace which mean replace current instance
+other than dbus_bus_get_apiname , be two way set unique name ; one be dbus_bus_register_apiname , other be dbus_bus_set_unique_name_apiname
+dbus_message_has_path_apiparam_1 be dbus_message_has_path_apiparam_1
+session bus , be useful as way uniquely identify each user session
+when -PRON- be do connection , -PRON- must dbus_connection_close_apiname disconnect , dbus_connection_unref_apiname free connection object
+allocate integer identifier be use store application_specific datum dbusmessage
+libdbus keep internal global variable , example cache thread lock , can be useful free internal data structure
+dbus_bus_register_apiname return true success
+PRON- call function multiple time array
+dbus_message_is_method_call_apiparam_2 be name check must be null
+dbus_connection_open_apiname can re_use exist connection identifi instead open connection
+dbus_watch_get_flags_apiname return condition dbus_watch_get_flags_apiparam_1
+always return false prior authenticate dbus_connection_get_windows_user_apiparam_1
+flag be set true by default , i
+return dbus_message_iter_get_basic_apiparam_2 be by reference should be free
+dbus_message_iter_recurse_apiparam_1 be message iterator
+dbus_message_get_type_apiname return type dbus_message_get_type_apiparam_1
+dbus_message_iter_append_fixed_array_apiparam_2 be type array element
+if iterator be point one i then just i would be return
+dbus_message_is_method_call_apiname return true if dbus_message_is_method_call_apiparam_1 be specify dbus_message_is_method_call_apiparam_3 call
+dbus_message_has_member_apiparam_2 be dbus_message_has_member_apiparam_2 name
+dbus_malloc_apiparam_1 be number dbus_malloc_apiparam_1 allocate
+dbus_threads_init_apiname return true success , false if no memory
+if -PRON- want prevent non_anonymous authorization , dbus_server_set_auth_mechanisms_apiname remove mechanism allow prove user identity i
+instance omit member match dbus_bus_add_match_apiparam_2 but add sender would let message sender through regardless member
+dbustimeouttoggledfunction notifie application timeout have enable or disable
+return value indicate whether read or writing be still possible , i
+case caller end up queue dbus_bus_request_name_apiparam_2 after current owner give up
+dbus_bus_get_private_apiparam_2 be address where dbus_bus_get_private_apiparam_2 can be return
+unix , dbus_connection_set_windows_user_function_apiparam_2 be set dbus_connection_set_windows_user_function_apiparam_4 be invoke when dbus_connection_set_windows_user_function_apiparam_1 be free or dbus_connection_set_windows_user_function_apiparam_2 be set
+turn dbusmessage into marshal form as describe d_bus specification
+dbus_connection_set_max_message_size_apiparam_1 be dbusconnection
+can be use selinux access control check getpeercon_apiname example
+variable argument list should contain type argument follow by pointer where value should be store
+set dbus_message_set_sender_apiparam_1 dbus_message_set_sender_apiparam_2
+dbus_message_iter_open_container_apiparam_3 be dbus_message_iter_open_container_apiparam_2 container content
+other word , -PRON- can get either runtime or compile_time version
+dbus_connection_open_apiname return connection , or null failure
+set container instance dbus_message_set_container_instance_apiparam_1 be send
+dbus_message_append_args_valist_apiparam_1 be dbus_message_append_args_valist_apiparam_1
+unlike dbus_connection_open_apiname , always create connection
+only possible after dbus_bus_get_unique_name_apiparam_1 have register message bus
+dbus_connection_set_max_message_size_apiparam_2 be maximum message dbus_connection_set_max_message_size_apiparam_2 dbus_connection_set_max_message_size_apiparam_1 can receive , byte
+dbus_connection_get_unix_user_apiname return true if dbus_connection_get_unix_user_apiparam_2 be fill valid user identifier
+function result call dbusdispatchstatusfunction set dbus_connection_set_dispatch_status_function_apiname , as disconnect message generate need be dispatch
+lock dbus_message_lock_apiparam_1
+release server address stop listen client
+dbus_signature_iter_next_apiname return false end current container
+guarantee return null if dbus_malloc_apiparam_1 be zero platform
+dbus_address_entries_free_apiparam_1 be array
+dbus_bus_get_private_apiparam_1 be bus dbus_bus_get_private_apiparam_1
+todo : when -PRON- start block , timeout be reset , but should really only time remain since dbus_pending_call_block_apiparam_1 call be create
+check whether dbus_message_is_error_apiparam_1 be error reply give error name
+dbus_timeout_get_enabled_apiparam_1 be dbustimeout object
+read basic_type dbus_message_iter_get_basic_apiparam_2 message iterator
+dbus_message_set_data_apiparam_3 be dbus_message_set_data_apiparam_3 store
+work identically dbus_connection_send_apiname other respect
+dbus_connection_try_register_fallback_apiname return false if dbus_connection_try_register_fallback_apiparam_5 be report
+dbus_connection_close_apiname can be skip if connection be already know be disconnected , example if -PRON- be inside handler disconnected signal
+construct message be reply method call
+allocate give number dbus_malloc_apiparam_1 , as standard malloc_apiname
+dbus_message_get_serial_apiname return serial dbus_message_get_serial_apiparam_1 or # if none have specify
+window , dbus_watch_get_unix_fd_apiname return # but function return winsock socket assume transport be socket_bas , as always be now
+dbus_message_set_destination_apiparam_2 be dbus_message_set_destination_apiparam_2 name or null unset
+function always return specifically socket file descriptor
+set interface dbus_message_set_interface_apiparam_1 be send or interface signal be emit dbus_message_type_signal
+dbuspendingcall always see exactly one reply dbus_connection_send_with_reply_apiparam_2 , unless be cancel dbus_pending_call_cancel_apiname
+dbus_watch_handle_apiname return false if wasn t enough memory
+one complete type mean single basic type , array , struct , or dictionary , though struct or array be arbitrarily recursive complex
+when request dbus_bus_request_name_apiparam_2 , -PRON- can specify several dbus_bus_request_name_apiparam_3
+so add descriptor main loop , dbus_watch_get_socket_apiname so forth
+dbus_message_get_signature_apiparam_1 be dbus_message_get_signature_apiparam_1
+signature include only argument dbus_message_type_method_call only out argument dbus_message_type_method_return , so be slightly different what -PRON- may expect be , do include signature entire c style method
+do nothing if dbus_set_error_apiparam_1 be null
+dbus_connection_flush_apiparam_1 be dbus_connection_flush_apiparam_1
+dbus_message_new_method_call_apiname return null if memory can be allocate message
+dbus_address_unescape_value_apiparam_2 be dbus_address_unescape_value_apiparam_2 set if unescape fail
+dbus_connection_set_watch_functions_apiparam_2 be function begin monitor descriptor
+finalize dbus_server_unref_apiparam_1 if reference count reach zero
+be program error call dbus_connection_remove_filter_apiparam_2 handler have add as filter
+arrays , dbus_message_iter_open_container_apiparam_3 should be dbus_message_iter_open_container_apiparam_2 array element
+if -PRON- set dispatch status dbus_connection_set_dispatch_status_function_apiparam_2 , -PRON- have be sure dispatch every iteration -PRON- main loop , especially if dbus_watch_handle_apiname or dbus_timeout_handle_apiname be call
+wrapper setenv_apiname
+get current state incoming message queue
+dbus_connection_read_write_dispatch_apiname return true if disconnect message have process
+variable argument list should contain type each argument follow by value append
+allocate identifier then be use dbus_pending_call_set_data_apiname dbus_pending_call_get_data_apiname
+allocate give number dbus_malloc0_apiparam_1 , as standard malloc_apiname , but dbus_malloc0_apiparam_1 be initialize zero as calloc_apiname
+dbus_parse_address_apiparam_3 be return location array length
+way think function be either make sort progress , or block
+dbus_connection_send_with_reply_and_block_apiparam_3 be timeout millisecond , # default or dbus_timeout_infinite no timeout
+when use qt , typically result call qeventloop : : wakeup_apiname
+return string become invalid if dbus_message_get_member_apiparam_1 be modify , since point into wire_marshaled dbus_message_get_member_apiparam_1 datum
+increment reference count dbusserver
+however , when -PRON- be do connection -PRON- should call dbus_connection_unref_apiname
+dbus_message_get_serial_apiname return serial
+interface name be fully_qualifi namespace
+dbus_connection_list_registered_apiname return false if no memory allocate child entry
+dbus_message_new_error_apiparam_2 be error name
+dbus_signature_iter_init_apiparam_2 be type dbus_signature_iter_init_apiparam_2
+function be responsible make application main loop aware file descriptor need be monitor event
+dbus_connection_send_with_reply_and_block_apiparam_4 be return location dbus_connection_send_with_reply_and_block_apiparam_4 dbus_connection_send_with_reply_and_block_apiparam_2
+application can know be safe unref connection because libdbus be hold reference as long as dbus_connection_close_apiparam_1 be open
+dbus_message_set_destination_apiparam_2 name must contain only valid character as define d_bus specification
+dbus_connection_register_object_path_apiname return false if error ocurre
+set mainloop wakeup function dbus_connection_set_wakeup_main_function_apiparam_1
+do imply -PRON- can call read_apiname buffer large than -PRON- re willing exceed limit by
+dbus_server_set_new_connection_function_apiname , dbus_server_set_watch_functions_apiname , dbus_server_set_timeout_functions_apiname should be call immediately render server fully functional
+dbus_message_new_error_printf_apiparam_2 be error name
+PRON- can establish default message handle policy whole subdirectory
+dbus_get_version_apiparam_3 be pointer return micro version , or null
+dbus_watch_get_data_apiname return previously_set datum
+be because -PRON- can rely internal implementation detail underlie libc library
+set dbus_watch_set_data_apiparam_2 which can be retrieve dbus_watch_get_data_apiname
+assign dbus_set_error_const_apiparam_1 dbus_set_error_const_apiparam_2 dbus_set_error_const_apiparam_3 dbuserror
+so example : const dbus_int32_t array 1 , 2 , # ; const dbus_int32_t v_array array ; dbus_message_append_args_apiname ; function do support arrays unix file descriptor
+dbus_bus_name_has_owner_apiparam_1 be dbus_bus_name_has_owner_apiparam_1
+call dbus_watch_get_enabled_apiname check
+can only be do once dbus_message_set_serial_apiparam_1
+only work unix ; only work connection machine as bus
+dbus_bus_request_name_apiparam_3 be dbus_bus_request_name_apiparam_3
+dbus_connection_try_register_object_path_apiname if may be case
+mean timeout error occur if no reply arrive , unlike dbus_connection_send_apiname
+example , give address dbus_address_entry_get_method_apiparam_1 tcp : host would return stre tcp dbus_address_entry_get_method_apiparam_1 be dbus_address_entry_get_method_apiparam_1
+by default , dbus_connection_set_exit_on_disconnect_apiparam_2 be false ; but message bus connection return dbus_bus_get_apiname be toggle by default
+dbus_server_set_auth_mechanisms_apiname return false if no memory
+dbus_connection_get_outgoing_unix_fds_apiname return number unix fd have queue up but send
+dbus_message_get_interface_apiname return dbus_message_get_interface_apiparam_1 interface or null
+if no reply be receive give dbus_connection_send_with_reply_apiparam_4 , function expire pende reply generate synthetic error reply indicating timeout occur
+dbus_bus_release_name_apiparam_1 be dbus_bus_release_name_apiparam_1
+if filter return dbus_handler_result_handle then process stop after filter
+dbus_connection_set_unix_user_function_apiparam_1 be dbus_connection_set_unix_user_function_apiparam_1
+dbus_timeout_get_data_apiname return previously_set datum
+function should be call when dbus_timeout_handle_apiparam_1 occur
+when refcount passed_in slot reach 0 , be set # dbus_pending_call_free_data_slot_apiparam_1 be address store slot deallocate
+dbus_message_get_sender_apiname return unique name sender or null
+dbus_message_iter_next_apiname return true if iterator be move next field
+dbus_message_type_invalid never be return
+dbus_set_error_from_message_apiparam_2 be dbus_set_error_from_message_apiparam_2 set
+dbus_connection_set_dispatch_status_function_apiparam_1 be dbus_connection_set_dispatch_status_function_apiparam_1
+dbus_message_ref_apiname return dbus_message_ref_apiparam_1 see dbus_message_unref
+dbus_validate_path_apiparam_2 be dbus_validate_path_apiparam_2 return
+arrays should be pass as const char address_of_array int n_element todo : support dbus_type_struct dbus_type_variant complex arrays todo : if fail due lack memory , dbus_message_append_args_apiparam_1 be hose -PRON- have start over build whole dbus_message_append_args_apiparam_1
+dbus_server_get_id_apiparam_1 be dbus_server_get_id_apiparam_1
+close container_typed value append message ; write out more information message know only after entire container be write , free resource create by dbus_message_iter_open_container_apiname
+dbus_message_has_sender_apiparam_2 be dbus_message_has_sender_apiparam_2 check must be null
+PRON- can , however , start over ; call dbus_threads_init_apiname again , create connection , so forth
+connection be own by libdbus , application should only unref -PRON- , never close -PRON
+return value indicate whether user sid be available ; if be available but -PRON- have memory copy , then return value be true null be give as sid
+dbus_get_version_apiparam_2 be pointer return minor version , or null
+if -PRON- be machine as bus , then call be probably bad idea , since uid mean little -PRON- application
+dbus_connection_set_data_apiparam_3 be dbus_connection_set_data_apiparam_3 store
+dbus_message_new_method_call_apiparam_4 be , or null dbus_message_new_method_call_apiparam_4 method invoke
+be impossible reopen dbus_connection_close_apiparam_1 , dbus_connection_close_apiparam_1 must be create
+first , method reply be pass dbuspendingcall or dbus_connection_send_with_reply_and_block_apiname order complete pende method call
+flag return only contain dbus_watch_readable dbus_watch_writable , never dbus_watch_hangup or dbus_watch_error ; watch implicitly include dbus_watch_get_flags_apiparam_1 hangup , error , other exceptional condition
+dbus_message_get_no_reply_apiname return true if dbus_message_get_no_reply_apiparam_1 sender be wait reply
+if interface field be miss , then be assume equal provide interface
+filter add during filter callback be run message process
+pass null dbus_connection_open_apiparam_2 parameter if -PRON- be interested reason failure
+dbus_try_get_local_machine_id_apiname return 32_byte_long hex_encode uuid string , or null failure
+struct dict entry , dbus_message_iter_open_container_apiparam_3 should be null ; be set whatever type -PRON- write into struct
+dbus_connection_send_with_reply_apiparam_1 be dbus_connection_send_with_reply_apiparam_1
+start service request ownership give dbus_bus_start_service_by_name_apiparam_2
+dbus_type_invalid be basic type
+dbuspendingcall object have slot give integer identifier reserve
+see dbus_message_get_args dbus_message_get_args_valist_apiparam_1 be dbus_message_get_args_valist_apiparam_1
+initialize thread , like dbus_threads_init_default_apiname
+disabled watch should have no effect , enable watch should be add main loop
+dbus_message_get_args_valist_apiparam_2 be dbus_message_get_args_valist_apiparam_2 be fill
+dbus_message_new_apiname return message or null if no memory
+dbus_pending_call_set_notify_apiparam_3 be data pass notifi dbus_pending_call_set_notify_apiparam_2
+if no dbus_bus_request_name_apiparam_3 be give , application receive request dbus_bus_request_name_apiparam_2 only if dbus_bus_request_name_apiparam_2 be currently unowned ; give up dbus_bus_request_name_apiparam_2 if another application ask take over use dbus_name_flag_replace_existing
+dbus_message_set_allow_interactive_authorization_apiparam_1 be dbus_message_set_allow_interactive_authorization_apiparam_1
+uid be only read by server client ; client can usually get uid server , because server authenticate client
+see dbus_connection_dispatch_apiname detail when handler be run
+dbus_signature_iter_get_element_type_apiparam_1 be pointer iterator
+dbus_message_has_signature_apiparam_1 be dbus_message_has_signature_apiparam_1
+so add descriptor main loop , dbus_watch_get_unix_fd_apiname so forth
+dbus_connection_set_watch_functions_apiparam_1 be dbus_connection_set_watch_functions_apiparam_1
+interval change during life dbus_timeout_get_interval_apiparam_1 ; if so , dbus_timeout_get_interval_apiparam_1 be disable re_enabled notify -PRON- change
+dbus_timeout_handle_apiparam_1 be dbustimeout object
+pass null instead array available dbus_server_set_auth_mechanisms_apiparam_2 be default behavior
+dbus_validate_member_apiparam_2 be dbus_validate_member_apiparam_2 return
+remember null can always be pass instead dbuserror , if -PRON- care about have dbus_validate_member_apiparam_2 dbus_validate_member_apiparam_1 message
+if -PRON- pass null dbus_bus_remove_match_apiparam_3 , function block ; otherwise
+dbus_bus_set_unique_name_apiparam_2 be unique name
+however , dbus_connection_set_unix_user_function_apiparam_2 never be call , because be no unix user id pass , or least none exist auth protocol would allow authenticate as unix user window
+dbus_message_iter_init_append_apiparam_1 be dbus_message_iter_init_append_apiparam_1
+listen connection give dbus_server_listen_apiparam_1
+dbus_bus_get_apiparam_1 be bus dbus_bus_get_apiparam_1
+error name must contain only valid character as define d_bus specification
+dbus_connection_get_max_received_unix_fds_apiparam_1 be dbus_connection_get_max_received_unix_fds_apiparam_1
+dbus_connection_send_with_reply_apiparam_4 be timeout millisecond , # default or dbus_timeout_infinite no timeout
+name dbus_set_error_from_message_apiparam_1 be set name dbus_set_error_from_message_apiparam_2 , dbus_set_error_from_message_apiparam_1 dbus_set_error_from_message_apiparam_2 be set first argument if argument exist be stre
+if be message dispatch , function dbus_connection_dispatch_apiname once , return
+dbus_message_iter_get_basic_apiparam_1 be iterator
+exist datum store exist dbusmessage object be free when message be finalize , but be retrieve only be replace if someone else reallocate slot
+dbus_watch_handle_apiname can be call during dbusaddwatchfunction , as connection be ready handle dbus_watch_handle_apiparam_1 yet
+size be approximate -PRON- should decide how many byte read off network or anything nature , as optimization choose tell small white lie avoid performance overhead
+note even after disconnection , message remain incoming queue nee be process
+addmatch method be fully document d_bus specification
+dbus_connection_has_messages_to_send_apiname return true if outgoing queue be non_empty
+dbusmessage object have slot give integer identifier reserve
+if -PRON- need -PRON- need manually recurse into array
+dbus_connection_set_timeout_functions_apiparam_2 be function add timeout
+dbus_connection_close_apiparam_1 be private dbus_connection_close_apiparam_1 close
+dbus_message_lock_apiparam_1 be dbus_message_lock_apiparam_1 lock
+get dynamically link version libdbus
+even if function fail due lack memory , sub_iterator dbus_message_iter_close_container_apiparam_2 have close invalidate
+libdbus do connection once connection dbus_server_set_new_connection_function_apiparam_2 take reference
+dbus_watch_get_unix_fd_apiname return unix file descriptor be watch , which be pipe , socket , or other type descriptor
+first one start up receive message send , but if one exit another become primary owner receive message
+dbus_connection_read_write_apiparam_2 be max time block or # infinite
+dbus_connection_register_fallback_apiparam_1 be dbus_connection_register_fallback_apiparam_1
+dbus_timeout_get_enabled_apiname return true if dbus_timeout_get_enabled_apiparam_1 be enable
+dbus_server_unref_apiparam_1 must be disconnect before refcount reach zero
+example usage would be : while ; empty loop body usage -PRON- would normally have set up filter function look each message as be dispatch
+get string array pass char array_location int n_element
+dbus_message_set_data_apiparam_4 be finalizer function dbus_message_set_data_apiparam_3
+dbus_watch_get_flags_apiparam_1 be dbuswatch object
+container type be example struct , variant , array
+dbus_get_local_machine_id_apiname return 32_byte_long hex_encode uuid string , or null failure
+do allocate memory ; dbus_error_init_apiparam_1 only need be free if be set point
+if rout peer message be enable , then message interface have bus destination name set be automatically handle by dbusconnection instead be dispatch normally application
+dbus_message_set_serial_apiparam_2 be dbus_message_set_serial_apiparam_2
+dbus_error_free_apiparam_1 be memory where dbus_error_free_apiparam_1 be store
+dbus_server_allocate_data_slot_apiparam_1 be address global variable storing slot identifier
+PRON- must call dbus_message_iter_open_container_apiname open array value before call function
+note dbus_address_entry_get_value_apiname return already_unescape dbus_address_unescape_value_apiparam_1
+private connection come dbus_connection_open_private_apiname or dbus_bus_get_private_apiname
+signature be stre make up type code such as dbus_type_int32
+dbus_validate_interface_apiparam_2 be dbus_validate_interface_apiparam_2 return
+dbus_message_get_type_apiparam_1 be dbus_message_get_type_apiparam_1
+dbus_message_iter_abandon_container_apiparam_1 be append iterator
+be identifier unique each dbusserver
+PRON- probably want dbus_set_error_apiname instead , most case
+first -PRON- should know each bus dbus_bus_request_name_apiparam_2 , bus store queue connection would like
+dbus_set_error_const_apiparam_3 be dbus_set_error_const_apiparam_1 dbus_set_error_const_apiparam_3 copy
+however -PRON- usually get reference dbus_connection_send_with_reply_apiname so probably -PRON- app own ref
+allocate integer identifier be use store application_specific datum dbuspendingcall
+both dbus_move_error_apiparam_1 dbus_move_error_apiparam_2 must be initialize
+can cause performance problem such as drain battery embed platform
+when refcount passed_in slot reach 0 , be set # dbus_connection_free_data_slot_apiparam_1 be address store slot deallocate
+dbus_server_get_data_apiparam_2 must still be allocate must have free
+retrieve datum previously set dbus_connection_set_data_apiname
+decrement reference count dbusserver
+set object path dbus_message_set_path_apiparam_1 be send or one signal be emit dbus_message_type_signal
+dbus_server_set_data_apiparam_1 be dbus_server_set_data_apiparam_1
+dbus_validate_utf8_apiparam_1 be string be check , which must be null
+so number string be basic type struct , arrays , variant be basic type
+dbus_connection_set_windows_user_function_apiparam_2 be predicate
+like dbus_message_get_args but take va_list by language binding
+message -PRON- be send , dbus_connection_send_apiname assign serial return -PRON
+appends field dbus_message_append_args_apiparam_1 give variable argument list
+increment reference count dbusconnection
+PRON- be responsible call dbus_bus_set_unique_name_apiname if -PRON- register by hand instead use dbus_bus_register_apiname
+block while one other group be run
+dbus_message_demarshal_bytes_needed_apiname return number byte require be buffer demarshal d_bus message
+message bus be server app connect bus be client
+dbus_message_iter_append_fixed_array_apiparam_3 be address array
+dbus_signature_iter_get_signature_apiname return signature single complete type start give iterator
+dbus_message_get_error_name_apiname return error name or null
+dbus_connection_get_object_path_data_apiparam_1 be dbus_connection_get_object_path_data_apiparam_1
+initialize dbuserror structure
+dbus_message_is_error_apiname return true if dbus_message_is_error_apiparam_1 be specify error
+so -PRON- can check dbus_set_error_from_message_apiparam_1 reply convert dbuserror one go : if return dbus_set_error_from_message_apiparam_1 ; else process reply ; dbus_set_error_from_message_apiparam_1 be dbus_set_error_from_message_apiparam_1 set
+get process identifi dbus_connection_get_unix_process_id_apiparam_1 if
+dbus_message_demarshal_bytes_needed_apiparam_1 be datum be marshal
+dbus_message_iter_open_container_apiparam_4 be sub_iterator initialize
+dbus_validate_member_apiparam_1 be potentially invalid member dbus_validate_member_apiparam_1 , which must be null
+get argument dbus_message_get_args_apiparam_1 give variable argument list
+dbus_pending_call_set_data_apiparam_2 number must have allocate dbus_pending_call_allocate_data_slot_apiname
+dbus_message_get_auto_start_apiname return true if dbus_message_get_auto_start_apiparam_1 auto_start
+when maximum be reach , dbus_connection_set_max_received_size_apiparam_1 read more datum until message be finalize
+PRON- can override rule connection authorize as user identity dbus_connection_set_unix_user_function_apiname dbus_connection_set_windows_user_function_apiname
+mean match rule method call should usually give interface
+name remain valid until dbus_bus_get_unique_name_apiparam_1 be free , should be free by caller
+dbus_watch_handle_apiname can be call during dbusaddwatchfunction , as dbus_connection_set_watch_functions_apiparam_1 be ready handle watch yet
+semantic maximum be : if outstanding message be already above maximum , additional message be read
+return string become invalid if dbus_message_get_path_apiparam_1 be modify , since point into wire_marshaled dbus_message_get_path_apiparam_1 datum
+resize block dbus_realloc_apiparam_1 previously allocate by dbus_malloc_apiname or dbus_malloc0_apiname
+read container type -PRON- need recurse into container dbus_message_iter_recurse_apiname
+if registration succeed , unique name be set , can be obtain use dbus_bus_get_unique_name_apiname
+if so , dbus_connection_set_watch_functions_apiparam_2 have call successfully one or more time , but dbus_connection_set_watch_functions_apiparam_3 have call remove successful add
+be unfixable memleak be unsafe free memory malloce setenv
+dbus_server_get_id_apiname return identifi dbus_server_get_id_apiparam_1 or null if no memory
+ask bus return globally unique identifi , as describe d_bus specification
+dbus_address_unescape_value_apiname return newly_allocated unescaped dbus_address_unescape_value_apiparam_1 or null if no memory
+dbus_bus_get_id_apiparam_2 be location store dbus_bus_get_id_apiparam_2
+dbus_message_set_destination_apiparam_2 be name another connection bus be either unique name assign by bus each connection , or well_known name specify advance
+dbus_message_has_signature_apiparam_2 be typecode array
+dbus_type_invalid be container type
+dbus_signature_iter_get_signature_apiparam_1 be pointer iterator
+d_bus specification describe support dbus_server_set_auth_mechanisms_apiparam_2
+otherwise , connection be unreference closed
+dbus_connection_send_apiparam_3 be return location dbus_connection_send_apiparam_2 dbus_connection_send_apiparam_3 , or null if -PRON- care
+flag return by dbus_watch_get_flags_apiname only contain dbus_watch_readable dbus_watch_writable , never dbus_watch_hangup or dbus_watch_error ; watch implicitly include watch hangup , error , other exceptional condition
+dbus_message_get_data_apiname return datum , or null if find
+use dbus_bus_register_apiname manually be only useful if -PRON- have -PRON- custom message bus find dbusbustype
+dbus_parse_address_apiname return true success , false otherwise
+unregister handler register exactly give dbus_connection_unregister_object_path_apiparam_2
+dbus_message_set_destination_apiparam_1 be dbus_message_set_destination_apiparam_1
+string must be free
+semantic be : if next message would cause -PRON- exceed maximum , -PRON- read
+when -PRON- lose ownership -PRON- bus dbus_bus_request_name_apiparam_2 , -PRON- need exit
+result be undefined when call if current type be non_container i
+if thread have initialize recursive mutex function , then deadlock ; however , can certainly confuse -PRON- application
+be allow reference dbuswatch after have pass remove_function
+dbus_connection_set_timeout_functions_apiparam_4 be function notify
+result function be undefined if be no container recurse into current iterator position
+get whether dbus_connection_get_is_anonymous_apiparam_1 be authenticate as specific user
+particular happen initial dbus_connection_get_dispatch_status_apiparam_1 , because sort authentication protocol stuff have be parse before first message arrive
+so stre , const char
+dbus_connection_set_data_apiparam_4 be finalizer function dbus_connection_set_data_apiparam_3
+check whether dbus_message_has_sender_apiparam_1 have give unique dbus_message_has_sender_apiparam_2 as sender

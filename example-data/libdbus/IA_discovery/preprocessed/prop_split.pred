@@ -1,0 +1,1813 @@
+free param be set , reinitialize param as api
+param be memory param be store
+check whether param be set have give param
+param be param
+PRON- array , -PRON- call api param create by api
+param be param
+api return constant
+initialize structure
+param be
+do not allocate memory
+check whether param occur
+param be param object
+api return constant
+error param , free param overwriting param
+param must be initialize
+param be reinitialize empty error
+param may not contain exist error
+param only need be free
+param be source error
+param be destination error null
+assign param message
+free reinit source error
+param may be null , which mean default message be deduce param
+not hurt -PRON
+be not good idea , ahead provide useful param message
+param be param
+do nothing
+param be param
+param be param string
+assign param
+param may be null , which mean default param be deduce param
+param message be set instead
+default param be totally useless , though , use null param be not recommend
+param be param null
+param be param
+do nothing
+PRON- probably want api instead , case
+PRON- must ensure param be global datum not be free
+param be param _ lrb _ not copy
+param be block be free
+free block param previously allocate by api
+free null _ terminate array string
+param be array be free
+null , do nothing
+guarantee return null
+allocate give number param , as standard api
+null , do nothing
+api memory be not safe free regular api library
+param must be release api
+param be number param allocate
+return null
+guarantee return null
+free api only
+free api memory api only
+param be number param allocate
+return null
+api return allocate memory , null
+api return allocate memory , null
+api memory be not safe free regular api library
+guarantee free param return null
+allocate give number param , as standard api , but param be initialize constant as api
+block param previously allocate by api
+param be size param block
+param be block be
+api return allocate param null
+return null
+free memory allocate internally by reverse effect api
+api do not free memory thatbe return by api application
+param be not free
+only free param datum structure
+keep internal global variable , cache thread lock , can be useful free internal data structure
+PRON- must free memory release reference count return -PRON- by before call api
+PRON- can , however , start
+PRON- can not continue use param object , as connection , be allocate before api
+call api , create connection , forth
+call api drain queue message
+purpose api be allow application get clean output memory leak
+be absolutely no requirement call api _ fact , application not bother should not feel guilty
+api be not thread safe , must be call
+PRON- have know be use application process before -PRON- can call api
+obtain machine machine process be run
+param must be free api
+latter case , warning be log
+result processing special disconnected signal , which may result call api , unless -PRON- have use api disable behaviour
+one be call api library be almost certainly wrong
+deficient error reporting , api be as api
+return param string , null failure
+get dynamically link version
+api may be useful
+PRON- can get either runtime param version
+api return null
+param be pointer return version , null
+think carefully which -PRON- want give case
+alternatively , be macros constant which allow -PRON- test version -PRON- be compile against
+param be pointer return minor version , null
+minor be odd number release even number stable release
+param be pointer return micro version , null
+wrapper api
+be unfixable be unsafe free memory malloce use
+be because can not rely internal implementation detail underlie library
+unset environment variable
+minor change be add
+full version number be param , micro change release param
+param be name environment variable
+api be not param
+param be param environment variable , null unset
+api return constant success , constant if not enough memory
+obtain machine machine process be run
+param must be free api
+be guarantee remain until next
+machine -PRON- would can be use create unique param instance
+usually remain across , but configuration change rebuild machine could break
+PRON- could use name selection name
+return param string , null failure
+PRON- can get machine -PRON- would remote application by invoke api param
+machine -PRON- would be prefer machine hostname , may change runtime
+be not sense rfc constant
+detail be explain param specification
+allocate integer -PRON- would be use storing param datum
+allocate -PRON- would may be use api
+allocate be global
+param must be initialize constant , be fill -PRON- would
+if remote application have machine -PRON- would as one return by function , remote application be machine as application
+object have give integer -PRON- would reserve
+param be address global variable storing
+api return constant failure memory
+block until param call be complete
+if param call be already complete , api return immediately
+be assume be already allocate
+be incremente
+block be as api
+require storing instead timeout param be param call
+do not enter main loop process message , simply wait question
+cancel param call , error receive be ignore
+param be param call
+however -PRON- usually get reference api probably own
+deallocate global -PRON- would datum
+timeout be reset
+but should really only use time remain
+cancel param call not simulate param call
+api may no longer be use
+drop library internal reference free call
+check whether param call have receive yet , not
+param be param call
+no be receive unless be already receive before -PRON- cancel
+api return constant
+idea be two process machine -PRON- would should be able use share memory , unix domain socket , process id , feature os require process be run os kernel instance
+retrieve datum previously set api
+timeout error be receive
+param must still be allocate
+param be param
+exist datum store exist object be free
+be set constant
+param be param get datum
+api return datum , null
+increment reference count param call
+param be param call object
+api return param call object
+param number must have be allocate api
+param be param
+param be param number
+param be param store
+param be finalizer function param
+api return constant
+param be param call
+param be notifi param
+param be data notifi param
+param be param free user datum
+api return constant if not enough memory
+param call be finalize
+store pointer , along optional function be use freeing param
+get , return null
+set param be call
+param call time
+message caller
+param be param call
+api return message null
+api can only be call per param call
+param be param
+get number unix attach param
+api return number file descriptor
+allocate integer -PRON- would be use storing param datum
+allocate -PRON- would may be use api
+allocate be global
+param must be initialize constant , be fill -PRON- would
+reference count param call , free
+object have give integer -PRON- would reserve
+api return constant failure memory
+param be address global variable storing
+field param give variable param list
+variable param list should contain type param follow by value
+appendable type be basic type , param basic type
+be assume be already allocate
+be incremente
+param basic type , value , -PRON- have use rather function
+basic type , specify type code follow by address value
+api do not support unix file descriptor
+unix file descriptor api internally duplicate descriptor -PRON
+hence -PRON- may close descriptor immediately after call
+string work const char array hello use array though
+PRON- need manually array
+last param api must be constant , mark end param list
+param be param
+api return constant success
+like api but take param use by language
+not know read invalid memory
+param be type first param ... value first param , list additional param pair
+support constant
+should be as const char param int param
+PRON- have create pointer variable , assign array , take address pointer variable
+leave param
+param be hose
+PRON- have discard param start
+warn , give int array _ lsb _ _ rsb _ , array array
+array param basic type , paramcode , element , address array pointer , param integer give number element array
+PRON- have start build whole param
+param be param
+param be type first param
+api return constant success
+param be value first param , list pair
+check whether param contain unix
+param be param
+api return constant
+param be param
+api can not be use program try recover oom error
+api return param null
+param message format describe param specification
+generally , api be only useful encapsulating param message different protocol
+param be length param
+param be marshal
+param be location save error
+api return null
+return number byte require be buffer param message
+generally , api be only useful encapsulating param message different protocol
+param be datum be marshal
+param be length param
+otherwise return number byte be demarshalle
+deallocate global -PRON- would message datum
+return have be set
+api return constant
+api may no longer be use
+param be param
+get param give variable param list
+support type include support by api
+basic type param basic type
+param be as would be api
+exist datum store exist object be free
+be set constant
+get string array char param int param
+similar api do not support constant
+except be set constant , param be reset constant
+create param exact param specify , param not be lock
+list be terminate constant
+unix file descriptor be read api have constant flag set
+except stre , param value be constant
+not free
+variable param list should contain type param follow by pointer value should be store
+make sure unset api
+PRON- need array manually
+addition type , string , object path , signature be support
+support constant array param be param
+by api extra param be ignore
+but thesebe return by api as allocate memory must be free api , typesbe return by api as const reference
+param be param be fill failure
+api return constant
+param be set
+like api but take param use by language
+param be first param type ... location first param value , list param pair
+param be param be fill
+param be type first param
+param be return location first param , follow by list pair
+api return constant
+param be param
+param be param
+api return constant
+api return path null
+return constant
+retrieve datum previously set api
+param must still be allocate
+param be param
+get container instance param be send , null
+param be param get datum
+api return datum , null
+param become
+param be param
+param be param
+api return param destination null
+get destination param null
+api return error name null
+param become
+get api param be send emit
+api name be param
+get error name null
+param be param
+param become
+api return param api null
+get api member invoke emit
+return null
+param be param
+api return member name null
+param become
+return null
+param be param
+api return constant
+param become
+get object path param be send emit
+param be param
+return constant
+api return path null
+free param api
+return null
+get object param be send emit decompose format
+param become
+api return constant
+could be optimize by use param instead call api param be param
+param be param
+param be place store allocate array param component
+empty but param array mean param
+null set
+return param be constant
+api return
+param become _ lcb _ foo , , null _ rcb _ param become _ lcb _ null _ rcb
+be fill by param
+note , param be always unique name
+param be param
+connection may multiple name , but be not find field
+get unique name connection which originate param , null
+api return unique name null
+message receive connection have provide by remote application
+param be param
+param become
+message -PRON- be send , api assign return -PRON
+api return
+message number be provide by application send param be use identify param
+return param constant have be specify
+string be terminate nul
+get type signature param
+signature be stre make type code as constant
+param be param
+api return type signature
+signature include only param constant only param constant , be slightly different -PRON- may expect
+constant never be return
+get type param
+param be param
+api return type param
+param become
+check whether param be send give param
+if param have no destination specify have different destination , return constant
+param be param
+param be param check
+type include constant , but type be allow code must silently ignore message unknown type
+param be param
+api return constant
+param be api name
+api return constant if api field header match
+param be param
+param be param name
+api return constant
+param be param
+param be param name
+api return constant
+object param be destination object api call emit object signal
+if param have no specify have different , return constant
+check whether param have give unique param as
+PRON- can not use api see
+message have constant as
+param be param
+peer application always have unique param connection as
+param be param check
+api return constant
+param be param
+check detail param look like
+param be array
+api return constant
+check whether param be error give error name
+have different name , return constant
+param be param
+param be name check
+api return constant
+have different api member field , return constant
+param be param
+param protocol allow param caller leave api name
+check whether param be param call give api member field
+param be name check
+param be name check
+api return constant
+be assume equal provide api
+param be param
+check whether param be signal give api member field
+param be name check
+have different api member field , return constant
+param be name check
+api return constant
+return , message be hose -PRON- have start build whole message
+param be
+abandon creation param value free resource create by api
+param be param close
+return , message be hose -PRON- have start build whole message
+abandon creation param value free resource create by api
+param be param close
+however , be not valid call api uninitialized memory
+param message
+should only be use abandon creation message
+basic type be param type as integer string
+value param should be address param
+unlike api , be valid call api be initialize api , be already close abandon
+integer , param
+string , const char
+unix file descriptor api internally duplicate descriptor -PRON
+param be
+hence -PRON- may close descriptor immediately after call
+param be param
+param be param address param
+be intend be use error cleanup code path , similar pattern
+api return constant if not enough memory
+outer api
+param result constant
+block param value array
+param type be basic type be not param
+result constant
+return result
+param be
+message be hose
+double , , etc
+PRON- must call api open array value before call function
+PRON- have start build whole message
+PRON- may call api multiple time array
+value param should be address array
+param be
+param be address array
+string work const char array hello use array though
+param be number element
+param be type array element
+integer , param be expect
+api return constant if not enough memory
+must not be close function , abandon api
+however , remain valid call api
+message be hose
+param be
+close param value message
+PRON- have start build whole message
+param be param close
+param have be close invalidate
+api return constant if not enough memory
+if be end message , return constant
+may information message know only after entire container be , may free resource create by api
+return param type param message point
+api return param type
+PRON- have create pointer variable , assign array , take address pointer variable
+param be message param
+PRON- can thus loop as follow
+return number byte array as marshal protocol
+must currently be inside param value
+message be hose
+api be deprecate be stupid
+use api instead
+param be
+PRON- have start build whole message
+warn , give int array _ lsb _ _ rsb _ , array array
+api return number byte array
+would -PRON- want know many byte be array as marshal protocol
+read param message
+basic type be param as integer string
+param should be address location store param
+param be by reference should not be free
+should be param stre const char
+unix file descriptor be read api have constant flag set
+read container type -PRON- need container api
+unix file descriptor
+otherwise , -PRON- have iterate container content one param time
+call duplicate
+param be
+be job close
+param be location store param
+make sure unset api
+return number element param value point by
+param be
+api return number element array
+PRON- can get array element api
+param be message param
+param value be guarantee fit , version have type , -PRON- can code like
+return element type array message point
+api return array element type
+PRON- crash
+PRON- need check point array before use function
+read block param value message
+be sure -PRON- have somehow check api match type -PRON- be expect
+message param should be array
+param value be basic type be not param , as integer , , double
+param be current position array until end array
+param should be address location store param
+be one exception
+api be param type but param type as string , may be bad idea use
+api should only be use
+should be const param be by reference should not be free
+param be
+param be location store block
+param be number element block
+be much prefer walk entire array
+return current signature message
+param must be free api
+param be message
+api return contain signature , null
+be useful primarily variant
+one can variant determine signature variant value
+param be message param
+api return constant
+initialize read param
+PRON- have array api read element one by one
+type param can only be read however
+param be param
+api return constant
+param be pointer initialize
+easy way iterate be like
+api be much convenient
+contain no allocate memory
+nee not be free , can be copy by api
+initialize param end param
+param be param
+param be pointer initialize
+if no next field , return constant
+only valid operation be api , which do nothing
+if forward , return constant
+initialize param as
+param be message param
+api return constant
+param value message
+next field
+container type be struct , variant , array
+param be hose
+success , -PRON- be require content container use param , call api
+variant , param should be param single value inside variant
+param should be param array element
+PRON- have start build whole param
+struct entry , param should be null
+be set whatever type -PRON- struct
+however , after api have either succeed fail , be valid call api
+param be param value
+param be
+param be param container content
+param be param initialize
+api return constant if not enough memory
+param remain invalid , must not be close api abandon api
+no array
+message be hose
+param be message
+param be param initialize
+be sure -PRON- have somehow check api match type -PRON- be expect
+PRON- have start build whole message
+lock param
+PRON- can only
+value , not type
+api may call externally , application wrapping param another protocol
+container value
+param be param lock
+allow check application not keep reference param outgoing queue change underneath -PRON
+result api be undefined
+turn marshal form as describe param specification
+param be
+param be location save marshal form
+generally , api be only useful encapsulating param message different protocol
+api return constant
+param be location save length marshal form
+construct message give message type
+type include constant , forth
+param be type message
+usually -PRON- want use api instead
+be much efficient use api get whole array one shot , rather individually walk array element
+api return message null
+error be common response api call , but can be return message
+create message error another message
+error name must be valid error name accord syntax give param specification
+param be message
+param be error name
+param be error message string
+api return error message object , free api
+use constant
+see api detail _ api be aside printf formatting
+create message error another message , allow -PRON- use printf formatting
+add _ constant param be original message
+param be error name
+api return error message
+PRON- can outermost array
+param be error message format as printf ... format string param
+construct message invoke param remote object
+main be , but have no value , -PRON- not be able
+param name may not be null
+param may be null which case no param be set
+destination , param , api , param name can not contain invalid character
+return null
+param be name message should be send null
+param be object param message should be send
+param be api invoke
+param be , null param api invoke
+api return , free api
+be appropriate
+construct message api call
+api may be null , which
+param be message
+api return , free api
+construct message represent signal
+return null
+path , api , signal param must be valid
+param be param object emit signal
+signal be identify by originate object param , api , param signal
+param be param signal
+param be api signal be emit
+api return , free api
+return null
+increment reference count
+param be param
+api return param see api
+protocol level toggle constant
+param be param
+flag be constant by default
+message whose type be not constant , flag be meaningless should not be set
+case failure , be error
+by default end be expect make authorization decision param promptly
+set flag indicating caller api be prepare wait interactive authorization take place before actual api be process
+flag be set constant by default
+set flag indicating destination name be automatically start before param be deliver
+auto starting be default
+authorization fail , but could have succeed
+param be constant
+may use error constant signal
+protocol level toggle constant param be param
+set container instance param be send
+param be hold until name finish start , fail start
+param be param
+param be path null unset
+api return constant if not enough memory
+path must contain only valid character object path as define param specification
+param be constant
+param number must have be allocate api
+param be param
+param be param number
+param be param store
+param be finalizer function param
+param be finalize
+api return constant
+set message param
+store pointer , along optional function be use freeing param
+param be param
+set name error
+param name must contain only valid character as define param specification
+name be param
+param be param name null unset
+api return constant if not enough memory
+param be param
+error name must contain only valid character as define param specification
+api return constant if not enough memory
+param be name null unset
+param be name another connection may be either unique name assign by connection , param name specify
+set api param be send api signal be emit
+param be param
+api name must contain only valid character as define param specification
+param be api null unset
+set api param invoke emit
+param name must contain only valid character as define param specification
+api return constant if not enough memory
+param be param
+param be param null unset
+api return constant if not enough memory
+protocol level toggle constant param be param
+flag be constant by default , by default end be require
+param be param
+path must contain only valid character as define param specification
+param be receive
+normally -PRON- know
+be no way know
+set object path param be send one signal be emit
+set flag indicating param do not want
+param be path null unset
+end connection may optimize by not send api return error
+api return constant if not enough memory
+param be constant
+set param
+param be param
+param be
+api return constant if not enough memory
+set param
+param must be valid name as define param specification
+usually -PRON- not want call
+param daemon call set origin param
+param be param
+param be param null unset
+api return constant if not enough memory
+set param number param
+can only be do param
+param be param
+param be param
+daemon -PRON- should not need set param
+utility function convert param string param message type
+set base content give param
+return value indicate
+param be param set
+automatically set param appropriate value
+api be only need
+api return constant
+reference count , free param
+return current type point by
+param be only set , as constant
+param be param set
+PRON- can check param convert one
+constant , not _ lrb
+if be point type code as , be return directly
+param be pointer
+api return current type
+PRON- should initialize param api parse container type
+utility function convert param message param stre _ lrb _ not translate
+param be pointer
+convenience function return element type array
+api return current array element type
+param be set first param
+name param be set name param
+param be pointer
+api allow -PRON- avoid initialize param get current type
+return signature single complete type start give
+if be point one would be return
+api return current signature
+undefined behavior result
+should be free api
+initialize read type param
+param be pointer initialize
+param be type param
+api be not safe use invalid signature
+skip next value level
+be sure validate potentially invalid signature api before use function
+next field struct , next value array
+return constant end current container
+param be
+api return constant
+if api return constant result api
+initialize point first type current container
+param be current
+param be initialize point first
+check type param validity
+param be potentially invalid type param
+if be point start ii , would be return
+param be param return
+however , parser encounter container type start character as . structure , corresponding type container be return
+api return constant
+check type param be valid contain exactly one complete type
+param be potentially invalid type param
+null can always be instead
+param be param return
+result be undefined
+api return constant
+one complete type mean single basic type , array , struct
+constant be not basic type
+number string be basic type struct , , variant be not basic type
+param be either valid param constant
+valid param be define by param can be check api
+api return constant
+be error invalid param , constant , function
+constant be not container type
+container type can contain basic type , nested container type
+valid param be define by param can be check api
+be error invalid param , constant , function
+param be either valid param constant
+api return constant
+api be useful determine
+struct be param but struct be not consider fix type purpose function
+be error invalid param , constant , function
+basic type be somewhat arbitrary concept , but be include type be param by single param , no additional type information nest value
+param be either valid param constant
+valid param be define by param can be check api
+value type can change length
+api return constant
+tell -PRON- whether
+api be safe untrusted datum
+one complete type would mean ii two integer sequence
+param be potential param
+constant surprisingly enough be not consider valid , random unknown byte be not either
+api return constant if valid
+return constant
+purpose , -PRON- assume first byte old value would be location , padding be not
+allocate integer -PRON- would be use storing param datum
+must be initialize constant
+allocate -PRON- would may be use api
+allocate be global
+object have give integer -PRON- would reserve
+api return constant no memory
+param be address global variable storing -PRON- would
+release server address listen client
+do not modify server reference count
+param be param
+be incremente , rather create
+deallocate global -PRON- would server datum
+api may no longer be use
+param be address deallocate
+only first call have effect
+param be param
+api return address null
+retrieve datum previously set api
+param must still be allocate
+return address param , as param string which must be free by caller
+param be param
+exist datum store exist object be free
+param be param get datum
+api return datum , null
+return unique -PRON- would param , as param string which must be free by caller
+be -PRON- would unique
+api can param exist connection -PRON- would instead open connection
+param be param
+remember represent only one mode connect
+PRON- would be normally use by client tell
+api return - PRON - would param null
+PRON- would be not sense rfc constant
+daemon can listen multiple address which mean have multiple -PRON- would
+detail be explain param specification
+param be param
+return constant
+listen connection give param
+otherwise return
+api should be call immediately render server fully functional
+free server , application must call first api
+param be param server
+return null set param
+param be location store reason failure
+increment reference count
+param be param
+api return , null failure
+api return param
+api only affect connection create after be call
+null instead array use available param
+set authentication param offer client , as null _ terminate array mechanism name
+param specification describe support param
+param be param
+param be null _ terminate array param
+api return constant
+param number must have be allocate api
+param be param
+param be param number
+param be param store
+param be finalizer function param
+api return constant
+set param be use handling connection
+otherwise , connection be unreference closed
+give param be connection as connection be create
+param be finalize
+store pointer , along optional function be use freeing param
+param be param
+connection stay alive
+param be param handle connection
+do not connection connection param take reference
+be consider good form
+connection param may close connection , which
+connection be private sense api
+param be param connection handler
+param be param free param
+set timeout function param
+function be responsible make application main loop aware timeout
+api behave exactly like api
+see documentation api
+param be param
+param be function add timeout
+param be function remove timeout
+param be param
+api return constant failure memory
+param be function be call free param
+set function param
+api behave exactly like api
+param be function notify
+see documentation api
+param be param
+param be function begin monitor descriptor
+param be function monitor descriptor
+function be responsible make application main loop aware file descriptor need be monitor event
+param be param
+api return constant failure memory
+param be function be call free param
+reference count
+param be function notify
+param must be before reach constant
+param be param
+check param validity
+param be param return
+param be potentially invalid param , which must not be null
+finalize param
+api return constant
+check param validity
+param be potentially invalid
+param be param which must not be null param error return
+api return constant
+check api param validity
+null can always be instead
+param be param return
+param be potentially invalid api param , which must not be null
+api return constant
+null can always be instead
+check member param validity
+api be suitable validate string , but be not suitable validate untrusted datum network unless string length be check
+param be param return
+param be potentially invalid member param , which must not be null
+api return constant
+check object param validity
+null can always be instead
+api be suitable validate string , but be not suitable validate untrusted datum network unless string length be check
+param be param return
+param be potentially invalid object param , which must not be null
+api return constant
+null can always be instead
+api be suitable validate string , but be not suitable validate untrusted datum network unless string length be check
+check string validity
+string param must be valid param
+param be param return
+param be string be check , which must not be null
+null can always be instead
+api return constant
+add message filter
+api be suitable validate string , but be not suitable validate untrusted datum network unless string length be check
+filter be run order be add
+filter be handler be run incoming message , before object register api
+be probably feature , as filter could create arbitrary
+param be param
+null can always be instead
+api be suitable validate string , but be not suitable validate untrusted datum network unless string length be check
+filter add
+handler can be add as filter , which case be run
+param be param handle message
+param be user data param
+param be param use free user datum
+but kind suck
+api return constant success , constant if not enough memory
+not run filter message
+allocate integer -PRON- would be use storing param datum
+allocate -PRON- would may be use api
+allocate be global
+api be suitable validate string , but be not suitable validate untrusted datum network unless string length be check
+param must be initialize constant , be fill -PRON- would
+api return constant failure memory
+object have give integer -PRON- would reserve
+param be address global variable storing
+if queue be empty , return null
+return param message incoming message queue , leave queue
+caller do not reference param must either return use api keep after call api
+be incremente
+no one can get message borrow , return as quickly as possible not keep reference after return
+api return next message incoming queue
+be assume be already allocate
+api block
+make copy
+param be param
+always return constant type , exception constant
+api can be use runtime check type may be unknown specific param client implementation version
+function return constant only system know unix file descriptor can send via choose transport remote support
+api block
+param be param
+test whether certain param can be send via param
+return constant type implementation do not know , include invalid reserve type
+param be param check
+only one piece code can be play incoming queue time
+api return constant
+close private param , no datum can be send receive
+transport underlie param
+api do not affect connection reference count
+call after first nothing
+be safe close param
+attempt send message after close param be safe , but result error generate locally
+PRON- must close param before release last reference param
+PRON- may not close share param
+connection create api be share
+be impossible reopen param must be create
+api may result call set api , as message generate need be
+connection be own by , application should only unref , never close
+connection create api be not keep reference by
+application can know be safe unref connection as param be open
+param be private param close
+process incoming datum
+result be undefined
+be program try print warning
+read usually happen api
+processing have three step
+incoming data buffer be fill
+thus , either param be close be ok drop last reference , param be open know do not have last reference
+second , filter register api be run
+if filter return constant processing after filter
+first , api be api
+connection be responsible call api before release last reference
+be careful call api inside message handler
+api remove one message queue process
+single call api process one message
+call api recursively
+not clear entire message queue
+be parse , which may may not result add message incoming queue
+handle constant param be param
+api status , see api
+block until outgoing message queue be empty
+param be param
+third , path handler add api
+deallocate global -PRON- would connection data
+api may no longer be use
+free param resource api
+not deadlock
+however , can certainly confuse application
+param be param
+param be resource
+return constant if structure pointerbe return by api
+always return constant before authenticate param
+exist datum store exist object be free
+param be param
+be set constant
+param be return location param
+should only be call
+param be return location length param
+api return constant
+get adt param
+retrieve datum previously set api
+param must still be allocate
+param be param
+param be param get datum
+api return datum , null
+constant indicate incoming queue be empty
+get current state incoming message queue
+constant indicate message queue may contain message
+note api do not take main thread lock , which allow be use inside timeout function
+process incoming message queue , use api
+param be param
+constant indicate could be datum , but can not know sure without memory
+api return current status
+thus , be possible see status constant but not have message yet
+happen initial param
+note , constant really mean either have message queue , have raw byte buffer need be parse
+PRON- need know reference hold param
+effect be , param could be finalize during api
+get whether param be not authenticate as specific user
+may not add entire message
+if be authenticate as specific user , return constant
+only allow anonymous mechanism _ rrb
+param be param
+if param be not authenticate , api return constant , if be authenticate but as anonymous user , return constant
+get whether param be authenticate
+api return constant
+param be param
+api return constant
+get whether param be currently open
+PRON- can use api see be authorize as
+be not separate state close disconnected , two term be synonymous
+api should really be call api but historical reason be not
+param be param
+api return constant
+get value set by api
+param be param
+api return max size single message
+param may become disconnected
+param may be disconnected api
+get value set by api
+param be param
+api return max unix single message
+param be param
+get value set by api
+api return max size live message
+get value set by api
+param be param
+api return max unix live message
+param be param
+get user datum api
+param be param -PRON- register
+param be location store user datum , null
+param be param
+api return constant if not enough memory
+get approximate size byte message outgoing message queue
+datum be fill null
+api return number byte have be queue but not send
+param be param
+api return number unix fd have be queue but not send
+get approximate number message outgoing message queue
+only way be sure server -PRON- would be available be wait authentication complete
+general , mode connect give server have -PRON- would
+get -PRON- would server address be authenticate
+PRON- can get machine -PRON- would
+see api get machine -PRON- be
+if param be server , always return null _ use api get -PRON- would server , if -PRON- be server
+param be param
+param specification describe server -PRON- would ids bit detail
+look api instead
+api return server - PRON - would null
+be not convenience wrapper , but -PRON- can invoke param peer get machine -PRON- would end
+not connection have socket
+size be approximate -PRON- should not use decide many byte read network anything , as optimization may choose tell small white avoid performance overhead
+PRON - would may be available  , but may not be available
+not read file descriptor , try api
+use main loop
+add descriptor main loop , use api forth
+api always return specifically socket file descriptor
+param be param
+if param be not param , api return constant
+get underlie window unix socket file descriptor param
+have server -PRON- would
+param be return location file descriptor
+api return constant
+can be use access control check api
+not read file descriptor , try api
+not connection have file descriptor
+use main loop
+add descriptor main loop , use api forth
+api always fail window
+get unix file descriptor param
+param be param
+right param be always socket , but not guarantee
+param be return location file descriptor
+api return constant
+always return constant before authenticate param
+PRON- can use api , which work window
+param be param
+param be return location process -PRON- would
+get process -PRON- would param
+return constant
+api return constant
+always return constant before authenticate param
+always return constant param platform
+param be param authenticate as
+return constant
+get unix user -PRON- would param
+message be server connect be client
+param be param
+be only read by server client
+client can not usually get server
+param be return location user -PRON- would
+api return constant
+be do api
+PRON- can ask tell -PRON- another param like
+always return constant before authenticate param
+always return constant param platform
+param be user param authenticate as
+get window user param
+return constant
+param have be free api
+message be server connect be client
+param be param
+client can not usually get user server
+user be only read by server client
+param be return location allocate copy user - PRON - would , null
+but have be implement , be pointless anyway
+check whether be message outgoing message queue
+param be param
+would like be able say -PRON- can ask tell -PRON- user another param like
+be do api
+api return constant
+use api block until outgoing message have be underlie transport
+return value indicate
+return value be constant null be give as
+param should be free api
+list register handler object path handler give param
+param be param
+param be return null _ terminate array
+param be path list handler
+api return constant
+get connection remote param
+api return constant
+return exist connection reference count incremente
+otherwise , return connection save connection possible param
+use api get dedicated connection not share caller api
+if open fail , function return null , provide reason failure param
+param be param
+no user connection may call api
+api return connection , null failure
+param be param can be return
+note prefer api unless -PRON- have good reason
+null param
+open , dedicated connection remote param
+however , -PRON- should call api
+connection be expensive enough be wasteful create lot connection server
+unlike api , always create connection
+connection not be save recycle by
+param be param
+if open fail , function return null , provide reason failure param
+param be param can be return
+api return connection , null failure
+null param
+caller own reference param
+connection be expensive enough be wasteful create lot connection server
+note prefer api unless -PRON- have good reason
+if queue be empty , return null
+return param message incoming message queue , remove queue
+api bypass message handler be register , use be usually wrong
+instead , let main loop invoke api
+param be param
+PRON- must api free connection object
+api return next message incoming queue
+pop message manually be only useful simple program not share library module
+be lock cover way access incoming message queue , api , etc
+param be param
+api return resource , null
+resource need send message , allow message be send without memory allocation failure
+allow create future guarantee can send message
+if param be closed , function return constant
+return value indicate
+whether param be connect
+api be intend use application not want main loop
+param be param
+as long as param be open , api block until can read , read , return constant
+api incoming message -PRON
+even after , message may remain incoming queue nee be process
+api return constant
+param be max time block constant
+api -PRON- have arrange drain incoming queue
+if be message , api , return
+api be intend use application not want main loop
+example usage would be
+if be no message , api block until can read , read , return
+return value indicate
+way think api be either make sort progress , block
+usage -PRON- would normally have set filter function look message as be
+loop terminate
+param be param
+be important
+param be max time block constant
+api return constant
+param be param
+increment reference count
+api return param
+give param handle message give param
+register handler give object
+PRON- can use establish default message handle policy whole
+be call api object path which already have handler
+param be param
+react receive message
+can not be interrupt , which make api unsuitable application
+param be virtual table
+api return constant
+param be data function param
+use api
+register handler give param object
+give param handle message send exactly give param
+param be param
+param be delimit string param element
+be call api object path which already have handler
+param be data function param
+param be virtual table
+api return constant
+use api
+param be param
+remove param message filter
+be program error call api handler have not be add as filter
+param be handler remove
+param be delimit string param element
+use return param after peek param use api
+param be param
+param be user datum handler remove
+only one instance be remove
+param be param api
+add param outgoing param queue
+do not block param network
+only call
+no error be return
+happen asynchronously
+if function fail due lack memory , return constant
+param be param
+because only queue param , only reason can fail be lack memory
+param be send next time main loop be run
+force param be , call api however be not necessary call api by hand
+param be use by remote application send
+param be param
+see api param specification
+api can be call as soon as api return as param queue hold until param be send
+function never fail reason
+api should only be use
+api return constant success
+param be return location param null if -PRON- not care
+PRON- can queue outgoing param
+send param use param resource
+api can not fail
+work identically api respect
+resource come api
+api consume param resource , nee not be free separately
+param be param
+param be param resource
+param be param send
+param be return location client assign param
+see param before filter register object path handler
+queue param send , as api , but return use receive param
+always see exactly one param , unless be cancel api
+see api detail
+param be param
+timeout error occur , unlike api
+param be param send
+api expire pende generate synthetic error indicating timeout occur
+api return constant otherwise
+param be timeout millisecond , constant default constant no timeout
+sane default timeout be use
+constant be typically good value timeout , unless -PRON- want short long timeout
+still be generate internally , use param timeout
+no timeout be set
+call block forever
+api do not reenter main loop
+message be queue but not process
+param be return location object , null
+if normal be receive , itbe return by api , remove incoming param queue
+api be use invoke api call remote object
+if be not receive , nullbe return by api param be set constant
+param be param
+be set null , be careful
+param be return location param
+warn not be process incoming param queue
+send param block certain time
+param be param send
+api return param null param code
+result be set whatever be appropriate , as constant
+if param be receive , be convert return as param be delete nullbe return by api
+param be timeout millisecond , constant default constant no timeout
+solve , either avoid situation , block separate thread main param thread , use api avoid block
+client can connect anonymously
+mean -PRON- can end
+param be param
+set interact available authorization mechanism
+param can proceed
+api must be call server param
+param be whether allow authentication as anonymous user
+api set global flag
+however , user identity be allow
+PRON- can override rule connection authorize as user identity api
+namely , mechanism as anonymous support anonymous must be include list available mechanism anonymous work
+param be constant allow be set constant
+param number must have be allocate api
+param be param
+param be param number
+param be param store
+note api do not take main thread lock , which allow be use inside timeout function
+param be finalizer function param
+api return constant
+param be finalize
+store pointer , along optional function be use freeing param
+set change default rule connection authorize as user
+however , api must not be call inside
+param be param
+indeed , almost api be bad idea
+set param be invoke
+param be param call status change
+param be param
+PRON- need know reference hold param
+effect be , param could be finalize during api
+api need be call process incoming message
+param be free param
+param be param
+message should be later
+call api come after handler signal run
+normally , be permit  identity match user identity server process
+instead , should simply save indication
+by default , param be constant
+handler can cancel exit by call function
+but message connection return api be toggle by default
+specifie maximum param message param be allow receive
+api should be call
+set whether
+large message result param
+param be
+param be maximum message param can receive , byte
+param be constant
+PRON - have be sure every iteration main loop , especially  be call
+specifie maximum number unix message param be allow receive
+message unix result disconnecting param
+set maximum total number byte can be use message receive param
+message count toward maximum until be finalize
+semantic maximum be
+semantic be not
+but should be inconsequential
+reason be not know param message until after read
+param be param
+param not read datum until message be finalize
+not read
+thus , max live message param can actually be exceed by maximum param single message
+additional message not be read
+param be maximum param byte outstanding message
+message count toward maximum until be finalize
+semantic be analogous api
+do imply can not call api buffer large willing exceed limit by
+set maximum total number unix fd can be use message receive param
+normally automatically handle message param api
+contain param small message
+not set unless -PRON- be message
+may exceed param max by amount
+param be param
+param not read datum until message be finalize
+however , message want be able api application
+set timeout function param
+param be constant param message name set
+can break thing badly
+typically would create
+function be responsible make application main loop aware timeout
+notifie application timeout have be enable disabled
+message param api have destination name set not be automatically handle by instead be normally application
+call api check
+disabled timeout should have no effect , enable timeout should be add main loop
+would call param
+feature be use instead simply timeout
+api can be use enable disable
+can be query use api
+param be param
+api should be call repeatedly , time elapse , start after have elapse
+be toggle
+may change
+toggle function may be null
+see comment code http
+param be function add timeout
+param be function remove timeout
+may change
+param be function notify
+param be param
+param be function be call free param
+api return constant failure memory
+set param use determine
+root be always allow connect
+param be param
+note thread lock be hold
+param be
+inside function -PRON- may not invoke api deadlock
+param be param
+param be param free param
+set function param
+only as server process be allow connect
+message have be queue _ rrb
+param be invoke
+window , param be set
+api be call
+if return constant , param be allow proceed , otherwise param be
+param be param
+however , param never be call , protocol would allow authenticate as unix user window
+param be function wake
+param be param
+param be function be call free param
+typically result call api
+would call api
+set function param
+wake main loop
+api be responsible
+call api check
+typically would create
+notifie application have be enable disabled
+may not be enable
+feature be use instead simply
+function be responsible make application main loop aware file descriptor need be monitor event , use api
+disabled should have no effect , enable should be add main loop
+could call api , could be use as part elaborate
+be not allow reference after have be param
+can be query file descriptor use api , event use api
+toggle function may be null
+flag return by api only contain constant , never constant
+implicitly include , error , exceptional condition
+if constantbe return by api due lack memory , failure may be due constant return param
+param be param
+file descriptor become readable writable , exception occur , api should be call notify param file descriptor condition
+api can not be call , as param not be ready handle yet
+param be function begin monitor descriptor
+if constantbe return by api net result should be api have no effect , but param may have be call
+see comment code http
+param be function monitor descriptor
+param be function notify
+api return constant failure memory
+param be param
+param be function be call free param
+param be param
+set param use determine
+param be
+however , param never be call
+note thread lock be hold
+inside function -PRON- may not invoke api deadlock
+param be param
+only user owning server process be allow connect
+param be param free param
+param be param
+use keep param after peek param use api
+before use function , see documentation api
+param be invoke
+unix , param be set
+param be param api
+api be call
+if return constant , param be allow proceed , otherwise param be
+register handler give object
+give param handle message give param
+param be param
+param be virtual table
+PRON- can use establish default message handle policy whole
+param be address param can be return
+param be data function param
+api return constant
+register handler give param object
+give param handle message send exactly give param
+param be param
+param be virtual table
+param be delimit string param element
+param be data function param
+param be address param can be return
+api return constant
+param be delimit string param element
+connection be share
+be drop last reference param still connect
+reference count , finalize
+api return share connection
+private connection come api
+param be param
+unregister handler register exactly give param
+can unregister path object path
+be call api param not register
+param be param
+private connection , param must arrange api be call before drop last reference
+api return constant if not enough memory
+initialize thread , like api
+param be ignore , formerly param use thread
+api return constant success , constant
+initialize thread
+param be delimit string param element
+version previously allow param threading , but since param constant ignore behave exactly like api
+since param constant be safe call api thread , number time
+param constant old , api must be call main thread before thread start
+add match param match message message
+param library not lock data structure
+param locking , efficiency
+share connection , reference as long as param be connect , -PRON- can know either -PRON- not have last reference , be ok drop last reference
+rule param be stre form match param
+be generally acceptable
+api reverse effect api
+return constant success , constant enough memory
+api be fully document param specification
+rule be specify as string separate pair
+normal api would have function return boolean value indicating , but would require block always determine return value
+omit key param indicate wildcard match
+as result , be not sufficient call api library , unless library impose similar requirement caller
+_ null param api block until get
+quick reference , format match rule be discuss , but specification be canonical version information
+can cause performance problem as drain embed platform
+match be inclusive not exclusive as long as one param match message get
+be important note
+api not block
+omit member match param but add would let message
+be , constant mean match stre constant not integer constant
+currently be no way match against param
+specialised form wildcard matching param be support param
+match api be tricky
+PRON- not find
+match thus not be add until -PRON- flush param
+string param match
+mean match rule api call should not usually give api
+security reason , -PRON- can match param only constant
+match rule have maximum length constant byte
+param be param message
+param be textual form match param
+param be location store error
+not match if param specifie api name
+connect daemon register client
+if connection already exist , connectionbe return by api
+however , signal message be require include api
+maximum be much high -PRON- be likely need , only exist
+caller api own reference
+caller may not call api connection
+see api detail
+PRON- can undo by call api after -PRON- get connection
+api call api -PRON
+param be param
+if api obtain connection object never before return api , call api , application exit if connection close
+param be address param can be return
+if return param connection , api block until authentication registration be complete
+example be type ignal , param , api param , member foo , path , destination
+api return null param
+see api
+ask return globally unique -PRON- would , as describe param specification
+session , be useful as way uniquely identify user session
+param be location store param
+param be param
+api return - PRON - would null
+may be useful
+connect daemon register client as api
+unlike api , always create connection
+connection not be save recycle by
+system , probably -PRON- would be not useful
+compile time
+instead , use machine -PRON- would may be persistent beyond single instance
+caller own reference must either close know be close before release reference
+api call api -PRON
+api block until authentication registration be complete
+PRON- can undo by call api after -PRON- get connection
+see api detail
+param be param
+api return
+param be address param can be return
+application exit
+api call api connection
+get unique name param as assign by message
+connection return by api have be successfully register
+only possible after param have be register message
+param be param
+name remain valid until param be free , should not be free by caller
+can be retrieve api
+addition -PRON- would -PRON- would machine , be -PRON- would address be listen
+api , be two way set unique name
+one be api , be api
+api return unique name null error
+only work unix
+only work connection machine as
+call api instead use api
+PRON- be responsible
+ask return name param authenticate as , if
+api always return param window
+system message -PRON- be guarantee be machine
+param be param
+param be param own by param
+something sensible
+check error
+param be location store param
+be consider match
+param possible key -PRON- can match be type , , api , member , path , destination number key match message arg
+api return unix user - PRON - would , constant
+param be param
+param be param
+use can easily result condition
+param be location store error
+api only work connection authenticate as unix user , right include connection , but be possible have connection no associated
+register param
+api return constant
+application do
+api block until registration be complete
+must be first thing
+note use api instead api save
+unique name be set , can be obtain use api
+api do nothing
+be call -PRON
+param be place store error
+not specify constant - PRON - get param
+param be param
+use api manually be only useful
+api return constant success
+api be canonically document param specification
+be lock keep register time
+ask unassign give param by invoke api
+PRON- get
+constant which mean own param
+constant which mean else own param -PRON- can not release
+param be param
+param be location store param
+PRON- have api , make appropriate registration api
+param be param remove
+possible result be
+rule multithreade , be api must be use register , -PRON- need have lock thread respect
+remove param match param by value
+api return result code , constant
+rule param be stre form match param
+see detailed explanation api
+constant which mean -PRON- own param be queue , -PRON- not be not queue
+param be param message
+param be location store error
+param be textual form match param
+api not block
+PRON- check api see
+param application -PRON- can register by hand instead use api , as long as
+api be fully document param specification
+kick -PRON
+share connection multithreade application , -PRON- can not really make registration call
+only one own time _ call primary
+compare match rule semantically , not textually , whitespace ordering not have be identical param -PRON- api
+ask assign give param by invoke api
+quick reference , param result code be discuss , but specification be canonical version information
+first -PRON- should know param , store queue connection would like
+queue mean -PRON- not need manually current disappear request param
+PRON- can update param by call
+send param , but
+PRON- can specify several param
+first one start receive message
+property be store do not become primary
+next queue atomically take
+constant be property store by param respect request param
+constant mean another param can take away -PRON- by specify constant
+unlike two param , constant be property individual call
+do not persistently associate param pair
+api return result code
+possible result code be as follow
+PRON- can have sit queue
+caller end queue param after current give
+PRON- not want be queue
+constant mean _ -PRON- only care primary
+application receive request param only if param be currently unowned
+conventionally , param application often offer command line option call _ _ replace which mean replace current instance
+constant happen param already own
+current primary be kick
+can be user should specify constant either take be queue accord
+not give param
+look signal namelost constant
+constant mean param have no exist , caller be primary
+implement , always set constant
+constant happen
+either current do not specify constant caller do not specify constant
+param be param
+param have , caller specify constant , current specify constant
+PRON- need exit
+constant happen
+param be param request
+either current have not specify constant caller do not specify constant
+param be param
+param be location store param
+api return result code , constant
+set unique name param , as assign by message
+can only be call per param
+replace , not specify constant , exit
+say text , should specify constant  one start
+after unique name be set , -PRON- can get api
+only reason use api be param equivalent api
+one reason may be registration call asynchronously instead synchronously
+note use api , bad case api , instead mess function
+really no point create by do thing manually
+be hard use api safely share connection multithreade application
+param be param
+thus , -PRON- need way coordinate which thread send registration attempt
+which mean -PRON- know which thread call api
+param be unique name
+api return constant if not enough memory
+can only be use
+start service request give param
+be no mechanism avoid send twice
+PRON- need avoid use api share connection
+param be param
+method call start service handle by default unless -PRON- call api disable behavior
+param be one be one constant
+param be param want service request
+param be param
+param be place store param null
+param be location store error
+param be future , currently -PRON- should specify constant
+api return constant
+param be object
+api return param datum
+param be object
+return whether param be enable not
+get datum previously set api null
+api return constant
+get param
+param be object
+api return millisecond
+api should be call time elapse , start after api elapse
+should not be by main loop
+call param handler param
+param be object
+if api return constant , enough memory handle param
+api return constant
+may change
+set param which can be retrieve api
+api should be call
+param be disabled param notify -PRON- change
+intend use by store param
+param be object
+param be param
+param be function be call free param
+free null _ terminate array address param
+param be array
+PRON- may store param glib -PRON- may store param result -PRON- would
+return api string address param
+api return string describe api
+give address param
+string must not be free
+host param would return stre param be param
+PRON- could try
+return value param
+typically let param next time naturally time be adequate response problem , but
+param be param
+param be param
+api return param value
+string must not be free
+param be unescaped param
+api return param escape param null
+give address
+escape give string as param key value pair param address
+api return param
+param be escape param
+give string as param key value pair param address
+api return param unescaped param null
+param be param
+param be return location array entry
+param be return location array length
+param be param can be return
+param be param set
+host param , port constant
+api return constant success , constant otherwise
+parse param string form
+key value see param specification complete format
+param be object
+first param entry param list should be try first
+api return param datum
+return whether param be enable not
+param be object
+get datum previously set api null
+api return constant
+deprecate former name api
+param be object
+api return file descriptor param
+should not be by main loop
+param be object
+get flag indicate condition should be monitor file descriptor
+api return condition param
+window , api return constant but api return socket
+flag return only contain constant , never constant
+param be object
+implicitly include param , error , exceptional condition
+api return socket param
+return socket be , unix return constant  prefer
+always return constant window
+unix be preferred api
+param be object
+window -PRON- use api get socket param
+api return file descriptor param
+param be object
+return unix file descriptor be , which may be , socket , type descriptor
+be not allow reference after have be param
+file descriptor may still be ready reading writing , but memory be need order read writing
+param be condition use value
+api return constant
+set param which can be retrieve api
+if -PRON- ignore constant return , application may spin busy loop file descriptor until memory become available , but nothing catastrophic should happen
+api can not be call , as connection not be ready handle param yet
+intend use by store param
+call notify param library , have exception as
+PRON- may store qsocketnotifi param glib -PRON- may store
+param be object
+param be param
+param be function be call free param

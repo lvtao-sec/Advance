@@ -1,0 +1,1698 @@
+sqlite3_data_count_apiname return non_zero if previous call sqlite3_step_apiname return sqlite_row_api_constant , except case pragma incremental_vacuum where always return zero since each step multi_step pragma return # column datum
+when callback return sqlite_deny_api_constant , sqlite3_prepare_v2_apiname or equivalent call trigger authorizer fail error message explain access be deny
+likewise , register callback use sqlite3_wal_hook_apiname disable automatic checkpoint mechanism configure by sqlite3_wal_autocheckpoint_apiname
+be legacy interface be preserve backwards compatibility
+every case sqlite3_column_int_apiparam_1 be pointer prepare statement be evaluate sqlite3_column_int_apiparam_2 be index column which information should be return
+if specify column be rowid , oid or rowid table be without rowid table integer primary key column have explicitly declare , then output parameter be set explicitly declare column
+but number be part result table
+sqlite3_str_appendall_apiname method append complete content zero_terminate string sqlite3_str_appendall_apiparam_2 onto end sqlite3_str object x
+sqlite be free discard metadata time , include
+prior version sqlite , sharing be enable or disable each thread separately
+detail operation code , meaning , parameter take , what be subject change without notice
+sqlite3_mutex_held_apiname sqlite3_mutex_notheld_apiname routine be intend inside assert_apiname statement
+blob reference by sqlite3_blob_open_apiname be read use sqlite3_blob_read_apiname interface modify by use sqlite3_blob_write_apiname
+see : sqlite3_mutex_held_apiname sqlite3_mutex_notheld_apiname
+sqlite3_sleep_apiname function cause current thread suspend execution least number millisecond specify parameter
+call sqlite3_wal_hook_apiname replace previously register write_ahead log callback
+sqlite3_table_column_metadata_apiname interface return sqlite_error_api_constant if specify column do exist
+sqlite3_shutdown_apiname interface must only be call single thread
+system be say be deadlocke state if connection have register unlock_notify callback conclusion connection b transaction , connection b have register unlock_notify callback when connection transaction be conclude
+case subsequent call sqlite3_last_insert_rowid_apiname return rowid associate internal insert operation , which lead unintuitive result
+only difference between three sqlite3_create_function routine be text encode expect second paramet presence or absence destructor callback application datum pointer
+xcreate xconnect method virtual table module call interface declare format virtual table implement
+if sqlite3_msize_apiparam_1 be null pointer then sqlite3_msize_apiname return zero
+keep sql function load_extension_apiname disabled prevent sql injection give attacker access extension loading capability
+first argument sqlite3_bind _ apiname routine be always pointer sqlite3_stmt object return sqlite3_prepare_v2_apiname or variant
+call sqlite3_close_apiname or sqlite3_close_v2_apiname null pointer argument be harmless no_op
+routine can be use find number sql parameter prepare statement
+sqlite3_snprintf_apiname routine be similar snprintf_apiname standard c library
+sqlite3_snapshot_free_apiname interface destroy sqlite3_snapshot p. application must eventually free every sqlite3_snapshot object use routine avoid memory sqlite3_snapshot_free_apiname interface be only available when sqlite_enable_snapshot compile_time option be use
+be always safe value return by sqlite3_str_new_apiname as sqlite3_str paramet other sqlite3_str method
+sqlite3_execnot exist api_info
+be different every other sqlite interface
+otherwise no conversion occur
+if be no as clause then name column be unspecified change one release sqlite next
+form except nnn , correspond number unique parameter
+sqlite3_bind_pointer_apiname routine cause i_th parameter prepare statement s have sql value null , but be associate pointer p type t. d be either null pointer or pointer destructor function p. sqlite invoke destructor d single argument p when be finish use p. t parameter should be static string , preferably stre literal
+return value sqlite3_column_blob_apiname zero_length blob be null pointer
+sqlite3_interrupt_apiname call be effect until currently run sql statement database connection sqlite3_interrupt_apiparam_1 complete
+sqlite3_result_blobnot exist api_info
+value return by sqlite3_memory_highwater_apiname be high_water mark prior reset
+sqlite_mutex_noop implementation be set routine do no real locking be appropriate single_threaded application
+PRON- want assert_apiname contain call sqlite3_mutex_held_apiname fail , so non_zero return be appropriate thing
+hence , call function can deallocate or modify text after return without harm
+sqlite3_compileoption_used_apiname function return # or # indicate whether specified option be define compile time
+virtual table implementation insert row into rowid table as part commit transaction e
+sqlite3_result_error_code_apiname function change error code return by sqlite as result error function
+sqlite3_create_function exist api_info
+be true if column row be change , even column other than one blob handle be open
+sqlite3_collation_needednot exist api_info
+sqlite3_config_apiname interface only be invoke prior library initialization use sqlite3_initialize_apiname or after shutdown by sqlite3_shutdown_apiname
+application sqlite mutexe should only dynamic mutexe return by sqlite_mutex_fast_api_constant or sqlite_mutex_recursive_api_constant
+sqlite3_result_null_apiname interface set return value application_defined function be null
+unbound parameter be interpret as null
+contrary intuition many , sqlite3_reset_apiname do reset binding prepare statement
+name return be original un_aliased name database , table , column
+success , sqlite3_prepare_apiname family routine return sqlite_ok_api_constant ; otherwise error code be return by sqlite3_prepare_apiname
+sqlite3_trace_v2_apiname interface register trace callback function x against database connection d , use property mask m context pointer p. if x callback be null or if m mask be zero , then trace be disabled
+string return by two routine should be release by sqlite3_free_apiname
+if sqlite3_realloc_apiparam_2 parameter sqlite3_realloc_apiname be zero or negative then behavior be exactly as call sqlite3_free_apiname
+if sqlite3_malloc_apiname be unable obtain sufficient free memory , return null pointer
+if sqlite3_status64_apiparam_4 be true , then high record value be reset after phighwater be write
+first two constant cause sqlite3_mutex_alloc_apiname create mutex
+if 2nd parameter sqlite3_exec_apiname be null pointer , pointer empty string , or pointer contain only whitespace sql comment , then no sql statement be evaluate database be change
+sqlite3_result_textnot exist api_info
+unless return sqlite_misuse_api_constant , sqlite3_wal_checkpoint_v2_apiname interface set error information be query by sqlite3_errcode_apiname sqlite3_errmsg_apiname
+unless sqlite_misuse_api_constant be return by sqlite3_blob_write_apiname , sqlite3_blob_write_apiname set database connection error code message accessible via sqlite3_errcode_apiname sqlite3_errmsg_apiname relate function
+if action code be sqlite_read_api_constant callback return sqlite_ignore_api_constant then prepare statement statement be construct substitute null value place table column would have read if sqlite_ok_api_constant have return
+invoke either sqlite3_trace_apiname or sqlite3_trace_v2_apiname cancel profile callback
+return number column result set return by prepared statement
+when unlock_notify callback be register , application provide single void pointer be pass callback when be invoke
+result be write into buffer supply as sqlite3_snprintf_apiparam_2 whose size be give by sqlite3_snprintf_apiparam_1
+routine provide access set sql language keyword recognize by sqlite
+if other process be run checkpoint operation time , lock can be obtain sqlite_busy_api_constant be return by sqlite3_wal_checkpoint_v2_apiname
+length return by sqlite3_str_length_apiname do include zero_termination byte
+entry point be sqlite3_load_extension_apiparam_3
+sqlite3_clear_bindings_apiname reset binding
+routine extract type , size , content information protect sqlite3_value object
+preferred routine be sqlite3_prepare_v2_apiname
+number millisecond sleep actually request operating system be return by sqlite3_sleep_apiname
+sqlite3_mutex_try_apiname interface return sqlite_ok_api_constant upon successful entry
+first parameter be database connection which sql function be be add
+sqlite3_str_new_apiparam_1 parameter sqlite3_str_new_apiname be null
+circumstance under which sqlite enforce soft heap limit change future release sqlite
+if xcallback argument be null then collate function be delete
+in_memory database or temp database , serialization be sequence byte which would be write disk if database where back up disk
+however , column , table , or database blob handle can be change after blob handle be open
+interface add content sqlite3_str object previously obtain sqlite3_str_appendf sqlite3_str_vappendf_apiname interface use built_in printf functionality sqlite append format text onto end sqlite3_str object x sqlite3_str_append_apiname method append exactly n byte stre s onto end sqlite3_str object x. n must be non_negative
+authorizer callback be invoke as sql statement be compile by sqlite3_prepare_apiname or variant sqlite3_prepare_v2_apiname , sqlite3_prepare_v3_apiname , sqlite3_prepare16_apiname , sqlite3_prepare16_v2_apiname , sqlite3_prepare16_v3_apiname
+sqlite_done_api_constant mean statement have finish execute successfully
+sqlite3_set_auxdata exist api_info
+multiple collating function can be register use name but different etextrep parameter sqlite whichever function require least amount datum transformation
+mutex implementation do need make distinction between sqlite_mutex_recursive_api_constant sqlite_mutex_fast_api_constant if do want
+trace callback be invoke four argument : callback_apiname
+fourth paramet be arbitrary client datum pointer be pass through into xcreate xconnect method virtual table module when virtual table be be create or reinitialize
+delete exist sql function or aggregate , pass null pointer three function callback
+fourth parameter be name require collation sequence
+sqlite3_table_column_metadata routine return information about column c table t database d database connection x
+if sqlite3_prepare16_apiparam_3 be zero , then no prepared statement be generate
+sqlite_ok_api_constant be return by sqlite3_snapshot_recover_apiname if successful , or sqlite error code otherwise
+function return information about nth result column return by statement , where n be second function argument
+if sqlite3_config_apiname be call after sqlite3_initialize_apiname before sqlite3_shutdown_apiname then return sqlite_misuse_api_constant
+success , sqlite_ok_api_constant be return by sqlite3_blob_open_apiname blob handle be store ppblob
+so long string can be completely write be n_1 character
+profile callback time be unit nanosecond , however current implementation be only capable millisecond resolution so six least significant digit time be meaningless
+sqlite automatically free memory allocate by sqlite3_aggregate_context_apiname when aggregate query conclude
+otherwise , if no error occur , sqlite3_db_cacheflush_apiname return sqlite_ok_api_constant
+sqlite3_close_v2_apiparam_1 parameter sqlite3_close_apiname sqlite3_close_v2_apiname must be either null pointer or sqlite3 object pointer obtain sqlite3_open_apiname , sqlite3_open16_apiname , or sqlite3_open_v2_apiname , previously close
+database manage by external source can be give much small limit design prevent denial service attack
+interface return pointer next prepared statement after sqlite3_next_stmt_apiparam_2 associated database connection sqlite3_next_stmt_apiparam_1
+second callback argument be one sqlite_insert_api_constant , sqlite_delete_api_constant , or sqlite_update_api_constant , depend operation cause callback be invoke
+interface return information about predict measured performance sqlite3_stmt_scanstatus_apiparam_1
+high record value be return by sqlite3_status_apiname phighwater
+log message be store fixed_length buffer stack
+only single authorizer can be place database connection time
+if block connection be attempt obtain write_lock shared_cache table , more than one other connection currently hold read_lock table , then sqlite arbitrarily select one other connection as block connection
+fourth paramet be number page currently write_ahead log file , include be just commit
+m be size buffer p , which may be large than n. if sqlite3_deserialize_apiparam_5 be large than n , sqlite_deserialize_readonly_api_constant bit be set f , then sqlite be permit add content in_memory database as long as total size do exceed sqlite3_deserialize_apiparam_5 byte
+sqlite contain high_quality pseudo_random number generator use select random rowid when insert record into table already use large possible rowid
+sqlite contain high_quality pseudo_random number generator use select random rowid when insert record into table already use large possible rowid
+if sqlite3_open_apiparam_1 be empty string , then private , temporary on_disk database be create
+preupdate hook only fire change real database table ; preupdate hook be invoke change virtual table or system table like sqlite_master or sqlite_stat1
+sqlite us path component uri as name disk file which contain database
+second argument be pointer function invoke when row be update , insert or delete rowid table
+if caller know supply string be nul_terminate , then be small performance advantage pass sqlite3_prepare16_v2_apiparam_3 paramet be number byte input string include nul_terminator
+one way around problem be check extended error code return by sqlite3_step_apiname call
+sqlite3_column_type_apiname routine return datatype code initial datum type result column
+if database be open successfully , then sqlite_ok_api_constant be return by sqlite3_open_apiname
+integer return value callback be currently ignore , though change future release
+case be no block connection , so invoking sqlite3_unlock_notify_apiname result unlock_notify callback invoke immediately
+when connection fail obtain shared_cache lock sqlite_locked_api_constant be return by sqlite3_unlock_notify_apiname caller , identity database connection have lock require resource be store internally
+application must read or write part block memory after have release use sqlite3_free_apiname or sqlite3_realloc_apiname
+sqlite3_column_type_apiparam_0 be one sqlite_integer_api_constant , sqlite_float_api_constant , sqlite_text_api_constant , sqlite_blob_api_constant , or sqlite_null_api_constant
+value return by sqlite3_changes_apiname immediately after insert , update or delete statement run view be always zero
+sqlite strive keep heap memory utilization below soft heap limit by reduce number page hold page cache as heap memory usage approach limit
+example , statement create table begin_apiname ; be accept by sqlite , create table name begin three column name replace , pragma , end
+each call sqlite3_set_authorizer override previous call
+if callback commit hook function return non_zero , then commit be convert into rollback
+input sqlite3_complete_apiname must be zero_terminate utf_8 string
+other word , filename be absolute pathname , even if filename use open database originally be uri or relative pathname
+sqlite3_create_function_v2 exist api_info
+if wal file remain disk after database connection close connection be subsequently open database wal file , sqlite3_snapshot_open_apiname interface only be able open last transaction add wal file even though wal file contain other valid transaction
+sqlite3_result_double_apiname interface set result application_defined function be float point value specify by 2nd argument
+sqlite3_str_value_apiname method return pointer current content dynamic string under construction x
+sqlite3_db_config enable or disable only c_api
+name result column be value as clause column , if be as clause
+sqlite3_prepare_v2_apiname interface work exactly as sqlite3_prepare_v3_apiname zero prepflag parameter
+sqlite3_prepare_v2_apiname , sqlite3_prepare_v3_apiname , sqlite3_prepare16_v2_apiname , sqlite3_prepare16_v3_apiname interface be recommend program
+sqlite_checkpoint_full_api_constant , restart truncate mode obtain exclusive writer lock database file
+sqlite3_blob_read_apiname be use read datum open blob handle into caller_supplied buffer
+sqlite core use three routine internal memory allocation need
+sqlite3_os_end_apiname routine undoes effect sqlite3_os_init_apiname
+value return by sqlite3_errcode_apiname sqlite3_extended_errcode_apiname may change each api call
+sqlite3_strglob_apiname interface return zero if only if string x match glob pattern p. definition glob pattern matching use sqlite3_strglob_apiname be as x glob p operator sql dialect understand by sqlite
+sqlite3_column_name_apiname interface return pointer zero_terminate utf_8 string sqlite3_column_name16_apiname return pointer zero_terminate utf_16 string
+sqlite take text result application 2nd parameter sqlite3_result_text interface
+however , such call must close database connection nor finalize or reset prepared statement which function be run
+if 3rd parameter be non_negative , then must be byte offset into string where nul terminator would appear if string where nul terminate
+then azresult hold content
+sqlite3_stmt_busy_apiname interface return true if prepared statement sqlite3_stmt_busy_apiparam_1 have step least once use sqlite3_step_apiname but have neither run completion nor reset use sqlite3_reset_apiname
+sqlite3_user_data_apiname interface return copy pointer be puserdata paramet sqlite3_create_function_apiname sqlite3_create_function16_apiname routine originally register application define routine must be call thread which application_defined function be run
+sqlite3_soft_heap_limit64_apiname interface set query soft limit amount heap memory be allocate by sqlite
+sqlite3_trace_v2_apiname interface be intend replace legacy interface sqlite3_trace_apiname sqlite3_profile_apiname , both which be deprecate
+whether or persistent internal datatype conversion occur be undefined change one release sqlite next
+if callback pointer sqlite3_exec_apiname be null , then no callback be ever invoke result row be ignore
+must only be use within sqlite_insert_api_constant sqlite_update_api_constant preupdate callback ; if be use by sqlite_delete_api_constant callback then behavior be undefined
+sqlite3_snapshot object return successful call sqlite3_snapshot_get_apiname must be free use sqlite3_snapshot_free_apiname avoid memory leak
+avoid have register collation sequence before database can be use , single callback function be register database connection be invoke whenever undefined collation sequence be require
+cache sharing mode set by interface effect subsequent call sqlite3_open_apiname , sqlite3_open_v2_apiname , sqlite3_open16_apiname
+sqlite3_create_module_apiname interface be equivalent sqlite3_create_module_v2_apiname null destructor
+pointer argument sqlite3_free_apiname sqlite3_realloc_apiname must be either null or else pointer obtain prior invocation sqlite3_malloc_apiname or sqlite3_realloc_apiname have yet release
+interface open handle blob locate row sqlite3_blob_open_apiparam_5 , column sqlite3_blob_open_apiparam_4 , table sqlite3_blob_open_apiparam_3 database sqlite3_blob_open_apiparam_2 ; other word , blob would be select by : paramet sqlite3_blob_open_apiparam_2 be filename contain database , but rather symbolic name database
+c argument be copy context pointer
+if both process invoke busy handler , neither make progress
+first argument be prepare statement object be interrogate
+implementation be require provide version routine actually work
+input sqlite3_complete16_apiname must be zero_terminate utf_16 stre native byte order
+interface be only available if sqlite be compile use sqlite_enable_preupdate_hook compile_time option
+sqlite3_value_free_apiname interface free sqlite3_value object previously obtain sqlite3_value_dup_apiname
+value parameter can be set use sqlite3_bind _ apiname routine define here
+however , signature callback function allow sqlite pass array void context pointer
+sqlite3_str_finish_apiname interface return null pointer if error be encounter during construction string
+drop table exception
+if either current value or highwater mark be too large be represent by 32_bit integer , then value return by sqlite3_status_apiname be undefined
+sqlite3_realloc64_apiname interface work as sqlite3_realloc_apiname except sqlite3_realloc_apiparam_2 be 64_bit unsigned integer instead 32_bit sign integer
+sqlite3_blob_close_apiname close open blob handle
+routine must be call thread as sql function supply sqlite3_value parameter
+v2 interface , other result code or extend result code may be return as well
+commit rollback hook callback be reentrant
+only purpose be be placehold function can be overload by virtual table
+see : sqlite3_temp_directory
+sqlite3_str_length_apiname method return current length , byte , dynamic string under construction sqlite3_str object x
+callback function register by sqlite3_trace_apiname be invoke various time when sql statement be run by sqlite3_step_apiname
+if two or more thread call one or more column metadata interface prepare statement result column time then result be undefined
+when insert or replace encounter constraint violation , do fail
+authorizer callback must anything modify database connection invoke authorizer callback
+sqlite3_reset_apiname interface do change value binding prepared statement s
+if sqlite3_collation_needed16_apiname be use , name be pass as utf_16 machine native byte order
+if sqlite_open_fullmutex_api_constant flag be set then database connection open serialize threading mode unless single_thread be previously select compile_time or start_time
+after prepared statement have prepare use sqlite3_prepare_v2_apiname , sqlite3_prepare_v3_apiname , sqlite3_prepare16_v2_apiname , or sqlite3_prepare16_v3_apiname or one legacy interface sqlite3_prepare_apiname or sqlite3_prepare16_apiname , sqlite3_step_apiname must be call one or more time evaluate statement
+call obtain exclusive checkpoint lock database file
+example , if connection x be wait connection y transaction be conclude , similarly connection y be wait connection x transaction , then neither connection proceed system remain deadlocke indefinitely
+interface be by application
+sqlite core use routine thread synchronization
+interface be available only window
+sqlite3_total_changes_apiname return total number row insert , modify or delete by insert , update or delete statement complete since database connection be open , include execute as part trigger program
+attempt write expire blob handle fail error code sqlite_abort_api_constant
+similarly , sqlite3_shutdown_apiname invoke sqlite3_os_end_apiname
+busy handler must close database connection or prepare statement invoke busy handler
+sqlite3_str_new_apiname interface allocate initialize sqlite3_str object
+case , sqlite3_aggregate_context_apiname may be call first time within xfinal_apiname
+sqlite3_mutex_leave_apiname routine exit mutex be previously enter by thread
+function work much like paramet bind family function use bind value host parameter prepare statement
+if interface be invoke outside context xconnect or xcreate virtual table method then behavior be undefined
+interface allow application access prng other purpose
+interface add content sqlite3_str object previously obtain sqlite3_str_new_apiname
+application_supplied implementation sqlite3_os_init_apiname or sqlite3_os_end_apiname must return sqlite_ok_api_constant success other error code upon failure
+third fourth parameter routine be pass directly through second third parameter xfilecontrol method
+if 3rd parameter sqlite3_result_text interface be non_negative , then as many byte text point by 2nd parameter be take as application_defined function result
+sqlite3_prepare_v3_apiname differ sqlite3_prepare_v2_apiname only have extra prepflag parameter , which be bit array consist zero or more sqlite_prepare flag
+function where encoding difference be between utf16le utf16be be close match than function where encoding difference be between utf8 utf16
+extension loading be off by default
+note when type conversion occur , pointer return by prior call sqlite3_column_blob_apiname , sqlite3_column_text_apiname , sqlite3_column_text16_apiname be invalidate
+sqlite_fcntl_file_pointer_api_constant value sqlite3_file_control_apiparam_3 parameter cause pointer underlie sqlite3_file object be write into space point by 4th parameter
+sqlite3_result_subtype_apiname function cause subtype result application_defin sql function sqlite3_context c be value t. only low # bit subtype t be preserve current version sqlite ; high order bit be discard
+destructor x sqlite3_set_auxdata_apiname may be call immediately , before sqlite3_set_auxdata_apiname interface even return
+can only be single busy handler define each database connection
+autocommit mode be disable by begin statement
+sqlite3_wal_checkpoint_apiname be equivalent sqlite3_wal_checkpoint_v2_apiname
+except if sqlite be build use edit copy amalgamation , then last four character hash may be different sqlite_source_id_api_constant
+see : sqlite3_db_release_memory_apiname
+sqlite3_stmt_busy_apiname interface return true if prepared statement s have step least once use sqlite3_step_apiname but have neither run completion nor reset use sqlite3_reset_apiname
+exception define paragraph may change future release sqlite
+sqlite interpret error message string sqlite3_result_error_apiname as utf_8
+choice vfs be arbitrary
+callback set by previous call sqlite3_update_hook_apiname database connection be override
+as like operator , sqlite3_strlike_apiname function be case insensitive equivalent upper low case ascii character match one another
+database connection pointer sqlite3_next_stmt_apiparam_1 call sqlite3_next_stmt_apiname must refer open database connection particular must be null pointer
+if such conversion be possible without loss information then conversion be perform
+when callback be invoke , first argument pass be copy second argument sqlite3_collation_needed_apiname or sqlite3_collation_needed16_apiname
+sqlite3_result_blob_apiname interface set result application_defined function be blob whose content be point by second parameter which be n byte long where n be third parameter
+interface be use retrieve runtime status information about single database connection
+note upon successful completion sqlite_checkpoint_truncate_api_constant , log file have truncate zero byte so both pnlog pnckpt be set zero
+interface disable automatic extension previously register use sqlite3_auto_extension_apiname
+iscanstatusop parameter determine which status information return
+subsequent call sqlite3_get_auxdata_apiname return sqlite3_set_auxdata_apiparam_3 most recent sqlite3_set_auxdata_apiname call if metadata be still valid or null if metadata have discard
+if most recent evaluation statement sqlite3_finalize_apiparam_1 fail , then sqlite3_finalize_apiname return appropriate error code or extended error code
+if sqlite3_open_apiparam_1 be : memory : , then private , temporary in_memory database be create connection
+except , be interface be guarantee never change value error code
+if progress callback return non_zero , operation be interrupt
+second subsequent call sqlite3_aggregate_context_apiname aggregate function instance , buffer be return by sqlite3_aggregate_context_apiname
+nor be update hook invoke when row be delete use truncate optimization
+see : file control opcode
+if routine be call within different thread than one contain application_defined function receive sqlite3_context pointer , result be undefined
+built_in random_apiname sql function be example function be deterministic
+after type conversion , result calling sqlite3_column_type_apiname be undefined , though harmless
+sqlite3_bind_pointer_apiname routine be part pointer pass interface add sqlite #
+routine be typically call response user action such as press cancel or ctrl_c where user want long query operation halt immediately
+sqlite3_bind_parameter_name_apiname interface return name n_th sql paramet prepare statement p. sql parameter form nnn or : aaa or aaa or aaa have name which be stre nnn or : aaa or aaa or aaa respectively
+most sql function be deterministic
+case application must supply custom mutex implementation use sqlite_config_mutex_api_constant option sqlite3_config_apiname function before call sqlite3_initialize_apiname or other public sqlite3 function call sqlite3_initialize_apiname
+call sqlite3_serialize_apiname may return null even if sqlite_serialize_nocopy_api_constant bit be omit argument sqlite3_serialize_apiparam_4 if memory allocation error occur
+protect sqlite3_value object always be use where unprotected sqlite3_value object be require , so either kind sqlite3_value object can be use interface
+sqlite3_mutex_alloc_apiname routine allocate mutex return pointer
+if sqlite3_blob_open_apiparam_6 parameter be non_zero , then blob be open read write access
+interface be use retrieve runtime status information about single database connection
+database connection handle be usually return ppdb , even if error occur
+sqlite3_bind_zeroblob_apiname routine bind blob length n be fill zero
+size database create by untrusted script can be contain use max_page_count pragma
+error_code preserve interface be
+when block connection transaction be conclude , be more than one block connection have register unlock_notify callback
+if blob handle pass as sqlite3_blob_write_apiparam_1 be open writing , sqlite3_blob_write_apiname return sqlite_read_api_constantonly
+value return by sqlite3_column_bytes_apiname sqlite3_column_bytes16_apiname include zero terminator end string
+value sqlite3_data_directory variable be intend act as replacement current directory sub_platforms win32 where concept be present , e
+example , give database schema
+routine work only protect sqlite3_value object
+sqlite3_value_text16be_apiname sqlite3_value_text16le_apiname interface extract utf_16 string as big_endian little_endian respectively
+if sqlite3_bind _ apiname routine be call null pointer prepare statement or prepared statement which sqlite3_step_apiname have call more recently than sqlite3_reset_apiname , then call return sqlite_misuse_api_constant
+unlock_notify callback be reentrant
+see thread mode documentation additional information
+size blob be change by interface
+memory hold error message string be manage internally must be free by application
+memory hold error message string be manage internally
+sqlite3_wal_autocheckpoint_apiname be wrapper around sqlite3_wal_hook_apiname cause database database connection d automatically checkpoint after commit transaction if be sqlite3_wal_autocheckpoint_apiparam_2 or more frame write_ahead log file
+virtual table can provide alternative implementation function use xfindfunction method virtual table module
+parg argument be pass through callback
+interface cause xentrypoint_apiname function be invoke each database connection be create
+if routine be call after sqlite3_reset_apiname or sqlite3_finalize_apiname or after sqlite3_step_apiname have return something other than sqlite_row_api_constant , result be undefined
+x callback be invoke whenever event identify by mask m occur
+semicolon be embed within string literal or quote identifi name or comment be independent token thus count as statement terminator
+type conversion pointer invalidation may occur follow case
+however , if f argument contain sqlite_serialize_nocopy_api_constant bit , then no memory allocation be make , sqlite3_serialize_apiname function return pointer contiguous memory representation database sqlite be currently use database , or null if no such contiguous memory representation database exist
+n be zero left_most function argument
+if 4th parameter sqlite3_result_text interface or sqlite3_result_blob be special constant sqlite_static_api_constant , then sqlite assume text or blob result be constant space do copy content parameter nor call destructor content when have finish use result
+additional sqlite3_trace_apiname callback may occur as each trigger subprogram be enter
+sqlite3_snapshot_get_apiname interface be only available when sqlite_enable_snapshot compile_time option be use
+see uri filename additional information
+sqlite3_bind_pointer exist api_info
+sqlite3_auto_extensionnot exist api_info
+sqlite3_update_hooknot exist api_info
+after least ms millisecond sleep , handler return # which cause sqlite3_step_apiname return sqlite_busy_api_constant
+note window user : encode use sqlite3_open_apiparam_1 argument sqlite3_open_apiname sqlite3_open_v2_apiname must be utf_8 , whatever codepage be currently define
+routine return # if statement be incomplete
+if implementation do provide work version routine , should least provide stub always return true so one do get spurious assertion failure
+sqlite3_vtab_collation_apiname only be call within call xbestindex method virtual table
+sqlite3_test_control_apiname interface be use read out internal state sqlite inject fault into sqlite testing purpose
+third argument be value bind parameter
+second argument be integer code specific sqlite_stmtstatus counter be interrogate
+sqlite3_table_column_metadata_apiname interface return sqlite_ok_api_constant fill non_null pointer final five argument appropriate value if specify column exist
+application should never invoke either sqlite3_os_init_apiname or sqlite3_os_end_apiname directly
+if sqlite3_realloc_apiname return null sqlite3_realloc_apiparam_2 be positive , then prior allocation be free
+sqlite3_wal_autocheckpoint_apiname be wrapper around sqlite3_wal_hook_apiname cause database database connection d automatically checkpoint after commit transaction if be sqlite3_wal_autocheckpoint_apiparam_2 or more frame write_ahead log file
+each prepare statement maintain various sqlite_stmtstatus counter measure number time have perform specific operation
+set busy handler clear previously set handler
+leftmost column result set have index #
+order succeed , database connection must be autocommit mode when sqlite3_snapshot_open_apiname be call
+soft heap limit be soft because even though sqlite strive stay below limit , exceed limit rather than generate sqlite_nomem_api_constant error
+sqlite3_realloc_apiname interface attempt resize prior memory allocation sqlite3_realloc_apiparam_1 be least sqlite3_realloc_apiparam_2 byte
+sqlite3_str_finish_apiname interface return null pointer if string sqlite3_str object sqlite3_str_finish_apiparam_1 be zero byte long
+case value write output parameter pnlog pnckpt be undefined
+callback invocation detail
+sqlite3_create_module_v2 exist api_info
+if paramet n sqlite3_malloc_apiname be zero or negative then sqlite3_malloc_apiname return null pointer
+if sqlite3_malloc_apiname fail during process either routine then null pointer be return by sqlite3_column_name_apiname
+sqlite3_str_errcode_apiname method return sqlite_nomem_api_constant follow out_of_memory error , or sqlite_toobig_api_constant if size dynamic string exceed sqlite_max_length , or sqlite_ok_api_constant if have no error
+support diagnostic function sqlite3_compileoption_used_apiname sqlite3_compileoption_get_apiname be omit by specify sqlite_omit_compileoption_diag option compile time
+sqlite_open_privatecache_api_constant flag cause database connection participate share cache mode even if be enable
+if statement be commit occur within explicit transaction then -PRON- should rollback transaction before continue
+index value return be suitable as second parameter sqlite3_bind_apiname
+sqlite_busy_api_constant mean database engine be unable acquire database lock need job
+if blob handle close be open read_write access , if database be auto_commit mode be no other open read_write blob handle or active write statement , current transaction be commit
+if no such function exist before api be call , function be create
+safe policy be invoke routine one follow way
+if be already read transaction open when sqlite3_snapshot_open_apiname be invoke , then read transaction remain open if sqlite_error_api_constant , sqlite_busy_api_constant or sqlite_error_api_constant_snapshot be return by sqlite3_snapshot_open_apiname
+more detail regard implementation aggregate window function be available here
+sqlite3_value return be protect sqlite3_value object even if input be
+sqlite3_table_column_metadata_apiname cause database schema be read disk parse , if have already do , return error if error be encounter while load schema
+sqlite3_free_table_apiparam_1 table may consist one or more memory allocation
+sqlite3_open_v2_apiname interface work like sqlite3_open_apiname except accept two additional parameter additional control over database connection
+register null function disable callback
+sqlite3_log_apiname interface write message into error log establish by sqlite_config_log_api_constant option sqlite3_config_apiname
+routine register callback function can be use trace profiling execution sql statement
+sqlite3_bind_zeroblob_apiname sqlite3_result_zeroblob_apiname interface built_in zeroblob sql function be use create zero_filled blob read or write use incremental_blob interface
+static mutexe be internal by sqlite only
+routine be work_alikes printf_apiname family function standard c library
+method can be use , example , add whitespace indentation
+if sqlite3_bind__apiname routine be pass prepared statement have finalize , result be undefined probably harmful
+if interrupt sql operation be insert , update , or delete be inside explicit transaction , then entire transaction be roll back automatically
+routine be deprecate
+third fourth parameter sqlite3_table_column_metadata_apiname be table column name desire column , respectively
+be provide support rare application unusual need
+xstep xfinal must both be non_null
+first six interface each return value result column specific datum format
+request measurement be write into variable point by pout parameter
+sqlite3_trace_v2not exist api_info
+as other sqlite api , whose name end 16 return utf_16 encode string other function return utf_8
+be no way distinguish between incorrect sqlite3_file_control_apiparam_2 sqlite_error_api_constant return underlie xfilecontrol method
+datatype after conversion be return by sqlite3_value_numeric_type_apiname
+if sqlite3_wal_checkpoint_v2_apiparam_5 be null , then pnckpt be set total number checkpointe frame log file or # if checkpoint could run due error or because database be wal mode
+fifth paramet preupdate callback be name table be modify
+security warning : be recommend sqlite_dbconfig_enable_load_extension_api_constant method be use enable only interface
+fourth parameter optionally be ore sqlite_deterministic_api_constant signal function always return result give input within single sql statement
+warning : object return by sqlite3_column_value_apiname be unprotected sqlite3_value object
+deadlock detection
+core previous sentence do include operating_system specific vfs implementation
+sqlite3_db_filename_apiname interface return pointer filename associate database n connection d. main database file have name main
+routine provide access set sql language keyword recognize by sqlite
+such change eventually commit if transaction continue completion
+routine return name assign particular column result set select statement
+if be no integer primary key column , then output rowid be set as follow
+be change as sqlite version # 2007_09_04
+preupdate hook be disable by invoking sqlite3_preupdate_hook_apiname null pointer as sqlite3_preupdate_count_apiparam_2
+attempt increase limit above hard upper bound be silently truncate hard upper bound
+return value sqlite3_soft_heap_limit64_apiname be size soft heap limit prior call , or negative case error
+sqlite3_create_window_functionnot exist api_info
+blob handle can be move different row table use sqlite3_blob_reopen_apiname interface
+call sqlite3_blob_read_apiname sqlite3_blob_write_apiname expired blob handle fail return code sqlite_abort_api_constant
+sqlite_fcntl_vfs_pointer_api_constant opcode return pointer underlie sqlite3_vfs object file
+busy callback should take action which modify database connection invoke busy handler
+routine open sqlite database file as specify by sqlite3_open_apiparam_1 argument
+second argument , zsql , be statement be compile , encode as either utf_8 or utf_16
+otherwise , error code or extended error code be return by sqlite3_blob_read_apiname
+as consequence , error occur wrapper layer outside internal sqlite3_exec_apiname call be reflect subsequent call sqlite3_errcode_apiname or sqlite3_errmsg_apiname
+implementation function always cause exception be throw
+so example , if samplelib can be load , then name like or or may be try
+when commit hook callback routine return zero , commit operation be allow continue normally
+see : sqlite3_strlike_apiname
+sqlite3_rollback_hook_apiname interface register callback function be invoke whenever transaction be roll back
+if parameter be 1 , then sql function or aggregate take number argument between # limit set by sqlite3_limit_apiname
+default busy callback be null
+if non_negative fourth parameter be provide sqlite3_bind_text_apiname or sqlite3_bind_text16_apiname or sqlite3_bind_text64_apiname then parameter must be byte offset where nul terminator would occur assume string be nul terminate
+if fourth paramet be null pointer then default sqlite3_vfs object be use
+sqlite3_blob_reopen_apiname set database handle error code message
+amount space allocate by sqlite3_aggregate_context_apiname be determine by sqlite3_aggregate_context_apiparam_2 paramet first successful call
+sqlite3_threadsafe_apiname function return zero if only if sqlite be compile mutexe code omit due sqlite_threadsafe compile_time option set #
+attempt create function long name result sqlite_misuse_api_constant return
+autocommit mode be re_enable by commit or rollback
+function add , remove , or modify collation associate database connection specify as first argument
+sqlite3_db_readonly_apiname interface return # if database n connection d be read_only , # if be , or # if n be name database connection d
+since interface be expect be rarely use , be only available if sqlite be compile use sqlite_enable_stmt_scanstatus compile_time option
+most sqlite build come single default vfs be appropriate host computer
+both routine return null pointer if sqlite3_malloc64_apiname be unable allocate enough memory hold result string
+name database or table or column can be return as either utf_8 or utf_16 string
+interface be retain backwards compatibility as convenience application need manually start callback but which need full power sqlite3_wal_checkpoint_v2_apiname
+be historical accident can be fix without break backwards compatibility
+if result be numeric value then sqlite3_column_bytes_apiname use sqlite3_snprintf_apiname convert value utf_8 string return number byte string
+pass other pointer routine result undefine probably undesirable behavior
+if be already read_transaction open schema sqlite3_snapshot_get_apiparam_2 when sqlite3_snapshot_get_apiname be call , one be open automatically
+sqlite3_trace_v2_apiname interface instead routine describe here
+routine return information about single column current result row query
+if offset sqlite3_blob_write_apiparam_4 be less than n byte end blob , sqlite_error_api_constant be return by sqlite3_blob_write_apiname no data be write
+paramet p be pass through as only paramet callback function x
+second paramet preupdate callback be pointer database connection register preupdate hook
+avoid , each thread can obtain exclusive database connection sqlite3_db_mutex_apiparam_1 by invoke sqlite3_mutex_enter before begin sqlite3_db_mutex_apiparam_1 invoke sqlite3_mutex_leave after call interface list here be complete
+sqlite3_stricmp_apiname sqlite3_strnicmp_apiname api allow application extension compare content two buffer contain utf_8 string case_independent fashion , use definition case independence sqlite us internally when compare identifier
+if authority be empty string or localhost , error be return by sqlite3_open16_apiname caller
+routine enable or disable share database cache schema datum structure between connection database
+routine set busy handler sleep specify amount time when table be lock
+callback function should normally return sqlite_ok_api_constant
+sqlite core use three routine internal memory allocation need
+sqlite3_str_new_apiname interface allocate initialize sqlite3_str object
+sqlite3_vsnprintf_apiname routine be varargs version sqlite3_snprintf_apiname
+call sqlite3_blob_close_apiname argument be null pointer or open blob handle result undefined behaviour
+sqlite3_str_appendf sqlite3_str_vappendf_apiname interface use built_in printf functionality sqlite append format text onto end sqlite3_str object x
+sqlite3_commit_hooknot exist api_info
+if be block connection , then extended error code be set sqlite_locked_api_constant_sharedcache
+function be use add sql function or aggregate or redefine behavior exist sql function or aggregate
+if default vfs be unregistered , another vfs be choose as default
+sqlite3_data_count_apiname interface return number column current row result set prepared statement sqlite3_step_apiparam_1 . if prepare statement sqlite3_step_apiparam_1 do have result ready return then sqlite3_data_count_apiname return #
+if 3rd parameter sqlite3_result_text interface be negative , then sqlite take result text 2nd parameter through first zero character
+sqlite version # 3 , be possible define sqlite_omit_memory_allocation which would cause built_in implementation routine be omit
+size blob can be determine use sqlite3_blob_bytes_apiname interface
+sqlite3_deserialize_apiname interface fail sqlite_busy_api_constant if database be currently read transaction or be involve backup operation
+if sixth argument sqlite3_bind_text64_apiname be one allow value show above , or if text encoding be different encoding specify by sixth parameter , then behavior be undefined
+if two snapshot handle be associate database file , result comparison be undefined
+first parameter be operation code determine number , meaning , operation subsequent parameter
+can only be single busy handler particular database connection give moment
+sqlite3_update_hook_apiname interface register callback function database connection identify by first argument be invoke whenever row be update , insert or delete rowid table
+sqlite_enable_memory_management , soft heap limit be enforce every memory allocation
+otherwise , various feature require temporary file fail
+thus insert or fail , insert or ignore , insert or rollback , insert or abort make no change return value routine when insertion fail
+if routine return 0 , mean prepared statement return no data example update
+be most one unlock_notify callback register by block connection
+sqlite_mutex_pthread sqlite_mutex_w32 implementation be appropriate unix window
+call sqlite3_close_apiname sqlite3_close_v2_apiname return sqlite_ok_api_constant if sqlite3 object be successfully destroy associate resource be deallocate
+sqlite provide two interface report status sqlite3_malloc_apiname , sqlite3_free_apiname , sqlite3_realloc_apiname routine , which form built_in memory allocation sqlite3_memory_used_apiname routine return number byte memory currently outstanding malloce but free
+follow table detail conversion be apply
+rollback callback be invoke if transaction be automatically roll back because database connection be close
+update hook be invoke when without rowid table be modify
+third parameter be limit construct
+let n be number row m be number column
+if collate function fail above constraint collate function be register use , then behavior sqlite be undefined
+sqlite3_result_error_apiname sqlite3_result_error16_apiname routine make private copy error message text before return
+cache sharing be enable disabled entire process
+sqlite_fcntl_data_version_api_constant return datum version counter pager
+note run other sql statement , include select statement , or merely call sqlite3_prepare_v2_apiname sqlite3_step_apiname modify database connection meaning modify paragraph
+collation name compare equal accord sqlite3_strnicmp_apiname be consider be name
+row be identify by rowid value pass as sqlite3_blob_reopen_apiparam_2
+when sqlite_threadsafe macro be 0 , mutexe be omit
+final value p be undefined case
+but maximum safety , mutexe should be enable
+each vfs become default vfs if sqlite3_vfs_register_apiparam_2 flag be set
+perhaps be call prepared statement have already finalize or one have previously return sqlite_error_api_constant or sqlite_done_api_constant
+additionally , result comparison be only valid if both snapshot handle be obtain by call sqlite3_snapshot_get_apiname since last time wal file be delete
+if sqlite3_create_module_apiparam_3 be null then no module be create exist module name be drop
+if operate system do support sleep request millisecond time resolution , then time be round up nearest second
+common technique use avoid keyword name collision include
+sqlite3_step_apiname be call again retrieve next row datum
+if two or more collating function be register collation name then must give equivalent answer when invoke equivalent string
+sqlite3_expanded_sql_apiname interface return pointer utf_8 string contain sql text prepare statement sqlite3_normalized_sql_apiparam_1 bind parameter expand
+if sqlite_deserialize_resizeable_api_constant bit be set , then sqlite try increase buffer size use sqlite3_realloc64_apiname if write database cause grow large than m byte
+sqlite implementation most closely match way which sql function be use
+use only public interface define here
+sqlite3_result_value_apiname interface make copy sqlite3_value so sqlite3_value specify paramet change or be deallocate after sqlite3_result_value_apiname return without harm
+if prior error have occur while construct dynamic string sqlite3_str x , then sqlite3_str_errcode_apiname method return appropriate error code
+error code be return by sqlite3_enable_shared_cache_apiname otherwise
+number subtype byte preserve by sqlite may increase future release sqlite
+parser use by sqlite be forgive
+mutex be recursive when sqlite_mutex_recursive_api_constant be use but necessarily so when sqlite_mutex_fast_api_constant be use
+if 3rd parameter sqlite3_open_v2_apiname be one combination show above optionally combine other sqlite_open bit then behavior be undefined
+ppstmt be leave point compile prepared statement can be execute use sqlite3_step_apiname
+as long as input parameter be correct , routine can only fail if out_of_memory error occur during format conversion
+sqlite3_blob_read_apiname be use read datum open blob handle into caller_supplied buffer
+sqlite3_snapshot_open_apiname interface either start read transaction or upgrade exist one schema sqlite3_snapshot_open_apiparam_2 database connection sqlite3_snapshot_open_apiparam_1 such read transaction refer historical snapshot p , rather than most recent change database
+protect sqlite3_value object be use pass paramet information into implementation application_defin sql function virtual routine work only protect sqlite3_value object
+implementation aggregate sql function routine allocate memory store state
+if sqlite_open_nomutex_api_constant flag be set , then database connection open multi_thread threading mode as long as single_thread mode have set compile_time or start_time
+if vfs be register name be null or empty string , then behavior be undefined
+application_defined function be permit call other sqlite interface
+when multiple implementation function be available , sqlite pick one involve least amount datum conversion
+sharing be enable if argument be true disabled if argument be false
+memory allocation error be detect , but be report back as sqlite_cantopen_api_constant or sqlite_ioerr_api_constant rather than sqlite_nomem_api_constant
+sqlite3_busy_handler_apiname interface be use implement sqlite3_busy_timeout_apiname pragma busy_timeout
+each prepare statement maintain various sqlite_stmtstatus counter measure number time have perform specific operation
+if result column be initially request format then automatic type conversion be perform
+be include as part name
+security warning : be recommend extension loading be disable use sqlite_dbconfig_enable_load_extension_api_constant method rather than interface , so load_extension_apiname sql function remain disabled
+see : sqlite3_column_count_apiname
+second argument be integer constant , take set sqlite_dbstatus option , determine parameter interrogate
+even if be busy_handler configure , be invoke case
+interface provide information as sqlite_version_api_constant , sqlite_version_api_constant_number , sqlite_source_id_api_constant c preprocessor macro but be associate library instead header file
+third parameter be pointer implementation virtual table module
+other valid call sqlite3_shutdown_apiname be harmless no_op
+legacy interface , more specific error code can be obtain by call sqlite3_reset_apiname prepared statement
+sqlite3_deserialize_apiname interface cause database connection sqlite3_deserialize_apiparam_1 disconnect database sqlite3_deserialize_apiparam_2 then reopen sqlite3_deserialize_apiparam_2 as in_memory database base serialization contain sqlite3_deserialize_apiparam_3 . serialize database sqlite3_deserialize_apiparam_3 be sqlite3_deserialize_apiparam_4 byte size
+if thread mode be single_thread or multi_thread then routine return null pointer
+sqlite3_snapshot_get_apiname return sqlite_nomem_api_constant
+zeroblob use fix amount memory while be process
+wal_autocheckpoint pragma can be use invoke interface sql
+callback register by sqlite3_wal_autocheckpoint_apiname replace exist callback register use sqlite3_wal_hook_apiname
+sqlite prefix be omit option name pass sqlite3_compileoption_used_apiname
+sqlite3_bind_blobnot exist api_info
+if nul character occur string byte offset be less than value 3rd parameter , then result string contain embed nul result expression operate string embed nul be undefined
+4th argument sqlite3_exec_apiname callback be array pointer string where each entry represent name correspond result column as obtain sqlite3_column_name_apiname
+interface return information about predict measured performance sqlite3_stmt_scanstatus_apiparam_1
+be permit regist multiple implementation function name but either differ number argument or differ preferred text encoding
+routine return sqlite_ok_api_constant if share cache be enable or disable successfully
+version sqlite up include 3 , call sqlite3_reset_apiname be require after sqlite3_step_apiname return anything other than sqlite_row_api_constant before subsequent invocation sqlite3_step_apiname
+flush datum accumulate memory disk
+subsequent call sqlite3_blob_read_apiname , sqlite3_blob_write_apiname or sqlite3_blob_reopen_apiname aborted blob handle immediately return sqlite_abort_api_constant
+if file can be load directly , attempt be make load various operating_system specific extension add
+sqlite3_snapshot_cmp interface be use compare age two valid snapshot two snapshot handle be associate database file , result comparison be , result comparison be only valid if both snapshot handle be obtain by call sqlite3_snapshot_get_apiname since last time wal file be delete
+other word , soft heap limit be advisory only
+interface be use retrieve runtime status information about performance sqlite , optionally reset various highwater mark
+sqlite3_prepare_apiname interface be legacy should be avoid
+second be copy database handle
+sqlite3_stmt_readonly_apiname interface return true if only if prepare statement x make no direct change content database application_defin sql function or virtual table may change database indirectly as side effect
+sqlite3_config_apiname interface be use make global configuration change sqlite order tune sqlite specific need application
+otherwise error code be return by sqlite3_open_apiname
+prior sqlite version 3 , window os interface layer call system malloc_apiname free_apiname directly when convert filename between utf_8 encoding use by sqlite whatever filename encoding be use by particular window installation
+few opcode sqlite3_file_control_apiname be handle directly by sqlite core never invoke method
+call routine argument less than or equal zero turn off busy handler
+prevent sql injection give attacker access extension loading capability
+value seventh paramet pass callback function be define operation without rowid table , or insert operation rowid table
+vfs can be register multiple time without injury
+sqlite3_cancel_auto_extension_apiname routine return # if initialization routine x be successfully unregistered return # if x be list initialization routine
+sqlite3_malloc64_apiname routine work just like sqlite3_malloc_apiname except sqlite3_malloc_apiparam_1 be unsigned 64_bit integer instead sign 32_bit integer
+if separate thread make change database connection while sqlite3_changes_apiname be run then value return be unpredictable meaningful
+if fourth paramet sqlite3_bind_text_apiname or sqlite3_bind_text16_apiname be negative , then length string be number byte up first zero terminator
+error code be remember be recall by sqlite3_errcode_apiname or sqlite3_errmsg_apiname
+sqlite3_errmsg_apiname or sqlite3_errmsg16_apiname routine can be use obtain english language description error follow failure sqlite3_open_apiname routine
+uri hexadecimal escape sequence be support within path query component uri
+sqlite3_strglob_apiname interface return zero if only if string sqlite3_strglob_apiparam_2 match glob pattern p. definition glob pattern matching use sqlite3_strglob_apiname be as x glob p operator sql dialect understand by sqlite
+x like p without escape clause , set sqlite3_strlike_apiparam_3 paramet sqlite3_strlike_apiname #
+sqlite3_expanded_sql_apiname interface return null if insufficient memory be available hold result , or if result would exceed maximum string length determine by sqlite_limit_length_api_constant
+sqlite3_context_db_handle_apiname interface return copy pointer database connection sqlite3_create_function_apiname sqlite3_create_function16_apiname routine originally register application define function
+see : sqlite3_bind_apiname , sqlite3_bind_parameter_count_apiname , sqlite3_bind_parameter_index_apiname
+be recommend when database sqlite3_open_v2_apiparam_1 actually do begin : character -PRON- should prefix sqlite3_open_v2_apiparam_1 pathname such as . avoid ambiguity
+statement be judge be complete if end semicolon token be prefix well_forme create trigger statement
+value be access use column access function
+sqlite3_stmt_readonly_apiname interface return true if only if prepare statement sqlite3_stmt_readonly_apiparam_1 make no direct change content database file
+xdestroy callback be call if sqlite3_create_collation_v2_apiname function fail
+vx interface be recommend
+must only be use within sqlite_update_api_constant sqlite_delete_api_constant preupdate callback ; if be use by sqlite_insert_api_constant callback then behavior be undefined
+even though function prototype show xentrypoint_apiname take no argument return void , sqlite invoke xentrypoint_apiname three argument expect integer result as if signature entry point where as follow
+interface be similar sqlite3_config_apiname except change apply single database connection specify sqlite3_db_config_apiparam_1
+single database handle have most single write_ahead log callback register one time
+if be no metadata associate function argument , sqlite3_get_auxdata_apiname interface return null pointer
+value return by sqlite3_str_value_apiname be manage by sqlite3_str object x may be free or alter by subsequent method sqlite3_str object
+example , sqlite3_open_apiname call sqlite3_initialize_apiname so sqlite library be automatically initialize when sqlite3_open_apiname be call if have be initialize already
+3rd argument sqlite3_exec_apiname callback be array pointer string obtain as if sqlite3_column_text_apiname , one each column
+sqlite3_preupdate_old_apiname , sqlite3_preupdate_new_apiname , sqlite3_preupdate_count_apiname , sqlite3_preupdate_depth_apiname interface provide additional information about preupdate event
+sqlite3_changes_apiname return number row modify , insert or delete by most recently complete insert , update or delete statement database connection specify by only parameter
+after application have finish result sqlite3_get_table_apiname , must pass result table pointer sqlite3_free_table_apiname order release memory be malloce
+brief , sqlite3_wal_checkpoint_apiname cause content write_ahead log database sqlite3_wal_checkpoint_apiparam_2 database connection sqlite3_wal_checkpoint_apiparam_1 be transfer into database file write_ahead log be reset
+sql statement text input sqlite3_prepare_v2_apiname variant , literal be replace by paramet match one follow template
+other value be utf_8 zero_terminated string representation as return by sqlite3_column_text_apiname
+if follow statement be false when sqlite3_snapshot_get_apiname be call , sqlite_error_api_constant be return by sqlite3_snapshot_get_apiname
+interface load sqlite extension library name file
+first parameter be prepare statement
+if sqlite3_unlock_notify_apiname be call null pointer as second argument , then exist unlock_notify callback be cancel
+sqlite3_initialize_apiname interface be threadsafe , but sqlite3_shutdown_apiname be
+sqlite3_keyword_check_apiname interface check see whether or l_byte utf8 identifi sqlite3_keyword_check_apiparam_1 point be keyword , return non_zero if be zero if
+sqlite3_release_memory_apiname return number byte actually free , which may be more or less than amount request
+sqlite3_db_cacheflush_apiname interface flush cache schema main , temp , attach database
+interface load sqlite extension library name sqlite3_load_extension_apiname interface attempt load sqlite extension library contain file sqlite3_load_extension_apiparam_2
+virtual table can provide alternative implementation function use xfindfunction method virtual table module
+therefore , sqlite return sqlite_busy_api_constant first process , hop induce first process release read lock allow second process proceed
+most one preupdate hook be register time single database connection ; each call sqlite3_preupdate_hook_apiname override previous setting
+see : sqlite3_strglob_apiname
+if statement be select statement nth column sqlite3_column_decltype_apiparam_0 set select be table column then declare type table column be return by sqlite3_column_decltype_apiname
+so function be good anything by
+regardless whether or limit be change , sqlite3_limit_apiname interface return prior value limit
+if sqlite3_unlock_notify_apiname be call when block connection already have register unlock_notify callback , then callback replace old
+if element result row be null then correspond string pointer sqlite3_exec_apiname callback be null pointer
+if sqlite3_drop_modules_apiparam_2 parameter be null , then virtual table module be remove
+second argument busy handler callback be number time busy handler have invoke previously lock event
+wal file be delete when database be change back rollback mode or when number database client drop zero
+if application then re_attempts drop table or drop index query , infinite loop may be result
+application do need worry about free result
+sqlite3_value_dup_apiname interface make copy sqlite3_value object d return pointer copy
+internal database can be give large , default limit
+sqlite3_create_collation_v2_apiname work like sqlite3_create_collation_apiname addition xdestroy callback be invoke parg when collate function be delete
+thus result table have # entry
+sqlite3_prepare_v3_apiname have extra prepflag option be use special purpose
+row must meet criterion as sqlite3_blob_open_apiname must exist must be either blob or text value store nominate column
+loop be number start zero
+caller be responsible free sqlite3_serialize_apiparam_0 avoid memory leak
+such case , mutex must be exit equal number time before another thread can enter
+see : sql function sqlite_compileoption_used_apiname sqlite_compileoption_get_apiname compile_option pragma
+collate function must return integer be negative , zero , or positive if first string be less than , equal , or great than second , respectively
+pass null pointer sqlite3_free_apiname be harmless
+attempt read expire blob handle fail error code sqlite_abort_api_constant
+sqlite us string point by 2nd parameter sqlite3_result_error_apiname or sqlite3_result_error16_apiname as text error message
+if argument sqlite3_mutex_held_apiname be null pointer then routine should return #
+when name sql parameter be use more than once , second subsequent occurrence have index as first occurrence
+sqlite3_exec_apiname interface run zero or more utf_8 encode , semicolon_separate sql statement pass into 2nd argument , context database connection pass as 1st argument
+sqlite_error_api_constant be return by sqlite3_snapshot_open_apiname if either condition be violate , or if schema sqlite3_snapshot_open_apiparam_2 do exist , or if snapshot object be invalid
+fourth parameter optionally include sqlite_directonly_api_constant flag , which if present prevent function invoke within view or trigger
+if min_apiparam_2 be size prior allocation , then min_apiname byte prior allocation be copy into begin buffer return by sqlite3_realloc_apiname prior allocation be free
+string return by sqlite3_sql_apiname sqlite3_normalized_sql_apiname be manage by sqlite be automatically free when prepared statement be finalize
+sqlite3_blob_reopen_apiname be use move exist blob handle so point different row database table
+destructor be invoke if call sqlite3_create_module_v2_apiname fail
+if sqlite have initialize use sqlite3_initialize_apiname prior invoking sqlite3_complete16_apiname then sqlite3_initialize_apiname be invoke automatically by sqlite3_complete16_apiname
+first parameter must be copy sql function context be sqlite3_aggregate_context_apiparam_1 xstep or xfinal callback routine implement aggregate function
+sqlite3_vtab_collation_apiname return pointer buffer contain name collation sequence correspond constraint
+clarity : value return by sqlite3_column_bytes_apiname sqlite3_column_bytes16_apiname be number byte string , number character
+string return by sqlite3_column_text_apiname sqlite3_column_text16_apiname , even empty string , be always zero_terminate
+n parameter must be between # one less than number column or behavior be undefined
+sqlite3_value_subtype_apiname function return subtype application_defin sql function argument v. subtype information can be use pass limited amount context one sql function another
+sqlite3_result_error_nomem_apiname interface cause sqlite throw error indicate memory allocation fail
+sqlite3_total_changes_apiname interface only report number row change due sql statement run against database connection d. change by other database connection be ignore
+sqlite3_str_finish_apiname interface destroy sqlite3_str object x return pointer memory buffer obtain sqlite3_malloc64_apiname contain construct string
+appropriate implementation be select automatically compile_time
+case update , be rowid after update take place
+sqlite3_mutex_alloc_apiname routine return null if be unable allocate request mutex
+first paramet authorizer callback be copy third paramet sqlite3_set_authorizer_apiname interface
+current value request parameter be write into pcur high instantaneous value be write into phiwtr
+sqlite3_release_memory_apiname interface attempt free n byte heap memory by deallocate non_essential memory allocation hold by database library
+return value be os_dependent
+set paramet x null disable progress handler
+hence , current size soft heap limit can be determine by invoke sqlite3_soft_heap_limit64_apiname negative argument
+sqlite3_serialize_apiname interface return pointer memory be serialization s database database connection d. if p be null pointer , then size database byte be write into p ordinary on_disk database file , serialization be just copy disk file
+old interface be retain backwards compatibility , but be discourage
+t argument be one sqlite_trace_api_constant constant indicate why callback be invoke
+pass zero or negative value as nframe paramet disable automatic checkpoint entirely
+execute sql statement , must first be compile into byte_code program use one routine
+if d paramet sqlite3_str_new_apiname be null , then maximum length string contain sqlite3_str object be value set sqlite3_limit_apiname instead sqlite_max_length
+application may substitute return value be less expensive compute correspond xupdate method understand as no_change value
+index name parameter can be look up use sqlite3_bind_parameter_index_apiname api if desire
+type be associate individual value , container use hold value
+see sqlite_vtab_constraint_support_api_constant
+avoid scenario , sqlite3_unlock_notify_apiname perform deadlock detection
+if another error code example sqlite_protocol_api_constant or sqlite_ioerr_api_constant error code be return by sqlite3_snapshot_open_apiname , then final state read transaction be undefined
+sqlite3_data_count_apiname routine return # if previous call sqlite3_step_apiname return sqlite_done_api_constant
+sqlite3_vtab_config_apiname be call by either xconnect or xcreate method virtual table implementation configure various facet virtual table interface be invoke outside context xconnect or xcreate virtual table method then behavior be present , be only one option be configure use sqlite3_vtab_config_apiname
+return size byte blob accessible via successfully open blob handle only argument
+if previous call routine have sqlite3_randomness_apiparam_1 # or more non_null sqlite3_randomness_apiparam_2 then pseudo_randomness be generate internally without recourse sqlite3_vfs xrandomness method
+routine may return null if memory allocation error occur
+hence , application should ensure correct authorizer callback remain place during sqlite3_step_apiname
+only effective call sqlite3_shutdown_apiname do deinitialization
+negative value zeroblob result zero_length blob
+return value xfilecontrol method become return value routine
+sqlite3_stmt_busy_apiname interface return false if sqlite3_stmt_busy_apiparam_1 be null pointer
+invoking routine outside preupdate callback or database connection pointer be different one supply preupdate callback result undefined probably undesirable behavior
+zeroblob be intend serve as placeholder blob whose content be later write use incremental blob routine
+if result be numeric value then sqlite3_column_bytes16_apiname use sqlite3_snprintf_apiname convert value utf_16 string return number byte string
+after application receive sqlite_locked_api_constant error , call sqlite3_unlock_notify_apiname method block connection handle as first argument register callback be invoke when block connection current transaction be conclude
+sqlite3_last_insert_rowid_apiname be accessible sql statement via last_insert_rowid_apiname sql function
+aggregate sql function require implementation xstep xfinal null pointer must be pass xfunc
+sqlite3_reset_apiname function be call reset prepared statement object back initial state , ready be re_execut
+advanced application can interface compare predict measured performance issue warning rerun analyze if discrepancy be find
+api make sure global version function particular name number parameter exist
+indirect deadlock be detect , so system be consider be deadlocke if connection b have register unlock_notify callback conclusion connection c transaction , where connection c be wait connection
+first argument must be sqlite3_index_info object be first paramet xbestindex_apiname method
+interface use be only way cause checkpoint occur
+return number column result set return by prepared statement
+if value sqlite3_uri_int64_apiparam_2 be something other than integer , then zero be return by sqlite3_uri_int64_apiname
+sql statement variable have value bind -PRON- use sqlite3_bind _ apiname api retain value
+if require lock still can be obtain , then database be skip attempt make flush dirty page belong next database
+if third parameter sqlite3_bind_text_apiname or sqlite3_bind_text16_apiname or sqlite3_bind_blob_apiname be null pointer then fourth parameter be ignore end result be as sqlite3_bind_null_apiname
+make exist vfs into default vfs , register again sqlite3_vfs_register_apiparam_2 flag set
+if separate thread make change database connection while sqlite3_total_changes_apiname be run then value return be unpredictable meaningful
+if error occur while evaluate sql statement pass into sqlite3_exec_apiname , then execution current statement stop subsequent statement be skip
+module name must be register before create virtual table use module before use preexist virtual table module
+sqlite3_deserialize_apiname interface cause database connection d disconnect database s then reopen s as in_memory database base serialization contain p. serialize database p be n byte size
+when collate function have name be delete , collation be no longer usable
+ppstmt be null
+sqlite3_load_extension_apiname interface return sqlite_ok_api_constant success sqlite_error_api_constant if something go wrong
+memory point by character pointer return declaration type collation sequence be valid until next call sqlite api function
+api be only available if library be build pre_processor symbol sqlite_enable_stmt_scanstatus define
+only change make real table be count
+sqlite3_snapshot_open_apiname interface return sqlite_ok_api_constant success or appropriate error code if fail
+sqlite prefix be omit string return by sqlite3_compileoption_get_apiname
+sqlite3_compileoption_used_apiname function return # or # indicate whether specified option be define compile time
+refer sql paramet documentation additional information
+if sqlite3_step_apiname or sqlite3_reset_apiname or sqlite3_finalize_apiname be call different thread while routine be pende , then result be undefined
+filename return by sqlite3_db_filename_apiname be output xfullpathname method vfs
+if sqlite3_prepare_apiparam_5 be null then pztail be make point first byte past end first sql statement sqlite3_prepare_apiparam_2
+interface can be use combination sqlite3_next_stmt_apiname locate prepared statement associate database connection be need reset
+string return by sqlite3_expanded_sql_apiname , other hand , be obtain sqlite3_malloc_apiname must be free by application by pass sqlite3_free_apiname
+statistic may be available loop statement
+external mutex implementation be only require provide routine if sqlite_debug be define if ndebug be define
+only way find out whether sqlite automatically roll back transaction after error be sqlite3_get_autocommit_apiname
+each entry most sqlite table have unique 64_bit sign integer key call rowid
+inconsistency be unfortunate but can be change without break backwards compatibility
+routine open sqlite database file as specify by filename argument
+if n or sqlite3_blob_write_apiparam_4 be less than zero sqlite_error_api_constant be return by sqlite3_blob_write_apiname no data be write
+if unprotected sqlite3_value object return by sqlite3_column_value_apiname be use other way , include call routine like sqlite3_value_int_apiname , sqlite3_value_text_apiname , or sqlite3_value_bytes_apiname , behavior be threadsafe
+sqlite3_value_text16_apiname interface extract utf_16 stre native byte_order host machine
+sqlite3_libversion_number_apiname function return integer equal sqlite_version_api_constant_number
+sqlite3_value_frombind_apiname interface return non_zero if value sqlite3_value_frombind_apiparam_1 originate one sqlite3_bind_apiname interface
+present , be only one option be configure use sqlite3_vtab_config_apiname
+hence , find current value limit without change , simply invoke interface sqlite3_limit_apiparam_3 set #
+iscanstatusop must be one scanstatus option or behavior interface be undefined
+example , vacuum be keyword if sqlite be compile dsqlite_omit_vacuum option
+api be only available if library be compile sqlite_enable_unlock_notify c_preprocessor symbol define
+contrary intuition many , sqlite3_reset_apiname do reset binding prepare statement
+attempt routine unprotecte sqlite3_value be threadsafe
+purpose api , transaction be say have roll back if explicit rollback statement be execute , or error or constraint cause implicit rollback occur
+update hook implementation must anything modify database connection invoke update hook
+private database be automatically delete as soon as database connection be close
+follow implementation be available sqlite core
+testing suggest because page cache be predominate memory user sqlite , most application achieve adequate soft heap limit enforcement without sqlite_enable_memory_management
+among other thing , sqlite3_initialize_apiname invoke sqlite3_os_init_apiname
+value sqlite3_get_auxdata_apiparam_2 parameter interface should be non_negative
+interface enable or disable both c_api sqlite3_load_extension_apiname sql function load_extension_apiname
+if sqlite3_stmt_status_apiparam_3 be true , then counter be reset zero after interface call return
+sqlite3_strlike_apiname interface return zero if only if string x match like pattern p escape character e. definition like pattern matching use sqlite3_strlike_apiname be as x like p escape e operator sql dialect understand by sqlite
+if sqlite3_unlock_notify_apiname be call multi_threaded application , be chance block connection have already conclude transaction by time sqlite3_unlock_notify_apiname be invoke
+sqlite3_blob_write_apiname only modify content blob ; be possible increase size blob use api
+sqlite3_get_table_apiname interface be implement as wrapper around sqlite3_exec_apiname
+application must always be prepare encounter null pointer third through sixth parameter authorization callback
+but after version # 2010_03_26 , sqlite3_step_apiname begin call sqlite3_reset_apiname automatically circumstance rather than return sqlite_misuse_api_constant
+because way sqlite3_malloc_apiname happen within sqlite3_get_table_apiname , call function must try call sqlite3_free_apiname directly
+however , error string may be overwrite or deallocate by subsequent call other sqlite interface function
+first paramet n be total size buffer , include space zero terminator
+sqlite3_reset_apiname interface reset prepared statement s back begin program
+sqlite3_open_apiparam_1 argument be interpret as utf_8 sqlite3_open_apiname sqlite3_open_v2_apiname as utf_16 native byte order sqlite3_open16_apiname
+as well as set automatically as row be insert into database table , value return by sqlite3_last_insert_rowid_apiname be set explicitly by sqlite3_set_last_insert_rowid_apiname
+if path begin character , then be interpret as absolute path
+note window runtime user : temporary directory must be set prior call sqlite3_open_apiname or sqlite3_open_v2_apiname
+if 4th parameter sqlite3_result_text interface or sqlite3_result_blob be special constant sqlite_transient_api_constant then sqlite make copy result into space obtain sqlite3_malloc_apiname before return
+sqlite3_set_last_insert_rowid method allow application set value return by call sqlite3_last_insert_rowid_apiname r without insert row into database
+call function should free memory by call sqlite3_free_apiname
+if do work , construct name sqlite3_x_init where x be consist lower_case equivalent ascii alphabetic character filename last first following
+sqlite3_version stre constant contain text sqlite_version_api_constant macro
+sqlite3_errmsg_apiname sqlite3_errmsg16_apiname return english_language text describe error , as either utf_8 or utf_16 respectively
+if n be less than one then progress handler be disabled
+only single progress handler be define one time per database connection ; set progress handler cancel old one
+return index sql paramet give name
+call sqlite3_shutdown_apiname be effective call if be first call sqlite3_shutdown_apiname since last sqlite3_initialize_apiname
+interface provide information as sqlite_version , sqlite_version_number , sqlite_source_id c preprocessor macro but be associate library instead header file
+checkpoint initiate by mechanism be passive
+return value sqlite3_column_type_apiname can be use decide which first six interface should be use extract column value
+if be call database handle autocommit mode but fail other reason , whether or read transaction be open schema s be undefined
+if sqlite3_uri_boolean_apiparam_2 be query parameter sqlite3_uri_boolean_apiparam_1 or if value sqlite3_uri_boolean_apiparam_2 be do match above , then sqlite3_uri_boolean_apiname return b 0
+sqlite3_extended_result_codes_apiname routine enable or disable extended result code feature sqlite
+if sql statement execute return datum , then sqlite_row_api_constant be return each time row datum be ready processing by caller
+sqlite3_strlike_apiname function match unicode character , though only ascii character be case fold
+interface return pointer sqlite3_mutex object serialize access database connection give argument when thread mode be serialize
+sqlite3_str_append_apiname method append exactly sqlite3_str_append_apiparam_3 byte stre s onto end sqlite3_str object x. sqlite3_str_append_apiparam_3 must be non_negative
+sqlite3_free_table_apiparam_1 table should be deallocate use sqlite3_free_table_apiname
+if database sqlite3_wal_checkpoint_v2_apiparam_2 be name attached database be wal mode , sqlite_ok_api_constant be return by sqlite3_wal_checkpoint_v2_apiname both pnlog pnckpt set #
+note application_defin sql function or virtual table may change database indirectly as side effect
+sqlite invoke sqlite3_free_apiname pzerrmsg after xentrypoint_apiname return
+authorizer be use when prepare sql statement untrusted source , ensure sql statement try access datum be allow see , or try execute malicious statement damage database
+sqlite3_blob_reopen_apiname be use move exist blob handle so point different row database table
+see : sqlite3_drop_modules_apiname
+sqlite3_collation_neede exist api_info
+append zero_terminate string entirety , sqlite3_str_appendall_apiname method instead
+call sqlite3_enable_load_extension_apiname routine onoff 1 turn extension loading call onoff 0 turn back off again
+legacy interface , return value be either sqlite_busy_api_constant , sqlite_done_api_constant , sqlite_row_api_constant , sqlite_error_api_constant , or sqlite_misuse_api_constant
+sixth argument sqlite3_bind_text64_apiname must be one sqlite_utf8_api_constant , sqlite_utf16_api_constant , sqlite_utf16_api_constantbe , or sqlite_utf16_api_constantle specify encode text third parameter
+sqlite3_snapshot_get_apiname interface attempt make sqlite3_snapshot object record current state schema s database connection d. success , sqlite3_snapshot_get_apiname interface write pointer newly create sqlite3_snapshot object into p return sqlite_ok
+so just because column be declare contain particular type do mean datum store column be declare type
+mean attempt be make convert value integer or float point
+application should only invoke sqlite3_initialize_apiname sqlite3_shutdown_apiname
+sqlite3_stmt_readonly_apiname interface return true begin since begin merely set internal flag , but begin immediate begin exclusive command touch database so sqlite3_stmt_readonly_apiname return false command
+every case first argument be pointer prepare statement be evaluate second argument be index column which information should be return
+sqlite3_initialize_apiname routine be call internally by many other sqlite interface so application usually do need invoke sqlite3_initialize_apiname directly
+first argument callback be copy third argument sqlite3_update_hook_apiname
+extension loading must be enable use sqlite3_enable_load_extension_apiname or sqlite3_db_config_apiname prior call api , otherwise error be return
+share cache be disable by default
+v2 interface , more specific error code be return directly by sqlite3_step_apiname
+sqlite3_aggregate_context_apiname routine return null pointer when first call if sqlite3_aggregate_context_apiparam_2 be less than or equal zero or if memory allocate error occur
+call sqlite3_snapshot_open_apiname fail open if specify snapshot have overwrite by checkpoint
+memory high_water mark be reset current value sqlite3_memory_used_apiname if only if parameter sqlite3_memory_highwater_apiname be true
+insert or update rowid table seventh parameter be final rowid value row insert or update
+if value be pass multiple invocation sql function during query execution , under circumstance associate metadata be preserve
+if give call sqlite3_unlock_notify_apiname would put system deadlocke state , then sqlite_locked_api_constant be return by sqlite3_unlock_notify_apiname no unlock_notify callback be register
+see uri filename documentation additional information
+when configuration option be set , sqlite3_config_apiname return sqlite_ok_api_constant
+virtual table implementation write rowid table way can avoid problem by restore original rowid value use sqlite3_set_last_insert_rowid_apiname before return control user
+callback implementation should return zero ensure future compatibility
+whether or error occur when be open , resource associate database connection handle should be release by pass sqlite3_close_apiname when be no longer require
+but then newer more powerful sqlite3_wal_checkpoint_v2_apiname interface be add
+if error code be return by sqlite3_wal_hook_apiname , error propagate back up through sqlite code base cause statement provoke callback report error , though commit have still occur
+routine be useful during command_line input determine if currently enter text seem form complete sql statement or if additional input be need before send text into sqlite parsing
+routine have fourth argument , value be number byte parameter
+interface be only available if sqlite be compile sqlite_enable_snapshot option
+within xfinal callback , be customary set n 0 call sqlite3_aggregate_context_apiname so no pointless memory allocation occur
+while be nothing prevent application call sqlite3_log_apiname , do so be consider bad form
+sixth , seventh eighth parameter pass three sqlite3_create_function function , xfunc , xstep xfinal , be pointer c_language function implement sql function or aggregate
+if result be utf_8 string , then sqlite3_column_bytes16_apiname convert string utf_16 then return number byte
+sqlite3_preupdate_count_apiname interface return number column row be insert , update , or delete
+memory space use hold string blob be free automatically
+note routine return zero match non_zero if string match , as sqlite3_stricmp_apiname sqlite3_strnicmp_apiname
+sqlite3_keyword_count_apiname interface return number distinct keyword understand by sqlite
+routine be useful during command_line input determine if currently enter text seem form complete sql statement or if additional input be need before send text into sqlite parsing
+cause sqlite3_step_apiname interface behave differently three way
+sqlite3_uri_boolean_apiname routine return false if value query paramet sqlite3_uri_boolean_apiparam_2 be one no , false , or off case or if value begin numeric zero
+third argument must be one constant
+call sqlite3_blob_bytes_apiname aborted blob handle always return zero
+be error if be already read transaction open database , or if database be wal mode database
+second argument sqlite3_db_config be configuration verb integer code indicate what aspect database connection be configure
+if sqlite_deserialize_freeonclose_api_constant bit be set f , then sqlite invoke sqlite3_free_apiname serialization buffer when database connection close
+success , sqlite3_blob_read_apiname return sqlite_ok_api_constant
+interface be recommend
+idea here be xentrypoint_apiname be entry point statically link sqlite extension be be automatically load into database connection
+sql statement be start after sqlite3_interrupt_apiname call before run statement reach zero be interrupt as if have run prior sqlite3_interrupt_apiname call
+sqlite3_wal_checkpoint_v2_apiname interface run checkpoint operation database x database connection d mode m. status information be write back into integer point by l c. m parameter must be valid checkpoint mode : if sqlite3_wal_checkpoint_v2_apiparam_4 be null , then pnlog be set total number frame log file or # if checkpoint could run because error or because database be wal mode
+hence , sqlite3_column_value_apiname interface be normally only useful within implementation application_defin sql function or virtual table , within top_level application code
+sqlite_error_api_constant mean run_time error have occur
+first argument be integer code specific paramet measure
+template above , nnn represent integer literal , vvv represent alphanumeric identifier
+length name be limit # byte utf_8 representation , exclusive zero_terminator
+call routine store sqlite3_randomness_apiparam_1 byte randomness into buffer sqlite3_randomness_apiparam_2 . sqlite3_randomness_apiparam_2 parameter can be null pointer
+sql function be register multiple time use different preferred text encoding , different implementation each encoding
+sqlite3_bind_text exist api_info
+if sqlite3 object be destroy while transaction be open , transaction be automatically roll back
+before path or query component uri sqlite3_open16_apiparam_1 be interpret , be encode use utf_8 hexadecimal escape sequence replace by single byte contain correspond octet
+other allow parameter sqlite3_mutex_alloc_apiname each return pointer static preexisting mutex
+even read previously free memory may result segmentation fault or other severe error
+sqlite3_finalize_apiname function be call delete prepared statement
+dirty page be if database cursor create by active sql statement be read , or if be page # database file page # be always
+sql statement text input sqlite3_prepare_v2_apiname variant , literal be replace by paramet match one follow template : template above , nnn represent integer literal , vvv represent alphanumeric identifier
+if sqlite3_deserialize_apiname fail reason if sqlite_deserialize_freeonclose_api_constant bit be set argument f , then sqlite3_free_apiname be invoke argument sqlite3_deserialize_apiparam_3 prior return
+sqlite3_get_autocommit_apiname interface return non_zero or zero if give database connection be or be autocommit mode , respectively
+conversion between utf_16be utf_16le be always do place invalidate prior pointer , though course content buffer prior pointer reference have modify
+if busy callback be null , then callback may be invoke two argument
+sqlite_nomem_api_constant be return by sqlite3_bind_value_apiname if malloc_apiname fail
+case where exist loop no available statistic , sqlite3_stmt_scanstatus_apiname behave as if loop do exist return non_zero leave variable sqlite3_stmt_scanstatus_apiparam_4 point unchanged
+if insert occur within trigger then routine return rowid insert row as long as trigger be run
+seem counter_intuitive since clearly mutex can be hold if do exist
+sqlite3_tracenot exist api_info
+move exist blob handle row be fast than close exist handle open one
+interface be use retrieve runtime status information about performance sqlite , optionally reset various highwater mark
+system , share cache mode should be enable per_database connection via sqlite3_open_v2_apiname sqlite_open_sharedcache_api_constant
+example , if prepare statement be create use sql text select abc , : xyz if paramet abc be bind integer # parameter : xyz be unbound , then sqlite3_sql_apiname return original string , select abc , : xyz but sqlite3_expanded_sql_apiname return select 2345 , null
+execute other type sql statement do modify value return by sqlite3_changes_apiname
+sqlite3_exec_apiname interface be convenience wrapper around sqlite3_prepare_v2_apiname , sqlite3_step_apiname , sqlite3_finalize_apiname , allow application run multiple statement sql without have lot c code
+within xupdate method virtual table , sqlite3_value_nochange_apiname interface return true if only if column correspond sqlite3_value_nochange_apiparam_1 be unchanged by update operation xupdate method call be invoke implement if prior xcolumn method call be invoke extract value column return without set result probably because query sqlite3_vtab_nochange_apiname find column be unchanging
+call sqlite3_interrupt_apiname occur when be no run sql statement be no_op have no effect sql statement be start after sqlite3_interrupt_apiname call return
+nine static mutexe be use by current version sqlite
+see : sqlite3_data_count_apiname
+sqlite3_os_init_apiname routine do operating_system specific initialization sqlite library
+future version sqlite add additional static mutexe
+sqlite3_commit_hook exist api_info
+return index sql paramet give name
+sqlite3_blob_write_apiname be use write datum into open blob handle caller_supplied buffer
+if sqlite3_close_v2_apiname be call database connection still have outstanding prepared statement , blob handle , sqlite3_backup object then return sqlite_ok_api_constant deallocation resource be defer until prepared statement , blob handle , sqlite3_backup object be destroy
+first argument pass unlock_notify callback be pointer array void pointer , second be number entry array
+authorizer be disable by default
+sqlite3_bind_parameter_name_apiparam_0 be always utf_8 encode even if name parameter be originally specify as utf_16 sqlite3_prepare16_apiname , sqlite3_prepare16_v2_apiname , or sqlite3_prepare16_v3_apiname
+note name length limit be utf_8 byte , character nor utf_16 byte
+routine be work_alikes printf_apiname family function standard c library
+sqlite3_get_table_apiname routine do have access internal datum structure sqlite
+utf_16 interface be provide as convenience
+sqlite3_busy_handlernot exist api_info
+sqlite3_changes_apiname return number row modify , insert or delete by most recently complete insert , update or delete statement database connection specify by only parameter
+see : sqlite3_blob_write_apiname
+if be use by second or subsequent such statement within trigger program , value return reflect number row modify by previous insert , update or delete statement within trigger
+sqlite3_value_dup_apiname interface make copy sqlite3_value object d return pointer copy
+case , sqlite3_value_nochange_apiname return true column xupdate method
+if either snapshot handle be obtain before wal file be last delete , value return by sqlite3_snapshot_cmp_apiname be undefined
+routine provide mean determine database , table , table column be origin particular result column select statement
+second parameter be name sql function be create or redefine
+note sqlite3_prepare_v2_apiname sqlite3_step_apiname both modify database connection meaning modify paragraph
+when serialize threading mode be , may be case second error occur separate thread between time first error call interface
+usual case be sqlite3_serialize_apiname copy serialization database into memory obtain sqlite3_malloc64_apiname return pointer memory
+example where may be useful be regular_expression matching function
+example , if application define function eval_apiname call sqlite3_exec_apiname , then follow sql statement would change database file through side_effect
+sqlite3_rollback_hook exist api_info
+sqlite3_sql_apiname interface return pointer copy utf_8 sql text use create prepared statement sqlite3_normalized_sql_apiparam_1 if sqlite3_normalized_sql_apiparam_1 be create by sqlite3_prepare_v2_apiname , sqlite3_prepare_v3_apiname , sqlite3_prepare16_v2_apiname , or sqlite3_prepare16_v3_apiname
+PRON- admit be goofy design
+other word , -PRON- should call sqlite3_column_text_apiname , sqlite3_column_blob_apiname , or sqlite3_column_text16_apiname first force result into desire format , then invoke sqlite3_column_bytes_apiname or sqlite3_column_bytes16_apiname find size result
+sqlite provide two interface report status sqlite3_malloc_apiname , sqlite3_free_apiname , sqlite3_realloc_apiname routine , which form built_in memory allocation subsystem
+call sqlite3_initialize_apiname be effective call if be first time sqlite3_initialize_apiname be invoke during lifetime process , or if be first time sqlite3_initialize_apiname be invoke follow call sqlite3_shutdown_apiname
+sqlite built_in vfse interpret follow query parameter
+open database connection must be close other sqlite resource must be deallocate prior invoking sqlite3_shutdown_apiname
+if callback return sqlite_row_api_constant or sqlite_done_api_constant , or if return value do correspond valid sqlite error code , result be undefined
+select statement always have positive sqlite3_column_count_apiname but depend where clause constraint table content , may return no row
+be grievous error application try prepared statement after have finalize
+sqlite3_release_memory_apiname routine be no_op return zero if sqlite be compile sqlite_enable_memory_management
+blob handle be close unconditionally
+sqlite3_extended_errcode_apiname interface be except always return extended result code even when extend result code be disabled
+routine be use by xfunc or xfinal callback implement sql function aggregate
+static mutex type , mutex be return by sqlite3_mutex_alloc_apiname every call have type number
+invoke sqlite3_finalize_apiname null pointer be harmless no_op
+name database be main main database or temp temp database , or name appear after as keyword database be add use attach sql command
+destructor be invoke when function be delete , either by overload or when database connection close
+sqlite ensure pzerrmsg be null before call xentrypoint_apiname
+then as long as pattern string remain , compile regular expression can be reuse multiple invocation function
+by default , error code be sqlite_error_api_constant
+if another thread be already within mutex , sqlite3_mutex_enter_apiname block sqlite3_mutex_try_apiname return sqlite_busy_api_constant
+sqlite3_value p point be destroy when preupdate callback return
+application should set parameter sqlite_utf16_api_constantle if function implementation invoke sqlite3_value_text16le_apiname input , or sqlite_utf16_api_constantbe if implementation invoke sqlite3_value_text16be_apiname input , or sqlite_utf16_api_constant if sqlite3_value_text16_apiname be use , or sqlite_utf8_api_constant otherwise
+if separate thread perform insert database connection while sqlite3_last_insert_rowid_apiname function be run thus change last insert rowid , then value return by sqlite3_last_insert_rowid_apiname be unpredictable may equal either old or last insert rowid
+if table have column type integer primary key then column be another alias rowid
+in_memory database vanish when database connection be close
+busy_handler be invoke while wait database reader as describe above
+sqlite3_db_status_apiname routine return sqlite_ok_api_constant success non_zero error code failure
+see : built_in printf_apiname , printf_apiname sql function
+follow interface be provide
+when sqlite_threadsafe c preprocessor macro be # or 2 , mutexe be enable sqlite be threadsafe
+callback trigger contain utf_8 sql comment identifie trigger
+if final paramet sqlite3_create_function_v2_apiname or sqlite3_create_window_function_apiname be null , then be destructor application datum pointer
+sqlite3_sleep_apiname function cause current thread suspend execution least number millisecond specify operating system do support sleep request millisecond time resolution , then time be round up nearest second
+sqlite3_mprintf_apiname sqlite3_vmprintf_apiname routine write result into memory obtain sqlite3_malloc64_apiname
+if sqlite3_prepare_v2_apiparam_3 be positive , then be number byte read sqlite3_prepare_v2_apiparam_2
+sqlite3_data_count_apiname routine return # if sqlite3_step_apiparam_1 be null pointer
+if logging be enable , sqlite3_log_apiparam_2 stre subsequent argument be use sqlite3_snprintf_apiname generate final output string
+create table t1 c1 variant
+sqlite3_extended_result_codes_apiname routine enable or disable extended result code feature sqlite
+example , unix system , after sqlite3_open_v2_apiname return sqlite_cantopen_api_constant , interface could be call get back underlie errno cause problem , such as enospc , eauth , eisdir , so forth
+collate function callback be invoke copy parg application datum pointer two string encode specify by etextrep argument
+routine be use register virtual table module name
+interface return pointer next prepared statement after sqlite3_next_stmt_apiparam_2 associated database connection sqlite3_next_stmt_apiparam_1
+when build other platform application must supply suitable implementation sqlite3_os_init_apiname sqlite3_os_end_apiname
+sqlite3_aggregate_context_apiname be normally call once each invocation xstep callback then one last time when xfinal callback be invoke
+future version sqlite may provide great resolution profiler callback
+see : sqlite3_update_hook_apiname
+function implementation non_negative narg parameter be well match than function implementation negative narg
+interface disable automatic extension previously register use sqlite3_auto_extension_apiname
+sqlite_master sqlite_sequence
+function where preferred text encode match database encoding be well match than function where encoding be different
+or , other word , routine be constructor prepare statement object
+name be zero_terminate utf_8 string
+name module be give by second parameter
+sqlite core only ever use sqlite3_mutex_try_apiname as optimization so be acceptable behavior
+zero be return by sqlite3_bind_parameter_index_apiname if no matching parameter be find
+sqlite3_busy_handler_apiname routine set callback function x may be invoke argument p whenever attempt be make access database table associate database connection d when another thread or process have table lock
+sqlite be strongly type , but typing be dynamic static
+compile version regular expression can be store as metadata associate pattern string
+application invoke sqlite3_create_collation_v2_apiname non_null xdestroy argument should check return code dispose application datum pointer rather than expect sqlite deal -PRON
+authorizer could then be put place while user_entered sql be prepare disallow everything except select statement
+without follow integer have no name be refer as nameless or anonymous parameter
+if sqlite_ok_api_constant be return by sqlite3_snapshot_open_apiname , then read transaction be now open database snapshot p
+leftmost column be number #
+if sqlite3_stmt_scanstatus_apiparam_2 be out range less than zero or great than or equal total number loop use implement statement non_zero value be return by sqlite3_stmt_scanstatus_apiname variable sqlite3_stmt_scanstatus_apiparam_4 point be unchanged
+if other error occur while process attach database , processing be abandon error code be return by sqlite3_wal_checkpoint_v2_apiname caller immediately
+callback set by previous call sqlite3_rollback_hook_apiname database connection be override
+give application opportunity prioritize action relate set unblocked database connection
+implementation aggregate sql function routine allocate memory store first time sqlite3_aggregate_context_apiname routine be call particular aggregate function , sqlite allocate n memory , zero out memory , return pointer memory
+assume after register unlock_notify callback database wait callback be issue before take further action , then use api cause application deadlock
+sqlite_busy_api_constant be return by sqlite3_wal_checkpoint_v2_apiname case
+if fifth argument be special value sqlite_static_api_constant , then sqlite assume information be static , unmanaged space do nee be free
+run_time limit category be add future release
+sqlite3_snapshot_free_apiname interface be only available when sqlite_enable_snapshot compile_time option be use
+other kind conversion be do place when be possible , but sometimes be possible case prior pointer be invalidate
+if most recent sqlite3 api call associated database connection d fail , then sqlite3_errcode_apiname interface return numeric result code or extended result code api call
+if sqlite3_uri_parameter_apiparam_1 be database filename pointer pass into xopen_apiname method vfs implementation when flag paramet xopen_apiname have one or more sqlite_open_uri_api_constant or sqlite_open_main_db_api_constant bit set sqlite3_uri_parameter_apiparam_2 be name query paramet , then sqlite3_uri_parameter_apiname return value sqlite3_uri_parameter_apiparam_2 parameter if exist or null pointer if sqlite3_uri_parameter_apiparam_2 do appear as query paramet sqlite3_uri_parameter_apiparam_1 . if sqlite3_uri_parameter_apiparam_2 be query paramet sqlite3_uri_parameter_apiparam_1 have no explicit value , then sqlite3_uri_parameter_apiname return pointer empty string
+parameter n be approximate number virtual machine instruction be evaluate between successive invocation callback x
+if sqlite3_blob_open_apiparam_6 parameter be zero , blob be open read_only access
+first argument sqlite3_config_apiname be integer configuration option determine what property sqlite be be configure
+sqlite3_snapshot_open_apiname interface either start read transaction or upgrade exist one schema s database connection d such read transaction refer historical snapshot p , rather than most recent change database
+without mutexe , be safe sqlite concurrently more than one thread
+future enhancement make negative n value define kind function cache behavior
+sqlite3_free_apiname routine be no_op if be call null pointer
+sqlite source code contain multiple implementation mutex routine
+if sqlite_busy_api_constant error be encounter when process one or more attached wal database , operation be still attempt remain attached database sqlite_busy_api_constant be return by sqlite3_wal_checkpoint_v2_apiname end
+sqlite3_vfs_find_apiname interface return pointer vfs give name
+counter can be use monitor performance characteristic prepare statement
+if option be unknown or sqlite be unable set option then routine return non_zero error code
+hexadecimal escape sequence consist percent sign _ follow by exactly two hexadecimal digit specify octet value
+if another busy handler be define prior call routine , other busy handler be clear
+destructor be call dispose blob or stre even if call bind api fail , except destructor be call if sqlite3_bind_int_apiparam_3 be null pointer or fourth paramet be negative
+see sqlite3_commit_hook_apiname , sqlite3_rollback_hook_apiname , sqlite3_preupdate_hook_apiname interface
+unlike most sqlite api , sqlite3_test_control_apiname be guarantee operate consistently one release next
+only follow subset interface be subject out_of_memory error
+when callback return sqlite_ok_api_constant , mean operation request be ok
+sqlite3_log_apiparam_2 string must be null
+if sqlite be compile sqlite_threadsafe 1 or 2 then mutexe be enable by default but can be fully or partially disabled use call sqlite3_config_apiname verb sqlite_config_singlethread_api_constant , sqlite_config_multithread_api_constant , or sqlite_config_serialized_api_constant
+if sqlite3_result_error_apiparam_3 sqlite3_result_error_apiname or sqlite3_result_error16_apiname be negative then sqlite take as error message text up through first zero character
+window , first component absolute path be drive specification e
+sqlite3_blob_write_apiname be use write datum into open blob handle caller_supplied buffer
+sqlite3_result_text64_apiname interface set return value application_defined function be text string encoding specify by fifth parameter , which must be one sqlite_utf8_api_constant , sqlite_utf16_api_constant , sqlite_utf16_api_constantbe , or sqlite_utf16_api_constantle
+sqlite3_set_auxdata_apiname interface save p as metadata n_th argument application_defined function
+transaction control statement such as begin , commit , rollback , savepoint , release cause sqlite3_stmt_readonly_apiname return true , since statement actually modify database but rather control timing when other statement modify database
+if sqlite3_value_nochange_apiname be invoke anywhere other than within xupdate method call update statement , then return value be arbitrary meaningless
+otherwise , if sqlite3_blob_close_apiname be pass valid open blob handle , value return by sqlite3_errcode_apiname sqlite3_errmsg_apiname function be set before return
+first parameter be prepare statement
+second argument be database connection
+sqlite3_libversion_apiname function return pointer sqlite3_version string constant
+current implementation , update hook be invoke when conflicting row be delete because conflict replace clause
+sqlite3_bind_parameter_name_apiname interface return name n_th sql paramet prepare statement p. sql parameter form nnn or : aaa or aaa or aaa have name which be stre nnn or : aaa or aaa or aaa respectively
+change make as part foreign key action be include count , but make as part replace constraint resolution be
+limit name be change max
+execute other type sql statement do affect value return by sqlite3_total_changes_apiname
+see : sqlite3_db_status_apiname
+s must contain least sqlite3_str_append_apiparam_3 non_zero byte content
+even if routine return error code , handle be still close
+if sqlite3_value object sqlite3_value_pointer_apiparam_1 be initialize use sqlite3_bind_pointer_apiname or sqlite3_result_pointer_apiname if strcmp_apiparam_1 sqlite3_value_pointer_apiparam_2 be string compare equal accord strcmp_apiname , then sqlite3_value_pointer_apiname return pointer p. otherwise , sqlite3_value_pointer_apiname return null
+memory use cache database page improve performance be example non_essential memory
+if xentrypoint_apiname return error , sqlite3_open_apiname , sqlite3_open16_apiname , or sqlite3_open_v2_apiname call provoke xentrypoint_apiname fail
+main database file , database name be main
+action modify database connection must be defer until after completion sqlite3_step_apiname call trigger commit or rollback hook first place
+detail behavior sqlite3_step_apiname interface depend whether statement be prepare use new vx interface sqlite3_prepare_v3_apiname , sqlite3_prepare_v2_apiname , sqlite3_prepare16_v3_apiname , sqlite3_prepare16_v2_apiname or old legacy interface sqlite3_prepare_apiname sqlite3_prepare16_apiname
+if value n be out range or if n_th parameter be nameless , then null be return by sqlite3_bind_parameter_name_apiname
+so as open security hole old application be unprepared deal extension loading , as mean disable extension loading while evaluate user_entered sql , follow api be provide turn sqlite3_load_extension_apiname mechanism off
+sqlite3_log_apiname interface be intend by extension such as virtual table , collate function , sql function
+failure reset prepared statement use sqlite3_reset_apiname would result sqlite_misuse_api_constant return sqlite3_step_apiname
+uri filename be parse accord rfc #
+database , table column which blob handle be open remain
+be safe pass sqlite3_free_table_apiparam_1 table directly sqlite3_free_apiname
+interface allow size various construct be limit connection by connection basis
+soft heap limit be enforce current implementation if one or more following condition be true
+fifth argument blob stre bind interface be destructor use dispose blob or string after sqlite have finish
+collate function be delete when be override by later call collation creation function or when database connection be close use sqlite3_close_apiname
+third parameter sqlite3_preupdate_hook_apiname be pass through as sqlite3_preupdate_depth_apiparam_1 callback
+see load_extension_apiname sql function
+be utility routine , useful vfs implementation , check see if database file be uri contain specific query paramet , if so obtain value query f be database filename pointer pass into xopen_apiname method vfs implementation when flag paramet xopen_apiname have one or more sqlite_open_uri or sqlite_open_main_db bit set p be name query paramet , then sqlite3_uri_parameter_apiname return value p parameter if exist or null pointer if p do appear as query parameter f. if p be query paramet f have no explicit value , then sqlite3_uri_parameter_apiname return pointer empty sqlite3_uri_boolean_apiname routine assume p be boolean paramet return true or false accord value p. sqlite3_uri_boolean_apiname routine return true if value query paramet p be one yes , true , or case or if value begin non_zero number
+example application may be web browser have database store history separate database control by javascript application download off internet
+prng be use build_in random_apiname randomblob_apiname sql function
+if initialization fail , then return value sqlite3_complete16_apiname be non_zero regardless whether or input sql be complete
+sqlite3_snapshot_free_apiname interface destroy sqlite3_snapshot p. application must eventually free every sqlite3_snapshot object use routine avoid memory leak
+default encode be utf_8 database create use sqlite3_open_apiname or sqlite3_open_v2_apiname
+rollback hook be invoke rollback result commit hook return non_zero , just as would be other rollback
+call sqlite3_snapshot_open_apiname fail if database connection sqlite3_snapshot_open_apiparam_1 do know database file schema sqlite3_snapshot_open_apiparam_2 be wal mode
+if out_of_memory error occur , then return value routine be as if column have contain sql null value
+cautious programmer may include assert_apiname statement application verify value return by interface match macro header , thus ensure application be compile matching library header file
+if sqlite3_wal_checkpoint_v2_apiparam_4 be null , then pnlog be set total number frame log file or # if checkpoint could run because error or because database be wal mode
+but be safe call routine database connection be close or may close before sqlite3_interrupt_apiname return
+if either z or sqlite3_keyword_name_apiparam_3 be null or invalid pointer then call sqlite3_keyword_name_apiname result undefined behavior
+fourth argument , parg , be application datum pointer be pass through as first argument collate function callback
+minimum , literal value be replace suitable placeholder
+sqlite3_create_collation exist api_info
+when execute drop table or drop index statement , sqlite check if be currently execute select statement belong connection
+authorizer callback should return sqlite_ok_api_constant allow action , sqlite_ignore_api_constant disallow specific action but allow sql statement continue be compile , or sqlite_deny_api_constant cause entire sql statement be reject error
+if sqlite3_vfs_find_apiparam_1 be null then default vfs be return by sqlite3_vfs_find_apiname
+if sqlite determine invoke busy handler could result deadlock , go ahead return sqlite_busy_api_constant application instead invoke busy handler
+final callback parameter be rowid row
+interface be only available if sqlite be compile sqlite_enable_deserialize option
+if sqlite be compile sqlite_mutex_appdef preprocessor macro define , then no mutex implementation be include library
+sqlite3_str_reset_apiname method reset stre under construction inside sqlite3_str object sqlite3_str_reset_apiparam_1 back zero byte length
+sqlite3_file_control_apiname interface make direct call xfilecontrol method sqlite3_io_method object associate particular database identify by sqlite3_file_control_apiparam_2
+sqlite3_compileoption_get_apiname function allow iterate over list option be define compile time by return n_th compile time option string
+otherwise error code be return by sqlite3_blob_open_apiname , unless error code be sqlite_misuse_api_constant , ppblob be set null
+only exception be if sqlite be unable allocate memory hold sqlite3 object , null be write into ppdb instead pointer sqlite3 object
+if third parameter be less than # or great than # then behavior be undefined
+sqlite core use routine thread synchronization
+if uri contain authority , then must be either empty string or string localhost
+interface return current status sqlite3_str prior error have occur while construct dynamic string sqlite3_str x , then sqlite3_str_errcode_apiname method return appropriate error code
+sqlite3_malloc_apiname routine return pointer block memory least n byte length , where n be paramet
+database connection return by sqlite3_db_handle be database connection be sqlite3_db_handle_apiparam_1 sqlite3_prepare_v2_apiname call be use create statement first place
+if sql statement do currently point valid row , or if column index be out range , result be undefined
+incremental blob routine can only read or overwrite exist blob content ; can change size blob
+2nd argument sqlite3_exec_apiname callback function be number column result
+sqlite3_interrupt_apiname cause pende database operation abort return early opportunity
+only row can be change
+callback set by previous call sqlite3_commit_hook_apiname database connection be override
+sqlite3_table_column_metadata routine return information about column c table t database d database connection x
+virtual filesystem be sqlite3_vf object sqlite us interact underlie operating system
+sqlite3_initialize_apiname routine initialize sqlite library
+subsequent call sqlite3_result_error_apiname or sqlite3_result_error16_apiname reset error code sqlite_error_api_constant
+if no error be encounter while process attach database , sqlite_ok_api_constant be return by sqlite3_wal_checkpoint_v2_apiname
+otherwise , return name attached database , table , or column query result column be extract
+if callback return non_zero , then another attempt be make access database cycle repeat
+sqlite3_config_apiname interface be use make global configuration change sqlite order tune sqlite specific need application
+default configuration be recommend most application so routine be usually necessary
+see : sqlite3_collation_needed_apiname sqlite3_collation_needed16_apiname
+sqlite3_set_authorizernot exist api_info
+note call sqlite3_busy_timeout_apiname or evaluate pragma busy_timeout n change busy handler thus clear previously set busy handler
+current value request counter be return by sqlite3_stmt_status_apiname
+sqlite3_result_pointernot exist api_info
+zero sqlite3_stmt_scanstatus_apiname related event api be only available if library be build pre_processor symbol sqlite_enable_stmt_scanstatus define
+if xentrypoint routine encounter error , should make pzerrmsg point appropriate error message return appropriate error code
+sqlite3_blob_close_apiname close open blob handle
+sqlite core only provide implementation routine when be compile sqlite_debug flag
+leftmost sql parameter have index #
+otherwise , error code or extended error code be return by sqlite3_blob_write_apiname
+sqlite3_shutdown_apiname routine deallocate resource be allocate by sqlite3_initialize_apiname
+security reason , sqlite_directonly_api_constant flag be recommend application_defin sql function have side_effect
+shared_cache lock be release when database connection conclude current transaction , either by commit or roll back
+other parameter record only highwater mark current value
+if xcolumn method call sqlite3_vtab_nochange_apiname find column be change by update statement , then xcolumn method can optionally return without set result , without call sqlite3_result_xxxxx_apiname interface
+module name be register database connection specify by sqlite3_create_module_apiparam_1
+attempt return underlie operating system error code or error number cause most recent error or failure open file
+see sqlite3_update_hook_apiname interface
+sqlite3_str_new_apiname interface always return pointer valid sqlite3_str object , though event out_of_memory error sqlite3_str_new_apiparam_0 may be special singleton silently reject text , always return sqlite_nomem_api_constant sqlite3_str_errcode_apiname , always return # sqlite3_str_length_apiname , always return null sqlite3_str_finish_apiname
+if sqlite3_close_v2_apiname be call unfinalized prepared statement unfinished sqlite3_backups , then database connection become unusable zombie which automatically be deallocate when last prepared statement be finalize or last sqlite3_backup be finish
+sqlite3_get_auxdata_apiname interface return pointer metadata associate by sqlite3_set_auxdata_apiname function nth argument value application_defined function
+sqlite3_bind routine return sqlite_ok_api_constant success or error code if anything go wrong
+system , sqlite3_mutex_try_apiname always return sqlite_busy_api_constant
+routine must be call thread which sql function be run
+exist solely verify correct operation sqlite library
+maximum portability , be recommend application always invoke sqlite3_initialize_apiname directly prior use other sqlite interface
+note number keyword understand by sqlite can depend compile_time option
+virtual filesystem be sqlite3_vf object sqlite us interact underlie operating system
+sqlite3_progress_handler_apiname interface cause callback function x be invoke periodically during long running call sqlite3_exec_apiname , sqlite3_step_apiname sqlite3_get_table_apiname database connection d. example interface be keep gui update during large query
+if thread try enter mutex other than sqlite_mutex_recursive_api_constant more than once , behavior be undefined
+sqlite3_result_zeroblob_apiname sqlite3_result_zeroblob64_apiname interface set result application_defined function be blob contain zero byte sqlite3_result_zeroblob64_apiparam_2 byte size
+sqlite3_os_init_apiname interface be call automatically by sqlite3_initialize_apiname sqlite3_os_end_apiname be call by sqlite3_shutdown_apiname
+fragment component uri , if present , be ignore
+argument sqlite3_mutex_alloc_apiname must one integer constant
+if argument sqlite3_soft_heap_limit64_apiparam_1 be negative then no change be make soft heap limit
+consider scenario where one process be hold read lock be try promote reserve lock second process be hold reserved lock be try promote exclusive lock
+pointer return be valid until type conversion occur as describe above , or until sqlite3_step_apiname or sqlite3_reset_apiname or sqlite3_finalize_apiname be call
+sqlite3_step_apiname should be call again vm
+if error occur , fact be record sqlite3_str object can be recover by subsequent call sqlite3_str_errcode_apiname
+if input text contain no sql then ppstmt be set null
+each limit category sqlite_limit_name be hard upper bound set compile_time by c preprocessor macro call sqlite_max_name
+exist database connection continue share mode be effect time be open
+if be no match , null pointer be return by sqlite3_vfs_find_apiname
+if action code be sqlite_delete_api_constant callback return sqlite_ignore_api_constant then delete operation proceed but truncate optimization be disabled row be delete individually
+sqlite3_str_finish_apiname interface destroy sqlite3_str object x return pointer memory buffer obtain sqlite3_malloc64_apiname contain construct string
+presence busy handler do guarantee be invoke when be lock contention
+change value sqlite3_aggregate_context_apiparam_2 subsequent call sqlite3_aggregate_context_apiname within aggregate function instance resize memory allocation
+main , temp , or attached database contain specify table or null
+enable mutexe incur measurable performance penalty
+be consider compatibility break because application ever receive sqlite_misuse_api_constant error be break by definition
+appropriate implementation sqlite3_os_init_apiname sqlite3_os_end_apiname be build into sqlite when be compile unix , window , or
+sqlite3_db_handle interface return database connection handle which prepare statement belong
+collate function must obey follow property string , b , c
+if sqlite3_blob_read_apiparam_3 or sqlite3_blob_read_apiparam_4 be less than zero , sqlite_error_api_constant be return by sqlite3_blob_read_apiname no data be read
+sqlite3_trace_apiname callback be invoke utf_8 render sql statement text as statement first begin execute
+if sqlite3_exec_apiname callback return non_zero , sqlite3_exec_apiname routine return sqlite_abort_api_constant without invoke callback again without run subsequent sql statement
+sqlite3_db_handle interface return database connection handle which prepare statement belong
+xvalue xinverse either both be null , which case regular aggregate function be create , or must both be non_null , which case function be use as either aggregate or aggregate window function
+call sqlite3_db_config_apiname return sqlite_ok_api_constant if only if call be consider successful
+definednot exist api_info
+routine only work blob handle which have create by prior successful call sqlite3_blob_open_apiname which have close by sqlite3_blob_close_apiname
+insert operation rowid table , or operation without rowid table , value sixth parameter be undefined
+function be use by sql function associate metadata argument value
+if xsleep_apiname method default vfs be implement correctly , or implement , then behavior sqlite3_sleep_apiname deviate description previous paragraph
+n byte datum be copy buffer z into open blob , start offset sqlite3_blob_write_apiparam_4
+vfse can be register exist vfse can be unregistered
+third fourth argument callback contain pointer database table name contain affect row
+various point during compilation process , as logic be create perform various action , authorizer callback be invoke see if action be allow
+sqlite_open_sharedcache_api_constant flag cause database connection be eligible share cache mode , regardless whether or share cache be enable use sqlite3_enable_shared_cache_apiname
+but reason mutex do exist be because build be use mutexe
+sqlite3_context_db_handle_apiname interface return copy pointer database connection sqlite3_create_function_apiname sqlite3_create_function16_apiname routine originally register application define function
+as long as input parameter be correct , routine only fail if out_of_memory error occur during format conversion
+be utility routine , useful vfs implementation , check see if database file be uri contain specific query paramet , if so obtain value query parameter
+future version sqlite change behavior sqlite3_column_type_apiname follow type conversion
+if be null , then attach database be search table use algorithm use by database engine resolve unqualified table reference
+if other error occur while flush dirty page disk , then processing be abandon sqlite error code be return by sqlite3_db_cacheflush_apiname caller immediately
+see : sqlite3_bind_apiname , sqlite3_bind_parameter_name_apiname , sqlite3_bind_parameter_index_apiname
+sqlite3_errstr_apiname interface return english_language text describe result code , as utf_8
+other word , initial : or or or
+happen if program use changes_apiname sql function , or if other callback function invoke sqlite3_changes_apiname directly
+goofy interface alert : legacy interface , sqlite3_step_apiname api always return generic error code , sqlite_error_api_constant , follow error other than sqlite_busy_api_constant sqlite_misuse_api_constant
+sqlite3_stmt_isexplain_apiname interface return # if sqlite3_stmt_isexplain_apiparam_1 be ordinary statement or null pointer
+scalar sql function require implementation xfunc callback only ; null pointer must be pass as xstep xfinal parameter
+sqlite3_release_memory_apiname interface attempt free n byte heap memory by deallocate non_essential memory allocation hold by database library
+if no successful insert into rowid table have ever occur database connection d , then sqlite3_last_insert_rowid_apiname return zero
+result table be array pointer zero_terminate utf_8 string
+if nul character occur byte offset less than value fourth parameter then result string value contain embed nul
+sqlite3_sql_apiname interface return pointer copy utf_8 sql text use create prepare statement p if p be create by sqlite3_prepare_v2_apiname , sqlite3_prepare_v3_apiname , sqlite3_prepare16_v2_apiname , or sqlite3_prepare16_v3_apiname
+sql operation be interrupt return sqlite_interrupt_api_constant
+application change content string return by sqlite3_str_value_apiname as long as write into byte outside range # sqlite3_str_length_apiname read or write byte after subsequent sqlite3_str method call
+if sqlite3_msize_apiparam_1 be memory allocation previously obtain sqlite3_malloc_apiname , sqlite3_malloc64_apiname , sqlite3_realloc_apiname , or sqlite3_realloc64_apiname , then sqlite3_msize_apiname return size memory allocation byte
+note : method be disabled maco x # io version # always return sqlite_misuse_api_constant
+sqlite3_status_apiname sqlite3_status64_apiname routine return sqlite_ok_api_constant success non_zero error code failure
+sqlite3_user_data_apiname interface return copy pointer be puserdata paramet sqlite3_create_function_apiname sqlite3_create_function16_apiname routine originally register application define function
+when table be reference by select but no column value be extract table tab then sqlite_read_api_constant authorizer callback be invoke once table column name be empty string
+if statement be commit or occur outside explicit transaction , then -PRON- can retry statement
+mean if changes_apiname sql function be use by first insert , update or delete statement within trigger , return value as set when call statement begin execute
+sqlite3_win32_set_directory_apiparam_2 parameter should be null cause previous value be free via sqlite3_free ; non_null value be copy into memory obtain sqlite3_malloc prior use
+if memory allocation fail , then sqlite_nomem_api_constant be return by sqlite3_complete16_apiname
+system support operation implement by sqlite3_mutex_try_apiname
+update or delete operation rowid table , sixth parameter pass preupdate callback be initial rowid row modify or delete
+sqlite3_keyword_name_apiname interface find n_th keyword make z point keyword express as utf8 write number byte keyword into l. string z point be zero_terminate
+sqlite3_preupdate_hook_apiname interface register callback function be invoke prior each insert , update , delete operation database table
+routine attempt convert datatype result
+return size byte blob accessible via successfully open blob handle only argument
+into sqlite3_free_apiname
+if offset sqlite3_blob_read_apiparam_4 be less than sqlite3_blob_read_apiparam_3 byte end blob , sqlite_error_api_constant be return by sqlite3_blob_read_apiname no data be read
+example , if internal representation be float text result be request , sqlite3_snprintf_apiname be use internally perform conversion automatically
+be legacy interface be preserve backwards compatibility
+fourth parameter sqlite3_open_v2_apiname be name sqlite3_vfs object define operate system interface database connection should
+sqlite3_drop_modules_apiname interface remove virtual table module database connection sqlite3_drop_modules_apiparam_1 except name list sqlite3_drop_modules_apiparam_2 . sqlite3_drop_modules_apiparam_2 parameter must be either null or pointer array pointer string where array be terminate by single null pointer
+if sqlite3_vtab_nochange_apiname routine be call within xcolumn method virtual table , then return true if only if column be fetch as part update operation during which column value change
+write blob occur before blob handle expire be roll back by expiration handle , though course change may have overwrite by statement expire blob handle or by other independent statement
+sqlite3_create_collationnot exist api_info
+sqlite3_win32_set_directory interface return sqlite_ok_api_constant indicate success , sqlite_error_api_constant if sqlite3_win32_set_directory_apiparam_1 be unsupported , or sqlite_nomem_api_constant if memory could be allocate
+sqlite3_value_dup_apiname interface return null if sqlite3_value_dup_apiparam_1 be null or if memory allocation fail
+utf_8 interface be prefer , as sqlite currently do parse use utf_8
+ordinary on_disk database file , serialization be just copy disk file
+sqlite invoke sqlite3_result_pointer_apiparam_4 sqlite3_result_pointer_apiparam_2 as only argument when sqlite be finish sqlite3_result_pointer_apiparam_2 . sqlite3_result_pointer_apiparam_3 parameter should be static string preferably stre literal
+call sqlite3_auto_extension_apiname entry point x be already list automatic extension be harmless no_op
+prepared statement after have finalize can result undefined undesirable behavior such as segfault heap corruption
+note authorizer callback be invoke only during sqlite3_prepare_apiname or variant
+update hook be invoke when internal system table be modify i
+success , sqlite3_blob_write_apiname return sqlite_ok_api_constant
+second parameter be one limit category define class construct be size limit
+sqlite3_sourceid_apiname function return pointer stre constant whose value be as sqlite_source_id_api_constant c preprocessor macro
+value return by sqlite3_msize_apiname may be large than number byte request when sqlite3_msize_apiparam_1 be allocate
+but application do want user be able make arbitrary change database
+sqlite3_test_control_apiname interface be use read out internal state sqlite inject fault into sqlite testing purpose
+sqlite_trace_api_constant_size_limit compile_time option limit size bind paramet expansion
+callback be invoke by sqlite after commit have take place associate write_lock database release , so implementation read , write or checkpoint database as require
+xcreate xconnect method virtual table module call interface declare format virtual table implement
+argument be null , which case correspond element metadata be omit
+metadata be return by sqlite3_table_column_metadata_apiname by write memory location pass as 5th subsequent parameter sqlite3_table_column_metadata_apiname
+sqlite3_db_release_memory_apiname interface attempt free as much heap memory as possible database connection d. unlike sqlite3_release_memory_apiname interface , interface be effect even when sqlite_enable_memory_management compile_time option be : sqlite3_release_memory_apiname
+first argument be database connection object be interrogate
+zproc be 0 , which case sqlite try come up entry point name
+sqlite3_serialize_apiname interface return pointer memory be serialization sqlite3_serialize_apiparam_2 database database connection d. if sqlite3_serialize_apiparam_3 be null pointer , then size database byte be write into p
+as long as buffer size be great than zero , sqlite3_snprintf_apiname guarantee buffer be always zero_terminate
+sqlite3_bind_text64 exist api_info
+see : sqlite shared_cache mode
+sqlite3_create_functionnot exist api_info
+routine register authorizer callback particular database connection , supply first argument
+interface can be use by application make sure version sqlite be link against be compile desire set sqlite_threadsafe macro
+if sqlite3_db_status_apiparam_5 be true , then high instantaneous value be reset back down current value
+only effective call sqlite3_initialize_apiname do initialization
+case sqlite_error_api_constant_snapshot be return by sqlite3_snapshot_open_apiname
+sqlite3_result_pointer_apiname interface set result sql null value , just like sqlite3_result_null_apiname , except associate host_language pointer sqlite3_result_pointer_apiparam_2 or type sqlite3_result_pointer_apiparam_3 null value such pointer can be retrieve within application_defined sql function use sqlite3_value_pointer_apiname
+progress handler callback must anything modify database connection invoke progress handler
+capability be no longer provide
+please pay particular attention fact pointer return sqlite3_value_blob_apiname , sqlite3_value_text_apiname , or sqlite3_value_text16_apiname can be invalidate by subsequent call sqlite3_value_bytes_apiname , sqlite3_value_bytes16_apiname , sqlite3_value_text_apiname , or sqlite3_value_text16_apiname
+if fast non_recursive mutex implementation be available host platform , mutex subsystem may return such mutex response sqlite_mutex_fast_api_constant
+parameter form
+if process generate invalid utf_8 encoding , result be undefined
+value return by sqlite3_column_type_apiname be only meaningful if no automatic type conversion have occur value question
+only sqlite3_free_table_apiname be able release memory properly safely
+interface return pointer sqlite3_mutex object serialize access database connection give argument when thread mode be serialize
+autocommit mode be by default
+if error occur sqlite3_load_extension_apiparam_4 be 0 , then sqlite3_load_extension_apiname interface shall attempt fill pzerrmsg error message text store memory obtain sqlite3_malloc_apiname
+sqlite3_result_blob exist api_info
+sqlite3_cancel_auto_extensionnot exist api_info
+if busy callback return 0 , then no additional attempt be make access database sqlite_busy_api_constant be return by sqlite3_busy_handler_apiname application
+profile callback contain original statement text estimate wall_clock time how long statement take run
+sqlite3_win32_set_directory interface be use set value associate sqlite3_temp_directory or sqlite3_data_directory variable , sqlite3_win32_set_directory_apiparam_2 , depend value sqlite3_win32_set_directory_apiparam_1 parameter
+routine only compile first statement sqlite3_prepare16_apiparam_2 , so pztail be leave point what remain uncompiled
+extend result code be disable by default historical compatibility
+sqlite3_close_apiname sqlite3_close_v2_apiname routine be destructor sqlite3 object
+sqlite3_config_apiname interface be threadsafe
+be clear : value be number byte value , number character
+if sqlite3_next_stmt_apiparam_2 be null then interface return pointer first prepared statement associate database connection sqlite3_next_stmt_apiparam_1
+table conceptually have number row column
+database connection must have close
+sqlite3_vtab_on_conflict_apiname only be call within call xupdate method virtual table implementation insert or update operation
+as example result table format , suppose query result be as follow
+api be use register callback sqlite invoke when connection currently hold require lock relinquishe
+sqlite3_memory_used_apiname routine return number byte memory currently outstanding malloce but free
+call application should pass sqlite3_str_finish_apiparam_0 sqlite3_free_apiname avoid memory leak
+begin sqlite version # , soft heap limit be enforce regardless whether or sqlite_enable_memory_management compile_time option be invoke
+attach database , be name appear after as keyword attach statement
+sqlite3_create_collation_v2 exist api_info
+third argument be one sqlite_utf8_api_constant , sqlite_utf16_api_constantbe , or sqlite_utf16_api_constantle , indicate most desirable form collation sequence function require
+value return by sqlite3_memory_used_apiname sqlite3_memory_highwater_apiname include overhead add by sqlite implementation sqlite3_malloc_apiname , but overhead add by underlie system library routine sqlite3_malloc_apiname call
+sqlite3_blob_open_apiname fail sqlite_error_api_constant if follow be true
+if database be skip because lock can be obtain , but no other error occur , sqlite3_db_cacheflush_apiname return sqlite_busy_api_constant
+avoid memory leak , application should invoke sqlite3_free_apiname error message string return through 5th parameter sqlite3_exec_apiname after error message string be no longer need
+nevertheless , good practice be avoid use keyword as identifier
+sqlite3_cancel_auto_extension_apiname interface unregister initialization routine x be register use prior call sqlite3_auto_extension_apiname
+once trigger program end , value return by routine revert what be before trigger be fire
+column be identify by second , third fourth parameter sqlite3_table_column_metadata_apiname
+if busy callback be null , then sqlite_busy_api_constant be return by sqlite3_busy_handler_apiname immediately upon encounter lock
+feature can be use implement cancel button gui progress dialog box
+if sqlite3_msize_apiparam_1 point something be begin memory allocation , or if point formerly valid memory allocation have now free , then behavior sqlite3_msize_apiname be undefined possibly harmful
+when run shared_cache mode , database operation fail sqlite_locked_api_constant error if require lock shared_cache or individual table within shared_cache can be obtain
+if be no attached database sqlite3_db_filename_apiparam_2 database connection d , or if database sqlite3_db_filename_apiparam_2 be temporary or in_memory database , then sqlite3_db_filename_apiname return either null pointer or empty string
+change write into blob prior blob expire be roll back by expiration blob
+interface allow size various construct be limit connection by connection basis
+application care about share cache setting should set explicitly
+if happen , then specify callback be invoke immediately , within call sqlite3_unlock_notify_apiname
+sqlite3_result_subtype_apiname routine set subtype return value sql function
+sqlite3_stmt_isexplain_apiname interface return # if prepare statement sqlite3_stmt_isexplain_apiparam_1 be explain statement , or # if statement sqlite3_stmt_isexplain_apiparam_1 be explain query plan
+return value sqlite3_threadsafe_apiname function show only compile_time set thread safety , run_time change set make by sqlite3_config_apiname
+rowid be always available as undeclared column name rowid , oid , or rowid as long as name be use by explicitly declare column
+if limit be negative number , limit be unchanged
+if nth column result set be expression or subquery , then null pointer be return by sqlite3_column_decltype16_apiname
+see : sqlite3_blob_read_apiname
+though be intend internal by sqlite , code link against sqlite be permit routine
+if path do begin then path be interpret as relative path
+sixth , seventh , eighth ninth parameter pass sqlite3_create_window_function be pointer c_language callback implement function
+if another thread change autocommit status database connection while routine be run , then return value be undefined
+call routine null pointer be harmless no_op
+sqlite_trace_api_constant_size_limit compile_time option can be use limit length bind paramet expansion output sqlite3_trace_apiname
+note sqlite3_snprintf_apiname return pointer buffer instead number character actually write into buffer
+sqlite3_bind_pointernot exist api_info
+keyword be add future release sqlite
+sqlite3_file_control_apiname interface make direct call xfilecontrol method sqlite3_io_method object associate particular database identify by sqlite3_file_control_apiparam_2
+temp table , database name be temp
+if routine have previously call or if previous call have sqlite3_randomness_apiparam_1 less than one or null pointer sqlite3_randomness_apiparam_2 , then prng be seed use randomness obtain xrandomness method default sqlite3_vfs object
+first argument interface be prepare statement
+sqlite3_initialize_apiname routine initialize sqlite library
+sqlite3_commit_hook_apiname interface register callback function be invoke whenever transaction be commit
+routine reset host parameter null
+sql parameter be token form
+handler sleep multiple time until least ms millisecond sleep have accumulate
+number column result can be determine use sqlite3_column_count_apiname
+if sqlite3_compileoption_get_apiparam_1 be out range , sqlite3_compileoption_get_apiname return null pointer
+interface only report compile_time mutex set sqlite_threadsafe flag
+if 5th parameter sqlite3_exec_apiname be null no error occur , then sqlite3_exec_apiname set pointer 5th paramet null before return
+no entry point be call more than once each database connection be open
+attempt return underlie operating system error code or error number cause most recent error or failure open file
+execute sql statement , must first be compile into byte_code program use one routine
+sqlite3_threadsafe_apiname function return zero if only if sqlite be compile mutexe code omit due sqlite_threadsafe compile_time option set 0 can be compile or without mutexe
+subsequent argument vary depend configuration option sqlite3_config_apiparam_1
+after freed , memory should neither be read nor write
+example , application allow user enter arbitrary sql query evaluation by database
+behavior be undefined if mutex be currently enter by call thread or be currently allocate
+mix call sqlite3_column_text_apiname or sqlite3_column_blob_apiname call sqlite3_column_bytes16_apiname , mix call sqlite3_column_text16_apiname call sqlite3_column_bytes_apiname
+sqlite3_value_numeric_type_apiname interface attempt apply numeric affinity value
+routine return # if input string appear be complete sql statement
+if sqlite3_realloc_apiparam_1 parameter sqlite3_realloc_apiname be null pointer then behavior be identical calling sqlite3_malloc_apiname
+sqlite core never use routine except inside assert_apiname application be advise follow lead core
+sqlite3_bind_textnot exist api_info
+result expression involve string embed nul be undefined
+sqlite3_preupdate_new_apiname interface write into sqlite3_preupdate_new_apiparam_3 pointer protect sqlite3_value contain value nth column table row after be update
+if table name parameter t call sqlite3_table_column_metadata be null then result be undefined behavior
+if interface fail sqlite_misuse_api_constant , mean interface be invoke incorrectly by application
+sqlite3_log_apiname interface write message into error log establish by sqlite_config_log option sqlite3_config_apiname
+window vfs use native malloc_apiname free_apiname operation
+be main main database or temp temp table or name give after as keyword attach statement attach database
+if be error , ppstmt be set null
+follow statement be compile
+define exist api_info
+first try sqlite3_extension_init
+see checkpointe documentation addition information
+third paramet preupdate callback be one constant sqlite_insert_api_constant , sqlite_delete_api_constant , or sqlite_update_api_constant identify kind update operation be about occur
+sqlite3_get_table_apiname function evaluate one or more semicolon_separated sql statement zero_terminate utf_8 string 2nd parameter return result table pointer give 3rd parameter
+call procedure be responsible deleting compile sql statement use sqlite3_finalize_apiname after have finish
+see : sqlite3_bind_apiname , sqlite3_bind_parameter_count_apiname , sqlite3_bind_parameter_name_apiname
+routine work just like correspond column access function except routine take single protect sqlite3_value object pointer instead sqlite3_stmt pointer integer column number
+flag parameter sqlite3_open_v2_apiname can take one follow three value , optionally combine sqlite_open_nomutex_api_constant , sqlite_open_fullmutex_api_constant , sqlite_open_sharedcache_api_constant , sqlite_open_privatecache_api_constant , sqlite_open_uri_api_constant flag
+if row blob handle point be modify by update , delete , or by conflict side_effect then blob handle be mark as expire
+sqlite3_result_text_apiname , sqlite3_result_text16_apiname , sqlite3_result_text16le_apiname , sqlite3_result_text16be_apiname interface set return value application_defined function be text string which be represent as utf_8 , utf_16 native byte order , utf_16 little endian , or utf_16 big endian , respectively
+omit initial lib
+workstation application use sqlite normally need invoke either routine
+attempt deallocate static mutex result undefined behavior
+if authorizer callback return value other than sqlite_ignore_api_constant , sqlite_ok_api_constant , or sqlite_deny_api_constant then sqlite3_prepare_v2_apiname or equivalent call trigger authorizer fail error message
+be m element array
+sqlite3_db_config_apiname interface be use make configuration change database connection
+if sqlite3_prepare_apiparam_3 argument be negative , then sqlite3_prepare_apiparam_2 be read up first zero terminator
+n byte datum be copy into buffer sqlite3_blob_read_apiparam_2 open blob , start offset sqlite3_blob_read_apiparam_4
+sqlite3_unlock_notifynot exist api_info
+if specify table be actually view , error code be return by sqlite3_table_column_metadata_apiname
+sqlite3_value_type_apiname interface return datatype code initial datatype sqlite3_value object v. sqlite3_value_type_apiparam_0 be one sqlite_integer_api_constant , sqlite_float_api_constant , sqlite_text_api_constant , sqlite_blob_api_constant , or sqlite_null_api_constant
+if be already read transaction open schema s , then database handle must have no active statement select statement have pass sqlite3_step_apiname but sqlite3_reset_apiname or sqlite3_finalize_apiname
+sqlite3_normalized_sql_apiname interface return pointer utf_8 string contain normalize sql text prepare statement p. semantic use normalize sql statement be unspecified subject change
+suppose sqlite3_free_table_apiparam_1 table be store array name azresult
+sqlite_ignore_api_constant return can be use deny untrusted user access individual column table
+sqlite3_value_subtype_apiname function return subtype application_defin sql function argument v. subtype information can be use pass limited amount context one sql function another
+third parameter be name database be write either main or name attach_ed database
+if sqlite3_uri_boolean_apiparam_1 be null pointer , then sqlite3_uri_parameter_apiname return null sqlite3_uri_boolean_apiname return b
+see : sqlite3_reset_auto_extension_apiname sqlite3_cancel_auto_extension_apiname
+valid sql null return can be distinguish out_of_memory error by invoke sqlite3_errcode_apiname immediately after suspect return value be obtain before other sqlite interface be call database connection
+sqlite3_create_module_v2_apiname interface have fifth parameter which be pointer destructor sqlite3_create_module_apiparam_4
+subsequent argument vary depend configuration verb
+when no row match aggregate query , xstep_apiname callback aggregate function implementation be never call xfinal_apiname be call exactly once
+if most recent sqlite3 api call associated database connection sqlite3_errcode_apiparam_1 fail , then sqlite3_errcode_apiname interface return numeric result code or extended result code api call
+see sqlite3_create_function_apiname sqlite3_create_function16_apiname additional information
+first argument busy handler be copy void pointer which be third argument sqlite3_busy_handler_apiname
+routine must be call thread which aggregate sql function be run
+sqlite3_vtab_collation_apiname only be call within call xbestindex method virtual first argument must be sqlite3_index_info object be sqlite3_vtab_collation_apiparam_1 xbestindex_apiname method
+sqlite3_load_extension_apiname interface attempt load sqlite extension library contain file sqlite3_load_extension_apiparam_2
+sqlite3_result_pointer_apiname routine be part pointer pass interface add sqlite #
+number level indirection be allow
+if application invoke sqlite3_xxx api function within unlock_notify callback , crash or deadlock be result
+fifth argument , xcallback , be pointer collate function
+only change make directly by insert , update or delete statement be consider auxiliary change cause by trigger , foreign key action or replace constraint resolution be count
+sqlite3_mutex_notheld_apiname interface should return # when give null pointer
+sqlite_omit_autoreset compile_time option can be use restore legacy behavior
+name collation be utf_8 string sqlite3_create_collation_apiname sqlite3_create_collation_v2_apiname utf_16 stre native byte order sqlite3_create_collation16_apiname
+if sql operation be nearly finish time when sqlite3_interrupt_apiname be call , then may have opportunity be interrupt may continue completion
+routine should return true if mutex argument be hold or hold , respectively , by call thread
+note sqlite3_wal_autocheckpoint_apiname interface wal_autocheckpoint pragma both invoke sqlite3_wal_hook_apiname overwrite prior sqlite3_wal_hook_apiname setting
+sqlite3_strglob_apiname function be case sensitive
+each call either sqlite3_trace_apiname or sqlite3_trace_v2_apiname override prior call sqlite3_trace_apiname or sqlite3_trace_v2_apiname
+note if one dynamic mutex parameter be use then sqlite3_mutex_alloc_apiname return different mutex every call
+if sqlite3_db_cacheflush_apiname need obtain extra database lock before dirty page can be flush disk , do so
+routine parse sql statement thus detect syntactically incorrect sql
+multithreaded environment , unprotected sqlite3_value object only be use safely sqlite3_bind_value_apiname sqlite3_result_value_apiname
+left_most column be column # routine
+thing be more complicated if sqlite3_changes_apiname function be execute while trigger program be run
+first m pointer point zero_terminate string contain name column
+see query parameter special meaning sqlite additional information
+after prepared statement have prepare use sqlite3_prepare_v2_apiname , sqlite3_prepare_v3_apiname , sqlite3_prepare16_v2_apiname , or sqlite3_prepare16_v3_apiname or one legacy interface sqlite3_prepare_apiname or sqlite3_prepare16_apiname , sqlite3_step_apiname must be call one or more time evaluate detail behavior sqlite3_step_apiname interface depend whether statement be prepare use new vx interface sqlite3_prepare_v3_apiname , sqlite3_prepare_v2_apiname , sqlite3_prepare16_v3_apiname , sqlite3_prepare16_v2_apiname or old legacy interface sqlite3_prepare_apiname sqlite3_prepare16_apiname
+destructor be invoke if call sqlite3_create_function_v2_apiname fail
+avoid resource leak , every open blob handle should eventually be release by call sqlite3_blob_close_apiname
+sqlite3_bind_blob exist api_info
+interface be threadsafe processor where write 32_bit integer be atomic
+PRON- admit number character write would be more useful return value but -PRON- can change implementation sqlite3_snprintf_apiname now without break compatibility
+without sqlite_enable_memory_management , soft heap limit be only enforce when memory be allocate by page cache
+routine provide mean determine database , table , table column be origin particular result column select statement
+attach detach statement cause sqlite3_stmt_readonly_apiname return true since , while statement change configuration database connection , make change content database file disk
+mutexe create use sqlite_mutex_recursive_api_constant can be enter multiple time by thread
+unless deadlock be detect , sqlite3_unlock_notify_apiname always return sqlite_ok_api_constant
+if log message be long than few hundred character , be truncate length buffer
+routine can be use find number sql parameter prepare statement
+sqlite3_progress_handlernot exist api_info
+third through sixth parameter callback be either null pointer or zero_terminate string contain additional detail about action be authorize
+authorization be perform during statement evaluation sqlite3_step_apiname , unless as state previous paragraph , sqlite3_step_apiname invoke sqlite3_prepare_v2_apiname reprepare statement after schema change
+so if speed be utmost importance , make sense disable mutexe
+paramet idx identifie specific loop retrieve statistic
+example , if number table step greatly exceed number table search or result row , would tend indicate prepare statement be use full table scan rather than index
+if writer lock can be obtain immediately , busy_handler be configure , be invoke writer lock retry until either busy_handler return # or lock be successfully obtain
+sqlite3_total_changes_apiname return total number row insert , modify or delete by insert , update or delete statement complete since database connection be open , include execute as part trigger program
+run_time limit be intend application manage both internal database database be control by untrusted external source
+sqlite3_win32_set_directory8 sqlite3_win32_set_directory16 interface behave exactly as sqlite3_win32_set_directory interface except string parameter must be utf_8 or utf_16 , respectively
+hint : run pragma application_id against newly open database connection order make ready snapshot
+block connection unlock_notify callback be cancel by close block connection use sqlite3_close_apiname
+fourth paramet , etextrep , specifie what text encode sql function prefer parameter
+only built_in memory allocator can be use
+second parameter be column number
+memory corruption , segmentation fault , or other severe error may result if sqlite3_free_apiname be call non_null pointer be obtain sqlite3_malloc_apiname or sqlite3_realloc_apiname
+sqlite3_keyword_name_apiname routine return sqlite_ok_api_constant if sqlite3_keyword_name_apiparam_1 be within bound sqlite_error_api_constant if
+if sqlite3_result_error_apiparam_3 sqlite3_result_error_apiname or sqlite3_result_error16_apiname be non_negative then sqlite take many byte 2nd parameter as error message
+if sqlite3_value_free_apiparam_1 be null pointer then sqlite3_value_free_apiname be harmless no_op
+if error occur while commit transaction , error code be return by sqlite3_blob_close_apiname transaction roll back
+developer may want sqlite3_set_authorizer_apiname interface further control untrusted sql
+see built_in printf_apiname documentation detail
+recognize integer code be form sqlite_status
+interface return current status sqlite3_str object
+but because select statement do change database file directly , sqlite3_stmt_readonly_apiname would still return true
+database connection may know database file be wal mode if have no prior database connection , or if database enter wal mode after most recent database connection
+typical task perform by routine include allocation or deallocation static resource , initialization global variable , set up default sqlite3_vfs module , or set up default configuration use sqlite3_config_apiname
+problem have fix v2 interface
+sqlite3_enable_load_extension_apiname interface should be avoid
+sqlite invoke destructor function when sqlite no longer need sqlite3_create_module_apiparam_4 pointer
+sqlite3_snapshot_recover_apiname attempt scan wal file associate database sqlite3_snapshot_recover_apiparam_2 database handle sqlite3_snapshot_recover_apiparam_1 make valid snapshot available sqlite3_snapshot_open_apiname
+when sqlite3_prepare_v2_apiname be use prepare statement , statement may be re_prepare during sqlite3_step_apiname due schema change
+if sqlite3_stmt_busy_apiparam_1 be null pointer be pointer valid prepared statement object , then behavior be undefined probably undesirable
+first parameter be prepare statement implement select statement
+however , if sqlite be compile sqlite_omit_autoinit compile_time option , then automatic call sqlite3_initialize_apiname be omit application must call sqlite3_initialize_apiname directly prior use other sqlite interface
+routine set busy handler sleep specify amount time when table be lock
+sqlite_toobig_api_constant may be return if size string or blob exceed limit impose by sqlite3_limit_apiname or sqlite_max_length
+third parameter be number argument sql function or aggregate take
+callback function register by sqlite3_profile_apiname be invoke as each sql statement finish
+purpose routine , insert be consider be successful even if be subsequently roll back
+routine would return stre variant second result column , null pointer first result column i 0
+note order first two parameter be reverse snprintf_apiname
+result table record complete query result one or more query
+other word , return value sqlite3_threadsafe_apiname be unchanged by call sqlite3_config_apiname
+routine be design aid process initialization shutdown embed system
+sqlite3_db_filename_apiname interface return pointer filename associate database sqlite3_db_filename_apiparam_2 connection d. main database file have name main
+avoid deadlock other threading problem , sqlite3_log_apiname routine dynamically allocate memory
+see : pragma busy_timeout
+sqlite3_str_appendchar_apiname method append sqlite3_str_append_apiparam_3 copy single_byte character sqlite3_str_appendchar_apiparam_3 onto end sqlite3_str object x
+if write_transaction be open database connection sqlite3_db_cacheflush_apiparam_1 when sqlite3_db_cacheflush_apiname interface invoke , dirty page pager_cache be currently be write out disk
+sqlite3_column_origin_name_apiparam_0 be valid until prepared statement be destroy use sqlite3_finalize_apiname or until statement be automatically reprepare by first call sqlite3_step_apiname particular run or until information be request again different encoding
+if fourth parameter sqlite3_bind_blob_apiname be negative , then behavior be undefined
+size blob can be determine use sqlite3_blob_bytes_apiname interface
+further option be add future
+if callback function 3rd argument sqlite3_exec_apiname be null , then be invoke each result row come out evaluated sql statement
+be however , one exception
+first argument , db , be database connection obtain prior successful call sqlite3_open_apiname , sqlite3_open_v2_apiname or sqlite3_open16_apiname
+action modify database connection must be defer until after completion sqlite3_step_apiname call trigger update hook
+if sqlite3_uri_boolean_apiparam_1 be null pointer be database file pathname pointer sqlite pass into xopen vfs method , then behavior routine be undefined probably undesirable
+if paramet sqlite3_wal_checkpoint_v2_apiparam_2 be null or point zero length string , then specify operation be attempt wal database attach database connection sqlite3_wal_checkpoint_v2_apiparam_1
+sqlite3_reset_apiname function be call reset prepared statement object back initial state , ready be re_execut
+if two different vfse name be register , behavior be undefined
+if two or more thread call one or more routine against prepared statement column time then result be undefined
+sqlite use dynamic run_time typing
+uri sqlite3_open_apiparam_1 interpretation be turn off by default , but future release sqlite may enable uri sqlite3_open_apiparam_1 interpretation by default
+avoid memory leak , object return by sqlite3_str_new_apiname must be free by subsequent call sqlite3_str_finish_apiname
+if reason , sqlite3_initialize_apiname be unable initialize library return error code other than sqlite_ok_api_constant
+be two column three row n 3
+current value parameter be return by sqlite3_status_apiname into pcurrent
+sqlite3_wal_hook_apiname function be use register callback be invoke each time datum be commit database wal mode
+sqlite3_drop_modules_apiname interface remove virtual table module database connection d except name list l. l parameter must be either null or pointer array pointer string where array be terminate by single null pointer
+if result be blob or utf_8 string then sqlite3_column_bytes_apiname routine return number byte blob or string
+sqlite3_db_cacheflush_apiname do set database handle error code or message return by sqlite3_errcode_apiname sqlite3_errmsg_apiname function
+sqlite3_wal_checkpoint_apiname be equivalent sqlite3_wal_checkpoint_v2 brief , sqlite3_wal_checkpoint_apiname cause content write_ahead log database x database connection d be transfer into database file write_ahead log be reset
+case , error code message or be set
+if result be null , then sqlite3_column_bytes_apiname return zero
+update sql command change size blob
+progress handler be disable by set n value less than #
+sqlite3_result_value_apiname interface set result application_defined function be copy unprotected sqlite3_value object specify by 2nd parameter
+if write_transaction be open database connection d when sqlite3_db_cacheflush_apiname interface invoke , dirty page pager_cache be currently be write out disk
+sqlite3_memory_highwater_apiname routine return maximum value sqlite3_memory_used_apiname since high_water mark be last reset
+if busy_handler return # before writer lock be obtain or while wait database reader , checkpoint operation proceed point way as sqlite_checkpoint_passive_api_constant checkpointing as many frame as possible without block further
+see : sqlite3_status_apiname sqlite3_stmt_status_apiname
+if commit hook return non_zero , then commit be convert into rollback
+nnn , : aaa , aaa , or aaa serve as placeholder value be bind parameter later time
+vx interface be recommend application but legacy interface continue be support
+if 5th parameter sqlite3_exec_apiname be null then error message be write into memory obtain sqlite3_malloc_apiname pass back through 5th parameter
+sqlite3_close_v2_apiname interface be intend host language be garbage collect , where order which destructor be call be arbitrary
+if sqlite3_value_frombind_apiparam_1 come sql literal value , or table column , expression , then sqlite3_value_frombind_apiname return zero
+routine must be call thread which application_defined function be run
+note , however , sqlite3_config_apiname can be call as part implementation application_defin sqlite3_os_init_apiname
+callback function should register desire collation use sqlite3_create_collation_apiname , sqlite3_create_collation16_apiname , or sqlite3_create_collation_v2_apiname
+change view be intercept by instead trigger be count
+second argument must be index into aconstraint array belong sqlite3_index_info structure pass xbestindex
+can be use , example , diagnostic routine search prepare statement be hold transaction open
+if argument sqlite3_soft_heap_limit64_apiparam_1 be zero then soft heap limit be disabled
+interface be use retrieve reset counter value prepare statement
+such action result undefined behavior
+follow must be true sqlite3_snapshot_get_apiname succeed
+fourth paramet preupdate callback be name database within database connection be modify
+other word , busy handler be reentrant
+default encode database create use sqlite3_open16_apiname be utf_16 native byte order
+future release sqlite require
+interface be available only window
+sqlite_fcntl_journal_pointer_api_constant work similarly except return sqlite3_file object associate journal file instead main database
+callback be invoke within sqlite3_step or sqlite3_close call conclude block connection transaction
+zero sqlite3_stmt_scanstatus_apiname related event counter
+m argument should be bitwise or_ed combination zero or more sqlite_trace_api_constant constant
+sqlite3_result_int64_apiname interface set return value application_defined function be 64_bit sign integer value give 2nd argument
+future version sqlite may make additional special filename begin : character
+if lock can be obtain immediately be busy_handler callback configure , be invoke usual manner
+vfse be register sqlite3_vfs_register_apiname
+fifth parameter be arbitrary pointer
+sqlite3_close_apiname sqlite3_close_v2_apiname routine be destructor sqlite3 object
+sqlite3_preupdate_old_apiname interface write into sqlite3_preupdate_old_apiparam_3 pointer protect sqlite3_value contain value nth column table row before be update
+sqlite3_strlike_apiname interface return zero if only if stre sqlite3_strlike_apiparam_2 match like pattern sqlite3_strlike_apiparam_1 escape character e. definition like pattern matching use sqlite3_strlike_apiname be as x like sqlite3_strlike_apiparam_1 escape e operator sql dialect understand by sqlite
+sqlite3_trace exist api_info
+if result be blob or utf_16 stre then sqlite3_column_bytes16_apiname routine return number byte blob or string
+if sqlite3_wal_checkpoint_v2_apiparam_2 be null be name attached database , sqlite_error_api_constant be return by sqlite3_wal_checkpoint_v2_apiname caller
+set sqlite_dbstatus option be likely grow future release sqlite
+method return result code
+sqlite3_prepare_apiname , sqlite3_prepare_v2_apiname , sqlite3_prepare_v3_apiname interface utf_8 , sqlite3_prepare16_apiname , sqlite3_prepare16_v2_apiname , sqlite3_prepare16_v3_apiname utf_16
+second paramet callback be integer action code specifie particular action be authorize
+depend how sqlite library be compile , interface may exist
+sqlite3_profilenot exist api_info
+routine only be call within preupdate callback
+sqlite3_create_window_function exist api_info
+select c1 1 , c1 t1
+routine be use by xfunc or xfinal callback implement sql function aggregate
+see : sqlite_version_apiname sqlite_source_id_apiname
+filename contain international character must be convert utf_8 prior pass -PRON- into sqlite3_open_apiname or sqlite3_open_v2_apiname
+other interface may change datatype sqlite3_value object
+application must finalize every prepared statement order avoid resource leak
+see : use sqlite unlock notification feature
+sqlite3_finalize_apiname function be call delete prepared statement
+sqlite3_data_count_apiname interface return number column current row result set prepared statement p. if prepare statement p do have result ready return then sqlite3_data_count_apiname return #
+see : sqlite3_blob_close_apiname , sqlite3_blob_reopen_apiname , sqlite3_blob_read_apiname , sqlite3_blob_bytes_apiname , sqlite3_blob_write_apiname
+definition : result table be memory datum structure create by sqlite3_get_table_apiname interface
+sqlite3_interrupt_apiname cause pende database operation abort return early opportunity
+sqlite interpret stre sqlite3_result_error16_apiname as utf_16 native byte order
+sqlite_misuse_api_constant mean routine be call inappropriately
+null pointer can be use place main refer main database file
+null value sqlite3_free_table_apiparam_1 null pointer
+every database connection default have auto_checkpoint enable threshold # or sqlite_default_wal_autocheckpoint page
+when destructor callback be invoke , be pass single argument which be copy application datum pointer which be fifth paramet sqlite3_create_function_v2_apiname
+sqlite3_column_name_apiparam_0 pointer be valid until either prepared statement be destroy by sqlite3_finalize_apiname or until statement be automatically reprepare by first call sqlite3_step_apiname particular run or until next call sqlite3_column_name_apiname or sqlite3_column_name16_apiname column
+parameter record high value
+p x argument be pointer whose meaning depend t
+sqlite3_realloc_apiname return pointer memory allocation least sqlite3_realloc_apiparam_2 byte size or null if insufficient memory be available
+otherwise , special drop case , extended error code be just sqlite_locked_api_constant
+latter parameter nothing be write into pcurrent
+but global version function must exist order be overload
+interface open handle blob locate row sqlite3_blob_open_apiparam_5 , column sqlite3_blob_open_apiparam_4 , table sqlite3_blob_open_apiparam_3 database sqlite3_blob_open_apiparam_2 ; other word , blob would be select by
+routine actually return index large parameter
+application must ensure no other sqlite interface be invoke by other thread while sqlite3_config_apiname be run
+sqlite3_step_apiname should be call again virtual machine without first call sqlite3_reset_apiname reset virtual machine back initial state
+sqlite3_stmt_isexplain_apiname interface return # if prepare statement s be explain statement , or # if statement s be explain query plan
+sqlite3_create_collation16 exist api_info
+contiguous memory representation database usually only exist if have prior call sqlite3_deserialize value d s. size database be write into p even if sqlite_serialize_nocopy_api_constant bit be set but no contiguous copy database exist
+if sqlite3_result_pointer_apiparam_4 parameter be null , then be pointer destructor sqlite3_result_pointer_apiparam_2 parameter
+default behavior be mutexe be enable
+sqlite3_column_decltype16_apiparam_0 be always utf_8 encode
+if argument sqlite3_mutex_enter_apiname , sqlite3_mutex_try_apiname , or sqlite3_mutex_leave_apiname be null pointer , then three routine behave as no_op
+application should finalize prepared statement , close blob handle , finish sqlite3_backup object associate sqlite3 object prior attempt close object
+sqlite_range_api_constant be return by sqlite3_bind_text_apiname if paramet index be out range
+memory return by sqlite3_malloc_apiname , sqlite3_realloc_apiname , sqlite3_malloc64_apiname , sqlite3_realloc64_apiname be always align least # byte boundary , or # byte boundary if sqlite_4_byte_aligned_malloc compile_time option be use
+sqlite3_vtab_config_apiname be call by either xconnect or xcreate method virtual table implementation configure various facet virtual table interface
+if 4th parameter sqlite3_result_text interface or sqlite3_result_blob be non_null pointer , then sqlite call function as destructor text or blob result when have finish use result
+routine enable or disable share database cache schema datum structure between connection database
+winrt uwp
+sqlite3_finalize_apiname routine can be call point during life cycle prepare statement s : before statement sqlite3_finalize_apiparam_1 be ever evaluate , after one or more call sqlite3_reset_apiname , or after call sqlite3_step_apiname regardless whether or statement have complete execution
+specify unknown paramet query component uri be error
+sqlite3_result_subtype_apiname function cause subtype result application_defin sql function sqlite3_context sqlite3_result_subtype_apiparam_1 be value sqlite3_result_subtype_apiparam_2 . only lower # bit subtype sqlite3_result_subtype_apiparam_2 be preserve current version sqlite ; high order bit be discard
+if -PRON- prepare -PRON- sql statement use sqlite3_prepare_v3_apiname or sqlite3_prepare_v2_apiname or sqlite3_prepare16_v2_apiname or sqlite3_prepare16_v3_apiname instead legacy sqlite3_prepare_apiname sqlite3_prepare16_apiname interface , then more specific error code be return directly by sqlite3_step_apiname
+if most recent call sqlite3_step_apiname prepared statement sqlite3_reset_apiparam_1 indicate error , then sqlite3_reset_apiname return appropriate error code
+sqlite3_snapshot_cmp interface be use compare age two valid snapshot handle
+future version sqlite may understand additional query parameter
+application need process sql untrusted source may consider lower resource limit use sqlite3_limit_apiname limit database size use max_page_count pragma addition use authorizer
+so as open security hole old application be unprepared deal extension loading , as mean disable extension loading while evaluate user_entered sql , follow api be provide turn sqlite3_load_extension_apiname mechanism loading be off by default
+sqlite3_result_error_toobig_apiname interface cause sqlite throw error indicating string or blob be too long represent
+PRON- must call sqlite3_reset_apiname or sqlite3_finalize_apiname order find one specific error code well describe error
+if wal file remain disk after database connection close connection be subsequently open database wal file , sqlite3_snapshot_open_apiname interface only be able open last transaction add wal file even though wal file contain other valid attempt scan wal file associate database sqlite3_snapshot_recover_apiparam_2 database handle sqlite3_snapshot_recover_apiparam_1 make valid snapshot available sqlite3_snapshot_open_apiname
+sqlite_omit_trace compile_time option cause sqlite3_expanded_sql_apiname always return null
+sqlite3_wal_hooknot exist api_info
+unregister vfs sqlite3_vfs_unregister_apiname interface
+second argument be index sql parameter be set
+index nnn parameter be value nnn
+pass pointer return sqlite3_column_blob_apiname , sqlite3_column_text_apiname , etc
+sqlite implement interface by call xsleep_apiname method default sqlite3_vfs object
+callback implementation must anything modify database connection invoke callback
+if certain kind error occur statement within multi_statement transaction then transaction may be roll back automatically
+sqlite3_set_auxdatanot exist api_info
+query component uri contain parameter be interpret either by sqlite , or by custom vfs implementation
+sqlite3_snapshot_get_apiname interface attempt make sqlite3_snapshot object record current state schema sqlite3_snapshot_get_apiparam_2 database connection d. success , sqlite3_snapshot_get_apiname interface write pointer newly create sqlite3_snapshot object into p return sqlite_ok_api_constant
+but may change future release sqlite
+other word , behavior exhibit when sqlite be compile sqlite_omit_autoinit may become default behavior future release sqlite
+sqlite3_libversion_apiname function be provide dll since dll user usually have direct access string constant within dll
+pragma wal_checkpoint command can be use invoke interface sql
+sqlite only request recursive mutex case where really need one
+sqlite3_commit_hook_apiname sqlite3_rollback_hook_apiname function return p argument previous call function database connection d , or null first call each function d
+disable authorizer by instal null callback
+first process can proceed because be block by second second process can proceed because be block by first
+sqlite3_initialize_apiname routine return sqlite_ok_api_constant success
+sqlite3_last_insert_rowid_apiname interface usually return rowid most recent successful insert into rowid table or virtual table database connection d. insert into without rowid table be record
+when call sqlite3_step_apiname return sqlite_locked_api_constant , be almost always appropriate call sqlite3_unlock_notify_apiname
+apis be only available if library be compile sqlite_enable_column_metadata c_preprocessor symbol
+implementation function can gain access pointer use sqlite3_user_data_apiname
+see sqlite shared_cache mode description shared_cache locking
+if uri sqlite3_open_apiparam_1 interpretation be enable , sqlite3_open_apiparam_1 argument begin file : , then sqlite3_open_apiparam_1 be interpret as uri
+detect change against database file other database connection pragma data_version command or sqlite_fcntl_data_version_api_constant file control
+unless return sqlite_misuse_api_constant , sqlite3_blob_open_apiname set database connection error code message accessible via sqlite3_errcode_apiname sqlite3_errmsg_apiname relate function
+collate function must always return answer give input
+name be case sensitive
+if sqlite3_bind_value_apiparam_5 have value sqlite_transient_api_constant , then sqlite make private copy datum immediately , before sqlite3_bind _ apiname routine return
+sqlite3_mutex_held_apiname sqlite3_mutex_notheld_apiname routine be intend inside assert_apiname statement
+second parameter be either name database i
+sqlite query planner be able perform additional optimization deterministic function , so sqlite_deterministic_api_constant flag be recommend where possible
+uri sqlite3_open_apiparam_1 interpretation be enable if sqlite_open_uri_api_constant flag be set sqlite3_open_apiparam_3 sqlite3_open_v2_apiname , or if have enable globally use sqlite_config_uri_api_constant option sqlite3_config_apiname method or by sqlite_use_uri compile_time option
+see : sqlite3_bind_parameter_count_apiname , sqlite3_bind_parameter_name_apiname , sqlite3_bind_parameter_index_apiname
+sqlite3_wal_checkpoint_v2_apiname interface run checkpoint operation database sqlite3_wal_checkpoint_v2_apiparam_2 database connection sqlite3_wal_checkpoint_v2_apiparam_1 mode sqlite3_wal_checkpoint_v2_apiparam_3 . status information be write back into integer point by sqlite3_wal_checkpoint_v2_apiparam_4 c. sqlite3_wal_checkpoint_v2_apiparam_3 parameter must be valid checkpoint mode
+built_in function be overload by application_defined function
+sqlite3_stricmp_apiname sqlite3_strnicmp_apiname api allow application extension compare content two buffer contain utf_8 string case_independent fashion , use definition case independence sqlite us internally when compare identifier
+interface be only available if sqlite be compile use sqlite_enable_preupdate_hook compile_time sqlite3_preupdate_hook_apiname interface register callback function be invoke prior each insert , update , delete operation database table
+utf_16 interface work by convert input text into utf_8 , then invoke correspond utf_8 interface
+routine be use register virtual table module name
+paramet name must be give utf_8 even if original statement be prepare utf_16 text use sqlite3_prepare16_v2_apiname or sqlite3_prepare16_v3_apiname
+sqlite3_result_int_apiname interface set return value application_defined function be 32_bit sign integer value give 2nd argument
+if column_name parameter sqlite3_table_column_metadata_apiname be null pointer , then routine simply check existence table return sqlite_ok_api_constant if table exist sqlite_error_api_constant if do
+within xupdate method , value which sqlite3_value_nochange_apiname be true other respect appear be null value
+if two or more such block connection have specify callback function , then instead invoke callback function multiple time , be invoke once set void context pointer specify by block connection bundle together into array
+if most recent evaluation statement encounter no error or if statement be never evaluate , then sqlite3_finalize_apiname return sqlite_ok_api_constant
+routine understand most common format option standard library printf_apiname plus additional non_standard format q , q , w , z
+otherwise , api return negative value if p1 refer old snapshot than p2 , zero if two handle refer database snapshot , positive value if p1 be new snapshot than p2
+however , just because routine return positive number do mean one or more row datum be return
+if sqlite3_file_control_apiparam_2 do match name open database file , then sqlite_error_api_constant be return by sqlite3_file_control_apiname
+see : sqlite3_create_module_apiname
+sqlite3_db_readonly_apiname interface return # if database sqlite3_db_readonly_apiparam_2 connection sqlite3_db_readonly_apiparam_1 be read_only , # if be , or # if sqlite3_db_readonly_apiparam_2 be name database connection sqlite3_db_readonly_apiparam_1
+see : sqlite3_release_memory_apiname
+example , if datatype be initially sqlite_integer_api_constant sqlite3_value_text_apiname be call extract text value integer , then subsequent call sqlite3_value_type_apiname may return sqlite_text_api_constant
+sqlite3_vtab_on_conflict_apiname only be call within call xupdate method virtual table implementation insert or update operation
+sqlite3_result_error_apiname sqlite3_result_error16_apiname function cause implement sql function throw exception
+parameter nothing be write into phighwater sqlite3_status64_apiparam_4 be ignore
+number be obtain separately
+sqlite can be compile or without mutexe
+sqlite3_uri_boolean_apiname routine assume sqlite3_uri_boolean_apiparam_2 be boolean paramet return true or false accord value sqlite3_uri_boolean_apiparam_2 . sqlite3_uri_boolean_apiname routine return true if value query paramet sqlite3_uri_boolean_apiparam_2 be one yes , true , or case or if value begin non_zero number
+sqlite3_db_release_memory_apiname interface attempt free as much heap memory as possible database connection d. unlike sqlite3_release_memory_apiname interface , interface be effect even when sqlite_enable_memory_management compile_time option be omit
+if function be register use sqlite3_collation_needed_apiname api , then be pass name undefined collation sequence as string encode utf_8
+mean , provide api be misuse , be always safe call sqlite3_blob_close_apiname ppblob after sqlite3_blob_open_apiname return
+first parameter pass callback function when be invoke be copy third parameter pass sqlite3_wal_hook_apiname when register callback
+application can use routine determine whether or specific identifier need be escape so as confuse parser
+each entry most sqlite table have unique 64_bit sign integer key call rowid
+function be use by sql function associate metadata argument value
+be safe call routine thread different thread be currently run database operation
+function sqlite3_create_window_function_apiname be similar , but allow user supply extra callback function need by aggregate window function
+insert fail due constraint violation be successful insert do change value return by routine
+if database connection be associate unfinalized prepared statement or unfinished sqlite3_backup object then sqlite3_close_apiname leave database connection open return sqlite_busy_api_constant
+first host parameter have index 1 , #
+if nth column return by statement be expression or subquery be column value , then function return null
+sqlite3_soft_heap_limit64_apiname interface set query soft limit amount heap memory be allocate by sqlite
+routine return name assign particular column result set select statement
+nnn value must be between # sqlite3_limit_apiname paramet sqlite_limit_variable_number_api_constant default value : #
+insert continue completion after deleting row cause constraint problem so insert or replace always change return value interface
+if most recent call sqlite3_step_apiname prepared statement sqlite3_reset_apiparam_1 return sqlite_row_api_constant or sqlite_done_api_constant , or if sqlite3_step_apiname have never before call sqlite3_reset_apiparam_1 , then sqlite3_reset_apiname return sqlite_ok_api_constant
+4th argument sqlite3_exec_apiname be relay through 1st argument each callback invocation
+sqlite3_db_config_apiname interface be use make configuration change database connection
+protect sqlite3_value object be use pass paramet information into implementation application_defin sql function virtual table
+paramet sqlite3_blob_open_apiparam_2 be filename contain database , but rather symbolic name database
+if result be blob or text string , then sqlite3_column_bytes_apiname or sqlite3_column_bytes16_apiname interface can be use determine size blob or string
+if result be null , then sqlite3_column_bytes16_apiname return zero
+application must use pointer return sqlite3_str_value_apiname after subsequent method call object
+sqlite3_set_last_insert_rowid method allow application set value return by call sqlite3_last_insert_rowid_apiname r without insert row into database
+sqlite3_uri_int64_apiname routine convert value sqlite3_uri_int64_apiparam_2 into 64_bit sign integer return integer , or sqlite3_uri_int64_apiparam_3 if sqlite3_uri_int64_apiparam_2 do exist
+note last bullet particular
+if row be present table , or if do contain blob or text value , or if another error occur , sqlite error code be return by sqlite3_blob_reopen_apiname blob handle be consider abort
+underlie xfilecontrol method may return sqlite_error_api_constant
+see : sqlite3_status_apiname sqlite3_db_status_apiname
+more information be find by call sqlite3_errmsg_apiname
+value return be one sqlite_rollback_api_constant , sqlite_ignore_api_constant , sqlite_fail_api_constant , sqlite_abort_api_constant , or sqlite_replace_api_constant , accord conflict mode sql statement trigger call xupdate method virtual table
+be often possible keyword as identifier as long as such do result parse ambiguity
+routine only be call when most recent call sqlite3_step_apiname have return sqlite_row_api_constant neither sqlite3_reset_apiname nor sqlite3_finalize_apiname have call subsequently
+sql statement be start after run statement count reach zero be effect by sqlite3_interrupt_apiname
+after each call sqlite3_set_auxdata_apiname where x be null , sqlite invoke destructor function x paramet p exactly once , when metadata be discard
+sqlite3_update_hook_apiname function return p argument previous call database connection d , or null first call d
+other call be harmless no_op
+database routine return database name , table routine return table name , origin routine return column name
+see : sqlite3_stmt_scanstatus_reset_apiname
+whitespace comment follow final semicolon be ignore
+if parameter nnn form be use , be gap list
+if no prepared statement satisfie condition routine , return null
+if sqlite3_vtab_nochange_apiname routine be call within xcolumn method virtual table , then return true if only if column be fetch as part update operation during which column value change
+practice , metadata be preserve between function call function parameter be compile_time constant , include literal value parameter expression compose
+sqlite3_create_function16 exist api_info
+when happen , second error be report since interface always report most recent result
+vx interface , prepared statement be return by sqlite3_prepare_apiname contain copy original sql text
+sqlite3_blob_bytes_apiname interface determine size open blob
+or could be case database connection be use by two or more thread moment time
+binding be clear by sqlite3_reset_apiname routine
+interface be only necessary if default setting be find be suboptimal particular application
+first parameter be database connection whose limit be be set or query
+if result be utf_16 string , then sqlite3_column_bytes_apiname convert stre utf_8 then return number byte
+sqlite3_snapshot_open_apiname interface be only available when sqlite_enable_snapshot compile_time option be use
+remain entry point query result
+if application use more than one database connection then application_defin sql function must be add each database connection separately
+call either function replace exist collation_needed callback
+sqlite3_rollback_hooknot exist api_info
+sqlite3_preupdate_depth_apiname interface return # if preupdate callback be invoke as result direct insert , update , or delete operation ; or # insert , update , or delete invoke by top_level trigger ; or # change result trigger call by top_level trigger ; so forth
+if be , sqlite_locked_api_constant be return by sqlite3_unlock_notify_apiname
+hence sqlite3_set_auxdata_apiname should be call near end function implementation function implementation should make p after sqlite3_set_auxdata_apiname have call
+sqlite3_mutex_enter_apiname sqlite3_mutex_try_apiname routine attempt enter mutex
+sqlite3_get_autocommit_apiname interface return non_zero or zero if give database connection be or be autocommit mode , respectively
+sqlite3_mutex_free_apiname routine deallocate previously allocate dynamic mutex
+first time sqlite3_aggregate_context_apiname routine be call particular aggregate function , sqlite allocate sqlite3_aggregate_context_apiparam_2 memory , zero out memory , return pointer memory
+call sqlite3_free_apiname pointer previously return by sqlite3_malloc_apiname or sqlite3_realloc_apiname release memory so may be reuse

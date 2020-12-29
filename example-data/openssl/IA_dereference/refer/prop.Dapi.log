@@ -1,0 +1,267 @@
+SSLv2 does not support a shutdown alert protocol , so SSLv2 can only be detected , whether the underlying connection was closed
+underlying connection, SSL_shutdown
+
+Applications which included workarounds for this bug should be modified to handle this fix or they may free up an already freed BIO
+already freed BIO, BIO_free
+
+attempting to set the key length to any value other than the fixed value is an error
+set the key length, EVP_CIPHER_CTX_set_key_length
+
+The public key is encoded using a SubjectPublicKeyInfo structure and an error occurs
+key is encoded using, i2d_PrivateKey
+
+the server must use a DH group and generate a DH key
+generate a DH key, DH_generate_key
+
+It should also be noted that many ENGINE API function calls that accept a structural reference will internally obtain another reference - typically this happens whenever the supplied ENGINE will be needed by OpenSSL after the function has returned
+supplied ENGINE, EVP_PKEY_set1_engine
+
+0 is returned and no operation is performed
+operation is performed, BN_mod_mul_reciprocal
+
+If no callback was explicitly set, the NULL pointer is returned and the default callback will be used
+callback was explicitly set, SSL_CTX_set_psk_client_callback
+
+If no callback was explicitly set, the NULL pointer is returned and the default callback will be used
+callback was explicitly set, SSL_CTX_set_psk_client_callback
+
+The parsed CMS_ContentInfo structure is returned or NULL if an error occurred
+parsed CMS_ContentInfo structure, PKCS12_parse
+
+New attributes can also be added using the returned CMS_SignerInfo structure and the CMS attribute utility functions or the CMS signed receipt request functions
+signed receipt request functions, CMS_add1_ReceiptRequest
+
+Most applications wishing to know a key type will simply call EVP_PKEY_base_id_APIName and will not care about the actual type
+know a key type, EVP_PKEY_type
+
+Applications wishing to encrypt or decrypt private keys should use other functions such as d2i_PKC8PrivateKey_APIName instead
+decrypt private keys, RSA_private_decrypt
+
+These functions are currently the only way to store encrypted private keys using DER format
+store encrypted private keys, RSA_private_decrypt
+
+The use of EVP_PKEY_size_APIName with these functions is discouraged
+functions is discouraged, DES_quad_cksum
+
+the application should take appropriate action to wait until the underlying socket has accepted a connection and retry the call
+accepted a connection, SSL_shutdown
+
+applications should generally avoid using DSA structure elements directly and instead use API functions to query or modify keys
+using DSA structure elements, i2d_DSA_PUBKEY
+
+care should be taken to flush any data in the write buffer
+write buffer, DES_enc_write
+
+applications should generally avoid using RSA structure elements directly and instead use API functions to query or modify keys
+using RSA structure elements, i2d_RSA_PUBKEY
+
+To add a private key to this empty structure the functions described in EVP_PKEY_set1_RSA_APIName should be used
+add a private key, SSL_CTX_use_PrivateKey
+
+EVP_MD_CTX_cleanup_APIName should be called after a digest context is no longer needed
+context is no longer needed, EVP_MD_CTX_cleanup
+
+EVP_MD_CTX_cleanup_APIName should be called after a digest context is no longer needed
+digest context, EVP_MD_CTX_init
+
+for setting SSL_SENT_SHUTDOWN the application must however still call SSL_shutdown_APIName or SSL_set_shutdown_APIName itself
+setting SSL_SENT_SHUTDOWN, X509_VERIFY_PARAM_set_trust
+
+this must be called to initialize a digest BIO before any data is passed through digest BIO
+digest BIO, BIO_set_md
+
+Thus , SSL_get_error_APIName must be used in the same thread that performed the TLS/SSL I/O operation , and no other OpenSSL function calls should appear in between
+performed the TLS/SSL I/O operation, BN_mod_mul_reciprocal
+
+An application must not rely on the error value of SSL_operation_APIName but must assure that the write buffer is always flushed first
+write buffer, DES_enc_write
+
+An application must not rely on the error value of SSL_operation_APIName but must assure that the write buffer is always flushed first
+write buffer, DES_enc_write
+
+the call BIO_should_retry_APIName should be used for non blocking connect BIOs to determine if the call should be retried
+connect BIOs, BIO_new_buffer_ssl_connect
+
+it is not strictly necessary to generate a new DH key during each handshake but it is also recommended
+generate a new DH key, DH_generate_key
+
+This function should be called after the base cipher type is set but before the key is set
+key is set, SSL_CTX_set_tmp_rsa_callback
+
+A method of verifying the RSA key using opaque RSA API functions might need to be considered
+verifying the RSA key, d2i_RSA_PUBKEY
+
+This can only be accomplished by either adding the intermediate CA certificates into the trusted certificate store for the SSL_CTX object , or by adding the chain certificates using the SSL_CTX_add_extra_chain_cert_APIName function , which is only available for the SSL_CTX object as a whole and that probably can only apply for one client certificate , making the concept of the callback function questionable
+adding the chain certificates, SSL_CTX_add_extra_chain_cert
+
+This can only be accomplished by either adding the intermediate CA certificates into the trusted certificate store for the SSL_CTX object , or by adding the chain certificates using the SSL_CTX_add_extra_chain_cert_APIName function , which is only available for the SSL_CTX object as a whole and that probably can only apply for one client certificate , making the concept of the callback function questionable
+trusted certificate store, SSL_CTX_set1_chain_cert_store
+
+This can only be accomplished by either adding the intermediate CA certificates into the trusted certificate store for the SSL_CTX object , or by adding the chain certificates using the SSL_CTX_add_extra_chain_cert_APIName function , which is only available for the SSL_CTX object as a whole and that probably can only apply for one client certificate , making the concept of the callback function questionable
+adding the intermediate CA certificates, SSL_CTX_add_client_CA
+
+Using ephemeral RSA key exchange for other purposes violates the standard and can break interoperability with clients
+Using ephemeral RSA, SSL_CTX_set_tmp_rsa
+
+There are data in the SSL buffer that must be written to the underlying BIO layer
+SSL buffer must be written, SSL_write
+
+There are data in the SSL buffer that must be written to the underlying BIO layer
+underlying BIO layer, BIO_ssl_shutdown
+
+the session must be explicitly removed using SSL_SESSION_free_APIName
+session must be explicitly removed using, SSL_CTX_sess_set_remove_cb
+
+the accept BIO must be made available for further incoming connections
+accept BIO, BIO_new_socket
+
+BIO_set_mem_buf_APIName sets the internal BUF_MEM structure to BIO_set_mem_buf_APIParam_2 and sets the close flag to BIO_set_mem_buf_APIParam_3 , that is BIO_set_mem_buf_APIParam_3 should be either BIO_CLOSE or BIO_NOCLOSE
+sets the close flag, BIO_set_close
+
+Memory allocated from these functions should be freed up using the OPENSSL_free_APIName function
+allocated from these functions, SSL_CONF_CTX_new
+
+the session id context must be set by the server
+session id context must be set, SSL_CTX_set_session_id_context
+
+The CMS_uncompress_APIParam_2 parameter will normally be set to NULL
+CMS_uncompress_APIParam_2 parameter will normally be set, SSL_CTX_set_tmp_dh_callback
+
+The CMS_decrypt_APIParam_4 parameter will normally be set to NULL
+CMS_decrypt_APIParam_4 parameter will normally be set, SSL_CTX_set_tmp_dh_callback
+
+The function EC_POINT_point2oct must be supplied with a buffer long enough to store the octet string
+store the octet string, BN_hex2bn
+
+A client certificate must only be sent
+client certificate must only be sent, SSL_CTX_set_tlsext_status_cb
+
+This format has some severe security weaknesses and should be avoided
+has some severe security weaknesses, RAND_pseudo_bytes
+
+X509_check_host_APIName checks if the certificate Subject Alternative Name or Subject CommonName matches the specified host name , which must be encoded in the preferred name syntax described in section 3.5 of RFC 1034
+specified host name, X509_VERIFY_PARAM_set1_host
+
+As generating DH parameters is extremely time consuming , an application should not generate the parameters on the fly but supply the parameters
+generating DH parameters, DH_generate_parameters_ex
+
+RSA export ciphers with a keylength of 512 bits for the RSA key require a temporary 512 bit RSA key , as typically the supplied key has a length of 1024 bit
+require a temporary 512 bit RSA key, EVP_PKEY_CTX_set_rsa_rsa_keygen_bits
+
+File descriptor BIOs should not be used for socket I/O
+File descriptor BIOs, BIO_seek
+
+Exactly one of the SSL_CTX_set_verify_APIParam_2 SSL_set_verify_APIParam_2 flags SSL_VERIFY_NONE and SSL_VERIFY_PEER must be set at any time
+set at any time, X509_VERIFY_PARAM_set_time
+
+The string is returned in des_read_pw_APIParam_1 des_read_pw_APIParam_1, which must have spac for at least des_read_pw_APIParam_3 des_read_pw_APIParam_3 bytes
+have spac, RAND_pseudo_bytes
+
+After the digest has been retrieved from a digest BIO, the digest must be reinitialized by calling BIO_reset_APIName , or BIO_set_md_APIName before any more data is passed through it
+digest BIO, BIO_set_md
+
+After this call no further writes on BIO BIO_ctrl_get_write_guarantee_APIParam_1 BIO_ctrl_get_read_request_APIParam_1 BIO_ctrl_reset_read_request_APIParam_1 are allowed
+writes on BIO BIO_ctrl_get_write_guarantee_APIParam_1 BIO_ctrl_get_read_request_APIParam_1 BIO_ctrl_reset_read_request_APIParam_1, BIO_write
+
+The BIO is set to a read only state and as a result can not be written to
+BIO is set, BIO_set_mem_eof_return
+
+The communication channel must already have been set and assigned to the SSL_connect_APIParam_1 by setting an underlying BIO
+underlying BIO, BIO_ssl_shutdown
+
+The communication channel must already have been set and assigned to the SSL_accept_APIParam_1 by setting an underlying BIO
+underlying BIO, BIO_ssl_shutdown
+
+More data must be read from the underlying BIO layer operation
+underlying BIO layer operation, SSL_set_bio
+
+The algorithm passed in the cipher parameter must support ASN1 encoding of its parameters
+passed in the cipher parameter, EVP_CIPHER_param_to_asn1
+
+The encrypted final data is written to EVP_EncryptFinal_ex_APIParam_2 EVP_EncryptUpdate_APIParam_2 which should have sufficient space for one cipher block
+data is written, BIO_flush
+
+It is possible to set all parameters to NULL except EVP_EncryptInit_ex_APIParam_2 in an initial call and supply the remaining parameters in subsequent calls , all of which have EVP_EncryptInit_ex_APIParam_2 set to NULL
+set all parameters, EVP_CIPHER_asn1_to_param
+
+In previous releases they also cleaned up the EVP_EncryptFinal_APIParam_1 EVP_DecryptFinal_APIParam_1 EVP_CipherFinal_APIParam_1 EVP_EncryptFinal_ex_APIParam_1 EVP_DecryptFinal_ex_APIParam_1 EVP_CipherFinal_ex_APIParam_1 , but this is no longer done and EVP_CIPHER_CTX_clean_APIName must be called to free any context resources
+free any context resources, EVP_PKEY_CTX_free
+
+The following session cache modes and modifiers are available
+following session cache modes, SSL_CTX_sess_cb_hits
+
+The EVP_PKEY_CTX_set_rsa_pss_saltlen macro sets the RSA PSS salt length to EVP_PKEY_CTX_set_rsa_pss_saltlen_APIParam_2 as its name implies it is only supported for PSS padding
+sets the RSA PSS salt length, EVP_PKEY_CTX_set_rsa_rsa_keygen_bits
+
+For special applications it can be necessary to extend the maximum certificate chain size allowed to be sent by the peer , see eg the work on `` Internet X. 509 Public Key Infrastructure Proxy Certificate Profile '' and `` TLS Delegation Protocol '' at http
+extend the maximum certificate chain size, SSL_set_max_cert_list
+
+EC_GROUP_set_generator sets curve paramaters that must be agreed by all participants using the curve
+sets curve paramaters, SSL_CTX_set1_curves
+
+port has the same syntax as the port specified in BIO_set_conn_port_APIName for connect BIOs , that is it can be a numerical port string or a string to lookup using getservbyname_APIName and a string table
+connect BIOs, BIO_new_buffer_ssl_connect
+
+port has the same syntax as the port specified in BIO_set_conn_port_APIName for connect BIOs , that is it can be a numerical port string or a string to lookup using getservbyname_APIName and a string table
+has the same syntax, RAND_pseudo_bytes
+
+Any or all of these parameters can be set to NULL
+parameters can be set, SSL_CTX_set_tmp_dh_callback
+
+It might also call SSL_certs_clear to delete any certificates associated with the SSL object
+associated with the SSL object, EVP_PKEY_meth_new
+
+RAND_priv_bytes_APIName has the same semantics as RAND_bytes_APIName
+has the same semantics, RAND_pseudo_bytes
+
+The following functions are implemented in C
+functions are implemented, DES_quad_cksum
+
+Netscape-Commerce/1 .12 , , accepts a 32 byte challenge but appears to only use 16 bytes when generating the encryption keys
+generating the encryption keys, DES_random_key
+
+One chain can be set for each key type supported by a server
+One chain can be set, BIO_set_accept_bios
+
+The context need not be set or The context can be set to NULL in which case only syntax checking of commands is performed , where possible
+context can be set, SSL_CTX_set_session_id_context
+
+The rest of the certificates needed to form the complete certificate chain can be specified using the SSL_CTX_add_extra_chain_cert_APIName function
+certificate chain can be specified using, SSL_CTX_build_cert_chain
+
+OBJ_obj2txt_APIName does n't follow the convention of other OpenSSL functions where the buffer can be set to NULL to determine the amount of data that should be written
+data should be written, BIO_flush
+
+OBJ_obj2txt_APIName does n't follow the convention of other OpenSSL functions where the buffer can be set to NULL to determine the amount of data that should be written
+data should be written, BIO_flush
+
+Further , the thread-safety does not extend to things like multiple threads using the same SSL object at the same time
+using the same SSL object, SSL_want
+
+The values of offset_day or offset_sec can be negative to set a time before ASN1_TIME_adj_APIParam_2
+set a time, X509_VERIFY_PARAM_set_time
+
+the returned CMS_ContentInfo structure is not complete and outputting its contents via a function that does not properly finalize the CMS_ContentInfo structure will give unpredictable results
+not properly finalize the CMS_ContentInfo structure, CMS_add1_recipient_cert
+
+This can be used to determine how much data should be written to the BIO so the next read will succeed
+data should be written, BIO_flush
+
+a password might be supplied to protect the private key
+protect the private key, X509_check_private_key
+
+OpenSSL can generally be used safely in multi-threaded applications provided that at least two callback functions are set , the locking_function and threadid_func
+two callback functions are set, SSL_CTX_set_psk_client_callback
+
+X509_VERIFY_PARAM_set1_host sets the expected DNS hostname to name clearing any previously specified host name or names
+previously specified host name, X509_VERIFY_PARAM_set1_host
+
+It generates a new key pair and stores it in a - > pub_key and a - > priv_key
+generates a new key pair, DES_random_key
+
+The DER encoded signatures is stored in ECDSA_sign_ex_APIParam_2 and it's length is returned in sig_len
+encoded signatures, i2d_ECDSA_SIG
+
+SSL_read or SSL_peek may want to write data and SSL_write may want to read data
+write data, BIO_flush
+

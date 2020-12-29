@@ -1,0 +1,983 @@
+The sixth , seventh and eighth parameters passed to the three `` sqlite3_create_function '' functions , xFunc , xStep and xFinal , are pointers to C-language functions that implement the SQL function or aggregate
+sqlite3_blob_write_APIName may only modify the contents of the BLOB
+sets the database connection error code and message accessible via sqlite3_errcode_APIName and sqlite3_errmsg_APIName and related functions
+ppBlob is set to NULL
+Perhaps it was called on a prepared statement that has already been finalized or on one that had previously returned SQLITE_ERROR_API_constant or SQLITE_DONE_API_constant
+This seems counter-intuitive
+sqlite3_value_free_APIName is a harmless no-op
+Workstation applications using SQLite normally do not need to invoke either of these routines
+SQLite will only request a recursive mutex in cases where it really needs one
+mutexes are enabled and SQLite is threadsafe
+The sqlite3_uri_int64_APIName routine converts the value of sqlite3_uri_int64_APIParam_2 into a 64-bit signed integer and returns that integer, or sqlite3_uri_int64_APIParam_3 if sqlite3_uri_int64_APIParam_2 does not exist
+ the sqlite3_prepare_v2_APIName or equivalent call that triggered the authorizer will fail with an error message explaining that access is denied
+The datatype after conversion is returned by sqlite3_value_numeric_type_APIName
+the default VFS is returned by sqlite3_vfs_find_APIName
+In the "vX" interfaces, the prepared statement that is returned by sqlite3_prepare_APIName contains a copy of the original SQL text
+The object returned by sqlite3_column_value_APIName is an unprotected sqlite3_value object
+the more specific error codes are returned directly by sqlite3_step_APIName
+The return value from sqlite3_soft_heap_limit64_APIName is the size of the soft heap limit prior to the call, or negative in the case of an error
+sqlite3_stmt_scanstatus_APIName returns non-zero and leave the variable that sqlite3_stmt_scanstatus_APIParam_4 points to unchanged
+a non-zero value is returned by sqlite3_stmt_scanstatus_APIName and the variable that sqlite3_stmt_scanstatus_APIParam_4 points to is unchanged
+an error code is returned by sqlite3_table_column_metadata_APIName
+sqlite3_table_column_metadata_APIName causes all database schemas to be read from disk and parsed,, and returns an error if any errors are encountered while loading the schema.
+the sqlite3_wal_checkpoint_v2_APIName interface sets the error information that is queried by sqlite3_errcode_APIName and sqlite3_errmsg_APIName
+sqlite3_wal_checkpoint_v2_APIParam_4 is set to the total number of checkpointed frames in the log file or to -1
+sqlite3_wal_checkpoint_v2_APIParam_3 is set to the total number of frames in the log file or to -1
+The sqlite3_str_value_APIName method returns a pointer to the current content of the dynamic string under construction in X
+The sqlite3_str_length_APIName method returns the current length, in bytes, of the dynamic string under construction in sqlite3_str object X
+The value returned by sqlite3_str_value_APIName is managed by the sqlite3_str object X and might be freed or altered by any subsequent method on the same sqlite3_str object
+The sqlite3_value returned is a protected sqlite3_value object
+The sqlite3_vfs_find_APIName interface returns a pointer to a VFS given its name
+The sqlite3_value_type_APIName interface returns the datatype code for the initial datatype of the sqlite3_value object V.
+the return value from these routines is the same as if the column had contained an SQL NULL value
+Applications may change the content of the string returned by sqlite3_str_value_APIName as long as they do not write into any bytes outside the range of 0 to sqlite3_str_length_APIName and do not read or write any byte after any subsequent sqlite3_str method call
+SQLITE_TOOBIG_API_constant might be returned
+The fourth parameter may optionally be ORed with SQLITE_DETERMINISTIC_API_constant to signal that the function will always return the same result given the same inputs within a single SQL statement
+These routines return information about a single column of the current result row of a query
+The first six interfaces each return the value of a result column in a specific data format
+The sqlite3_column_type_APIName routine returns the datatype code for the initial data type of the result column
+SQLite returns SQLITE_BUSY_API_constant for the first process, hoping that this will induce the first process to release its read lock and allow the second process to proceed
+The return value of the xFileControl method becomes the return value of this routine
+The SQLITE_FCNTL_VFS_POINTER_API_constant opcode returns a pointer to the underlying sqlite3_vfs object for the file
+The default configuration is recommended for most applications and so this routine is usually not necessary
+sqlite3_vtab_collation_APIName may only be called from within a call to the xBestIndex method of a virtual table
+sqlite3_vtab_config_APIName may be called by either the xConnect or xCreate method of a virtual table implementation to configure various facets of the virtual table interface
+sqlite3_vtab_on_conflict_APIName may only be called from within a call to the xUpdate method of a virtual table implementation for an INSERT or UPDATE operation
+The SQLite core only provides implementations for these routines
+These routines may only be called when the most recent call to sqlite3_step_APIName has returned SQLITE_ROW_API_constant and neither sqlite3_reset_APIName nor sqlite3_finalize_APIName have been called subsequently
+A call to sqlite3_initialize_APIName is an "effective" call
+SQLite calls that function as the destructor on the text or BLOB result when it has finished using that result
+An application-defined function is permitted to call other SQLite interfaces
+This interface only reports on the compile-time mutex setting of the SQLITE_THREADSAFE flag
+the database connection becomes an unusable `` zombie '' which will automatically be deallocated
+The SQLITE_IGNORE_API_constant return can be used to deny an untrusted user access to individual columns of a table
+The destructor is called to dispose of the BLOB or string except the destructor is not called 
+the callback might be invoked with two arguments
+This error code is not remembered and will not be recalled by sqlite3_errcode_APIName or sqlite3_errmsg_APIName
+At various points , as logic is being created to perform various actions , the authorizer callback is invoked to see if those actions are allowed
+The second parameter is either the name of the database containing the specified table or NULL
+the maximum length of the string contained in the sqlite3_str object will be the value set for sqlite3_limit_APIName instead of SQLITE_MAX_LENGTH
+The third parameter is the name of the database that was written to
+These routines work just like the corresponding column access functions except that these routines take a single protected sqlite3_value object pointer instead of a sqlite3_stmt pointer and an integer column number
+The second argument sqlite3_prepare_APIParam_2, sqlite3_prepare_v2_APIParam_2, sqlite3_prepare_v3_APIParam_2, sqlite3_prepare16_APIParam_2, sqlite3_prepare16_v2_APIParam_2 and sqlite3_prepare16_v3_APIParam_2  is the statement to be compiled , encoded as either UTF-8 or UTF-16
+It is permitted to register multiple implementations of the same functions with the same name but with either differing numbers of arguments or differing preferred text encodings
+the BLOB is opened for read-only access
+The second argument is an integer constant , taken from the set of SQLITE_DBSTATUS options , that determines the parameter to interrogate
+sqlite3_deserialize_APIParam_5 is the size of the buffer sqlite3_deserialize_APIParam_3, which might be larger than sqlite3_deserialize_APIParam_4
+the corresponding string pointer for the sqlite3_exec_APIName callback is a NULL pointer
+The 3rd argument to the sqlite3_exec_APIName callback is an array of pointers to strings obtained from sqlite3_column_text_APIName , one for each column
+Databases managed by external sources can be given much smaller limits designed to prevent a denial of service attack
+The 4th argument to the sqlite3_exec_APIName callback is an array of pointers to strings where each entry represents the name of corresponding result column as obtained from sqlite3_column_name_APIName
+The sqlite3_exec_APIName interface runs zero or more UTF-8 encoded , semicolon-separate SQL statements passed into its 2nd argument , in the context of the database connection passed in as its 1st argument
+The parameter sqlite3_progress_handler_APIParam_2 is the approximate number of virtual machine instructions that are evaluated between successive invocations of the callback sqlite3_progress_handler_APIParam_3
+The first argument to the callback is a copy of the third argument to sqlite3_update_hook_APIName
+The first argument passed to an unlock-notify callback is a pointer to an array of void pointers , and the second is the number of entries in the array
+So the longest string that can be completely written by sqlite3_snprintf_APIName  will be n-1 characters
+The sqlite3_str_reset_APIName method resets the string under construction inside sqlite3_str object sqlite3_str_reset_APIParam_1 back to zero bytes in length
+The third argument is the value to bind to the parameter
+the fourth argument value of all functions is the number of bytes in the value , not the number of characters
+another VFS is chosen as the default
+SQLite makes its own private copy of the data immediately, before the sqlite3_bind__APIName routine returns
+The second parameter is the name of the SQL function to be created or redefined
+The fifth parameter is an arbitrary pointer
+The fifth argument to the BLOB and string binding interfaces is a destructor used to dispose of the BLOB or string after SQLite has finished with it
+The third parameter is the number of arguments that the SQL function or aggregate takes
+The second parameter to the callback is an integer action code that specifies the particular action to be authorized
+A function where the preferred text encoding matches the database encoding is a better match than a function where the encoding is different
+The first parameter to the authorizer callback is a copy of the third parameter to the sqlite3_set_authorizer_APIName interface
+the length of sqlite3_bind_text_APIParam_4 and sqlite3_bind_text16_APIParam_4 is the number of bytes up to the first zero terminator
+Autocommit mode is re-enabled by a COMMIT or ROLLBACK
+The default busy callback is NULL
+A function where the encoding difference is between UTF16le and UTF16be is a closer match than a function where the encoding difference is between UTF8 and UTF16
+The sqlite3_sourceid_APIName function returns a pointer to a string constant whose value is the same as the SQLITE_SOURCE_ID_API_constant C preprocessor macro
+On windows , the first component of an absolute path is a drive specification -LRB- e.g
+The first argument to the sqlite3_bind__APIName routines is always a pointer to the sqlite3_stmt object returned from sqlite3_prepare_v2_APIName or its variants
+The sqlite3_value_dup_APIName interface makes a copy of the sqlite3_value object D and returns a pointer to that copy
+Returns the size in bytes of the BLOB accessible via the successfully opened BLOB handle in its only argument
+Zero all sqlite3_stmt_scanstatus_APIName related event counters
+Attempt to return the underlying operating system error code or error number that caused the most recent I/O error or failure to open a file
+The following interfaces are provided
+This causes the sqlite3_step_APIName interface to behave differently in three ways
+In the SQL statement text input to sqlite3_prepare_v2_APIName and its variants , literals may be replaced by a parameter that matches one of following templates
+The following table details the conversions that are applied
+The problem has been fixed with the `` v2 '' interface
+Or it could be the case that the same database connection is being used by two or more threads at the same moment in time
+the return value from sqlite3_complete16_APIName will be non-zero regardless of whether or not the input SQL is complete
+In the templates above , NNN represents an integer literal , and VVV represents an alphanumeric identifier
+it will be invoked
+or if the column index is out of range
+The third and fourth parameters to this routine are passed directly through to the second and third parameters of the xFileControl method
+This interface returns information about the predicted and measured performance for sqlite3_stmt_scanstatus_APIParam_1
+the xColumn method can optionally return without setting a result, without calling any of the sqlite3_result_xxxxx_APIName interfaces
+The SQLITE_FCNTL_DATA_VERSION_API_constant returns the data version counter from the pager
+ sqlite3_column_bytes_APIName converts the string to UTF-8 and returns the number of bytes
+sqlite3_column_bytes16_APIName converts the string to UTF-16 and returns the number of bytes
+Note also that sqlite3_snprintf_APIName returns a pointer to its buffer instead of the number of characters actually written into the buffer
+In those routines that have a fourth argument , its value is the number of bytes in the parameter
+The first parameter is the database connection to which the SQL function is to be added
+ppStmt is set to NULL
+The fourth parameter , eTextRep , specifies what text encoding this SQL function prefers for its parameters
+and the end result is the same as sqlite3_bind_null_APIName
+`` VACUUM '' is not a keyword
+Most SQL functions are deterministic
+ the DELETE operation proceeds but the truncate optimization is disabled and all rows are deleted individually
+the prepared statement statement is constructed to substitute a NULL value in place of the table column that would have been read if SQLITE_OK_API_constant had been returned
+The fourth parameter may also optionally include the SQLITE_DIRECTONLY_API_constant flag
+the xStep_APIName callback of the aggregate function implementation is never called and xFinal_APIName is called exactly once
+It is provided to support rare applications with unusual needs
+sqlite3_changes_APIName returns the number of rows modified, inserted or deleted by the most recently completed INSERT, UPDATE or DELETE statement on the database connection specified by the only parameter
+Use sqlite3_db_config to enable or disable only the C-API
+The parameter P is passed through as the only parameter to the callback function X
+Its only purpose is to be a placeholder function that can be overloaded by a virtual table
+SQLITE_BUSY_API_constant means that the database engine was unable to acquire the database locks it needs to do its job
+This interface can be used in combination sqlite3_next_stmt_APIName to locate all prepared statements associated with a database connection that are in need of being reset
+The sqlite3_snapshot_open_APIName interface either starts a new read transaction or upgrades an existing one for schema sqlite3_snapshot_open_APIParam_2 of database connection sqlite3_snapshot_open_APIParam_1 such that the read transaction refers to historical snapshot P , rather than the most recent change to the database
+The definition of GLOB pattern matching used in sqlite3_strglob_APIName is the same as for the "X GLOB P" operator in the SQL dialect understood by SQLite
+The definition of LIKE pattern matching used in sqlite3_strlike_APIName is the same as for the "X LIKE sqlite3_strlike_APIParam_1 ESCAPE E" operator in the SQL dialect understood by SQLite
+Each call to either sqlite3_trace_APIName or sqlite3_trace_v2_APIName overrides any prior calls to sqlite3_trace_APIName or sqlite3_trace_v2_APIName
+The return value of the sqlite3_threadsafe_APIName function shows only the compile-time setting of thread safety, not any run-time changes to that setting made by sqlite3_config_APIName
+This interface used to be the only way to cause a checkpoint to occur
+it is invoked and the writer lock retried until either the busy-handler returns 0 or the lock is successfully obtained
+A call to either function replaces the existing collation-needed callback
+This interface is retained for backwards compatibility and as a convenience for applications that need to manually start a callback but which do not need the full power of sqlite3_wal_checkpoint_v2_APIName
+Note that running any other SQL statements , including SELECT statements , or merely calling sqlite3_prepare_v2_APIName and sqlite3_step_APIName will modify the database connections for the meaning of `` modify '' in this paragraph
+The sqlite3_errmsg_APIName and sqlite3_errmsg16_APIName return English-language text that describes the error, as either UTF-8 or UTF-16 respectively
+Except , there are some interfaces that are guaranteed to never change the value of the error code
+These interfaces provide the same information as the SQLITE_VERSION_API_constant , SQLITE_VERSION_API_constant_NUMBER , and SQLITE_SOURCE_ID_API_constant C preprocessor macros but are associated with the library instead of the header file
+We admit that the number of characters written would be a more useful return value but we cannot change the implementation of sqlite3_snprintf_APIName now without breaking compatibility
+The SQLite core only ever uses sqlite3_mutex_try_APIName as an optimization so this is acceptable behavior
+The mutex implementation does not need to make a distinction between SQLITE_MUTEX_RECURSIVE_API_constant and SQLITE_MUTEX_FAST_API_constant
+The query component of a URI may contain parameters that are interpreted either by SQLite itself , or by a custom VFS implementation
+Invoking either sqlite3_trace_APIName or sqlite3_trace_v2_APIName will cancel the profile callback
+A protected sqlite3_value object may always be used where an unprotected sqlite3_value object is required , so either kind of sqlite3_value object can be used with this interface
+SQLite invokes sqlite3_result_pointer_APIParam_4 with sqlite3_result_pointer_APIParam_2 as its only argument
+These routines only compile the first statement in sqlite3_prepare16_APIParam_2 , so pzTail is left pointing to what remains uncompiled
+The only differences between the three sqlite3_create_function routines are the text encoding expected for the second parameter and the presence or absence of a destructor callback for the application data pointer
+The sqlite3_bind_pointer_APIName routine causes the I-th parameter in prepared statement S to have an SQL value of NULL , but to also be associated with the pointer P of type T.
+But the application does not want the user to be able to make arbitrary changes to the database
+the authorizer callback is invoked only
+The return value of sqlite3_column_type_APIName can be used to decide which of the first six interface should be used to extract the column value
+A few opcodes for sqlite3_file_control_APIName are handled directly by the SQLite core and never invoke the sqlite3_io_methods
+The SQLITE_FCNTL_JOURNAL_POINTER_API_constant works similarly except that it returns the sqlite3_file object associated with the journal file instead of the main database
+SQLite will invoke sqlite3_free_APIName on pzErrMsg after xEntryPoint_APIName returns
+This routine actually returns the index of the largest parameter
+On second and subsequent calls to sqlite3_aggregate_context_APIName for the same aggregate function instance, the same buffer is returned by sqlite3_aggregate_context_APIName
+Implementations of aggregate SQL functions use this routine to allocate memory for storing their state
+SQLite ensures that pzErrMsg is NULL before calling the xEntryPoint_APIName
+The index value returned is suitable for use as the second parameter to sqlite3_bind_APIName
+The amount of space allocated by sqlite3_aggregate_context_APIName is determined by the sqlite3_aggregate_context_APIParam_2 parameter on first successful call
+the sqlite3_open_APIName, sqlite3_open16_APIName, or sqlite3_open_v2_APIName call that provoked the xEntryPoint_APIName will fail
+Parameters of the form '' ? ''
+Return the index of an SQL parameter given its name
+In other words, the initial ":" or "$" or "@" or "?"is included as part of the name.
+For all forms except ?NNN, this will correspond to the number of unique parameters.
+No entry point will be called more than once for each database connection that is opened
+This interface causes the xEntryPoint_APIName function to be invoked for each new database connection that is created
+This routine can be used to find the number of SQL parameters in a prepared statement
+sqlite3_blob_close_APIName closes an open BLOB handle
+The BLOB handle is closed unconditionally
+the handle is still closed
+SQLite automatically frees the memory allocated by sqlite3_aggregate_context_APIName
+The first time the sqlite3_aggregate_context_APIName routine is called for a particular aggregate function, SQLite allocates sqlite3_aggregate_context_APIParam_2 of memory, zeroes out that memory, and returns a pointer to the new memory
+For TEMP tables , the database name is `` temp ''
+Calling this routine with a null pointer is a harmless no-op
+Parameters of the form "?" without a following integer have no name and are referred to as `` nameless '' or `` anonymous parameters ''
+Calling sqlite3_auto_extension_APIName with an entry point X that is already on the list of automatic extensions is a harmless no-op
+Changing the value of sqlite3_aggregate_context_APIParam_2 in subsequent call to sqlite3_aggregate_context_APIName within the same aggregate function instance will not resize the memory allocation
+For the main database file , the database name is `` main ''
+Within the xFinal callback , it is customary to set N = 0 in calls to sqlite3_aggregate_context_APIName so that no pointless memory allocations occur
+they can not change the size of a blob
+For attached databases , this is the name that appears after the AS keyword in the ATTACH statement
+the values returned by the sqlite3_errcode_APIName and sqlite3_errmsg_APIName functions are set before returning
+Use the sqlite3_blob_bytes_APIName interface to determine the size of the opened blob
+A BLOB referenced by sqlite3_blob_open_APIName may be read using the sqlite3_blob_read_APIName interface and modified by using sqlite3_blob_write_APIName
+The size of a blob may not be changed by this interface
+Parameter sqlite3_blob_open_APIParam_2 is not the filename that contains the database , but rather the symbolic name of the database
+Use the UPDATE SQL command to change the size of a blob
+This means that, provided the API is not misused, it is always safe to call sqlite3_blob_close_APIName on ppBlob after sqlite3_blob_open_APIName it returns
+The size of the blob can be determined using the sqlite3_blob_bytes_APIName interface
+The idea here is that xEntryPoint_APIName is the entry point for a statically linked SQLite extension that is to be automatically loaded into all new database connections
+sqlite3_blob_read_APIName is used to read data from an open BLOB handle into a caller-supplied buffer
+The new row is identified by the rowid value passed as sqlite3_blob_reopen_APIParam_2
+The BLOB handle can be moved to a different row of the same table using the sqlite3_blob_reopen_APIName interface
+Sqlite3_aggregate_context_APIName is normally called once for each invocation of the xStep callback and one last time
+The sqlite3_bind_parameter_name_APIName interface returns the name of the N-th SQL parameter in the prepared statement P.
+N bytes of data are copied into buffer sqlite3_blob_read_APIParam_2 from the open BLOB , starting at offset sqlite3_blob_read_APIParam_4
+the initial ":" or "$" or "@" or "?"
+The database , table and column on which the blob handle is open remain the same
+Changes written into a BLOB prior to the BLOB expiring are not rolled back by the expiration of the BLOB
+the BLOB is opened for read and write access
+Such changes will eventually commit
+sqlite3_blob_reopen_APIName is used to move an existing BLOB handle so that it points to a different row of the same database table
+This interfaces opens a handle to the BLOB located in row sqlite3_blob_open_APIParam_5 , column sqlite3_blob_open_APIParam_4 , table sqlite3_blob_open_APIParam_3 in database sqlite3_blob_open_APIParam_2
+the same BLOB that would be selected by
+The sqlite3_bind_zeroblob_APIName and sqlite3_result_zeroblob_APIName interfaces and the built-in zeroblob SQL function may be used to create a zero-filled blob to read or write using the incremental-blob interface
+the BLOB handle is marked as `` expired ''
+the current transaction is committed
+SQL parameters of the form "?NNN" or ":AAA" or "@AAA" or "$AAA" have a name which is the string "?NNN" or ":AAA" or "@AAA" or "$AAA" respectively.
+SQL parameters are tokens of the form "?", "?NNN", ":AAA", "$AAA", or "@AAA" that serve as placeholders for values that are bound to the parameters at a later time.
+sqlite3_blob_reopen_APIName sets the database handle error code and message
+sqlite3_blob_write_APIName is used to write data into an open BLOB handle from a caller-supplied buffer
+sqlite3_blob_write_APIName sets the database connection error code and message accessible via sqlite3_errcode_APIName and sqlite3_errmsg_APIName and related functions
+Executing any other type of SQL statement does not modify the value returned by sqlite3_changes_APIName
+Only changes made to real tables are counted
+The handler will sleep multiple times until at least `` ms '' milliseconds of sleeping have accumulated
+that means the prepared statement returns no data
+Return the number of columns in the result set returned by the prepared statement
+Use this routine to reset all host parameters to NULL
+N bytes of data are copied from the buffer Z into the open BLOB , starting at offset sqlite3_blob_write_APIParam_4
+Changes to a view that are intercepted by INSTEAD OF triggers are not counted
+The sqlite3_cancel_auto_extension_APIName interface unregisters the initialization routine X that was registered using a prior call to sqlite3_auto_extension_APIName
+Calling this routine with an argument less than or equal to zero turns off all busy handlers
+Subsequent arguments vary depending on the configuration option in sqlite3_config_APIParam_1
+A SELECT statement will always have a positive sqlite3_column_count_APIName but depending on the WHERE clause constraints and the table content, it might return no rows
+Contrary to the intuition of many , sqlite3_reset_APIName does not reset the bindings on a prepared statement
+sqlite3_db_cacheflush_APIName does not set the database handle error code or message returned by the sqlite3_errcode_APIName and sqlite3_errmsg_APIName functions
+Note , however , that sqlite3_config_APIName can be called as part of the implementation of an application-defined sqlite3_os_init_APIName
+This may happen
+Subsequent arguments vary depending on the configuration verb
+The sqlite3_db_handle interface returns the database connection handle to which a prepared statement belongs
+The sqlite3_data_count_APIName interface returns the number of columns in the current row of the result set of prepared statement sqlite3_step_APIParam_1
+The filename returned by sqlite3_db_filename_APIName is the output of the xFullPathname method of the VFS
+The sqlite3_context_db_handle_APIName interface returns a copy of the pointer to the database connection of the sqlite3_create_function_APIName and sqlite3_create_function16_APIName routines that originally registered the application defined function
+The sqlite3_config_APIName interface is used to make global configuration changes to SQLite
+The sqlite3_db_filename_APIName interface returns a pointer to a filename associated with database sqlite3_db_filename_APIParam_2 of connection D. The main database file has the name "main"
+The sqlite3_db_config_APIName interface is used to make configuration changes to a database connection
+This means that if the changes_APIName SQL function is used by the first INSERT, UPDATE or DELETE statement within a trigger, it returns the value as set when the calling statement began executing
+The interface is similar to sqlite3_config_APIName except that the changes apply to a single database connection
+sleeps for a specified amount of time
+This routine sets a busy handler that
+The sqlite3_db_cacheflush_APIName interface flushes caches for all schemas - `` main '' , `` temp '' , and any attached databases
+The first argument to sqlite3_config_APIName is an integer configuration option that determines what property of SQLite is to be configured
+The first argument is the database connection object to be interrogated
+This interface returns a pointer the sqlite3_mutex object that serializes access to the database connection given in the argument when the threading mode is Serialized
+Things are more complicated
+the value returned reflects the number of rows modified by the previous INSERT, UPDATE or DELETE statement within the same trigger
+that other busy handler is cleared
+The database connection returned by sqlite3_db_handle is the same database connection that was sqlite3_db_handle_APIParam_1 to the sqlite3_prepare_v2_APIName call that was used to create the statement in the first place
+The set of SQLITE_DBSTATUS options is likely to grow in future releases of SQLite
+This interface is used to retrieve runtime status information about a single database connection
+the filename will be an absolute pathname
+Extension loading is off by default
+Only changes made directly by the INSERT , UPDATE or DELETE statement are considered - auxiliary changes caused by triggers , foreign key actions or REPLACE constraint resolution are not counted
+The current value of the requested parameter is written into pCur and the highest instantaneous value is written into pHiwtr
+Writes to the BLOB that occurred before the BLOB handle expired are not rolled back by the expiration of the handle
+it does so
+The xCreate and xConnect methods of a virtual table module call this interface to declare the format of the virtual tables they implement
+it is invoked in the usual manner
+The sqlite3_deserialize_APIName interface causes the database connection sqlite3_deserialize_APIParam_1 to disconnect from database sqlite3_deserialize_APIParam_2 and reopen sqlite3_deserialize_APIParam_2 as an in-memory database based on the serialization contained in sqlite3_deserialize_APIParam_3
+the highest instantaneous value is reset back down to the current value
+all virtual table modules are removed
+A dirty page may be in use
+the database is skipped and an attempt made to flush any dirty pages belonging to the next database
+any dirty pages in the pager-cache that are not currently in use are written out to disk
+The sqlite3_db_release_memory_APIName interface attempts to free as much heap memory as possible from database connection D.
+This is a change as of SQLite version 3.5.0
+Shared cache is disabled by default
+Cache sharing is enabled and disabled for an entire process
+This interface enables or disables both the C-API sqlite3_load_extension_APIName and the SQL function load_extension_APIName
+But this might change in future releases of SQLite
+sqlite3_free_APIName is invoked on argument sqlite3_deserialize_APIParam_3 prior to returning
+The sqlite3_finalize_APIName function is called to delete a prepared statement
+In prior versions of SQLite , sharing was enabled or disabled for each thread separately
+This interface is threadsafe on processors where writing a 32-bit integer is atomic
+sqlite3_interrupt_APIName causes any pending database operation to abort and return at its earliest opportunity
+The extended result codes are disabled by default for historical compatibility
+Invoking sqlite3_finalize_APIName on a NULL pointer is a harmless no-op
+The sqlite3_extended_result_codes_APIName routine enables or disables the extended result codes feature of SQLite
+Existing database connections continue use the sharing mode that was in effect at the time they were opened
+The 4th argument to sqlite3_exec_APIName is relayed through to the 1st argument of each callback invocation
+The cache sharing mode set by this interface effects all subsequent calls to sqlite3_open_APIName , sqlite3_open_v2_APIName , and sqlite3_open16_APIName
+sqlite3_exec_APIName sets the pointer in its 5th parameter to NULL before returning
+This routine enables or disables the sharing of the database cache and schema data structures between connections to the same database
+Call the sqlite3_enable_load_extension_APIName routine with onoff == 1 to turn extension loading on and call it with onoff == 0 to turn it back off again
+sqlite3_last_insert_rowid_APIName is accessible to SQL statements via the last_insert_rowid_APIName SQL function
+A call to sqlite3_interrupt_APIName that occurs when there are no running SQL statements is a no-op and has no effect on SQL statements that are started after the sqlite3_interrupt_APIName call returns
+Each entry in most SQLite tables has a unique 64-bit signed integer key called the `` rowid ''
+Once the trigger program ends, the value returned by this routine reverts to what it was before the trigger was fired
+subsequent calls to sqlite3_last_insert_rowid_APIName return the rowid associated with these internal INSERT operations, which leads to unintuitive results
+As well as being set automatically as rows are inserted into database tables, the value returned by sqlite3_last_insert_rowid_APIName may be set explicitly by sqlite3_set_last_insert_rowid_APIName
+this routine will return the rowid of the inserted row as long as the trigger is running
+SQLite will invoke sqlite3_free_APIName on the serialization buffer when the database connection closes
+It is safe to call this routine from a thread different from the thread that is currently running the database operation
+Virtual table implementations that do write to rowid tables in this way can avoid this problem by restoring the original rowid value using sqlite3_set_last_insert_rowid_APIName before returning control to the user
+The internal databases can be given the large , default limits
+This interface allows the size of various constructs to be limited on a connection by connection basis
+Thus INSERT OR FAIL, INSERT OR IGNORE, INSERT OR ROLLBACK, and INSERT OR ABORT make no changes to the return value of this routine when their insertion fails
+no callback is ever invoked and result rows are ignored
+The INSERT continues to completion after deleting rows that caused the constraint problem so INSERT OR REPLACE will always change the return value of this interface
+Regardless of whether or not the limit was changed, the sqlite3_limit_APIName interface returns the prior value of the limit
+For the purposes of this routine , an INSERT is considered to be successful
+The sqlite3_last_insert_rowid_APIName interface usually returns the rowid of the most recent successful INSERT into a rowid table or virtual table on database connection D.
+it does not fail
+execution of the current statement stops and subsequent statements are skipped
+the limit is unchanged
+SQLite will try to increase the buffer size using sqlite3_realloc64_APIName if writes on the database cause it to grow larger than M bytes
+that column is another alias for the rowid
+any error message is written into memory obtained from sqlite3_malloc_APIName and passed back through the 5th parameter
+The entry point is sqlite3_load_extension_APIParam_3
+New run-time limit categories may be added in future releases
+The sqlite3_drop_modules_APIName interface removes all virtual table modules from database connection sqlite3_drop_modules_APIParam_1 except those named on list sqlite3_drop_modules_APIParam_2
+It first tries `` sqlite3_extension_init ''
+This interface loads an SQLite extension library from the named file
+For each limit category SQLITE_LIMIT_NAME there is a hard upper bound set at compile-time by a C preprocessor macro called SQLITE_MAX_NAME
+The sqlite3_load_extension_APIName interface attempts to load an SQLite extension library contained in the file sqlite3_load_extension_APIParam_2
+Hence , to find the current value of a limit without changing it , simply invoke this interface with sqlite3_limit_APIParam_3 set to -1
+Run-time limits are intended for use in applications that manage both their own internal database and also databases that are controlled by untrusted external sources
+The sqlite3_exec_APIName interface is a convenience wrapper around sqlite3_prepare_v2_APIName , sqlite3_step_APIName , and sqlite3_finalize_APIName , that allows an application to run multiple statements of SQL without having to use a lot of C code
+An example application might be a web browser that has its own databases for storing history and separate databases controlled by JavaScript applications downloaded off the Internet
+The rowid is always available as an undeclared column named ROWID , OID , or _ ROWID _ as long as those names are not also used by explicitly declared columns
+it is invoked for each result row coming out of the evaluated SQL statements
+it might not have an opportunity to be interrupted and might continue to completion
+the entire transaction will be rolled back automatically
+Any new SQL statements that are started after the sqlite3_interrupt_APIName call and before the running statements reaches zero are interrupted as if they had been running prior to the sqlite3_interrupt_APIName call.
+before statement sqlite3_finalize_APIParam_1 is ever evaluated , after one or more calls to sqlite3_reset_APIName , or after any call to sqlite3_step_APIName regardless of whether or not the statement has completed execution
+no SQL statements are evaluated and the database is not changed
+Some virtual table implementations may INSERT rows into rowid tables as part of committing a transaction
+So as not to open security holes in older applications that are unprepared to deal with extension loading , and as a means of disabling extension loading , the following API is provided to turn the sqlite3_load_extension_APIName mechanism on and off
+This interface returns a pointer to the next prepared statement after sqlite3_next_stmt_APIParam_2 associated with the database connection sqlite3_next_stmt_APIParam_1
+The size of the database created by an untrusted script can be contained using the max_page_count PRAGMA
+The log message is stored in a fixed-length buffer on the stack
+So the new function is not good for anything by itself
+this interface returns a pointer to the first prepared statement associated with the database connection sqlite3_next_stmt_APIParam_1
+the operation is interrupted
+To avoid deadlocks and other threading problems , the sqlite3_log_APIName routine will not use dynamically allocated memory
+The sqlite3_log_APIName interface writes a message into the error log established by the SQLITE_CONFIG_LOG_API_constant option to sqlite3_config_APIName
+Setting parameter X to NULL disables the progress handler
+zProc may be 0 , in which case SQLite will try to come up with an entry point name on its own
+Virtual tables can provide alternative implementations of functions using the xFindFunction method of the virtual table module
+Use sqlite3_clear_bindings_APIName to reset the bindings
+The sqlite3_log_APIName interface is intended for use by extensions such as virtual tables , collating functions , and SQL functions
+sqlite3_release_memory_APIName returns the number of bytes actually freed, which might be more or less than the amount requested
+The PRNG is also used for the build-in random_APIName and randomblob_APIName SQL functions
+This interface allows applications to access the same PRNG for other purposes
+The progress handler is also disabled by setting N to a value less than 1
+This interface disables all automatic extensions previously registered using sqlite3_auto_extension_APIName
+This feature can be used to implement a `` Cancel '' button on a GUI progress dialog box
+The sqlite3_reset_APIName interface does not change the values of any bindings on the prepared statement S
+Memory used to cache database pages to improve performance is an example of non-essential memory
+A call to this routine stores sqlite3_randomness_APIParam_1 bytes of randomness into buffer sqlite3_randomness_APIParam_2
+The number of subtype bytes preserved by SQLite might increase in future releases of SQLite
+Only a single progress handler may be defined at one time per database connection
+The sqlite3_reset_APIName interface resets the prepared statement S back to the beginning of its program
+This API makes sure a global version of a function with a particular name and number of parameters exists
+Note that sqlite3_prepare_v2_APIName and sqlite3_step_APIName both modify their database connections for the meaning of `` modify '' in this paragraph
+setting a new progress handler cancels the old one
+SQLite implements this interface by calling the xSleep_APIName method of the default sqlite3_vfs object
+The number of milliseconds of sleep actually requested from the operating system is returned by sqlite3_sleep_APIName
+a new function is created
+The sqlite3_set_last_insert_rowid method allows the application to set the value returned by calling sqlite3_last_insert_rowid_APIName to R without inserting a row into the database
+The sqlite3_snapshot_cmp interface is used to compare the ages of two valid snapshot handles
+attempts are made to load with various operating-system specific extensions added
+Any SQL statement variables that had values bound to them using the sqlite3_bind __ APIName API retain their values
+the progress handler is disabled
+For an ordinary on-disk database file , the serialization is just a copy of the disk file
+The usual case is that sqlite3_serialize_APIName copies the serialization of the database into memory obtained from sqlite3_malloc64_APIName and returns a pointer to that memory
+The sqlite3_serialize_APIName interface returns a pointer to memory that is a serialization of the sqlite3_serialize_APIParam_2 database on database connection D.
+The final value of P is undefined
+the sqlite3_log_APIParam_2 string and subsequent arguments are used with sqlite3_snprintf_APIName to generate the final output string
+The sqlite3_reset_APIName function is called to reset a prepared statement object back to its initial state , ready to be re-executed
+The sqlite3_release_memory_APIName interface attempts to free N bytes of heap memory by deallocating non-essential memory allocations held by the database library
+The sqlite3_snapshot_get_APIName interface attempts to make a new sqlite3_snapshot object that records the current state of schema sqlite3_snapshot_get_APIParam_2 in database connection D. On success, the sqlite3_snapshot_get_APIName interface writes a pointer to the newly created sqlite3_snapshot object into P and returns SQLITE_OK_API_constant
+The sqlite3_snapshot_free_APIName interface destroys sqlite3_snapshot P
+the read transaction is now open on database snapshot P
+The sqlite3_sleep_APIName function causes the current thread to suspend execution for at least a number of milliseconds specified in its parameter
+the sqlite3_load_extension_APIName interface shall attempt to fill pzErrMsg with error message text stored in memory obtained from sqlite3_malloc_APIName
+The sqlite3_result_subtype_APIName function causes the subtype of the result from the application-defined SQL function with sqlite3_context sqlite3_result_subtype_APIParam_1 to be the value sqlite3_result_subtype_APIParam_2
+one is opened automatically
+higher order bits are discarded
+SQLite contains a high-quality pseudo-random number generator used to select random ROWIDs
+The wal file is deleted
+the callback function X to be invoked periodically
+The sqlite3_progress_handler_APIName interface causes the callback function X to be invoked periodically during long running calls to sqlite3_exec_APIName, sqlite3_step_APIName and sqlite3_get_table_APIName for database connection D.
+the time will be rounded up to the nearest second
+it constructs a name `` sqlite3_X_init '' where the X is consists of the lower-case equivalent of all ASCII alphabetic characters in the filename from the last '' / '' to the first following '' . ''
+the behavior of sqlite3_sleep_APIName may deviate from the description in the previous paragraphs
+would be written to disk where backed up to disk
+For an in-memory database or a `` TEMP '' database , the serialization is the same sequence of bytes which
+the pseudo-randomness is generated internally and without recourse to the sqlite3_vfs xRandomness method  would be written to disk if that database where backed up to disk.
+SQLITE_DONE_API_constant means that the statement has finished executing successfully
+With SQLITE_ENABLE_MEMORY_MANAGEMENT , the soft heap limit is enforced on every memory allocation
+the same read transaction remains open if SQLITE_ERROR_API_constant, SQLITE_BUSY_API_constant or SQLITE_ERROR_API_constant_SNAPSHOT is returned by sqlite3_snapshot_open_APIName
+The values may be accessed using the column access functions
+sqlite3_step_APIName is called again to retrieve the next row of data
+More information may be found by calling sqlite3_errmsg_APIName
+sqlite3_snapshot_recover_APIName attempts to scan the WAL file associated with database sqlite3_snapshot_recover_APIParam_2 of database handle sqlite3_snapshot_recover_APIParam_1 and make all valid snapshots available to sqlite3_snapshot_open_APIName
+The circumstances under which SQLite will enforce the soft heap limit may changes in future releases of SQLite
+With the "v2" interface, any of the other result codes or extended result codes might be returned as well
+We admit that this is a goofy design
+SQLITE_MISUSE_API_constant means that the this routine was called inappropriately
+The sqlite3_soft_heap_limit64_APIName interface sets and/or queries the soft limit on the amount of heap memory that may be allocated by SQLite
+But after version 3.6.23.1,sqlite3_step_APIName began calling sqlite3_reset_APIName automatically in this circumstance rather than returning SQLITE_MISUSE_API_constant
+The SQLITE_OMIT_AUTORESET compile-time option can be used to restore the legacy behavior
+Hence , the current size of the soft heap limit can be determined by invoking sqlite3_soft_heap_limit64_APIName with a negative argument
+The "iScanStatusOp" parameter determines which status information to return
+Loops are numbered starting from zero
+Note that application-defined SQL functions or virtual tables might change the database indirectly as a side effect
+Parameter `` idx '' identifies the specific loop to retrieve statistics for
+With the legacy interface , a more specific error code can be obtained by calling sqlite3_reset_APIName on the prepared statement
+no change is made to the soft heap limit
+Beginning with SQLite version 3.7.3 , the soft heap limit is enforced regardless of whether or not the SQLITE_ENABLE_MEMORY_MANAGEMENT compile-time option is invoked
+Statistics might not be available for all loops in all statements
+The requested measurement is written into a variable pointed to by the `` pOut '' parameter
+The first argument is the prepared statement object to be interrogated
+This interface is used to retrieve and reset counter values from a prepared statement
+These counters can be used to monitor the performance characteristics of the prepared statements
+The soft heap limit is not enforced in the current implementation
+Each prepared statement maintains various SQLITE_STMTSTATUS counters that measure the number of times it has performed specific operations
+The current value of the requested counter is returned by sqlite3_stmt_status_APIName
+SQLite strives to keep heap memory utilization below the soft heap limit by reducing the number of pages held in the page cache as heap memory usages approaches the limit
+you can retry the statement
+the counter is reset to zero after this interface call returns
+The sqlite3_str_new_APIName interface allocates and initializes a new sqlite3_str object
+The sqlite3_str_new_APIParam_1 parameter to sqlite3_str_new_APIName may be NULL
+The return value is OS-dependent
+It is always safe to use the value returned by sqlite3_str_new_APIName as the sqlite3_str parameter to any of the other sqlite3_str methods
+The sqlite3_str_finish_APIName interface destroys the sqlite3_str object X and returns a pointer to a memory buffer obtained from sqlite3_malloc64_APIName that contains the constructed string
+The sqlite3_strlike_APIName function matches Unicode characters
+the measured performance and issue warnings and/or rerun ANALYZE
+Advanced applications can use this interface to compare the predicted
+the following SQL statement would change the database file through side-effects
+The details of the behavior of the sqlite3_step_APIName interface depend on whether the statement was prepared using the newer `` vX '' interfaces sqlite3_prepare_v3_APIName , sqlite3_prepare_v2_APIName , sqlite3_prepare16_v3_APIName , sqlite3_prepare16_v2_APIName or the older legacy interfaces sqlite3_prepare_APIName and sqlite3_prepare16_APIName
+A database connection might not know that the database file is in WAL mode
+that would tend to indicate that the prepared statement is using a full table scan rather than an index
+The sqlite3_table_column_metadata routine returns information about column C of table T in database D on database connection X
+SQLite can be compiled with or without mutexes
+The column is identified by the second , third and fourth parameters to sqlite3_table_column_metadata_APIName
+Enabling mutexes incurs a measurable performance penalty
+Metadata is returned by sqlite3_table_column_metadata_APIName by writing to the memory locations passed as the 5th and subsequent parameters to sqlite3_table_column_metadata_APIName
+The default behavior is for mutexes to be enabled
+Executing any other type of SQL statement does not affect the value returned by sqlite3_total_changes_APIName
+the return value from sqlite3_threadsafe_APIName is unchanged by calls to sqlite3_config_APIName
+Any of these arguments may be NULL , in which case the corresponding element of metadata is omitted
+As with the LIKE operator , the sqlite3_strlike_APIName function is case insensitive - equivalent upper and lower case ASCII characters match one another
+A trace callback is invoked with four arguments
+The integer return value from the callback is currently ignored
+The C argument is a copy of the context pointer
+The sqlite3_test_control_APIName interface is used to read out internal state of SQLite and to inject faults into SQLite for testing purposes
+There may be at most one unlock-notify callback registered by a blocked connection
+the mutexes are omitted
+on unix systems, after sqlite3_open_v2_APIName returns SQLITE_CANTOPEN_API_constant, this interface could be called to get back the underlying "errno" that caused the problem, such as ENOSPC, EAUTH, EISDIR, and so forth
+sqlite3_total_changes_APIName returns the total number of rows inserted , modified or deleted by all INSERT , UPDATE or DELETE statements completed
+The blocked connections unlock-notify callback may also be canceled by closing the blocked connection using sqlite3_close_APIName
+the identity of the database connection that has locked the required resource is stored internally
+The callback is invoked from within the sqlite3_step or sqlite3_close call that concludes the blocking connections transaction
+To detect changes against a database file from other database connections use the PRAGMA data_version command or the SQLITE_FCNTL_DATA_VERSION_API_constant file control
+The sqlite3_str_new_APIName interface always returns a pointer to a valid sqlite3_str object
+the outputs for the rowid are set as follows
+So , it makes sense to disable the mutexes
+The details of the operation codes , their meanings , the parameters they take , and what they do are all subject to change without notice
+To avoid this scenario , the sqlite3_unlock_notify_APIName performs deadlock detection
+Changes made as part of foreign key actions are included in the count , but those made as part of REPLACE constraint resolution are not
+The X callback is invoked
+The final callback parameter is the rowid of the row
+However , the signature of the callback function allows SQLite to pass it an array of void context pointers
+This gives the application an opportunity to prioritize any actions related to the set of unblocked database connections
+The sqlite3_trace_v2_APIName interface registers a trace callback function X against database connection D , using property mask M and context pointer P
+databases are searched for the table using the same algorithm used by the database engine to resolve unqualified table references
+Any callback set by a previous call to sqlite3_update_hook_APIName for the same database connection is overridden
+the specified callback is invoked immediately , from within the call to sqlite3_unlock_notify_APIName
+This interface can be used by an application to make sure that the version of SQLite that it is linking against was compiled with the desired setting of the SQLITE_THREADSAFE macro
+This API may be used to register a callback that SQLite will invoke
+the new callback replaces the old
+any existing unlock-notify callback is canceled
+there is a chance that the blocking connection will have already concluded its transaction by the time sqlite3_unlock_notify_APIName is invoked
+the extended error code is set to SQLITE_LOCKED_API_constant_SHAREDCACHE
+there may be more than one blocked connection that has registered for an unlock-notify callback
+then mutexes are enabled by default but can be fully or partially disabled using a call to sqlite3_config_APIName with the verbs SQLITE_CONFIG_SINGLETHREAD_API_constant, SQLITE_CONFIG_MULTITHREAD_API_constant, or SQLITE_CONFIG_SERIALIZED_API_constant.
+then the output parameters are set for the explicitly declared column.
+SQLite arbitrarily selects one of the other connections to use as the blocking connection
+Further options may be added in the future
+Use the sqlite3_result_subtype_APIName routine to set the subtype for the return value of an SQL function
+The exceptions defined in this paragraph might change in a future release of SQLite
+In the case of an update , this is the rowid after the update takes place
+sqlite3_vtab_collation_APIName returns a pointer to a buffer containing the name of the collation sequence for the corresponding constraint
+The sqlite3_wal_checkpoint_APIName is equivalent to sqlite3_wal_checkpoint_v2_APIName
+Checkpoints initiated by this mechanism are PASSIVE
+there is no `` blocking connection '' , so invoking sqlite3_unlock_notify_APIName results in the unlock-notify callback being invoked immediately
+The sqlite3_value_subtype_APIName function returns the subtype for an application-defined SQL function argument V.
+The subtype information can be used to pass a limited amount of context from one SQL function to another
+The callback registered by sqlite3_wal_autocheckpoint_APIName replaces any existing callback registered using sqlite3_wal_hook_APIName
+The wal_autocheckpoint pragma can be used to invoke this interface from SQL
+But the newer and more powerful sqlite3_wal_checkpoint_v2_APIName interface was added
+Applications might use this to substitute a return value that is less expensive to compute and that the corresponding xUpdate method understands as a "no-change" value
+The sqlite3_user_data_APIName interface returns a copy of the pointer that was the pUserData parameter of the sqlite3_create_function_APIName and sqlite3_create_function16_APIName routines that originally registered the application defined function
+Passing zero or a negative value as the nFrame parameter disables automatic checkpoints entirely
+it will not be invoked
+Likewise , registering a callback using sqlite3_wal_hook_APIName disables the automatic checkpoint mechanism configured by sqlite3_wal_autocheckpoint_APIName
+SQLite checks if there are any currently executing SELECT statements that belong to the same connection
+hook is not invoked
+The update hook is not invoked
+All calls obtain an exclusive `` checkpoint '' lock on the database file
+Every new database connection defaults to having the auto-checkpoint enabled with a threshold of 1000 or SQLITE_DEFAULT_WAL_AUTOCHECKPOINT pages
+The PRAGMA wal_checkpoint command can be used to invoke this interface from SQL
+the values written to output parameters pnLog and pnCkpt are undefined
+the checkpoint operation proceeds from that point in the same way as SQLITE_CHECKPOINT_PASSIVE_API_constant - checkpointing as many frames as possible without blocking any further
+The SQLITE_CHECKPOINT_FULL_API_constant , RESTART and TRUNCATE modes also obtain the exclusive `` writer '' lock on the database file
+Calling sqlite3_wal_hook_APIName replaces any previously registered write-ahead log callback
+The sqlite3_close_APIName and sqlite3_close_v2_APIName routines are destructors for the sqlite3 object
+The busy-handler is also invoked
+The sqlite3_wal_checkpoint_v2_APIName interface runs a checkpoint operation on database sqlite3_wal_checkpoint_v2_APIParam_2 of database connection sqlite3_wal_checkpoint_v2_APIParam_1 in mode sqlite3_wal_checkpoint_v2_APIParam_3
+The names returned are the original un-aliased names of the database, table, and column
+The left-most column is column 0 for these routines
+Calling sqlite3_close_APIName or sqlite3_close_v2_APIName with a NULL pointer argument is a harmless no-op
+Note that upon successful completion of an SQLITE_CHECKPOINT_TRUNCATE_API_constant , the log file will have been truncated to zero bytes and so both pnLog and pnCkpt will be set to zero
+Note that the sqlite3_wal_autocheckpoint_APIName interface and the wal_autocheckpoint pragma both invoke sqlite3_wal_hook_APIName and will overwrite any prior sqlite3_wal_hook_APIName settings
+The sqlite3_wal_hook_APIName function is used to register a callback that is invoked each time data is committed to a database in wal mode
+In brief , sqlite3_wal_checkpoint_APIName causes the content in the write-ahead log for database sqlite3_wal_checkpoint_APIParam_2 on database connection sqlite3_wal_checkpoint_APIParam_1 to be transferred into the database file and for the write-ahead log to be reset
+The sqlite3_update_hook_APIName interface registers a callback function with the database connection identified by the first argument to be invoked
+The sqlite3_wal_autocheckpoint_APIName is a wrapper around sqlite3_wal_hook_APIName that causes any database on database connection D to automatically checkpoint after committing a transaction
+the first argument passed is a copy of the second argument to sqlite3_collation_needed_APIName or sqlite3_collation_needed16_APIName
+the specified operation is attempted on all WAL databases attached to database connection sqlite3_wal_checkpoint_v2_APIParam_1
+neither connection will proceed and the system may remain deadlocked indefinitely
+the system is also considered to be deadlocked
+it is invoked once with the set of void context pointers specified by the blocked connections bundled together into an array
+CREATE TABLE t1
+given the database schema
+the following statement to be compiled
+SQLite uses dynamic run-time typing
+SELECT c1 + 1 , c1 FROM t1
+These functions return information about the Nth result column returned by the statement, where N is the second function argument
+As with all other SQLite APIs, those whose names end with "16" return UTF-16 encoded strings and the other functions return UTF-8
+Otherwise, they return the name of the attached database, table, or column that query result column was extracted from
+The second parameter is the column number
+These routines return the name assigned to a particular column in the result set of a SELECT statement
+SQLite is strongly typed , but the typing is dynamic not static
+The first parameter is the prepared statement that implements the SELECT statement
+The commit and rollback hook callbacks are not reentrant
+The _database_ routines return the database name, the _table_ routines return the table name, and the origin_ routines return the column name
+Registering a NULL function disables the callback
+The sqlite3_column_name_APIName interface returns a pointer to a zero-terminated UTF-8 string and sqlite3_column_name16_APIName returns a pointer to a zero-terminated UTF-16 string
+The pArg argument is passed through to the callback
+Type is associated with individual values , not with the containers used to hold those values
+the commit is converted into a rollback
+the COMMIT operation is allowed to continue normally
+the COMMIT is converted into a ROLLBACK
+The SQLITE_ prefix is omitted from any strings returned by sqlite3_compileoption_get_APIName
+The sqlite3_close_v2_APIName interface is intended for use with host languages that are garbage collected , and where the order in which destructors are called is arbitrary
+Any callback set by a previous call to sqlite3_commit_hook_APIName for the same database connection is overridden
+Whitespace and comments that follow the final semicolon are ignored
+The SQLITE _ prefix may be omitted from the option name passed to sqlite3_compileoption_used_APIName
+The rollback hook is invoked on a rollback that results from a commit hook returning non-zero, just as it would be with any other rollback
+the declared type of the table column is returned by sqlite3_column_decltype_APIName
+The sqlite3_compileoption_get_APIName function allows iterating over the list of options that were defined at compile time by returning the N-th compile time option string
+that error will propagate back up through the SQLite code base to cause the statement that provoked the callback to report an error , will have still occurred
+These routines provide a means to determine the database , table , and table column that is the origin of a particular result column in SELECT statement
+The sqlite3_commit_hook_APIName interface registers a callback function to be invoked
+These routines do not parse the SQL statements thus will not detect syntactically incorrect SQL
+it is passed the names of undefined collation sequences as strings encoded in UTF-8
+The first parameter passed to the callback function is a copy of the third parameter passed to sqlite3_wal_hook_APIName when registering the callback
+The rollback callback is not invoked
+This is different from every other SQLite interface
+So just a particular type does not mean that the data stored in that column is of the declared type
+Support for the diagnostic functions sqlite3_compileoption_used_APIName and sqlite3_compileoption_get_APIName may be omitted by specifying the SQLITE_OMIT_COMPILEOPTION_DIAGS option at compile time
+The inconsistency is unfortunate but can not be changed without breaking backwards compatibility
+The module name is registered on the database connection specified by sqlite3_create_module_APIParam_1
+The name of the module is given by the second parameter
+The fifth argument , xCallback , is a pointer to the collating function
+These routines are used to register a new virtual table module name
+Collation names that compare equal according to sqlite3_strnicmp_APIName are considered to be the same name
+These functions add , remove , or modify a collation associated with the database connection specified as the first argument
+Semicolons that are embedded within string literals or quoted identifier names or comments are not independent tokens and thus do not count as a statement terminator
+The fourth argument , pArg , is an application data pointer that is passed through as the first argument to the collating function callback
+The callback is invoked by SQLite after the commit has taken place and the associated write-lock on the database released , so the implementation may read , write or checkpoint the database as required
+the collating function is deleted
+The xDestroy callback is not called
+These routines are useful during command-line input to determine if the currently entered text seems to form a complete SQL statement or if additional input is needed before sending the text into SQLite for parsing
+sqlite3_initialize_APIName is invoked automatically by sqlite3_complete16_APIName
+the name of the column is unspecified and may change from one release of SQLite to the next
+The name of a result column is the value of the `` AS '' clause for that column
+A statement is judged to be complete
+To avoid having to register all collation sequences before a database can be used , a single callback function may be registered with the database connection to be invoked
+For the purposes of this API, a transaction is said to have been rolled back
+The values returned by sqlite3_errcode_APIName and/or sqlite3_extended_errcode_APIName might change with each API call
+The sqlite3_create_module_APIName interface is equivalent to sqlite3_create_module_v2_APIName with a NULL destructor
+The third parameter is a pointer to the implementation of the virtual table module
+Memory to hold the error message string is managed internally
+The sqlite3_errstr_APIName interface returns the English-language text that describes the result code, as UTF-8
+The sqlite3_create_module_v2_APIName interface has a fifth parameter which is a pointer to a destructor for the sqlite3_create_module_APIParam_4
+The sqlite3_extended_errcode_APIName interface is the same except that it always returns the extended result code even when extended result codes are disabled
+The Windows VFS uses native malloc_APIName and free_APIName for some operations
+The SQLITE_TRACE_API_constant_SIZE_LIMIT compile-time option limits the size of bound parameter expansions
+At a minimum , literal values will be replaced with suitable placeholders
+Passing a NULL pointer to sqlite3_free_APIName is harmless
+The strings returned by sqlite3_sql_APIName and sqlite3_normalized_sql_APIName are managed by SQLite and are automatically freed when the prepared statement is finalized
+`` Core '' in the previous sentence does not include operating-system specific VFS implementation
+The sqlite3_expanded_sql_APIName interface returns a pointer to a UTF-8 string containing the SQL text of prepared statement sqlite3_normalized_sql_APIParam_1 with bound parameters expanded
+However , the error string might be overwritten or deallocated by subsequent calls to other SQLite interface functions
+the prior allocation is not freed
+In that case , the error code and message may or may not be set
+SQLite will invoke the destructor function
+The SQLite core uses these three routines for all of its own internal memory allocation needs
+Calling sqlite3_free_APIName with a pointer previously returned by sqlite3_malloc_APIName or sqlite3_realloc_APIName releases that memory so that it might be reused
+The sqlite3_normalized_sql_APIName interface returns a pointer to a UTF-8 string containing the normalized SQL text of prepared statement P. The semantics used to normalize a SQL statement are unspecified and subject to change
+The destructor will also be invoked
+The value returned by sqlite3_msize_APIName might be larger than the number of bytes requested when sqlite3_msize_APIParam_1 was allocated
+The sqlite3_malloc_APIName routine returns a pointer to a block of memory at least N bytes in length, where N is the parameter
+Multiple collating functions can be registered using the same name but with different eTextRep parameters and SQLite will use whichever function requires the least amount of data transformation
+The sqlite3_realloc_APIName interface attempts to resize a prior memory allocation sqlite3_realloc_APIParam_1 to be at least sqlite3_realloc_APIParam_2 bytes
+This is a legacy interface that is preserved for backwards compatibility
+sqlite3_realloc_APIName returns a pointer to a memory allocation of at least sqlite3_realloc_APIParam_2 bytes in size
+The table conceptually has a number of rows and columns
+The collating function callback is invoked with a copy of the pArg application data pointer and with two strings in the encoding specified by the eTextRep argument
+the xDestroy callback is invoked on pArg
+The sqlite3_create_collation_v2_APIName works like sqlite3_create_collation_APIName with the addition that
+A result table records the complete query results from one or more queries
+The sqlite3_sql_APIName interface returns a pointer to a copy of the UTF-8 SQL text used to create prepared statement sqlite3_normalized_sql_APIParam_1
+A result table is memory data structure created by the sqlite3_get_table_APIName interface
+the second error will be reported
+sqlite3_msize_APIName returns the size of that memory allocation in bytes
+Memory allocation errors were detected , but they were reported back as SQLITE_CANTOPEN_API_constant or SQLITE_IOERR_API_constant rather than SQLITE_NOMEM_API_constant
+no new module is create
+and any existing modules with the same name are dropped
+min_APIName bytes of the prior allocation are copied into the beginning of buffer returned by sqlite3_realloc_APIName and the prior allocation is freed
+The memory returned by sqlite3_malloc_APIName, sqlite3_realloc_APIName, sqlite3_malloc64_APIName, and sqlite3_realloc64_APIName is always aligned to at least an 8 byte boundary, or to a 4 byte boundary
+that means the interface was invoked incorrectly by the application
+These numbers are obtained separately
+There are (N+1)*M elements in the array.
+The sqlite3_free_APIName routine is a no-op
+The remaining entries all point to query results
+azResult holds this content
+But these numbers are not part of the result table itself
+There are two column and three rows
+Thus the result table has 8 entries
+A result table is an array of pointers to zero-terminated UTF-8 strings
+In SQLite version 3.5.0 and 3.5.1 , it was possible to define the SQLITE_OMIT_MEMORY_ALLOCATION which would cause the built-in implementation of these routines to be omitted
+Note the last bullet
+Let N be the number of rows and M be the number of columns
+A sqlite3_free_table_APIParam_1 table might consist of one or more memory allocations
+All other values are in their UTF-8 zero-terminated string representation as returned by sqlite3_column_text_APIName
+The sqlite3_initialize_APIName routine initializes the SQLite library
+its behavior is identical to calling sqlite3_malloc_APIName
+The sqlite3_get_table_APIName interface is implemented as a wrapper around sqlite3_exec_APIName
+the behavior is exactly the same as calling sqlite3_free_APIName
+SQLite is free to discard the metadata at any time , including
+Suppose the sqlite3_free_table_APIParam_1 table is stored in an array names azResult
+The first M pointers point to zero-terminated strings that contain the names of the columns
+To avoid this , each thread can obtain exclusive use of the database connection sqlite3_db_mutex_APIParam_1 by invoking sqlite3_mutex_enter before beginning to use sqlite3_db_mutex_APIParam_1 and invoking sqlite3_mutex_leave after all calls to the interfaces listed here are completed
+The fourth parameter is an arbitrary client data pointer that is passed through into the xCreate and xConnect methods of the virtual table module
+it might be the case that a second error occurs on a separate thread in between the time of the first error and the call to these interfaces
+Prior to SQLite version 3.7.10 , the Windows OS interface layer called the system malloc_APIName and free_APIName directly and
+All other calls are harmless no-ops
+Similarly , sqlite3_shutdown_APIName will invoke sqlite3_os_end_APIName
+Only an effective call of sqlite3_initialize_APIName does any initialization
+The sqlite3_shutdown_APIName routine deallocates any resources that were allocated by sqlite3_initialize_APIName
+The sqlite3_get_table_APIName routine does not have access to any internal data structures of SQLite
+The destructor X in sqlite3_set_auxdata_APIName might be called immediately, before the sqlite3_set_auxdata_APIName interface even returns
+These functions may be used by SQL functions to associate metadata with argument values
+All other valid calls to sqlite3_shutdown_APIName are harmless no-ops
+The sqlite3_set_auxdata_APIName interface saves P as metadata for the N-th argument of the application-defined function
+Among other things , sqlite3_initialize_APIName will invoke sqlite3_os_init_APIName
+The sqlite3_get_auxdata_APIName interface returns a pointer to the metadata associated by the sqlite3_set_auxdata_APIName function with the Nth argument value to the application-defined function
+Subsequent calls to sqlite3_get_auxdata_APIName return sqlite3_set_auxdata_APIParam_3 from the most recent sqlite3_set_auxdata_APIName call
+An example of where this might be useful is in a regular-expression matching function
+These routines are designed to aid in process initialization and shutdown on embedded systems
+The sqlite3_get_table_APIName function evaluates one or more semicolon-separated SQL statements in the zero-terminated UTF-8 string of its 2nd parameter and returns a result table to the pointer given in its 3rd parameter
+As an example of the result table format , suppose a query result is as follows
+The compiled version of the regular expression can be stored as metadata associated with the pattern string
+The sqlite3_keyword_count_APIName interface returns the number of distinct keywords understood by SQLite
+Future enhancements may make use of negative N values to define new kinds of function caching behavior
+The sqlite3_os_end_APIName routine undoes the effect of sqlite3_os_init_APIName
+The parser used by SQLite is forgiving
+The sqlite3_os_init_APIName routine does operating-system specific initialization of the SQLite library
+The sqlite3_os_init_APIName interface is called automatically by sqlite3_initialize_APIName and sqlite3_os_end_APIName is called by sqlite3_shutdown_APIName
+Also , new keywords may be added to future releases of SQLite
+These routines provide access to the set of SQL language keywords recognized by SQLite
+The sqlite3_keyword_check_APIName returning non-zero
+as long as the pattern string remains the same , the compiled regular expression can be reused on multiple invocations of the same function
+Note that the number of keywords understood by SQLite can depend on compile-time options
+As a consequence , errors that occur in the wrapper layer outside of the internal sqlite3_exec_APIName call are not reflected in subsequent calls to sqlite3_errcode_APIName or sqlite3_errmsg_APIName
+Cautious programmers might include assert_APIName statements in their application to verify that values returned by these interfaces match the macros in the header, and thus ensure that the application is compiled with matching library and header files
+The sqlite3_libversion_APIName function is provided for use in DLLs
+The sqlite3_libversion_APIName function returns a pointer to the to the sqlite3_version[] string constant
+the statement "CREATE TABLE BEGIN_APIName;" is accepted by SQLite, and creates a new table named "BEGIN" with three columns named "REPLACE", "PRAGMA", and "END".
+The sqlite3_memory_used_APIName routine returns the number of bytes of memory currently outstanding
+The value returned by sqlite3_memory_highwater_APIName is the high-water mark prior to the reset
+In practice , metadata is preserved between function calls for function parameters that are compile-time constants , including literal values and parameters and expressions composed from the same
+The sqlite3_mprintf_APIName and sqlite3_vmprintf_APIName routines write their results into memory obtained from sqlite3_malloc64_APIName
+Applications can uses these routines to determine whether or not a specific identifier needs to be escaped so as not to confuse the parser
+The sqlite3_vsnprintf_APIName routine is a varargs version of sqlite3_snprintf_APIName
+The sqlite3_snprintf_APIName routine is similar to `` snprintf_APIName '' from the standard C library
+The SQLite core uses these routines for thread synchronization
+Note that the order of the first two parameters is reversed from snprintf_APIName
+It is often possible to use a keyword as an identifier as long as such use does not result in a parsing ambiguity
+The result is written into the buffer supplied as sqlite3_snprintf_APIParam_2 whose size is given by sqlite3_snprintf_APIParam_1
+An appropriate implementation is selected automatically at compile-time
+This is an historical accident that can not be fixed without breaking backwards compatibility
+the SQLite library will be automatically initialized
+sqlite3_open_APIName calls sqlite3_initialize_APIName so
+These routines are work-alikes of the `` printf_APIName '' family of functions from the standard C library
+These routines understand most of the common formatting options from the standard library printf_APIName plus some additional non-standard formats
+The following implementations are available in the SQLite core
+The SQLite source code contains multiple implementations of these mutex routines
+The SQLITE_MUTEX_PTHREADS and SQLITE_MUTEX_W32 implementations are appropriate for use on Unix and Windows
+After each call to sqlite3_set_auxdata_APIName where X is not NULL , SQLite will invoke the destructor function X with parameter P exactly once
+the behavior exhibited might become the default behavior in some future release of SQLite.
+under some circumstances the associated metadata may be preserved
+Appropriate implementations for sqlite3_os_init_APIName and sqlite3_os_end_APIName are built into SQLite
+the last four characters of the hash might be different from SQLITE_SOURCE_ID_API_constant
+The sqlite3_keyword_name_APIName interface finds the N-th keyword and makes Z point to that keyword expressed as UTF8 and writes the number of bytes in the keyword into L
+SQLite provides these two interfaces for reporting on the status of the sqlite3_malloc_APIName , sqlite3_free_APIName , and sqlite3_realloc_APIName routines , which form the built-in memory allocation subsystem
+As long as the buffer size is greater than zero , sqlite3_snprintf_APIName guarantees that the buffer is always zero-terminated
+The first parameter `` n '' is the total size of the buffer , including space for the zero terminator
+The sqlite3_version -LSB- -RSB- string constant contains the text of SQLITE_VERSION_API_constant macro
+Typical tasks performed by these routines include allocation or deallocation of static resources , initialization of global variables , setting up a default sqlite3_vfs module , or setting up a default configuration using sqlite3_config_APIName
+The memory high-water mark is reset to the current value of sqlite3_memory_used_APIName
+the automatic calls to sqlite3_initialize_APIName are omitted
+The sqlite3_mutex_alloc_APIName routine allocates a new mutex and returns a pointer to it
+The other allowed parameters to sqlite3_mutex_alloc_APIName each return a pointer to a static preexisting mutex
+The first two constants cause sqlite3_mutex_alloc_APIName to create a new mutex
+Future versions of SQLite may add additional static mutexes
+Nine static mutexes are used by the current version of SQLite
+The sqlite3_mutex_free_APIName routine deallocates a previously allocated dynamic mutex
+code that links against SQLite is permitted to use any of these routines
+The sqlite3_mutex_enter_APIName and sqlite3_mutex_try_APIName routines attempt to enter a mutex
+Note that sqlite3_mutex_alloc_APIName returns a different mutex on every call
+The sqlite3_mutex_held_APIName and sqlite3_mutex_notheld_APIName routines are intended for use inside assert_APIName statements
+Mutexes created using SQLITE_MUTEX_RECURSIVE_API_constant can be entered multiple times by the same thread
+the mutex subsystem might return such a mutex in response to SQLITE_MUTEX_FAST_API_constant
+The values returned by sqlite3_memory_used_APIName and sqlite3_memory_highwater_APIName include any overhead added by SQLite in its implementation of sqlite3_malloc_APIName, but not overhead added by the any underlying system library routines that sqlite3_malloc_APIName may call
+The implementation is not required to provide versions of these routines that actually work
+A database connection handle is usually returned in ppDb
+These routines open an SQLite database file as specified by the sqlite3_open_APIParam_1 argument
+The sqlite3_mutex_leave_APIName routine exits a mutex that was previously entered by the same thread
+But the reason the mutex does not exist is
+For the static mutex types, the same mutex is returned by sqlite3_mutex_alloc_APIName on every call that has the same type number
+The default encoding will be UTF-8 for databases created using sqlite3_open_APIName or sqlite3_open_v2_APIName
+The SQLITE_MUTEX_NOOP implementation is a set of routines that does no real locking and is appropriate for use in a single-threaded application
+This private database will be automatically deleted as soon as the database connection is closed
+Future versions of SQLite might make use of additional special filenames that begin with the ":" character.
+The SQLITE_OPEN_PRIVATECACHE_API_constant flag causes the database connection to not participate in shared cache mode
+The new mutex is recursive
+no mutex implementation is included with the library
+URI filenames are parsed according to RFC 3986
+The sqlite3_open_APIParam_1 argument is interpreted as UTF-8 for sqlite3_open_APIName and sqlite3_open_v2_APIName and as UTF-16 in the native byte order for sqlite3_open16_APIName
+Future versions of SQLite might understand additional query parameters
+URI sqlite3_open_APIParam_1 interpretation is turned off by default , but future releases of SQLite might enable URI sqlite3_open_APIParam_1 interpretation by default
+The sqlite3_open_v2_APIName interface works like sqlite3_open_APIName except that it accepts two additional parameters for additional control over the new database connection
+The sqlite3_errmsg_APIName or sqlite3_errmsg16_APIName routines can be used to obtain an English language description of the error following a failure of any of the sqlite3_open_APIName routines
+Note to Windows users
+URI hexadecimal escape sequences are supported within the path and query components of a URI
+Note to Windows Runtime users
+the default sqlite3_vfs object is used
+The third parameter to sqlite3_preupdate_hook_APIName is passed through as sqlite3_preupdate_depth_APIParam_1 to callbacks
+Specifying an unknown parameter in the query component of a URI is not an error
+The preupdate hook is disabled by invoking sqlite3_preupdate_hook_APIName with a NULL pointer as sqlite3_preupdate_count_APIParam_2
+The SQLITE_OPEN_SHAREDCACHE_API_constant flag causes the database connection to be eligible to use shared cache mode , regardless of whether or not shared cache is enabled using sqlite3_enable_shared_cache_APIName
+SQLite uses the path component of the URI as the name of the disk file which contains the database
+all three routines behave as no-ops
+a private , temporary on-disk database will be created
+The fifth parameter to the preupdate callback is the name of the table that is being modified
+The second parameter to the preupdate callback is a pointer to the database connection that registered the preupdate hook
+then the sqlite3_open_APIParam_1 is interpreted as a URI.
+The fragment component of a URI , , is ignored
+the database connection opens in the serialized threading mode unless single-thread was previously selected at compile-time or start-time
+URI sqlite3_open_APIParam_1 interpretation is enabled 
+a private, temporary in-memory database is created for the connection.
+the database connection opens in the multi-thread threading mode as long as the single-thread mode has not been set at compile-time or start-time
+The sqlite3_value that P points to will be destroyed 
+The sqlite3_preupdate_count_APIName interface returns the number of columns in the row that is being inserted, updated, or deleted
+The sqlite3_preupdate_old_APIName , sqlite3_preupdate_new_APIName , sqlite3_preupdate_count_APIName , and sqlite3_preupdate_depth_APIName interfaces provide additional information about a preupdate event
+At most one preupdate hook may be registered at a time on a single database connection
+Additional sqlite3_trace_APIName callbacks might occur as each triggered subprogram is entered
+each call to sqlite3_preupdate_hook_APIName overrides the previous setting
+Refer to the SQL parameter documentation for additional information
+The callbacks for triggers contain a UTF-8 SQL comment that identifies the trigger
+The fourth parameter to the preupdate callback is the name of the database within the database connection that is being modified
+These routines register callback functions that can be used for tracing and profiling the execution of SQL statements
+The sqlite3_preupdate_hook_APIName interface registers a callback function that is invoked prior to each INSERT , UPDATE , and DELETE operation on a database table
+The callback function registered by sqlite3_profile_APIName is invoked as each SQL statement finishes
+Future versions of SQLite might provide greater resolution on the profiler callback
+By default , the error code is SQLITE_ERROR_API_constant
+Hence, the calling function can deallocate or modify the text after they return without harm
+The sqlite3_result_null_APIName interface sets the return value of the application-defined function to be NULL
+The sqlite3_result_error_APIName and sqlite3_result_error16_APIName routines make a private copy of the error message text before they return
+These routines are used by the xFunc or xFinal callbacks that implement SQL functions and aggregates
+For an INSERT or UPDATE on a rowid table the seventh parameter is the final rowid value of the row being inserted or updated
+The SQLITE_TRACE_API_constant_SIZE_LIMIT compile-time option can be used to limit the length of bound parameter expansion in the output of sqlite3_trace_APIName
+The sqlite3_result_error_code_APIName function changes the error code returned by SQLite as a result of an error in a function
+A subsequent call to sqlite3_result_error_APIName or sqlite3_result_error16_APIName resets the error code to SQLITE_ERROR_API_constant
+the preupdate hook is not invoked for changes to virtual tables or to system tables like sqlite_master or sqlite_stat1
+The sqlite3_result_int_APIName interface sets the return value of the application-defined function to be the 32-bit signed integer value given in the 2nd argument
+The sqlite3_result_int64_APIName interface sets the return value of the application-defined function to be the 64-bit signed integer value given in the 2nd argument
+The sqlite3_result_error_nomem_APIName interface causes SQLite to throw an error indicating that a memory allocation failed
+The sqlite3_result_value_APIName interface makes a copy of the sqlite3_value so that the sqlite3_value specified in the parameter may change or be deallocated after sqlite3_result_value_APIName returns without harm
+SQLite makes a copy of the result into space obtained from sqlite3_malloc_APIName before it returns
+The sqlite3_result_text_APIName, sqlite3_result_text16_APIName, sqlite3_result_text16le_APIName, and sqlite3_result_text16be_APIName interfaces set the return value of the application-defined function to be a text string which is represented as UTF-8, UTF-16 native byte order, UTF-16 little endian, or UTF-16 big endian, respectively
+The highest recorded value is returned by sqlite3_status_APIName in pHighwater
+The callback function registered by sqlite3_trace_APIName is invoked at various times
+The current value of the parameter is returned by sqlite3_status_APIName into pCurrent
+These methods do not return a result code
+These interfaces return the current status of an sqlite3_str object
+The length returned by sqlite3_str_length_APIName does not include the zero-termination byte
+The sqlite3_result_double_APIName interface sets the result from an application-defined function to be a floating point value specified by its 2nd argument
+SQLite takes the text result from the application from the 2nd parameter of the sqlite3_result_text interfaces
+The sqlite3_result_error_toobig_APIName interface causes SQLite to throw an error indicating that a string or BLOB is too long to represent
+The profile callback contains the original statement text and an estimate of wall-clock time of how long that statement took to run
+Some parameters do not record the highest value
+The sqlite3_preupdate_old_APIName interface writes into sqlite3_preupdate_old_APIParam_3 a pointer to a protected sqlite3_value that contains the value of the Nth column of the table row before it is updated
+These functions work very much like the parameter binding family of functions used to bind values to host parameters in prepared statements
+SQLite uses the string pointed to by the 2nd parameter of sqlite3_result_error_APIName or sqlite3_result_error16_APIName as the text of an error message
+Recognized integer codes are of the form SQLITE_STATUS _
+For these latter parameters nothing is written into pCurrent
+The first argument is an integer code for the specific parameter to measure
+The sqlite3_result_pointer_APIName routine is part of the pointer passing interface added for SQLite 3.20.0
+SQLite takes as the error message all text up through the first zero character
+SQLite takes that many bytes from the 2nd parameter as the error message
+The sqlite3_preupdate_new_APIName interface writes into sqlite3_preupdate_new_APIParam_3 a pointer to a protected sqlite3_value that contains the value of the Nth column of the table row after it is updated
+The value of the seventh parameter passed to the callback function is not defined for operations on WITHOUT ROWID tables , or for INSERT operations on rowid tables
+For those parameters nothing is written into pHighwater and the sqlite3_status64_APIParam_4 is ignored
+These interfaces add content to an sqlite3_str object previously obtained from sqlite3_str_new_APIName
+This will be `` main '' for the main database or `` temp '' for TEMP tables or the name given after the AS keyword in the ATTACH statement for attached databases
+For an UPDATE or DELETE operation on a rowid table , the sixth parameter passed to the preupdate callback is the initial rowid of the row being modified or deleted
+The sqlite3_result_zeroblob_APIName and sqlite3_result_zeroblob64_APIName interfaces set the result of the application-defined function to be a BLOB containing all zero bytes and sqlite3_result_zeroblob64_APIParam_2 bytes in size
+The sqlite3_result_value_APIName interface sets the result of the application-defined function to be a copy of the unprotected sqlite3_value object specified by the 2nd parameter
+These interfaces are used to retrieve runtime status information about the performance of SQLite , and optionally to reset various highwater marks
+The sqlite3_result_blob_APIName interface sets the result from an application-defined function to be the BLOB whose content is pointed to by the second parameter and which is N bytes long where N is the third parameter
+SQLite takes result text from the 2nd parameter through the first zero character
+Invoking any of these routines from outside of a preupdate callback or with a database connection pointer that is different from the one supplied to the preupdate callback results in undefined and probably undesirable behavior
+it is a pointer to a destructor for the sqlite3_result_pointer_APIParam_2 parameter
+the highest record value is reset after pHighwater is written
+then as many bytes (not characters) of the text pointed to by the 2nd parameter are taken as the application-defined function result
+it is interpreted as an absolute path
+the path is interpreted as a relative path
+SQLite assumes that the text or BLOB result is in constant space and does not copy the content of the parameter nor call a destructor on the content when it has finished using that result
+A hexadecimal escape sequence consists of a percent sign - '' % '' - followed by exactly two hexadecimal digits specifying an octet value
+Otherwise no conversion occurs
+Other interfaces might change the datatype for an sqlite3_value object
+These routines extract type , size , and content information from protected sqlite3_value objects
+The sqlite3_str_appendchar_APIName method appends sqlite3_str_append_APIParam_3 copies of the single-byte character sqlite3_str_appendchar_APIParam_3 onto the end of sqlite3_str object X
+The sqlite3_value_numeric_type_APIName interface attempts to apply numeric affinity to the value
+The sqlite3_str_appendall_APIName method appends the complete content of zero-terminated string sqlite3_str_appendall_APIParam_2 onto the end of sqlite3_str object X
+The sqlite3_value_text16be_APIName and sqlite3_value_text16le_APIName interfaces extract UTF-16 strings as big-endian and little-endian respectively
+The sqlite3_bind_pointer_APIName routine is part of the pointer passing interface added for SQLite 3.20.0
+Please pay particular attention to the fact that the pointer returned from sqlite3_value_blob_APIName, sqlite3_value_text_APIName, or sqlite3_value_text16_APIName can be invalidated by a subsequent call to sqlite3_value_bytes_APIName, sqlite3_value_bytes16_APIName, sqlite3_value_text_APIName, or sqlite3_value_text16_APIName
+Names are case sensitive
+The sqlite3_str_appendf and sqlite3_str_vappendf_APIName interfaces uses the built-in printf functionality of SQLite to append formatted text onto the end of sqlite3_str object X
+New VFSes are registered with sqlite3_vfs_register_APIName
+Protected sqlite3_value objects are used to pass parameter information into implementation of application-defined SQL functions and virtual tables
+The sqlite3_value_free_APIName interface frees an sqlite3_value object previously obtained from sqlite3_value_dup_APIName
+WinRT and UWP
+Names are zero-terminated UTF-8 strings
+The sqlite3_value_text16_APIName interface extracts a UTF-16 string in the native byte-order of the host machine
+The same VFS can be registered multiple times without injury
+Unregister a VFS with the sqlite3_vfs_unregister_APIName interface
+The choice for the new VFS is arbitrary
+New VFSes can be registered and existing VFSes can be unregistered
+Within an xUpdate method , any value appear to be a NULL value
+The leftmost SQL parameter has an index of 1
+The index for "?NNN" parameters is the value of NNN.
+This means that an attempt is made to convert the value to an integer or floating point
+Bindings are not cleared by the sqlite3_reset_APIName routine
+Most SQLite builds come with a single default VFS that is appropriate for the host computer
+Unbound parameters are interpreted as NULL
+A negative value for the zeroblob results in a zero-length BLOB
+The second argument is the index of the SQL parameter to be set
+A virtual filesystem is an sqlite3_vfs object that SQLite uses to interact with the underlying operating system
+The preferred routine to use is sqlite3_prepare_v2_APIName
+To make an existing VFS into the default VFS , register it again with the sqlite3_vfs_register_APIParam_2 flag set
+The sqlite3_bind_zeroblob_APIName routine binds a BLOB of length N that is filled with zeroes
+The values of these parameters can be set using the sqlite3_bind __ APIName routines defined here
+Whether or not a persistent internal datatype conversion occurs is undefined and may change from one release of SQLite to the next
+Zeroblobs are intended to serve as placeholders for BLOBs whose content is later written using incremental BLOB I/O routines
+Each new VFS becomes the default VFS
+the conversion is performed
+A zeroblob uses a fixed amount of memory
+The index for named parameters can be looked up using the sqlite3_bind_parameter_index_APIName API
+that fact is recorded in the sqlite3_str object and can be recovered by a subsequent call to sqlite3_str_errcode_APIName
+SQLite uses internally
+The sqlite3_stricmp_APIName and sqlite3_strnicmp_APIName APIs allow applications and extensions to compare the contents of two buffers containing UTF-8 strings in a case-independent fashion , using the same definition of `` case independence '' that
+These are utility routines , useful to VFS implementations , that , and if so obtains the value of that query parameter
+The sqlite3_result_pointer_APIName interface sets the result to an SQL NULL value , just like sqlite3_result_null_APIName , except that it also associates the host-language pointer sqlite3_result_pointer_APIParam_2 or type sqlite3_result_pointer_APIParam_3 with that NULL value such that the pointer can be retrieved within an application-defined SQL function using sqlite3_value_pointer_APIName
+The UTF-16 interfaces are provided as a convenience
+sqlite3_prepare_v3_APIName has an extra `` prepFlags '' option that is used for special purposes
+Or, in other words, these routines are constructors for the prepared statement object.
+The UTF-16 interfaces work by converting the input text into UTF-8 , invoking the corresponding UTF-8 interface
+ppStmt is left pointing to a compiled prepared statement that can be executed using sqlite3_step_APIName
+The sqlite3_prepare_v2_APIName interface works exactly the same as sqlite3_prepare_v3_APIName with a zero prepFlags parameter
+a non-NULL value will be copied into memory obtained from sqlite3_malloc prior to being used
+The sqlite3_prepare_APIName , sqlite3_prepare_v2_APIName , and sqlite3_prepare_v3_APIName interfaces use UTF-8 , and sqlite3_prepare16_APIName , sqlite3_prepare16_v2_APIName , and sqlite3_prepare16_v3_APIName use UTF-16
+no prepared statement is generated
+The sqlite3_win32_set_directory interface is used to set the value associated with the sqlite3_temp_directory or sqlite3_data_directory variable , to sqlite3_win32_set_directory_APIParam_2 , depending on the value of the sqlite3_win32_set_directory_APIParam_1 parameter
+second and subsequent occurrences have the same index as the first occurrence
+sqlite3_prepare_APIParam_2 is read up to the first zero terminator
+it is the number of bytes read from sqlite3_prepare_v2_APIParam_2
+then the resulting string value will contain embedded NULs
+The first argument , `` db '' , is a database connection obtained from a prior successful call to sqlite3_open_APIName , sqlite3_open_v2_APIName or sqlite3_open16_APIName
+These functions are used to add SQL functions or aggregates or to redefine the behavior of existing SQL functions or aggregates
+The built-in random_APIName SQL function is an example of a function that is not deterministic
+Built-in functions may be overloaded by new application-defined functions
+More details regarding the implementation of aggregate window functions are available here
+Function sqlite3_create_window_function_APIName is similar , but allows the user to supply the extra callback functions needed by aggregate window functions
+The implementation of the function can gain access to this pointer using sqlite3_user_data_APIName
+The destructor is also invoked
+The same SQL function may be registered multiple times using different preferred text encodings , with different implementations for each encoding
+The authorizer is disabled by default
+Disable the authorizer by installing a NULL callback
+Each call to sqlite3_set_authorizer overrides the previous call
+Autocommit mode is on by default
+Autocommit mode is disabled by a BEGIN statement
+The value of the sqlite3_data_directory variable is intended to act as a replacement for the current directory on the sub-platforms of Win32 where that concept is not present , e.g
+This routine registers an authorizer callback with a particular database connection , supplied in the first argument
+SQLite will use the implementation that most closely matches the way in which the SQL function is used
+The sixth , seventh , eighth and ninth parameters passed to sqlite3_create_window_function are pointers to C-language callbacks that implement the new function
+the fourth parameter is ignored
+The destructor is invoked or
+pzTail is made to point to the first byte past the end of the first SQL statement in sqlite3_prepare_APIParam_2
+SQLite will pick the one that involves the least amount of data conversion
+the SQL function or aggregate may take any number of arguments between 0 and the limit set by sqlite3_limit_APIName
+it is destructor for the application data pointer
+P. SQLite will invoke the destructor D with a single argument of P
+The sqlite3_busy_handler_APIName interface is used to implement sqlite3_busy_timeout_APIName and PRAGMA busy_timeout
+another attempt is made to access the database and the cycle repeats
+an application may allow a user to enter arbitrary SQL queries for evaluation by a database
+Setting a new busy handler clears any previously set handler
+The authorizer callback is invoked as SQL statements are being compiled by sqlite3_prepare_APIName or its variants sqlite3_prepare_v2_APIName , sqlite3_prepare_v3_APIName , sqlite3_prepare16_APIName , sqlite3_prepare16_v2_APIName , and sqlite3_prepare16_v3_APIName
+ the sqlite3_prepare_v2_APIName or equivalent call that triggered the authorizer will fail with an error message
+The leftmost column of the result set has the index 0
+The number of columns in the result can be determined using sqlite3_column_count_APIName
+Note that the authorizer callback is invoked
+Future versions of SQLite may change the behavior of sqlite3_column_type_APIName following a type conversion
+The first process can not proceed and the second process can not proceed
+the correct authorizer callback remains in place
+The first argument to the busy handler is a copy of the void pointer which is the third argument to sqlite3_busy_handler_APIName
+neither will make any progress
+into sqlite3_free_APIName
+An authorizer could be put in place
+Note that calling sqlite3_busy_timeout_APIName or evaluating PRAGMA busy_timeout = N will change the busy handler and thus clear any previously set busy handler
+it is passed a single argument which is a copy of the application data pointer which was the fifth parameter to sqlite3_create_function_v2_APIName
+The these routines may attempt to convert the datatype of the result
+The second argument to the busy handler callback is the number of times that the busy handler has been invoked previously for the same locking event
+The memory space used to hold strings and BLOBs is freed automatically
+The presence of a busy handler does not guarantee that
+In every case sqlite3_column_int_APIParam_1 is a pointer to the prepared statement that is being evaluated and sqlite3_column_int_APIParam_2 is the index of the column
+If the result is a BLOB or UTF-16 string the sqlite3_column_bytes16_APIName routine returns the number of bytes in that BLOB or string
+A NULL pointer can be used in place of `` main '' to refer to the main database file
+an automatic type conversion is performed
+Consider a scenario where one process is holding a read lock that it is trying to promote to a reserved lock and a second process is holding a reserved lock that it is trying to promote to an exclusive lock
+Authorization is not performed , unless as stated in the previous paragraph , sqlite3_step_APIName invokes sqlite3_prepare_v2_APIName to reprepare a statement after a schema change
+the sqlite3_column_bytes_APIName or sqlite3_column_bytes16_APIName interfaces can be used to determine the size of that BLOB or string
+might be invoked with argument P
+The sqlite3_busy_handler_APIName routine sets a callback function X that
+the SQLITE_READ_API_constant authorizer callback is invoked once for that table with a column name that is an empty string
+An authorizer is used , to ensure that the SQL statements do not try to access data they are not allowed to see , or that they do not try to execute malicious statements that damage the database
+the sqlite3_column_bytes_APIName routine returns the number of bytes in that BLOB or string
+the values returned by sqlite3_column_bytes_APIName and sqlite3_column_bytes16_APIName are the number of bytes in the string, not the number of characters
+ sqlite3_column_bytes_APIName uses sqlite3_snprintf_APIName to convert that value to a UTF-8 string and returns the number of bytes in that string
+There is no way to distinguish between an incorrect sqlite3_file_control_APIParam_2 and an SQLITE_ERROR_API_constant return from the underlying xFileControl method
+sqlite3_column_bytes16_APIName uses sqlite3_snprintf_APIName to convert that value to a UTF-16 string and returns the number of bytes in that string
+If the unprotected sqlite3_value object returned by sqlite3_column_value_APIName is used in any other way, including calls to routines like sqlite3_value_int_APIName, sqlite3_value_text_APIName, or sqlite3_value_bytes_APIName, the behavior is not threadsafe
+The sqlite3_file_control_APIName interface makes a direct call to the xFileControl method for the sqlite3_io_methods object associated with a particular database identified by sqlite3_file_control_APIParam_2
+The SQLITE_FCNTL_FILE_POINTER_API_constant value for the sqlite3_file_control_APIParam_3 parameter causes a pointer to the underlying sqlite3_file object to be written into the space pointed to by the 4th parameter
+sqlite3_snprintf_APIName is used internally to perform the conversion automatically
+Other kinds of conversion are done in place
+The name of the database is `` main '' for the main database or `` temp '' for the TEMP database , or the name that appears after the AS keyword for databases that are added using the ATTACH SQL command
+The leftmost column is number 0
+N is zero for the left-most function argument
+the transaction might be rolled back automatically
+Future releases of SQLite may require this
+In those cases , sqlite3_aggregate_context_APIName might be called for the first time from within xFinal_APIName
+The error-code preserving interfaces are
+The name of the collation is a UTF-8 string for sqlite3_create_collation_APIName and sqlite3_create_collation_v2_APIName and a UTF-16 string in native byte order for sqlite3_create_collation16_APIName
+Common techniques used to avoid keyword name collisions include
+SQLite and its built-in VFSes interpret the following query parameters

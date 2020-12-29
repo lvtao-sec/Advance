@@ -1,0 +1,426 @@
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+when sqlite3_snapshot_open_APIName is called
+If there is already a read transaction open on schema S 
+null
+null
+null
+null
+null
+If any sqlite3_bind __ APIName routine is passed a prepared statement that has been finalized
+When built for other platforms
+if an out-of-memory error occurs during a format conversion
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+If sqlite3_uri_boolean_APIParam_1 is a NULL pointer
+If a separate thread makes changes on the same database connection while sqlite3_changes_APIName is running
+if the first string is less than, equal to, or greater than the second, respectively
+null
+if the mutex in their argument is held or not held, respectively, by the calling thread
+If the value of sqlite3_uri_int64_APIParam_2 is something other than an integer
+if the value sqlite3_value_frombind_APIParam_1 originated from one of the sqlite3_bind_APIName interfaces
+If sqlite3_uri_boolean_APIParam_2 is not a query parameter on sqlite3_uri_boolean_APIParam_1 or if the value of sqlite3_uri_boolean_APIParam_2 is does not match any of the above
+null
+If sqlite3_value_frombind_APIParam_1 comes from an SQL literal value, or a table column, and expression
+If there is no match
+null
+if the datatype is initially SQLITE_INTEGER_API_constant and sqlite3_value_text_APIName is called to extract a text value for that integer,
+If sqlite3_value object sqlite3_value_pointer_APIParam_1 was initialized using sqlite3_bind_pointer_APIName or sqlite3_result_pointer_APIName and if strcmp_APIParam_1 and sqlite3_value_pointer_APIParam_2 are strings that compare equal according to strcmp_APIName
+If sqlite3_uri_parameter_APIParam_1 is the database filename pointer passed into the xOpen_APIName method of a VFS implementation when the flags parameter to xOpen_APIName has one or more of the SQLITE_OPEN_URI_API_constant or SQLITE_OPEN_MAIN_DB_API_constant bits set and sqlite3_uri_parameter_APIParam_2 is the name of the query parameter
+If sqlite3_uri_parameter_APIParam_1 is the database filename pointer passed into the xOpen_APIName method of a VFS implementation when the flags parameter to xOpen_APIName has one or more of the SQLITE_OPEN_URI_API_constant or SQLITE_OPEN_MAIN_DB_API_constant bits set and sqlite3_uri_parameter_APIParam_2 is the name of the query parameter
+null
+ if the parameter index is out of range.
+null
+null
+If any of the sqlite3_bind_*_APIName routines are called with a NULL pointer for the prepared statement or with a prepared statement for which sqlite3_step_APIName has been called more recently than sqlite3_reset_APIName,
+If the busy callback is NULL
+If the busy callback returns 0
+If the result is NULL
+If the result is NULL
+null
+null
+null
+If there is no attached database sqlite3_db_filename_APIParam_2 on the database connection D, or if database sqlite3_db_filename_APIParam_2 is a temporary or in-memory database
+If the most recent evaluation of the statement encountered no errors or if the statement is never been evaluated
+If either snapshot handle was obtained before the wal file was last deleted
+if either of these conditions is violated, or if schema sqlite3_snapshot_open_APIParam_2 does not exist, or if the snapshot object is invalid
+null
+if and only if the prepared statement sqlite3_stmt_readonly_APIParam_1 makes no direct changes to the content of the database file
+if and only if string sqlite3_strglob_APIParam_2 matches the GLOB pattern P
+if and only if string sqlite3_strlike_APIParam_2 matches the LIKE pattern sqlite3_strlike_APIParam_1 with escape character E
+If any other process is running a checkpoint operation at the same time
+If the sqlite3_vtab_nochange_APIName routine is called within the xColumn method of a virtual table,  if and only if the column is being fetched as part of an UPDATE operation 
+null
+If sqlite3_malloc_APIName fails during the processing of either routine
+If the argument to sqlite3_mutex_held_APIName is a NULL pointer
+null
+If either the current value or the highwater mark is too large to be represented by a 32-bit integer
+null
+if no automatic type conversions have occurred for the value in question
+if no matching parameter is found
+null
+If the value N is out of range or if the N-th parameter is nameless
+null
+If an error occurs while committing the transaction
+null
+null
+null
+If sqlite3_blob_read_APIParam_3 or sqlite3_blob_read_APIParam_4 is less than zero
+null
+null
+If the new row is not present in the table, or if it does not contain a blob or text value, or if another error occurs
+On success
+null
+null
+If the BLOB handle passed as sqlite3_blob_write_APIParam_1 was not opened for writing
+If N or sqlite3_blob_write_APIParam_4 are less than zero
+null
+null
+If sqlite3_config_APIName is called after sqlite3_initialize_APIName and before sqlite3_shutdown_APIName
+When a configuration option is set,
+if sqlite3_step_APIParam_1 is a NULL pointer
+if the previous call to sqlite3_step_APIName returned SQLITE_DONE_API_constant
+if initialization routine X was successfully unregistered 
+if X was not on the list of initialization routines
+if no error occurs
+If the option is unknown or SQLite is unable to set the option
+If prepared statement sqlite3_step_APIParam_1 does not have results ready to return
+If the threading mode is Single-thread or Multi-thread
+null
+If any other error occurs while flushing dirty pages to disk
+null
+if shared cache was enabled or disabled successfully
+null
+If an sqlite3_exec_APIName callback returns non-zero
+If the most recent evaluation of statement sqlite3_finalize_APIParam_1 failed
+If no successful INSERTs into rowid tables have ever occurred on the database connection D
+null
+If no prepared statement satisfies the conditions of this routine
+ if SQLite is not compiled with SQLITE_ENABLE_MEMORY_MANAGEMENT
+null
+null
+If the most recent call to sqlite3_step_APIName for the prepared statement sqlite3_reset_APIParam_1 indicated an error
+If any of the following statements are false when sqlite3_snapshot_get_APIName is called
+null
+if the F argument contains the SQLITE_SERIALIZE_NOCOPY_API_constant bit
+null
+null
+null
+null
+if sqlite3_stmt_busy_APIParam_1 is a NULL pointer
+if sqlite3_stmt_isexplain_APIParam_1 is an ordinary statement or a NULL pointer
+null
+If the SQL statement being executed returns any data
+if the prepared statement sqlite3_stmt_isexplain_APIParam_1 is an EXPLAIN statement, or 2 if the statement sqlite3_stmt_isexplain_APIParam_1 is an EXPLAIN QUERY PLAN
+if the prepared statement sqlite3_stmt_busy_APIParam_1 has been stepped at least once using sqlite3_step_APIName but has neither run to completion nor been reset using sqlite3_reset_APIName
+null
+null
+null
+null
+if the string in sqlite3_str object sqlite3_str_finish_APIParam_1 is zero bytes long
+null
+if the strings do not match
+null
+null
+if any errors are encountered while loading the schema.
+Unless deadlock is detected
+If there are
+If a given call to sqlite3_unlock_notify_APIName would put the system in a deadlocked state
+null
+null
+null
+If no error is encountered while processing the attached databases
+If sqlite3_wal_checkpoint_v2_APIParam_2 is not NULL and is not the name of any attached database
+If any other error occurs while processing an attached database
+null
+If database sqlite3_wal_checkpoint_v2_APIParam_2 is the name of an attached database that is not in WAL mode,
+If an SQLITE_BUSY_API_constant error is encountered when processing one or more of the attached WAL databases,
+if the sqlite3 object is successfully destroyed and all associated resources are deallocated
+if a memory allocation error occurs
+If the database connection is associated with unfinalized prepared statements or unfinished sqlite3_backup objects
+If the Nth column returned by the statement is an expression or subquery and is not a column value
+If the Nth column of the result set is an expression or subquery
+null
+If sqlite3_compileoption_get_APIParam_1 is out of range
+if the statement is incomplete
+null
+If a memory allocation fails
+if the input string appears to be a complete SQL statement
+If sqlite3_close_v2_APIName is called on a database connection that still has outstanding prepared statements, BLOB handles, and/or sqlite3_backup objects
+null
+null
+If sqlite3_malloc_APIName is unable to obtain sufficient free memory
+If the parameter N to sqlite3_malloc_APIName is zero or negative
+If sqlite3_msize_APIParam_1 is a NULL pointer
+if insufficient memory is available
+If the most recent sqlite3_ API call associated with database connection sqlite3_errcode_APIParam_1 failed
+if insufficient memory is available to hold the result, or if the result would exceed the the maximum string length determined by the SQLITE_LIMIT_LENGTH_API_constant
+if a prepared statement is created using the SQL text "SELECT $abc,:xyz" and if parameter $abc is bound to integer 2345 and parameter :xyz is unbound
+null
+If there is no metadata associated with the function argument
+If for some reason, sqlite3_initialize_APIName is unable to initialize the library
+if the metadata has been discarded
+null
+null
+if the L-byte UTF8 identifier that sqlite3_keyword_check_APIParam_1 points to is not a keyword or is not zero
+if sqlite3_malloc64_APIName is unable to allocate enough memory to hold the resulting string
+if it is unable to allocate the requested mutex
+null
+null
+null
+If another thread is already within the mutex
+If the database is opened successfully
+If the authority is not an empty string or "localhost"
+if the preupdate callback was invoked as a result of a direct insert, update, or delete operation
+null
+for inserts, updates, or deletes invoked by top-level triggers
+for changes resulting from triggers called by top-level triggers; and so forth.
+If any prior errors have occurred while constructing the dynamic string in sqlite3_str X
+null
+if the value of query parameter sqlite3_uri_boolean_APIParam_2 is one of "no", "false", or "off" in any case or if the value begins with a numeric zero
+If sqlite3_value_nochange_APIName is invoked anywhere other than within an xUpdate method call for an UPDATE statement
+null
+null
+ if the given database connection is or is not in autocommit mode, respectively
+If another thread changes the autocommit status of the database connection while this routine is running
+null
+when type conversions occur
+null
+If the column-name parameter to sqlite3_table_column_metadata_APIName is a NULL pointer, if the table exists
+If the column-name parameter to sqlite3_table_column_metadata_APIName is a NULL pointer, if the table does not exist
+null
+if and only if the call is considered successful
+If the most recent call to sqlite3_step_APIName for the prepared statement sqlite3_reset_APIParam_1 returned SQLITE_ROW_API_constant or SQLITE_DONE_API_constant, or if sqlite3_step_APIName has never before been called on sqlite3_reset_APIParam_1
+If SQLite determines that invoking the busy handler could result in a deadlock
+If sqlite3_file_control_APIParam_2 (zDbName) does not match the name of any open database file
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+if SQLite is compiled with the SQLITE_ENABLE_DESERIALIZE option
+when the SQLITE_ENABLE_SNAPSHOT compile-time option is used
+if SQLite is compiled with the SQLITE_ENABLE_SNAPSHOT option
+when the SQLITE_ENABLE_SNAPSHOT compile-time option is used
+when the SQLITE_ENABLE_SNAPSHOT compile-time option is used
+null
+null
+null
+If the statement is not a COMMIT and occurs within an explicit transaction
+if the library is built with pre-processor symbol SQLITE_ENABLE_STMT_SCANSTATUS defined
+if SQLite is compiled using the SQLITE_ENABLE_STMT_SCANSTATUS compile-time option
+null
+if the library was compiled with the SQLITE_ENABLE_UNLOCK_NOTIFY C-preprocessor symbol defined
+null
+null
+null
+if the default setting is found to be suboptimal for a particular application
+null
+null
+if the library was compiled with the SQLITE_ENABLE_COLUMN_METADATA C-preprocessor symbol
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+ if SQLite is compiled with the SQLITE_OMIT_AUTOINIT compile-time option
+null
+null
+null
+null
+null
+if SQLITE_DEBUG is defined and if NDEBUG is not defined.
+null
+null
+if SQLite is compiled using the SQLITE_ENABLE_PREUPDATE_HOOK compile-time option
+null
+null
+null
+null
+null
+null
+null
+null
+null
+If an application uses more than one database connection
+null
+null
+null
+null
+null
+null
+while sqlite3_config_APIName is running
+null
+null
+null
+null
+null
+null
+While there is nothing to prevent an application from calling sqlite3_log_APIName
+null
+null
+null
+null
+null
+null
+null
+null
+null
+if SQLite is compiled with the SQLITE_ENABLE_DESERIALIZE option
+null
+null
+null
+null
+null
+null
+null
+null
+If an application invokes any sqlite3_xxx API functions from within an unlock-notify callback
+If the application re-attempts the `` DROP TABLE '' or `` DROP INDEX '' query
+null
+If this interface is invoked outside the context of an xConnect or xCreate virtual table method
+When all collating functions having the same name are deleted
+If two or more threads call one or more of sqlite3_column_database_name_APIName sqlite3_column_database_name16_APIName sqlite3_column_table_name_APIName sqlite3_column_table_name16_APIName sqlite3_column_origin_name_APIName sqlite3_column_origin_name16_APIName against the same prepared statement and column at the same time
+null
+null
+If a collating function fails any of the above constraints and that collating function is registered and used
+null
+if sqlite3_free_APIName is called with a non-NULL pointer that was not obtained from sqlite3_malloc_APIName or sqlite3_realloc_APIName
+If sqlite3_msize_APIParam_1 points to something that is not the beginning of memory allocation , or if it points to a formerly valid memory allocation that has now been freed
+null
+If either Z or sqlite3_keyword_name_APIParam_3 are NULL or invalid
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+If the URI contains an authority
+null
+null
+null
+If the 3rd parameter is non-negative
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+when a database sqlite3_open_v2_APIParam_1 actually does begin with a ":" character
+null
+null
+null
+null
+If a non-negative fourth parameter is provided to sqlite3_bind_text_APIName or sqlite3_bind_text16_APIName or sqlite3_bind_text64_APIName
+If the caller knows that the supplied string is nul-terminated
+null
+null
+null
+null
+null
+null
+null
+if the database connection sqlite3_snapshot_open_APIParam_1 does not know that the database file for schema sqlite3_snapshot_open_APIParam_2 is in WAL mode
+If sqlite3_stmt_busy_APIParam_1 is not a NULL pointer and is not a pointer to a valid prepared statement object
+If the table name parameter sqlite3_table_column_metadata_APIParam_3 in a call to sqlite3_table_column_metadata_APIName is NULL
+null
+null
+null
+If a separate thread performs a new INSERT on the same database connection while the sqlite3_last_insert_rowid_APIName function is running and thus changes the last insert rowid
+null
+null
+null
+If the two snapshot handles are not associated with the same database file
+If a separate thread makes changes on the same database connection while sqlite3_total_changes_APIName is running
+If the callback returns SQLITE_ROW_API_constant or SQLITE_DONE_API_constant, or if it returns a value that does not correspond to any valid SQLite error code
+null
+null
+If any NUL characters occur in the string at a byte offset that is less than the value of the 3rd parameter
+null
+If sqlite3_uri_boolean_APIParam_1 is not a NULL pointer and is not a database file pathname pointer that SQLite passed into the xOpen VFS method
+null
+If the sixth argument to sqlite3_bind_text64_APIName is not one of the allowed values shown above, or if the text encoding is different from the encoding specified by the sixth parameter,
+If any of these routines are called after sqlite3_reset_APIName or sqlite3_finalize_APIName or after sqlite3_step_APIName has returned something other than SQLITE_ROW_API_constant
+If the SQL statement does not currently point to a valid row, or if the column index is out of range,
+null
+null
+if any of the following are true

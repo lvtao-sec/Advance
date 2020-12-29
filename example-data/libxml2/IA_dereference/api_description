@@ -1,0 +1,1314 @@
+register xmladdencodingalias_apiparam_2 alias encode name name
+xmlparserctxtptr parse namespace prefix declaration todo : seem anymore , namespace handling be do top sax interface , i
+unk xmlmutexunlock_apiname be use unlock libxml2 token
+check whether character be allow by production letter : : basechar ideographic
+try open control connection give
+xmlattrptr xmldocptr remove give attribute identifi table maintain internally
+unk schema validation give resource , schema validation give resource sax streamable validation internally
+xmlxpathobjectptr xmllocationsetptr add xmlxpathobjectptr exist locationset if location already exist set val be free
+xmlentityptr xmldocptr create entity , differ xmladddocentity_apiname if document be null or have no internal subset define , then unlinked entity structure be return , be then responsability caller link document later or free when need anymore
+append char value array
+unk initialize default html sax2 handler
+xmlxpathobjectptr xmlnodesetptr wrap nodeset val xmlxpathobjectptr
+unk unk create disconnected state automata
+xmldocptr dump xml document file
+xmltextwriterptr end xml dtd attribute list
+load catalog make catalog definition effective default external entity loader
+xmlparserinputbufferptr xmltextreaderptr method get remainder buffer xml
+xmlnodeptr creation node contain comment
+unk xmlmutexlock_apiname be use lock libxml2 token
+escape routine , do validity check
+xmltextwriterptr start xml pi
+unk free operation free datum associate xmlmodulefree_apiparam_1 but do unload associate share library which still be
+callback use input api close resource
+xmlattributeptr xmlbufferptr dump content attribute declaration as xml dtd definition
+unk check if regular expression be determinist
+unk unk minimal parser regexps , understand follow construct string terminal choice operator sequence operator , subexpression usual cardinality operator
+unk cleanup xpath context datum associate register function
+xmltextreaderptr relaxng schema validate document as document be process
+display xmlparsererror_apiparam_3 format error message , give file , line , position xmlparsererror_apiparam_3 extra parameter
+call when pcdata block have parse
+xmlparserinputbufferptr push content arry xmlparserinputbufferpush_apiparam_1 input buffer routine handle i18n transcode internal utf_8 be use when operate parser xmlparserinputbufferpush_apiparam_1 progressive mode
+routine escape string hex , ignore reserve character character exception xmluriescapestr_apiparam_2
+compute length utf8 string , do full utf8 check content string
+xmlbufferptr size_t routine create xml buffer immutable memory area
+unk xmltextwriterptr write format xmltextwriterwriteformatstring_apiparam_3 text
+xmlcatalogptr convert sgml catalog entry as xml one
+check value conform languageid production : note : be somewhat deprecate , production be remove xml second edition
+xmlnodeptr xmlnodeptr xmlentityptr callback function use when one need be able track back provenance chunk node inherit entity replacement
+unk create xml schematron parse context expect contain xml schematron file
+set return previous value default entity support
+cleanup default xml schema type library
+xmltextwriterptr deallocate resource associate xmlfreetextwriter_apiparam_1
+unk remove datum list
+unk xmlcleanupthreads_apiname be use cleanup thread related data libxml2 library once processing have end
+xmlenumerationptr create initialize enumeration attribute node
+xmlelementtableptr xmlelementtableptr build copy element xmlcopyelementtable_apiparam_1
+xmlparserinputptr xmlparserctxtptr create input stream base file or url
+unk xmldocptr create xmlxpathcontext
+unk get validation context option
+xmldocptr xmlinputclosecallback xmlinputreadcallback parse xml document function source build tree
+xmlparserctxtptr parse xml declaration header xmldecl : : xml versioninfo encodingdecl
+size_t realloc_apiname equivalent , log allocation info
+xmlparserctxtptr todo : seem anymore , namespace handling be do top sax interface , i
+callback copy datum hash
+xmlnodeptr signature registration callback create xmlregisternodefunc_apiparam_1
+xmldocptr dump xml document file or url
+xmltextreaderptr check if current node be empty
+unk xmlnodesetptr xmlnodeptr xmlnodesetptr implement exslt set leading_apiname function : node_set set : lead node be sort by document order , then exslsetsnodeleadingsorte be call
+unk implement substring_after_apiname xpath function stre substring_after substring_after function return substre first argument string follow first occurrence second argument stre first argument string , or empty stringi if first argument string do contain second argument string
+unk guess encode entity use first byte entity content accord non_normative appendix f xml_1 recommendation
+xmlxpathfunction unk register function
+unk unk initial state lookup
+free_apiname equivalent , error checking
+xmltextwriterptr end current xml element
+check xmlvalidateqname_apiparam_1 conform lexical xmlvalidateqname_apiparam_2 qname
+xmlparserinputptr xmlparserinputbufferptr xmlparserctxtptr create xmlnewioinputstream_apiparam_2 stream structure encapsulating input into stream suitable parser
+xmlparserctxtptr parse chardata section
+try lookup catalog reference associate public identifier deprecate , xmlcatalogresolvepublic_apiname
+xmlnodeptr xmldocptr do validation relate extra step normalization attribute value : if declare xmlvalidnormalizeattributevalue_apiparam_4 be cdata , then xml processor must further process normalize attribute xmlvalidnormalizeattributevalue_apiparam_4 by discard lead trail space character , by replace sequence space character by single space character
+xmlnsptr xmlnsptr copy namespace list
+file unk xmldocptr implement xml shell allow load , validate , view , modify save document use environment similar unix commandline
+unk xmltextreaderptr relaxng schema context validate document as document be process
+xmlparserinputbufferptr grow up content input buffer , old datum be preserve routine handle i18n transcode internal utf_8 routine be use when operate parser xmlparserinputbuffergrow_apiparam_1 normal mode todo : one should be able remove one extra copy by copy directly onto in buffer or in raw
+unk xmlnodeptr xmlnodeptr xmlnodeptr add node elem as next sible cur if node be already insert document be first unlinked exist context
+xmlparserinputbufferptr signature function do lookup suitable input method correspond xmlparserinputbuffercreatefilenamefunc_apiparam_1
+xmlparserctxtptr parse reference declaration charref : : ; x ; character refer use character reference must match production char
+xmlnodeptr xmlnodeptr xmlnodeptr add node parent , end child list merge adjacent text node if node be attribute , be add into property instead child
+unsigned long schema validation locator , callback call by validator
+unk unk compile automata into reg exp ready execute
+unk check if string be own by disctionary
+xmlbufferptr append zero terminate stre xml buffer
+double unk pop number stack , handle conversion if need
+unk xmlhashtableptr find userdata specify by tuple remove hash table
+xmlxpathobjectptr xmlnodeptr create xmlxpathobjectptr type nodeset initialize single node val
+unk xmlinitializeglobalstate_apiname initialize global state default value library
+xmlenumerationptr xmlenumerationptr copy enumeration attribute node recursive
+socket try open data connection server
+xmlparserctxtptr create parser context file content
+signature error callback schematron validation
+unk unk register callback uri input file handling
+unk remove normalize white space stre
+xmlentityptr const unk entity lookup document entity hash table
+xmlnsptr xmlnodeptr xmldocptr search ns aliase give uri
+unk xmlbufferptr routine which manage grow output buffer
+xmlparserctxtptr parse xml version value
+cleanup up predefined entity table
+update ftp context by parse xmlnanoftpupdateurl_apiparam_2 find path indicate
+cleanup ftp protocol layer
+xmltextwriterptr write dtd internal entity
+xmlparserctxtptr parse markup declaration external subset extsubset : : textdecl
+unk lookup type default xml schema type library
+unk xmloutputbufferptr write content string output buffer routine handle i18n transcode internal utf_8 buffer be lossless , i
+check if be response ftp server after command
+unk unk parse html file build tree
+xmlparserinputptr function be internal be deprecate
+xmlvalidctxtptr free validation context structure
+xmltextreaderptr provide number attribute current node
+xmlnodeptr file dump debug information element xmldebugdumponenode_apiparam_2 , be recursive
+unk xmltextwriterptr write xml text
+unk parse regular expression conform xml schema part # datatype appendix f build automata suitable testing string against regular expression
+xmltextwriterptr write dtd external entity
+xmlnodeptr xmldocptr xmlnodeptr xmlnodeptr xmldocptr xmldomwrapctxtptr reference out_of scope ns_decls be remappe point destdoc : 1 if destparent be give , then nsdef entry element_node be use 2 if no destparent be give , then destdoc oldns entry be use
+xmlnodeptr print xmlshellprintnode_apiparam_1 output file
+strstr xmlchar
+unk set or reset default initgenericerrordefaultfunc_apiparam_1 generic error builtin error function
+size_t unk get how much memory be use by dictionary string add # xmldictgetusage_apiparam_1 be dictionary
+xmlelementtableptr xmlbufferptr dump content element xmldumpelementtable_apiparam_2 as xml dtd definition
+xmlnsptr xmlnodeptr xmldomwrapctxtptr function call acquire namespace wrapper
+use set debug xmlcatalogsetdebug_apiparam_1 catalog operation , # disable debugging , # enable
+what when notation declaration have parse
+xmlenumerationptr xmlparserctxtptr parse attribute list def element atttype : : stringtype tokenizedtype enumeratedtype stringtype : : cdata tokenizedtype : : identifier idref idref entity entity nmtoken nmtoken validity constraint attribute value syntax be check xmlvalidateattributevalue_apiname value type identifi must match name production
+strcmp xmlchar
+xmloutputbufferptr unk xmldocptr dump canonize image give xml document into provide buffer
+const xmlbuffer function extract content buffer
+initialization function xml parser
+unk unk unk unk if be null , create first target state automata then add transition xmlautomatanewoncetrans_apiparam_2 state xmlautomatanewoncetrans_apiparam_3 target state activate by succession input value token whose number be between min max , moreover transition can only be cross once
+xmlxpathobjectptr xmllocationsetptr wrap locationset val xmlxpathobjectptr
+xmltextreaderptr shorthand reference namespace associate node
+xmldocptr xmlsaxhandlerptr parse xml external entity out context build tree
+xmlparserctxtptr trickery : parse xml name but without consume input flow need rollback case
+const unk build structure base path give xmlgetnodepath_apiparam_1
+unk free expression context
+take block utf_8 char xmlcharencodingoutputfunc_apiparam_3 try convert another encoding
+unsigned long xmlnodeptr find current number child node element which be element node
+xmlnodeptr xmlnodeptr unk traversal function child direction child axis contain child context node document order
+xmlnodeptr xmltextreaderptr tell xml reader preserve current node
+unk free xinclude context
+unk indicate maximum number input expression can accept
+xmltextwriterptr end xml dtd entity
+dump in_extenso memory block allocate file
+xmlparserctxtptr setup parser context parse xmlsetupparserforbuffer_apiparam_2 ; clear prior content parser context
+xmlexternalentityloader change defaultexternal entity resolver function application
+strncasecmp xmlchar
+set default compression xmlsetcompressmode_apiparam_1 use , zlib base correct value : # # max compression
+callback use input api read resource
+xmlnodeptr creation text node extra paramet xmlnewtextlen_apiparam_1 length
+xmlnodeptr xmldocptr xmlvalidctxtptr try validate subtree under element
+xmltextwriterptr write dtd entity
+xmlnodeptr xmldocptr creation character reference node
+xmlcatalogptr check be catalog be empty
+xmlxpathobjectptr unk register variable xmlxpathregistervariable_apiparam_3
+unk xmltextwriterptr write format xml namespace support
+strdup_apiname equivalent , log allocation info
+unk xmlparserctxtptr parse return string between quote or doublequote todo : deprecate , be remove next drop binary compatibility
+xmltextwriterptr write base64 encode xml text
+complete resolution lookup external identifier
+long const unk get line number node
+cleanup default schema type library associate relaxng
+xmlexternalentityloader get default external entity resolver function application
+initialize default sax handler
+unk unk unk unk if be null , create first target state automata then add transition xmlautomatanewcounttrans2_apiparam_2 state xmlautomatanewcounttrans2_apiparam_3 target state activate by succession input value token token2 whose number be between min max
+xmlnodeptr implement xinclude substitution give subtree
+xmlnodeptr xmlnodesetptr check whether cur contain val
+unk implement string_apiname xpath function string string object
+xmlnodeptr xmldocptr xmloutputbufferptr dump html node , recursive behaviour , child be print too
+xmlparserinputbufferptr create buffer parser input progressive parse input memory area
+construct canonic xmlcanonicpath_apiparam_1 specify xmlcanonicpath_apiparam_1
+xmlhashtableptr find userdata specify by tuple
+xmlbufferptr free xml buffer
+xmlnodeptr xmlnodeptr xmlnodeptr merge two text node into one
+catalog initialization
+xmlparserinputptr xmlparserctxtptr xmlpushinput : switch xmlpushinput_apiparam_2 stream which be stack top previous one s
+xmlbufferptr routine which manage grow output buffer
+provide system identifi , basically url or filename e
+unk free up memory allocate by element comp
+xmlcatalogptr complete resolution lookup xmlacatalogresolveuri_apiparam_2
+xmldocptr xmlvalidctxtptr try validate document instance basically document instance do check describe by xml rec i
+xmlparserctxtptr skip xml comment _ ... . _ spec say compatibility , stre _ must occur within comment
+initialize http protocol layer
+unk const unk xmldocptr build stre equivalent text contain node xmlnodelistgetstring_apiparam_2 make text entity_refs
+xmldtdptr xmldtdptr copy xmlcopydtd_apiparam_1
+xmltextwriterptr start xml cdata section
+xmlxpathobjectptr unk pop top xpath object value stack
+unk free up xmlxpathparsercontext
+unk debug facility provide number allocate node point
+unk xmlnodesetptr xmlnodesetptr xmlnodesetptr implement exslt set trailing_apiname function : node_set set : trail nodes1 nodes2 be sort by document order , then xmlxpathtrailingsorte be call
+xmlhashtableptr create xmlhashtableptr
+xmlnodeptr xmlnsptr creation node element
+xmlnodeptr set language node , i
+try change remote xmlnanoftpcwd_apiparam_2
+xmlparserctxtptr reset push parser context
+xmlnotationptr xmldtdptr xmlvalidctxtptr register notation declaration
+do document have internal subset
+unk unk create xml schema validation context base give xmlschemanewvalidctxt_apiparam_1
+xmltextreaderptr base uri node
+unk insert xmllistinsert_apiparam_2 order list beginning value
+unk xmlfreemutex_apiname be use reclaim resource associate libxml2 token struct
+unk implement substring_before_apiname xpath function stre substring_before substring_before function return substre first argument string precede first occurrence second argument stre first argument string , or empty string if first argument string do contain second argument string
+provide column number current parsing point
+unk create document saving context serialize xmlsavetofilename_apiparam_1 or possibly url xmlsavetofilename_apiparam_2 xmlsavetofilename_apiparam_3 give
+xmlnodeptr xmlnodeptr xmlnodeptr unlink xmlreplacenode_apiparam_1 node current context , prune one place
+xmlnodeptr xmlnodeptr unk implement xml shell function du show structure subtree under node tree if tree be null , command work current node
+xmlparserctxtptr parse xml name
+xmlnodesetptr xmldocptr dump canonize image give xml document into file
+unk xmlnodesetptr xmlnodeptr xmlnodesetptr implement exslt set trailing_apiname function : node_set set : trail node be sort by document order , then xmlxpathnodetrailingsorte be call
+xmlxpathobjectptr xmllocationsetptr remove xmlxpathobjectptr exist locationset
+unk allocate facet structure
+unk unk unk build context use progressive evaluation regexp
+try find if document correspond xhtml dtd
+unk implement concat_apiname xpath function string concat concat function return concatenation concat function argument
+htmlparserctxtptr apply htmlctxtuseoptions_apiparam_2 parser context
+xmltextwriterptr write format xmltextwriterwriteformatcdata_apiparam_3 cdata
+unk xmlismainthread_apiname check whether current thread be main thread
+htmlparserctxtptr allocate initialize parser context
+const unk const unk const unk xmlnodeptr be prototype extend link set detection callback
+unk implement false_apiname xpath function boolean false_apiname
+xmlparserctxtptr handle redefinition attribute error
+xmlparserctxtptr parse utf8 encode xml qualified xmlsplitqname_apiparam_2 string qname : : prefix
+unk search namespace declaration array context give namespace name associate give xmlxpathnslookup_apiparam_2
+unk file dump transform relaxng tree
+xmlnodeptr xmldocptr xmldomwrapctxtptr unlink give xmldomwrapremovenode_apiparam_3 owner
+const unk xmlparserctxtptr insert node xmlparseraddnodeinfo_apiparam_2 record into sorted sequence
+unk create html document
+xmlparserinputbufferptr refresh content input buffer , old datum be consider consume routine handle i18n transcode internal utf_8
+build qname prefix : ncname memory if be enough space xmlbuildqname_apiparam_2 be null nor empty , otherwise allocate string
+callback use input api detect if current handler can provide input fonctionnalitie resource
+callback function use when walk list xmllistwalk_apiname
+xmlelementcontentptr free element content structure
+unk unk unk unk unk provide memory access function set currently xmlgcmemget_apiparam_3 be specialize atomic block allocation i
+xmlnodeptr xmlnodeptr unk traversal function descendant direction descendant axis contain descendant context node document order ; descendant be child or child child so
+xmlparserctxtptr parse xml processing instruction
+unk unk get last element list
+long xmlnodeptr unk save subtree start xmlsavetree_apiparam_2 parameter saving context todo : function be fully implement yet as do return byte count but # instead
+unk xmltextreaderptr get intern string xmltextreaderconststring_apiparam_1 , allow example speedup string name comparison
+xmlparserctxtptr parse end tag etag : : name s
+xmlattributeptr xmldtdptr search dtd description qualified attribute element
+case_ignor strstr xmlchar
+xmltextreaderptr w3c xsd schema validate document as document be process
+double convert boolean number value
+const unk search get value attribute associate xmlgetprop_apiparam_1 do entity substitution
+unk file dump information about string , shorten if necessary
+xmlhashtableptr find userdata specify by name
+unk free automata
+xmlparserctxtptr pop top element name name stack
+xmltextreaderptr get read state xmltextreaderreadstate_apiparam_1
+xmlnodeptr creation processing instruction element
+callback free parser input allocation
+xmlxpathobjectptr unk push xpath object top valuepush_apiparam_2 stack
+read first utf8 character utf
+receive ignorable whitespace parser
+xmlnodeptr xmlnodeptr unk traversal function ancestor_or_self direction ancestor_or_self axis contain context node ancestor context node reverse document order ; thus context node be first node axis , context node parent second ; parent here be define as parent axis
+xmlparserctxtptr todo : remove , now deprecate ... test be do directly content parsing routine
+call when document end have detect
+htmlparserctxtptr create parser context html in_memory document
+xmlelementcontentptr xmlelementcontentptr build copy element content description
+unk add xmllistpushfront_apiparam_2 beginning list
+unk sort element list
+unk file dump relaxng structure back
+callback use output api close resource
+xmltextreaderptr determine whether current node be namespace declaration rather than regular attribute
+unk xmlrmutexlock_apiname be use lock libxml2 token_r
+xmlnodeptr xmlnsptr xmldocptr creation node element within document
+htmlparserctxtptr parse html element , be highly recursive be keep compatibility previous code version element : : emptyelemtag stag content etag attribute : : name eq attvalue
+unk see unk return
+unk implement namespace_uri_apiname xpath function stre namespace_uri node_set
+xmlnodeptr xmlnodeptr unk traversal function attribute direction todo : support dtd inherit default attribute
+unk check minimum depth reachable by pattern , # mean or
+xmlparserinputptr free up xmlfreeinputstream_apiparam_1 stream
+xmlelementptr xmlbufferptr dump content element declaration as xml dtd definition
+xmltextwriterptr write xml cdata
+xmldocptr search dtds whether element accept mixed content basically if be suppose accept text child
+xmltextreaderptr tell xml reader preserve node match by xmltextreaderpreservepattern_apiparam_2
+unk unk parse html in_memory document
+xmlentityptr get paramet entity by getparameterentitysaxfunc_apiparam_2
+xmldocptr create xml document
+xmldtdptr xmlsaxhandlerptr load parse external subset
+xmlparserctxtptr current char value , if use utf_8 actually span multiple byte input buffer
+xmlelementptr xmldtdptr search dtd description element
+xmltextwriterptr end current xml pi
+unk push one input token execution context
+unk fetch give file server
+xmltextreaderlocatorptr obtain base uri give xmltextreaderlocatorbaseuri_apiparam_1
+unk parse evaluate xpath expression give context , then push result context stack
+set return previous value enable pedantic warning
+unk set custom escape function be use text element content
+xmlnodeptr xmldocptr xmlvalidctxtptr push element start validation stack
+unk get default xlink detection routine
+xmltextwriterptr start xml dtd
+compute final xmlbuilduri_apiparam_1 reference do by check give xmlbuilduri_apiparam_1 be valid , build final xmlbuilduri_apiparam_1 use xmlbuilduri_apiparam_2 xmlbuilduri_apiparam_1
+xmlidptr xmlattrptr xmldocptr xmlvalidctxtptr register identifier declaration
+xmlhashtableptr query number element instal hash table
+unk add name dictionary dict if present
+xmlnodeptr append extra substring node xmlnodeaddcontentlen_apiparam_2
+xmlparserctxtptr parse xml misc optional field
+xmldocptr implement xinclude substitution xml document doc
+xmlnodeptr const unk get root element document doc child be list contain possibly comment , pi , etc
+unsigned long const xmlnodeptr const unk xmlparserfindnodeinfoindex : find index info record give xmlparserfindnodeinfoindex_apiparam_2 be or should be sort sequence
+unk implement subtraction operation xpath object : numeric operator convert numeric operator operand number as if by call number function
+xmldocptr xmlnodeptr update node under xmlsettreedoc_apiparam_1 point right document
+set default xmlsaxdefaultversion_apiparam_1 sax use globally by library
+unk search list reverse order exist value datum
+xmlparserctxtptr parse xml declaration header external entity textdecl : : xml versioninfo
+provide number memory area currently allocate
+unk xmltextwriterptr write format dtd element
+callback call when validity warning be find
+unk implement ceiling_apiname xpath function number ceiling ceiling function return small number be less than argument be integer
+xmloutputbufferptr create buffer parser output
+xmlnodeptr xmlnodeptr unk implement xml shell function ls do unix like list give xmlshelllist_apiparam_3 like directory
+unk unk unk unk if be null , create first target state automata then add epsilon transition xmlautomatanewcountertrans_apiparam_2 state xmlautomatanewcountertrans_apiparam_3 target state which be allow only if xmlautomatanewcountertrans_apiparam_4 be within right range
+unk xmltextwriterptr write format xml pi
+close connection both control transport
+unk const htmlnodeptr check whether tree htmlnodestatus_apiparam_1 be valid
+xmlentityptr xmlparserctxtptr default handling define entity , when should -PRON- define input stream
+send quit command server
+unk implement last_apiname xpath function number last_apiname last function return number node context node list
+unk open library give xmlmoduleopen_apiparam_1 or path note : due portability issue , behaviour can only be guarantee name use ascii
+unk xmlhashtableptr scan hash table apply f each value
+xmlparserinputptr xmlparserctxtptr specific entity loader disable network access , though still allow local catalog access resolution
+signature warning callback relax_ng validation
+xlinktype xmlnodeptr xmldocptr check whether give xlinkislink_apiparam_2 carry attribute need be link element html dtds
+set return previous value enable line number element content
+open http channel
+xmlattrptr free one attribute , content be free too
+xmltextwriterptr start xml element namespace support
+unk long xmltextreaderptr function provide current index parser use by xmltextreaderbyteconsumed_apiparam_1 , relative start current entity
+xmltextreaderptr read parser internal property
+unk xmldocptr create xinclude context
+xmlparserctxtptr xmlpopinput : current input point by ctxt input come end pop return next char
+const unk lookup html htmltaglookup_apiparam_1 elementtable
+xmlxpathobjectptr xmlxpathobjectptr convert exist object number_apiname equivalent
+xmlnsptr namespace node libxml match xpath semantic
+cleanup memory allocate char encoding support , unregister encode handler aliase
+generic front_end encode xmlcharencclosefunc_apiparam_1 close function
+xmltextwriterptr write dtd element
+xmlnodeptr concat give string end exist xmltextconcat_apiparam_1 xmltextconcat_apiparam_2
+unk xmlnodesetptr xmlnodesetptr xmlnodesetptr implement exslt set leading_apiname function : node_set set : lead nodes1 nodes2 be sort by document order , then exslsetsleadingsorte be call
+xmlparserctxtptr parse general parse entity external general parse entity be unk if match production label extparsedent
+xmlparserctxtptr parse element declaration
+unk xmltextwriterptr write format xml element
+xmlparserctxtptr parse xml encode declaration encodingdecl : : s encode eq setup conversion filter
+unk xmlnodeptr xmlnodeptr find first close next sible xmlnextelementsibling_apiparam_1 which be element xmlnextelementsibling_apiparam_1
+xmlparserctxtptr parse name pi pitarget : : name l
+unk unk find string appear start language accept by exp store -PRON- list
+xmlxpathobjectptr unk alias xmlxpatheval_apiname
+xmlnsptr xmlnodeptr associate namespace xmlsetns_apiparam_1 , posteriori
+xmlsaxhandlerptr well sax parse routine
+unk xmltextreaderptr relaxng validate document as be process
+create register xmlcharencodinghandler
+xmltextreaderptr whether attribute node be generate default value define dtd or schema
+unk xmlnewmutex_apiname be use allocate libxml2 token struct synchronize access datum
+xmllocationsetptr xmllocationsetptr xmllocationsetptr merge two rangeset , range val2 be add val1
+xmlparserctxtptr create parser context xml in_memory document
+xmldocptr file check document potential content problem , xmldebugcheckdocument_apiparam_1 error output
+xmlparserctxtptr parse handle entity reference content , depend sax interface , end_up call character_apiname if be charref , predefined entity , if be no reference_apiname callback
+unk check if pattern be streamable i
+xmltextreaderptr create xmltextread structure feed resource uri
+unk unk xmlschemavaltype unk unk check xmlschemavalidatefacetwhtsp_apiparam_4 against xmlschemavalidatefacetwhtsp_apiparam_1 condition
+xmlnodeptr xmldocptr xmlnodeptr copy xmldoccopynode_apiparam_1 give document
+xmlelementcontentptr xmlparserctxtptr parse declaration mix element content leading space have skip xmlparseelementcontentdecl mix : : s
+xmlnodeptr free node sibling , be recursive behaviour , child be free too
+xmlparserinputptr display current context within xmlparserprintfilecontext_apiparam_1 content error tracking
+xmltextwriterptr create xmlnewtextwrit structure uri as output
+xmlxpathobjectptr xmlnodeptr xmlnodeptr create xmlxpathobjectptr type range
+unk get canonical lexical representation value
+xmldomwrapctxtptr allocate initialize dom_wrapper context
+xmldocptr dump html document memory return xmlchar be htmldocdumpmemoryformat_apiparam_3
+unk xmlgetthreadid_apiname find current thread identifi number note be likely be break platform use pthread as specification do mandate pthread_t be integer type
+xmlnodeptr xmlnodeptr xmldocptr set xmldocsetrootelement_apiparam_2 element document doc child be list contain possibly comment , pi , etc
+xmlparserinputbufferptr create buffer parser input progressive parsing file if filename be then -PRON- stdin as input
+unsigned long callback xmlnanoftplist command
+callback use output api detect if current handler can provide output fonctionnalitie resource
+xmltextreaderptr change parser processing behaviour by change internal property
+xmltextwriterptr start xml attribute namespace support
+unk xmltextreaderptr skip node follow current one document order while avoid subtree if
+provide public identifi e
+xmluriptr parse uri base rfc # uri_reference
+unk unk register external mechanism function lookup
+xmltextreaderptr move position current instance attribute specify index relative contain element
+unk unk unk unk get atom associate sequence leave , right note leave right be consume operation , keep handle -PRON- xmlexpref_apiname xmlexpfree_apiname release -PRON- , be true even case failure unless xmlexpnewseq_apiparam_1 null
+unk unk create xml schematron validation context base give xmlschematronnewvalidctxt_apiparam_1
+unk unk allow set preference between public system deletion xml catalog resolution
+unk xmlxpathobjectptr wrap val stre into xpath object
+take block utf_8 char utf8tohtml_apiparam_3 try convert ascii plus html entity block char utf8tohtml_apiparam_1
+take block utf_8 char htmlencodeentities_apiparam_3 try convert ascii plus html entity block char htmlencodeentities_apiparam_1
+xmlnodesetptr sort node xmlxpathnodesetsort_apiparam_1 document order
+xmlnodeptr remove attribute carry by xmlunsetprop_apiparam_1
+xmltextwriterptr write xmltextwriterwriteformatcomment_apiparam_3 comment
+const unk const unk search base url
+xmlnodeptr creation text node
+do document have external subset
+unk xmlbufferptr create document saving context serialize xmlsavetobuffer_apiparam_1 xmlsavetobuffer_apiparam_2 xmlsavetobuffer_apiparam_3 give
+xmlparserctxtptr unk allow access parser context schema validation context
+xmlbufferptr add string range xml buffer
+xmlnodeptr count child node
+xmltextreaderptr determine xml version document read
+unk implement local_name_apiname xpath function stre local_name node_set
+xmldtdptr xmldocptr create internal subset document
+const unk get compression ratio document , zlib base
+unk unk unk get atom associate range min , max note subset be consume operation , keep handle subset xmlexpref_apiname xmlexpfree_apiname release subset , be true even case failure unless xmlexpnewrange_apiparam_1 null
+xmltextreaderptr move position current instance node contain current attribute node
+set return previous value default blank text node support
+unk xmlschemavaltype allocate simple xmlschemanewstringvalue_apiparam_1 xmlschemanewstringvalue_apiparam_2
+xmlentityptr get entity by getentitysaxfunc_apiparam_2
+xmlnodeptr set xmlnodesetname_apiparam_2 node
+xmlparserinputptr display associate file line information current xmlparserprintfileinfo_apiparam_1
+unk xmlinitthreads_apiname be use initialize thread related data libxml2 library
+unk create automata
+xmltextwriterptr start xml dtd attlist
+register default compiled_in handler
+xmlenumerationptr xmlparserctxtptr parse notation attribute type
+xmlxpathobjectptr file dump content object debug purpose
+comment have parse
+unk debug facility provide number allocate node over lifetime
+xmlentityptr check whether xmlgetpredefinedentity_apiparam_1 be predefine entity
+xmlparserctxtptr pereference : : name ; parse entity must contain recursive reference , either directly or indirectly
+unk xmltextwriterptr write format xml cdata
+unk xmlbufferptr set allocation xmlbuffersetallocationscheme_apiparam_2 buffer
+xmlparserctxtptr xmlsaxhandlerptr create parser context use xml parser push mode
+callback call when validity error be find
+xmlxpathobjectptr free up xmlxpathobjectptr obj but deallocate object list contrary xmlxpathfreeobject_apiname
+unk xmldocptr find set reference supply xmlgetrefs_apiparam_2
+xmlnodeptr xmlnodeptr xmldocptr recursive copy xmldoccopynodelist_apiparam_2 list
+check xmlvalidatenmtoken_apiparam_1 conform lexical xmlvalidatenmtoken_apiparam_2 nmtoken
+length xmlchar string
+unk unk walk element list reverse order apply xmllistreversewalk_apiparam_2 function
+unk validate give attribute xmlvalidateattributevalue_apiparam_2 match proper production value xmlvalidateattributevalue_apiparam_1 identifier must match name production
+unk unk create dictionary , inherit string read_only dictionary sub
+xmltextwriterptr start xml attribute
+unk set buffer allocation method
+xmlnodeptr xmlparserctxtptr pop top element node node stack
+unk unk unk check xmlschemavalidatefacet_apiparam_3 against xmlschemavalidatefacet_apiparam_2 condition
+xmlbufferptr append zero terminate c string xml buffer
+callback use output api write resource
+xmlattributeptr xmldocptr xmlvalidctxtptr try validate single attribute definition basically do follow check as describe by xml_1 recommendation : _ uniqueness matching be do separately
+htmlparserctxtptr reset parser context
+unsigned long unk unk unk checka xmlschemavalidatelengthfacet_apiparam_3 against length , minlength maxlength xmlschemavalidatelengthfacet_apiparam_2 ; set length compute xmlschemavalidatelengthfacet_apiparam_5 value
+unk predicate : : predicateexpr : : expr evaluate predicate as xmlxpathevalpredicate_apiname but location set instead node set
+xmldocptr file dump debug information document , be recursive
+xmlxpathobjectptr xmlxpathobjectptr unk axis traversal function
+initialize default sax2 handler
+xmlnsptr xmlnsptr copy namespace
+xmltextwriterptr write raw xml text
+xmlnodeptr xmlsaxhandlerptr xmldocptr parse external general entity external general parse entity be unk if match production label extparsedent
+unk implement sum_apiname xpath function number sum sum function return sum value node argument node_set
+xmlnsptr xmlnodeptr xmldocptr xmlvalidctxtptr try validate single namespace declaration element basically do follow check as describe by xml_1 recommendation : _ _ _ _ uniqueness matching be do separately
+strndup array xmlchar
+print xpath error libxml default error channel
+unk type be xml_buffer_alloc_exact exact size , keep memory usage down xml_buffer_alloc_doubleit double buffer when extra need , improve performance xml_buffer_alloc_hybrid exact size small string keep memory usage tight normal usage , doubleit large string avoid pathological performance
+unk cleanup xpath context datum associate register variable
+try open control connection
+unk accessor boolean value compute value
+xmluriptr parse uri reference string base rfc # fill appropriate field uri structure uri_reference uri relative_ref
+signature error callback xmlschemavalidityerrorfunc_apiparam_3 validation
+size_t signature realloc_apiname implementation
+unk xmlnodeptr xmlnodeptr unk traversal function follow direction follow axis contain node document as context node be after context node document order , exclude descendant exclude attribute node namespace node ; node be order document order
+unk xmltextreaderptr read content element or text node as string
+xmlnsptr xmlnodeptr xmlnodesetptr add namespace xmlxpathnodesetaddns_apiparam_2 exist nodeset
+canonical name xml encoding
+xmlnodeptr file dump debug information element xmldebugdumpnode_apiparam_2 , be recursive
+unk insert xmllistappend_apiparam_2 order list end value
+unk push attribute datum onto xmlstreampushattr_apiparam_1
+unk unk create xmlxpathparsercontext
+xmlnodeptr unk unk check xmlschemavalpredeftypenode_apiparam_2 conform lexical space predefine xmlschemavalpredeftypenode_apiparam_1
+unk listing server
+const unk unk move element xmllistcopy_apiparam_2 list list
+unk create counter
+xmlxpathobjectptr xmlnodeptr xmlxpathobjectptr create xmlxpathobjectptr type range point node
+xmlnsptr xmlnodeptr remove attribute carry by xmlunsetnsprop_apiparam_1
+xmlnodeptr unlink node be current context , node be free if one need free node , xmlfreenode_apiname routine after unlink discard
+xmlparserctxtptr parse markup declaration markupdecl : : elementdecl attlistdecl entitydecl notationdecl pi comment parameter_entity replacement text must be properly nest markup declaration
+unk flush document saving context , i
+xmlbufferptr xmlbufferptr front_end encode xmlcharencfirstline_apiparam_1 input function , but handle only first line , i
+unk extract error information regexp execution , parameter string be update value push accept , paramet value must point array nbval xmlregexecerrinfo_apiparam_2 pointer return xmlregexecerrinfo_apiparam_3 contain number possible string state value array be update -PRON
+unk cleanup default xml schema type library
+unk deallocate relaxng structure
+xmltextreaderptr provide value attribute specify index relative contain element
+unk xmlnodeptr xmlnodeptr xmlnodeptr add node elem as previous sibling cur merge adjacent text node if node be already insert document be first unlinked exist context
+xmldocptr file dump debug information cncerne document , recursive
+unk file dump schema structure
+unk remove last instance associate xmllistremovelast_apiparam_2 list
+unregister aliase
+xmlxpathcompexprptr unk compile xpath expression
+xmlcatalogptr try lookup catalog local reference associate public identifi catalog
+cleanup http protocol layer
+xmltextreaderptr move position current instance attribute specify local name namespace uri
+unk unk pop string stack , handle conversion if need
+xmltextreaderptr create xmltextread xml in_memory document
+xmlattrptr xmlnodeptr create property carry by xmlnewprop_apiparam_1
+unk initialize default docbook sax2 handler
+xmlattrptr xmlnsptr xmlnodeptr create property tag namespace carry by xmlnewnspropeatname_apiparam_1
+unk xmlbufferptr serialize expression as compile buffer
+xmlattrptr xmldocptr xmlbufferptr serialize text attribute value xml simple buffer
+unk deallocate schema structure
+xmloutputbufferptr file create buffer output progressive saving file buffer c
+xmldocptr dump html document file use give htmlsavefileformat_apiparam_3
+unk implement contains_apiname xpath function boolean contain contain function return true if first argument string contain second argument string , otherwise return false
+xmlparserctxtptr parse xml public literal pubidliteral : : pubidchar pubidchar
+do document have external subset
+xmlxpathobjectptr wrap val datum into xpath object
+unk object cache xpath context
+xmldocptr xmlvalidctxtptr do final step document validation once incremental validation step have complete basically do follow check describe by xml rec check attribute definition validity
+xmlparserctxtptr create parser context external entity automatic support compress document be provide by default if find compile_time
+call when document start process
+xmlparserctxtptr create parser context xml in_memory document
+xmloutputbufferptr signature function do lookup suitable output method correspond xmloutputbuffercreatefilenamefunc_apiparam_1
+get late http return code receive
+xmlnotationtableptr xmlnotationtableptr build copy notation xmlcopynotationtable_apiparam_1
+complete resolution lookup xmlcatalogresolveuri_apiparam_1
+xmltextwriterptr end xml document
+xmldtdptr const unk get internal subset document
+unk create html document without dtd node if uri externalid be null
+xmltextwriterptr set character use quoting attribute
+callback when scan xmlhashscannerfull_apiparam_2 hash full scanner
+unk free xmlfreestreamctxt_apiparam_1 context
+xmlparserinputbufferptr file create buffer parser input progressive parsing file buffer c
+xmlparserctxtptr parse attribute attribute : : name eq attvalue attribute value can contain direct or indirect entity reference external entity
+clear entire input callback table
+const xmlparsernodeinfo const xmlnodeptr const xmlparserctxtptr find parser xmlparserfindnodeinfo_apiparam_2 info struct give xmlparserfindnodeinfo_apiparam_2
+validate give xmlvalidatenmtokensvalue_apiparam_1 match nmtoken production
+unk function reset xmlsetstructurederrorfunc_apiparam_2 error context out context structured error message
+unk implement position_apiname xpath function number position_apiname position function return position context node context node list
+xmlnodeptr const unk parse xmlstringgetnodelist_apiparam_2 string build node list associate
+xmlparserinputptr xmlparserctxtptr load external entity , note function unparsed entity generate problem
+xmldocptr dump xml document , convert give xmlsavefileenc_apiparam_3
+compare two ucs4 value
+xmltextreaderptr xmlparserinputbufferptr create xmltextread structure feed input
+xmlxpathobjectptr unk xmlxpathcompexprptr evaluate precompiled xpath expression give context
+free dictionary mutex
+xmltextreaderptr determine standalone status document read
+check if uri match http one
+xmlbufferptr resize buffer accommodate minimum xmlbufferresize_apiparam_2 size
+function try read len byte exist http connection save -PRON- dest
+unk register default xpath function context
+xmlxpathobjectptr unk evaluate predicate result current node
+unk parse xml file descriptor build tree
+unk xmldocptr create xml schema parse context document
+xmltextreaderptr whether node have attribute
+xmlsaxhandlerptr xmlparserinputbufferptr unk validate xmlschemavalidatestream_apiparam_2 base flow sax event parser forward event sax handler provide user_data user provide sax handler must be sax2 one
+xmlnodeptr xmlnodeptr find last child node element which be element node note handle entity reference be different than w3c dom element traversal spec since -PRON- have back reference entity content entity reference
+add entry catalog list
+free up memory allocate by library
+xmlxpathtrailingsorte xmlnodesetptr xmlnodesetptr xmlnodesetptr implement exslt set trailing_apiname function : node_set set : trail node_set , node_set
+unk xmltextwriterptr write format xml element namespace support
+initialize htmlstartcloseindex fast lookup close tag name
+xmlnodeptr xmldocptr creation node contain comment within document
+xmlnodeptr unk validate branch tree , start give elem
+call when open tag have process
+xmlnodeptr replace xmlnodesetcontentlen_apiparam_2 node
+xmlparserinputbufferptr free up memory use by buffer parser input
+callback xmlnanoftpget command
+xmlnodeptr xmltextreaderptr read content current node full subtree
+xmltextreaderptr move position current instance first attribute associate current node
+xmlnodesetptr xmlnodesetptr xmlnodesetptr implement exslt set difference_apiname function : node_set set : difference node_set , node_set
+xmltextreaderptr deallocate resource associate xmlfreetextreader_apiparam_1
+unk receive document locator startup , actually xmldefaultsaxlocator
+unk find if expression be nillable , i
+xmltextreaderptr move position current instance next node stream , expose property
+xmltextreaderptr move position current instance next attribute associate current node
+xmltextwriterptr write xml attribute
+unk unk unk unk if be null , create first target state automata then add transition xmlautomatanewoncetrans2_apiparam_2 state xmlautomatanewoncetrans2_apiparam_3 target state activate by succession input value token token2 whose number be between min max , moreover transition can only be cross once
+free up memory associate catalog
+unk implement compare operation xpath object : arg1 arg2 1 , 1 , ... arg1 arg2 1 , 0 , ... arg1 arg2 0 , 1 , ... arg1 arg2 0 , #
+xmlnodesetptr xmlnodesetptr xmlnodesetptr merge two nodeset , node val2 be add val1 if val1 be null , set be create copy val2
+call when end element have detect
+xmlvalidctxtptr allocate validation context structure
+xmlxpathfunction prototype callback use plug function lookup xpath engine
+xmltextreaderptr parse attribute value into one or more text entityreference node
+unk close operation unload associate xmlmoduleclose_apiparam_1 free datum associate xmlmoduleclose_apiparam_1
+xmlnodeptr xmlnodeptr unk traversal function ancestor direction ancestor axis contain ancestor context node ; ancestor context node consist parent context node parent parent so ; node be order reverse document order ; thus parent be first node axis , parent parent be second node axis
+unk unk unk unk compare # value
+xmlnodeptr xmlparserctxtptr parse external general entity within exist parse context external general parse entity be unk if match production label extparsedent
+const unk lookup give entity entitiestable todo : linear scan be really ugly , hash table be really need
+function try open connection indicate resource via http get
+xmlnodesetptr xmlnodesetptr implement exslt set distinct_apiname function : node_set set : distinct node be sort by document order , then exslsetsdistinctsorte be call sorted node_set
+xmltextreaderptr move position current instance attribute specify qualified xmltextreadermovetoattribute_apiparam_2
+xmlnodesetptr xmlnodesetptr implement exslt set has_same_nodes function : boolean set : has_same_node node_set , node_set
+complete resolution lookup external identifier use document private catalog list
+xmlbufferptr remove begin xml buffer
+xmlnodeptr set space preserve behaviour node , i
+remove entry catalog
+unk check if name exist dictionary dict
+free context after close connection
+close ftp channel
+copy most len feature name into result array
+xmlnodeptr set base uri node , i
+unk unk dereference expression
+xmlnodeptr xmldocptr xmloutputbufferptr dump xml node , recursive behaviour , child be print too
+check if both string be equal have content
+unk xmltextreaderptr determine encode document read
+xmlnodeptr xmlnodeptr unk implement xml shell function load load document specify by xmlshellload_apiparam_2
+unk free hash dict content
+xmlnodeptr xmldocptr xmlvalidctxtptr do validation relate extra step normalization attribute value : if declare xmlvalidctxtnormalizeattributevalue_apiparam_5 be cdata , then xml processor must further process normalize attribute xmlvalidctxtnormalizeattributevalue_apiparam_5 by discard lead trail space character , by replace sequence space character by single space character
+unk _ clear node info sequence
+initilize default type library
+xmlparserctxtptr parse start tag either rule element or emptyelement
+unk unk unk set error warning callback information
+xmlxpathobjectptr print result output file
+xmlnodesetptr free nodeset compound actual node
+xmloutputclosecallback xmloutputwritecallback xmloutputopencallback xmloutputmatchcallback register set callback handling output
+xmltextwriterptr start xml document
+xmlbufptr function extract end content buffer
+xmlnotationptr xmlbufferptr dump content notation declaration as xml dtd definition
+be xmlxpathisnodetype_apiparam_1 give nodetype one
+unk display xmlparserwarning_apiparam_3 format warning message , give file , line , position xmlparserwarning_apiparam_3 extra parameter
+xmltextwriterptr write dtd attlist
+unk unk unk create list
+xmloutputbufferptr xmloutputclosecallback xmloutputwritecallback create buffer output progressive saving handler
+unsigned long unk extract value xmlschemagetfacetvalueasulong_apiparam_1
+unk receive document locator startup , actually xmldefaultsaxlocator everything be available context , so be useless -PRON- case
+xmldocptr dump html document memory return xmlchar be htmldocdumpmemory_apiparam_3
+unk xmlschemavaltype give -PRON- xmlschemagetbuiltintype_apiparam_1 struct built_in xmlschemagetbuiltintype_apiparam_1 by xmlschemagetbuiltintype_apiparam_1 identifier
+xmlentityptr get entity by xmlsax2getentity_apiparam_2
+provide line number current parsing point
+xmlxpathobjectptr free up xmlxpathobjectptr object
+xmlnodeptr implement xinclude substitution xml node tree
+xmlelementptr xmldocptr xmlvalidctxtptr try validate single element definition basically do follow check as describe by xml_1 recommendation
+unk unk unk unk override default memory access function set have be call before other libxml routine
+unk xmlnodesetptr xmlnodesetptr implement exslt set distinct_apiname function : node_set set : distinct node_set
+xmlbufferptr grow available space xml buffer
+xmlnodeptr file dump output type name node
+unk unk unk unk if be null , create first target state automata then add transition xmlautomatanewtransition2_apiparam_2 state xmlautomatanewtransition2_apiparam_3 target state activate by value token
+cleanup last global error register
+unk unk make xmlautomatasetfinalstate_apiparam_2 final xmlautomatasetfinalstate_apiparam_2
+unk cleanup error
+const unk search language node , i
+const unk check whether xmlisblanknode_apiparam_1 be empty or whitespace only text_node
+xmlxpathobjectptr unk evaluate xpath location path give context
+xmlattrptr free property sibling , child be free too
+call when end element have detect
+xmlxpathobjectptr xmlxpathobjectptr convert exist object boolean_apiname equivalent
+xmlentitiestableptr deallocate memory use by entity hash xmlfreeentitiestable_apiparam_1
+xmlxpathobjectptr xmlxpathobjectptr allocate copy give object
+xmlschemavaltype unk accessor type value
+xmldocptr todo : remove xmlencodeentitie , once -PRON- be afraid break binary compatibility people must migrate code xmlencodeentitiesreentrant
+xmlparserinputptr callback : entity loader , control load external entity , application can either : override resolveentity_apiname callback sax block or well xmlsetexternalentityloader_apiname function set up be entity resolution routine
+xmltextreaderptr retrieve validity status parser context
+unk free xmlregfreeregexp_apiparam_1
+unk compare string encode scheme already know
+xmlnodeptr xmlnodeptr unk implement xml shell function cat dump serialization xmlshellcat_apiparam_3 content xml or html
+check if uri match ftp one
+xmlnodeptr file dump debug information list element xmldebugdumpnodelist_apiparam_2 , be recursive
+unk create dictionary
+wrapper around xmlfileopen_real try xmlfileopen_real unescaped version filename , if fail fallback filename
+double xmlnodesetptr convert node_set number value
+xmloutputbufferptr flush close output channel free up associated resource
+xmltextreaderptr local name node
+xmltextwriterptr start xml comment
+xmlattrptr unlink free one attribute , content be free too note do work namespace definition attribute
+unk xmlhashtableptr find userdata specify by name remove name hash table
+try lookup catalog resource system identifier
+xmldocptr file dump debug information entity by document
+const unk const unk const unk xmlnodeptr be prototype simple link detection callback
+unk xmlnodeptr convert xmlxpathcastnodetostring_apiparam_1 string value
+unk xmltextreaderptr xsd schema validate document as be process
+provide specify mime_type if specify http header
+xmlnodeptr xmlparserctxtptr push element node top node stack
+unk increase reference count expression
+size_t size_t unk set size xmldictsetlimit_apiparam_2 dictionary add # xmldictsetlimit_apiparam_1 be dictionary
+xmlentityptr xmldocptr register entity document
+xmlnodeptr append extra substring node xmlnodeaddcontent_apiparam_2
+unk examine if library have compile give xmlhasfeature_apiparam_1
+xmlparserctxtptr read current value one feature parser instance
+unk unk compile xmlpatterncompile_apiparam_1
+xmlparserctxtptr create parser context file or url content
+xmlparserinputptr xmlparserinputptr xmlparserctxtptr check input case be create http stream , case handle encode update base url case redirection
+xmldocptr dump html document file use give htmlsavefileenc_apiparam_3 formatting be add
+xmlnodeptr xmldocptr unk push element start relaxng validation stack
+unk implement boolean_apiname xpath function boolean boolean boolean function convert argument boolean as follow : number be true if only if be neither positive or negative zero nor nan node_set be true if only if be non_empty string be true if only if length be non_zero
+unk xmlnodesetptr xmlnodeptr xmlnodesetptr implement exslt set leading_apiname function : node_set set : lead node_set , node_set
+xmlnodeptr replace xmlnodesetcontent_apiparam_2 node
+strndup char xmlchar
+construct uri express exist xmlpathtouri_apiparam_1
+xmldocptr global encoding string , replace predefined entity non ascii value entity charref counterpart
+unk implement number_apiname xpath function number number object
+xmlxpathobjectptr unk search variable array context give variable value
+xmlparserctxtptr parse external identifier or public identifi note : production interact badly since can generate public s pubidliteral s systemliteral externalid : : ystem s systemliteral public s pubidliteral s systemliteral publicid : : public s pubidliteral
+xmltextreaderptr get node type current node reference : http
+unk deallocate memory use by ref hash xmlfreereftable_apiparam_1
+xmldtdptr xmldocptr creation dtd external subset
+xmlxpathobjectptr conversion function be associate xmlxpathconvertfunc_apiparam_2 use cast xmlxpathconvertfunc_apiparam_2 primitive value
+unk unk set current htmlsetmetaencoding_apiparam_2 meta tag note : change document content htmlsetmetaencoding_apiparam_2 , just meta flag associate
+be document tag standalone
+unk deallocate memory use by identifi hash xmlfreeidtable_apiparam_1
+unk xpath function
+xmltextwriterptr write content dtd external entity
+xmltextwriterptr end xml dtd element
+xmlparserctxtptr xmlinputclosecallback xmlinputreadcallback xmlsaxhandlerptr create parser context use xml parser exist stream
+xmldocptr parse xml in_memory block build tree
+function try fetch indicate resource via http get save be content file
+xmloutputbufferptr write content array output buffer routine handle i18n transcode internal utf_8 buffer be lossless , i
+xmlnotationtableptr deallocate memory use by entity hash xmlfreenotationtable_apiparam_1
+unk xmlxpathobjectptr xmlxpathobjectptr convert exist object string_apiname equivalent
+xmltextwriterptr write format xmltextwriterwriteformatelement_apiparam_4 element
+unk unk create context manipulating expression
+xmlnodeptr xmldocptr creation fragment node
+close http channel
+function save output http transaction file function close free context end
+xmlparserctxtptr : parse attribute list def element attlistdecl : : attlist s name attdef s
+xmlparserinputbufferptr create buffer parser input progressive parsing
+unk create xml relaxng parse context memory xmlrelaxngnewmemparserctxt_apiparam_1 expect contain xml relaxng file
+xmluriptr simply create empty xmluri
+unk unk set callback function use handle error parse context
+double provide portable isnan_apiname function detect whether double be notanumber
+additional initialisation multi_threading
+unk pop external object stack , handle conversion if need
+determine if give attribute be boolean attribute
+xmlparserctxtptr parse xml literal systemliteral
+unk xmltextreaderptr w3c xsd schema context validate document as document be process
+xmlentityptr xmldocptr register entity document dtd external subset
+format msg xmlstrprintf_apiparam_4 place result into buf
+strncmp xmlchar
+xmlnodeptr xmlnodeptr unk implement xml shell function validate validate document , if dtd path be provide , then validation be do against give dtd
+double convert stre number value
+xmldocptr file dump xml document open file
+strndup array utf8
+xmlnodeptr be prototype link detection routine
+xmltextwriterptr xmloutputbufferptr create xmlnewtextwriter_apiname structure use xmloutputbufferptr note : out parameter be deallocate when writer be close if call succeed
+xmltextreaderptr uri define namespace associate node
+unk unk register callback uri output file handling
+unk xpath evaluation function , parameter be xpath context stack
+strcat array xmlchar
+htmlparserctxtptr free memory use by parser context
+xmltextreaderptr value indicate whether normalize white space attribute value
+xmlnsptr free up structure associate chain namespace
+xmlxpathobjectptr convert xpath object boolean value
+xmltextwriterptr write format xmltextwriterwriteformatattribute_apiparam_4 attribute
+xmluriptr parse uri but allow keep intact original fragment
+unk implement translate_apiname xpath function string translate translate function return first argument string occurrence character second argument string replace by character correspond position third argument string
+xmldomwrapctxtptr free dom_wrapper context
+check xmlvalidatename_apiparam_1 conform lexical xmlvalidatename_apiparam_2 name
+unk xmlhashtableptr find userdata specify by tuple remove hash table
+xmltextreaderlocatorptr unk signature error callback reader parser
+unk unk register callback node creation
+initialize ftp proxy context by parse xmlnanoftpscanproxy_apiparam_1 find protocol host port indicate
+xmldocptr dump xml document memory return xmlchar be xmldocdumpmemory_apiparam_3 byte
+xmltextreaderptr provide value attribute specify qualified xmltextreadergetattribute_apiparam_2
+callback external subset declaration
+apply # normalization step xmlnormalizeuripath_apiparam_1 string__that is , rfc # section 5 , step 6 through 6
+unk implement round_apiname xpath function number round round function return number be close argument be integer
+xmlparserctxtptr parse doctype declaration doctypedecl : : doctype s name s externalid
+xmlparserctxtptr parse xml standalone declaration sddecl : : s tandalone eq todo standalone document declaration must have value no if external markup declaration contain declaration : attribute default value , if element which attribute apply appear document without specification value attribute , or entity , if reference entity appear document , or attribute value subject normalization , where attribute appear document value which change as result normalization , or element type element content , if white space occur directly within instance type
+xmlnodeptr unk implement xinclude substitution give subtree reuse information datum come give context
+clear entire output callback table
+unk free up xmlxpathcontext
+express xmlbuildrelativeuri_apiparam_1 reference term relative xmlbuildrelativeuri_apiparam_2
+xmlnodeptr xmlnodeptr signature c14n callback visible node
+unk deallocate schematron structure
+xmlparserinputptr xmlparserctxtptr create input stream structure
+xmlattrptr xmlnsptr xmlnodeptr create property tag namespace carry by xmlnewnsprop_apiparam_1
+htmlparserctxtptr parse reference declaration charref : : ; x
+xmlnodeptr xmlnodeptr unk be generic signature xml shell function
+storage size utf8 string behaviour be guarantee if input string be utf_8
+xmldocptr parse xml file build tree
+xmltextwriterptr write xmltextwriterwriteformatdtd_apiparam_6 format markup declaration part
+unk xmltextwriterptr write format xml attribute
+xmlentityptr xmlbufferptr dump content entity table as xml dtd definition
+check xmlvalidatencname_apiparam_1 conform lexical xmlvalidatencname_apiparam_2 ncname
+unk create xml schematron parse context memory xmlschematronnewmemparserctxt_apiparam_1 expect contain xml schematron file
+unk set function call call back when xml reference have make
+strdup array xmlchar
+unk get last parsing error register
+unk be list empty
+validate give xmlvalidatenmtokenvalue_apiparam_1 match nmtoken production
+xmlattrptr xmlattrptr xmlnodeptr copy attribute
+xmlattributeptr xmldtdptr search dtd description attribute element
+xmlnodeptr xmlnodeptr unk implement xml shell function write write current xmlshellwrite_apiparam_3 xmlshellwrite_apiparam_2 , save serialization subtree under node specify
+xmlattrptr xmlnodeptr xmldocptr determine whether attribute be type ref
+unk unk unk unk if be null , create first target state automata then add transition xmlautomatanewtransition_apiparam_2 state xmlautomatanewtransition_apiparam_3 target state activate by value token
+dictionary mutex initialization
+parse xml qualify xmlsplitqname3_apiparam_1 string , i
+xmltextreaderptr xmldocptr create xmltextreader preparse document
+xmlelementptr xmlelementcontentptr unk xmldtdptr xmlvalidctxtptr register element declaration
+xmldocptr file dump html document open file
+function be obsolete
+xmlparserctxtptr parse escape pure raw content
+xmlparserctxtptr block further parser processing
+xmlsax2comment_apiname have parse
+xmlxpathobjectptr xmlnodeptr xmlnodeptr create xmlxpathobjectptr type locationset initialize single range make two node start end
+xmlentitiestableptr create initialize empty entity hash table
+unk create document saving context serialize file descriptor xmlsavetofd_apiparam_2 xmlsavetofd_apiparam_3 give
+xmltextwriterptr write xml pi
+unk push datum onto xmlstreampush_apiparam_1
+function provide relative location utf8 char
+xmlnodeptr xmldomwrapctxtptr ensure ns_references point ns_decls hold element_nod
+xmlnodeptr xmldocptr file dump node , recursive behaviour , child be print too
+lookup directory file
+xmlparserinputptr xmlparserctxtptr push parser input top input stack
+provide specify content length http header
+xmlattrptr file dump debug information attribute
+xmldocptr xmloutputbufferptr dump xml document buffer
+check if attribute be content type script
+signature xmlgenericerrorfunc_apiparam_3 function xmlgenericerrorfunc_apiparam_3 when be error xmlgenericerrorfunc_apiparam_3 no parsing or validity context available
+additional cleanup multi_threading
+receive ignorable whitespace parser
+xmlnodeptr xmlnodeptr find first child node element which be element node note handle entity reference be different than w3c dom element traversal spec since -PRON- have back reference entity content entity reference
+xmlnodeptr xmldocptr creation text node extra xmlnewdoctextlen_apiparam_2 length parameter
+double convert number boolean value
+xmlattributeptr xmlenumerationptr unk unk xmldtdptr xmlvalidctxtptr register attribute declaration note tree become ownership dtd
+unk increment reference counter dictionary
+unk set xmlschemasetvalidoptions_apiparam_2 be use during validation
+close channel
+xmlattrptr xmlnodeptr xmldocptr determine whether attribute be type identifier
+xmlnodeptr const unk creation reference node
+xmltextreaderptr create xmltextread xml file descriptor
+xmltextwriterptr write binhex encode xml text
+xmlelementptr xmlvalidctxtptr build automata associated content model element
+unk unk unk get callback information use handle error parser context
+what when unparsed entity declaration be parse
+xmlnodeptr xmldocptr function check namespace declare within give xmlreconciliatens_apiparam_2 be properly declare
+unk set default xlink detection routine
+unk allocate notation value
+xmluriptr file print uri xmlprinturi_apiparam_1 stream
+double xmlnodeptr convert xmlxpathcastnodetonumber_apiparam_1 number value
+strchr xmlchar
+unk xmltextwriterptr write dtd format markup declaration part
+search register set handler able encoding
+file xmlcatalogptr dump give catalog give file
+xmlelementcontentptr unk xmldocptr allocate element content structure document
+unk implement normalize_space_apiname xpath function stre normalize_space string
+unk xmltextreaderptr register callback function be call error warning
+unk unplug sax base validation layer sax parse event flow
+take block utf_8 char utf8toisolat1_apiparam_3 try convert iso latin # block char utf8toisolat1_apiparam_1
+xmlnodesetptr xmldocptr dump canonize image give xml document into memory
+unk xmlhashtableptr add userdata hash table
+unk xmlgetglobalstate_apiname be call retrieve global state thread
+xmlelementcontentptr xmlparserctxtptr parse declaration element content either mixed or child , case empty be handle directly xmlparseelementdecl contentspec : : empty mixed child
+unk unk save original error xmlcopyerror_apiparam_2 place
+file dump global catalog content give file
+unk deallocate schema facet structure
+call when entity reference be detect
+xmldocptr dump html document file
+initialize ftp protocol layer
+validate give xmlvalidatenamevalue_apiparam_1 match name production
+unk reverse order element list
+unk provide amount memory currently allocate
+set return previous value handle html omit tag
+xmlattributetableptr xmlbufferptr dump content attribute xmldumpattributetable_apiparam_2 as xml dtd definition
+xmldocptr xmlsaxhandlerptr parse xml in_memory block give sax function block handle parse callback
+xmltextwriterptr write format xmltextwriterwriteformatdtdattlist_apiparam_4 attlist
+xmldocptr unk validate document tree memory
+xmlbufferptr empty buffer
+function check see if path be valid source xml
+xmltextwriterptr end xml dtd
+const xmlbuffer function get length buffer
+unk xmlxpathcompexprptr apply xpath boolean_apiname function result give compile expression
+unk unk long unk xmlschemavaltype unk checka xmlschemavalidatelengthfacetwhtsp_apiparam_3 against length , minlength maxlength xmlschemavalidatelengthfacetwhtsp_apiparam_1 ; set length compute xmlschemavalidatelengthfacetwhtsp_apiparam_5 value
+get default compression mode use , zlib base
+unk unk create xml relaxng validation context base give xmlrelaxngnewvalidctxt_apiparam_1
+unk callback function use free data list
+xmlparserinputbufferptr create buffer parser input progressive parse input file descriptor
+xmltextwriterptr write format xmltextwriterwriteformatraw_apiparam_3 xml text
+unk unk accessor string value compute value
+xmlentityptr xmldocptr entity lookup dtd entity hash table
+xmlparserctxtptr change current xmlsetfeature_apiparam_3 one feature parser instance
+xmlnodeptr xmldocptr xmlbufferptr dump xml node , recursive behaviour , child be print too
+unk initialize default xml sax2 handler
+xmlparserctxtptr parse xml encode name encname
+xlinkhandlerptr set default xlink handler
+xmltextwriterptr xmlbufferptr create xmlnewtextwrit structure buf as output todo : handle xmlnewtextwritermemory_apiparam_2
+xmlnsptr xmlnodeptr xmldocptr search ns register under give name space document
+xmlelementcontentptr dump xmlsnprintfelementcontent_apiparam_3 element xmlsnprintfelementcontent_apiparam_3 definition intend just debug routine
+xmltextreaderptr setup xmltextreader parse xml in_memory document
+xmlnodeptr xmlnsptr xmlnodeptr creation child element , add end parent child list
+xmlparserctxtptr push element name top name stack
+xmlbufferptr size_t routine create xml buffer
+unk xmlparserctxtptr change input function when discover character encode give entity
+unk query if stream pattern additionally need be feed text , cdata_section , comment processing_instruction_node
+unk signature function when be xmlstructurederrorfunc_apiparam_2 module handle xmlstructurederrorfunc_apiparam_2 reporting mechanism
+unk check maximum depth reachable by pattern
+entity definition have parse
+xmlnodeptr xmlnodeptr unk implement xml shell function dir dump information about xmlshelldir_apiparam_3 namespace , attribute , content
+xmlparserinputptr xmlparserctxtptr create input stream base memory xmlnewstringinputstream_apiparam_2
+xmlnsptr xmlnodeptr creation namespace
+xmlnodeptr xmltextreaderptr hack interface allow get xmlnodeptr correponde current node access by xmltextreader
+unk xmlnodeptr xmlnodeptr xmlnodeptr add element elem list sibling cur merge adjacent text node if element be already insert document be first unlinked exist context
+unk semi private function use pass information parser context which be combination xmlrelaxngparserflag
+xmlentityptr xmlparserctxtptr parse entity reference declaration entityref : : name ; document without dtd , document only internal dtd subset which contain no paramet entity reference , or document standalone yes , name give entity reference must match entity declaration , except unk document need declare follow entity : amp , lt , gt , apos , quot
+xmlhashtableptr find userdata specify by tuple
+const unk search get value attribute associate xmlgetnonsprop_apiparam_1 do entity substitution
+xmlcatalogptr create catalog
+xmlparsererror xmlnodeptr xmlnodeptr parse unk chunk xml document within context give xmlparseinnodecontext_apiparam_1
+signature strdup_apiname implementation
+unk free structure associate regular expression evaulation context
+unk check if pattern must be look root
+read len byte buffer channel
+unk parse xml in_memory document build tree
+xmlxpathobjectptr prototype callback use plug variable lookup xpath engine
+unk lookup xmlmodulesymbol_apiparam_3 address give xmlmodulesymbol_apiparam_1 note : due portability issue , behaviour can only be guarantee name use ascii
+unk unk unk unk if be null , create first target state automata then add transition xmlautomatanewcounttrans_apiparam_2 state xmlautomatanewcounttrans_apiparam_3 target state activate by succession input value token whose number be between min max
+xmlattrptr xmlnodeptr set attribute carry by xmlsetprop_apiparam_1
+xmlcatalogptr load sgml super catalog
+callback use output api open resource
+function try open connection indicate resource via http use give method , add give extra xmlnanohttpmethodredir_apiparam_6 xmlnanohttpmethodredir_apiparam_3 buffer request content
+unk xmldocptr create xml schematron parse context document
+start fetch give ftp : resource
+xmlattributetableptr xmlattributetableptr build copy attribute xmlcopyattributetable_apiparam_1
+xmlnodeptr const unk search last child node
+xmlnsptr free up structure associate namespace
+strdup char xmlchar
+long xmldocptr call routine speed up xpath computation static document
+xmlnodeptr unk unk check xmlschemavalpredeftypenodenonorm_apiparam_2 conform lexical space predefine xmlschemavalpredeftypenodenonorm_apiparam_1
+unk remove first element list
+unk implement multiply operation xpath object : numeric operator convert numeric operator operand number as if by call number function
+try lookup catalog reference associate public identifier
+unk implement range_to_apiname xpointer function obsolete
+xmlnodeptr xmlxpathobjectptr build node list tree copy xpointer result
+function name be somewhat misleading
+xmlnodeptr xmlnodeptr unk traversal function descendant_or_self direction descendant_or_self axis contain context node descendant context node document order ; thus context node be first node axis , first child context node be second node axis
+xmlxpathobjectptr create xmlxpathobjectptr type boolean value val
+unk unk append next sible list compute value
+xmlentityptr get paramet entity by xmlsax2getparameterentity_apiparam_2
+xmlcatalogallow use set user preference w
+xmlxpathobjectptr xmlnodesetptr create xmlxpathobjectptr type locationset initialize node set
+unk unk unk unk provide memory access function set currently
+htmlparserctxtptr parse chunk memory
+xmltextreaderlocatorptr obtain line number give xmltextreaderlocatorlinenumber_apiparam_1
+xmlparserinputptr xmlparserctxtptr pop top parser input input stack
+const unk search space preserve behaviour node , i
+xmltextwriterptr write xml element namespace support
+unk get number element list
+unk delete list associate datum
+initialize xpath environment
+unk unk unk unk evaluate expression result exp consume xmlexpexpderive_apiparam_3 expression sub base algebraic derivation sometimes direct brzozowski derivation usually tatke less than linear time can handle expression generate infinite language
+unk register namespace
+be document tag standalone
+unk unk include element second list first one clear second list
+xmlbufferptr remove string contain buffer gie back caller
+socket initiate fetch give file server
+unk unk function return list authorize child insert within exist tree while respect validity constraint force by dtd
+xmltextreaderptr xml : lang scope within which node reside
+initialize memory layer
+unk xmldocptr create xml relaxng parser context document
+const unk htmlparserctxtptr parse html entity reference entityref : : name
+unk xmlxpathobjectptr wrap stre into xpath object
+unk unk encode definition lookup meta tag
+unk xmlnodeptr xmlnodeptr xmldocptr create xpointer context
+xmlnodeptr xmlnodeptr unk implement xml shell function base dump current xml base xmlshellbase_apiparam_3
+xmlnodeptr xmlnodeptr unk traversal function self direction self axis contain just context node
+xmlparserinputbufferptr xmltextreaderptr setup xml xmltextreadersetup_apiparam_1 xmltextreadersetup_apiparam_5
+unsigned long unsigned long unk check xmlschemavalidatelistsimpletypefacet_apiparam_2 list simple type against xmlschemavalidatelistsimpletypefacet_apiparam_1
+const unk check whether html element be direct child htmlelementallowedhere_apiparam_1 element
+xlinkhandlerptr get default xlink handler
+xmltextwriterptr xmlnodeptr xmldocptr create xmlnewtextwrit structure doc as output starting node
+xmlinputclosecallback xmlinputreadcallback xmltextreaderptr setup xmltextreader parse xml document function source
+xmlnodeptr xmlsaxhandlerptr xmldocptr parse unk chunk xml document call by parser allow sequence well balanced chunk be one define by content production xml grammar : content : : element chardata reference cdsect pi comment
+unk extract information regexp execution , paramet value must point array nbval string pointer return xmlregexecnextvalues_apiparam_2 contain number possible string state value array be update -PRON
+xmlxpathobjectptr xmlnodeptr create xmlxpathobjectptr type value tree initialize tree root val
+unk unk xmltextwriterptr write format xml text
+validate give xmlvalidatenamesvalue_apiparam_1 match name production
+xmltextwriterptr end xml cdata section
+xmlnodeptr unk test whether xmlpatternmatch_apiparam_2 match pattern
+xmlparserctxtptr parse notation declaration notationdecl : : notation s name s s
+xmldtdptr file dump debug information dtd
+xmlnodesetptr convert node_set boolean value
+sax2 callback when element end have detect by parser
+unk implement id_apiname xpath function node_set identifi identifier function select element by unique identifier see
+xmlelementcontentptr deprecate , unsafe , xmlsnprintfelementcontent
+signature error callback relax_ng validation
+unk convert boolean string value
+set up predefined entity
+unk implement true_apiname xpath function boolean true_apiname
+xmltextwriterptr write format xmltextwriterwriteformatdtdelement_apiparam_4 element
+unk remove last element list
+xmlattrptr xmldocptr remove give attribute ref table maintain internally
+unk xmltextwriterptr set string indentation
+xmldocptr xmlnodeptr update node xmlsetlistdoc_apiparam_1 point right document
+unk const unk const unk check whether html element be direct child htmlelementstatushere_apiparam_1 element
+xmlparserctxtptr skip next char input char
+const unk do binary search range table determine if char be valid
+lookup encode name give xmlgetencodingalias_apiparam_1
+const unk xmlbufferptr read value node cur , can be either text carry directly by node if be text node or aggregate string value carry by node child text entity_ref
+allocate initialize ftp context
+xmltextwriterptr flush output buffer
+unk implement count_apiname xpath function number count node_set
+open ftp channel
+double float : : number e digit
+xmlbufferptr file dump xml buffer file
+xmltextwriterptr write format xmltextwriterwriteformatpi_apiparam_4 xmltextwriterwriteformatpi_apiparam_1 be xmltextwriterwriteformatpi_apiparam_4 xmltextwriterptr
+unk unk unk check whether exp accept language accexpte by sub input subexpression
+xmldocptr xmlvalidctxtptr validate give name match notation declaration
+xmldocptr dump xml document memory return xmlchar be xmldocdumpformatmemory_apiparam_3
+unk deallocate schema type structure
+signature warning callback schematron validation
+get authentication header http context
+xmlentityptr xmldocptr entity lookup internal external subset
+strncat array xmlchar , extend cur xmlstrncat_apiparam_3 first byte add
+xmloutputbufferptr create buffer output progressive saving file descriptor
+unk unk find string use exp store -PRON- list
+xmltextwriterptr xmldocptr create xmlnewtextwrit structure doc as output
+get response ftp server after command
+xmlnodeptr xmldocptr unk pop element end relaxng validation stack
+unk implement string_length_apiname xpath function number string_length string
+initialize default xml schema type library
+xmldtdptr free dtd structure
+xmlparserctxtptr parse xml namespace name
+xmlenumerationptr xmlparserctxtptr parse enumerate attribute type
+htmlparserctxtptr unk create parser context use html parser push mode value filename be use fetch external entity report
+callback function use compare # datum
+xmltextreaderptr resolve namespace xmltextreaderlookupnamespace_apiparam_2 scope current element
+xmloutputbufferptr create buffer output progressive saving file if filename be then -PRON- stdout as output
+const unk global encoding string , replace predefined entity routine be reentrant , result must be deallocate
+xmlnodeptr xmlnodesetptr add xmlnodeptr exist nodeset , optimized version when -PRON- be sure node be already set
+unk xmlhashtableptr scan hash table apply f each value match tuple
+unk check if automata be determinist
+xmlxpathobjectptr xmlxpathobjectptr xmlnodeptr create xmlxpathobjectptr type range object
+provide specify redirection url if available http header
+file show show display memory allocate , dump nr last allocate area which be free
+unk push datum onto xmlstreampushnode_apiparam_1
+xmldocptr xmltextreaderptr hack interface allow get xmldocptr correponde current document access by xmltextreader
+unk close document saving context , i
+unk implement unary operation xpath object numeric operator convert numeric operator operand number as if by call number function
+unk unk unk get callback information use handle error validation context
+size_t signature malloc_apiname implementation
+unregister encode xmldelencodingalias_apiparam_1 alias
+unk xmlnodeptr xmlnodeptr unk traversal function unk direction unk axis contain follow sibling context node document order
+unk unk unk unk if be null , create first target state automata then add epsilon transition xmlautomatanewepsilon_apiparam_2 state xmlautomatanewepsilon_apiparam_3 target state
+add entry catalog , overwrite exist but different entry
+unk xmlnodesetptr convert node_set string value
+unk file print content compile regular expression
+unk format error message
+xmlnodesetptr remove entry exist nodeset list
+xmlcatalogallow use get user preference w
+take block char xmlcharencodinginputfunc_apiparam_3 original encoding try convert block char utf_8 block char xmlcharencodinginputfunc_apiparam_1
+xmlbufferptr xmlbufferptr generic front_end encode xmlcharencoutfunc_apiparam_1 output function first call null have be make fir initiate output xmlcharencoutfunc_apiparam_3 case non_stateless encode need initiate state or output like bom xmlcharencoutfunc_apiparam_3 utf16
+unk xmlparserinputptr xmlparserctxtptr change xmlswitchinputencoding_apiparam_2 function when discover character encode give entity
+xmlnodeptr xmlnodesetptr remove xmlnodeptr exist nodeset
+xmlparserinputbufferptr xmlinputclosecallback xmlinputreadcallback create buffer parser input progressive parse input handler
+unk _ initialize node info sequence
+xmlattributetableptr deallocate memory use by entity hash xmlfreeattributetable_apiparam_1
+unk unk accessor next sible list compute value
+xmlcatalogptr free memory allocate catalog
+free up memory associate catalog list
+xmltextwriterptr xmlparserctxtptr create xmlnewtextwrit structure ctxt as output note : ctxt context be free result writer if call succeed
+unk unk unk unk if be null , create first target state automata then add epsilon transition xmlautomatanewcountedtrans_apiparam_2 state xmlautomatanewcountedtrans_apiparam_3 target state which increment xmlautomatanewcountedtrans_apiparam_4 provide
+display warningsaxfunc_apiparam_3 format warning message , callback
+xmlnodeptr xmlnodeptr unk traversal function namespace direction namespace axis contain namespace node context node ; order node axis be implementation_defined ; axis be empty unless context node be element -PRON- keep xml namespace node end list
+unk xmlinputclosecallback xmlinputreadcallback parse html document function source build tree
+unk xmlnodeptr xmlnodeptr unk traversal function precede direction precede axis contain node document as context node be before context node document order , exclude ancestor exclude attribute node namespace node ; node be order reverse document order
+unk unk register callback node destruction
+unk xmlrfreemutex_apiname be use reclaim resource associate reentrant mutex
+xmlnodeptr xmlnodesetptr add xmlnodeptr exist nodeset
+xmllocationsetptr xmlxpathobjectptr create xmllocationsetptr type double value val
+xmltextreaderptr read content current node , include child node markup
+unk set custom escape function be use text attribute content
+replace 0xd , 0x9 0xa space
+unk unk unk unk if be null , create first target state automata then add transition xmlautomatanewnegtrans_apiparam_2 state xmlautomatanewnegtrans_apiparam_3 target state activate by value except note if token2 be null , then match xmlautomatanewnegtrans_apiparam_3 follow semantic xsd other
+xmlparserinputptr function remove use input parser
+xmlattrptr xmlnsptr xmlnodeptr set attribute carry by xmlsetnsprop_apiparam_1
+unk search list exist value datum
+xmlparserctxtptr parse entity declaration entitydecl : : gedecl pedecl gedecl : : entity s name s entitydef s
+clear top input callback input stack
+xmlxpathobjectptr xmlxpathobjectptr xmlnodeptr create xmlxpathobjectptr type range node point
+xmlnodeptr free node , be recursive behaviour , child be free too
+xmldtdptr xmldocptr xmlvalidctxtptr try validate document against xmlvalidatedtd_apiparam_3 instance basically do check definition dtd
+unk implement starts_with_apiname xpath function boolean starts_with starts_with function return true if first argument string start second argument string , otherwise return false
+xmloutputbufferptr write content string output buffer routine escape caracter then handle i18n transcode internal utf_8 buffer be lossless , i
+unk create xml relaxng parse context expect contain xml relaxng file
+xmlunlocklibrary_apiname be use release re_entrant lock libxml2 library
+load catalog make definition effective default external entity loader
+xmldocptr xmlvalidctxtptr do final step dtds validation once subset have parse basically dtds validation do follow check describe by xml rec check entity entity type attribute default or possible value match one define entity
+xmlxpathobjectptr xmlnodeptr create xmlxpathobjectptr type range use single node
+xmlrefptr xmlattrptr xmldocptr xmlvalidctxtptr register ref declaration
+xmltextwriterptr write format xmltextwriterwriteformatattributens_apiparam_6 namespace support
+xmlnodeptr xmlnodeptr xmlnodeptr add list node end child list xmladdchildlist_apiparam_1 merge adjacent text node cur be free
+function provide equivalent fetch character string array
+unk parse xml file filesystem or network
+unk list potential child allow by content tree
+xmlxpathcompexprptr file dump tree compile xpath expression
+xmltextreaderptr xmlinputclosecallback xmlinputreadcallback create xmltextreader xml document function source
+xmltextreaderptr provide value specify attribute
+unk create xml schema parse context expect contain xml schema file
+xmlxpathobjectptr xmlnodeptr xmlnodeptr create xmlxpathobjectptr type range use # node
+unk provide specify encode if specify http header
+try delete item server
+file show in_extenso memory block allocate
+unk unk copy precompute value
+xmlparserinputbufferptr create buffer parser input progressive parse input immutable memory area
+xmlnsptr xmldocptr creation namespace , old way use pi without scope deprecate
+unk check if regular expression generate value
+xmldocptr dump current dom tree into memory use character encoding specify by caller
+xmlparserctxtptr skip blank character find point input stream
+xmllocklibrary_apiname be use take out re_entrant lock libxml2 library
+close datum connection server
+unk add xmllistpushback_apiparam_2 end list
+xmlnodeptr xmlnodeptr copy xmlcopynode_apiparam_1
+xmlparserctxtptr parse xml element , be highly recursive element : : emptyelemtag stag content etag name element end_tag must match element type start_tag
+xmlnodeptr xmlnodeptr recursive copy xmlcopynodelist_apiparam_1 list
+xmllocationsetptr remove entry exist locationset list
+unk callback function when do transition automata
+convert stre boolean value
+handle attribute have read by parser
+sax2 callback when element start have detect by parser
+function close http context , function end up connection free datum relate function
+unk unk get atom associate xmlexpnewatom_apiparam_2 context
+const unk search get value attribute associate xmlgetnsprop_apiparam_1 attribute have be anchor namespace specify
+xmlnodesetptr xmlnodeptr create xmlnodesetptr type double value val
+unk remove first instance associate xmllistremovefirst_apiparam_2 list
+parse xml qualified xmlsplitqname2_apiparam_1 string qname : : prefix
+unk xmlrmutexunlock_apiname be use unlock libxml2 token_r
+xmlxpathobjectptr xmlxpathobjectptr xmlxpathobjectptr create xmlxpathobjectptr type range use # point
+xmlparserctxtptr function be deprecate , -PRON- now always process entity content through xmlstringdecodeentitie todo : remove next major release
+xmltextreaderptr whether node can have text value
+by default , libxml submit http output request use put method
+unk unk set structured error callback
+calculate internal size utf8 character
+unk unk get first element list
+signature warning callback xmlschemavaliditywarningfunc_apiparam_3 validation
+unk unk parse schema definition resource build internal xml shema struture which can be use validate instance
+xmlhashtableptr find userdata specify by qname tuple
+unk initialize context root document
+unk workaround provide file error report information when be provide by current api
+xmlattrptr xmldocptr search attribute declare give xmlgetid_apiparam_2
+unk unk unk unk if be null , create first target state automata then add transition xmlautomatanewalltrans_apiparam_2 state xmlautomatanewalltrans_apiparam_3 target state
+initialize char encode support , char encode support register default encode support
+htmlattrallowe unk const unk check whether attribute be valid element have full knowledge require deprecate attribute
+complete resolution lookup xmlcataloglocalresolveuri_apiparam_2 use document private catalog list
+xmlelementcontentptr xmlparserctxtptr parse declaration mix element content leading space have skip xmlparseelementcontentdecl child : : choice seq
+xmlcatalogptr load catalog build associate datum structure
+unk long xmlparserctxtptr function provide current index parser relative start current entity
+take block iso latin # char isolat1toutf8_apiparam_3 try convert utf_8 block char isolat1toutf8_apiparam_1
+xmlparserctxtptr parse value entity declaration entityvalue : : pereference reference
+unk parse html in_memory document build tree
+unk xmlxpathobjectptr create xmlxpathobjectptr type string value val
+xmlhashtableptr find userdata specify by qname prefix : name
+unk double convert number string value
+xmlnodeptr xmlnodeptr unk implement xml shell function save write current document xmlshellsave_apiparam_2 , or be original name
+unk htmlnodeptr unk html dtd allow tag implicitly close other tag
+xmlnodeptr xmldocptr xmlnodeptr xmldocptr xmldomwrapctxtptr reference out_of scope ns_decls be remappe point destdoc : 1 if destparent be give , then nsdef entry element_node be use 2 if no destparent be give , then destdoc oldns entry be use be case when -PRON- have unlinke xmldomwrapadoptnode_apiparam_3 just want move unlinked xmldomwrapadoptnode_apiparam_3 context if destparent be give , destparent ensure tree be namespace wellforme by create additional ns_decls where need
+xmlparserctxtptr clear reinitialize parser context
+xmlxpathobjectptr unk register variable xmlxpathregistervariablens_apiparam_4
+unk implement div operation xpath object arg1 arg2 : numeric operator convert numeric operator operand number as if by call number function
+unk handle xpath xmlxpatherr_apiparam_2
+xmlnodeptr xmldocptr file dump html node , recursive behaviour , child be print too , format return be add
+unk evaluate if specific facet can be use conjunction xmlschemaisbuiltintypefacet_apiparam_1
+xmltextwriterptr write dtd
+register char encode xmlregistercharencodinghandler_apiparam_1 , surprising , be
+const unk be xmlnodeistext_apiparam_1 text xmlnodeistext_apiparam_1
+unk implement not_apiname xpath function boolean function return true if argument be false , false otherwise
+xmltextreaderptr qualified name node , equal prefix : localname
+unk xmltextwriterptr write format raw xml text
+xmlparserctxtptr parse xml nmtoken
+xmlattrptr file dump debug information attribute list
+xmltextreaderptr setup xmltextreader parse xml file descriptor
+unk unk unk set callback function use handle error validation context
+receive char parser
+long file last xmlmemdisplaylast_apiparam_2 memory allocate freed , useful dumping memory leave allocate between two place runtime
+xmlbufferptr add string range begin xml buffer
+xmlnodesetptr unk pop node_set stack , handle conversion if need
+xmlbufferptr xmlbufferptr generic front_end encode xmlcharencinfunc_apiparam_1 input function
+xmlnodeptr signature deregistration callback discard xmlderegisternodefunc_apiparam_1
+xmluriptr save uri as escape string
+unk initialize default xml sax handler accord xmlsaxversion_apiparam_2
+unk unk register external mechanism variable lookup
+unk xmloutputclosecallback xmloutputwritecallback create document saving context serialize file descriptor xmlsavetoio_apiparam_4 xmlsavetoio_apiparam_5 give
+xmlnodeptr const unk parse xmlstringlengetnodelist_apiparam_2 string build node list associate
+xmlparserinputptr xmlentityptr xmlparserctxtptr create input stream base xmlentityptr
+double xmlxpathobjectptr convert xpath object number value
+unk unescape routine , but do check string be uri
+xmlenumerationptr attribute definition have parse
+xmltextwriterptr set indentation output
+unk set xmlxincludesetflags_apiparam_2 use further processing xml resource
+unk xmltextwriterptr write format dtd internal entity
+xmlelementtableptr deallocate memory use by element hash xmlfreeelementtable_apiparam_1
+unk function reset xmlsetgenericerrorfunc_apiparam_2 error context out context error message
+unk implement floor_apiname xpath function number floor floor function return large number be great than argument be integer
+unk remove instance associate xmllistremoveall_apiparam_2 list
+xmltextwriterptr end current xml coment
+processing instruction have parse
+unk free up memory allocate by comp
+xmlentitiestableptr xmlentitiestableptr build copy entity xmlcopyentitiestable_apiparam_1
+xmlparserctxtptr parse xml document build tree if use standard sax interface
+xmlnsptr const unk const unk search namespace apply give element
+function try read len byte exist ftp connection save -PRON- dest
+xmldocptr unk validate tree xmlschematronvalidatedoc_apiparam_2 against schematron
+xmlenumerationptr free enumeration attribute node recursive
+unk format msg place result into buf
+callback free data hash
+double provide portable isinf_apiname function detect whether double be infinite or infinite
+callback when scan xmlhashscanner_apiparam_2 hash simple scanner
+long xmldocptr unk save full document saving context todo : function be fully implement yet as function do return byte count but # instead
+unk unk get stream context pattern xmlfreestreamctxt free context
+xmlsaxhandlerptr parse xml file call give sax handler routine
+call when pcdata block have parse
+xmldocptr xmloutputbufferptr dump html document
+xmltextwriterptr write format xmltextwriterwriteformatelementns_apiparam_6 element namespace support
+unk query number element instal hash dict
+call when entity xmlsax2reference_apiname be detect
+xmlparserctxtptr apply xmlctxtuseoptions_apiparam_2 parser context
+xmloutputbufferptr give pointer datum currently hold output buffer
+unk xmltextwriterptr write format dtd attlist
+xmlinputclosecallback xmlinputreadcallback xmlinputopencallback xmlinputmatchcallback register set callback handle parser input
+xmlparserctxtptr parse attribute default declaration defaultdecl : : require imply fix s
+xmltextwriterptr write format xmltextwriterwriteformatdtdinternalentity_apiparam_5 internal entity
+xmlparserctxtptr parse content : content : : element chardata reference cdsect pi comment
+unk free resource associate schema validation context
+const unk unk unk const unk const unk const unk const unk xmlnodeptr be prototype extend link detection callback
+function try open connection indicate resource via http use give method , add give extra xmlnanohttpmethod_apiparam_5 xmlnanohttpmethod_apiparam_3 buffer request content
+xmloutputbufferptr flush output channel
+unk add qname prefix : name hash dict if present
+xmlparserctxtptr parse xml version
+unk xmlhashtableptr free hash table content
+unk unk lookup function
+unk xmlrnewmutex_apiname be use allocate reentrant mutex synchronize access datum
+create substre give utf_8 string note : position be give unit utf_8 char
+initialize http proxy context by parse xmlnanohttpscanproxy_apiparam_1 find protocol host port indicate
+xmlnodeptr xmldocptr unk validate full subtree when xmlrelaxngvalidatepushelement_apiname return # content node have expand
+xmlxpathobjectptr double create xmlxpathobjectptr type double value val
+const unk read value node , can be either text carry directly by node if be text node or aggregate string value carry by node child text entity_ref
+unk pop boolean stack , handle conversion if need
+function be deprecate
+unk unk unk one step brzozowski derivation expression exp respect input string
+xmldocptr xmlvalidctxtptr try validate root element basically do follow check as describe by xml_1 recommendation : do try recurse or apply other check element
+xmlparserinputptr entity loader , control load external entity , application can either : override xmlsax2resolveentity_apiname callback sax block or well xmlsetexternalentityloader_apiname function set up be entity resolution routine
+unk unk walk element first first last apply xmllistwalk_apiparam_2 function xmllistwalk_apiparam_2 function
+setup ftp proxy information
+unk xmlnodeptr xmlnodeptr unk traversal function preceding_sible direction preceding_sible axis contain precede sibling context node reverse document order ; first precede sibling be first axis ; sible precede node be second axis so
+display errorsaxfunc_apiparam_3 format error message , callback
+xmlnodeptr xmldocptr creation node contain cdata block
+xmlnotationtableptr xmlbufferptr dump content notation xmldumpnotationtable_apiparam_2 as xml dtd definition
+input file
+unk create xml schema parse context memory xmlschemanewmemparserctxt_apiparam_1 expect contain xml schema file
+unk push one level xmlstreampop_apiparam_1
+unk xmlnodeptr xmlnodeptr find first close previous sible xmlpreviouselementsibling_apiparam_1 which be element xmlpreviouselementsibling_apiparam_1
+as xmlstrncat , but create string
+xmlnodeptr xmlnodeptr unk implement xml shell function pwd show full path root xmlshellpwd_apiparam_3 , if need building thumbler when similar element exist give ancestor level
+xmlnodesetptr xmlnodesetptr xmlnodesetptr implement exslt set intersection_apiname function : node_set set : intersection node_set , node_set
+xmlnodeptr xmldocptr xmlvalidctxtptr try validate single element be attribute , basically do follow check as describe by xml_1 recommendation : _ then call xmlvalidateoneattribute_apiname each attribute present
+unk const unk const unk build stre equivalent text contain node xmlnodelistgetrawstring_apiparam_2 make text entity_refs , contrary xmlnodelistgetstring_apiname function do character encode handling
+unk check cdata parse validation current stack
+unk deallocate xmlschemafreewildcard_apiparam_1 structure
+unk implement mod operation xpath object : arg1 arg2 numeric operator convert numeric operator operand number as if by call number function
+xmlhashtableptr unk create xmlhashtableptr which dict as internal dictionary
+convenient way turn bool into text
+xmltextwriterptr start xml element
+unk xmlnodeptr set node as context xmlxpathsetcontextnode_apiparam_1
+xmlnotationptr xmldtdptr search dtd description notation
+display xmlparservalidityerror_apiparam_3 format validity error message , give file , line , position xmlparservalidityerror_apiparam_3 extra parameter
+xmlxpathobjectptr xmlnodesetptr create xmlxpathobjectptr type nodeset initialize nodeset val
+xmlxpathfunction unk search function array context give function
+xmltextwriterptr write xml element
+htmlparserctxtptr parse html document build tree if use standard sax interface
+xmlnodeptr const unk creation text node within document
+xmlnodeptr xmlnodeptr compare two node w document order
+unk unk unk check compute value facet
+xmltextwriterptr start xml dtd element
+xmlnodeptr xmldocptr xmlvalidctxtptr pop element end validation stack
+size_t malloc_apiname equivalent , log allocation info
+xmlparserinputptr function increase input parser
+xmlelementcontentptr element definition have parse
+callback internal subset declaration
+xmlattrptr xmlnodeptr xmldocptr xmlvalidctxtptr try validate single attribute element basically do follow check as describe by xml_1 recommendation : _ _ _ _ uniqueness matching be do separately
+callback use input api open resource
+unk implement equal operation xpath object content : arg1 arg2
+xmllocationsetptr free locationset compound actual range
+unk parse xml name namechar : : letter digit
+xmlentitiestableptr xmlbufferptr dump content entity xmldumpentitiestable_apiparam_2 as xml dtd definition
+call when open tag have process
+xmltextreaderptr method release resource allocate by current instance change state close close underlying input
+xmlattrptr const unk search attribute associate xmlhasnsprop_apiparam_1 attribute have be anchor namespace specify
+xmlenumerationptr xmlparserctxtptr parse enumeration attribute type
+xmltextreaderptr depth node tree
+xmltextreaderptr quotation mark character use enclose value attribute
+check utf valid utf_8
+xmldocptr xmltextreaderptr setup xmltextreader parse preparse xml document
+extract substre give string
+xmldtdptr xmlparserinputbufferptr xmlsaxhandlerptr load parse dtd
+xmlparserctxtptr take entity string content process adequate substitution
+xmlparserctxtptr parse pereference declaration entity content be handle directly by push be content as input stream
+unk implement add operation xpath object : numeric operator convert numeric operator operand number as if by call number function
+xmlattrptr const unk search attribute associate xmlhasprop_apiparam_1 function look dtd attribute declaration fix or default declaration value unless dtd have turn off
+xmldocptr set compression ratio document , zlib base correct value : # # max compression
+unk free resource associate schema parser context
+unk xmltextwriterptr write xml comment
+unk get last global error register
+unk allocate qname value
+xmluriptr free up xmluri struct
+display fatalerrorsaxfunc_apiparam_3 format fatal error message , callback
+receive char parser
+call when document start process
+unk check if error be detect during validation
+xmlparserctxtptr parse value attribute note : parser substitution entity here , be handle later xmlstringgetnodelist attvalue : : # attribute_value normalization : before value attribute be pass application or check validity , xml processor must normalize as follow : character reference be process by append referenced character attribute value entity reference be process by recursively process replacement text entity whitespace character be process by append x20 normalize value , except only single x20 be append xd xa sequence be part external parse entity or literal entity value internal parse entity other character be process by append -PRON- normalize value if declare value be cdata , then xml processor must further process normalize attribute value by discard lead trail space character , by replace sequence space character by single space character
+unk unk check xmlschemavalidatepredefinedtype_apiparam_2 conform lexical space predefine xmlschemavalidatepredefinedtype_apiparam_1
+call when document end have detect
+unk xmlsaxhandlerptr unk plug sax base validation layer sax parse event flow
+xmlparserctxtptr initialize parser context
+xmltextreaderptr provide text value node if present
+open temporary buffer collect document subsequent http post request
+size_t xmloutputbufferptr give length datum currently hold output buffer
+unk unk get canonical representation value
+xmlnodeptr xmldocptr xmloutputbufferptr dump html node , recursive behaviour , child be print too , format be add
+unk display xmlparservaliditywarning_apiparam_3 format validity warning message , give file , line , position xmlparservaliditywarning_apiparam_3 extra parameter
+unk unk unk unk get atom associate choice leave right note leave right be consume operation , keep handle -PRON- xmlexpref_apiname xmlexpfree_apiname release -PRON- , be true even case failure unless xmlexpnewor_apiparam_1 null
+signature free_apiname implementation
+xmlparserinputptr xmlparserctxtptr external entity loader type
+unk parse xml namespace non qualified name
+unk xmltextreaderptr retrieve error callback function user argument
+unk implement substring_apiname xpath function string substring string , number , number
+check if qname be equal give string
+xmlattrptr xmldocptr create property carry by document
+unk unk unk get error warning callback information
+unk implement lang_apiname xpath function boolean lang lang function return true or false depend whether language context node as specify by xml : lang attribute be as or be sublanguage language specify by argument string
+xmlnotationptr xmldocptr xmlvalidctxtptr try validate single notation definition basically do follow check as describe by xml_1 recommendation : seem no validity constraint exist notation declaration but function get call anyway
+xmlparserctxtptr xmlparsenamespace : parse specific pi namespace ... construct
+xmlattrptr xmlattrptr xmlnodeptr copy attribute list
+strcasecmp xmlchar
+xmldocptr free up structure use by document , tree include
+xmloutputbufferptr xmlbufferptr create buffer output progressive saving xmlbuffer
+try lookup catalog reference associate system identifier deprecate , xmlcatalogresolvesystem_apiname
+unk const unk duplicate list
+xmlnodeptr xmlnodeptr unk traversal function parent direction parent axis contain parent context node , if be one
+be generic signature xml shell input function
+xmlelementcontentptr unk allocate element content structure
+unk unk allow set locator function validation context , which be use provide file line information since be provide as part sax validation flow set f null disable locator
+xmldocptr xmldocptr copy document info

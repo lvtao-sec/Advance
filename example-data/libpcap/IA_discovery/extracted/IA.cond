@@ -1,0 +1,247 @@
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+when just
+if the packet does not match the filter and non-zero if the packet matches the filter
+null
+null
+null
+null
+null
+null
+null
+null
+if using pcap_dump_open_APIName , pcap_dump_APIName , and pcap_dump_close_APIName to write a savefile if there is no pcap_t that supplies the packets to be written
+if a savefile is being read
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+if the packets to be written have time stamps in seconds and microseconds
+if no packets were read from a live capture
+null
+null
+null
+null
+if it is used on any device other than a network interface
+null
+null
+if the code needs them to be valid after the pcap_loop_APIParam_3
+if the code needs them to remain valid
+if the code needs it to remain valid
+if the code needs them to be valid after the pcap_loop_APIParam_3
+if the code needs them to remain valid
+when pcap_dispatch_APIParam_2 was 0
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+if you are catching signals on UNIX systems that support restarting system calls after a signal , and calling pcap_breakloop_APIName in the signal handler
+null
+null
+if the timeout is not specified
+when the handle was created
+when the handle was created
+when the handle was created
+when the handle was created
+If the time stamps in the file do not have the same precision as the requested precision
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+If pcap_findalldevs_APIName succeeds
+null
+null
+null
+null
+null
+null
+null
+null
+if the device does not support broadcasts
+if the device is not
+null
+null
+null
+as if it pointed to a struct sockaddr_in6
+null
+null
+null
+null
+If pcap_activate_APIName fails
+null
+null
+null
+null
+If the pcap_compile_APIParam_5 of the network on which packets are being captured is not known to the program , or if packets are being captured on the Linux `` any '' pseudo-interface that can capture on more than one network
+null
+null
+null
+null

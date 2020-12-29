@@ -1,0 +1,90 @@
+The incremental blob I/O routines can only read or overwriting existing blob content
+existing blob content, sqlite3_blob_reopen
+
+The only exception is that if SQLite is unable to allocate memory to hold the sqlite3 object, a NULL will be written into *ppDb instead of a pointer to the sqlite3 object.
+hold the sqlite3 object, sqlite3_str_new
+
+Within the xUpdate method of a virtual table, the sqlite3_value_nochange_APIName interface returns true if and only if the column corresponding to sqlite3_value_nochange_APIParam_1 is unchanged by the UPDATE operation that the xUpdate method call was invoked to implement and if and the prior xColumn method call that was invoked to extracted the value for that column returned without setting a result
+xColumn method call was invoked, sqlite3_vtab_collation
+
+Within the xUpdate method of a virtual table, the sqlite3_value_nochange_APIName interface returns true if and only if the column corresponding to sqlite3_value_nochange_APIParam_1 is unchanged by the UPDATE operation that the xUpdate method call was invoked to implement and if and the prior xColumn method call that was invoked to extracted the value for that column returned without setting a result
+xUpdate method call was invoked, sqlite3_vtab_on_conflict
+
+an SQLite error code is returned by sqlite3_blob_reopen_APIName and the blob handle is considered aborted
+blob handle is considered, sqlite3_blob_close
+
+The application must finalize every prepared statement
+finalize every prepared statement, sqlite3_finalize
+
+Applications should finalize all prepared statements , close all BLOB handles , and finish all sqlite3_backup objects associated with the sqlite3 object prior to attempting to close the object
+finalize all prepared statements, sqlite3_finalize
+
+Applications should finalize all prepared statements , close all BLOB handles , and finish all sqlite3_backup objects associated with the sqlite3 object prior to attempting to close the object
+close the object, sqlite3_close
+
+Module names must be registered before creating a new virtual table using the module and before using a preexisting virtual table for the module
+using the module, sqlite3_create_module
+
+Module names must be registered before creating a new virtual table using the module and before using a preexisting virtual table for the module
+preexisting virtual table, sqlite3_declare_vtab
+
+Module names must be registered before creating a new virtual table using the module and before using a preexisting virtual table for the module
+creating a new virtual table, sqlite3_declare_vtab
+
+However , such calls must not close the database connection nor finalize or reset the prepared statement in which the function is running
+reset the prepared statement, sqlite3_clear_bindings
+
+The caller is responsible for freeing sqlite3_serialize_APIParam_0 to avoid a memory leak
+avoid a memory leak, sqlite3_release_memory
+
+The calling function should free this memory by calling sqlite3_free_APIName
+free this memory, sqlite3_release_memory
+
+The sqlite3_snapshot object returned from a successful call to sqlite3_snapshot_get_APIName must be freed using sqlite3_snapshot_free_APIName to avoid a memory leak
+avoid a memory leak, sqlite3_release_memory
+
+The first parameter must be a copy of the SQL function context that is first parameter to the xStep or xFinal callback routine that implements the aggregate function
+implements the aggregate function, sqlite3_result_null
+
+To avoid memory leaks, the application should invoke sqlite3_free_APIName on error message strings returned through the 5_APIConstant parameter of sqlite3_exec_APIName after the error message string is no longer needed
+avoid memory leaks, sqlite3_release_memory
+
+The calling application should pass sqlite3_str_finish_APIParam_0 to sqlite3_free_APIName to avoid a memory leak
+avoid a memory leak, sqlite3_release_memory
+
+To avoid memory leaks, the object returned by sqlite3_str_new_APIName must be freed by a subsequent call to sqlite3_str_finish_APIName
+avoid memory leaks, sqlite3_release_memory
+
+Testing suggests that , most applications will achieve adequate soft heap limit enforcement without the use of SQLITE_ENABLE_MEMORY_MANAGEMENT
+achieve adequate soft heap limit enforcement, sqlite3_soft_heap_limit64
+
+On those systems , shared cache mode should be enabled per-database connection via sqlite3_open_v2_APIName with SQLITE_OPEN_SHAREDCACHE_API_constant
+shared cache mode, sqlite3_enable_shared_cache
+
+On those systems , shared cache mode should be enabled per-database connection via sqlite3_open_v2_APIName with SQLITE_OPEN_SHAREDCACHE_API_constant
+cache mode should be enabled, sqlite3_enable_shared_cache
+
+Even reading previously freed memory might result in a segmentation fault or other severe error
+previously freed memory, sqlite3_release_memory
+
+the maximum length of the string contained in the sqlite3_str object will be the value set for sqlite3_limit_APIName instead of SQLITE_MAX_LENGTH
+contained in the sqlite3_str object, sqlite3_str_finish
+
+Returns the size in bytes of the BLOB accessible via the successfully opened BLOB handle in its only argument
+successfully opened BLOB, sqlite3_blob_close
+
+A protected sqlite3_value object may always be used where an unprotected sqlite3_value object is required , so either kind of sqlite3_value object can be used with this interface
+sqlite3_value object is required, sqlite3_value_nochange
+
+The sqlite3_extended_result_codes_APIName routine enables or disables the extended result codes feature of SQLite
+disables the extended result codes feature, sqlite3_extended_result_codes
+
+The rowid is always available as an undeclared column named ROWID , OID , or _ ROWID _ as long as those names are not also used by explicitly declared columns
+explicitly declared columns, sqlite3_column_origin_name
+
+So as not to open security holes in older applications that are unprepared to deal with extension loading , and as a means of disabling extension loading , the following API is provided to turn the sqlite3_load_extension_APIName mechanism on and off
+deal with extension loading, sqlite3_enable_load_extension
+
+So as not to open security holes in older applications that are unprepared to deal with extension loading , and as a means of disabling extension loading , the following API is provided to turn the sqlite3_load_extension_APIName mechanism on and off
+disabling extension loading, sqlite3_enable_load_extension
+

@@ -1,0 +1,36 @@
+If the interface field is missing
+interface field is missing, dbus_message_is_signal
+
+if the application was expected to exit before running the main loop
+running the main loop, dbus_connection_read_write
+
+if there is no container to recurse into at the current iterator position
+recurse into at the current iterator position, dbus_signature_iter_recurse
+
+when encapsulating messages in another protocol , or otherwise bypassing DBusConnection
+otherwise bypassing DBusConnection, dbus_connection_ref
+
+If threads have been initialized with a recursive mutex function
+threads have been initialized, dbus_threads_init_default
+
+If the given handler was added more than once
+given handler, dbus_connection_unregister_object_path
+
+Warning if the dbus_connection_send_with_reply_APIParam_1 is disconnected or you try to send Unix file descriptors on a dbus_connection_send_with_reply_APIParam_1 that does not support them
+send Unix file descriptors, dbus_connection_get_unix_fd
+
+if there an dbus_bus_add_match_APIParam_3 adding the match
+adding the match, dbus_bus_add_match
+
+When you lose ownership of your bus dbus_bus_request_name_APIParam_2
+lose ownership, dbus_bus_start_service_by_name
+
+When a service represents an application
+service represents, dbus_bus_start_service_by_name
+
+if you registered with the bus manually -LRB- i.e
+registered with the bus, dbus_bus_get
+
+if you asked for the dbus_address_entry_get_value_APIParam_2 `` host '' you would get the value `` example.com '' dbus_address_entry_get_value_APIParam_0 value is already unescaped
+get the value, dbus_address_entry_get_value
+
