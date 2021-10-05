@@ -1,0 +1,38 @@
+libs_apilist:
+  libdbus: ../example-data/libdbus/apilist
+  libpcap: ../example-data/libpcap/apilist
+  libxml2: ../example-data/libxml2/apilist
+  okhttp: ../example-data/okhttp/apilist
+  openssl: ../example-data/openssl/apilist
+  sqlite: ../example-data/sqlite/apilist
+libs_uselessNN:
+  libdbus: ../example-data/libdbus/useless_NN
+  libpcap: ../example-data/libpcap/useless_NN
+  libxml2: ../example-data/libxml2/useless_NN
+  okhttp: ../example-data/okhttp/useless_NN
+  sqlite: ../example-data/sqlite/useless_NN
+predict:
+  basedir: ../example-data
+  predict_libs:
+  - libpcap
+  - libdbus
+  - libxml2
+sem_w2v_model:
+  libdbus: ../example-data/libdbus/IA_dereference/w2v_model/2020-07-13-10-46-19.model
+  libpcap: ../example-data/lib-data/libpcap/IA_dereference/w2v_model/2020-07-13-16-47-14.model
+  libxml2: ../example-data/lib-data/libxml2/IA_dereference/w2v_model/2020-07-13-10-24-04.model
+  okhttp: ../example-data/lib-data/okhttp/IA_dereference/w2v_model/2020-07-13-10-07-20.model
+  openssl: ../example-data/lib-data/openssl/IA_dereference/w2v_model/2020-07-13-10-16-06.model
+  sqlite: ../example-data/lib-data/sqlite/IA_dereference/w2v_model/2020-07-12-22-31-24.model
+train:
+  embedding_dim: 300
+  epoch: 2
+  save_model: trans_aug
+  save_model_dir: ./saved-models
+  test_libs:
+  - sqlite
+  train_libs:
+  - openssl
+  #w2v_corpus_path: ../../data/train/w2v/corpus
+  #w2v_model_dir: ../../data/train/w2v/model
+  #w2v_model_path: ../../data/train/w2v/model/2020-07-12-10-37-49.model
